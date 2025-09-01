@@ -9,7 +9,7 @@ Route::get('/', function () {
 
 
 Route::get('/about', function () {
-    return view('pages.home');
+    return view('pages.about');
 })->name('about');
 
 

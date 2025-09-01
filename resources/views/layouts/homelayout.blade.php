@@ -35,8 +35,11 @@
         @extends('layouts.footerLayout');
 
     <!-- Custom JS -->
-    <script src="{{ asset('js/custom_main.js') }}"></script>
+    <script src="{{ asset('js/custom.js') }}"></script>
 
+
+
+    
     {{-- External JS --}}
     <script src="{{ asset('vendor/core/plugins/language/js/language-public.js?v=2.2.0')}}" defer></script>
     <script src="{{ asset('themes/agon/new-assets/js/vendor/jquery.js') }}"></script>
@@ -63,6 +66,62 @@
     <script src="{{ asset('themes/agon/new-assets/js/webgl.js') }}" defer></script>
     <script src="{{ asset('themes/agon/new-assets/js/tp-cursor.js') }}" defer></script>
     <script src="{{ asset('themes/agon/new-assets/js/main.js') }}" defer></script>
+
+    <noscript><iframe src=https://www.googletagmanager.com/ns.html?id=GTM-KB33VJ6height="0" width=0 class="page_speed_1689186421"></iframe></noscript>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin=anonymous referrerpolicy="no-referrer" defer></script>
+
+
+           
+    <div class="position-fixed bottom-0 end-0 p-3 page_speed_2018363099">
+        <div id="live-toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header"><span class="success text-success"><span class="d-flex"><i class="fi fi-rr-check d-flex align-items-center me-2"></i><strong class="me-auto">Success</strong></span></span><span class="danger text-danger"><span class="d-flex"><i class="fi fi-rr-cross-circle d-flex align-items-center me-2"></i><strong class="me-auto">Error</strong></span></span>
+                <span
+                    class="info text-info"><span class="d-flex"><i class="fi fi-rr-info d-flex align-items-center me-2"></i><strong class="me-auto">Info</strong></span></span><strong class="me-auto"></strong><small class="time"></small><button type=button class="btn-close" data-bs-dismiss="toast"
+                        aria-label="Close"></button></div>
+            <div class="toast-body"></div>
+        </div>
+    </div>
+
+
+    <script>
+        window.__lc = window.__lc || {};
+        window.__lc.license = 19280090;
+        window.__lc.integration_name = "manual_channels";
+        window.__lc.product_name = "livechat";;
+        (function(n, t, c) {
+            function i(n) {
+                return e._h ? e._h.apply(null, n) : e._q.push(n)
+            }
+            var e = {
+                _q: [],
+                _h: null,
+                _v: "2.0",
+                on: function() {
+                    i(["on", c.call(arguments)])
+                },
+                once: function() {
+                    i(["once", c.call(arguments)])
+                },
+                off: function() {
+                    i(["off", c.call(arguments)])
+                },
+                get: function() {
+                    if (!e._h) throw new Error("[LiveChatWidget] You can't use getters before load.");
+                    return i(["get", c.call(arguments)])
+                },
+                call: function() {
+                    i(["call", c.call(arguments)])
+                },
+                init: function() {
+                    var n = t.createElement("script");
+                    n.async = !0, n.type = "text/javascript", n.src = "https://cdn.livechatinc.com/tracking.js", t.head.appendChild(n)
+                }
+            };
+            !n.__lc.asyncInit && e.init(), n.LiveChatWidget = n.LiveChatWidget || e
+        }(window, document, [].slice))
+    </script><noscript><a href="https://www.livechat.com/chat-with/19280090/" rel="nofollow">Chat with us.</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript></body>
+
 
 
 </body>

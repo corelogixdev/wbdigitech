@@ -7,7 +7,7 @@
 
         @font-face {
             font-family: 'NeutraDisp';
-            src: url('https://www.volgatigris.com/public/new-assets/fonts/NeutraDisp-Titling.woff') format('woff');
+            src: url('public/css/new-assets/fonts/NeutraDisp-Titling.woff') format('woff');
             font-weight: bold;
             font-style: normal;
         }
@@ -17,7 +17,7 @@
         }
 
         .about-us-banner {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-about/hero/hero-1.jpg);
+            background-image: url(public/css/new-assets/img/inner-about/hero/hero-1.jpg);
             background-size: cover;
             background-repeat: no-repeat;
         }
@@ -557,7 +557,7 @@
             }
             .tp-footer-big-title {
                 font-size: 90px !important;
-            }
+        }
             .tp-copyright-logo img {
                 width: 60% !important;
             }
@@ -591,7 +591,7 @@
 
         .group-banner {
             /* The image used */
-            background-image: url('https://volgatigris.com/public/new-assets/img/inner-service/hero/hero-1-2.jpg');
+            background-image: url('public/css/new-assets/img/inner-service/hero/hero-1-2.jpg');
             /* Replace with your image URL */
             /* Create the parallax scrolling effect */
             min-height: 750px;
@@ -602,7 +602,7 @@
         }
 
         .home-second-box-image {
-            background-image: url('https://volgatigris.com/public/new-assets/img/inner-service/home-box-2.png');
+            background-image: url('public/css/new-assets/img/inner-service/home-box-2.png');
         }
 
         .home-second-box-image h3 b {
@@ -612,7 +612,7 @@
         }
 
         .graphic-designer-banner {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-project/showcase/showcase-details-2-1.jpg);
+            background-image: url(public/css/new-assets/img/inner-project/showcase/showcase-details-2-1.jpg);
         }
 
         .showcase-details-2-title {
@@ -620,139 +620,139 @@
         }
 
         .wordpress-top-banner {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/wordpress-development.webp);
+            background-image: url(public/css/new-assets/img/inner-service/sercive-details/wordpress-development.webp);
         }
 
         .website-top-banner {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/website-maintenance.webp);
+            background-image: url(public/css/new-assets/img/inner-service/sercive-details/website-maintenance.webp);
         }
 
         .webdev-top-banner {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/web-development.webp);
+            background-image: url(public/css/new-assets/img/inner-service/sercive-details/web-development.webp);
         }
 
         .web-top-banner {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/web-design.webp);
+            background-image: url(public/css/new-assets/img/inner-service/sercive-details/web-design.webp);
         }
 
         .shopify-top-banner {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/shopify-design.webp);
+            background-image: url(public/css/new-assets/img/inner-service/sercive-details/shopify-design.webp);
         }
 
         .ecommerce-top-banner {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/ecommerce.webp);
+            background-image: url(public/css/new-assets/img/inner-service/sercive-details/ecommerce.webp);
         }
 
         .content-top-banner {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/content-writing.webp);
+            background-image: url(public/css/new-assets/img/inner-service/sercive-details/content-writing.webp);
         }
 
         .snap-chat-top-banner {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/snap-chat.webp);
+            background-image: url(public/css/new-assets/img/inner-service/sercive-details/snap-chat.webp);
         }
 
         .youtube-top-banner {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/youtube-marketing.webp);
+            background-image: url(public/css/new-assets/img/inner-service/sercive-details/youtube-marketing.webp);
         }
 
         .twitter-top-banner {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/twitter-marketing.webp);
+            background-image: url(public/css/new-assets/img/inner-service/sercive-details/twitter-marketing.webp);
         }
 
         .tiktok-top-banner {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/tic-tok.webp);
+            background-image: url(public/css/new-assets/img/inner-service/sercive-details/tic-tok.webp);
         }
 
         .pinterest-top-banner {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/pinterest-marketing.webp);
+            background-image: url(public/css/new-assets/img/inner-service/sercive-details/pinterest-marketing.webp);
         }
 
         .linkedin-top-banner {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/linkedIn-marketing.webp);
+            background-image: url(public/css/new-assets/img/inner-service/sercive-details/linkedIn-marketing.webp);
         }
 
         .instagram-top-banner {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/instagram-marketing.webp);
+            background-image: url(public/css/new-assets/img/inner-service/sercive-details/instagram-marketing.webp);
         }
 
         .graphic-top-banner {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/graphic-design.webp);
+            background-image: url(public/css/new-assets/img/inner-service/sercive-details/graphic-design.webp);
         }
 
         .facebook-top-banner {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/facebook-marketing.webp);
+            background-image: url(public/css/new-assets/img/inner-service/sercive-details/facebook-marketing.webp);
         }
 
         .whatsapp-top-banner {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/whatsapp.jpg);
+            background-image: url(public/css/new-assets/img/inner-service/sercive-details/whatsapp.jpg);
         }
 
         .amazon-top-banner {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/amazon-marketing.webp);
+            background-image: url(public/css/new-assets/img/inner-service/sercive-details/amazon-marketing.webp);
         }
 
         .google-top-banner {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/google-ads-management.webp);
+            background-image: url(public/css/new-assets/img/inner-service/sercive-details/google-ads-management.webp);
         }
 
         .google-shopping-top-banner {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/google-shopping-ads.webp);
+            background-image: url(public/css/new-assets/img/inner-service/sercive-details/google-shopping-ads.webp);
         }
 
         .ppc-top-banner {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/ppc.webp);
+            background-image: url(public/css/new-assets/img/inner-service/sercive-details/ppc.webp);
         }
 
         .ecommerce-seo-top-banner {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/ecommerce-seo.webp);
+            background-image: url(public/css/new-assets/img/inner-service/sercive-details/ecommerce-seo.webp);
         }
 
         .seo-audit-top-banner {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/seo-audit.webp);
+            background-image: url(public/css/new-assets/img/inner-service/sercive-details/seo-audit.webp);
         }
 
         .content-marketing-top-banner {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/content-marketing.webp);
+            background-image: url(public/css/new-assets/img/inner-service/sercive-details/content-marketing.webp);
         }
 
         .reputation-top-banner {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/reputation-management.webp);
+            background-image: url(public/css/new-assets/img/inner-service/sercive-details/reputation-management.webp);
         }
 
         .call-center-top-banner {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/call-center.webp);
+            background-image: url(public/css/new-assets/img/inner-service/sercive-details/call-center.webp);
         }
 
         .customer-care-services-top-banner {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/customer-care-services.webp);
+            background-image: url(public/css/new-assets/img/inner-service/sercive-details/customer-care-services.webp);
         }
 
         .customer-satisfaction-survey-top-banner {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/customer-satisfaction-survey.webp);
+            background-image: url(public/css/new-assets/img/inner-service/sercive-details/customer-satisfaction-survey.webp);
         }
 
         .data-cleansing-top-banner {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/data-cleansing.webp);
+            background-image: url(public/css/new-assets/img/inner-service/sercive-details/data-cleansing.webp);
         }
 
         .data-entry-top-banner {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/data-entry.webp);
+            background-image: url(public/css/new-assets/img/inner-service/sercive-details/data-entry.webp);
         }
 
         .data-processing-top-banner {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/data-processing.webp);
+            background-image: url(public/css/new-assets/img/inner-service/sercive-details/data-processing.webp);
         }
 
         .email-marketing-top-banner {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/email-marketing.webp);
+            background-image: url(public/css/new-assets/img/inner-service/sercive-details/email-marketing.webp);
         }
 
         .telemarketing-top-banner {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/telemarketing.webp);
+            background-image: url(public/css/new-assets/img/inner-service/sercive-details/telemarketing.webp);
         }
 
         .virtual-reception-top-banner {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/virtual-reception.webp);
+            background-image: url(public/css/new-assets/img/inner-service/sercive-details/virtual-reception.webp);
         }
 
         .facebook-top-banner .showcase-details-2-wrapper,
@@ -781,19 +781,19 @@
         }
 
         .seo-top-banner {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/seo-banner.webp);
+            background-image: url(public/css/new-assets/img/inner-service/sercive-details/seo-banner.webp);
         }
 
         .background-webdevelop-card-1 {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/price/price-bg-1.jpg);
+            background-image: url(public/css/new-assets/img/price/price-bg-1.jpg);
         }
 
         .background-webdevelop-card-2 {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/price/price-bg-2.jpg);
+            background-image: url(public/css/new-assets/img/price/price-bg-2.jpg);
         }
 
         .background-webdevelop-card-3 {
-            background-image: url(https://www.volgatigris.com/public/new-assets/img/price/price-bg-3.jpg);
+            background-image: url(public/css/new-assets/img/price/price-bg-3.jpg);
         }
 
         .tp-price-list ul li {
@@ -1115,7 +1115,7 @@
         }
 
         .black-bg-2 {
-            background-image: url('https://www.volgatigris.com/public/new-assets/img/home-04/hero/overly.png');
+            background-image: url('public/css/new-assets/img/home-04/hero/overly.png');
         }
 
         .accordion-button:after {
@@ -1485,3 +1485,315 @@
             z-index: 1111;
         }
     
+
+
+         /*LOGOS SLIDER CSS */
+
+            .logo-slider {
+                width: 100%;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                position: relative;
+            }
+
+            .logos-list {
+                display: flex;
+                width: calc( 195 * 18 * 2px);
+                gap: 24px;
+                animation: autoScroll 36s linear infinite;
+            }
+
+            .logos-list:hover {
+                /*animation-play-state: paused !important;*/
+            }
+
+            .logo-slider .item {
+                width: 195px;
+                height: 165px;
+                flex-shrink: 0;
+            }
+
+            .logo-slider .item img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                transition: filter 0.5s ease-in-out;
+            }
+
+            @keyframes autoScroll {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(calc( -1 * 195 * 18px));
+                }
+            }
+
+            .logo-slider .logos-list.reverse {
+                animation: reverseScroll 36s linear infinite;
+            }
+
+            @keyframes reverseScroll {
+                0% {
+                    transform: translateX(calc( -1 * 195 * 18px));
+                }
+                100% {
+                    transform: translateX(0);
+                }
+            }
+
+            .logo-slider:hover .item img {
+                /*filter: grayscale(1);*/
+            }
+
+            .logo-slider .item:hover img {
+                /*filter: grayscale(0);*/
+            }
+
+            .logo-slider-wrapper {
+                background-color: #061044;
+                display: flex;
+                flex-direction: column;
+                gap: 48px;
+            }
+
+            .image-box {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                border-radius: 1.6825em 26.92px;
+                overflow: hidden;
+            }
+
+            .image-box::before {
+                content: "";
+                position: absolute;
+                top: -2px;
+                left: -2px;
+                right: -2px;
+                bottom: -2px;
+                background: linear-gradient(135deg, rgba(255, 255, 255, .3) 61%, #fff 100%);
+                border-radius: 1.6825em;
+                z-index: -1;
+            }
+
+            .image-box::after {
+                content: "";
+                position: absolute;
+                top: -2px;
+                left: -2px;
+                right: -2px;
+                bottom: -2px;
+                background: linear-gradient(135deg, rgba(255, 255, 255, 0) 52.3%, #fff 100%);
+                border-radius: 1.6825em;
+                z-index: -2;
+            }
+
+            .image-box .image-box-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                background-color: #061044;
+                border-radius: 1.6825em 26.92px;
+                width: calc(100% - 2px);
+                height: calc(100% - 2px);
+                margin: 1px;
+                overflow: hidden;
+            }
+
+            .card-img {
+                margin-bottom: 24px;
+                border-radius: 12px;
+            }
+       
+        /*FIXED CTAS */
+
+        .fixed-contact {
+            position: fixed;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            background-color: #002E4F;
+            border: 3px solid #DFCA5F;
+            border-right: 0;
+            border-top-left-radius: 12px;
+            border-bottom-left-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+
+        .fixed-contact a:first-of-type {
+            border-bottom: 3px solid #DFCA5F;
+        }
+
+        .fixed-contact a {
+            padding: 16px 22px;
+            color: #DFCA5F;
+            font-size: 32px;
+        }
+
+        @media screen and (max-width: 767px) {
+            .fixed-contact a:first-of-type {
+                border-width: 2px;
+            }
+            .fixed-contact a {
+                padding: 10px 18px;
+                font-size: 18px;
+            }
+        }
+
+        /*ADS POPUP */
+
+        .ads-popup {
+            height: 100vh;
+            width: 100vw;
+            position: fixed;
+            z-index: 10000;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+
+        .ads-popup * {
+            -webkit-font-smoothing: antialiased !important;
+            font-optical-sizing: auto;
+        }
+
+        .popup-wrapper {
+            height: 100%;
+            width: 100%;
+            padding: 12px 18px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .popup-wrapper .popup-head {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .popup-wrapper .popup-head img {
+            width: 120px;
+        }
+
+        .popup-head .popup-close {
+            background: #fff;
+            border: none;
+            font-size: 1rem;
+            color: #888;
+            cursor: pointer;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .popup-img {
+            text-align: center;
+        }
+
+        .popup-img img {
+            height: 99px;
+            margin-top: -28px;
+        }
+
+        .popup-body {
+            margin-top: 14px;
+        }
+
+        .popup-headline {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin: 0;
+            text-align: center;
+            color: #222;
+        }
+
+        .popup-features {
+            list-style: none;
+            padding: 0 20px;
+            margin: 18px 0;
+            color: #222;
+            font-size: 1rem;
+            text-align: left;
+            width: 100%;
+        }
+
+        .popup-features li span {
+            margin-right: 10px;
+            font-size: 0.9rem;
+        }
+
+        .popup-cta-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+            width: 100%;
+            margin-bottom: 1rem;
+            align-items: start;
+        }
+
+        .popup-footer {
+            color: #333;
+            font-size: 1rem;
+            text-align: center;
+            width: 100%;
+            background: none;
+            box-shadow: none;
+            padding: 0;
+            border-top: 1px solid #eee;
+            padding-top: 0.7rem;
+            margin-top: 12px;
+        }
+
+        .popup-cta-btn {
+            background: #304CB2;
+            color: #fff;
+            border-radius: 999px;
+            padding: 9px 18px;
+            font-weight: 600;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.75em;
+            font-size: 14px;
+            transition: background 0.2s;
+            border: none;
+            min-width: 0;
+            width: 100%;
+            box-shadow: 0 1px 4px rgba(229, 57, 53, 0.07);
+            line-height: 1.2;
+        }
+
+        .popup-cta-btn:hover {
+            color: #ffc107;
+        }
+
+        .popup-main-call-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5em;
+            background: #304CB2;
+            color: #ffc107;
+            font-size: 1.5rem;
+            font-weight: 700;
+            border-radius: 999px;
+            padding: 0.85em 1.5em;
+            text-decoration: none;
+            box-shadow: 0 2px 8px rgba(229, 57, 53, 0.15);
+            transition: background 0.2s;
+            margin: 0.7rem 0 0.5rem 0;
+            width: 100%;
+        }
