@@ -14,7 +14,7 @@
                                 <div class="row justify-content-center">
                                     <div class="col-xxl-12">
                                         <div class="tp-hero-title-wrap mb-35 p-relative">
-                                            <div class="tp-hero-shape-1 d-none"><img src=public/new-assets/img/home-01/hero/hero-bg-shape-1-1.svg alt="Background banner"></div>
+                                            <div class="tp-hero-shape-1 d-none"><img src=new-assets/img/home-01/hero/hero-bg-shape-1-1.svg alt="Background banner"></div>
                                             <div class="tp-hero-title-box text-center">
                                                 <h1 class="tp-hero-title pt-50"> About Us </h1>
                                             </div>
@@ -58,10 +58,10 @@
                                     <div class="ab-about-thumb-wrap mb-180">
                                         <div class="row align-items-end">
                                             <div class="col-xl-6 col-lg-6 col-md-6">
-                                                <div class="ab-about-left-thumb"><img src=https://www.volgatigris.com/public/new-assets/img/inner-about/about/about-1.jpg alt="About"></div>
+                                                <div class="ab-about-left-thumb"><img src="{{ asset('new-assets/img/inner-about/about/about-1.jpg')}}" alt="About"></div>
                                             </div>
                                             <div class="col-xl-6 col-lg-6 col-md-6">
-                                                <div class="ab-about-right-thumb p-relative"><img class="inner-img z-index-5" src=https://www.volgatigris.com/public/new-assets/img/inner-about/about/about-3.jpg alt="About Us"><img src=https://www.volgatigris.com/public/new-assets/img/inner-about/about/about-2.jpg
+                                                <div class="ab-about-right-thumb p-relative"><img class="inner-img z-index-5" src="{{ asset('new-assets/img/inner-about/about/about-3.jpg')}}" alt="About Us"><img src="{{ asset('new-assets/img/inner-about/about/about-2.jpg')}}"
                                                         alt="About Volga Tigris"></div>
                                             </div>
                                         </div>
@@ -79,7 +79,7 @@
                                             <div class="row">
                                                 <div class="col-xl-4col-lg-5 col-md-4 mb-40">
                                                     <div class="ab-about-category-title-box p-relative">
-                                                        <h4 class="ab-about-category-title">Something <br><span>WHAT I DO</span></h4><img class="ab-about-shape-1 d-none d-md-block" src=https://www.volgatigris.com/public/new-assets/img/inner-about/about/shape-1.png alt="arrow"></div>
+                                                        <h4 class="ab-about-category-title">Something <br><span>WHAT I DO</span></h4><img class="ab-about-shape-1 d-none d-md-block" src="{{ asset('new-assets/img/inner-about/about/shape-1.png')}}" alt="arrow"></div>
                                                 </div>
                                                 <div class="col-xl-7 col-lg-8 col-md-8">
                                                     <div class="row">
@@ -120,7 +120,7 @@
                                                     <div class="swiper-wrapper">
                                                         <div class="swiper-slide">
                                                             <div class="tp-team-item tp-hover-btn-wrapper marque fix mb-30">
-                                                                <div class="tp-hover-btn-item"><img src=public/new-assets/img/home-01/team/accountant.jpg alt="accountant"></div>
+                                                                <div class="tp-hover-btn-item"><img src=new-assets/img/home-01/team/accountant.jpg alt="accountant"></div>
                                                                 <div class="tp-team-content"><span>Accountant</span>
                                                                     <h4 class="tp-team-title-sm"><a>Rohan Sharma</a></h4>
                                                                 </div>
@@ -128,7 +128,7 @@
                                                         </div>
                                                         <div class="swiper-slide">
                                                             <div class="tp-team-item tp-hover-btn-wrapper marque fix mb-30">
-                                                                <div class="tp-hover-btn-item"><img src=public/new-assets/img/home-01/team/client-co-ordinator.jpg alt="client-co-ordinator"></div>
+                                                                <div class="tp-hover-btn-item"><img src=new-assets/img/home-01/team/client-co-ordinator.jpg alt="client-co-ordinator"></div>
                                                                 <div class="tp-team-content"><span>Client Co-Ordinator</span>
                                                                     <h4 class="tp-team-title-sm"><a>Siddharth Menon</a></h4>
                                                                 </div>
@@ -136,7 +136,7 @@
                                                         </div>
                                                         <div class="swiper-slide">
                                                             <div class="tp-team-item tp-hover-btn-wrapper marque fix mb-30">
-                                                                <div class="tp-hover-btn-item"><img src=public/new-assets/img/home-01/team/data-analyst-2.jpg alt="data-analyst"></div>
+                                                                <div class="tp-hover-btn-item"><img src=new-assets/img/home-01/team/data-analyst-2.jpg alt="data-analyst"></div>
                                                                 <div class="tp-team-content"><span>Data Analyst</span>
                                                                     <h4 class="tp-team-title-sm"><a>Zara Morgan</a></h4>
                                                                 </div>
@@ -144,7 +144,7 @@
                                                         </div>
                                                         <div class="swiper-slide">
                                                             <div class="tp-team-item tp-hover-btn-wrapper marque fix mb-30">
-                                                                <div class="tp-hover-btn-item"><img src=public/new-assets/img/home-01/team/data-analyst.jpg alt="data-analyst"></div>
+                                                                <div class="tp-hover-btn-item"><img src=new-assets/img/home-01/team/data-analyst.jpg alt="data-analyst"></div>
                                                                 <div class="tp-team-content"><span>Data Analyst</span>
                                                                     <h4 class="tp-team-title-sm"><a>Andrew James</a></h4>
                                                                 </div>
@@ -152,7 +152,7 @@
                                                         </div>
                                                         <div class="swiper-slide">
                                                             <div class="tp-team-item tp-hover-btn-wrapper marque fix mb-30">
-                                                                <div class="tp-hover-btn-item"><img src=public/new-assets/img/home-01/team/google-ad-manager.jpg alt="google-ad-manager"></div>
+                                                                <div class="tp-hover-btn-item"><img src=new-assets/img/home-01/team/google-ad-manager.jpg alt="google-ad-manager"></div>
                                                                 <div class="tp-team-content"><span>Google Ad Manager</span>
                                                                     <h4 class="tp-team-title-sm"><a>Jasmine Taylor</a></h4>
                                                                 </div>
@@ -160,7 +160,7 @@
                                                         </div>
                                                         <div class="swiper-slide">
                                                             <div class="tp-team-item tp-hover-btn-wrapper marque fix mb-30">
-                                                                <div class="tp-hover-btn-item"><img src=public/new-assets/img/home-01/team/graphic-and-art-designer.jpg alt="graphic-and-art-designer"></div>
+                                                                <div class="tp-hover-btn-item"><img src=new-assets/img/home-01/team/graphic-and-art-designer.jpg alt="graphic-and-art-designer"></div>
                                                                 <div class="tp-team-content"><span>Graphic &amp; Art Designer</span>
                                                                     <h4 class="tp-team-title-sm"><a>Micheal Anderson </a></h4>
                                                                 </div>
@@ -168,7 +168,7 @@
                                                         </div>
                                                         <div class="swiper-slide">
                                                             <div class="tp-team-item tp-hover-btn-wrapper marque fix mb-30">
-                                                                <div class="tp-hover-btn-item"><img src=public/new-assets/img/home-01/team/graphic-and-art-designer1.jpg alt="graphic-and-art-designer"></div>
+                                                                <div class="tp-hover-btn-item"><img src=new-assets/img/home-01/team/graphic-and-art-designer1.jpg alt="graphic-and-art-designer"></div>
                                                                 <div class="tp-team-content"><span>Graphic &amp; Art Designer</span>
                                                                     <h4 class="tp-team-title-sm"><a> Aditi Sharma</a></h4>
                                                                 </div>
@@ -176,7 +176,7 @@
                                                         </div>
                                                         <div class="swiper-slide">
                                                             <div class="tp-team-item tp-hover-btn-wrapper marque fix mb-30">
-                                                                <div class="tp-hover-btn-item"><img src=public/new-assets/img/home-01/team/seo-specialist-2.jpg alt="seo-specialist"></div>
+                                                                <div class="tp-hover-btn-item"><img src=new-assets/img/home-01/team/seo-specialist-2.jpg alt="seo-specialist"></div>
                                                                 <div class="tp-team-content"><span>SEO specialist</span>
                                                                     <h4 class="tp-team-title-sm"><a>Gabriel Adams</a></h4>
                                                                 </div>
@@ -184,7 +184,7 @@
                                                         </div>
                                                         <div class="swiper-slide">
                                                             <div class="tp-team-item tp-hover-btn-wrapper marque fix mb-30">
-                                                                <div class="tp-hover-btn-item"><img src=public/new-assets/img/home-01/team/seo-specialist.jpg alt="seo-specialist"></div>
+                                                                <div class="tp-hover-btn-item"><img src=new-assets/img/home-01/team/seo-specialist.jpg alt="seo-specialist"></div>
                                                                 <div class="tp-team-content"><span>SEO specialist</span>
                                                                     <h4 class="tp-team-title-sm"><a>James Walker</a></h4>
                                                                 </div>
@@ -192,7 +192,7 @@
                                                         </div>
                                                         <div class="swiper-slide">
                                                             <div class="tp-team-item tp-hover-btn-wrapper marque fix mb-30">
-                                                                <div class="tp-hover-btn-item"><img src=public/new-assets/img/home-01/team/social-media-specialist.jpg alt="social-media-specialist"></div>
+                                                                <div class="tp-hover-btn-item"><img src=new-assets/img/home-01/team/social-media-specialist.jpg alt="social-media-specialist"></div>
                                                                 <div class="tp-team-content"><span>Social Media Specialist</span>
                                                                     <h4 class="tp-team-title-sm"><a>Neha Singh</a></h4>
                                                                 </div>
@@ -200,7 +200,7 @@
                                                         </div>
                                                         <div class="swiper-slide">
                                                             <div class="tp-team-item tp-hover-btn-wrapper marque fix mb-30">
-                                                                <div class="tp-hover-btn-item"><img src=public/new-assets/img/home-01/team/ui-ux-designer.jpg alt="ui-ux-designer"></div>
+                                                                <div class="tp-hover-btn-item"><img src=new-assets/img/home-01/team/ui-ux-designer.jpg alt="ui-ux-designer"></div>
                                                                 <div class="tp-team-content"><span>UI/UX Designer</span>
                                                                     <h4 class="tp-team-title-sm"><a>Arjun Patel</a></h4>
                                                                 </div>
@@ -208,7 +208,7 @@
                                                         </div>
                                                         <div class="swiper-slide">
                                                             <div class="tp-team-item tp-hover-btn-wrapper marque fix mb-30">
-                                                                <div class="tp-hover-btn-item"><img src=public/new-assets/img/home-01/team/video-photo-visulyser.jpg alt="video-photo-visulyser"></div>
+                                                                <div class="tp-hover-btn-item"><img src=new-assets/img/home-01/team/video-photo-visulyser.jpg alt="video-photo-visulyser"></div>
                                                                 <div class="tp-team-content"><span>Video Photo Visulyser</span>
                                                                     <h4 class="tp-team-title-sm"><a>Nia Alexandra</a></h4>
                                                                 </div>
@@ -216,7 +216,7 @@
                                                         </div>
                                                         <div class="swiper-slide">
                                                             <div class="tp-team-item tp-hover-btn-wrapper marque fix mb-30">
-                                                                <div class="tp-hover-btn-item"><img src=public/new-assets/img/home-01/team/web-developer.jpg alt="web-developer"></div>
+                                                                <div class="tp-hover-btn-item"><img src=new-assets/img/home-01/team/web-developer.jpg alt="web-developer"></div>
                                                                 <div class="tp-team-content"><span>Web Developer</span>
                                                                     <h4 class="tp-team-title-sm"><a>Naomi Collins</a></h4>
                                                                 </div>
@@ -271,7 +271,7 @@
                 </div>
             </main>
             <style>
-                /*LOGOS SLIDER CSS */
+                LOGOS SLIDER CSS
 
                 .logo-slider {
                     width: 100%;

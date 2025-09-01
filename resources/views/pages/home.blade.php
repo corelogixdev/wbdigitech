@@ -48,7 +48,7 @@
                                                 <div class="agency__content section__content"><span class="sub-title"> WELCOME <i class="fa-solid fa-arrow-right"></i></span>
                                                     <h2 class="title title-anim"> Work with the Best Digital Marketing Solutions in Dubai </h2>
                                                     <div class="paragraph">
-                                                        <p> As a <a href="https://g.co/kgs/ETRDvGK">top digital marketing agency Dubai</a>, we are aware that search marketing may not be a longer game won solely by links, technical SEO, and search ads, yet
+                                                        <p> As a <a href="#">top digital marketing agency Dubai</a>, we are aware that search marketing may not be a longer game won solely by links, technical SEO, and search ads, yet
                                                             it remains crucial! By intersecting technology and creativity, the smart teams at Volga Tigris craft exceptional digital experiences across all searchable platforms. </p>
                                                     </div>
                                                     <div class="skill-wrap">
@@ -490,49 +490,49 @@
                                         <div class="col-lg-12 d-flex main-service">
                                             <div class="home-page rounded web-development">
                                                 <div class="html-component mt-5">
-                                                    <div class="title text-white"><a href="https://www.volgatigris.com/web-development-company-dubai">Website Development</a></div>
+                                                    <div class="title text-white"><a href="#">Website Development</a></div>
                                                     <div class="sub-title text-white"> We develop any type of modern technologies websites. </div>
                                                 </div>
                                             </div>
                                             <div class="home-page rounded lead-generation d-none">
                                                 <div class="html-component">
-                                                    <div class="title text-white"><a href="https://www.volgatigris.com/graphics-design-company-dubai">Graphics Design</a></div>
+                                                    <div class="title text-white"><a href="#">Graphics Design</a></div>
                                                     <div class="sub-title text-white"> Volga Tigris, a leading graphic design company in Dubai, has been providing the best creative and innovative graphic solutions to our clients-home across UAE for years </div>
                                                 </div>
                                             </div>
                                             <div class="home-page rounded seo">
                                                 <div class="html-component">
-                                                    <div class="title text-white"><a href="https://www.volgatigris.com/best-seo-agency-dubai">SEO</a></div>
+                                                    <div class="title text-white"><a href="#">SEO</a></div>
                                                     <div class="sub-title text-white"> We make your business stand out among the crowd even if there is any high competition in business. We bring your business success among others through our best SEO practices. </div>
                                                 </div>
                                             </div>
                                             <div class="home-page rounded google-ads">
                                                 <div class="html-component">
-                                                    <div class="title text-white"><a href="https://www.volgatigris.com/services/google-ads">Lead Generation</a></div>
+                                                    <div class="title text-white"><a href="#">Lead Generation</a></div>
                                                     <div class="sub-title text-white"> Our secret chemistry of success for each industry dealing with us, we learn your business. We find the right customers for you. </div>
                                                 </div>
                                             </div>
                                             <div class="home-page rounded call-center">
                                                 <div class="html-component">
-                                                    <div class="title text-white"><a href="https://www.volgatigris.com/services/call-center-services-in-dubai">Call Center Service</a></div>
+                                                    <div class="title text-white"><a href="#">Call Center Service</a></div>
                                                     <div class="sub-title text-white"> We undertake all types of BPO and Call Center Jobs. we are operating with our in-house team from the Dubai office. </div>
                                                 </div>
                                             </div>
                                             <div class="home-page rounded social-meida-marketing">
                                                 <div class="html-component">
-                                                    <div class="title text-white"><a href="https://volgatigris.com/social-media-marketing-services-dubai">Social Media Marketing</a></div>
+                                                    <div class="title text-white"><a href="#">Social Media Marketing</a></div>
                                                     <div class="sub-title text-white"> Reach, attract, engage, and convert, these are the fundamental policy of social media marketing. Tie up with us for your business success. </div>
                                                 </div>
                                             </div>
                                             <div class="home-page rounded data-entry">
                                                 <div class="html-component">
-                                                    <div class="title text-white"><a href="https://volgatigris.com/data-entry-services-dubai">Data Entry / Data Cleansing</a></div>
+                                                    <div class="title text-white"><a href="#">Data Entry / Data Cleansing</a></div>
                                                     <div class="sub-title text-white"> We undertake all data-related work from hard to soft copy, data entry services, cleansing, and more. </div>
                                                 </div>
                                             </div>
                                             <div class="home-page rounded customer-satisfaction">
                                                 <div class="html-component">
-                                                    <div class="title text-white"><a href="https://volgatigris.com/customer-satisfaction-surveys">Customer Satisfaction Survey</a></div>
+                                                    <div class="title text-white"><a href="#">Customer Satisfaction Survey</a></div>
                                                     <div class="sub-title text-white"> Know your customer mind with our best survey team, we do online and direct surveys. </div>
                                                 </div>
                                             </div>
@@ -561,22 +561,22 @@
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="col-xl-4 col-lg-4 col-md-12"><img loading="lazy" src=https://volgatigris.com/public/new-assets/img/home-03/service/logistic.png class="be-lazy industry-img" alt="Logistics Industry">
+                                                <div class="col-xl-4 col-lg-4 col-md-12"><img loading="lazy" src="{{asset('new-assets/img/home-03/service/logistic.png')}}" class="be-lazy industry-img" alt="Logistics Industry">
                                                     <div class="industry-box card p-2"><span class="industry-title card-title">Logistic Industry</span></div>
                                                 </div>
-                                                <div class="col-xl-4 col-lg-4 col-md-12"><img loading="lazy" src=https://volgatigris.com/public/new-assets/img/home-03/service/real_estate.png class="be-lazy industry-img" alt="Civil Engineer">
+                                                <div class="col-xl-4 col-lg-4 col-md-12"><img loading="lazy" src="{{asset('new-assets/img/home-03/service/real_estate.png')}}" class="be-lazy industry-img" alt="Civil Engineer">
                                                     <div class="industry-box card p-2"><span class="industry-title card-title">Real Estate Industry</span></div>
                                                 </div>
-                                                <div class="col-xl-4 col-lg-4 col-md-12"><img loading="lazy" src=https://volgatigris.com/public/new-assets/img/home-03/service/fashion.png class="be-lazy industry-img" alt="Luxury Shop">
+                                                <div class="col-xl-4 col-lg-4 col-md-12"><img loading="lazy" src="{{asset('new-assets/img/home-03/service/fashion.png')}}" class="be-lazy industry-img" alt="Luxury Shop">
                                                     <div class="industry-box card p-2"><span class="industry-title card-title">Fashion Industry</span></div>
                                                 </div>
-                                                <div class="col-xl-4 col-lg-4 col-md-12"><img loading="lazy" src=https://volgatigris.com/public/new-assets/img/home-03/service/electronics.png class="be-lazy industry-img" alt="Electronic Shop">
+                                                <div class="col-xl-4 col-lg-4 col-md-12"><img loading="lazy" src="{{asset('new-assets/img/home-03/service/electronics.png')}}" class="be-lazy industry-img" alt="Electronic Shop">
                                                     <div class="industry-box card p-2"><span class="industry-title card-title">Electronic Industry</span></div>
                                                 </div>
-                                                <div class="col-xl-4 col-lg-4 col-md-12"><img loading="lazy" src=https://volgatigris.com/public/new-assets/img/home-03/service/food.png class="be-lazy industry-img" alt="Food Industry">
+                                                <div class="col-xl-4 col-lg-4 col-md-12"><img loading="lazy" src="{{asset('new-assets/img/home-03/service/food.png')}}" class="be-lazy industry-img" alt="Food Industry">
                                                     <div class="industry-box card p-2"><span class="industry-title card-title">Food Industry</span></div>
                                                 </div>
-                                                <div class="col-xl-4 col-lg-4 col-md-12"><img loading="lazy" src=https://volgatigris.com/public/new-assets/img/home-03/service/technology.png class="be-lazy industry-img" alt="Av Projects">
+                                                <div class="col-xl-4 col-lg-4 col-md-12"><img loading="lazy" src="{{asset('new-assets/img/home-03/service/technology.png')}}" class="be-lazy industry-img" alt="Av Projects">
                                                     <div class="industry-box card p-2"><span class="industry-title card-title">Technology Industry</span></div>
                                                 </div>
                                                 <div class="col-xl-12 col-lg-12 col-md-12 text-center pb-20"><a href="/customer" class="btn btn-warning text-dark mr-10">View More</a><a class="btn btn-warning text-dark open-popup">Get A Free Quote</a></div>
@@ -596,31 +596,31 @@
                                 <div class="row">
                                     <div class="col-xl-4 col-lg-6 col-md-6 mb-50">
                                         <div class="tp-blog-item">
-                                            <div class="tp-blog-thumb fix p-relative rounded page_speed_559951113"><img src=https://www.volgatigris.com/storage/breadcrumb-banner/volga-blog-5-1-1.png alt="Arabic SEO: A Missed Opportunity for Most UAE Brands" class="page_speed_1053140960" width=388 height=250>
+                                            <div class="tp-blog-thumb fix p-relative rounded page_speed_559951113"><img src="{{asset('storage/breadcrumb-banner/volga-blog-5-1-1.png')}}" alt="Arabic SEO: A Missed Opportunity for Most UAE Brands" class="page_speed_1053140960" width=388 height=250>
                                                 <div class="tp-blog-meta"><span class="bg-dark text-white">01 Jul, 2025</span></div>
                                             </div>
-                                            <div class="tp-blog-content"><a href="https://www.volgatigris.com/digital-marketing-category"><span class="text-white">Digital Marketing</span></a>
-                                                <h2 class="tp-blog-title-sm text-white"><a href="https://www.volgatigris.com/arabic-seo-a-missed-opportunity-for-most-uae-brands">Arabic SEO: A Missed Opportunity for Most UAE Brands</a></h2>
+                                            <div class="tp-blog-content"><a href="#"><span class="text-white">Digital Marketing</span></a>
+                                                <h2 class="tp-blog-title-sm text-white"><a href="#">Arabic SEO: A Missed Opportunity for Most UAE Brands</a></h2>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-xl-4 col-lg-6 col-md-6 mb-50">
                                         <div class="tp-blog-item">
-                                            <div class="tp-blog-thumb fix p-relative rounded page_speed_559951113"><img src=https://www.volgatigris.com/storage/blogs/volga-blog-image-5.jpg alt="How to Create a Digital Marketing Strategy for Healthcare" class="page_speed_1053140960" width=388 height=250>
+                                            <div class="tp-blog-thumb fix p-relative rounded page_speed_559951113"><img src="{{ asset('storage/blogs/volga-blog-image-5.jpg')}}" alt="How to Create a Digital Marketing Strategy for Healthcare" class="page_speed_1053140960" width=388 height=250>
                                                 <div class="tp-blog-meta"><span class="bg-dark text-white">24 May, 2025</span></div>
                                             </div>
-                                            <div class="tp-blog-content"><a href="https://www.volgatigris.com/digital-marketing-category"><span class="text-white">Digital Marketing</span></a>
-                                                <h2 class="tp-blog-title-sm text-white"><a href="https://www.volgatigris.com/how-to-create-a-digital-marketing-strategy-for-healthcare">How to Create a Digital Marketing Strategy for Healthcare</a></h2>
+                                            <div class="tp-blog-content"><a href="#"><span class="text-white">Digital Marketing</span></a>
+                                                <h2 class="tp-blog-title-sm text-white"><a href="#">How to Create a Digital Marketing Strategy for Healthcare</a></h2>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-xl-4 col-lg-6 col-md-6 mb-50">
                                         <div class="tp-blog-item">
-                                            <div class="tp-blog-thumb fix p-relative rounded page_speed_559951113"><img src=https://www.volgatigris.com/storage/blogs/volga-blog-image-4.jpg alt="Why Hiring a Dubai Marketing Firm Is Smart for Your Growth" class="page_speed_1053140960" width=388 height=250>
+                                            <div class="tp-blog-thumb fix p-relative rounded page_speed_559951113"><img src=#/storage/blogs/volga-blog-image-4.jpg alt="Why Hiring a Dubai Marketing Firm Is Smart for Your Growth" class="page_speed_1053140960" width=388 height=250>
                                                 <div class="tp-blog-meta"><span class="bg-dark text-white">24 May, 2025</span></div>
                                             </div>
-                                            <div class="tp-blog-content"><a href="https://www.volgatigris.com/digital-marketing-category"><span class="text-white">Digital Marketing</span></a>
-                                                <h2 class="tp-blog-title-sm text-white"><a href="https://www.volgatigris.com/why-hiring-a-dubai-marketing-firm-is-smart-for-your-growth">Why Hiring a Dubai Marketing Firm Is Smart for Your Growth</a></h2>
+                                            <div class="tp-blog-content"><a href="#/digital-marketing-category"><span class="text-white">Digital Marketing</span></a>
+                                                <h2 class="tp-blog-title-sm text-white"><a href="#/why-hiring-a-dubai-marketing-firm-is-smart-for-your-growth">Why Hiring a Dubai Marketing Firm Is Smart for Your Growth</a></h2>
                                             </div>
                                         </div>
                                     </div>
@@ -947,9 +947,9 @@
                                                     <h2> Enhance your Business Growth with Digital Marketing Agency Dubai </h2>
                                                 </div>
                                                 <p class="aos-init px-2 custom-peragraph-2 text-justify"> As a well-known digital marketing agency Dubai, Volga Tigris lets your business thrive in Dubai’s business landscape with the best strategies. Our vision is to help you reach potential audiences through
-                                                    your business website and social media channels. As fully equipped marketing experts in Dubai, we provide 360-degree digital marketing services including <a href="https://www.volgatigris.com/social-media-marketing-services-dubai">social media marketing services</a>,
-                                                    <a href="https://www.volgatigris.com/services/content-writing">Content Marketing</a>, <a href="https://www.volgatigris.com/best-seo-agency-dubai">SEO Services</a>, <a href="https://www.volgatigris.com/web-development-company-dubai">Website Development</a>                                                    and <a href="https://www.volgatigris.com/graphics-design-company-dubai">Graphic Designing</a>, <a href="https://www.volgatigris.com/web-design-company-dubai">Web Designing</a>, <a href="https://www.volgatigris.com/ppc-services-dubai">PPC Services</a>,
-                                                    and <a href="https://www.volgatigris.com/services/search-engine-marketing">SEM</a>. We’re a group of certified digital marketing professionals providing the most effective marketing strategies online
+                                                    your business website and social media channels. As fully equipped marketing experts in Dubai, we provide 360-degree digital marketing services including <a href="#/social-media-marketing-services-dubai">social media marketing services</a>,
+                                                    <a href="#/services/content-writing">Content Marketing</a>, <a href="#/best-seo-agency-dubai">SEO Services</a>, <a href="#/web-development-company-dubai">Website Development</a>                                                    and <a href="#/graphics-design-company-dubai">Graphic Designing</a>, <a href="#/web-design-company-dubai">Web Designing</a>, <a href="#/ppc-services-dubai">PPC Services</a>,
+                                                    and <a href="#/services/search-engine-marketing">SEM</a>. We’re a group of certified digital marketing professionals providing the most effective marketing strategies online
                                                     to drive more traffic, enhance leads, and skyrocket sales. Our result-oriented services made us one of the top digital marketing agencies in Dubai, UAE. <br><br> Our experience and expertise in marketing
                                                     services set us apart from other digital marketing agencies in Dubai. Volga Tigris, being the trusted digital marketing company in Dubai, assists you to achieve business success by implementing goal-driven
                                                     online marketing campaigns. Our mission is to deliver high-quality performance for your digital marketing campaigns. Modern-day customers are more vibrant in using various platforms on the Internet,
@@ -973,8 +973,8 @@
                                             </div>
                                             <div class="col-12 py-2 text-center">
                                                 <h2 class="custom-heading-h2 aos-init my-1"><b> Success Through Customized Solutions </b></h2>
-                                                <p class="aos-init custom-peragraph-2 text-justify"><a href="https://www.volgatigris.com/">Volga Tigris</a> is a trusted digital marketing agency by many businesses from different industries in Dubai, UAE. We’re dedicated to generating positive outcomes for
-                                                    the various services that we offer. As a reliable <a href="https://www.volgatigris.com/best-seo-agency-dubai">Seo Agency in Dubai</a>, offering extensive SEO services that boost your business website’s
+                                                <p class="aos-init custom-peragraph-2 text-justify"><a href="#/">Volga Tigris</a> is a trusted digital marketing agency by many businesses from different industries in Dubai, UAE. We’re dedicated to generating positive outcomes for
+                                                    the various services that we offer. As a reliable <a href="#/best-seo-agency-dubai">Seo Agency in Dubai</a>, offering extensive SEO services that boost your business website’s
                                                     rank on search engines, and ensure a positive market value for your business. To achieve positive business outcomes, our digital marketing experts pay close attention to our client’s every digital marketing
                                                     concern that hinders their business success. So, we implement strategic solutions to keep their business connected with their target audience while promoting the latest marketing trends. At Volga Tigris,
                                                     the leading digital marketing company Dubai, we work in unison with our clients-home to fulfil their requirements by utilizing the latest marketing trends and tactics. </p>
