@@ -38,32 +38,31 @@
     <script src="{{ asset('js/custom_main.js') }}"></script>
 
     {{-- External JS --}}
-    <script src=https://www.volgatigris.com/vendor/core/plugins/language/js/language-public.js?v=2.2.0 defer></script>
-    <script data-pagespeed-no-defer="1" src=https://www.volgatigris.com/themes/agon/new-assets/js/vendor/jquery.js></script>
-    <script src=https://www.volgatigris.com/themes/agon/new-assets/js/bootstrap-bundle.js defer></script>
-    <script src=https://www.volgatigris.com/themes/agon/new-assets/js/gsap.js defer></script>
-    <script src=https://www.volgatigris.com/themes/agon/new-assets/js/gsap-scroll-to-plugin.js defer></script>
-    <script src=https://www.volgatigris.com/themes/agon/new-assets/js/gsap-scroll-smoother.js defer></script>
-    <script src=https://www.volgatigris.com/themes/agon/new-assets/js/tween-max.js defer></script>
-    <script src=https://www.volgatigris.com/themes/agon/new-assets/js/gsap-split-text.js defer></script>
-    <script src=https://www.volgatigris.com/themes/agon/new-assets/js/chroma.min.js defer></script>
-    <script src=https://www.volgatigris.com/themes/agon/new-assets/js/gsap-scroll-trigger.js defer></script>
-    <script src=https://www.volgatigris.com/themes/agon/new-assets/js/scroll-magic.js defer></script>
-    <script src=https://www.volgatigris.com/themes/agon/new-assets/js/range-slider.js defer></script>
-    <script src=https://www.volgatigris.com/themes/agon/new-assets/js/swiper-bundle.js defer></script>
-    <script src=https://www.volgatigris.com/themes/agon/new-assets/js/slick.js defer></script>
-    <script src=https://www.volgatigris.com/themes/agon/new-assets/js/three.js defer></script>
-    <script src=https://www.volgatigris.com/themes/agon/new-assets/js/magnific-popup.js defer></script>
-    <script src=https://www.volgatigris.com/themes/agon/new-assets/js/nice-select.js defer></script>
-    <script src=https://www.volgatigris.com/themes/agon/new-assets/js/purecounter.js defer></script>
-    <script src=https://www.volgatigris.com/themes/agon/new-assets/js/beforeafter.js defer></script>
-    <script src=https://www.volgatigris.com/themes/agon/new-assets/js/isotope-pkgd.js defer></script>
-    <script src=https://www.volgatigris.com/themes/agon/new-assets/js/imagesloaded-pkgd.js defer></script>
-    <script src=https://www.volgatigris.com/themes/agon/new-assets/js/ajax-form.js defer></script>
-    <script src=https://www.volgatigris.com/themes/agon/new-assets/js/webgl.js defer></script>
-    <script src=https://www.volgatigris.com/themes/agon/new-assets/js/tp-cursor.js defer></script>
-    <script src=https://www.volgatigris.com/themes/agon/new-assets/js/main.js defer></script>
-
+    <script src="{{ asset('vendor/core/plugins/language/js/language-public.js?v=2.2.0')}}" defer></script>
+    <script src="{{ asset('themes/agon/new-assets/js/vendor/jquery.js') }}"></script>
+    <script src="{{ asset('themes/agon/new-assets/js/bootstrap-bundle.js') }}" defer></script>
+    <script src="{{ asset('themes/agon/new-assets/js/gsap.js') }}" defer></script>
+    <script src="{{ asset('themes/agon/new-assets/js/gsap-scroll-to-plugin.js') }}" defer></script>
+    <script src="{{ asset('themes/agon/new-assets/js/gsap-scroll-smoother.js') }}" defer></script>
+    <script src="{{ asset('themes/agon/new-assets/js/tween-max.js') }}" defer></script>
+    <script src="{{ asset('themes/agon/new-assets/js/gsap-split-text.js') }}" defer></script>
+    <script src="{{ asset('themes/agon/new-assets/js/chroma.min.js') }}" defer></script>
+    <script src="{{ asset('themes/agon/new-assets/js/gsap-scroll-trigger.js') }}" defer></script>
+    <script src="{{ asset('themes/agon/new-assets/js/scroll-magic.js') }}" defer></script>
+    <script src="{{ asset('themes/agon/new-assets/js/range-slider.js') }}" defer></script>
+    <script src="{{ asset('themes/agon/new-assets/js/swiper-bundle.js') }}" defer></script>
+    <script src="{{ asset('themes/agon/new-assets/js/slick.js') }}" defer></script>
+    <script src="{{ asset('themes/agon/new-assets/js/three.js') }}" defer></script>
+    <script src="{{ asset('themes/agon/new-assets/js/magnific-popup.js') }}" defer></script>
+    <script src="{{ asset('themes/agon/new-assets/js/nice-select.js') }}" defer></script>
+    <script src="{{ asset('themes/agon/new-assets/js/purecounter.js') }}" defer></script>
+    <script src="{{ asset('themes/agon/new-assets/js/beforeafter.js') }}" defer></script>
+    <script src="{{ asset('themes/agon/new-assets/js/isotope-pkgd.js') }}" defer></script>
+    <script src="{{ asset('themes/agon/new-assets/js/imagesloaded-pkgd.js') }}" defer></script>
+    <script src="{{ asset('themes/agon/new-assets/js/ajax-form.js') }}" defer></script>
+    <script src="{{ asset('themes/agon/new-assets/js/webgl.js') }}" defer></script>
+    <script src="{{ asset('themes/agon/new-assets/js/tp-cursor.js') }}" defer></script>
+    <script src="{{ asset('themes/agon/new-assets/js/main.js') }}" defer></script>
 
 
 </body>
