@@ -1,15 +1,15 @@
 
-<a href="https://wa.link/l6n2u7" class="float" title="whatsapp contact digital marketing agency dubai" target="_blank"><i class="fab fa-whatsapp my-float"></i></a>
+<a href="https://wa.link/" class="float" title="whatsapp contact digital marketing agency dubai" target="_blank"><i class="fab fa-whatsapp my-float"></i></a>
     <div class="floating-icons d-none">
         <div class="float-sm">
-            <div class="fl-fl float-wt d-none"><i class="fab fa-whatsapp"></i><a href="https://wa.link/u1o2oh" target="_blank"> Whatsapp</a></div>
-            <div class="fl-fl float-mail d-none"><i class="fa fa-envelope"></i><a href="mailto:mathew.v@volgatigris.com" target="_blank"> E-Mail Us</a></div>
-            <div class="fl-fl float-phone"><i class="fa fa-phone"></i><a href="tel:+971506252050" target="_blank"> Call Us</a></div>
+            <div class="fl-fl float-wt d-none"><i class="fab fa-whatsapp"></i><a href="https://wa.link/" target="_blank"> Whatsapp</a></div>
+            <div class="fl-fl float-mail d-none"><i class="fa fa-envelope"></i><a href="mailto:mail" target="_blank"> E-Mail Us</a></div>
+            <div class="fl-fl float-phone"><i class="fa fa-phone"></i><a href="tel:+971" target="_blank"> Call Us</a></div>
             <div class="fl-fl float-quote "><i class="fa fa-pencil"></i><a href="javascript:;" class="open-popup"> Get a Quote</a></div>
         </div>
     </div>
     <nav class="navbar navbar-mobile fixed-bottom d-none">
-        <div class="container-fluid d-flex justify-content-between"><a href="javascript:;" class="nav-link btn btn-quote flex-fill text-center open-popup">Get a Quote</a><a href="tel:+971506252050" class="nav-link btn btn-call flex-fill text-center">Call Now</a></div>
+        <div class="container-fluid d-flex justify-content-between"><a href="javascript:;" class="nav-link btn btn-quote flex-fill text-center open-popup">Get a Quote</a><a href="tel:+971" class="nav-link btn btn-call flex-fill text-center">Call Now</a></div>
     </nav>
     <div id="magic-cursor">
         <div id="ball"></div>
@@ -17,7 +17,7 @@
     <div class="tp-offcanvas-area">
         <div class="tp-offcanvas-wrapper">
             <div class="tp-offcanvas-top d-flex align-items-center justify-content-between">
-                <div class="tp-offcanvas-logo"><a href="#"><img class="logo-1" src=https://www.volgatigris.com/public/new-assets/img/logo/logo.png alt="Volga Tigris Logo"><img class="logo-2" src=https://www.volgatigris.com/public/new-assets/img/logo/logo-white.png alt="Volga Tigris Logo White"></a></div>
+                <div class="tp-offcanvas-logo"><a href="#"><img class="logo-1" src="{{ asset('new-assets/img/logo/logo.png alt="WbDigitech Logo') }}"><img class="logo-2" src="{{ asset('new-assets/img/logo/logo-white.png alt="Wbdigitech Logo White')}}"></a></div>
                 <div
                     class="tp-offcanvas-close"><button class="tp-offcanvas-close-btn" title="menu icon digital marketing agency dubai"><svg width=37 height=38 viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.19141 9.80762L27.5762 28.1924" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /><path d="M9.19141 28.1924L27.5762 9.80761" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg></button></div>
         </div>
@@ -29,26 +29,26 @@
             <div class="tp-offcanvas-gallery d-none">
                 <div class="row gx-2">
                     <div class="col-md-3 col-3">
-                        <div class="tp-offcanvas-gallery-img fix"><a href="#"><img src=https://www.volgatigris.com/public/new-assets/img/menu/offcanvas/offcanvas-1.jpg alt="Menu Icon"></a></div>
+                        <div class="tp-offcanvas-gallery-img fix"><a href="#"><img src="{{ asset('css/new-assets/img/menu/offcanvas/offcanvas-1.jpg')}}" alt="Menu Icon"></a></div>
                     </div>
                     <div class="col-md-3 col-3">
-                        <div class="tp-offcanvas-gallery-img fix"><a href="#"><img src=https://www.volgatigris.com/public/new-assets/img/menu/offcanvas/offcanvas-2.jpg alt="Menu Icon"></a></div>
+                        <div class="tp-offcanvas-gallery-img fix"><a href="#"><img src="{{ asset('css/new-assets/img/menu/offcanvas/offcanvas-2.jpg')}}" alt="Menu Icon"></a></div>
                     </div>
                     <div class="col-md-3 col-3">
-                        <div class="tp-offcanvas-gallery-img fix"><a href="#"><img src=https://www.volgatigris.com/public/new-assets/img/menu/offcanvas/offcanvas-3.jpg alt="Menu Icon"></a></div>
+                        <div class="tp-offcanvas-gallery-img fix"><a href="#"><img src="{{ asset('css/new-assets/img/menu/offcanvas/offcanvas-3.jpg')}}" alt="Menu Icon"></a></div>
                     </div>
                     <div class="col-md-3 col-3">
-                        <div class="tp-offcanvas-gallery-img fix"><a href="#"><img src=https://www.volgatigris.com/public/new-assets/img/menu/offcanvas/offcanvas-4.jpg alt="Menu Icon"></a></div>
+                        <div class="tp-offcanvas-gallery-img fix"><a href="#"><img src="{{ asset('css/new-assets/img/menu/offcanvas/offcanvas-4.jpg')}}" alt="Menu Icon"></a></div>
                     </div>
                 </div>
             </div>
             <div class="tp-offcanvas-contact">
                 <h3 class="tp-offcanvas-title sm">Contact Us</h3>
                 <ul>
-                    <li><a href="tel:+971 50 625 2050">Phone: +971 50 625 2050</a></li>
-                    <li><a href="tel:+971 4 358 7311">Landline: +971 4 358 7311</a></li>
-                    <li><a href="mailto:info@volgatigris.com">info@volgatigris.com</a></li>
-                    <li><a href="https://g.co/kgs/jJXXHj4">Business Venue Building 1st Floor Office No:117 Oud Metha - Dubai</a></li>
+                    <li><a href="tel:+971 00 000 0000">Phone: +971 00 000 0000</a></li>
+                    <li><a href="tel:+971 0 000 0000">Landline: +971 0 000 0000</a></li>
+                    <li><a href="mailto:info@wbdigitech.com">info@wbdigitech.com</a></li>
+                    <li><a href="https://g.co/">Business  - Dubai</a></li>
                 </ul>
             </div>
             <div class="tp-offcanvas-social d-none">
@@ -71,14 +71,14 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-4 text-end d-flex">
                             <!--<div class="col-md-4 text-center text-lg-end text-md-end">-->
-                            <div class="header-social"><a class="icon-socials" href="https://www.facebook.com/profile.php?id=61573038426926" target="_blank" title="Facebook"><img src=https://www.volgatigris.com/storage/social-icons/facebook.png alt="facebook logo" class="page_speed_405760890"></a>
+                            <div class="header-social"><a class="icon-socials" href="https://www.facebook.com/" target="_blank" title="Facebook"><img src="{{asset('storage/social-icons/facebook.png')}}" alt="facebook logo" class="page_speed_405760890"></a>
                                 <a
-                                    class="icon-socials" href="https://www.instagram.com/volgatigris/" target="_blank" title="Instagram"><img src=https://www.volgatigris.com/storage/social-icons/social.png alt="social logo" class="page_speed_405760890"></a><a class="icon-socials" href="https://www.linkedin.com/company/volga-tigris-digital-marketing-agency-dubai"
-                                        target="_blank" title="LinkedIn"><img src=https://www.volgatigris.com/storage/social-icons/linkedin.png alt="linkedin logo" class="page_speed_405760890"></a><a class="icon-socials" href="https://www.youtube.com/@volgatigrisofficial550"
-                                        target="_blank" title="Youtube"><img src=https://www.volgatigris.com/storage/social-icons/youtube.png alt="youtube logo" class="page_speed_405760890"></a></div>
+                                    class="icon-socials" href="https://www.instagram.com/" target="_blank" title="Instagram"><img src=" {{asset('/storage/social-icons/social.png')}}" alt="social logo" class="page_speed_405760890"></a><a class="icon-socials" href="https://www.linkedin.com/"
+                                        target="_blank" title="LinkedIn"><img src="{{ asset('storage/social-icons/linkedin.png')}}" alt="linkedin logo" class="page_speed_405760890"></a><a class="icon-socials" href="https://www.youtube.com/"
+                                        target="_blank" title="Youtube"><img src="{{ asset('storage/social-icons/youtube.png')}}" alt="youtube logo" class="page_speed_405760890"></a></div>
                             <!--</div>-->
                         </div>
-                        <div class="col-lg-8 col-md-4 d-none d-md-block d-lg-flex justify-content-end align-center-end"><a class="text-body-text line-right" href="tel:+971 (4) 358 7311" dir="ltr">+971 (4) 358 7311</a><a class="text-body-text line-right" href="tel:+971506252050" dir="ltr">+971 50 625 2050</a><a class="text-body-text" href="mailto:info@volgatigris.com"><i class="fi fi-rr-envelope"></i>&emsp;info@volgatigris.com</a>
+                        <div class="col-lg-8 col-md-4 d-none d-md-block d-lg-flex justify-content-end align-center-end"><a class="text-body-text line-right" href="tel:+971 (0) 000 0000" dir="ltr">+971 (0) 000 0000</a><a class="text-body-text line-right" href="tel:+971000000000" dir="ltr">+971 00 000 0000</a><a class="text-body-text" href="mailto:info@wbdigitech.com"><i class="fi fi-rr-envelope"></i>&emsp;info@wbdigitech.com</a>
                             <a
                                 href="javascript:;" class="page_speed_2108887721 btn btn-warning rounded text-black open-popup">Get a Free Quote</a>
                         </div>
@@ -89,38 +89,38 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-xl-2 col-lg-2 col-6">
-                        <div class="tp-header-logo"><a class="logo-1" href="{{ route('home')}}"><img src=https://www.volgatigris.com/public/new-assets/img/logo/logo.png alt="Volga Tigris Logo"></a><a class="logo-2" href="https://www.volgatigris.com"><img src=https://www.volgatigris.com/public/new-assets/img/logo/logo-white.png alt="Volga Tigris Logo White"></a></div>
+                        <div class="tp-header-logo"><a class="logo-1" href="{{ route('home')}}"><img src="{{ asset('new-assets/img/logo/logo.png')}}" alt="Wbdigitech Logo"></a><a class="logo-2" href="#"><img src="{{ asset('new-assets/img/logo/logo-white.png')}}" alt="Wbdigitech Logo White"></a></div>
                     </div>
                     <div class="col-xl-8 col-lg-9 d-none d-xl-block">
                         <div class=" tp-header-menu header-main-menu text-center">
                             <nav class="tp-main-menu-content">
                                 <ul>
                                     <li><a href={{ route('home')}}>Home</a></li>
-                                    <li><a href={{ route('about') }}>Our Story</a></li>
-                                    <li class="has-dropdown"><a href="#">Services</a>
+                                    <li><a href={{ route('about') }}>About Us</a></li>
+                                    <li class="has-dropdown"><a href="#">What We Do</a>
                                         <div class="tp-submenu submenu tp-mega-menu">
                                             <div class="tp-menu-fullwidth">
                                                 <div class="tp-megamenu-portfolio p-relative">
-                                                    <div class="tp-megamenu-portfolio-banner d-none "><img src=https://www.volgatigris.com/public/new-assets/img/menu/portfolio-menu/portfolio.png alt="Volga Tigris Portfolio"></div>
+                                                    <div class="tp-megamenu-portfolio-banner d-none "><img src="{{ asset('new-assets/img/menu/portfolio-menu/portfolio.png')}}" alt="Wbdigitech Portfolio"></div>
                                                     <div class="row gx-50">
                                                         <div class="col-xxl-12 col-xl-12">
                                                             <div class="tp-megamenu-list-box">
                                                                 <div class="row gx-50">
                                                                     <div class="col-xxl-2 col-xl-2">
                                                                         <div class="tp-megamenu-list">
-                                                                            <h4 class="tp-megamenu-title"><a href="https://www.volgatigris.com/web-development-company-dubai">WEB DESIGN & DEVELOPMENT</a></h4>
+                                                                            <h4 class="tp-megamenu-title"><a href="#">WEB DESIGN & DEVELOPMENT</a></h4>
                                                                             <div class="tp-megamenu-list-wrap tp-portfolio-menu-style">
                                                                                 <ul>
-                                                                                    <li><a href="https://www.volgatigris.com/web-development-company-dubai">Website Development</a></li>
+                                                                                    <li><a href="#">Website Development</a></li>
                                                                                     <!--<li><a href="services/cms-website-development-services-in-dubai">CMS Website</a></li>-->
                                                                                     <!--<li><a href="services/landing-page-design-services">Landing pages</a></li>-->
-                                                                                    <li><a href="https://www.volgatigris.com/web-design-company-dubai">Website Design</a></li>
-                                                                                    <li><a href="https://www.volgatigris.com/ecommerce-development-company-in-dubai">Ecommerce Development</a></li>
-                                                                                    <li><a href="https://www.volgatigris.com/services/shopify-development-company-dubai">Shopify Development</a></li>
-                                                                                    <li><a href="https://www.volgatigris.com/services/website-maintenance-services-dubai">Website maintenance</a></li>
-                                                                                    <li><a href="https://www.volgatigris.com/services/wordpress-development-company-in-dubai">WordPress Development</a></li>
+                                                                                    <li><a href="#">Website Design</a></li>
+                                                                                    <li><a href="#">Ecommerce Development</a></li>
+                                                                                    <li><a href="#">Shopify Development</a></li>
+                                                                                    <li><a href="#">Website maintenance</a></li>
+                                                                                    <li><a href="#">WordPress Development</a></li>
                                                                                     <!--<li><a href="services/responsive-website-development-company">Responsive Websites</a></li>-->
-                                                                                    <li><a href="https://www.volgatigris.com/services/content-writing">Content Writing</a></li>
+                                                                                    <li><a href="#">Content Writing</a></li>
                                                                                     <!--<li><a href="services/content-management">Content Management</a></li>-->
                                                                                     <!--<li><a href="brand-management-services-dubai">Brand Management</a></li>-->
                                                                                     <!--<li><a href="services/web-hosting-company-dubai">Website Hosting Service</a></li>-->
@@ -131,18 +131,18 @@
                                                                     </div>
                                                                     <div class="col-xxl-2 col-xl-2">
                                                                         <div class="tp-megamenu-list">
-                                                                            <h4 class="tp-megamenu-title"><a href="https://www.volgatigris.com/services/google-ads">GOOGLE ADS MANAGEMENT</a></h4>
+                                                                            <h4 class="tp-megamenu-title"><a href="#">GOOGLE ADS MANAGEMENT</a></h4>
                                                                             <div class="tp-megamenu-list-wrap tp-portfolio-menu-style">
                                                                                 <ul>
-                                                                                    <li><a href="https://www.volgatigris.com/ppc-services-dubai">PPC</a></li>
+                                                                                    <li><a href="#">PPC</a></li>
                                                                                     <!--<li><a href="services/ppc-audit">PPC Audit</a></li>-->
                                                                                     <!--<li><a href="services/google-ads">Google Ads</a></li>-->
                                                                                     <!--<li><a href="services/startup-ppc">Startup PPC</a></li>-->
-                                                                                    <li><a href="https://www.volgatigris.com/services/google-shopping-ads">Google Shopping Ads</a></li>
+                                                                                    <li><a href="#">Google Shopping Ads</a></li>
                                                                                     <!--<li><a href="services/search-advertising-ads">Search Advertising Ads</a></li>-->
                                                                                     <!--<li><a href="services/mobile-display-advertising">Mobile Display Advertising</a></li>-->
-                                                                                    <li><a href="https://www.volgatigris.com/amazon-marketing">Amazon Marketing</a></li>
-                                                                                    <li><a href="https://www.volgatigris.com/services/google-ads-management">Google Ads Management</a></li>
+                                                                                    <li><a href="#">Amazon Marketing</a></li>
+                                                                                    <li><a href="#">Google Ads Management</a></li>
                                                                                     <!--<li><a href="services/remarketing-advertising">Remarketing Advertising</a></li>-->
                                                                                     <!--<li><a href="services/search-engine-marketing">Search Engine Marketing (SEM)</a></li>-->
                                                                                 </ul>
@@ -151,70 +151,70 @@
                                                                     </div>
                                                                     <div class="col-xxl-2 col-xl-2">
                                                                         <div class="tp-megamenu-list tp-megamenu-list-2 ml-20">
-                                                                            <h4 class="tp-megamenu-title"><a href="https://www.volgatigris.com/best-seo-agency-dubai">SEO</a></h4>
+                                                                            <h4 class="tp-megamenu-title"><a href="#">SEO</a></h4>
                                                                             <div class="tp-megamenu-list-wrap">
                                                                                 <ul class="">
                                                                                     <!--<li><a href="services/on-page-seo">On Page Search Engine Optimisation</a></li>-->
                                                                                     <!--<li><a href="services/off-page-search-engine-optimisation">Off Page Search Engine Optimisation</a></li>-->
                                                                                     <!--<li><a href="services/google-business-profile-optimisation">Google Business Profile Optimisation</a></li>-->
-                                                                                    <li><a href="https://www.volgatigris.com/content-marketing-service">Content Marketing</a></li>
-                                                                                    <li><a href="https://www.volgatigris.com/services/reputation-management">Reputation management</a></li>
-                                                                                    <li><a href="https://www.volgatigris.com/services/search-engine-optimisation-audit">Search Engine Optimisation Audit</a></li>
+                                                                                    <li><a href="#">Content Marketing</a></li>
+                                                                                    <li><a href="#">Reputation management</a></li>
+                                                                                    <li><a href="#">Search Engine Optimisation Audit</a></li>
                                                                                     <!--<li><a href="services/keyword-research">Keyword Research</a></li>-->
                                                                                     <!--<li><a href="services/local-seo">Local SEO</a></li>-->
                                                                                     <!--<li><a href="services/international-seo">International SEO</a></li>-->
                                                                                     <!--<li><a href="services/markups">Markups</a></li>-->
                                                                                     <!--<li><a href="services/shopify-seo">Shopify SEO</a></li>-->
-                                                                                    <li><a href="https://www.volgatigris.com/ecommerce-seo">Ecommerce SEO</a></li>
+                                                                                    <li><a href="#">Ecommerce SEO</a></li>
                                                                                 </ul>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-xxl-2 col-xl-2">
                                                                         <div class="tp-megamenu-list tp-megamenu-list-2 ml-20">
-                                                                            <h4 class="tp-megamenu-title"><a href="https://www.volgatigris.com/services/data-cleansing-services-in-dubai">DATA SERVICES</a></h4>
+                                                                            <h4 class="tp-megamenu-title"><a href="#">DATA SERVICES</a></h4>
                                                                             <div class="tp-megamenu-list-wrap">
                                                                                 <ul>
                                                                                     <!--<li><a href="services/marketing-agency">Marketing Agency</a></li>-->
-                                                                                    <li><a href="https://www.volgatigris.com/data-processing-services-dubai">Data Processing</a></li>
-                                                                                    <li><a href="https://www.volgatigris.com/services/data-cleansing-services-in-dubai">Data Cleansing</a></li>
-                                                                                    <li><a href="https://www.volgatigris.com/data-entry-services-dubai">Data Entry</a></li>
-                                                                                    <li><a href="https://www.volgatigris.com/call-center-services-in-dubai">Call Center</a></li>
-                                                                                    <li><a href="https://www.volgatigris.com/email-marketing-services">Email Marketing</a></li>
-                                                                                    <li><a href="https://www.volgatigris.com/telemarketing-service">Telemarketing</a></li>
-                                                                                    <li><a href="https://www.volgatigris.com/customer-care-service">Customer care</a></li>
-                                                                                    <li><a href="https://www.volgatigris.com/virtual-reception-services">Virtual Reception</a></li>
-                                                                                    <li><a href="https://www.volgatigris.com/customer-satisfaction-surveys">Customer Satisfaction Survey</a></li>
+                                                                                    <li><a href="#">Data Processing</a></li>
+                                                                                    <li><a href="#">Data Cleansing</a></li>
+                                                                                    <li><a href="#">Data Entry</a></li>
+                                                                                    <li><a href="#">Call Center</a></li>
+                                                                                    <li><a href="#">Email Marketing</a></li>
+                                                                                    <li><a href="#">Telemarketing</a></li>
+                                                                                    <li><a href="#">Customer care</a></li>
+                                                                                    <li><a href="#">Virtual Reception</a></li>
+                                                                                    <li><a href="#">Customer Satisfaction Survey</a></li>
                                                                                 </ul>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-xxl-2 col-xl-2">
                                                                         <div class="tp-megamenu-list tp-megamenu-list-2 ml-20">
-                                                                            <h4 class="tp-megamenu-title page_speed_424355281"><a href="https://www.volgatigris.com/social-media-marketing-services-dubai">SOCIAL MEDIA MARKETING</a></h4>
+                                                                            <h4 class="tp-megamenu-title page_speed_424355281"><a href="#">SOCIAL MEDIA MARKETING</a></h4>
                                                                             <div class="tp-megamenu-list-wrap">
                                                                                 <ul>
-                                                                                    <li><a href="https://www.volgatigris.com/services/facebook-marketing-in-dubai">Facebook Advertising</a></li>
-                                                                                    <li><a href="https://www.volgatigris.com/services/linkedin-marketing">LinkedIn Advertising</a></li>
-                                                                                    <li><a href="https://www.volgatigris.com/services/pinterest-marketing">Pinterest Advertising</a></li>
-                                                                                    <li><a href="https://www.volgatigris.com/services/instagram-marketing-agency">Instagram Advertising</a></li>
-                                                                                    <li><a href="https://www.volgatigris.com/services/twitter-marketing">Twitter Advertising</a></li>
-                                                                                    <li><a href="https://www.volgatigris.com/services/youtube-marketing">Youtube Ads</a></li>
-                                                                                    <li><a href="https://www.volgatigris.com/services/tik-tok-advertising">Tiktok Ads</a></li>
-                                                                                    <li><a href="https://www.volgatigris.com/services/snapchat-advertising">Snap Chat Ads</a></li>
-                                                                                    <li><a href="https://www.volgatigris.com/services/whatsapp-marketing">Whatsapp Marketing</a></li>
+                                                                                    <li><a href="#">Facebook Advertising</a></li>
+                                                                                    <li><a href="#">LinkedIn Advertising</a></li>
+                                                                                    <li><a href="#">Pinterest Advertising</a></li>
+                                                                                    <li><a href="#">Instagram Advertising</a></li>
+                                                                                    <li><a href="#">Twitter Advertising</a></li>
+                                                                                    <li><a href="#">Youtube Ads</a></li>
+                                                                                    <li><a href="#">Tiktok Ads</a></li>
+                                                                                    <li><a href="#">Snap Chat Ads</a></li>
+                                                                                    <li><a href="#">Whatsapp Marketing</a></li>
                                                                                 </ul>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-xxl-2 col-xl-2">
                                                                         <div class="tp-megamenu-list tp-megamenu-list-2 ml-20">
-                                                                            <h4 class="tp-megamenu-title page_speed_424355281"><a href="https://www.volgatigris.com/graphics-design-company-dubai">GRAPHIC DESINGING</a></h4>
+                                                                            <h4 class="tp-megamenu-title page_speed_424355281"><a href="#">GRAPHIC DESINGING</a></h4>
                                                                             <div class="tp-megamenu-list-wrap">
                                                                                 <ul>
-                                                                                    <li><a href="https://www.volgatigris.com/services/logo-design">Logo design</a></li>
-                                                                                    <li><a href="https://www.volgatigris.com/services/leaflet-design">Leaflet Design</a></li>
-                                                                                    <li><a href="https://www.volgatigris.com/services/brochure-design">Brochure design</a></li>
+                                                                                    <li><a href="#">Logo design</a></li>
+                                                                                    <li><a href="#">Leaflet Design</a></li>
+                                                                                    <li><a href="#">Brochure design</a></li>
                                                                                 </ul>
                                                                             </div>
                                                                         </div>
@@ -227,8 +227,8 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li><a href="https://www.volgatigris.com/blog">Blog</a></li>
-                                    <li><a href="https://www.volgatigris.com/contact-us">Contact</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Contact</a></li>
                                 </ul>
                             </nav>
                         </div>
