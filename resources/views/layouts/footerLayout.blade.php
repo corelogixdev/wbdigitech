@@ -96,11 +96,11 @@
                 <div class="tp-copyright-wrap">
                     <div class="row align-items-center">
                         <div class="col-md-6">
-                            <div class="tp-copyright-logo text-center text-md-start"><a href="#"><img src="{{ asset('new-assets/img/logo/logo-white.png')}}" alt="WBdigitech Logo White"></a></div>
+                            <div class="tp-copyright-logo text-center text-md-start"><a href="#"><img src="{{ asset('css/new-assets/img/logo/logo.jpeg')}}" alt="WBdigitech Logo White"></a></div>
                         </div>
                         <div class="col-md-6">
                             <div class="tp-copyright-text text-center text-md-end">
-                                <p>Copyright © Wbdigi Tech. All Rights Reserved</p>
+                                <p>Copyright © WB-Digitech. All Rights Reserved</p>
                             </div>
                         </div>
                         <!--<div class="col-md-4">-->
