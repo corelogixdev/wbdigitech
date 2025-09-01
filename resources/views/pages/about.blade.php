@@ -120,7 +120,7 @@
                                                     <div class="swiper-wrapper">
                                                         <div class="swiper-slide">
                                                             <div class="tp-team-item tp-hover-btn-wrapper marque fix mb-30">
-                                                                <div class="tp-hover-btn-item"><img src=new-assets/img/home-01/team/accountant.jpg alt="accountant"></div>
+                                                                <div class="tp-hover-btn-item"><img src=css/new-assets/img/home-01/team/accountant.jpg alt="accountant"></div>
                                                                 <div class="tp-team-content"><span>Accountant</span>
                                                                     <h4 class="tp-team-title-sm"><a>Rohan Sharma</a></h4>
                                                                 </div>
@@ -128,7 +128,7 @@
                                                         </div>
                                                         <div class="swiper-slide">
                                                             <div class="tp-team-item tp-hover-btn-wrapper marque fix mb-30">
-                                                                <div class="tp-hover-btn-item"><img src=new-assets/img/home-01/team/client-co-ordinator.jpg alt="client-co-ordinator"></div>
+                                                                <div class="tp-hover-btn-item"><img src=css/new-assets/img/home-01/team/client-co-ordinator.jpg alt="client-co-ordinator"></div>
                                                                 <div class="tp-team-content"><span>Client Co-Ordinator</span>
                                                                     <h4 class="tp-team-title-sm"><a>Siddharth Menon</a></h4>
                                                                 </div>

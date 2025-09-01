@@ -162,7 +162,7 @@
     <div class="ads-popup">
         <div class="popup-wrapper">
             <div class="popup-head"><button class="popup-close" aria-label="Close popup">X</button></div>
-            <div class="popup-img"><img src="{{ asset('new-assets/img/logo/logo.png')}}" alt="Wbdigitech Logo"></div>
+            <div class="popup-img"><img src="{{ asset('css/new-assets/img/logo/logo.jpeg')}}" alt="Wbdigitech Logo"></div>
             <div class="popup-body">
                 <p class="popup-headline">Call Now For The <br> Best Digital Marketing Services</p>
                 <ul class="popup-features">
@@ -182,7 +182,7 @@
     </div>
     <div class="tp-footer-shape-wrap z-index-5 smooth d-none">
         <a href="#">
-            <div class="tp-footer-shape p-relative"><img class="img-1" src="{{ asset('new-assets/img/home-01/footer/footer-circle-shape-1.png') }}" alt="Wbdigitech"><img class="img-2" src="{{ asset('new-assets/img/home-01/footer/footer-circle-shape-2.png')}}"
+            <div class="tp-footer-shape p-relative"><img class="img-1" src="{{ asset('css/new-assets/img/home-01/footer/footer-circle-shape-1.png') }}" alt="Wbdigitech"><img class="img-2" src="{{ asset('css/new-assets/img/home-01/footer/footer-circle-shape-2.png')}}"
                     alt="Wbdigitech"><span></span></div>
         </a>
     </div>
