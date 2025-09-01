@@ -1,0 +1,9 @@
+
+        :root {
+            --color-primary: rgb(0, 0, 0);
+            --primary-color: rgb(0, 0, 0);
+            --color-secondary: rgb(0, 0, 0);
+            --color-danger: #EF476F;
+            --primary-font: 'Poppins', sans-serif;
+            --secondary-font: 'Poppins', sans-serif;
+        }

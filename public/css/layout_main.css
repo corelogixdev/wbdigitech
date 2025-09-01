@@ -1,0 +1,1487 @@
+
+        /*.delay-load{*/
+
+        /* display: none;*/
+
+        /*}*/
+
+        @font-face {
+            font-family: 'NeutraDisp';
+            src: url('https://www.volgatigris.com/public/new-assets/fonts/NeutraDisp-Titling.woff') format('woff');
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        .sv-hero-title {
+            font-size: 80px;
+        }
+
+        .about-us-banner {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-about/hero/hero-1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .nice-select.open .list {
+            height: 300px;
+            overflow-y: scroll;
+        }
+
+        #header-sticky {
+            background: #ffffffe6;
+        }
+
+        .service-details__area {
+            margin-top: 150px !important;
+        }
+
+        .pb-120 {
+            padding-bottom: 20px !important;
+        }
+
+        .showcase-details-2-title-box {
+            margin-bottom: 10px !important;
+        }
+
+        .showcase-details-2-content p {
+            padding: 10px 0px !important;
+        }
+
+        .tp_fade_bottom_custom,
+        .tp-about-2-content-custom {
+            transform: translate(0px, 0px);
+        }
+
+        .container-services {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .mega-banners {
+            width: 62%;
+        }
+
+        .column {
+            width: 30px;
+            height: 100px;
+            background-color: #3498db;
+            margin: 0 5px;
+            /* 10px space between columns */
+            transition: width 0.5s ease, transform 0.5s ease;
+        }
+
+        .column:hover {
+            width: 150px;
+            transform: rotate(5deg) scale(1.1);
+        }
+
+        .tp-hero-content {
+            max-width: 1080px;
+            margin: 0 auto;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .seo-page .showcase-details-2-bg {
+            padding-top: 200px !important;
+        }
+
+        .seo-page p {
+            text-align: justify;
+        }
+
+        .seo-page .sv-service-title {
+            color: black;
+        }
+
+        .seo-page .tp-about-2-section-title {
+            font-size: 50px !important;
+            font-weight: 500;
+            line-height: 1;
+            letter-spacing: -1.2px !important;
+        }
+
+        .seo-page .tp-hero-2-title {
+            font-size: 25px !important;
+            letter-spacing: 1px !important;
+        }
+
+        /*.seo-page .tp-hero-title{*/
+
+        /* color:white !important;*/
+
+        /*}*/
+
+        .seo-page .text-1 {
+            font:100;
+        }
+
+
+        .main-service {
+            height: 60vh;
+        }
+
+        .services .home-page {
+            margin: 18px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 10%;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            transition: width 0.5s;
+        }
+
+        .services .web-development {
+            background-image: url('https://volgatigris.com/public/new-assets/demo/storage/service-pages/case-img1.png');
+        }
+
+        .services .lead-generation {
+            background-image: url('https://volgatigris.com/public/new-assets/demo/storage/service-pages/case-img6.png');
+        }
+
+        .services .seo {
+            background-image: url('https://volgatigris.com/public/new-assets/demo/storage/service-pages/case-img2.png');
+        }
+
+        .services .google-ads {
+            background-image: url('https://volgatigris.com/public/new-assets/demo/storage/service-pages/case-img3.png');
+        }
+
+        .services .call-center {
+            background-image: url('https://volgatigris.com/public/new-assets/demo/storage/service-pages/call-centre-services.jpg');
+        }
+
+        .services .social-meida-marketing {
+            background-image: url('https://volgatigris.com/public/new-assets/demo/storage/service-pages/case-img4.png');
+        }
+
+        .services .data-entry {
+            background-image: url('https://volgatigris.com/public/new-assets/demo/storage/service-pages/entry-data-cleansing.jpg');
+        }
+
+        .services .customer-satisfaction {
+            background-image: url('https://volgatigris.com/public/new-assets/demo/storage/service-pages/case-img7.png');
+        }
+
+        .services .home-page:hover {
+            width: 55%;
+        }
+
+        .services .html-component {
+            text-align: center;
+            transition: all 0.5s ease-in-out;
+            position: absolute;
+            bottom: 8vh;
+            width: 100%;
+        }
+
+        .services .html-component:hover {
+            padding: 0% 40px;
+        }
+
+        .services .title {
+            font-size: 24px;
+            white-space: nowrap;
+            transform: rotate(-90deg);
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .services .home-page:hover .title {
+            transform: rotate(0);
+            font-size: 17px;
+            font-weight: 700;
+        }
+
+        .services .sub-title {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .services .home-page:hover .sub-title {
+            display: block;
+            opacity: 1;
+        }
+
+        .services .seo .html-component {
+            bottom: 6vh;
+        }
+
+        .tp-megamenu-title {
+            padding-left: 0px !important;
+        }
+   
+        .slider-container {
+            overflow: hidden;
+            width: 100%;
+            max-width: 1200px;
+            position: relative;
+        }
+
+        .slider-wrapper {
+            display: flex;
+            transition: transform 1s linear;
+            /* Slower and smoother transition */
+        }
+
+        .slider-item {
+            flex: 0 0 20%;
+            text-align: center;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .brands .tp-brand-item img {
+            width: 135px !important;
+            height: auto;
+        }
+
+        .tp-brand-area.brands {
+            padding-top: 0px;
+            margin-bottom: 5% !important;
+        }
+
+        .textline-1 {
+            font-weight: 700;
+            font-size: 100px;
+            line-height: 1;
+            text-transform: uppercase;
+            color: #ffffff;
+            font-family: 'Neutra Display', sans-serif;
+            ;
+        }
+
+        .textline-2 {
+            font-weight: 700;
+            font-size: 100px;
+            line-height: 1;
+            text-transform: uppercase;
+            color: white;
+            font-family: 'Neutra Display', sans-serif;
+            ;
+        }
+
+        .we-promise-slide .swiper-slide {
+            width: 55% !important;
+        }
+
+        .marquee {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .marquee-content i {
+            color: #ff6900 !important;
+        }
+
+        .marquee-content {
+            display: flex;
+            white-space: nowrap;
+            animation: marquee 30s linear infinite;
+            /* Increased duration for slower speed */
+        }
+
+        .marquee-content .textline-1 {
+            padding: 10px;
+            color: #000000;
+            -webkit-text-fill-color: #00000000;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #ffffff;
+        }
+
+        .textline-1 i {
+            color: #ff6900 !important;
+            -webkit-text-fill-color: #212529;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #ff6900 !important;
+        }
+
+        .industry-img {
+            height: 520px;
+            width: auto;
+            border-radius: 15px;
+            position: relative;
+            z-index: 999;
+        }
+
+        .industry-box {
+            margin-top: -40px;
+            margin-bottom: 25px;
+            border-radius: 0px 0px 15px 15px;
+            display: grid;
+            background: black;
+            color: white;
+        }
+
+        .industry-title {
+            padding: 45px 0px 0px 0px;
+            font-size: 30px;
+            text-decoration: underline;
+        }
+
+        .tp-hero-content p {
+            color: black !important;
+            margin-left: 0px;
+        }
+
+        /* Animation for sliding text */
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(20%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .nav-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .tp-brand-title {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .tp-brand-pb80 {
+            padding-bottom: 80px;
+            padding-top: 20px;
+        }
+
+        .our-story-page img {
+            width: 65%;
+        }
+
+        .pop-form {
+            width: 25%;
+        }
+
+        .btn-close {
+            padding: 0 !important;
+            top: 10px !important;
+            right: 10px !important;
+            height: 30px !important;
+            width: 30px !important;
+        }
+
+        .modal-width {
+            width: 25% !important;
+        }
+
+        @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+            .tp-brand-area.brands {
+                padding-top: 0px;
+                margin-bottom: 5% !important;
+            }
+        }
+
+        @media(max-width: 1024px) {
+            .tp-hero-title-box {
+                margin-top: 12% !important;
+            }
+            .tp-hero-title {
+                font-weight: 400;
+                font-size: 100px !important;
+            }
+            .tp-hero-subtitle {
+                left: -60% !important;
+            }
+            .tp-hero-title-img img {
+                width: 15% !important;
+            }
+        }
+
+        @media(max-width: 767px) {
+            .text-md-left {
+                text-align: left !important;
+            }
+            .web-development-page-main {
+                margin-bottom: 50% !important;
+            }
+            .tp-hero-4-content .tp-section-title-200 {
+                font-size: 43px !important;
+                letter-spacing: 1px;
+            }
+            .tp-hero-4-thumb {
+                display: none !important;
+            }
+            .seo-page p {
+                text-align: left !important;
+            }
+            .mega-banners {
+                width: 100%;
+            }
+            .showcase-details-2-content p {
+                font-size: 23px !important;
+                line-height: normal !important;
+            }
+            .industry-img {
+                height: 400px;
+                width: auto;
+            }
+            .home-main-slider {
+                height: 535px !important;
+            }
+            .service-details__space {
+                padding-top: 25px !important;
+            }
+            .tp-project-item {
+                margin-bottom: 0px !important;
+            }
+            .tp-project-img.height-2 {
+                height: 100%;
+                margin-bottom: 5px;
+            }
+            .tp-project-img.height-3,
+            .tp-project-img.height-4 {
+                height: 10% !important;
+            }
+            .tp-brand-area.brands {
+                padding-top: 0px !important;
+                margin-bottom: 5% !important;
+            }
+            .brands .tp-brand-title-box {
+                padding-top: 50px;
+            }
+            .tp-brand-ptb {
+                text-align: center !important;
+                padding-top: 37px !important;
+            }
+            .tp-service-area {
+                padding-top: 80px !important;
+            }
+            .pop-form {
+                width: 85% !important;
+            }
+            .modal-width {
+                width: 90% !important;
+            }
+            .tp-project-textline span.textline-2 {
+                margin-right: 0px !important;
+            }
+            .tp-project-textline span {
+                font-size: 40px !important;
+            }
+            .tp-project-textline span img {
+                margin: 0 10px !important;
+                width: 8% !important;
+                transform: translateY(-15px) !important;
+                animation: rotate2 15s linear infinite;
+                margin-top: 18px !important;
+            }
+            .sv-hero-title {
+                font-size: 40px !important;
+                letter-spacing: 0px;
+            }
+            .textline-1 {
+                font-weight: 500;
+                font-size: 60px;
+                line-height: 1;
+                text-transform: uppercase;
+                color: var(--tp-common-black);
+                font-family: 'Neutra Display', sans-serif;
+                ;
+            }
+            .textline-2 {
+                font-size: 60px;
+            }
+            .we-promise-slide .swiper-slide {
+                width: 37% !important;
+            }
+            .tp-hero-title {
+                font-weight: 600;
+                font-size: 30px !important;
+            }
+        }
+
+        .tp-footer-big-title {
+            font-size: 130px !important;
+        }
+
+        .tp-copyright-logo img {
+            width: 30%;
+        }
+
+        @media (max-width: 767px) {
+            .tp-blog-standard-thumb-box img {
+                margin-top: 21px !important;
+            }
+            .tp-megamenu-title {
+                background-color: #f1f1f1;
+                padding-top: 20px;
+            }
+            .tp-blog-standard-thumb-box {
+                height: 246px !important;
+            }
+            .tp-blog-standard-area {
+                padding-top: 0px !important;
+            }
+            .marquee-content {
+                animation: marquee 5s linear infinite;
+                /* Increased duration for slower speed */
+            }
+        }
+
+        .prev-btn {
+            left: 10px;
+        }
+
+        .next-btn {
+            right: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .slider-item {
+                flex: 0 0 100%;
+                /* 1 logo on mobile */
+            }
+            .tp-studio-height {
+                height: 190vh !important;
+                width: auto;
+            }
+            .tp-footer-big-title {
+                font-size: 90px !important;
+            }
+            .tp-copyright-logo img {
+                width: 60% !important;
+            }
+        }
+
+        .tp-brand-4-item {
+            border: 1.5px solid rgb(255 193 7);
+            text-align: center;
+            margin: -1px 0 0 -1px;
+            padding: 10px 30px;
+            height: 150px;
+            overflow: hidden;
+        }
+
+        @media (min-width: 601px) and (max-width: 999px) {
+            .slider-item {
+                flex: 0 0 50%;
+                /* 2 logos on tablets */
+            }
+        }
+
+        .tp-brand-area.brands {
+            background-image: linear-gradient(90deg, #0B3F28 0%, #197049 100%);
+        }
+
+        /*.header-top.header-top-green, .we-promise-slide{*/
+
+        /* background-image: linear-gradient(90deg, #0B3F28 0%, #197049 100%) !important ;*/
+
+        /*}*/
+
+        .group-banner {
+            /* The image used */
+            background-image: url('https://volgatigris.com/public/new-assets/img/inner-service/hero/hero-1-2.jpg');
+            /* Replace with your image URL */
+            /* Create the parallax scrolling effect */
+            min-height: 750px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .home-second-box-image {
+            background-image: url('https://volgatigris.com/public/new-assets/img/inner-service/home-box-2.png');
+        }
+
+        .home-second-box-image h3 b {
+            font-style: italic;
+            /*-webkit-text-fill-color: #fff;*/
+            text-shadow: -1px -1px 0 var(--colorPrimary), 1px -1px 0 var(--colorPrimary), -1px 1px 0 var(--colorPrimary), 1px 1px 0 var(--colorPrimary);
+        }
+
+        .graphic-designer-banner {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-project/showcase/showcase-details-2-1.jpg);
+        }
+
+        .showcase-details-2-title {
+            font-size: 146px;
+        }
+
+        .wordpress-top-banner {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/wordpress-development.webp);
+        }
+
+        .website-top-banner {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/website-maintenance.webp);
+        }
+
+        .webdev-top-banner {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/web-development.webp);
+        }
+
+        .web-top-banner {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/web-design.webp);
+        }
+
+        .shopify-top-banner {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/shopify-design.webp);
+        }
+
+        .ecommerce-top-banner {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/ecommerce.webp);
+        }
+
+        .content-top-banner {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/content-writing.webp);
+        }
+
+        .snap-chat-top-banner {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/snap-chat.webp);
+        }
+
+        .youtube-top-banner {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/youtube-marketing.webp);
+        }
+
+        .twitter-top-banner {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/twitter-marketing.webp);
+        }
+
+        .tiktok-top-banner {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/tic-tok.webp);
+        }
+
+        .pinterest-top-banner {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/pinterest-marketing.webp);
+        }
+
+        .linkedin-top-banner {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/linkedIn-marketing.webp);
+        }
+
+        .instagram-top-banner {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/instagram-marketing.webp);
+        }
+
+        .graphic-top-banner {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/graphic-design.webp);
+        }
+
+        .facebook-top-banner {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/facebook-marketing.webp);
+        }
+
+        .whatsapp-top-banner {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/whatsapp.jpg);
+        }
+
+        .amazon-top-banner {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/amazon-marketing.webp);
+        }
+
+        .google-top-banner {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/google-ads-management.webp);
+        }
+
+        .google-shopping-top-banner {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/google-shopping-ads.webp);
+        }
+
+        .ppc-top-banner {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/ppc.webp);
+        }
+
+        .ecommerce-seo-top-banner {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/ecommerce-seo.webp);
+        }
+
+        .seo-audit-top-banner {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/seo-audit.webp);
+        }
+
+        .content-marketing-top-banner {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/content-marketing.webp);
+        }
+
+        .reputation-top-banner {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/reputation-management.webp);
+        }
+
+        .call-center-top-banner {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/call-center.webp);
+        }
+
+        .customer-care-services-top-banner {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/customer-care-services.webp);
+        }
+
+        .customer-satisfaction-survey-top-banner {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/customer-satisfaction-survey.webp);
+        }
+
+        .data-cleansing-top-banner {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/data-cleansing.webp);
+        }
+
+        .data-entry-top-banner {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/data-entry.webp);
+        }
+
+        .data-processing-top-banner {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/data-processing.webp);
+        }
+
+        .email-marketing-top-banner {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/email-marketing.webp);
+        }
+
+        .telemarketing-top-banner {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/telemarketing.webp);
+        }
+
+        .virtual-reception-top-banner {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/virtual-reception.webp);
+        }
+
+        .facebook-top-banner .showcase-details-2-wrapper,
+        .youtube-top-banner .showcase-details-2-wrapper,
+        .wordpress-top-banner .showcase-details-2-wrapper,
+        .web-top-banner .showcase-details-2-wrapper,
+        .website-top-banner .showcase-details-2-wrapper,
+        .shopify-top-banner .showcase-details-2-wrapper,
+        .ecommerce-top-banner .showcase-details-2-wrapper,
+        .content-top-banner .showcase-details-2-wrapper,
+        .google-top-banner .showcase-details-2-wrapper,
+        .reputation-top-banner .showcase-details-2-wrapper,
+        .data-entry-top-banner .showcase-details-2-wrapper,
+        .email-marketing-top-banner .showcase-details-2-wrapper,
+        .call-center-top-banner .showcase-details-2-wrapper,
+        .telemarketing-top-banner .showcase-details-2-wrapper,
+        .customer-care-services-top-banner .showcase-details-2-wrapper,
+        .customer-satisfaction-survey-top-banner .showcase-details-2-wrapper {
+            background-color: #000000ad;
+        }
+
+        .pm-project-masonary-area,
+        .tp-project-4-area,
+        .tp-project-5-2-area {
+            display: none;
+        }
+
+        .seo-top-banner {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/inner-service/sercive-details/seo-banner.webp);
+        }
+
+        .background-webdevelop-card-1 {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/price/price-bg-1.jpg);
+        }
+
+        .background-webdevelop-card-2 {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/price/price-bg-2.jpg);
+        }
+
+        .background-webdevelop-card-3 {
+            background-image: url(https://www.volgatigris.com/public/new-assets/img/price/price-bg-3.jpg);
+        }
+
+        .tp-price-list ul li {
+            padding-left: 0px;
+        }
+
+        .h1-home-page {
+            color: white;
+            font-size: 1px !important;
+        }
+
+        .ab-2-work-title {
+            font-size: 35px;
+        }
+
+        .tp-project-4-title {
+            font-size: 166px;
+            letter-spacing: 5px;
+        }
+
+        .tp-project-4-content p {
+            font-size: 17px;
+            line-height: 11px;
+            width: 62%;
+            margin: 0 auto;
+            line-height: 27px;
+        }
+
+        .tp-service-area .tp-section-title {
+            font-size: 50px;
+        }
+
+        .tp-section-title {
+            font-size: 60px !important;
+        }
+   
+   
+    
+        .tp-theme-settings-area {
+            display: none;
+        }
+
+        .tp-hero-subtitle {
+            left: -30%;
+        }
+
+        .tp-project-textline span {
+            font-size: 120px;
+        }
+
+        .tp-project-textline {
+            padding-top: 25px;
+        }
+   
+
+        .read-more-btn,
+        .read-less-btn {
+            cursor: pointer;
+            color: blue;
+            display: inline-block;
+            margin-top: 10px;
+            color: black !important;
+            border-radius: 20px;
+            background: white;
+            border: 1px solid black;
+        }
+
+        .read-more-btn:hover,
+        .read-less-btn:hover {
+            background: black;
+            color: white !important;
+        }
+
+        .read-less-btn {
+            display: none;
+        }
+
+        .fq-faq-wrapper .tp-service-2-accordion-box .accordion-header .accordion-buttons {
+            font-size: 18px;
+            font-family: 'Syne', sans-serif !important;
+        }
+
+        .tp-testimonial-item p {
+            font-size: 17px;
+        }
+
+        .ab-2-hero-title {
+            font-size: 78px;
+        }
+
+        .tp-hero-title {
+            font-weight: 400;
+            font-size: 85px;
+        }
+
+        .tp-about-4-title {
+            margin-bottom: 0px !important;
+        }
+    
+        .agency {
+            background-color: black;
+            z-index: 1;
+            position: relative;
+            padding: 20px 0px;
+        }
+
+        .agency p {
+            line-height: 30px;
+            font-weight: 400;
+            color: white;
+        }
+
+        .agency h2 {
+            font-size: 45px;
+            line-height: 45px;
+            font-weight: 400;
+            color: white;
+        }
+
+        .agency .agency__thumb .thumb-two {
+            margin-top: 100px;
+            z-index: 2;
+            position: relative;
+            max-width: 80%;
+        }
+
+        .agency .agency__thumb .thumb-one {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            max-width: 80%;
+        }
+
+        .agency .agency__thumb {
+            position: relative;
+            overflow: hidden;
+            text-align: end;
+            z-index: 1;
+        }
+
+        .agency .agency__thumb::after {
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 40px;
+            height: 40px;
+            background-image: url(https://gramentheme.com/html/xpovio/ltr/assets/images/agency/dot.png);
+            background-size: cover;
+            z-index: -1;
+        }
+
+        .agency .agency__thumb::before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            right: 10%;
+            width: 40px;
+            height: 40px;
+            background-image: url(https://gramentheme.com/html/xpovio/ltr/assets/images/agency/dot.png);
+            background-size: cover;
+            z-index: -1;
+        }
+
+        .agency .agency__content {
+            padding-left: 70px;
+        }
+
+        .tp-team-area .swiper-slide {
+            width: 15% !important;
+        }
+
+        @media(max-width: 760px) {
+            .agency .agency__content {
+                padding: 20px;
+            }
+            .tp-hero-4-text {
+                position: static !important;
+            }
+            .float {
+                bottom: 80px !important;
+                right: 10px !important;
+                z-index: 1000 !important;
+            }
+            .my-float {
+                margin-top: 10px !important;
+                font-size: 40px !important;
+            }
+            .showcase-details-2-title {
+                font-size: 60px;
+                letter-spacing: -2px;
+            }
+            .tp-team-area .swiper-slide {
+                width: 100% !important;
+            }
+            .agency h2 {
+                font-size: 30px !important;
+            }
+            .tp-hero-content.tp_fade_bottom {
+                padding: 0px 35px !important;
+            }
+        }
+
+        .section__content .sub-title i {
+            transform: rotate(-45deg);
+        }
+
+        .section__content .sub-title {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 20px;
+            line-height: 1;
+            border: 1px solid #414141;
+            color: orange;
+            border-radius: 30px;
+            margin-bottom: 32px;
+            text-transform: uppercase;
+        }
+
+        .section__content .title {
+            margin-bottom: 30px;
+            font-weight: 700;
+            text-transform: capitalize;
+        }
+
+        .agency .skill-wrap {
+            margin-top: 40px;
+        }
+
+        .section__content-cta {
+            margin-top: 60px;
+        }
+
+        .z-index-9999 {
+            z-index: 9999 !important;
+        }
+
+        .navbar-mobile {
+            background-color: #fff;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-mobile .nav-link {
+            font-weight: bold;
+            padding: 15px 0;
+        }
+
+        .btn-quote {
+            background-color: #ffca00;
+            color: black;
+            border-radius: 0;
+        }
+
+        .btn-call {
+            background-color: black;
+            color: #fff;
+            border-radius: 0;
+        }
+
+        .header-main-menu>nav>ul>li>.tp-mega-menu {
+            width: auto !important;
+        }
+
+        .float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            left: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0px 0px 7px #ffffff;
+            z-index: 100;
+        }
+
+        .my-float {
+            margin-top: 16px;
+        }
+
+        .tp-blog-title-sm a {
+            background-image: linear-gradient(#f9f9f9, #ffffff), linear-gradient(#ffffff, #ffffff);
+            line-height: 35px;
+        }
+
+        /*Web development CSS*/
+
+        .h1-custom {
+            font-size: 76px;
+        }
+
+        .tp-hero-4-text {
+            position: absolute;
+            top: 112px;
+            right: 16%;
+        }
+
+        .tp-hero-4-text p {
+            max-width: 100%;
+        }
+
+        .tp-hero-4-thumb {
+            margin-top: 176px;
+        }
+
+        .tp-hero-4-content {
+            padding-left: 0px !important;
+        }
+
+        .tp-about-5-text,
+        .tp-about-5-category {
+            padding: 0px !important;
+        }
+
+        .black-bg-2 {
+            background-image: url('https://www.volgatigris.com/public/new-assets/img/home-04/hero/overly.png');
+        }
+
+        .accordion-button:after {
+            background-image: url('https://www.volgatigris.com/storage/breadcrumb-banner/more-1.png') !important;
+        }
+
+        .accordion-button:not(.collapsed):after {
+            background-image: url('https://www.volgatigris.com/storage/breadcrumb-banner/minus.png') !important;
+        }
+
+        .tp-studio-funfact-item {
+            border-right: 1px solid rgba(255, 255, 255, 0.12);
+            padding: 40px 20px 50px 20px;
+            height: 90%;
+        }
+
+        .tp-studio-testimonial-title-box {
+            position: relative !important;
+        }
+
+        .tp-studio-testimonial-title {
+            font-size: 100px !important;
+        }
+
+        .tp-studio-height {
+            height: 110vh;
+            width: auto;
+        }
+
+        .tp-studio-testimonial-text p {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .tp-studio-testimonial-logo img {
+            width: 65% !important;
+        }
+
+        .tp-studio-testimonial-user-info span,
+        .tp-studio-testimonial-title {
+            color: white;
+        }
+
+        .bg-dark,
+        .bg-black,
+        .black-bg,
+        .agency,
+        .industry-box,
+        .header-top.header-top-green,
+        .tp-brand-area.brands,
+        .tp-service-4-item,
+        .btn-call {
+            background-image: linear-gradient(3deg, #061044, #142c58) !important;
+        }
+
+        .tp-service-4-item {
+            height: 500px;
+        }
+
+        .testimonial-bg {
+            border: 10px solid #66e1e3;
+            padding: 80px 70px;
+            text-align: center;
+            position: relative;
+        }
+
+        .testimonial-bg:before {
+            content: "\f10d";
+            font-family: "fontawesome";
+            width: 111px;
+            height: 50px;
+            line-height: 75px;
+            background-image: linear-gradient(3deg, #0e1f4f, #112553) !important;
+            text-align: center;
+            font-size: 50px;
+            color: #ffffff;
+            position: absolute;
+            top: -40px;
+            left: 2%;
+        }
+
+        .testimonial {
+            padding: 0 15px;
+        }
+
+        .testimonial .description {
+            font-size: 20px;
+            font-weight: 400;
+            font-style: italic;
+            color: #ffffff;
+            line-height: 30px;
+            padding-bottom: 25px;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .testimonial .description:before {
+            content: "";
+            width: 75%;
+            border-top: 1px solid #ddd;
+            margin: 0 auto;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .testimonial .description:after {
+            content: "";
+            width: 20px;
+            height: 20px;
+            background: #fff;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            border-bottom: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            transform: translateX(-50%) rotate(45deg);
+        }
+
+        .testimonial .pic {
+            width: 15%;
+            height: 100px;
+            /*border-radius: 50%;*/
+            margin: 10px auto;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+
+        .testimonial .pic img {
+            width: 100%;
+            height: auto;
+        }
+
+        .testimonial .title {
+            display: inline-block;
+            font-size: 23px;
+            font-weight: 700;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin: 0px 10px;
+        }
+
+        .testimonial .post {
+            display: inline-block;
+            font-size: 20px;
+            color: #ffffff;
+        }
+
+        .owl-carousel .owl-controls {
+            background: #fff;
+            margin-top: 10px;
+            position: absolute;
+            bottom: -34%;
+            right: 0;
+        }
+
+        .owl-carousel .owl-controls .owl-buttons div {
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 50%;
+            background: #34363b;
+            opacity: 1;
+            padding: 0;
+        }
+
+        .owl-carousel {
+            height: 22rem !important;
+        }
+
+        .owl-prev:before,
+        .owl-next:before {
+            content: "\f104";
+            font-family: "fontawesome";
+            font-size: 23px;
+            font-weight: 700;
+            color: black;
+        }
+
+        .owl-next:before {
+            content: "\f105";
+        }
+
+        .owl-nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .owl-nav button {
+            background: white !important;
+            border: 2px solid #ddd;
+            color: #333;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .owl-nav button:hover {
+            background: #f0f0f0;
+            border-color: #bbb;
+        }
+
+        .owl-nav button span {
+            font-size: 24px;
+            font-weight: bold;
+            display: inline-block;
+            line-height: 1;
+        }
+
+        @media only screen and (max-width:767px) {
+            .testimonial-bg {
+                padding: 50px 40px;
+            }
+            .owl-carousel .owl-dots {
+                bottom: -22%;
+            }
+        }
+
+        @media only screen and (max-width:480px) {
+            .testimonial-bg:before {
+                width: 55px;
+                height: 55px;
+                line-height: 55px;
+                font-size: 40px;
+            }
+            .testimonial-bg {
+                padding: 30px 10px;
+            }
+            .owl-carousel .owl-dots {
+                bottom: -15%;
+            }
+        }
+
+        @media only screen and (max-width:360px) {
+            .testimonial .title,
+            .testimonial .post {
+                font-size: 16px;
+            }
+            .owl-carousel .owl-dots {
+                bottom: -12%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .owl-carousel {
+                height: 63rem !important;
+            }
+            .tp-brand-4-item img {
+                height: 135px;
+            }
+            .modal .modal-dialog.modal-sm {
+                width: 90% !important;
+                margin-top: 150px;
+            }
+        }
+
+        .modal .modal-dialog.modal-sm {
+            width: 38%;
+            margin-top: 150px;
+        }
+   
+
+        .page_speed_405760890 {
+            width: 30px;
+        }
+
+        .page_speed_2108887721 {
+            margin-left: 15px;
+        }
+
+        .page_speed_424355281 {
+            z-index: 999;
+            position: relative;
+        }
+
+        .page_speed_2056094706 {
+            width: 100%;
+        }
+
+        .page_speed_53207368 {
+            font-size: 45px;
+        }
+
+        .page_speed_559951113 {
+            height: 250px;
+        }
+
+        .page_speed_1053140960 {
+            height: 250px;
+            width: 388px;
+        }
+
+        .page_speed_1701774393 {
+            font-style: italic;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .page_speed_535852631 {
+            font-style: italic;
+        }
+
+        .page_speed_1319858173 {
+            border-radius: 16px !important;
+        }
+
+        .page_speed_454732114 {
+            height: 230px;
+            background-image: url('/storage/other/popup-background.png');
+            background-position: -180px -175px;
+        }
+
+        .page_speed_1944252306 {
+            margin-top: -65px;
+        }
+
+        .page_speed_204344997 {
+            width: 100% !important;
+        }
+
+        .page_speed_2070794123 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #ffca00 !important;
+        }
+
+        .page_speed_1632279822 {
+            font-size: 15px;
+        }
+
+        .page_speed_723228071 {
+            margin-top: -75px;
+        }
+
+        .page_speed_1429476990 {
+            border: 0;
+        }
+
+        .page_speed_946076538 {
+            color: #ffca00;
+            font-size: 14px;
+        }
+
+        .page_speed_1144108505 {
+            font-size: 16px
+        }
+
+        .page_speed_1210848034 {
+            color: #ffca00 !important;
+            font-weight: 800;
+        }
+
+        .page_speed_1689186421 {
+            display: none;
+            visibility: hidden
+        }
+
+        .page_speed_2018363099 {
+            z-index: 1111;
+        }
+    
