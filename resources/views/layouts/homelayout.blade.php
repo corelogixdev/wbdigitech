@@ -9,9 +9,17 @@
         crossorigin=anonymous referrerpolicy="no-referrer">
     <link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin=anonymous referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin=anonymous referrerpolicy="no-referrer">
+        <link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+        
+       <link rel="stylesheet" href="{{ asset('vendor/core/plugins/language/css/language-public.css') }}">
+        <link rel="stylesheet" href="{{ asset('vendor/core/core/base/libraries/ckeditor/content-styles.css') }}">
+        <link rel="stylesheet" href="{{ asset('themes/agon/css/style.css') }}">
     <!-- Custom CSS -->
+
     <link rel="stylesheet" href="{{ asset('css/global.css') }}">
     <link rel="stylesheet" href="{{ asset('css/layout_main.css') }}">
     <link rel="stylesheet" href="{{ asset('css/components_main.css') }}">
@@ -25,11 +33,12 @@
     <link rel="stylesheet" href="{{ asset('css/new-assets/css/custom-animation.css') }}">
     <link rel="stylesheet" href="{{ asset('css/new-assets/css/main.css') }}">
     <link rel="stylesheet" href="{{ asset('css/new-assets/css/style.integration.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('css/new-assets/css/style.css') }}"> --}}
     
 
 </head>
-<body>
-
+<body id="body" class="tp-magic-cursor">
+   
         @extends('layouts.headerLayout');
         @yield('content')
         @extends('layouts.footerLayout');
@@ -41,7 +50,7 @@
 
     
     {{-- External JS --}}
-    <script src="{{ asset('vendor/core/plugins/language/js/language-public.js?v=2.2.0')}}" defer></script>
+        {{-- Vendor / Core --}}
     <script src="{{ asset('themes/agon/new-assets/js/vendor/jquery.js') }}"></script>
     <script src="{{ asset('themes/agon/new-assets/js/bootstrap-bundle.js') }}" defer></script>
     <script src="{{ asset('themes/agon/new-assets/js/gsap.js') }}" defer></script>
@@ -66,6 +75,10 @@
     <script src="{{ asset('themes/agon/new-assets/js/webgl.js') }}" defer></script>
     <script src="{{ asset('themes/agon/new-assets/js/tp-cursor.js') }}" defer></script>
     <script src="{{ asset('themes/agon/new-assets/js/main.js') }}" defer></script>
+
+    {{-- Language Plugin --}}
+    <script src="{{ asset('vendor/core/plugins/language/js/language-public.js') }}" defer></script>
+
 
     <noscript><iframe src=https://www.googletagmanager.com/ns.html?id=GTM-KB33VJ6height="0" width=0 class="page_speed_1689186421"></iframe></noscript>
     <script src=https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="

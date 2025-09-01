@@ -1,4 +1,3 @@
-
 <a href="https://wa.link/" class="float" title="whatsapp contact digital marketing agency dubai" target="_blank"><i class="fab fa-whatsapp my-float"></i></a>
     <div class="floating-icons d-none">
         <div class="float-sm">
