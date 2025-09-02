@@ -12,6 +12,10 @@ Route::get('/about', function () {
     return view('pages.about');
 })->name('about');
 
+Route::get('/about', function () {
+    return view('pages.admin/blogs');
+})->name('manage_blogs');
+
 
 Route::middleware(['auth','admin'])->group(function () {
 
