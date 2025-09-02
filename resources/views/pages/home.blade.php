@@ -1,6 +1,6 @@
 @extends('layouts.homelayout')
 
-@section('title', 'Home Page')
+@section('title', 'Home - WB-DIGITECH')
 
 @section('content')
   
@@ -10,26 +10,39 @@
                 <div id="main-content">
                     <div class="ck-content">
                         <p> </p>
-                        <div class="raw-html-embed"> seo-specialist.jpg
+                        <div class="raw-html-embed"> 
                             <div class="tp-hero-area tp-hero-ptb main-slider">
                                 <div class="container-fluid home-main-slider">
                                     <div class="row justify-content-center">
                                         <div class="col-xxl-12">
                                             <div class="tp-hero-title-wrap mb-35 p-relative">
-                                                <div class="tp-hero-shape-1 d-none"><img src=public/new-assets/img/home-01/hero/hero-bg-shape-1-1.svg alt="Background banner"></div>
                                                 <div class="tp-hero-title-box text-center">
-                                                    <h2 class="tp-hero-title"><span class="p-relative"><span class="tp-hero-subtitle d-none d-lg-block">Hello <br> People! </span> Leading Digital </span><br> Marketing<span class="tp-hero-title-img d-none"><img src=public/new-assets/img/home-01/hero/hero-1-1.png alt="Digital Marketing"></span>                                                        Agency In Dubai, UAE </h2>
+                                                    <h2 class="tp-hero-title">
+                                                        <span class="p-relative">
+                                                            Save Time <br> Finding The Right <br> Agency Partner
+                                                        </span> <br>
+                                                        
+                                                    </h2>
                                                 </div>
                                             </div>
+
                                             <div class="tp-hero-content">
-                                                <h1 class="h1-home-page"> Digital Marketing Agency Dubai | Digital Marketing Company in Dubai </h1>
-                                                <p class="delay-load"> Volga Tigris is a leading digital marketing company in Dubai with over 8 years of experience in the region, offering cost-effective services to organizations. </p>
+                                                <h1 class="h1-home-page">
+                                                    Digital Marketing Agency Dubai | Expert Services for Your Success
+                                                </h1>
+                                                <p class="delay-load">
+                                                    WB-DigiTech is a leading digital marketing agency in Dubai, UAE. We help brands and businesses maximize their digital effectiveness.
+                                                </p>
                                                 <p class="d-none d-lg-block more-content-top">
-                                                We are committed to provide 360-degree digital marketing services across the globe. We have a fully sourced in-house technical team with professional web developers, designers, Google Ads specialists, SEO
-                                                    specialists, social media marketing experts, graphic designers, video and photography production teams, and talented multi-lingual content writers. In addition, we have a talented team for data services,
-                                                    market surveys, call center services, and more. </p><a class="read-more-btn-top d-md-none"> Read more</a><a class="read-less-btn-top d-none">Read Less</a></div>
-                                            <div class="text-center mb-100"><button class="btn btn-warning text-dark open-popup">Get a Free Quote</button></div>
-                                        </div>
+                                                    Our expert team provides 360-degree digital marketing solutions including SEO, Google Ads, social media marketing, web design, content creation, and more. Contact us now to boost your sales and grow your business.
+                                                </p>
+                                                <a href="https://wbdigitech.ae/contact-us/" class="read-more-btn-top d-md-none">Read more</a>
+                                                <a href="https://wbdigitech.ae/contact-us/" class="read-less-btn-top d-none">Read Less</a>
+                                            </div>
+
+                                            <div class="text-center mb-100">
+                                                <a href="https://wbdigitech.ae/contact-us/" class="btn btn-warning text-dark open-popup">Get a Free Quote</a>
+                                            </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-xl-12"></div>

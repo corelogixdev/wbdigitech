@@ -175,7 +175,7 @@ li,
 
 @font-face {
     font-family: "gallery_modernregular";
-    src: url("https://www.volgatigris.com/public/new-assets/fonts/gallerymodern-webfont.woff2") format("woff2"), url("https://www.volgatigris.com/public/new-assets/fonts/gallerymodern-webfont.woff") format("woff"), url("https://www.volgatigris.com/public/new-assets/fonts/gallerymodern-webfont.ttf") format("truetype");
+    src: url("public/css/new-assets/fonts/gallerymodern-webfont.woff2") format("woff2"), url("public/css/new-assets/fonts/gallerymodern-webfont.woff") format("woff"), url("public/css/new-assets/fonts/gallerymodern-webfont.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -188,7 +188,7 @@ li,
     --tp-ff-heading: 'Syne', sans-serif;
     --tp-ff-p: 'Syne', sans-serif;
     --tp-ff-syne: 'Syne', sans-serif;
-    --tp-ff-gallery: 'gallery_modernregular', sans-serif;
+    --tp-ff-gallery: 'Playfair Display', sans-serif;
     --tp-ff-shoulders: 'Big Shoulders Display', cursive;
     --tp-ff-marcellus: 'Marcellus', sans-serif;
     --tp-ff-aladin: 'Aladin', system-ui;
@@ -815,7 +815,7 @@ div.demo img {
 }
 
 .body-overlay:hover {
-    cursor: url("https://www.volgatigris.com/public/new-assets/img/icon/cross-out.html"), pointer;
+    cursor: url("public/css/new-assets/img/icon/cross-out.html"), pointer;
 }
 
 .body-overlay.opened {
@@ -13217,7 +13217,7 @@ only screen and (min-width: 1200px) and (max-width: 1399px) {
 
 .tp-hero-title {
     font-weight: 400;
-    font-size: 220px;
+    font-size: 85px;
     line-height: 1;
     color: var(--tp-common-black);
     font-family: var(--tp-ff-gallery);
@@ -13232,7 +13232,7 @@ only screen and (min-width: 1400px) and (max-width: 1599px) {
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
     .tp-hero-title {
-        font-size: 150px;
+        font-size: 85px;
     }
 }
 
@@ -25915,7 +25915,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 .tp-shop-widget-checkbox ul li label::before {
     position: absolute;
-    content: url("https://www.volgatigris.com/public/new-assets/img/inner-shop/check.svg");
+    content: url("public/css/new-assets/img/inner-shop/check.svg");
     top: 6px;
     left: 0;
     width: 16px;
@@ -26099,7 +26099,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 .tp-shop-widget-checkbox-circle label::before {
     position: absolute;
-    content: url("https://www.volgatigris.com/public/new-assets/img/product/icons/check-2.html");
+    content: url("public/css/new-assets/img/product/icons/check-2.html");
     top: 3px;
     left: 0;
     width: 18px;
@@ -27114,7 +27114,7 @@ only screen and (min-width: 1200px) and (max-width: 1399px),
 
 .tp-product-details-review-remeber label::before {
     position: absolute;
-    content: url("https://www.volgatigris.com/public/new-assets/img/inner-shop/check.svg");
+    content: url("public/css/new-assets/img/inner-shop/check.svg");
     top: 4px;
     left: 0;
     width: 18px;
@@ -28473,7 +28473,7 @@ tr {
 
 .tp-checkout-option label::before {
     position: absolute;
-    content: url("https://www.volgatigris.com/public/new-assets/img/inner-shop/check.svg");
+    content: url("public/css/new-assets/img/inner-shop/check.svg");
     top: 4px;
     left: 0;
     width: 18px;
@@ -28774,7 +28774,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 .tp-return-customer-remeber label::before {
     position: absolute;
-    content: url("https://www.volgatigris.com/public/new-assets/img/inner-shop/check.svg");
+    content: url("public/css/new-assets/img/inner-shop/check.svg");
     top: 4px;
     left: 0;
     width: 18px;
@@ -29977,7 +29977,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 
 .tp-login-remeber label::before {
     position: absolute;
-    content: url("https://www.volgatigris.com/public/new-assets/img/inner-shop/check.svg");
+    content: url("public/css/new-assets/img/inner-shop/check.svg");
     top: 4px;
     left: 0;
     width: 18px;
