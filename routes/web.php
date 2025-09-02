@@ -3,6 +3,7 @@
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DashboardController;
 
 
 
@@ -29,11 +30,9 @@ Route::get('/blogs/{id}', [BlogController::class, 'publicShow'])->name('blogs.pu
 
 
     // Admin Dashboard Routes
-    Route::middleware(['auth','admin'])->group(function () {
+    Route::middleware(['admin'])->group(function () {
         
-        Route::get('/admin', function () {
-            return view('pages.admin.dashboard');
-        })->name('dashboard');
+        Route::get('/admin', [DashboardController::class, 'index'])->name('dashboard');
         
         // blog controller
         Route::resource('blogs', BlogController::class);
@@ -41,7 +40,7 @@ Route::get('/blogs/{id}', [BlogController::class, 'publicShow'])->name('blogs.pu
 });
 
 // Profile Routes
-Route::middleware(['auth','admin'])->group(function () {
+Route::middleware(['admin'])->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');

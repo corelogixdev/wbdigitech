@@ -15,11 +15,19 @@ class AdminMiddleware
      */
   public function handle(Request $request, Closure $next)
     {
-        if (auth()->check() && auth()->user()->is_admin) {
-            return $next($request);
+     
+        // If not logged in
+        if (!auth()->check()) {
+            abort(403, 'Forbidden');
         }
 
-        abort(403); // Forbidden
+        // If logged in but not admin
+        if (!auth()->user()->is_admin) {  // adjust field name if different
+            abort(403, 'Forbidden');
+        }
+
+        // If logged in and admin → allow
+        return $next($request);
     }
 
 }

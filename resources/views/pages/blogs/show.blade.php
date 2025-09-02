@@ -1,5 +1,7 @@
 @extends('layouts.homelayout') {{-- or your main frontend layout --}}
 
+@section('title','WB-DegiTech | Blogs')
+
 @section('content')
 <div class="container py-5">
     <div class="row justify-content-center">
