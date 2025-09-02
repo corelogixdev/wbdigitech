@@ -226,7 +226,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="{{ route('blogs.public')}}">Blog</a></li>
                                     <li><a href="#">Contact</a></li>
                                 </ul>
                             </nav>

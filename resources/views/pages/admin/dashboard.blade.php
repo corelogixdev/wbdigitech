@@ -10,7 +10,7 @@
             <div class="row g-4">
                 <!-- Blogs -->
                 <div class="col-sm-6 col-lg-3">
-                    <a href="{{ route('manage_blogs')}}" class="text-decoration-none">
+                    <a href="{{ route('blogs.index')}}" class="text-decoration-none">
                         <div class="card shadow-sm border-0 h-100 hover-card">
                             <div class="card-body d-flex align-items-center">
                                 <i class="bi bi-journal-text text-primary fs-2 me-3"></i>
