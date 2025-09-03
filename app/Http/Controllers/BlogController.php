@@ -91,4 +91,8 @@ class BlogController extends Controller
         $blog = Blog::findOrFail($id);
         return view('pages.blogs.show', compact('blog'));
     }
+
+
 }
+
+

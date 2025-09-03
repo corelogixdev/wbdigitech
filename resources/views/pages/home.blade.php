@@ -600,46 +600,45 @@
                             </div>
                         </div>
                         <div class="blog-details-realated-area pt-20 pb-20 bg-dark">
-                            <div class="container">
-                                <div class="row mb-20">
-                                    <div class="col-md-12">
-                                        <h2 class="sv-service-title text-white">Our Latest Blogs</h2>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xl-4 col-lg-6 col-md-6 mb-50">
-                                        <div class="tp-blog-item">
-                                            <div class="tp-blog-thumb fix p-relative rounded page_speed_559951113"><img src="{{asset('storage/breadcrumb-banner/volga-blog-5-1-1.png')}}" alt="Arabic SEO: A Missed Opportunity for Most UAE Brands" class="page_speed_1053140960" width=388 height=250>
-                                                <div class="tp-blog-meta"><span class="bg-dark text-white">01 Jul, 2025</span></div>
-                                            </div>
-                                            <div class="tp-blog-content"><a href="#"><span class="text-white">Digital Marketing</span></a>
-                                                <h2 class="tp-blog-title-sm text-white"><a href="#">Arabic SEO: A Missed Opportunity for Most UAE Brands</a></h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-6 col-md-6 mb-50">
-                                        <div class="tp-blog-item">
-                                            <div class="tp-blog-thumb fix p-relative rounded page_speed_559951113"><img src="{{ asset('storage/blogs/volga-blog-image-5.jpg')}}" alt="How to Create a Digital Marketing Strategy for Healthcare" class="page_speed_1053140960" width=388 height=250>
-                                                <div class="tp-blog-meta"><span class="bg-dark text-white">24 May, 2025</span></div>
-                                            </div>
-                                            <div class="tp-blog-content"><a href="#"><span class="text-white">Digital Marketing</span></a>
-                                                <h2 class="tp-blog-title-sm text-white"><a href="#">How to Create a Digital Marketing Strategy for Healthcare</a></h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-6 col-md-6 mb-50">
-                                        <div class="tp-blog-item">
-                                            <div class="tp-blog-thumb fix p-relative rounded page_speed_559951113"><img src=#/storage/blogs/volga-blog-image-4.jpg alt="Why Hiring a Dubai Marketing Firm Is Smart for Your Growth" class="page_speed_1053140960" width=388 height=250>
-                                                <div class="tp-blog-meta"><span class="bg-dark text-white">24 May, 2025</span></div>
-                                            </div>
-                                            <div class="tp-blog-content"><a href="#/digital-marketing-category"><span class="text-white">Digital Marketing</span></a>
-                                                <h2 class="tp-blog-title-sm text-white"><a href="#/why-hiring-a-dubai-marketing-firm-is-smart-for-your-growth">Why Hiring a Dubai Marketing Firm Is Smart for Your Growth</a></h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+    <div class="container">
+        <div class="row mb-20">
+            <div class="col-md-12">
+                <h2 class="sv-service-title text-white">Our Latest Blogs</h2>
+            </div>
+        </div>
+        <div class="row">
+            @foreach($blogs as $blog)
+                <div class="col-xl-4 col-lg-6 col-md-6 mb-50">
+                    <div class="tp-blog-item">
+                        <div class="tp-blog-thumb fix p-relative rounded">
+                            @if($blog->image)
+                                <img src="{{ asset('storage/' . $blog->image) }}" 
+                                     alt="{{ $blog->title }}" 
+                                     width="388" height="250">
+                            @endif
+                            <div class="tp-blog-meta">
+                                <span class="bg-dark text-white">
+                                    {{ $blog->created_at->format('d M, Y') }}
+                                </span>
                             </div>
                         </div>
+                        <div class="tp-blog-content">
+                            <a href="#">
+                                <span class="text-white">{{ $blog->category ?? 'Uncategorized' }}</span>
+                            </a>
+                            <h2 class="tp-blog-title-sm text-white">
+                                <a href="{{ route('blogs.public.show', $blog->id) }}">
+                                    {{ $blog->title }}
+                                </a>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+    </div>
+</div>
+
                         <div class="raw-html-embed">
                             <div class="tp-testimonial-area pt-50">
                                 <div class="container-fluid">
