@@ -31,7 +31,7 @@
                                                         <div class="container">
                                                             <div class="row page_speed_1944252306">
                                                                 <div class="col-md-12 text-center">
-                                                                    <div class="page_speed_204344997"><img src=/storage/other/logo-1.webp alt="WBDigitech Logo" class="img-fluid w-50"></div>
+                                                                    <div class="page_speed_204344997"><img src="{{asset('css/new-assets/img/logo/logo.jpeg')}}" alt="WBDigitech Logo" class="img-fluid w-50"></div>
                                                                     <div class="text-white my-1 page_speed_2070794123">Get a call within 55 seconds </div>
                                                                     <div class="my-1 text-white page_speed_1632279822"><small><b>Leave your number below</b><br> and we will call you right away!</small></div>
                                                                 </div>
