@@ -36,6 +36,7 @@ Route::get('/blogs/{id}', [BlogController::class, 'publicShow'])->name('blogs.pu
         
         // blog controller
         Route::resource('blogs', BlogController::class);
+        Route::get('/blogs-create',[BlogController::class,'create'])->name('blogs.create');
         
 });
 
