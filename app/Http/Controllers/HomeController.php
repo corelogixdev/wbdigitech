@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Blog;
 use App\Models\Team;
 use App\Models\Customer;
+use App\Models\Industry;
 class HomeController extends Controller
 {
     /**
@@ -27,9 +28,11 @@ class HomeController extends Controller
     {
         // latest 3 blogs for homepage
         $blogs = Blog::latest()->take(3)->get();
+
          $teamMembers = Team::latest()->take(12)->get();
          $customers = Customer::latest()->get();
+         $industries = Industry::latest()->take(12)->get(); 
 
-        return view('pages.home', compact('blogs','teamMembers','customers'));
+        return view('pages.home', compact('blogs','teamMembers','customers','industries'));
     }
 }

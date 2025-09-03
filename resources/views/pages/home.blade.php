@@ -231,24 +231,18 @@
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="col-xl-4 col-lg-4 col-md-12"><img loading="lazy" src="{{asset('new-assets/img/home-03/service/logistic.png')}}" class="be-lazy industry-img" alt="Logistics Industry">
-                                                    <div class="industry-box card p-2"><span class="industry-title card-title">Logistic Industry</span></div>
-                                                </div>
-                                                <div class="col-xl-4 col-lg-4 col-md-12"><img loading="lazy" src="{{asset('new-assets/img/home-03/service/real_estate.png')}}" class="be-lazy industry-img" alt="Civil Engineer">
-                                                    <div class="industry-box card p-2"><span class="industry-title card-title">Real Estate Industry</span></div>
-                                                </div>
-                                                <div class="col-xl-4 col-lg-4 col-md-12"><img loading="lazy" src="{{asset('new-assets/img/home-03/service/fashion.png')}}" class="be-lazy industry-img" alt="Luxury Shop">
-                                                    <div class="industry-box card p-2"><span class="industry-title card-title">Fashion Industry</span></div>
-                                                </div>
-                                                <div class="col-xl-4 col-lg-4 col-md-12"><img loading="lazy" src="{{asset('new-assets/img/home-03/service/electronics.png')}}" class="be-lazy industry-img" alt="Electronic Shop">
-                                                    <div class="industry-box card p-2"><span class="industry-title card-title">Electronic Industry</span></div>
-                                                </div>
-                                                <div class="col-xl-4 col-lg-4 col-md-12"><img loading="lazy" src="{{asset('new-assets/img/home-03/service/food.png')}}" class="be-lazy industry-img" alt="Food Industry">
-                                                    <div class="industry-box card p-2"><span class="industry-title card-title">Food Industry</span></div>
-                                                </div>
-                                                <div class="col-xl-4 col-lg-4 col-md-12"><img loading="lazy" src="{{asset('new-assets/img/home-03/service/technology.png')}}" class="be-lazy industry-img" alt="Av Projects">
-                                                    <div class="industry-box card p-2"><span class="industry-title card-title">Technology Industry</span></div>
-                                                </div>
+                                                @foreach($industries as $industry)
+                                                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                                                        <div class="card shadow-sm border-0 h-100 text-center">
+                                                            <div class="card-body p-4 d-flex flex-column align-items-center">
+                                                                <img src="{{ asset('storage/'.$industry->image) }}"
+                                                                    alt="{{ $industry->name }}"
+                                                                    class="img-fluid mb-3 industry-img">
+                                                                <h6 class="fw-bold text-dark">{{ $industry->name }}</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                @endforeach
                                                 <div class="col-xl-12 col-lg-12 col-md-12 text-center pb-20"><a href="/customer" class="btn btn-warning text-dark mr-10">View More</a><a class="btn btn-warning text-dark open-popup">Get A Free Quote</a></div>
                                             </div>
                                         </div>

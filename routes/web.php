@@ -7,6 +7,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\TeamController;
 use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\IndustryController;
 
 // Pages 
 Route::get('/', [HomeController::class, 'index'])->name('home');
@@ -32,6 +33,9 @@ Route::middleware(['admin'])->group(function () {
 
     // customer controller
     Route::resource('customers', CustomerController::class);
+
+    // Industry controller  
+    Route::resource('industries', IndustryController::class);
 
         
 });
