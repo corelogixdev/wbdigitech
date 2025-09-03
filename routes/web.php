@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\TeamController;
+use App\Http\Controllers\CustomerController;
 
 // Pages 
 Route::get('/', [HomeController::class, 'index'])->name('home');
@@ -28,6 +29,10 @@ Route::middleware(['admin'])->group(function () {
     // blog controller
     Route::resource('blogs', BlogController::class);
     Route::get('/blogs-create',[BlogController::class,'create'])->name('blogs.create');
+
+    // customer controller
+    Route::resource('customers', CustomerController::class);
+
         
 });
 

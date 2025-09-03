@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Blog;
 use App\Models\Team;
-
+use App\Models\Customer;
 class HomeController extends Controller
 {
     /**
@@ -28,7 +28,8 @@ class HomeController extends Controller
         // latest 3 blogs for homepage
         $blogs = Blog::latest()->take(3)->get();
          $teamMembers = Team::latest()->take(12)->get();
+         $customers = Customer::latest()->get();
 
-        return view('pages.home', compact('blogs','teamMembers'));
+        return view('pages.home', compact('blogs','teamMembers','customers'));
     }
 }
