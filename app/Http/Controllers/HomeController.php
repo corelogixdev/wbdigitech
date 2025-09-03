@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Blog;
+use App\Models\Team;
 
 class HomeController extends Controller
 {
@@ -14,7 +15,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        // $this->middleware('auth');
     }
 
     /**
@@ -26,7 +27,8 @@ class HomeController extends Controller
     {
         // latest 3 blogs for homepage
         $blogs = Blog::latest()->take(3)->get();
+         $teamMembers = Team::latest()->take(12)->get();
 
-        return view('pages.home', compact('blogs'));
+        return view('pages.home', compact('blogs','teamMembers'));
     }
 }

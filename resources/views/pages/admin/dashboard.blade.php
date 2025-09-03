@@ -25,7 +25,7 @@
 
                 <!-- Team -->
                 <div class="col-sm-6 col-lg-3">
-                    <a href="#('team.index') }}" class="text-decoration-none">
+                    <a href="{{route('team.index') }}" class="text-decoration-none">
                         <div class="card shadow-sm border-0 h-100 hover-card">
                             <div class="card-body d-flex align-items-center">
                                 <i class="bi bi-people text-success fs-2 me-3"></i>
