@@ -274,9 +274,9 @@
                             </div>
                         </div>
                         <div class="tp-blog-content">
-                            <a href="#">
+                            {{-- <a href="#">
                                 <span class="text-white">{{ $blog->category ?? 'Uncategorized' }}</span>
-                            </a>
+                            </a> --}}
                             <h2 class="tp-blog-title-sm text-white">
                                 <a href="{{ route('blogs.public.show', $blog->id) }}">
                                     {{ $blog->title }}
