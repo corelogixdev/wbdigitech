@@ -4,10 +4,11 @@
 
 @section('content')
 
+<div class="content-wrapper" style="margin-top: 120px;">
 <div class="container my-5">
     <h2 class="mb-4">Latest Blogs</h2>
     <div class="row g-4">
-        @foreach(\App\Models\Blog::latest()->take(3)->get() as $blog)
+        @foreach($blogs as $blog)
             <div class="col-md-4">
                 <div class="card h-100 shadow-sm">
                     @if($blog->image)
@@ -22,6 +23,7 @@
             </div>
         @endforeach
     </div>
+</div>
 </div>
 
 @endsection

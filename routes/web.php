@@ -70,7 +70,7 @@ Route::middleware(['role:superadmin,admin'])->group(function () {
 });
 
 // Register Controllers
-Route::middleware(['role:superadmin,admin'])->group(function () {
+Route::middleware(['role:superadmin'])->group(function () {
 
     Route::get('/admin/users', [UserController::class, 'index'])->name('users.index');
     Route::get('/admin/users/{user}/edit', [UserController::class, 'edit'])->name('users.edit');

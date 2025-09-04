@@ -83,6 +83,7 @@
                     </a>
                 </div>
 
+                @if(auth()->check() && auth()->user()->role === 'superadmin')
                 <!-- Users -->
                 <div class="col-sm-6 col-lg-3">
                     <a href="{{ route('users.index')}}" class="text-decoration-none">
@@ -97,7 +98,7 @@
                         </div>
                     </a>
                 </div>
-
+                @endif 
                 <!-- Future modules -->
                 <div class="col-sm-6 col-lg-3">
                     <a href="#" class="text-decoration-none">
