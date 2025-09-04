@@ -79,7 +79,7 @@
                         </div>
                         <div class="col-lg-8 col-md-4 d-none d-md-block d-lg-flex justify-content-end align-center-end"><a class="text-body-text line-right" href="tel:+971 (0) 000 0000" dir="ltr">+971 (0) 000 0000</a><a class="text-body-text line-right" href="tel:+971000000000" dir="ltr">+971 00 000 0000</a><a class="text-body-text" href="mailto:info@wbdigitech.com"><i class="fi fi-rr-envelope"></i>&emsp;info@wbdigitech.com</a>
                             <a
-                                href="javascript:;" class="page_speed_2108887721 btn btn-warning rounded text-black open-popup">Get Free SEO Audit</a>
+                                href="javascript:;" data-bs-toggle="modal" data-bs-target="#myModal" class="page_speed_2108887721 btn btn-warning rounded text-black open-popup">Get Free SEO Audit</a>
                         </div>
                         <div class="col-lg-1 col-md-4 d-none same-column-class-like-col-lg-8"></div>
                     </div>

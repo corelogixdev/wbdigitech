@@ -112,6 +112,7 @@
     </footer>
     </div>
     </div>
+    
     <div class="modal-wrapper p-relative" data-background="{{ asset('new-assets/img/home-01/team/team-details-bg.png')}}">
         <div class="modal fade" id="myModal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-width pt-200">
