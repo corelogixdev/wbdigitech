@@ -3,7 +3,7 @@
 @section('title', 'WB-DigiTech | Privacy Policy')
 
 @section('content')
-
+<div class="content-wrapper" style="margin-top: 120px;">
 <div class="container py-5">
     <h1 class="mb-4">Privacy Policy</h1>
 
@@ -61,5 +61,7 @@
         Email: <a href="mailto:info@wbdigitech.ae">info@wbdigitech.ae</a>
     </p>
 </div>
+</div>
+
 
 @endsection

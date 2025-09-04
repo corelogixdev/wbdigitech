@@ -67,4 +67,9 @@ class CustomerController extends Controller
 
         return redirect()->route('customers.index')->with('success', 'Customer deleted successfully.');
     }
+
+    public function publicIndex(){
+         $customers = Customer::all();
+        return view('pages.customers',compact('customers'));
+    }
 }
