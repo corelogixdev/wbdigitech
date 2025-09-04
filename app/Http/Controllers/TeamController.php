@@ -61,27 +61,22 @@ class TeamController extends Controller
     }
 
     public function update(Request $request, Team $team)
-    {
-        $request->validate([
-            'name'       => 'required|string|max:255',
-            'speciality' => 'required|string|max:255',
-            'image'      => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
-        ]);
+{
+    $validated = $request->validate([
+        'name' => 'required|string|max:255',
+        'speciality' => 'required|string|max:255',
+        'image' => 'nullable|image|mimes:jpg,jpeg,png,gif|max:2048',
+    ]);
 
-        if ($request->hasFile('image')) {
-            if ($team->image) {
-                Storage::disk('public')->delete($team->image);
-            }
-            $team->image = $request->file('image')->store('teams', 'public');
-        }
-
-        $team->update([
-            'name'       => $request->name,
-            'speciality' => $request->speciality,
-            'image'      => $team->image,
-        ]);
-
-        return redirect()->route('team.index')->with('success', 'Team member updated successfully!');
+    if ($request->hasFile('image')) {
+        $path = $request->file('image')->store('team', 'public');
+        $validated['image'] = $path;
     }
+
+    $team->update($validated);
+
+    return redirect()->route('team.index')->with('success', 'Team member updated successfully.');
+}
+
 
 }

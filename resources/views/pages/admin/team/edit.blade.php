@@ -10,7 +10,8 @@
             <div class="bg-white p-6 shadow rounded-lg">
                 <form action="{{ route('team.update', $team->id) }}" method="POST" enctype="multipart/form-data">
                     @csrf
-
+                    @method('PUT')
+                    
                     <div class="mb-4">
                         <label class="form-label">Name</label>
                         <input type="text" name="name" value="{{ old('name', $team->name) }}" class="form-control" required>
