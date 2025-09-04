@@ -34,6 +34,9 @@ Route::get('/privacy-policy', function(){return view('pages.privacy');})->name('
 // Public side | Cookie Policy
 Route::get('/cookie-policy', function(){return view('pages.cookie');})->name('cookie');
 
+// Public side | Customer Pages
+Route::get('/customer', [CustomerController::class, 'publicIndex'])->name('customers.public');
+Route::get('/customers/{id}', [CustomerController::class, 'publicShow'])->name('customers.public.show');
 
 
 
