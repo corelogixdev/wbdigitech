@@ -18,7 +18,7 @@
                                     </ul>
                                 </div>
                                 <div class="tp-copyright-text mt-50">
-                                    <p><a href="/privacy-policy">Privacy Policy</a><a href="/cookie-policy" class="ml-20">Cookie Policy</a></p>
+                                    <p><a href="{{route('privacy')}}">Privacy Policy</a><a href="{{ route('cookie')}}" class="ml-20">Cookie Policy</a></p>
                                 </div>
                             </div>
                             <div class="col-xl-7 col-lg-6">

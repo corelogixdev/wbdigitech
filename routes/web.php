@@ -13,26 +13,32 @@ use App\Http\Controllers\CareerController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 
 
-// Pages 
+// Home Page 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
+// About Page
 Route::get('/about', function () {
     return view('pages.about');
 })->name('about');
 
-
-// Public side ( blog)
+// Public side | Blog Pages
 Route::get('/blog', [BlogController::class, 'publicIndex'])->name('blogs.public');
 Route::get('/blogs/{id}', [BlogController::class, 'publicShow'])->name('blogs.public.show');
 
-// Public side ( career)
+// Public side | Career Page
 Route::get('/career',[CareerController::class,'publicIndex'])->name('careers.public');
+
+// Public side | Privacy Policy
+Route::get('/privacy-policy', function(){return view('pages.privacy');})->name('privacy');
+
+// Public side | Cookie Policy
+Route::get('/cookie-policy', function(){return view('pages.cookie');})->name('cookie');
+
 
 
 
 // Admin Dashboard Routes
 Route::middleware(['role:superadmin,admin'])->group(function () {
-        
     Route::get('/admin', [DashboardController::class, 'index'])->name('dashboard');
         
     // blog controller
@@ -62,8 +68,7 @@ Route::middleware(['role:superadmin,admin'])->group(function () {
 
 // Register Controllers
 Route::middleware(['role:superadmin,admin'])->group(function () {
-    
-  
+
     Route::get('/admin/users', [UserController::class, 'index'])->name('users.index');
     Route::get('/admin/users/{user}/edit', [UserController::class, 'edit'])->name('users.edit');
     Route::put('/admin/users/{user}', [UserController::class, 'update'])->name('users.update');
