@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Blog;
+use App\Models\Career;
 use App\Models\Customer;
 use App\Models\Industry;
 use App\Models\User;
@@ -18,6 +19,7 @@ class DashboardController extends Controller
         $customersCount = Customer::count();  // Replace with Customer::count() later
         $usersCount = User::count();
         $industriesCount = Industry::count();
+        $careersCount = Career::count();
 
         return view('pages.admin.dashboard', compact(
             'blogsCount',
@@ -25,6 +27,7 @@ class DashboardController extends Controller
             'customersCount',
             'usersCount',
             'industriesCount',
+            'careersCount',
         ));
     }
 }

@@ -8,6 +8,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\TeamController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\IndustryController;
+use App\Http\Controllers\CareerController;
 
 // Pages 
 Route::get('/', [HomeController::class, 'index'])->name('home');
@@ -17,9 +18,13 @@ Route::get('/about', function () {
 })->name('about');
 
 
-// Public side (frontend home page blogs list)
+// Public side ( blog)
 Route::get('/blog', [BlogController::class, 'publicIndex'])->name('blogs.public');
 Route::get('/blogs/{id}', [BlogController::class, 'publicShow'])->name('blogs.public.show');
+
+// Public side ( career)
+Route::get('/career',[CareerController::class,'publicIndex'])->name('careers.public');
+
 
 
 // Admin Dashboard Routes
@@ -37,7 +42,12 @@ Route::middleware(['admin'])->group(function () {
     // Industry controller  
     Route::resource('industries', IndustryController::class);
 
-        
+    // Career Controller
+    Route::resource('careers', CareerController::class);
+
+    // Team Controller
+    Route::resource('team',TeamController::class);
+
 });
 
 // Profile Routes
@@ -47,14 +57,5 @@ Route::middleware(['admin'])->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-// Team Routes
-Route::middleware(['admin'])->group(function () {
-    Route::get('/admin/team', [TeamController::class, 'index'])->name('team.index');
-    Route::get('/admin/team/create', [TeamController::class, 'create'])->name('team.create');
-    Route::get('/admin/team/{team}/edit', [TeamController::class, 'edit'])->name('team.edit');
-    Route::post('/admin/team/{team}/update', [TeamController::class, 'update'])->name('team.update');
-    Route::post('/admin/team/store', [TeamController::class, 'store'])->name('team.store');
-    Route::delete('/admin/team/{id}', [TeamController::class, 'destroy'])->name('team.destroy');
-});
 
 require __DIR__.'/auth.php';

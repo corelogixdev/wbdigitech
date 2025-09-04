@@ -14,7 +14,7 @@
                                         <li class="active"><a href="#">Blog</a></li>
                                         <li class="active"><a href="#">Our Clients</a></li>
                                         <li class="active"><a href="#">Contact</a></li>
-                                        <li class="active"><a href="#">Careers</a></li>
+                                        <li class="active"><a href="{{ route('careers.public')}}">Careers</a></li>
                                     </ul>
                                 </div>
                                 <div class="tp-copyright-text mt-50">
@@ -100,7 +100,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="tp-copyright-text text-center text-md-end">
-                                <p>Copyright © WB-Digitech. All Rights Reserved</p>
+                                <p>Copyright © WB-DigiTech. All Rights Reserved</p>
                             </div>
                         </div>
                         <!--<div class="col-md-4">-->
