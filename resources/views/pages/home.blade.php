@@ -231,64 +231,84 @@
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                @foreach($industries as $industry)
+                                                {{-- Industries Section --}}
+                                                @forelse($industries as $industry)
                                                     <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
                                                         <div class="card shadow-sm border-0 h-100 text-center">
                                                             <div class="card-body p-4 d-flex flex-column align-items-center">
-                                                                <img src="{{ asset('storage/'.$industry->image) }}"
-                                                                    alt="{{ $industry->name }}"
-                                                                    class="img-fluid mb-3 industry-img">
-                                                                <h6 class="fw-bold text-dark">{{ $industry->name }}</h6>
+                                                                @if(!empty($industry->image) && file_exists(public_path('storage/'.$industry->image)))
+                                                                    <img src="{{ asset('storage/'.$industry->image) }}"
+                                                                        alt="{{ $industry->name ?? 'Industry' }}"
+                                                                        class="img-fluid mb-3 industry-img">
+                                                                @else
+                                                                    <img src="{{ asset('images/default-industry.png') }}" 
+                                                                        alt="Default Industry" 
+                                                                        class="img-fluid mb-3 industry-img">
+                                                                @endif
+                                                                <h6 class="fw-bold text-dark">
+                                                                    {{ $industry->name ?? 'Unnamed Industry' }}
+                                                                </h6>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                @endforeach
-                                                <div class="col-xl-12 col-lg-12 col-md-12 text-center pb-20"><a href="/customer" class="btn btn-warning text-dark mr-10">View More</a><a class="btn btn-warning text-dark open-popup">Get A Free Quote</a></div>
+                                                @empty
+                                                    <div class="col-12 text-center">
+                                                        <p class="text-muted ">No industries available at the moment.</p>
+                                                    </div>
+                                                @endforelse
+
+                                                <div class="col-xl-12 col-lg-12 col-md-12 text-center pb-20">
+                                                    <a href="/customer" class="btn btn-warning text-dark mr-10">View More</a>
+                                                    <a class="btn btn-warning text-dark open-popup">Get A Free Quote</a>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="blog-details-realated-area pt-20 pb-20 bg-dark">
-    <div class="container">
-        <div class="row mb-20">
-            <div class="col-md-12">
-                <h2 class="sv-service-title text-white">Our Latest Blogs</h2>
-            </div>
-        </div>
-        <div class="row">
-            @foreach($blogs as $blog)
-                <div class="col-xl-4 col-lg-6 col-md-6 mb-50">
-                    <div class="tp-blog-item">
-                        <div class="tp-blog-thumb fix p-relative rounded">
-                            @if($blog->image)
-                                <img src="{{ asset('storage/' . $blog->image) }}" 
-                                     alt="{{ $blog->title }}" 
-                                     width="388" height="250">
-                            @endif
-                            <div class="tp-blog-meta">
-                                <span class="bg-dark text-white">
-                                    {{ $blog->created_at->format('d M, Y') }}
-                                </span>
-                            </div>
-                        </div>
-                        <div class="tp-blog-content">
-                            {{-- <a href="#">
-                                <span class="text-white">{{ $blog->category ?? 'Uncategorized' }}</span>
-                            </a> --}}
-                            <h2 class="tp-blog-title-sm text-white">
-                                <a href="{{ route('blogs.public.show', $blog->id) }}">
-                                    {{ $blog->title }}
-                                </a>
-                            </h2>
-                        </div>
-                    </div>
-                </div>
-            @endforeach
-        </div>
-    </div>
-</div>
+
+                                            {{-- Blog Section --}}
+                                            <div class="blog-details-realated-area pt-20 pb-20 bg-dark">
+                                                <div class="container">
+                                                    <div class="row mb-20">
+                                                        <div class="col-md-12">
+                                                            <h2 class="sv-service-title text-white">Our Latest Blogs</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        @forelse($blogs as $blog)
+                                                            <div class="col-xl-4 col-lg-6 col-md-6 mb-50">
+                                                                <div class="tp-blog-item">
+                                                                    <div class="tp-blog-thumb fix p-relative rounded">
+                                                                        @if(!empty($blog->image) && file_exists(public_path('storage/'.$blog->image)))
+                                                                            <img src="{{ asset('storage/' . $blog->image) }}" 
+                                                                                alt="{{ $blog->title ?? 'Blog Image' }}" 
+                                                                                width="388" height="250">
+                                                                        @else
+                                                                            <img src="{{ asset('images/default-blog.png') }}" 
+                                                                                alt="Default Blog Image" 
+                                                                                width="388" height="250">
+                                                                        @endif
+                                                                        <div class="tp-blog-meta">
+                                                                            <span class="bg-dark text-white">
+                                                                                {{ $blog->created_at ? $blog->created_at->format('d M, Y') : 'Date N/A' }}
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="tp-blog-content">
+                                                                        <h2 class="tp-blog-title-sm text-white">
+                                                                            <a href="{{ route('blogs.public.show', $blog->id ?? 0) }}">
+                                                                                {{ $blog->title ?? 'Untitled Blog' }}
+                                                                            </a>
+                                                                        </h2>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        @empty
+                                                            <div class="col-12 text-center">
+                                                                <p class="text-white">No blogs published yet.</p>
+                                                            </div>
+                                                        @endforelse
+                                                    </div>
+                                                </div>
+                                            </div>
+
 
                         <div class="raw-html-embed">
                             <div class="tp-testimonial-area pt-50">

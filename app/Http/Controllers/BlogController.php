@@ -24,7 +24,7 @@ class BlogController extends Controller
         $request->validate([
             'title'   => 'required|string|max:255',
             'content' => 'required',
-            'image'   => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
+            'image'   => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048',
         ]);
 
         $imagePath = $request->file('image')?->store('blogs', 'public');
@@ -48,7 +48,7 @@ class BlogController extends Controller
         $request->validate([
             'title'   => 'required|string|max:255',
             'content' => 'required',
-            'image'   => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
+            'image'   => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048',
         ]);
 
         if ($request->hasFile('image')) {
