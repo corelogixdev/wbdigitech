@@ -22,6 +22,11 @@ Route::get('/about', function () {
     return view('pages.about');
 })->name('about');
 
+// Contact
+Route::get('/contact', function () {
+    return view('pages.about');
+})->name('contact');
+
 // Public side | Blog Pages
 Route::get('/blog', [BlogController::class, 'publicIndex'])->name('blogs.public');
 Route::get('/blogs/{id}', [BlogController::class, 'publicShow'])->name('blogs.public.show');
@@ -39,7 +44,6 @@ Route::get('/cookie-policy', function(){return view('pages.cookie');})->name('co
 Route::get('/customer', [CustomerController::class, 'publicIndex'])->name('customers.public');
 Route::get('/customers/{id}', [CustomerController::class, 'publicShow'])->name('customers.public.show');
 
-// Need Changes Later
 // Public side | Portfolio Pages
 Route::get('/portfolio', [PortfolioController::class, 'publicIndex'])->name('portfolio.public');
 Route::get('/portfolio/{id}', [PortfolioController::class, 'publicShow'])->name('portfolio.public.show');
@@ -64,6 +68,8 @@ Route::middleware(['role:superadmin,admin'])->group(function () {
 
     // Team Controller
     Route::resource('team',TeamController::class);
+    
+    Route::resource('portfolios',PortfolioController::class);
 
 });
 

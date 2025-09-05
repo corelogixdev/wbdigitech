@@ -99,6 +99,22 @@
                     </a>
                 </div>
                 @endif 
+
+                <!-- Portfolio -->
+                <div class="col-sm-6 col-lg-3">
+                    <a href="{{ route('portfolios.index')}}" class="text-decoration-none">
+                        <div class="card shadow-sm border-0 h-100 hover-card">
+                            <div class="card-body d-flex align-items-center">
+                                <i class="bi bi-briefcase text-primary fs-2 me-3"></i>
+                                <div>
+                                    <h6 class="text-muted mb-0">Portfolios</h6>
+                                    <h4 class="fw-bold text-dark mb-0">{{ $portfolioCount ?? 0 }}</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
                 <!-- Future modules -->
                 <div class="col-sm-6 col-lg-3">
                     <a href="#" class="text-decoration-none">

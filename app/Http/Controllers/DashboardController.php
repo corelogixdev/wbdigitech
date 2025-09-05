@@ -8,6 +8,7 @@ use App\Models\Customer;
 use App\Models\Industry;
 use App\Models\User;
 use App\Models\Team;
+use App\Models\Portfolio;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
@@ -20,6 +21,8 @@ class DashboardController extends Controller
         $usersCount = User::count();
         $industriesCount = Industry::count();
         $careersCount = Career::count();
+        $portfolioCount = Portfolio::count();
+
 
         return view('pages.admin.dashboard', compact(
             'blogsCount',
@@ -28,6 +31,7 @@ class DashboardController extends Controller
             'usersCount',
             'industriesCount',
             'careersCount',
+            'portfolioCount',
         ));
     }
 }
