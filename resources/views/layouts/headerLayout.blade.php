@@ -227,8 +227,8 @@
                                         </div>
                                     </li>
                                     <li><a href="{{ route('blogs.public')}}">Blog</a></li>
-                                    <li><a href="#">Portfolio</a></li>
-                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="{{ route('portfolio.public')}}">Portfolio</a></li>
+                                    <li><a href="#{{ ('contact.public')}}">Contact</a></li>
                                 </ul>
                             </nav>
                         </div>

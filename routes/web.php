@@ -38,6 +38,10 @@ Route::get('/cookie-policy', function(){return view('pages.cookie');})->name('co
 Route::get('/customer', [CustomerController::class, 'publicIndex'])->name('customers.public');
 Route::get('/customers/{id}', [CustomerController::class, 'publicShow'])->name('customers.public.show');
 
+// Need Changes Later
+// Public side | Portfolio Pages
+Route::get('/portfolio', [CustomerController::class, 'publicIndex'])->name('portfolio.public');
+Route::get('/portfolio/{id}', [CustomerController::class, 'publicShow'])->name('portfolio.public.show');
 
 
 // Admin Dashboard Routes

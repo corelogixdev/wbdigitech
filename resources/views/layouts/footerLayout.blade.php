@@ -9,9 +9,9 @@
                                 </div>
                                 <div class="tp-footer-menu menu-anim">
                                     <ul class="counter-row tp-text-anim">
-                                        <li class="active"><a href="#">Home</a></li>
-                                        <li class="active"><a href="#">About Us</a></li>
-                                        <li class="active"><a href="#">Blog</a></li>
+                                        <li class="active"><a href="{{ route('home')}}">Home</a></li>
+                                        <li class="active"><a href="{{ route('about')}}">About Us</a></li>
+                                        <li class="active"><a href="{{ route('blogs.public')}}">Blog</a></li>
                                         <li class="active"><a href="{{ route('customers.public')}}">Our Clients</a></li>
                                         <li class="active"><a href="#">Contact</a></li>
                                         <li class="active"><a href="{{ route('careers.public')}}">Careers</a></li>
