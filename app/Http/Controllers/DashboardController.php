@@ -9,7 +9,9 @@ use App\Models\Industry;
 use App\Models\User;
 use App\Models\Team;
 use App\Models\Portfolio;
+use App\Models\Contact;
 use Illuminate\Http\Request;
+
 
 class DashboardController extends Controller
 {
@@ -22,7 +24,7 @@ class DashboardController extends Controller
         $industriesCount = Industry::count();
         $careersCount = Career::count();
         $portfolioCount = Portfolio::count();
-
+        $contactsCount = Contact::count();
 
         return view('pages.admin.dashboard', compact(
             'blogsCount',
@@ -32,6 +34,7 @@ class DashboardController extends Controller
             'industriesCount',
             'careersCount',
             'portfolioCount',
+            'contactsCount',
         ));
     }
 }

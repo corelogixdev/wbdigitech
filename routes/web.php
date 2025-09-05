@@ -11,6 +11,7 @@ use App\Http\Controllers\TeamController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\IndustryController;
 use App\Http\Controllers\CareerController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 
 
@@ -23,9 +24,8 @@ Route::get('/about', function () {
 })->name('about');
 
 // Contact
-Route::get('/contact', function () {
-    return view('pages.about');
-})->name('contact');
+Route::post('/contact', [ContactController::class, 'store'])->name('contact.send');
+Route::get('/contact', [ContactController::class,'publicIndex'])->name('contact');
 
 // Public side | Blog Pages
 Route::get('/blog', [BlogController::class, 'publicIndex'])->name('blogs.public');
@@ -69,7 +69,11 @@ Route::middleware(['role:superadmin,admin'])->group(function () {
     // Team Controller
     Route::resource('team',TeamController::class);
     
+    // Portfolio
     Route::resource('portfolios',PortfolioController::class);
+
+    // Contact 
+    Route::resource('contacts',ContactController::class);
 
 });
 
