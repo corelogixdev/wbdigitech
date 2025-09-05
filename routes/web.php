@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -40,8 +41,8 @@ Route::get('/customers/{id}', [CustomerController::class, 'publicShow'])->name('
 
 // Need Changes Later
 // Public side | Portfolio Pages
-Route::get('/portfolio', [CustomerController::class, 'publicIndex'])->name('portfolio.public');
-Route::get('/portfolio/{id}', [CustomerController::class, 'publicShow'])->name('portfolio.public.show');
+Route::get('/portfolio', [PortfolioController::class, 'publicIndex'])->name('portfolio.public');
+Route::get('/portfolio/{id}', [PortfolioController::class, 'publicShow'])->name('portfolio.public.show');
 
 
 // Admin Dashboard Routes

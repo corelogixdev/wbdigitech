@@ -13,8 +13,12 @@
                     <div class="container text-center">
                         <div class="row">
                             <div class="col-lg-12">
-                                <h1 class="text-display-3 color-gray-900 mb-20">Our Latest Blogs</h1>
-                                <p class="text-heading-6 color-gray-600 mb-20">Stay updated with the latest news, tips, and insights from WB-DigiTech</p>
+                                
+                                <div class="tp-blog-standard-thumb-box p-relative"><img data-speed=".8" src="{{asset('css/new-assets/img/inner-blog/blog-standard/blog-1.jpg')}}" alt="">
+                                <div class="tp-blog-standard-title-box d-none d-sm-block">
+                                    <h1 class="tp-blog-standard-title tp-char-animation">Our Latest Blogs <br>
+                                    Stay updated with the latest <br> news, tips, and insights from WB-DigiTech </h1>
+                                </div>
                             </div>
                         </div>
                     </div>
