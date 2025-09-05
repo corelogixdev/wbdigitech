@@ -3,6 +3,7 @@
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SeoRequestController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
@@ -48,6 +49,8 @@ Route::get('/customers/{id}', [CustomerController::class, 'publicShow'])->name('
 Route::get('/portfolio', [PortfolioController::class, 'publicIndex'])->name('portfolio.public');
 Route::get('/portfolio/{id}', [PortfolioController::class, 'publicShow'])->name('portfolio.public.show');
 
+// Public Side | SeoRequest
+Route::get('/seo-request', [SeoRequestController::class, 'publicIndex'])->name('seo-request.public');
 
 // Admin Dashboard Routes
 Route::middleware(['role:superadmin,admin'])->group(function () {
@@ -74,6 +77,10 @@ Route::middleware(['role:superadmin,admin'])->group(function () {
 
     // Contact 
     Route::resource('contacts',ContactController::class);
+    
+    // Seo Request
+    Route::resource('seo-requests',SeoRequestController::class);
+
 
 });
 

@@ -10,6 +10,7 @@ use App\Models\User;
 use App\Models\Team;
 use App\Models\Portfolio;
 use App\Models\Contact;
+use App\Models\SeoRequest;
 use Illuminate\Http\Request;
 
 
@@ -25,6 +26,7 @@ class DashboardController extends Controller
         $careersCount = Career::count();
         $portfolioCount = Portfolio::count();
         $contactsCount = Contact::count();
+        $seoRequestsCount = SeoRequest::count();
 
         return view('pages.admin.dashboard', compact(
             'blogsCount',
@@ -35,6 +37,7 @@ class DashboardController extends Controller
             'careersCount',
             'portfolioCount',
             'contactsCount',
+            'seoRequestsCount',
         ));
     }
 }

@@ -129,6 +129,21 @@
                         </div>
                     </a>
                 </div>
+                
+                <!-- SEO Requests -->
+                <div class="col-sm-6 col-lg-3">
+                    <a href="{{ route('seo-requests.index')}}" class="text-decoration-none">
+                        <div class="card shadow-sm border-0 h-100 hover-card">
+                            <div class="card-body d-flex align-items-center">
+                                <i class="bi bi-search text-success fs-2 me-3"></i>
+                                <div>
+                                    <h6 class="text-muted mb-0">SEO Requests</h6>
+                                    <h4 class="fw-bold text-dark mb-0">{{ $seoRequestsCount ?? 0 }}</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
 
                 <!-- Future modules -->
                 <div class="col-sm-6 col-lg-3">
