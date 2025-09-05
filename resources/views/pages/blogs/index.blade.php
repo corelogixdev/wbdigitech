@@ -16,8 +16,7 @@
                                 
                                 <div class="tp-blog-standard-thumb-box p-relative"><img data-speed=".8" src="{{asset('css/new-assets/img/inner-blog/blog-standard/blog-1.jpg')}}" alt="">
                                 <div class="tp-blog-standard-title-box d-none d-sm-block">
-                                    <h1 class="tp-blog-standard-title tp-char-animation">Our Latest Blogs <br>
-                                    Stay updated with the latest <br> news, tips, and insights from WB-DigiTech </h1>
+                                    <h1 class="tp-blog-standard-title tp-char-animation">Our Latest Blogs <br> With Latest Insights</h1>
                                 </div>
                             </div>
                         </div>
