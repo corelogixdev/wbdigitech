@@ -94,7 +94,7 @@
                         <div class=" tp-header-menu header-main-menu text-center">
                             <nav class="tp-main-menu-content">
                                 <ul>
-                                    <li><a href={{ route('home')}}>Home</a></li>
+                                    {{-- <li><a href={{ route('home')}}>Home</a></li> --}}
                                     <li><a href={{ route('about') }}>About Us</a></li>
                                     <li class="has-dropdown"><a href="#">What We Do</a>
                                         <div class="tp-submenu submenu tp-mega-menu">
@@ -227,6 +227,7 @@
                                         </div>
                                     </li>
                                     <li><a href="{{ route('blogs.public')}}">Blog</a></li>
+                                    <li><a href="#">Portfolio</a></li>
                                     <li><a href="#">Contact</a></li>
                                 </ul>
                             </nav>
