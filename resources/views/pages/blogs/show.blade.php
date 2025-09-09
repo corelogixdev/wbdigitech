@@ -1,6 +1,6 @@
 @extends('layouts.homelayout') {{-- or your main frontend layout --}}
 
-@section('title','WB-DegiTech | Blogs')
+@section('title','Blogs - WB-DIGITECH')
 
 @section('content')
 <div class="container py-5">

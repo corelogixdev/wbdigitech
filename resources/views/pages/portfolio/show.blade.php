@@ -1,6 +1,6 @@
 @extends('layouts.homelayout')
 
-@section('title', 'WB-DigiTech | ' . $portfolio->title)
+@section('title',   $portfolio->title . ' - WB-DIGITECH')
 
 @section('content')
 <div id="smooth-wrapper">

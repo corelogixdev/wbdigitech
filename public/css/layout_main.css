@@ -612,7 +612,7 @@
         }
 
         .graphic-designer-banner {
-            background-image: url(public/css/new-assets/img/inner-project/showcase/showcase-details-2-1.jpg);
+            background-image: url('public/css/new-assets/img/inner-project/showcase/showcase-details-2-1.jpg');
         }
 
         .showcase-details-2-title {
@@ -1119,11 +1119,11 @@
         }
 
         .accordion-button:after {
-            background-image: url('https://www.volgatigris.com/storage/breadcrumb-banner/more-1.png') !important;
+            background-image: url('public/storage/breadcrumb-banner/more-1.png') !important;
         }
 
         .accordion-button:not(.collapsed):after {
-            background-image: url('https://www.volgatigris.com/storage/breadcrumb-banner/minus.png') !important;
+            background-image: url('public/storage/breadcrumb-banner/minus.png') !important;
         }
 
         .tp-studio-funfact-item {
@@ -1159,6 +1159,8 @@
             color: white;
         }
 
+        /* changed the color here  */
+
         .bg-dark,
         .bg-black,
         .black-bg,
@@ -1168,7 +1170,7 @@
         .tp-brand-area.brands,
         .tp-service-4-item,
         .btn-call {
-            background-image: linear-gradient(3deg, #061044, #142c58) !important;
+            background-image: linear-gradient(90deg, #0A3D62 0%, #0077B6 100%) !important;
         }
 
         .tp-service-4-item {
@@ -1432,7 +1434,7 @@
 
         .page_speed_454732114 {
             height: 230px;
-            background-image: url('/storage/other/popup-background.png');
+            background-image: url('public/storage/other/popup-background.png');
             background-position: -180px -175px;
         }
 
@@ -1552,7 +1554,7 @@
             }
 
             .logo-slider-wrapper {
-                background-color: #061044;
+                background-color: white;
                 display: flex;
                 flex-direction: column;
                 gap: 48px;

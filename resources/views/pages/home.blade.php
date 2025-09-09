@@ -117,7 +117,7 @@
                             <section class="pt-100 pb-100 logo-slider-wrapper">
                                 <div class="container">
                                     <div class="agency__content section__content text-center"><span class="sub-title"> Featured Clients <i class="fa-solid fa-arrow-right"></i></span>
-                                        <h2 class="title title-anim text-white page_speed_53207368"> Our Customers </h2>
+                                        <h2 class="title title-anim text-black page_speed_53207368"> Our Customers </h2>
                                     </div>
                                 </div>
                                 <div class="logo-slider">

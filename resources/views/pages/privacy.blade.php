@@ -1,6 +1,6 @@
 @extends('layouts.homelayout')
 
-@section('title', 'WB-DigiTech | Privacy Policy')
+@section('title', 'Privacy Policy - WB-DIGITECH')
 
 @section('content')
 <div class="content-wrapper" style="margin-top: 120px;">

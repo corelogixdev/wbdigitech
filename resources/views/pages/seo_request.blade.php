@@ -1,6 +1,6 @@
 @extends('layouts.homelayout')
 
-@section('title', 'WB-DigiTech | SEO Audit & Reporting')
+@section('title', 'Seo Audit & Reporting - WB-DIGITECH')
 
 @section('content')
 

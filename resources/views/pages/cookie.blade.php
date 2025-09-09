@@ -1,6 +1,6 @@
 @extends('layouts.homelayout')
 
-@section('title', 'WB-DigiTech | Cookie Policy')
+@section('title', 'Cookie Policy - WB-DIGITECH')
 
 @section('content')
 <div class="content-wrapper" style="margin-top: 120px;"> <!-- adjust 120px to your header height -->

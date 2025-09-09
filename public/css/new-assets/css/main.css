@@ -3563,7 +3563,7 @@ div.demo img {
     right: 0;
     width: 450px;
     height: 100%;
-    z-index: 99;
+    /* z-index: 99; */
     z-index: 99999;
     padding: 50px 50px;
     overflow-y: scroll;

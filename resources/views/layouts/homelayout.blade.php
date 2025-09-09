@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="{{ asset('vendor/core/core/base/libraries/ckeditor/content-styles.css') }}">
         <link rel="stylesheet" href="{{ asset('themes/agon/css/style.css') }}">
         <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Big+Shoulders+Display:wght@400;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
 
 
@@ -78,6 +78,7 @@
     <script src="{{ asset('themes/agon/new-assets/js/webgl.js') }}" defer></script>
     <script src="{{ asset('themes/agon/new-assets/js/tp-cursor.js') }}" defer></script>
     <script src="{{ asset('themes/agon/new-assets/js/main.js') }}" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     {{-- Language Plugin --}}
     <script src="{{ asset('vendor/core/plugins/language/js/language-public.js') }}" defer></script>
@@ -138,6 +139,52 @@
         }(window, document, [].slice))
     </script><noscript><a href="https://www.livechat.com/chat-with/19280090/" rel="nofollow">Chat with us.</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript></body>
 
+<!-- Hidden container for Google Translate -->
+<div id="google_translate_element" style="display:none;"></div>
+
+<script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'en,ar',
+      autoDisplay: false
+    }, 'google_translate_element');
+  }
+
+  function translateLanguage(lang) {
+    const label = document.getElementById('langLabel');
+    if (label) label.textContent = (lang === 'ar' ? '🇦🇪 العربية' : '🇺🇸 English');
+
+    function apply() {
+      const select = document.querySelector('.goog-te-combo');
+      if (!select) {
+        setTimeout(apply, 300);
+        return;
+      }
+
+      // reset first
+      select.value = "";
+      select.dispatchEvent(new Event("change"));
+
+      setTimeout(() => {
+        select.value = lang;
+        select.dispatchEvent(new Event("change"));
+      }, 200);
+
+      // set text direction
+      if (lang === 'ar') {
+        document.documentElement.setAttribute('dir', 'rtl');
+        document.documentElement.setAttribute('lang', 'ar');
+      } else {
+        document.documentElement.setAttribute('dir', 'ltr');
+        document.documentElement.setAttribute('lang', 'en');
+      }
+    }
+    apply();
+  }
+</script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 
 </body>

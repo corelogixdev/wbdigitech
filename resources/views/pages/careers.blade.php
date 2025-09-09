@@ -1,6 +1,6 @@
 @extends('layouts.homelayout')
 
-@section('title','WB-DigiTech | Careers')
+@section('title','Careers - WB-DIGITECH')
 
 @section('content')
 <div id="smooth-wrapper">

@@ -7961,7 +7961,7 @@ label {
 }
 
 .dropdown .dropdown-menu.show {
-    background-color: #fff;
+    background: linear-gradient(90deg, #0A3D62 0%, #0077B6 100%);
     border: thin solid #ececec;
     border-radius: 10px;
     box-shadow: 0 9px 26px 0 rgba(31, 31, 51, .06);
