@@ -6,22 +6,17 @@
 <div id="smooth-wrapper">
     <div id="smooth-content">
         <main>
-            <!-- 🔹 Header with static image + title -->
+            <!-- 🔹 Hero Section with Image + Overlay Title -->
             <section class="section-box">
-                <div class="banner-hero bg-gray-100">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="tp-blog-standard-thumb-box p-relative">
-                                    <img src="{{ asset('storage/'.$portfolio->thumbnail) }}" 
-                                         alt="{{ $portfolio->title }}" class="img-fluid rounded">
-                                    <div class="tp-blog-standard-title-box d-none d-sm-block">
-                                        <h1 class="tp-blog-standard-title tp-char-animation">
-                                            {{ $portfolio->title }}
-                                        </h1>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="banner-hero">
+                    <div class="tp-blog-standard-thumb-box">
+                        <img src="{{ asset('storage/'.$portfolio->thumbnail) }}" 
+                             alt="{{ $portfolio->title }}" class="tp-banner-img">
+                        <div class="tp-banner-overlay"></div>
+                        <div class="tp-banner-title text-center">
+                            <h1 class="tp-blog-standard-title">
+                                {{ $portfolio->title }}
+                            </h1>
                         </div>
                     </div>
                 </div>
@@ -107,19 +102,87 @@
 
 <!-- 🔹 Custom CSS -->
 <style>
-    .text-gradient {
-        background: linear-gradient(45deg, #007bff, #6610f2);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    .btn-gradient {
-        background: linear-gradient(45deg, #007bff, #6610f2);
-        color: white;
-        border: none;
-    }
-    .btn-gradient:hover {
-        opacity: 0.9;
-    }
+   /* Gradient text */
+.text-gradient {
+    background: linear-gradient(90deg, #0A3D62, #0077B6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Gradient button */
+.btn-gradient {
+    background: linear-gradient(90deg, #0A3D62, #0077B6);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 22px;
+    transition: all 0.3s ease;
+}
+.btn-gradient:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* Hero image + overlay */
+.tp-blog-standard-thumb-box { 
+    position: relative; 
+    overflow: hidden;
+    border-radius: 12px;
+    max-height: 480px;
+}
+.tp-banner-img {
+    width: 100%;
+    min-height: 300px;
+    max-height: 480px;
+    object-fit: cover;
+    object-position: center center;
+    display:block;
+}
+.tp-banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(10,61,98,0.55) 0%, rgba(0,119,182,0.4) 100%);
+    border-radius: 12px;
+}
+.tp-banner-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #fff;
+}
+.tp-blog-standard-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 0 3px 8px rgba(0,0,0,0.6);
+}
+
+/* 🔹 Services Tabs Buttons */
+#services-tab .nav-link {
+    background: #f8f9fa;
+    color: #0A3D62;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+#services-tab .nav-link:hover {
+    background: linear-gradient(90deg, #0A3D62, #0077B6);
+    color: #fff;
+    transform: translateX(3px);
+}
+
+#services-tab .nav-link.active {
+    background: linear-gradient(90deg, #0A3D62, #0077B6);
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
 </style>
 
 <!-- 🔹 Auto-switch services tabs -->

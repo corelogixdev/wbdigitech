@@ -70,16 +70,114 @@
 </div> --}}
 
 <style>
+/* ==============================
+   Portfolio Page Styling
+   ============================== */
+
+/* Banner Section */
+.tp-blog-standard-thumb-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.tp-blog-standard-thumb-box img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+}
+.tp-blog-standard-title-box {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.tp-blog-standard-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #fff;
+    text-shadow: 0 3px 12px rgba(0,0,0,0.5);
+}
+
+/* Portfolio Card */
+.tp-blog-item {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform .3s ease, box-shadow .3s ease;
+    background: #fff;
+}
+.tp-blog-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+.tp-blog-thumb img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Overlay */
 .portfolio-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.55);
+    background: linear-gradient(180deg, rgba(10,61,98,0.7) 0%, rgba(0,119,182,0.7) 100%);
     opacity: 0;
     transition: opacity .3s ease;
+    border-radius: 12px;
 }
 .tp-blog-item:hover .portfolio-overlay {
     opacity: 1;
 }
+.portfolio-overlay h5 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+/* Button inside overlay */
+.portfolio-overlay .btn {
+    background: #fff;
+    color: #0A3D62;
+    border-radius: 30px;
+    padding: 6px 16px;
+    font-weight: 600;
+    transition: all .3s ease;
+}
+.portfolio-overlay .btn:hover {
+    background: linear-gradient(90deg, #0A3D62, #0077B6);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Portfolio Content */
+.tp-blog-content {
+    padding: 16px;
+    text-align: center;
+}
+.tp-blog-content span a {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #0077B6;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.tp-blog-content h4 a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #0A3D62;
+    text-decoration: none;
+    transition: color .3s ease;
+}
+.tp-blog-content h4 a:hover {
+    color: #0077B6;
+}
+
 </style>
 
 @endsection

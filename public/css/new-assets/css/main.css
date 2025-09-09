@@ -11280,7 +11280,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .tp-blog-standard-thumb-box img {
-    margin-top: -180px;
+    /* margin-top: -180px; */
 }
 
 @media (max-width: 767px) {
