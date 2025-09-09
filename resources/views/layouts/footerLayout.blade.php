@@ -106,7 +106,7 @@
     <!-- Bottom Bar -->
     <div class="footer-bottom py-3" style="background:#0A3D62;">
         <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-            <a href="#"><img src="{{ asset('css/new-assets/img/logo/logo.jpeg')}}" alt="Logo" width="120" class="mb-2 mb-md-0"></a>
+            <a href="#"><img src="{{ asset('css/new-assets/img/logo/logoo.png')}}" alt="Logo" width="120" class="mb-2 mb-md-0"></a>
             <p class="mb-0 text-white">© WB-DigiTech. All Rights Reserved</p>
         </div>
     </div>
@@ -116,6 +116,9 @@
 
 
 <style>
+    .footer-bottom img {
+    filter: brightness(0) invert(1);
+}
 .footer-area a:hover { color: #00A8E8 !important; } /* same hover accent as header */
 .footer-big-title a:hover { text-decoration: underline; }
 @media(max-width: 767px){
