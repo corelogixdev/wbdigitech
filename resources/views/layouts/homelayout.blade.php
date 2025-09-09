@@ -89,19 +89,7 @@
         crossorigin=anonymous referrerpolicy="no-referrer" defer></script>
 
 
-           
-    <div class="position-fixed bottom-0 end-0 p-3 page_speed_2018363099">
-        <div id="live-toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="toast-header"><span class="success text-success"><span class="d-flex"><i class="fi fi-rr-check d-flex align-items-center me-2"></i><strong class="me-auto">Success</strong></span></span><span class="danger text-danger"><span class="d-flex"><i class="fi fi-rr-cross-circle d-flex align-items-center me-2"></i><strong class="me-auto">Error</strong></span></span>
-                <span
-                    class="info text-info"><span class="d-flex"><i class="fi fi-rr-info d-flex align-items-center me-2"></i><strong class="me-auto">Info</strong></span></span><strong class="me-auto"></strong><small class="time"></small><button type=button class="btn-close" data-bs-dismiss="toast"
-                        aria-label="Close"></button></div>
-            <div class="toast-body"></div>
-        </div>
-    </div>
-
-
-    <script>
+    {{-- <script>
         window.__lc = window.__lc || {};
         window.__lc.license = 19280090;
         window.__lc.integration_name = "manual_channels";
@@ -137,7 +125,7 @@
             };
             !n.__lc.asyncInit && e.init(), n.LiveChatWidget = n.LiveChatWidget || e
         }(window, document, [].slice))
-    </script><noscript><a href="https://www.livechat.com/chat-with/19280090/" rel="nofollow">Chat with us.</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript></body>
+    </script><noscript><a href="https://www.livechat.com/chat-with/19280090/" rel="nofollow">Chat with us.</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript></body> --}}
 
 <!-- Hidden container for Google Translate -->
 <div id="google_translate_element" style="display:none;"></div>
@@ -183,6 +171,7 @@
     apply();
   }
 </script>
+
 
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 

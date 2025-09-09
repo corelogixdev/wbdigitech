@@ -35,7 +35,7 @@
                         Our expert team provides 360-degree digital marketing solutions including SEO, Google Ads, social media marketing, web design, content creation, and more. Contact us now to boost your sales and grow your business.
                     </p>
                     <div class="hero-btns mt-4">
-                        <a href="https://wbdigitech.ae/contact-us/" class="btn btn-gradient">Get a Free Quote</a>
+                        <a href="{{ route('contact')}}" class="btn btn-gradient">Get a Free Quote</a>
                     </div>
                 </div>
             </div>
@@ -107,7 +107,7 @@
                 <div class="item">
                     <div class="image-box">
                         <div class="image-box-wrapper">
-                            <img src="{{ asset($customer->logo) }}" alt="{{ $customer->name }}" class="img-fluid grayscale-hover">
+                            <img src="{{ asset('storage/' . $customer->logo) }}" alt="{{ $customer->name }}" class="img-fluid grayscale-hover">
                         </div>
                     </div>
                 </div>

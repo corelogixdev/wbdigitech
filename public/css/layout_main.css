@@ -1594,16 +1594,19 @@
             }
 
             .image-box .image-box-wrapper {
+                
                 display: flex;
                 flex-wrap: wrap;
                 align-items: center;
                 justify-content: center;
-                background-color: #061044;
+                /* changed this  */
+                /* background: linear-gradient(90deg, #0A3D62, #0077B6); */
                 border-radius: 1.6825em 26.92px;
                 width: calc(100% - 2px);
                 height: calc(100% - 2px);
                 margin: 1px;
                 overflow: hidden;
+                
             }
 
             .card-img {
