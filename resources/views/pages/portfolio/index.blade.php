@@ -178,6 +178,28 @@
     color: #0077B6;
 }
 
+/* ==============================
+   Responsive Fix for Banner Image
+   ============================== */
+@media (max-width: 768px) {
+    .tp-blog-standard-thumb-box img {
+        height: 280px; /* tablet view */
+    }
+    .tp-blog-standard-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .tp-blog-standard-thumb-box img {
+        height: 200px; /* mobile view */
+    }
+    .tp-blog-standard-title {
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
+}
+
 </style>
 
 @endsection

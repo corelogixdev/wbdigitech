@@ -339,7 +339,7 @@
 }
 
 .logo-slider .item:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .image-box-wrapper img {
@@ -440,4 +440,56 @@
     background: linear-gradient(90deg, #0A3D62, #0077B6);
     height: 12px;
     border-radius: 50px;
+}
+
+
+/* Team Section */
+.team-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+}
+
+.team-img img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+
+.team-info {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    text-align: center;
+    padding: 20px;
+    transition: bottom 0.4s ease-in-out;
+    border-top: 3px solid #0A3D62; /* accent color */
+}
+
+.team-card:hover .team-info {
+    bottom: 0;
+}
+
+.team-info h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.team-info p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #666;
 }

@@ -335,31 +335,28 @@
 
                           
                         <div class="tp-team-area pt-20 pb-50 fix">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-xl-12">
-                                        <div class="tp-team-slider-wrapper">
-                                            <div class="swiper-container tp-team-slider-active">
-                                                <div class="swiper-wrapper">
-                                                     @foreach($teamMembers as $member)
-                                                    <div class="swiper-slide">
-                                                        <div class="tp-team-item tp-hover-btn-wrapper marque fix mb-30">
-                                                          <img src="{{ asset('storage/' . $member->image) }}" alt="{{ $member->speciality }}">
-                                                            <div class="tp-team-content"><span>{{ $member->speciality }}</span>
-                                                                <h4 class="tp-team-title-sm"><a>{{ $member->name }}</a></h4>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                      @endforeach
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                       <section class="tp-about-area pt-80 pb-80 bg-light">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            @foreach($teamMembers as $member)
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="team-card">
+                    <div class="team-img">
+                        <img src="{{ asset('storage/' . $member->image) }}" alt="{{ $member->name }}">
+                    </div>
+                    <div class="team-info">
+                        <h4>{{ $member->name }}</h4>
+                        <p>{{ $member->speciality }}</p>
+                    </div>
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
+</div>
+
+
+
+<section class="tp-about-area pt-80 pb-80 bg-light">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xl-10 col-lg-11 text-center">

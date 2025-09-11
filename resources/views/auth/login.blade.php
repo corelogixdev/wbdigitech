@@ -39,7 +39,7 @@
                 </a>
             @endif
 
-            <x-primary-button class="ms-3">
+            <x-primary-button class="ms-3" style="background: linear-gradient(90deg, #0A3D62, #0077B6);">
                 {{ __('Log in') }}
             </x-primary-button>
         </div>

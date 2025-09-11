@@ -107,7 +107,7 @@
     <div class="footer-bottom py-3" style="background:#0A3D62;">
         <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
             <a href="#"><img src="{{ asset('css/new-assets/img/logo/logoo.png')}}" alt="Logo" width="120" class="mb-2 mb-md-0"></a>
-            <p class="mb-0 text-white">© WB-DigiTech. All Rights Reserved</p>
+            <p class="mb-0 text-white">© 2025 Copyrights – WB-DIGITECH. All Rights Reserved</p>
         </div>
     </div>
     
@@ -123,7 +123,7 @@
       <h3>Talk <span>strategy</span> with an expert</h3>
       <p>Get expert advice on the right strategy for your business!</p>
     </div>
-    <a href="https://wa.me/923001234567" target="_blank" class="consultant-btn">
+    <a href="https://wa.me/971502390775" target="_blank" class="consultant-btn">
       FREE CONSULTATION
     </a>
     <button id="consultant-close">×</button>
@@ -179,7 +179,7 @@
 
 .consultant-btn {
   margin-left: auto;
-  background: red;
+  background: linear-gradient(90deg, #0A3D62, #0077B6);
   color: #fff;
   font-weight: bold;
   text-decoration: none;
@@ -189,7 +189,7 @@
 }
 
 .consultant-btn:hover {
-  background: #b30000;
+  background: linear-gradient(90deg, #2389d2, #0077B6);
 }
 
 #consultant-close {

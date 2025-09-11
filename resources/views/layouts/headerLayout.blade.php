@@ -43,12 +43,12 @@
     </style>
 
     <!-- Your existing floating icons / offcanvas markup (unchanged) -->
-    <a href="https://wa.link/" class="float" title="whatsapp contact digital marketing agency dubai" target="_blank"><i class="fab fa-whatsapp my-float"></i></a>
+    <a href="https://wa.link/+971-50-239-0775" class="float" title="Whatsapp WB-DIGITECH" target="_blank"><i class="fab fa-whatsapp my-float"></i></a>
     <div class="floating-icons d-none">
         <div class="float-sm">
-            <div class="fl-fl float-wt d-none"><i class="fab fa-whatsapp"></i><a href="https://wa.link/" target="_blank"> Whatsapp</a></div>
+            <div class="fl-fl float-wt d-none"><i class="fab fa-whatsapp"></i><a href="https://wa.link/+971-50-239-0775" target="_blank"> Whatsapp</a></div>
             <div class="fl-fl float-mail d-none"><i class="fa fa-envelope"></i><a href="mailto:mail" target="_blank"> E-Mail Us</a></div>
-            <div class="fl-fl float-phone"><i class="fa fa-phone"></i><a href="tel:+971" target="_blank"> Call Us</a></div>
+            <div class="fl-fl float-phone"><i class="fa fa-phone"></i><a href="tel:+971-50-239-0775" target="_blank"> Call Us</a></div>
             <div class="fl-fl float-quote "><i class="fa fa-pencil"></i><a href="javascript:;" class="open-popup"> Get a Quote</a></div>
         </div>
     </div>
@@ -66,7 +66,7 @@
             </div>
             <div class="tp-offcanvas-main">
                 <div class="tp-offcanvas-content">
-                    <h3 class="tp-offcanvas-title">Hello There!</h3>
+                    <h3 class="tp-offcanvas-title " style=" color: #0A3D62">Hello There!</h3>
                 </div>
                 <div class="tp-main-menu-mobile d-xl-none"></div>
                 <div class="tp-offcanvas-gallery d-none">
@@ -88,10 +88,10 @@
                 <div class="tp-offcanvas-contact">
                     <h3 class="tp-offcanvas-title sm">Contact Us</h3>
                     <ul>
-                        <li><a href="tel:+971 00 000 0000">Phone: +971 00 000 0000</a></li>
-                        <li><a href="tel:+971 0 000 0000">Landline: +971 0 000 0000</a></li>
+                        <li><a href="tel:+971 50 239 0775">Phone: +971-50-239-0775</a></li>
+                        <li><a href="tel:+971 4 255 9928">Landline: +971-4-255-9928</a></li>
                         <li><a href="mailto:info@wbdigitech.com">info@wbdigitech.com</a></li>
-                        <li><a href="https://g.co/">Business  - Dubai</a></li>
+                        <li><a href="https://g.co/">504 Raffa Building Rolla Street Bur Dubai, UAE</a></li>
                     </ul>
                 </div>
                 <div class="tp-offcanvas-social d-none">
@@ -121,7 +121,7 @@
 
                         <!-- Left side: contacts -->
                         <div class="col-md-6 d-flex align-items-center ps-3">
-                            <a href="tel:+97100000000" class="text-white me-4 text-decoration-none small d-flex align-items-center"><i class="fa fa-phone me-2" aria-hidden="true"></i>+971 00000000</a>
+                            <a href="tel:+971502390775" class="text-white me-4 text-decoration-none small d-flex align-items-center"><i class="fa fa-phone me-2" aria-hidden="true"></i>+971-50-239-0775</a>
                             <a href="mailto:info@wbdigitech.ae" class="text-white text-decoration-none small d-flex align-items-center"><i class="fa fa-envelope me-2" aria-hidden="true"></i>info@wbdigitech.ae</a>
                         </div>
 
