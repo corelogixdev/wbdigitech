@@ -6,6 +6,7 @@ use App\Models\Blog;
 use App\Models\Career;
 use App\Models\Customer;
 use App\Models\Industry;
+use App\Models\Service;
 use App\Models\User;
 use App\Models\Team;
 use App\Models\Portfolio;
@@ -27,6 +28,8 @@ class DashboardController extends Controller
         $portfolioCount = Portfolio::count();
         $contactsCount = Contact::count();
         $seoRequestsCount = SeoRequest::count();
+        $servicesCount = Service::count();
+
 
         return view('pages.admin.dashboard', compact(
             'blogsCount',
@@ -37,6 +40,7 @@ class DashboardController extends Controller
             'careersCount',
             'portfolioCount',
             'contactsCount',
+            'servicesCount',
             'seoRequestsCount',
         ));
     }

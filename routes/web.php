@@ -13,6 +13,7 @@ use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\IndustryController;
 use App\Http\Controllers\CareerController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 
 
@@ -31,6 +32,11 @@ Route::get('/contact', [ContactController::class,'publicIndex'])->name('contact'
 // Public side | Blog Pages
 Route::get('/blog', [BlogController::class, 'publicIndex'])->name('blogs.public');
 Route::get('/blogs/{id}', [BlogController::class, 'publicShow'])->name('blogs.public.show');
+
+// Public side | Services Page
+Route::get('/service', [ServiceController::class, 'publicIndex'])->name('services.public');
+Route::get('/services/{slug}', [ServiceController::class, 'show'])->name('services.public.show');
+
 
 // Public side | Career Page
 Route::get('/career',[CareerController::class,'publicIndex'])->name('careers.public');
@@ -80,6 +86,9 @@ Route::middleware(['role:superadmin,admin'])->group(function () {
     
     // Seo Request
     Route::resource('seo-requests',SeoRequestController::class);
+
+    // Services
+    Route::resource('services', ServiceController::class);
 
 
 });

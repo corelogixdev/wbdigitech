@@ -176,7 +176,7 @@
                                 <nav class="tp-main-menu-content">
                                     <ul>
                                         <li><a href={{ route('about') }}>About Us</a></li>
-                                        <li class="has-dropdown"><a href="#">What We Do</a>
+                                        <li class="has-dropdown"><a href="{{ route('services.public')}}">What We Do</a>
                                             <div class="tp-submenu submenu tp-mega-menu">
                                                 <div class="tp-menu-fullwidth">
                                                     <div class="tp-megamenu-portfolio p-relative">
