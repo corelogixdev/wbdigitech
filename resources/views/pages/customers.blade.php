@@ -29,19 +29,22 @@
                     </div>
 
                     <!-- Clients Section -->
-                    <div class="client-section mt-5 bd-brand-area">
-                        <div class="container mt-sm-n5">
-                            <div class="row gx-80 row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1">
-                                @foreach($customers as $customer)
-                                <div class="col-lg-3 col-6 p-2">
-                                    <div class="bd-brand-item mb-80 rounded d-flex justify-content-center">
-                                        <img class="w-50" src="{{ asset('storage/' . $customer->logo) }}" alt="{{ $customer->name }}">
-                                    </div>
-                                </div>
-                                @endforeach
-                            </div>
-                        </div>
-                    </div>
+<div class="client-section mt-5 bd-brand-area">
+    <div class="container mt-sm-n5">
+        <div class="row gx-80 row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1">
+            @foreach($customers as $customer)
+            <div class="col-lg-3 col-6 p-2">
+                <div class="bd-brand-item mb-80 rounded d-flex justify-content-center align-items-center"
+                     style="height: 120px; border: 1px solid #eee; background: #fff; padding: 10px;">
+                    <img src="{{ asset('storage/' . $customer->logo) }}"
+                         alt="{{ $customer->name }}"
+                         style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
+</div>
 
                     <!-- Call to Action -->
                     <div class="sv-big-text-area pb-80 pt-80">
