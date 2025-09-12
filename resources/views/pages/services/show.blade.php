@@ -34,29 +34,50 @@
             <section class="blog-details-realated-area pt-100 pb-70 bg-light">
                 <div class="container container-1000">
                     <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="tp-blog-content">
-                                <div class="service-content bg-white p-5 rounded shadow">
+                        <div class="col-lg-10 mx-auto">
+                            <div class="service-content bg-white p-5 rounded shadow">
+                                
+                                <!-- Example structured layout -->
+                                <div class="row align-items-center mb-5">
+                                    <div class="col-md-6">
+                                        <h2 class="fw-bold text-dark">Overview</h2>
+                                        <p>{!! nl2br(e($service->short_description)) !!}</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="{{ asset('storage/' . $service->image) }}" 
+                                             alt="{{ $service->title }}" 
+                                             class="img-fluid rounded shadow-sm">
+                                    </div>
+                                </div>
+
+                                <div class="mb-4">
                                     {!! $service->content !!}
                                 </div>
 
-                                <!-- Share Section -->
-                                <div class="mt-5 text-center">
-                                    <h5 class="fw-bold text-dark">Share This Service</h5>
-                                    <div class="d-flex justify-content-center gap-3 mt-2">
-                                        <a href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode(Request::fullUrl()) }}" 
-                                           target="_blank" class="btn btn-sm btn-primary">
-                                            <i class="bi bi-facebook"></i> Facebook
-                                        </a>
-                                        <a href="https://twitter.com/intent/tweet?url={{ urlencode(Request::fullUrl()) }}&text={{ urlencode($service->title) }}" 
-                                           target="_blank" class="btn btn-sm btn-info text-white">
-                                            <i class="bi bi-twitter"></i> Twitter
-                                        </a>
-                                        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ urlencode(Request::fullUrl()) }}" 
-                                           target="_blank" class="btn btn-sm btn-secondary">
-                                            <i class="bi bi-linkedin"></i> LinkedIn
-                                        </a>
-                                    </div>
+                                <!-- Call to Action -->
+                                <div class="text-center mt-5">
+                                    <a href="{{ route('contact') }}" class="theme-btn">
+                                        <i class="bi bi-envelope"></i> Get This Service
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Share Section -->
+                            <div class="mt-5 text-center">
+                                <h5 class="fw-bold text-dark">Share This Service</h5>
+                                <div class="d-flex justify-content-center gap-3 mt-2">
+                                    <a href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode(Request::fullUrl()) }}" 
+                                       target="_blank" class="btn btn-sm theme-btn">
+                                        <i class="bi bi-facebook"></i> Facebook
+                                    </a>
+                                    <a href="https://twitter.com/intent/tweet?url={{ urlencode(Request::fullUrl()) }}&text={{ urlencode($service->title) }}" 
+                                       target="_blank" class="btn btn-sm theme-btn">
+                                        <i class="bi bi-twitter"></i> Twitter
+                                    </a>
+                                    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ urlencode(Request::fullUrl()) }}" 
+                                       target="_blank" class="btn btn-sm theme-btn">
+                                        <i class="bi bi-linkedin"></i> LinkedIn
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -108,7 +129,8 @@
 .service-content h3 {
     color: #0A3D62;
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    font-weight: bold;
 }
 .service-content p {
     margin-bottom: 15px;
@@ -127,6 +149,22 @@
     width: 100%;
     height: 220px;
     object-fit: cover;
+}
+/* Theme Button */
+.theme-btn {
+    background-color: #0077B6;
+    color: #fff !important;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 6px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+.theme-btn:hover {
+    background-color: #0A3D62;
+    transform: translateY(-2px);
+    color: #fff !important;
 }
 </style>
 @endsection

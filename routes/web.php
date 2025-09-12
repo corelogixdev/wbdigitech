@@ -35,7 +35,7 @@ Route::get('/blogs/{id}', [BlogController::class, 'publicShow'])->name('blogs.pu
 
 // Public side | Services Page
 Route::get('/service', [ServiceController::class, 'publicIndex'])->name('services.public');
-Route::get('/services/{slug}', [ServiceController::class, 'show'])->name('services.public.show');
+Route::get('/service/{slug}', [ServiceController::class, 'show'])->name('services.public.show');
 
 
 // Public side | Career Page

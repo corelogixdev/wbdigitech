@@ -42,7 +42,7 @@
                                     <div class="tp-blog-content text-center mt-3">
                                         <h4 class="tp-blog-title-sm mt-2">{{ $service->title }}</h4>
                                         <p class="text-muted mt-1">{{ Str::limit(strip_tags($service->short_description), 100) }}</p>
-                                        <a href="{{ route('services.public.show',[$service->slug])}}" class="btn btn-sm btn-primary mt-2">Read More</a>
+                                        <a href="{{ route('services.public.show',[$service->slug])}}" class="btn btn-sm theme-btn mt-2">Read More</a>
                                     </div>
                                 </div>
                             </div>
@@ -60,6 +60,35 @@
                 </div>
             </section>
         </main>
-    {{-- </div>
-</div> --}}
+
+        <style>
+    /* Services Section */
+    .tp-blog-item {
+        border-radius: 15px;
+        overflow: hidden;
+        background: #fff;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+    .tp-blog-item:hover {
+        transform: translateY(-5px);
+    }
+
+    .tp-blog-thumb img {
+        width: 100%;
+        height: 250px; /* same as blogs */
+        object-fit: cover;
+        border-bottom: 2px solid #0077B6;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .tp-blog-title-sm {
+        color: #0A3D62;
+        font-weight: 600;
+    }
+    .tp-blog-title-sm:hover {
+        color: #0077B6;
+    }
+</style>
+
 @endsection
