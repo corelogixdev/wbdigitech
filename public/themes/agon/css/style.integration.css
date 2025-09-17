@@ -1,5 +1,5 @@
 .page-header-image {
-    background-image: url(storage/breadcrumb-banner/home-page-banner-copy-1.webp);
+    background-image: url("/storage/breadcrumb-banner/home-page-banner-copy-1.webp");
     background-position-y: -60px;
 }
 
@@ -47,7 +47,7 @@ body ol li {
 }
 
 .special-image {
-    background-image: url(storage/breadcrumb-banner/home-page-banner-copy-1.webp);
+    background-image: url("/storage/breadcrumb-banner/home-page-banner-copy-1.webp");
     background-position-y: -223px;
 }
 
@@ -86,7 +86,7 @@ body ol li {
         display: none !important;
     }
     .accordion-button:after {
-        background-image: url(storage/icons/down-arrow-svgrepo-com-1.svg) !important;
+        background-image: url("/storage/icons/down-arrow-svgrepo-com-1.svg") !important;
     }
     .banner-hero.banner-breadcrums {
         padding: 155px 0;
