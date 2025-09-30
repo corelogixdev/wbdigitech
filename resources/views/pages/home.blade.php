@@ -13,15 +13,15 @@
                         <p> </p>
                         <div class="raw-html-embed"> 
                             <div class="tp-hero-area tp-hero-ptb main-slider">
-    <div class="container-fluid home-main-slider">
-        <div class="row justify-content-center">
-            <div class="col-xxl-12">
-                <!-- Hero Title -->
-                <div class="tp-hero-title-wrap mb-35 text-center">
-                    <h2 class="tp-hero-title gradient-text">
-                        Save Time <br> Finding The Right <br> Agency Partner
-                    </h2>
-                </div>
+                            <div class="container-fluid home-main-slider">
+                                <div class="row justify-content-center">
+                                    <div class="col-xxl-12">
+                                        <!-- Hero Title -->
+                                        <div class="tp-hero-title-wrap mb-35 text-center">
+                                            <h2 class="tp-hero-title gradient-text">
+                                                Save Time <br> Finding The Right <br> Agency Partner
+                                            </h2>
+                                        </div>
 
                 <!-- Hero Content -->
                 <div class="tp-hero-content text-center">
@@ -298,7 +298,7 @@
                                             </div>
 
 
-                     <div class="tp-testimonial-area pt-50">
+<div class="tp-testimonial-area pt-50">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xl-10">
@@ -334,7 +334,7 @@
 </div>
 
                           
-                        <div class="tp-team-area pt-20 pb-50 fix">
+<div class="tp-team-area pt-20 pb-50 fix">
     <div class="container-fluid">
         <div class="row justify-content-center">
             @foreach($teamMembers as $member)

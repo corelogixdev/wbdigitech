@@ -815,7 +815,7 @@ div.demo img {
 }
 
 .body-overlay:hover {
-    cursor: url("public/css/new-assets/img/icon/cross-out.html"), pointer;
+    cursor:  pointer;
 }
 
 .body-overlay.opened {

@@ -77,6 +77,10 @@
 </style>
 
 <body id="body" class="tp-magic-cursor">
+   <div id="magic-cursor">
+        <div id="ball"></div>
+    </div>
+    
   <!-- Splash Screen -->
   <div id="splash-screen">
     <div class="splash-content">

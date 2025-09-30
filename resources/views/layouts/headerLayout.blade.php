@@ -1,16 +1,8 @@
-    <!-- header.blade.php - edited header partial
-        Replaces the top-contact bar with a full-width black bar, keeps main header white.
-        Integrates Google Translate (with retry) and loads Font Awesome if not present.
-        Instructions: Replace your current header include with this file. Ensure Bootstrap JS is loaded for dropdowns.
-    -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"  referrerpolicy="no-referrer" />
 
-    <!-- Load Font Awesome if not already present -->
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"  referrerpolicy="no-referrer" />
+<style>
 
-    <style>
-
-            /* Top bar styling - only affects the top bar */
+    /* Top bar styling - only affects the top bar */
     .header-top-black { background: #111; color: #fff; }
 
     /* Top bar styling - gradient based on logo colors */
@@ -41,9 +33,9 @@
     .header-top-black .col-md-6 { text-align: center; }
     .header-top-black .social-icons { margin-top: 6px; }
     }
-    </style>
-
-    <!-- Your existing floating icons / offcanvas markup (unchanged) -->
+</style>
+<div class="body-overlay"></div> 
+    <!-- Top Most Header -->
     <a href="https://wa.link/+971-50-239-0775" class="float" title="Whatsapp WB-DIGITECH" target="_blank"><i class="fab fa-whatsapp my-float"></i></a>
     <div class="floating-icons d-none">
         <div class="float-sm">
@@ -56,14 +48,17 @@
     <nav class="navbar navbar-mobile fixed-bottom d-none">
         <div class="container-fluid d-flex justify-content-between"><a href="javascript:;" class="nav-link btn btn-quote flex-fill text-center open-popup">Get a Quote</a><a href="tel:+971" class="nav-link btn btn-call flex-fill text-center">Call Now</a></div>
     </nav>
-    <div id="magic-cursor">
-        <div id="ball"></div>
-    </div>
+    
+    {{-- Side Bar --}}
     <div class="tp-offcanvas-area">
         <div class="tp-offcanvas-wrapper">
             <div class="tp-offcanvas-top d-flex align-items-center justify-content-between">
-                <div class="tp-offcanvas-logo"><a href="#"><img class="logo-1" src="{{ asset('css/new-assets/img/logo/logo.jpeg') }}" alt="WbDigitech Logo"><img class="logo-2" src="{{ asset('css/new-assets/img/logo/logo.jpeg')}}" alt="Wbdigitech Logo White"></a></div>
-                <div class="tp-offcanvas-close"><button class="tp-offcanvas-close-btn" title="menu icon digital marketing agency dubai"><svg width=37 height=38 viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.19141 9.80762L27.5762 28.1924" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /><path d="M9.19141 28.1924L27.5762 9.80761" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg></button></div>
+                <div class="tp-offcanvas-logo"><a href="#"><img class="logo-1" src="{{ asset('css/new-assets/img/logo/logoo.png') }}" alt="WbDigitech Logo"><img class="logo-2" src="{{ asset('css/new-assets/img/logo/logoo.png')}}" alt="Wbdigitech Logo White"></a></div>
+                <div class="tp-offcanvas-close d-flex align-items-center">
+                    <!-- Visible cancel button for UX -->
+                    <button class="tp-offcanvas-cancel-btn btn btn-sm btn-light me-2" aria-label="Cancel sidebar" style="display:inline-block;visibility:visible;">Cancel</button>
+                    <button class="tp-offcanvas-close-btn" title="menu icon digital marketing agency dubai"><svg width=37 height=38 viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.19141 9.80762L27.5762 28.1924" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /><path d="M9.19141 28.1924L27.5762 9.80761" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg></button>
+                </div>
             </div>
             <div class="tp-offcanvas-main">
                 <div class="tp-offcanvas-content">
@@ -107,8 +102,108 @@
             </div>
         </div>
     </div>
-    </div>
-    <div class="body-overlay"></div>
+</div>
+</div>
+
+<!-- Offcanvas behaviour: fixed positioning, overlay and JS to toggle -->
+<style>
+    /* Ensure the offcanvas sits above the page and is full height */
+    .tp-offcanvas-area {
+        position: fixed;
+        top: 0;
+        /* keep transform hiding from theme's main.css; width forced to match theme */
+        width: 450px !important; /* match compiled main.css */
+        max-width: 95%;
+        height: 100vh;
+        background: #fff;
+        z-index: 2000;
+        box-shadow: -10px 0 30px rgba(0,0,0,0.15);
+        transition: right .28s ease;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 40px; /* breathing room for bottom */
+    }
+    /* The theme's compiled CSS uses the class 'opened' and transform to slide the panel in.
+       We toggle the same class in JS so the compiled rules take effect. */
+    .tp-offcanvas-area.opened { transform: translateX(0) !important; }
+
+    /* Overlay behind the offcanvas */
+    .body-overlay {
+        position: fixed;
+        inset: 0; /* top:0; right:0; bottom:0; left:0; */
+        background: rgba(0,0,0,0.45);
+        z-index: 1990;
+        display: none;
+        transition: opacity .2s ease;
+    }
+    .body-overlay.opened { display: block; opacity: 1; visibility: visible; }
+
+    /* When offcanvas is open, prevent body from scrolling */
+    .prevent-scroll, .prevent-scroll body { overflow: hidden !important; height: 100vh !important; }
+
+    /* Make sure close button is visible */
+    .tp-offcanvas-close-btn { background: transparent; border: none; color: inherit; cursor: pointer; }
+    .tp-offcanvas-top { z-index: 2010; }
+
+    /* Style for the visible Cancel button to ensure it's readable */
+    .tp-offcanvas-cancel-btn {
+        background: transparent;
+        border: 1px solid rgba(10,61,98,0.12);
+        color: #0A3D62;
+        padding: 6px 10px;
+        font-weight: 600;
+        border-radius: 6px;
+        box-shadow: none;
+        display: inline-block !important;
+        z-index: 2020;
+    }
+    .tp-offcanvas-close .tp-offcanvas-cancel-btn { display: inline-flex; align-items: center; }
+
+    /* Small screens: make offcanvas full width for better UX */
+    @media (max-width: 576px) {
+        .tp-offcanvas-area { width: 100%; right: -100%; }
+        .tp-offcanvas-area.open { right: 0; }
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var openBtn = document.querySelector('.tp-offcanvas-open-btn');
+        var closeBtn = document.querySelector('.tp-offcanvas-close-btn');
+        var offcanvas = document.querySelector('.tp-offcanvas-area');
+        var overlay = document.querySelector('.body-overlay');
+
+        if (!offcanvas) return; // nothing to do
+
+        function openOffcanvas() {
+            // Add both 'opened' and 'open' for compatibility
+            offcanvas.classList.add('opened');
+            offcanvas.classList.add('open');
+            if (overlay) overlay.classList.add('opened');
+            document.body.classList.add('prevent-scroll');
+        }
+
+        function closeOffcanvas() {
+            offcanvas.classList.remove('opened');
+            offcanvas.classList.remove('open');
+            if (overlay) overlay.classList.remove('opened');
+            document.body.classList.remove('prevent-scroll');
+        }
+
+    if (openBtn) openBtn.addEventListener('click', function (e) { e.preventDefault(); openOffcanvas(); });
+    if (closeBtn) closeBtn.addEventListener('click', function (e) { e.preventDefault(); closeOffcanvas(); });
+
+    // New visible cancel button (for clarity) - closes offcanvas
+    var cancelBtn = document.querySelector('.tp-offcanvas-cancel-btn');
+    if (cancelBtn) cancelBtn.addEventListener('click', function (e) { e.preventDefault(); closeOffcanvas(); });
+        if (overlay) overlay.addEventListener('click', function () { closeOffcanvas(); });
+
+        // Close on Escape key
+        document.addEventListener('keyup', function (e) {
+            if (e.key === 'Escape') closeOffcanvas();
+        });
+    });
+</script>
 
     <!-- HEADER -->
     <header class="tp-header-height">
@@ -137,28 +232,26 @@
                             </div>
 
                            <!-- Language Dropdown (works with Google Translate) -->
-<div class="dropdown ms-3">
-    <a id="langDropdownBtn" 
-       class="dropdown-toggle text-white text-decoration-none" 
-       href="#" 
-       role="button" 
-       data-bs-toggle="dropdown" 
-       aria-expanded="false">
-        <span id="langLabel">🇺🇸 English</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end">
-        <li><a class="dropdown-item" href="javascript:void(0)" onclick="translateLanguage('en')">🇺🇸 English</a></li>
-        <li><a class="dropdown-item" href="javascript:void(0)" onclick="translateLanguage('ar')">🇦🇪 العربية</a></li>
-    </ul>
-</div>
+                            <div class="dropdown ms-3">
+                                <a id="langDropdownBtn" 
+                                class="dropdown-toggle text-white text-decoration-none" 
+                                href="#" 
+                                role="button" 
+                                data-bs-toggle="dropdown" 
+                                aria-expanded="false">
+                                    <span id="langLabel">🇺🇸 English</span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="javascript:void(0)" onclick="translateLanguage('en')">🇺🇸 English</a></li>
+                                    <li><a class="dropdown-item" href="javascript:void(0)" onclick="translateLanguage('ar')">🇦🇪 العربية</a></li>
+                                </ul>
+                            </div>
 
-
-                            <!-- NEW Get Free SEO Button -->
-                    <a href="{{ route('seo-request.public') }}" class="btn btn-sm text-white"
-                       style="background: linear-gradient(90deg,#0A3D62,#0077B6); border:none; padding:6px 14px; border-radius:4px; font-weight:600; font-size:13px;">
-                       🚀 Get Free SEO
-                    </a>
-
+                                    <!-- NEW Get Free SEO Button -->
+                            <a href="{{ route('seo-request.public') }}" class="btn btn-sm text-white"
+                            style="background: linear-gradient(90deg,#0e5689,#0077B6); border:none; padding:6px 14px; border-radius:4px; font-weight:600; font-size:13px;">
+                            🚀 Get Free SEO
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -192,19 +285,12 @@
                                                                                 <div class="tp-megamenu-list-wrap tp-portfolio-menu-style">
                                                                                     <ul>
                                                                                         <li><a href="#">Website Development</a></li>
-                                                                                        <!--<li><a href="services/cms-website-development-services-in-dubai">CMS Website</a></li>-->
-                                                                                        <!--<li><a href="services/landing-page-design-services">Landing pages</a></li>-->
                                                                                         <li><a href="#">Website Design</a></li>
                                                                                         <li><a href="#">Ecommerce Development</a></li>
                                                                                         <li><a href="#">Shopify Development</a></li>
                                                                                         <li><a href="#">Website maintenance</a></li>
                                                                                         <li><a href="#">WordPress Development</a></li>
-                                                                                        <!--<li><a href="services/responsive-website-development-company">Responsive Websites</a></li>-->
                                                                                         <li><a href="#">Content Writing</a></li>
-                                                                                        <!--<li><a href="services/content-management">Content Management</a></li>-->
-                                                                                        <!--<li><a href="brand-management-services-dubai">Brand Management</a></li>-->
-                                                                                        <!--<li><a href="services/web-hosting-company-dubai">Website Hosting Service</a></li>-->
-                                                                                        <!--<li><a href="services/website-migration-services">Website Migration Service</a></li>-->
                                                                                     </ul>
                                                                                 </div>
                                                                             </div>
@@ -215,16 +301,9 @@
                                                                                 <div class="tp-megamenu-list-wrap tp-portfolio-menu-style">
                                                                                     <ul>
                                                                                         <li><a href="#">PPC</a></li>
-                                                                                        <!--<li><a href="services/ppc-audit">PPC Audit</a></li>-->
-                                                                                        <!--<li><a href="services/google-ads">Google Ads</a></li>-->
-                                                                                        <!--<li><a href="services/startup-ppc">Startup PPC</a></li>-->
                                                                                         <li><a href="#">Google Shopping Ads</a></li>
-                                                                                        <!--<li><a href="services/search-advertising-ads">Search Advertising Ads</a></li>-->
-                                                                                        <!--<li><a href="services/mobile-display-advertising">Mobile Display Advertising</a></li>-->
                                                                                         <li><a href="#">Amazon Marketing</a></li>
                                                                                         <li><a href="#">Google Ads Management</a></li>
-                                                                                        <!--<li><a href="services/remarketing-advertising">Remarketing Advertising</a></li>-->
-                                                                                        <!--<li><a href="services/search-engine-marketing">Search Engine Marketing (SEM)</a></li>-->
                                                                                     </ul>
                                                                                 </div>
                                                                             </div>
@@ -234,17 +313,9 @@
                                                                                 <h4 class="tp-megamenu-title"><a href="#">SEO</a></h4>
                                                                                 <div class="tp-megamenu-list-wrap">
                                                                                     <ul class="">
-                                                                                        <!--<li><a href="services/on-page-seo">On Page Search Engine Optimisation</a></li>-->
-                                                                                        <!--<li><a href="services/off-page-search-engine-optimisation">Off Page Search Engine Optimisation</a></li>-->
-                                                                                        <!--<li><a href="services/google-business-profile-optimisation">Google Business Profile Optimisation</a></li>-->
                                                                                         <li><a href="#">Content Marketing</a></li>
                                                                                         <li><a href="#">Reputation management</a></li>
                                                                                         <li><a href="#">Search Engine Optimisation Audit</a></li>
-                                                                                        <!--<li><a href="services/keyword-research">Keyword Research</a></li>-->
-                                                                                        <!--<li><a href="services/local-seo">Local SEO</a></li>-->
-                                                                                        <!--<li><a href="services/international-seo">International SEO</a></li>-->
-                                                                                        <!--<li><a href="services/markups">Markups</a></li>-->
-                                                                                        <!--<li><a href="services/shopify-seo">Shopify SEO</a></li>-->
                                                                                         <li><a href="#">Ecommerce SEO</a></li>
                                                                                     </ul>
                                                                                 </div>
@@ -255,7 +326,6 @@
                                                                                 <h4 class="tp-megamenu-title"><a href="#">Mobile Application Development</a></h4>
                                                                                 <div class="tp-megamenu-list-wrap">
                                                                                     <ul>
-                                                                                        <!--<li><a href="services/marketing-agency">Marketing Agency</a></li>-->
                                                                                         <li><a href="#">Data Processing</a></li>
                                                                                         <li><a href="#">Data Cleansing</a></li>
                                                                                         <li><a href="#">Data Entry</a></li>
@@ -322,6 +392,7 @@
             </div>
 
         </div>
+        
     </header>
 
 
