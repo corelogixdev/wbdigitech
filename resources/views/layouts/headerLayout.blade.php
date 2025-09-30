@@ -6,7 +6,7 @@
 
     <!-- Load Font Awesome if not already present -->
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-wvfXpqpZZVQGK6TAh5PVlUQz6cZ9j8l9vZb1z7lP1ZC5C1zD4XkZr+CMp9o6iYH3Dg3a3Rw5VzB8ABYyBqf1Ug==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"  referrerpolicy="no-referrer" />
 
     <style>
 
@@ -15,7 +15,8 @@
 
     /* Top bar styling - gradient based on logo colors */
     .header-top-black {
-    background: linear-gradient(90deg, #0A3D62 0%, #0077B6 100%);
+    /* background: linear-gradient(90deg, #0A3D62 0%, #0077B6 100%); */
+    background: linear-gradient(90deg, #1166a3 0%, #31a8e8 100%);
     color: #fff;
     }
     .header-top-black a { color: #fff; }
@@ -169,7 +170,7 @@
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-xl-2 col-lg-2 col-6">
-                            <div class="tp-header-logo"><a class="logo-1" href="{{ route('home')}}"><img src="{{ asset('css/new-assets/img/logo/logo.jpeg')}}" alt="Wbdigitech Logo"></a><a class="logo-2" href="#"><img src="{{ asset('new-assets/img/logo/logo.jpeg')}}" alt="Wbdigitech Logo White"></a></div>
+                            <div class="tp-header-logo"><a class="logo-1" href="{{ route('home')}}"><img src="{{ asset('css/new-assets/img/logo/logo.jpeg')}}" alt="Wbdigitech Logo"></a><a class="logo-2" href="#"><img src="{{ asset('css/new-assets/img/logo/logo.jpeg')}}" alt="Wbdigitech Logo White"></a></div>
                         </div>
                         <div class="col-xl-8 col-lg-9 d-none d-xl-block">
                             <div class=" tp-header-menu header-main-menu text-center">
@@ -180,7 +181,7 @@
                                             <div class="tp-submenu submenu tp-mega-menu">
                                                 <div class="tp-menu-fullwidth">
                                                     <div class="tp-megamenu-portfolio p-relative">
-                                                        <div class="tp-megamenu-portfolio-banner d-none "><img src="{{ asset('new-assets/img/menu/portfolio-menu/portfolio.png')}}" alt="Wbdigitech Portfolio"></div>
+                                                        <div class="tp-megamenu-portfolio-banner d-none "><img src="{{ asset('css/new-assets/img/menu/portfolio-menu/portfolio.png')}}" alt="Wbdigitech Portfolio"></div>
                                                         <div class="row gx-50">
                                                             <div class="col-xxl-12 col-xl-12">
                                                                 <div class="tp-megamenu-list-box">

@@ -50,7 +50,7 @@
             <!-- Images -->
             <div class="col-lg-6">
                 <div class="agency__thumb position-relative">
-                    <img src="public/new-assets/img/home-01/hero/thumb-one.png" alt="volga-tigris-services" class="img-fluid rounded shadow-lg fade-left">
+                    <img src="{{ asset('css/new-assets/img/home-01/hero/thumb-one.png')}}" alt="wbdigitech-services" class="img-fluid rounded shadow-lg fade-left">
                     <img src="/storage/breadcrumb-banner/hand-shaking.jpg" alt="Experienced Marketing Agency" class="img-fluid rounded shadow-lg position-absolute top-50 start-50 translate-middle fade-right" style="width: 80%;">
                 </div>
             </div>
@@ -91,49 +91,7 @@
     </div>
 </div>
 
-
-                          <section class="pt-100 pb-100 logo-slider-wrapper bg-light">
-    <div class="container">
-        <!-- Section Title -->
-        <div class="agency__content section__content text-center mb-5">
-            <span class="sub-title"> Featured Clients <i class="fa-solid fa-arrow-right"></i></span>
-            <h2 class="title title-anim text-dark">Our Customers</h2>
-        </div>
-
-        <!-- Logo Slider 1 -->
-        <div class="logo-slider">
-            <div class="logos-list">
-                @foreach ($customers as $customer)
-                <div class="item">
-                    <div class="image-box">
-                        <div class="image-box-wrapper">
-                            <img src="{{ asset('storage/' . $customer->logo) }}" alt="{{ $customer->name }}" class="img-fluid grayscale-hover">
-                        </div>
-                    </div>
-                </div>
-                @endforeach
-            </div>
-        </div>
-
-        <!-- Logo Slider 2 (reverse) -->
-        <div class="logo-slider mt-5">
-            <div class="logos-list reverse">
-                @foreach ($customers as $customer)
-                <div class="item">
-                    <div class="image-box">
-                        <div class="image-box-wrapper">
-                            <img src="{{ asset($customer->logo) }}" alt="{{ $customer->name }}" class="img-fluid grayscale-hover">
-                        </div>
-                    </div>
-                </div>
-                @endforeach
-            </div>
-        </div>
-    </div>
-</section>
-
-
-                            <div class="tp-service-area pt-100 pb-50 tp-btn-trigger d-none d-lg-block">
+     <div class="tp-service-area pt-100 pb-50 tp-btn-trigger d-none d-lg-block">
                                 <div class="container services">
                                     <div class="row">
                                         <div class="col-xxl-12 col-xl-12">
@@ -197,6 +155,48 @@
                                     </div>
                                 </div>
                             </div>
+
+<section class="pt-100 pb-100 logo-slider-wrapper bg-light">
+    <div class="container">
+        <!-- Section Title -->
+        <div class="agency__content section__content text-center mb-5">
+            <span class="sub-title"> Featured Clients <i class="fa-solid fa-arrow-right"></i></span>
+            <h2 class="title title-anim text-dark">Our Customers</h2>
+        </div>
+
+        <!-- Logo Slider 1 -->
+        <div class="logo-slider">
+            <div class="logos-list">
+                @foreach ($customers as $customer)
+                <div class="item">
+                    <div class="image-box">
+                        <div class="image-box-wrapper">
+                            <img src="{{ asset('storage/' . $customer->logo) }}" alt="{{ $customer->name }}" class="img-fluid grayscale-hover">
+                        </div>
+                    </div>
+                </div>
+                @endforeach
+            </div>
+        </div>
+
+        <!-- Logo Slider 2 (reverse) -->
+        <div class="logo-slider mt-5">
+            <div class="logos-list reverse">
+                @foreach ($customers as $customer)
+                <div class="item">
+                    <div class="image-box">
+                        <div class="image-box-wrapper">
+                           <img src="{{ asset('storage/' . $customer->logo) }}" alt="{{ $customer->name }}" class="img-fluid grayscale-hover">
+
+                        </div>
+                    </div>
+                </div>
+                @endforeach
+            </div>
+        </div>
+    </div>
+</section>
+
 
                             <div class="container-fluid we-promise-slide mb-20 mt-10 bg-dark">
                                 <div class="row align-items-center pt-20 pb-20">

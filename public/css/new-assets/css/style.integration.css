@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+
 .page-header-image {
     background-image: url("/storage/breadcrumb-banner/home-page-banner-copy-1.webp");
     background-position-y: -60px;
@@ -222,7 +224,7 @@ footer .nav-link.active {
     width: 11% !important;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+
 .floating-icons .fl-fl {
     text-transform: uppercase;
     letter-spacing: 3px;

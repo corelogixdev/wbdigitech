@@ -9,7 +9,6 @@
         crossorigin=anonymous referrerpolicy="no-referrer">
         <link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin=anonymous referrerpolicy="no-referrer">
-        {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin=anonymous referrerpolicy="no-referrer"> --}}
         <link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
         <link rel="stylesheet" href="{{ asset('vendor/core/plugins/language/css/language-public.css') }}">
@@ -25,7 +24,6 @@
         <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('css/global.css') }}">
     <link rel="stylesheet" href="{{ asset('css/layout_main.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/components_main.css') }}">
     <link rel="stylesheet" href="{{ asset('css/new-assets/css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ asset('css/new-assets/css/animate.css') }}">
     <link rel="stylesheet" href="{{ asset('css/new-assets/css/swiper-bundle.css') }}">
@@ -40,22 +38,65 @@
     
 
 </head>
+<style>
+/* Fullscreen splash overlay */
+#splash-screen {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: #ffffff;  /* solid background to block everything */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 999999; /* make sure it's on top */
+  transition: opacity 0.6s ease;
+  overflow: hidden;
+}
+
+/* Hide it smoothly */
+#splash-screen.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Logo styling */
+.splash-logo {
+   width: 30vw;       /* takes 30% of screen width */
+  max-width: 300px;  /* but never larger than 300px */
+  min-width: 150px;  /* and never smaller than 150px */
+  margin-bottom: 20px;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+</style>
+
 <body id="body" class="tp-magic-cursor">
+  <!-- Splash Screen -->
+  <div id="splash-screen">
+    <div class="splash-content">
+      <img src="{{ asset('css/new-assets/img/logo/logoo.png')}}" alt="Logo" class="splash-logo">
+    </div>
+  </div>
+
    
         @extends('layouts.headerLayout');
         @yield('content')
         @extends('layouts.footerLayout');
 
-    <!-- Custom JS -->
-    <script src="{{ asset('js/custom.js') }}"></script>
-
-
-
-    
-    {{-- External JS --}}
+        
+        
+        
+        
+        {{-- External JS --}}
         {{-- Vendor / Core --}}
-    <script src="{{ asset('themes/agon/new-assets/js/vendor/jquery.js') }}"></script>
-    <script src="{{ asset('themes/agon/new-assets/js/bootstrap-bundle.js') }}" defer></script>
+        <script src="{{ asset('themes/agon/new-assets/js/vendor/jquery.js') }}"></script>
+        <script src="{{ asset('themes/agon/new-assets/js/bootstrap-bundle.js') }}" defer></script>
     <script src="{{ asset('themes/agon/new-assets/js/gsap.js') }}" defer></script>
     <script src="{{ asset('themes/agon/new-assets/js/gsap-scroll-to-plugin.js') }}" defer></script>
     <script src="{{ asset('themes/agon/new-assets/js/gsap-scroll-smoother.js') }}" defer></script>
@@ -79,6 +120,9 @@
     <script src="{{ asset('themes/agon/new-assets/js/tp-cursor.js') }}" defer></script>
     <script src="{{ asset('themes/agon/new-assets/js/main.js') }}" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+    <!-- Custom JS -->
+    <script src="{{ asset('js/custom.js') }}"></script>
 
     {{-- Language Plugin --}}
     <script src="{{ asset('vendor/core/plugins/language/js/language-public.js') }}" defer></script>
@@ -88,44 +132,6 @@
     <script src=https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin=anonymous referrerpolicy="no-referrer" defer></script>
 
-
-    {{-- <script>
-        window.__lc = window.__lc || {};
-        window.__lc.license = 19280090;
-        window.__lc.integration_name = "manual_channels";
-        window.__lc.product_name = "livechat";;
-        (function(n, t, c) {
-            function i(n) {
-                return e._h ? e._h.apply(null, n) : e._q.push(n)
-            }
-            var e = {
-                _q: [],
-                _h: null,
-                _v: "2.0",
-                on: function() {
-                    i(["on", c.call(arguments)])
-                },
-                once: function() {
-                    i(["once", c.call(arguments)])
-                },
-                off: function() {
-                    i(["off", c.call(arguments)])
-                },
-                get: function() {
-                    if (!e._h) throw new Error("[LiveChatWidget] You can't use getters before load.");
-                    return i(["get", c.call(arguments)])
-                },
-                call: function() {
-                    i(["call", c.call(arguments)])
-                },
-                init: function() {
-                    var n = t.createElement("script");
-                    n.async = !0, n.type = "text/javascript", n.src = "https://cdn.livechatinc.com/tracking.js", t.head.appendChild(n)
-                }
-            };
-            !n.__lc.asyncInit && e.init(), n.LiveChatWidget = n.LiveChatWidget || e
-        }(window, document, [].slice))
-    </script><noscript><a href="https://www.livechat.com/chat-with/19280090/" rel="nofollow">Chat with us.</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript></body> --}}
 
 <!-- Hidden container for Google Translate -->
 <div id="google_translate_element" style="display:none;"></div>
@@ -176,6 +182,25 @@
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 
+
+<script>
+  window.addEventListener("load", function () {
+    const splash = document.getElementById("splash-screen");
+    setTimeout(() => {
+      splash.classList.add("hidden");
+    },1000); // optional delay
+  });
+</script>
+
+<script>
+  console.time("page-load");
+  window.addEventListener("load", () => {
+    console.timeEnd("page-load");
+  });
+</script>
+
 </body>
+
+
 
 </html>
