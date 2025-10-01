@@ -161,7 +161,7 @@
         <!-- Section Title -->
         <div class="agency__content section__content text-center mb-5">
             <span class="sub-title"> Featured Clients <i class="fa-solid fa-arrow-right"></i></span>
-            <h2 class="title title-anim text-dark">Our Customers</h2>
+            <h2 class="title title-anim" style="color: linear-gradient(90deg, #0e5689, #0077B6);">Our Customers</h2>
         </div>
 
         <!-- Logo Slider 1 -->
@@ -197,7 +197,7 @@
     </div>
 </section>
 
-
+{{-- Headline --}}
                             <div class="container-fluid we-promise-slide mb-20 mt-10 bg-dark">
                                 <div class="row align-items-center pt-20 pb-20">
                                     <div class="col-xl-12">
@@ -209,47 +209,54 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tp-project-area fix">
-                                <div class="tp-project-gallery-wrapper">
-                                    <div class="container container-1630">
-                                        <div class="tp-project-gallery-top pb-20">
-                                            <div class="row">
-                                                <div class="col-xl-6 col-lg-6 col-md-6">
-                                                    <h2 class="my-30 tp-section-title"> Industries<br> We Serve </h2>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                {{-- Industries Section --}}
-                                                @forelse($industries as $industry)
-                                                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                                                        <div class="card shadow-sm border-0 h-100 text-center">
-                                                            <div class="card-body p-4 d-flex flex-column align-items-center">
-                                                                @if(!empty($industry->image) && file_exists(public_path('storage/'.$industry->image)))
-                                                                    <img src="{{ asset('storage/'.$industry->image) }}"
-                                                                        alt="{{ $industry->name ?? 'Industry' }}"
-                                                                        class="img-fluid mb-3 industry-img">
-                                                                @else
-                                                                    <img src="{{ asset('images/default-industry.png') }}" 
-                                                                        alt="Default Industry" 
-                                                                        class="img-fluid mb-3 industry-img">
-                                                                @endif
-                                                                <h6 class="fw-bold text-dark">
-                                                                    {{ $industry->name ?? 'Unnamed Industry' }}
-                                                                </h6>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                @empty
-                                                    <div class="col-12 text-center">
-                                                        <p class="text-muted ">No industries available at the moment.</p>
-                                                    </div>
-                                                @endforelse
 
-                                                <div class="col-xl-12 col-lg-12 col-md-12 text-center pb-20">
-                                                    <a href="/customer" class="btn btn-warning text-dark mr-10">View More</a>
-                                                    <a class="btn btn-warning text-dark open-popup">Get A Free Quote</a>
-                                                </div>
-                                            </div>
+                        {{-- Industries We Serve --}}
+<div class="tp-project-area fix">
+    <div class="tp-project-gallery-wrapper">
+        <div class="container container-1630">
+            <div class="tp-project-gallery-top pb-20 text-center">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-lg-8 col-md-10">
+                        <h2 class="my-30 tp-section-title">Industries We Serve</h2>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    {{-- Industries Section --}}
+                    @forelse($industries as $industry)
+                        <div class="col-xl-3 col-lg-4 col-md-6 mb-4 d-flex justify-content-center">
+                            <div class="card shadow-sm border-0 h-100 text-center">
+                                <div class="card-body p-4 d-flex flex-column align-items-center">
+                                    @if(!empty($industry->image) && file_exists(public_path('storage/'.$industry->image)))
+                                        <img src="{{ asset('storage/'.$industry->image) }}"
+                                            alt="{{ $industry->name ?? 'Industry' }}"
+                                            class="img-fluid mb-3 industry-img">
+                                    @else
+                                        <img src="{{ asset('images/default-industry.png') }}" 
+                                            alt="Default Industry" 
+                                            class="img-fluid mb-3 industry-img">
+                                    @endif
+                                    <h6 class="fw-bold text-dark">
+                                        {{ $industry->name ?? 'Unnamed Industry' }}
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    @empty
+                        <div class="col-12 text-center">
+                            <p class="text-muted">No industries available at the moment.</p>
+                        </div>
+                    @endforelse
+
+                    <div class="col-12 text-center pb-20">
+                        <a href="/customer" class="btn btn-warning  mr-10">View More</a>
+                        <a class="btn btn-warning  open-popup">Get A Free Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
                                             {{-- Blog Section --}}
                                             <div class="blog-details-realated-area pt-20 pb-20 bg-dark">

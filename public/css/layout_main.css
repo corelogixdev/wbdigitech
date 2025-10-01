@@ -1489,130 +1489,127 @@
     
 
 
-         /*LOGOS SLIDER CSS */
+        /* LOGOS SLIDER CSS */
 
-            .logo-slider {
-                width: 100%;
-                overflow: hidden;
-                display: flex;
-                align-items: center;
-                position: relative;
-            }
+.logo-slider {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
 
-            .logos-list {
-                display: flex;
-                width: calc( 195 * 18 * 2px);
-                gap: 24px;
-                animation: autoScroll 36s linear infinite;
-            }
+.logos-list {
+    display: flex;
+    gap: 24px;
+    width: calc(195px * 18 * 2); /* keeps scroll width correct */
+    animation: autoScroll 36s linear infinite;
+}
 
-            .logos-list:hover {
-                /*animation-play-state: paused !important;*/
-            }
+/* Pause animation on hover for both normal and reverse sliders */
+.logo-slider .logos-list:hover,
+.logo-slider .logos-list.reverse:hover {
+    animation-play-state: paused !important;
+}
 
-            .logo-slider .item {
-                width: 195px;
-                height: 165px;
-                flex-shrink: 0;
-            }
+.logo-slider .item {
+    width: 195px;
+    height: 165px;
+    flex-shrink: 0;
+}
 
-            .logo-slider .item img {
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-                transition: filter 0.5s ease-in-out;
-            }
+.logo-slider .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    filter: none !important; /* remove grayscale fully */
+}
 
-            @keyframes autoScroll {
-                0% {
-                    transform: translateX(0);
-                }
-                100% {
-                    transform: translateX(calc( -1 * 195 * 18px));
-                }
-            }
+/* Hover effect: smooth zoom + soft shadow */
+.logo-slider .item:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
 
-            .logo-slider .logos-list.reverse {
-                animation: reverseScroll 36s linear infinite;
-            }
+@keyframes autoScroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-195px * 18));
+    }
+}
 
-            @keyframes reverseScroll {
-                0% {
-                    transform: translateX(calc( -1 * 195 * 18px));
-                }
-                100% {
-                    transform: translateX(0);
-                }
-            }
+.logo-slider .logos-list.reverse {
+    animation: reverseScroll 36s linear infinite;
+}
 
-            .logo-slider:hover .item img {
-                /*filter: grayscale(1);*/
-            }
+@keyframes reverseScroll {
+    0% {
+        transform: translateX(calc(-195px * 18));
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
 
-            .logo-slider .item:hover img {
-                /*filter: grayscale(0);*/
-            }
+.logo-slider-wrapper {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
 
-            .logo-slider-wrapper {
-                background-color: white;
-                display: flex;
-                flex-direction: column;
-                gap: 48px;
-            }
+.image-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 1.6825em 26.92px;
+}
 
-            .image-box {
-                position: relative;
-                width: 100%;
-                height: 100%;
-                overflow: hidden;
-                border-radius: 1.6825em 26.92px;
-                overflow: hidden;
-            }
+.image-box::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, .3) 61%, #fff 100%);
+    border-radius: 1.6825em;
+    z-index: -1;
+}
 
-            .image-box::before {
-                content: "";
-                position: absolute;
-                top: -2px;
-                left: -2px;
-                right: -2px;
-                bottom: -2px;
-                background: linear-gradient(135deg, rgba(255, 255, 255, .3) 61%, #fff 100%);
-                border-radius: 1.6825em;
-                z-index: -1;
-            }
+.image-box::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0) 52.3%, #fff 100%);
+    border-radius: 1.6825em;
+    z-index: -2;
+}
 
-            .image-box::after {
-                content: "";
-                position: absolute;
-                top: -2px;
-                left: -2px;
-                right: -2px;
-                bottom: -2px;
-                background: linear-gradient(135deg, rgba(255, 255, 255, 0) 52.3%, #fff 100%);
-                border-radius: 1.6825em;
-                z-index: -2;
-            }
+.image-box .image-box-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.6825em 26.92px;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    margin: 1px;
+    overflow: hidden;
+}
 
-            .image-box .image-box-wrapper {
-                
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: center;
-                /* changed this  */
-                /* background: linear-gradient(90deg, #0A3D62, #0077B6); */
-                border-radius: 1.6825em 26.92px;
-                width: calc(100% - 2px);
-                height: calc(100% - 2px);
-                margin: 1px;
-                overflow: hidden;
-                
-            }
+.card-img {
+    margin-bottom: 24px;
+    border-radius: 12px;
+}
 
-            .card-img {
-                margin-bottom: 24px;
-                border-radius: 12px;
-            }
        
         /*FIXED CTAS */
 
