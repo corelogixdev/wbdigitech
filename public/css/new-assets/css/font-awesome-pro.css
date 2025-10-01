@@ -13110,13 +13110,14 @@
     --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands"
 }
 
+/* 
 @font-face {
     font-family: "Font Awesome 6 Brands";
     font-style: normal;
     font-weight: 400;
     font-display: block;
-    src: url(../fonts/fa-brands-400.woff2) format("woff2"), url(../fonts/fa-brands-400.ttf) format("truetype")
-}
+    src: url(../fonts/fa-brands-400.woff2) format("woff2"), url(../fonts/fa-brands-400.woff2) format("truetype")
+} */
 
 .fa-brands,
 .fab {
@@ -14978,13 +14979,13 @@
     --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone"
 }
 
-@font-face {
+/* @font-face {
     font-family: "Font Awesome 6 Duotone";
     font-style: normal;
     font-weight: 900;
     font-display: block;
     src: url(../fonts/fa-duotone-900.html) format("woff2"), url(../fonts/fa-duotone-901.html) format("truetype")
-}
+} */
 
 .fa-duotone,
 .fad {
@@ -31404,13 +31405,13 @@
     --fa-font-light: normal 300 1em/1 "Font Awesome 6 Pro"
 }
 
-@font-face {
+/* @font-face {
     font-family: "Font Awesome 6 Pro";
     font-style: normal;
     font-weight: 300;
     font-display: block;
     src: url(../fonts/fa-light-300.woff2) format("woff2"), url(../fonts/fa-light-300.ttf) format("truetype")
-}
+} */
 
 .fa-light,
 .fal {
@@ -31423,13 +31424,13 @@
     --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Pro"
 }
 
-@font-face {
+/* @font-face {
     font-family: "Font Awesome 6 Pro";
     font-style: normal;
     font-weight: 400;
     font-display: block;
     src: url(../fonts/fa-regular-400.woff2) format("woff2"), url(../fonts/fa-regular-400.ttf) format("truetype")
-}
+} */
 
 .fa-regular,
 .far {
@@ -31442,13 +31443,13 @@
     --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Pro"
 }
 
-@font-face {
+/* @font-face {
     font-family: "Font Awesome 6 Pro";
     font-style: normal;
     font-weight: 900;
     font-display: block;
     src: url(../fonts/fa-solid-900.woff2) format("woff2"), url(../fonts/fa-solid-900.ttf) format("truetype")
-}
+} */
 
 .fa-solid,
 .fas {
@@ -31460,14 +31461,14 @@
 :root {
     --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Pro"
 }
-
+/* 
 @font-face {
     font-family: "Font Awesome 6 Pro";
     font-style: normal;
     font-weight: 100;
     font-display: block;
     src: url(../fonts/fa-thin-100.html) format("woff2"), url(../fonts/fa-thin-101.html) format("truetype")
-}
+} */
 
 .fa-thin,
 .fat {
@@ -31475,34 +31476,34 @@
     font-weight: 100
 }
 
-@font-face {
+/* @font-face {
     font-family: "Font Awesome 5 Brands";
     font-display: block;
     font-weight: 400;
     src: url(../fonts/fa-brands-400.woff2) format("woff2"), url(../fonts/fa-brands-400.ttf) format("truetype")
-}
-
+} */
+/* 
 @font-face {
     font-family: "Font Awesome 5 Pro";
     font-display: block;
     font-weight: 900;
     src: url(../fonts/fa-solid-900.woff2) format("woff2"), url(../fonts/fa-solid-900.ttf) format("truetype")
-}
+} */
 
-@font-face {
+/* @font-face {
     font-family: "Font Awesome 5 Pro";
     font-display: block;
     font-weight: 400;
     src: url(../fonts/fa-regular-400.woff2) format("woff2"), url(../fonts/fa-regular-400.ttf) format("truetype")
-}
+} */
 
-@font-face {
+/* @font-face {
     font-family: "Font Awesome 5 Pro";
     font-display: block;
     font-weight: 300;
     src: url(../fonts/fa-light-300.woff2) format("woff2"), url(../fonts/fa-light-300.ttf) format("truetype")
-}
-
+} */
+/* 
 @font-face {
     font-family: "Font Awesome 5 Duotone";
     font-display: block;
@@ -31534,4 +31535,4 @@
     font-display: block;
     src: url(../fonts/fa-v4compatibility.html) format("woff2"), url(../fonts/fa-v4compatibility-2.html) format("truetype");
     unicode-range: u+f041, u+f047, u+f065-f066, u+f07d-f07e, u+f080, u+f08b, u+f08e, u+f090, u+f09a, u+f0ac, u+f0ae, u+f0b2, u+f0d0, u+f0d6, u+f0e4, u+f0ec, u+f10a-f10b, u+f123, u+f13e, u+f148-f149, u+f14c, u+f156, u+f15e, u+f160-f161, u+f163, u+f175-f178, u+f195, u+f1f8, u+f219, u+f250, u+f252, u+f27a
-}
+} */

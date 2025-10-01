@@ -49,7 +49,6 @@ Route::get('/cookie-policy', function(){return view('pages.cookie');})->name('co
 
 // Public side | Customer Pages
 Route::get('/customer', [CustomerController::class, 'publicIndex'])->name('customers.public');
-Route::get('/customers/{id}', [CustomerController::class, 'publicShow'])->name('customers.public.show');
 
 // Public side | Portfolio Pages
 Route::get('/portfolio', [PortfolioController::class, 'publicIndex'])->name('portfolio.public');

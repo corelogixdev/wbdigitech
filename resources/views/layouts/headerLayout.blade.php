@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"  referrerpolicy="no-referrer" />
+{{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"  referrerpolicy="no-referrer" /> --}}
 
 <style>
 
@@ -35,8 +35,7 @@
     }
 </style>
 <div class="body-overlay"></div> 
-    <!-- Top Most Header -->
-    <a href="https://wa.link/+971-50-239-0775" class="float" title="Whatsapp WB-DIGITECH" target="_blank"><i class="fab fa-whatsapp my-float"></i></a>
+<!-- Top Most Header -->
     <div class="floating-icons d-none">
         <div class="float-sm">
             <div class="fl-fl float-wt d-none"><i class="fab fa-whatsapp"></i><a href="https://wa.link/+971-50-239-0775" target="_blank"> Whatsapp</a></div>

@@ -9,13 +9,14 @@
         crossorigin=anonymous referrerpolicy="no-referrer">
         <link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin=anonymous referrerpolicy="no-referrer">
-        <link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        {{-- <link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> --}}
+        {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> --}}
         <link rel="stylesheet" href="{{ asset('vendor/core/plugins/language/css/language-public.css') }}">
         <link rel="stylesheet" href="{{ asset('vendor/core/core/base/libraries/ckeditor/content-styles.css') }}">
         <link rel="stylesheet" href="{{ asset('themes/agon/css/style.css') }}">
         <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Big+Shoulders+Display:wght@400;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"  referrerpolicy="no-referrer" />
 
 
 
@@ -29,12 +30,11 @@
     <link rel="stylesheet" href="{{ asset('css/new-assets/css/swiper-bundle.css') }}">
     <link rel="stylesheet" href="{{ asset('css/new-assets/css/slick.css') }}">
     <link rel="stylesheet" href="{{ asset('css/new-assets/css/magnific-popup.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/new-assets/css/font-awesome-pro.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('css/new-assets/css/font-awesome-pro.css') }}"> --}}
     <link rel="stylesheet" href="{{ asset('css/new-assets/css/spacing.css') }}">
     <link rel="stylesheet" href="{{ asset('css/new-assets/css/custom-animation.css') }}">
     <link rel="stylesheet" href="{{ asset('css/new-assets/css/main.css') }}">
     <link rel="stylesheet" href="{{ asset('css/new-assets/css/style.integration.css') }}">
-    {{-- <link rel="stylesheet" href="{{ asset('css/new-assets/css/style.css') }}"> --}}
     
 
 </head>
@@ -87,6 +87,8 @@
       <img src="{{ asset('css/new-assets/img/logo/logoo.png')}}" alt="Logo" class="splash-logo">
     </div>
   </div>
+<a href="https://wa.link/+971-50-239-0775" class="float" title="Whatsapp WB-DIGITECH" target="_blank"><i class="fab fa-whatsapp my-float"></i></a>
+
 
    
         @extends('layouts.headerLayout');
@@ -99,8 +101,8 @@
         
         {{-- External JS --}}
         {{-- Vendor / Core --}}
-        <script src="{{ asset('themes/agon/new-assets/js/vendor/jquery.js') }}"></script>
-        <script src="{{ asset('themes/agon/new-assets/js/bootstrap-bundle.js') }}" defer></script>
+    <script src="{{ asset('themes/agon/new-assets/js/vendor/jquery.js') }}"></script>
+    <script src="{{ asset('themes/agon/new-assets/js/bootstrap-bundle.js') }}" defer></script>
     <script src="{{ asset('themes/agon/new-assets/js/gsap.js') }}" defer></script>
     <script src="{{ asset('themes/agon/new-assets/js/gsap-scroll-to-plugin.js') }}" defer></script>
     <script src="{{ asset('themes/agon/new-assets/js/gsap-scroll-smoother.js') }}" defer></script>

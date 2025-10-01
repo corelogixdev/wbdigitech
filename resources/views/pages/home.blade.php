@@ -16,12 +16,12 @@
                             <div class="container-fluid home-main-slider">
                                 <div class="row justify-content-center">
                                     <div class="col-xxl-12">
-                                        <!-- Hero Title -->
-                                        <div class="tp-hero-title-wrap mb-35 text-center">
-                                            <h2 class="tp-hero-title gradient-text">
-                                                Save Time <br> Finding The Right <br> Agency Partner
-                                            </h2>
-                                        </div>
+<!-- Hero Title -->
+<div class="tp-hero-title-wrap mb-35 text-center">
+<h2 class="tp-hero-title gradient-text">
+Save Time <br> Finding The Right <br> Agency Partner
+</h2>
+</div>
 
                 <!-- Hero Content -->
                 <div class="tp-hero-content text-center">
@@ -91,6 +91,7 @@
     </div>
 </div>
 
+{{-- Services Area  --}}
      <div class="tp-service-area pt-100 pb-50 tp-btn-trigger d-none d-lg-block">
                                 <div class="container services">
                                     <div class="row">
@@ -156,6 +157,7 @@
                                 </div>
                             </div>
 
+{{-- Customers / Clients --}}
 <section class="pt-100 pb-100 logo-slider-wrapper bg-light">
     <div class="container">
         <!-- Section Title -->
@@ -210,7 +212,7 @@
                                 </div>
                             </div>
 
-                        {{-- Industries We Serve --}}
+ {{-- Industries We Serve --}}
 <div class="tp-project-area fix">
     <div class="tp-project-gallery-wrapper">
         <div class="container container-1630">
@@ -258,53 +260,104 @@
     </div>
 </div>
 
-                                            {{-- Blog Section --}}
-                                            <div class="blog-details-realated-area pt-20 pb-20 bg-dark">
-                                                <div class="container">
-                                                    <div class="row mb-20">
-                                                        <div class="col-md-12">
-                                                            <h2 class="sv-service-title text-white">Our Latest Blogs</h2>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        @forelse($blogs as $blog)
-                                                            <div class="col-xl-4 col-lg-6 col-md-6 mb-50">
-                                                                <div class="tp-blog-item">
-                                                                    <div class="tp-blog-thumb fix p-relative rounded">
-                                                                        @if(!empty($blog->image) && file_exists(public_path('storage/'.$blog->image)))
-                                                                            <img src="{{ asset('storage/' . $blog->image) }}" 
-                                                                                alt="{{ $blog->title ?? 'Blog Image' }}" 
-                                                                                width="388" height="250">
-                                                                        @else
-                                                                            <img src="{{ asset('images/default-blog.png') }}" 
-                                                                                alt="Default Blog Image" 
-                                                                                width="388" height="250">
-                                                                        @endif
-                                                                        <div class="tp-blog-meta">
-                                                                            <span class="bg-dark text-white">
-                                                                                {{ $blog->created_at ? $blog->created_at->format('d M, Y') : 'Date N/A' }}
-                                                                            </span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="tp-blog-content">
-                                                                        <h2 class="tp-blog-title-sm text-white">
-                                                                            <a href="{{ route('blogs.public.show', $blog->id ?? 0) }}">
-                                                                                {{ $blog->title ?? 'Untitled Blog' }}
-                                                                            </a>
-                                                                        </h2>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        @empty
-                                                            <div class="col-12 text-center">
-                                                                <p class="text-white">No blogs published yet.</p>
-                                                            </div>
-                                                        @endforelse
-                                                    </div>
-                                                </div>
-                                            </div>
+{{-- Blog Section --}}
+<div class="blog-details-related-area pt-60 pb-60 bg-dark">
+    <div class="container">
+        {{-- Section Title --}}
+        <div class="row justify-content-center mb-40">
+            <div class="col-md-8 text-center">
+                <h2 class="sv-service-title text-white">Our Latest Blogs</h2>
+                <p class="text-white-50 mt-2">Read our latest insights, news, and updates.</p>
+            </div>
+        </div>
+
+        {{-- Blog Cards --}}
+        <div class="row justify-content-center">
+            @forelse($blogs as $blog)
+                <div class="col-xl-4 col-lg-6 col-md-6 mb-40 d-flex justify-content-center">
+                    <div class="tp-blog-item shadow-sm rounded overflow-hidden bg-dark">
+                        <div class="tp-blog-thumb p-relative">
+                            @if(!empty($blog->image) && file_exists(public_path('storage/'.$blog->image)))
+                                <img src="{{ asset('storage/' . $blog->image) }}" 
+                                     alt="{{ $blog->title ?? 'Blog Image' }}" 
+                                     class="img-fluid blog-img">
+                            @else
+                                <img src="{{ asset('images/default-blog.png') }}" 
+                                     alt="Default Blog Image" 
+                                     class="img-fluid blog-img">
+                            @endif
+                            <div class="tp-blog-meta">
+                                <span class="bg-warning text-dark">
+                                    {{ $blog->created_at ? $blog->created_at->format('d M, Y') : 'Date N/A' }}
+                                </span>
+                            </div>
+                        </div>
+                        <div class="tp-blog-content text-center p-3">
+                            <h5 class="tp-blog-title-sm text-white mb-2">
+                                <a href="{{ route('blogs.public.show', $blog->id ?? 0) }}" class="text-white">
+                                    {{ $blog->title ?? 'Untitled Blog' }}
+                                </a>
+                            </h5>
+                            <p class="text-white-50 small">
+                                {{ Str::limit($blog->excerpt ?? '', 80, '...') }}
+                            </p>
+                            <a href="{{ route('blogs.public.show', $blog->id ?? 0) }}" class="btn btn-sm mt-2" style="color: white;
+    background: linear-gradient(90deg, #0A3D62, #dce3e7); ">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            @empty
+                <div class="col-12 text-center">
+                    <p class="text-white">No blogs published yet.</p>
+                </div>
+            @endforelse
+        </div>
+    </div>
+</div>
+
+<style>
+
+/* Make blog cards wider */
+.tp-blog-item {
+    max-width: 380px; /* slightly wider than before */
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tp-blog-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
+
+/* Blog Image */
+.blog-img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+/* Optional: Responsive */
+@media (max-width: 768px) {
+    .tp-blog-item {
+        max-width: 90%; /* almost full width on tablet */
+    }
+    .blog-img {
+        height: 220px;
+    }
+}
+@media (max-width: 576px) {
+    .blog-img {
+        height: 180px;
+    }
+}
+
+</style>
 
 
+
+{{-- Testimonial Section --}}
 <div class="tp-testimonial-area pt-50">
     <div class="container">
         <div class="row justify-content-center">
