@@ -21,9 +21,7 @@ use App\Http\Controllers\ServiceController;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 // About Page
-Route::get('/about', function () {
-    return view('pages.about');
-})->name('about');
+Route::get('/about', [HomeController::class,'about'])->name('about');
 
 // Contact
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.send');

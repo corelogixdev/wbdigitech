@@ -17,11 +17,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Big+Shoulders+Display:wght@400;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"  referrerpolicy="no-referrer" />
+   
+        <!-- Favicon -->
+       <link rel="icon" type="image/png" href="{{ asset('css/new-assets/img/logo/logo.jpeg') }}">
 
-
-
-        
-        
         <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('css/global.css') }}">
     <link rel="stylesheet" href="{{ asset('css/layout_main.css') }}">

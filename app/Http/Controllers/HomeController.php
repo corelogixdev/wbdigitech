@@ -35,4 +35,11 @@ class HomeController extends Controller
 
         return view('pages.home', compact('blogs','teamMembers','customers','industries'));
     }
+
+    public function about()
+    {
+        $teamMembers = Team::latest()->paginate(12);
+        return view('pages.about', compact('teamMembers'));
+    }
+    
 }

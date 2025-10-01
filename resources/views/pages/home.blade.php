@@ -301,8 +301,7 @@ Save Time <br> Finding The Right <br> Agency Partner
                             <p class="text-white-50 small">
                                 {{ Str::limit($blog->excerpt ?? '', 80, '...') }}
                             </p>
-                            <a href="{{ route('blogs.public.show', $blog->id ?? 0) }}" class="btn btn-sm mt-2" style="color: white;
-    background: linear-gradient(90deg, #0A3D62, #dce3e7); ">Read More</a>
+                            <a href="{{ route('blogs.public.show', $blog->id ?? 0) }}" class="btn btn-sm mt-2" style="color: white; background: linear-gradient(90deg, #0A3D62, #dce3e7); ">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -395,6 +394,13 @@ Save Time <br> Finding The Right <br> Agency Partner
 
                           
 <div class="tp-team-area pt-20 pb-50 fix">
+     {{-- Section Title --}}
+        <div class="row justify-content-center mb-40">
+            <div class="col-md-8 text-center">
+                <h2 class="sv-service-title" style="background: linear-gradient(90deg, #0A3D62, #1287cb);">Our Team</h2>
+                <p class="text-dark-50 mt-2">Meet With Our Team</p>
+            </div>
+        </div>
     <div class="container-fluid">
         <div class="row justify-content-center">
             @foreach($teamMembers as $member)

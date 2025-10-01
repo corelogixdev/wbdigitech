@@ -159,7 +159,7 @@
 }
 
 .consultant-text h3 span {
-  color: red;
+  color: rgb(0, 106, 255);
 }
 
 .consultant-text p {
@@ -170,7 +170,7 @@
 
 .consultant-btn {
   margin-left: auto;
-  background: red;
+  background: rgb(0, 106, 255);
   color: #fff;
   font-weight: bold;
   text-decoration: none;
