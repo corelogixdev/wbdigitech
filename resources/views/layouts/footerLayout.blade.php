@@ -102,3 +102,121 @@
     </div>
     
 </footer>
+
+</div>
+</div>
+<!-- Consultant Bar -->
+<div id="consultant-bar">
+  <div class="consultant-content">
+    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" 
+         alt="WhatsApp" class="whatsapp-icon">
+    <div class="consultant-text">
+      <h3>Talk <span>strategy</span> with an expert</h3>
+      <p>Get expert advice on the right strategy for your business!</p>
+    </div>
+    <a href="https://wa.me/923001234567" target="_blank" class="consultant-btn">
+      FREE CONSULTATION
+    </a>
+    <button id="consultant-close">×</button>
+  </div>
+</div>
+
+<style>
+/* Hidden by default */
+#consultant-bar {
+  position: fixed;
+  bottom: -120px; /* hides below screen */
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-top: 2px solid #eee;
+  padding: 15px 30px;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+  transition: bottom 0.5s ease;
+  z-index: 9999;
+}
+
+#consultant-bar.active {
+  bottom: 0; /* slide up */
+}
+
+.consultant-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.whatsapp-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.consultant-text h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: #333;
+}
+
+.consultant-text h3 span {
+  color: red;
+}
+
+.consultant-text p {
+  margin: 3px 0 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.consultant-btn {
+  margin-left: auto;
+  background: red;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.consultant-btn:hover {
+  background: #b30000;
+}
+
+#consultant-close {
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  margin-left: 15px;
+  cursor: pointer;
+  color: #333;
+}
+</style>
+
+<script>
+// Show bar after scrolling 400px
+window.addEventListener("scroll", function() {
+  let bar = document.getElementById("consultant-bar");
+  if (window.scrollY > 400) {
+    bar.classList.add("active");
+  }
+});
+
+// Close button
+document.getElementById("consultant-close").addEventListener("click", function() {
+  document.getElementById("consultant-bar").style.display = "none";
+});
+</script>
+
+
+<style>
+    .footer-bottom img {
+    filter: brightness(0) invert(1);
+}
+.footer-area a:hover { color: #00A8E8 !important; } /* same hover accent as header */
+.footer-big-title a:hover { text-decoration: underline; }
+@media(max-width: 767px){
+  .footer-area .list-inline-item { display: block; margin: 6px 0; }
+}
+</style>
+
