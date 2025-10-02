@@ -44,52 +44,87 @@ Save Time <br> Finding The Right <br> Agency Partner
 </div>
 
 <!-- Agency Section -->
-<div class="agency section-padding">
+<section class="agency-section py-5">
     <div class="container">
         <div class="row align-items-center g-5">
-            <!-- Images -->
-            <div class="col-lg-6">
-                <div class="agency__thumb position-relative">
-                    <img src="{{ asset('css/new-assets/img/home-01/hero/thumb-one.png')}}" alt="wbdigitech-services" class="img-fluid rounded shadow-lg fade-left">
-                    <img src="/storage/breadcrumb-banner/hand-shaking.jpg" alt="Experienced Marketing Agency" class="img-fluid rounded shadow-lg position-absolute top-50 start-50 translate-middle fade-right" style="width: 80%;">
-                </div>
-            </div>
+            <!-- Visual / Image Column -->
+            <div class="col-lg-6">  
+                <div class="position-relative">
+                    <div class="visual-card shadow-lg rounded overflow-hidden">
+                        <img src="{{ asset('css/new-assets/img/home-01/hero/thumb-one.png') }}" alt="wbdigitech-services" class="img-fluid w-100">
+                        <div class="trusted-badge">Trusted Agency</div>
+                    </div>
 
-            <!-- Content -->
-            <div class="col-lg-6">
-                <div class="agency__content">
-                    <span class="sub-title text-white">WELCOME <i class="fa-solid fa-arrow-right"></i></span>
-                    <h2 class="title">Work with the Best Digital Marketing Solutions in Dubai</h2>
-                    <p>
-                        As a <a href="#">top digital marketing agency Dubai</a>, we know that search marketing isn’t just about links, technical SEO, and search ads. By combining technology and creativity, our expert teams craft exceptional digital experiences across all platforms.
-                    </p>
-
-                    <!-- Skills -->
-                    <div class="skill-wrap mt-4">
-                        <div class="skill-bar-single mb-3">
-                            <p class="primary-text mb-1">Web Design</p>
-                            <div class="progress">
-                                <div class="progress-bar bg-gradient" style="width: 100%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar-single mb-3">
-                            <p class="primary-text mb-1">Complete Digital Marketing Solution</p>
-                            <div class="progress">
-                                <div class="progress-bar bg-gradient" style="width: 100%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar-single">
-                            <p class="primary-text mb-1">SEO</p>
-                            <div class="progress">
-                                <div class="progress-bar bg-gradient" style="width: 100%;"></div>
+                    <div class="floating-card d-none d-md-block">
+                        <div class="card p-3 rounded shadow-sm bg-white">
+                            <div class="d-flex align-items-center">
+                                <div class="me-3 text-primary fs-3"><i class="fa-solid fa-briefcase"></i></div>
+                                <div>
+                                    <h6 class="mb-0">500+ Projects</h6>
+                                    <small class="text-muted">Delivered with excellence</small>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Content Column -->
+            <div class="col-lg-6">
+                <span class="sub-title text-primary">WELCOME <i class="fa-solid fa-arrow-right"></i></span>
+                <h2 class="title display-5 fw-bold mt-2">Work with the Best Digital Marketing Solutions in Dubai</h2>
+                <p class="lead text-muted mt-3">As a <a href="#">top digital marketing agency Dubai</a>, we blend creativity, strategy and technology to craft digital experiences that convert visitors into customers.</p>
+
+                <ul class="list-unstyled mt-4 features-list">
+                    <li class="d-flex mb-3">
+                        <div class="icon me-3 text-primary"><i class="fa-solid fa-check-circle fa-lg"></i></div>
+                        <div>
+                            <strong>High-converting Websites</strong>
+                            <div class="small text-muted">Responsive designs focused on conversion and speed.</div>
+                        </div>
+                    </li>
+                    <li class="d-flex mb-3">
+                        <div class="icon me-3 text-primary"><i class="fa-solid fa-bullhorn fa-lg"></i></div>
+                        <div>
+                            <strong>Integrated Marketing</strong>
+                            <div class="small text-muted">SEO, Ads, Social & content — a full-funnel approach.</div>
+                        </div>
+                    </li>
+                    <li class="d-flex">
+                        <div class="icon me-3 text-primary"><i class="fa-solid fa-headset fa-lg"></i></div>
+                        <div>
+                            <strong>Dedicated Support</strong>
+                            <div class="small text-muted">Local team, fast responses, ongoing optimisation.</div>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="mt-4">
+                    <a href="{{ route('contact') }}" class="btn btn-gradient btn-lg me-3">Get a Free Quote</a>
+                    <a href="/services" class="btn btn-outline-secondary btn-lg">See Our Services</a>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+
+    <!-- Scoped styles for agency section -->
+    <style>
+    .agency-section .visual-card{ position: relative; overflow: hidden; border-radius: 14px; }
+    .agency-section .visual-card img{ display:block; height:100%; object-fit:cover; }
+    .agency-section .trusted-badge{ position:absolute; left:18px; top:18px; background:#fff; color:#0A3D62; padding:6px 12px; border-radius:8px; font-weight:600; box-shadow:0 6px 18px rgba(10,61,98,0.12); }
+    .agency-section .floating-card{ position:absolute; right:0; bottom:-30px; width:220px; transform:translateY(0); }
+    .agency-section .features-list .icon{ width:38px; display:flex; align-items:center; justify-content:center; }
+    .agency-section .title{ color:#0A3D62; }
+    .btn-gradient{ background: linear-gradient(90deg,#0A3D62,#1287cb); color:#fff; border:none; }
+    .btn-gradient:hover{ opacity:0.95; }
+
+    /* Responsive adjustments */
+    @media (max-width: 991px){
+        .agency-section .floating-card{ display:none; }
+        .agency-section .title{ font-size:1.6rem; }
+    }
+    </style>
+</section>
 
 {{-- Services Area  --}}
      <div class="tp-service-area pt-100 pb-50 tp-btn-trigger d-none d-lg-block">
@@ -301,7 +336,7 @@ Save Time <br> Finding The Right <br> Agency Partner
                             <p class="text-white-50 small">
                                 {{ Str::limit($blog->excerpt ?? '', 80, '...') }}
                             </p>
-                            <a href="{{ route('blogs.public.show', $blog->id ?? 0) }}" class="btn btn-sm mt-2" style="color: white; background: linear-gradient(90deg, #0A3D62, #dce3e7); ">Read More</a>
+                            <a href="{{ route('blogs.public.show', $blog->id ?? 0) }}" class="tp-btn-white-lg bg-white text-dark open-popup">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -359,6 +394,13 @@ Save Time <br> Finding The Right <br> Agency Partner
 {{-- Testimonial Section --}}
 <div class="tp-testimonial-area pt-50">
     <div class="container">
+        <!-- Section Title -->
+        <div class="row justify-content-center mb-40">
+            <div class="col-md-8 text-center">
+                <h2 class="sv-service-title text-white" style="background: linear-gradient(90deg, #0A3D62, #1287cb);">What Our Clients Say</h2>
+                <p class="text-muted mt-2 text-dark">Real feedback from clients we've helped grow.</p>
+            </div>
+        </div>
         <div class="row justify-content-center">
             <div class="col-xl-10">
                 <div class="tp-testimonial-slider-wrapper">

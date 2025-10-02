@@ -246,8 +246,8 @@
                             </div>
 
                                     <!-- NEW Get Free SEO Button -->
-                            <a href="{{ route('seo-request.public') }}" class="btn btn-sm text-white"
-                            style="background: linear-gradient(90deg,#0e5689,#0077B6); border:none; padding:6px 14px; border-radius:4px; font-weight:600; font-size:13px;">
+                            <a href="{{ route('seo-request.public') }}" class="btn btn-sm text-black"
+                            style="background: linear-gradient(90deg,#ccd6dd,#ffffff); border:none; padding:6px 14px; border-radius:4px; font-weight:600; font-size:13px;">
                             🚀 Get Free SEO
                             </a>
                         </div>

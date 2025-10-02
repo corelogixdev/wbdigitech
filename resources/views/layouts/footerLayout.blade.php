@@ -131,7 +131,7 @@
   background: #fff;
   border-top: 2px solid #eee;
   padding: 15px 30px;
-  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 -2px 10px rgba(59, 86, 208, 0.938);
   transition: bottom 0.5s ease;
   z-index: 9999;
 }
@@ -180,7 +180,7 @@
 }
 
 .consultant-btn:hover {
-  background: #b30000;
+  background: rgb(153, 171, 197);
 }
 
 #consultant-close {
@@ -189,7 +189,7 @@
   font-size: 22px;
   margin-left: 15px;
   cursor: pointer;
-  color: #333;
+  color: #1f5ee6;
 }
 </style>
 
