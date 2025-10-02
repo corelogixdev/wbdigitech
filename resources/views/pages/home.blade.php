@@ -84,6 +84,7 @@ Save Time <br> Finding The Right <br> Agency Partner
                         </div>
                     </li>
                     <li class="d-flex mb-3">
+
                         <div class="icon me-3 text-primary"><i class="fa-solid fa-bullhorn fa-lg"></i></div>
                         <div>
                             <strong>Integrated Marketing</strong>
@@ -296,48 +297,44 @@ Save Time <br> Finding The Right <br> Agency Partner
 </div>
 
 {{-- Blog Section --}}
-<div class="blog-details-related-area pt-60 pb-60 bg-dark">
+<section class="home-blog-section py-5 bg-dark text-white">
     <div class="container">
-        {{-- Section Title --}}
-        <div class="row justify-content-center mb-40">
+        <!-- Section Title -->
+        <div class="row justify-content-center mb-4">
             <div class="col-md-8 text-center">
                 <h2 class="sv-service-title text-white">Our Latest Blogs</h2>
                 <p class="text-white-50 mt-2">Read our latest insights, news, and updates.</p>
             </div>
         </div>
 
-        {{-- Blog Cards --}}
-        <div class="row justify-content-center">
+        <!-- Blog Grid -->
+        <div class="row g-4">
             @forelse($blogs as $blog)
-                <div class="col-xl-4 col-lg-6 col-md-6 mb-40 d-flex justify-content-center">
-                    <div class="tp-blog-item shadow-sm rounded overflow-hidden bg-dark">
-                        <div class="tp-blog-thumb p-relative">
-                            @if(!empty($blog->image) && file_exists(public_path('storage/'.$blog->image)))
-                                <img src="{{ asset('storage/' . $blog->image) }}" 
-                                     alt="{{ $blog->title ?? 'Blog Image' }}" 
-                                     class="img-fluid blog-img">
-                            @else
-                                <img src="{{ asset('images/default-blog.png') }}" 
-                                     alt="Default Blog Image" 
-                                     class="img-fluid blog-img">
-                            @endif
-                            <div class="tp-blog-meta">
-                                <span class="bg-warning text-dark">
-                                    {{ $blog->created_at ? $blog->created_at->format('d M, Y') : 'Date N/A' }}
-                                </span>
-                            </div>
-                        </div>
-                        <div class="tp-blog-content text-center p-3">
-                            <h5 class="tp-blog-title-sm text-white mb-2">
-                                <a href="{{ route('blogs.public.show', $blog->id ?? 0) }}" class="text-white">
-                                    {{ $blog->title ?? 'Untitled Blog' }}
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="blog-card-wrap">
+                        <article class="blog-card h-100 rounded overflow-hidden position-relative">
+                            <div class="media-wrap position-relative">
+                                <a href="{{ route('blogs.public.show', $blog->id ?? 0) }}" class="d-block">
+                                    @if(!empty($blog->image) && file_exists(public_path('storage/'.$blog->image)))
+                                        <img loading="lazy" src="{{ asset('storage/' . $blog->image) }}" alt="{{ $blog->title ?? 'Blog Image' }}" class="img-fluid blog-card-img w-100">
+                                    @else
+                                        <img loading="lazy" src="{{ asset('images/default-blog.png') }}" alt="Default Blog Image" class="img-fluid blog-card-img w-100">
+                                    @endif
+                                    <div class="blog-gradient-top"></div>
                                 </a>
-                            </h5>
-                            <p class="text-white-50 small">
-                                {{ Str::limit($blog->excerpt ?? '', 80, '...') }}
-                            </p>
-                            <a href="{{ route('blogs.public.show', $blog->id ?? 0) }}" class="tp-btn-white-lg bg-white text-dark open-popup">Read More</a>
-                        </div>
+                                <div class="blog-overlay"></div>
+                                <span class="blog-date badge bg-white text-dark position-absolute"><i class="fa fa-calendar me-1"></i> {{ $blog->created_at ? $blog->created_at->format('d M, Y') : 'Date N/A' }}</span>
+                            </div>
+
+                            <div class="blog-card-body p-4 bg-dark">
+                                <h4 class="blog-card-title h5 mb-2"><a href="{{ route('blogs.public.show', $blog->id ?? 0) }}" class="text-white text-decoration-none">{{ $blog->title ?? 'Untitled Blog' }}</a></h4>
+                                <p class="text-white-50 mb-3">{{ Str::limit($blog->excerpt ?? '', 120, '...') }}</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="{{ route('blogs.public.show', $blog->id ?? 0) }}" class="btn btn-sm btn-gradient">Read More</a>
+                                    <div class="meta small text-white">By WB-DigiTech • <span class="reading-time">{{ rand(2,6) }} min</span></div>
+                                </div>
+                            </div>
+                        </article>
                     </div>
                 </div>
             @empty
@@ -347,47 +344,45 @@ Save Time <br> Finding The Right <br> Agency Partner
             @endforelse
         </div>
     </div>
-</div>
 
-<style>
+    <!-- Scoped styles for blog grid -->
+    <style>
+    /* Wrapper adds subtle gradient border and glass effect */
+    .home-blog-section .blog-card-wrap{ padding:6px; border-radius:14px; background:linear-gradient(180deg, rgba(18,135,203,0.06), rgba(10,61,98,0.03)); }
+    .home-blog-section .blog-card{ background:rgba(8,12,18,0.6); border-radius:10px; overflow:hidden; display:flex; flex-direction:column; transition: transform .35s ease, box-shadow .35s ease; backdrop-filter: blur(6px); }
+    .home-blog-section .blog-card:hover{ transform: translateY(-10px); box-shadow: 0 20px 40px rgba(2,6,23,0.6); }
 
-/* Make blog cards wider */
-.tp-blog-item {
-    max-width: 380px; /* slightly wider than before */
-    width: 100%;
-    border-radius: 12px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+    .home-blog-section .media-wrap{ position:relative; }
+    .home-blog-section .blog-card-img{ height:260px; object-fit:cover; display:block; transition: transform .6s cubic-bezier(.2,.8,.2,1); }
+    .home-blog-section .blog-card:hover .blog-card-img{ transform: scale(1.08); }
 
-.tp-blog-item:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
-}
+    .home-blog-section .blog-gradient-top{ position:absolute; left:0; right:0; top:0; height:64px; background: linear-gradient(90deg, rgba(10,61,98,0.95), rgba(18,135,203,0.9)); opacity:0.0; transition: opacity .35s ease; }
+    .home-blog-section .blog-card:hover .blog-gradient-top{ opacity:0.08; }
 
-/* Blog Image */
-.blog-img {
-    width: 100%;
-    height: 260px;
-    object-fit: cover;
-    border-radius: 12px 12px 0 0;
-}
+    .home-blog-section .blog-overlay{ position:absolute; left:0; right:0; bottom:0; height:60%; background: linear-gradient(180deg, rgba(0,0,0,0.04), rgba(0,0,0,0.5)); }
 
-/* Optional: Responsive */
-@media (max-width: 768px) {
-    .tp-blog-item {
-        max-width: 90%; /* almost full width on tablet */
+    .home-blog-section .blog-date{ top:14px; left:14px; font-weight:700; border-radius:8px; padding:6px 10px; box-shadow:0 6px 18px rgba(2,6,23,0.35); }
+
+    .home-blog-section .blog-card-body{ padding:18px; }
+    .home-blog-section .blog-card-title{ font-weight:700; font-size:1.05rem; }
+    .home-blog-section .blog-card-title a{ color:#fff; }
+    .home-blog-section .blog-card-title a:hover{ text-decoration:underline; }
+
+    .home-blog-section .btn-gradient{ background: linear-gradient(90deg,#0A3D62,#1287cb); color:#fff; border:none; padding:6px 12px; border-radius:6px; }
+    .home-blog-section .btn-gradient:hover{ opacity:0.95; }
+
+    .home-blog-section .meta{ color:rgba(255,255,255,0.6); }
+
+    /* Small screens */
+    @media (max-width: 768px){
+        .home-blog-section .blog-card-img{ height:200px; }
     }
-    .blog-img {
-        height: 220px;
+    @media (max-width: 576px){
+        .home-blog-section .blog-card-img{ height:160px; }
+        .home-blog-section .blog-card-body{ padding:14px; }
     }
-}
-@media (max-width: 576px) {
-    .blog-img {
-        height: 180px;
-    }
-}
-
-</style>
+    </style>
+</section>
 
 
 
@@ -408,26 +403,54 @@ Save Time <br> Finding The Right <br> Agency Partner
                         <button class="tp-testimonial-prev"><i class="fa fa-chevron-left"></i></button>
                         <button class="tp-testimonial-next"><i class="fa fa-chevron-right"></i></button>
                     </div>
-                    <div class="swiper-container tp-testimonial-slider-active">
-                        <div class="swiper-wrapper">
-                            <!-- Each testimonial slide -->
-                            <div class="swiper-slide">
-                                <div class="tp-testimonial-item text-center">
-                                    <p>"WB-DigiTech has made everything much easier for me and helped me establish my business quickly at customer-friendly rates.”</p>
-                                    <span><em>Hafeez Ullah</em></span>
+                            <div class="swiper-container tp-testimonial-slider-active">
+                                <div class="swiper-wrapper">
+                                    <!-- Each testimonial slide -->
+                                    <div class="swiper-slide">
+                                        <div class="tp-testimonial-item text-center px-4 py-5">
+                                            <div class="testimonial-card mx-auto">
+                                                <div class="tc-avatar mb-3">
+                                                    <div class="tc-avatar-circle">HU</div>
+                                                </div>
+                                                <blockquote class="tc-quote mb-3">“WB-DigiTech has made everything much easier for me and helped me establish my business quickly at customer-friendly rates.”</blockquote>
+                                                <div class="tc-author fw-bold">Hafeez Ullah</div>
+                                                <div class="tc-role small text-muted">Founder</div>
+                                                <div class="tc-rating mt-3" aria-hidden="true">
+                                                    <i class="fa fa-star text-warning"></i>
+                                                    <i class="fa fa-star text-warning"></i>
+                                                    <i class="fa fa-star text-warning"></i>
+                                                    <i class="fa fa-star text-warning"></i>
+                                                    <i class="fa fa-star text-warning"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tp-testimonial-item text-center px-4 py-5">
+                                            <div class="testimonial-card mx-auto">
+                                                <div class="tc-avatar mb-3">
+                                                    <div class="tc-avatar-circle">FZ</div>
+                                                </div>
+                                                <blockquote class="tc-quote mb-3">“WB-DIGITECH has made everything much easier for me and helped me.”</blockquote>
+                                                <div class="tc-author fw-bold">Faisal Zakria</div>
+                                                <div class="tc-role small text-muted">CEO</div>
+                                                <div class="tc-rating mt-3" aria-hidden="true">
+                                                    <i class="fa fa-star text-warning"></i>
+                                                    <i class="fa fa-star text-warning"></i>
+                                                    <i class="fa fa-star text-warning"></i>
+                                                    <i class="fa fa-star text-warning"></i>
+                                                    <i class="fa fa-star text-warning"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Add more slides here, keep using tp-testimonial-item for compatibility -->
                                 </div>
+                                <!-- Optional: Add pagination -->
+                                <div class="swiper-pagination"></div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="tp-testimonial-item text-center">
-                                    <p>"WB-DIGITECH has made everything much easier for me and helped me"</p>
-                                    <span><em>Faisal Zakria</em></span>
-                                </div>
-                            </div>
-                            <!-- Add more slides like above -->
-                        </div>
-                        <!-- Optional: Add pagination -->
-                        <div class="swiper-pagination"></div>
-                    </div>
                 </div>
             </div>
         </div>
