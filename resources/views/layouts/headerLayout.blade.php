@@ -50,16 +50,16 @@
     {{-- Side Bar --}}
     <div class="tp-offcanvas-area">
         <div class="tp-offcanvas-wrapper">
-            <div class="tp-offcanvas-top d-flex align-items-center justify-content-between">
+            
+            <div class="tp-offcanvas-main">
+                <div class="tp-offcanvas-content">
+                    <div class="tp-offcanvas-top d-flex align-items-center justify-content-between">
                 <div class="tp-offcanvas-logo"><a href="#"><img class="logo-1" src="{{ asset('css/new-assets/img/logo/logoo.png') }}" alt="WbDigitech Logo"><img class="logo-2" src="{{ asset('css/new-assets/img/logo/logoo.png')}}" alt="Wbdigitech Logo White"></a></div>
                 <div class="tp-offcanvas-close d-flex align-items-center">
                     <!-- Visible cancel button for UX -->
-                    <button class="tp-offcanvas-cancel-btn btn btn-sm btn-light me-2" aria-label="Cancel sidebar" style="display:inline-block;visibility:visible;">Cancel</button>
                     <button class="tp-offcanvas-close-btn" title="menu icon digital marketing agency dubai"><svg width=37 height=38 viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.19141 9.80762L27.5762 28.1924" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /><path d="M9.19141 28.1924L27.5762 9.80761" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg></button>
                 </div>
             </div>
-            <div class="tp-offcanvas-main">
-                <div class="tp-offcanvas-content">
                     <h3 class="tp-offcanvas-title " style=" color: #0A3D62">Hello There!</h3>
                 </div>
                 <div class="tp-main-menu-mobile d-xl-none"></div>
@@ -114,7 +114,7 @@
         max-width: 95%;
         height: 100vh;
         background: #fff;
-        z-index: 2000;
+        z-index: 999999;
         box-shadow: -10px 0 30px rgba(0,0,0,0.15);
         transition: right .28s ease;
         overflow-y: auto;

@@ -27,7 +27,7 @@
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-md-4">
-                            <h3 class="fw-bold text-gradient">Client Overview</h3>
+                            <h3 class="fw-bold text-gradient">Case Study</h3>
                         </div>
                         <div class="col-md-8">
                             <p class="text-muted fs-5">{{ $portfolio->client_overview ?? 'No overview provided.' }}</p>
