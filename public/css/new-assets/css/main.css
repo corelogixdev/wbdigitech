@@ -7665,6 +7665,12 @@ body.tp-magic-cursor #magic-cursor {
     animation: 0.95s ease 0s normal forwards 1 running headerSlideDown;
 }
 
+.about-us-banner {
+    background-image: url("/css/new-assets/img/inner-blog/blog-standard/blog-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .header-sticky .ab-logo-1 {
     display: none;
 }
