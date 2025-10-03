@@ -37,7 +37,7 @@
     
 
 </head>
-<style>
+{{-- <style>
 /* Fullscreen splash overlay */
 #splash-screen {
   position: fixed;
@@ -73,19 +73,19 @@
   50% { transform: translateY(-10px); }
 }
 
-</style>
+</style> --}}
 
 <body id="body" class="tp-magic-cursor">
    <div id="magic-cursor">
         <div id="ball"></div>
     </div>
     
-  <!-- Splash Screen -->
+  {{-- <!-- Splash Screen -->
   <div id="splash-screen">
     <div class="splash-content">
       <img src="{{ asset('css/new-assets/img/logo/logoo.png')}}" alt="Logo" class="splash-logo">
     </div>
-  </div>
+  </div> --}}
 <a href="https://wa.link/+971-50-239-0775" class="float" title="Whatsapp WB-DIGITECH" target="_blank"><i class="fab fa-whatsapp my-float"></i></a>
 
 
@@ -187,7 +187,7 @@
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 
-
+{{-- 
 <script>
   window.addEventListener("load", function () {
     const splash = document.getElementById("splash-screen");
@@ -195,7 +195,7 @@
       splash.classList.add("hidden");
     },1000); // optional delay
   });
-</script>
+</script> --}}
 
 <script>
   console.time("page-load");
