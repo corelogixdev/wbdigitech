@@ -1,0 +1,231 @@
+/* ===================== General Reset & Typography ===================== */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+    color: #475569;
+}
+a { text-decoration: none; }
+
+/* Hero Section Full Background */
+.service-hero {
+    position: relative;
+    padding: 200px 20px 150px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    margin-bottom: 50px;
+}
+
+.hero-bg-web {
+    background-image: url('../css/new-assets/img/wb-web.jpg');
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 12px;
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero-subtitle-small {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+/* Hero Title */
+.service-hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Hero Subtitle */
+.service-hero-subtitle {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Hero Button */
+.btn-hero {
+    font-size: 1.05rem;
+    padding: 12px 35px;
+    background: linear-gradient(to right, #ff6600, #ff9933);
+    color: #fff;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-hero:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .service-hero { padding: 150px 15px 120px; }
+    .service-hero-title { font-size: 2.5rem; }
+    .service-hero-subtitle { font-size: 1rem; }
+}
+
+@media (max-width: 575px) {
+    .service-hero { padding: 120px 15px 90px; }
+    .service-hero-title { font-size: 2rem; }
+    .service-hero-subtitle { font-size: 0.95rem; }
+    .btn-hero { padding: 10px 25px; font-size: 0.95rem; }
+}
+
+
+/* ===================== Sidebar ===================== */
+.sidebar {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.sidebar h6 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #0A3D62;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.sidebar ul { list-style: none; padding: 0; margin: 0; }
+.sidebar ul li {
+    margin-bottom: 10px;
+    border-left: 3px solid transparent;
+    transition: 0.3s;
+}
+.sidebar ul li a {
+    display: block;
+    color: #1287cb;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+.sidebar ul li.current-menu-item a {
+    font-weight: 700;
+    color: #0A3D62;
+    background: #e6f2ff;
+    border-left: 3px solid #0A3D62;
+}
+.sidebar ul li a:hover {
+    background: #e6f2ff;
+    color: #0A3D62;
+}
+
+/* ===================== Sidebar Images ===================== */
+.sidebar-images {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.sidebar-images img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+.sidebar-images img:hover { transform: scale(1.05); }
+
+/* ===================== Headings ===================== */
+h2 { font-size: 2rem; margin-bottom: 20px; color: #0A3D62; }
+h3 { font-size: 1.5rem; margin-bottom: 15px; color: #0A3D62; }
+h5 { font-size: 1.2rem; margin-bottom: 15px; color: #0A3D62; }
+
+/* ===================== Services List ===================== */
+.services-list ul {
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+.services-list ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 22px;
+}
+.services-list ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #0A3D62;
+    font-weight: bold;
+}
+
+/* ===================== Process List ===================== */
+.process-list ol {
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+.process-list ol li {
+    margin-bottom: 12px;
+}
+
+/* ===================== Benefits List ===================== */
+.benefits-list ul {
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+.benefits-list ul li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 22px;
+}
+.benefits-list ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #0A3D62;
+    font-weight: bold;
+}
+
+/* ===================== Container Grid ===================== */
+.container-flex {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.container-flex .sidebar-col { flex: 1 1 280px; }
+.container-flex .content-col { flex: 2 1 640px; }
+
+/* ===================== Images ===================== */
+.service-img { 
+    width: 100%; 
+    margin-bottom: 25px; 
+    border-radius: 12px; 
+    object-fit: cover; 
+}
+
+/* ===================== Responsive ===================== */
+@media (max-width: 991px) {
+    .container-flex { flex-direction: column; }
+    .service-hero-title { font-size: 2.2rem; }
+    .service-hero-subtitle { font-size: 1rem; }
+    .btn-gradient { padding: 10px 22px; font-size: 15px; }
+}
+@media (max-width: 575px) {
+    .service-hero-title { font-size: 1.8rem; }
+    .service-hero-subtitle { font-size: 0.95rem; }
+    .btn-gradient { padding: 10px 18px; font-size: 14px; }
+}

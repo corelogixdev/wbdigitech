@@ -41,9 +41,17 @@ Route::get('/web-service', function() {
     return view('pages.services.web');
 })->name('services.web');
 
+Route::get('/mobileapp-service', function() {
+    return view('pages.services.mobile');
+})->name('services.mobile');
+
 Route::get('/digital-marketing', function() {
     return view('pages.services.digital-marketing');
 })->name('services.digital-marketing');
+
+Route::get('/social-media-marketing', function() {
+    return view('pages.services.smm');
+})->name('services.smm');
 
 Route::get('/seo-service', function() {
     return view('pages.services.seo');
