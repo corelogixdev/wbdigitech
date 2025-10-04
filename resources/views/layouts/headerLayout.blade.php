@@ -279,7 +279,7 @@
                                                                     <div class="row gx-50">
                                                                         <div class="col-xxl-2 col-xl-2">
                                                                             <div class="tp-megamenu-list">
-                                                                                <h4 class="tp-megamenu-title"><a href="#">WEB DESIGN & DEVELOPMENT</a></h4>
+                                                                                <h4 class="tp-megamenu-title"><a href="{{ route('services.web')}}">WEB DESIGN & DEVELOPMENT</a></h4>
                                                                                 <div class="tp-megamenu-list-wrap tp-portfolio-menu-style">
                                                                                     <ul>
                                                                                         <li><a href="#">Website Development</a></li>
@@ -308,7 +308,7 @@
                                                                         </div>
                                                                         <div class="col-xxl-2 col-xl-2">
                                                                             <div class="tp-megamenu-list tp-megamenu-list-2 ml-20">
-                                                                                <h4 class="tp-megamenu-title"><a href="#">SEO</a></h4>
+                                                                                <h4 class="tp-megamenu-title"><a href="{{route('services.seo')}}">SEO</a></h4>
                                                                                 <div class="tp-megamenu-list-wrap">
                                                                                     <ul class="">
                                                                                         <li><a href="#">Content Marketing</a></li>
@@ -321,7 +321,7 @@
                                                                         </div>
                                                                         <div class="col-xxl-2 col-xl-2">
                                                                             <div class="tp-megamenu-list tp-megamenu-list-2 ml-20">
-                                                                                <h4 class="tp-megamenu-title"><a href="#">Mobile Application Development</a></h4>
+                                                                                <h4 class="tp-megamenu-title"><a href="{{route('services.mobile')}}">Mobile Application Development</a></h4>
                                                                                 <div class="tp-megamenu-list-wrap">
                                                                                     <ul>
                                                                                         <li><a href="#">Data Processing</a></li>
@@ -339,7 +339,7 @@
                                                                         </div>
                                                                         <div class="col-xxl-2 col-xl-2">
                                                                             <div class="tp-megamenu-list tp-megamenu-list-2 ml-20">
-                                                                                <h4 class="tp-megamenu-title page_speed_424355281"><a href="#">SOCIAL MEDIA MARKETING</a></h4>
+                                                                                <h4 class="tp-megamenu-title page_speed_424355281"><a href="{{route('services.smm')}}">SOCIAL MEDIA MARKETING</a></h4>
                                                                                 <div class="tp-megamenu-list-wrap">
                                                                                     <ul>
                                                                                         <li><a href="#">Facebook Advertising</a></li>
@@ -357,7 +357,7 @@
                                                                         </div>
                                                                         <div class="col-xxl-2 col-xl-2">
                                                                             <div class="tp-megamenu-list tp-megamenu-list-2 ml-20">
-                                                                                <h4 class="tp-megamenu-title page_speed_424355281"><a href="#">GRAPHIC DESINGING</a></h4>
+                                                                                <h4 class="tp-megamenu-title page_speed_424355281"><a href="{{route('services.graphic')}}">GRAPHIC DESINGING</a></h4>
                                                                                 <div class="tp-megamenu-list-wrap">
                                                                                     <ul>
                                                                                         <li><a href="#">Logo design</a></li>

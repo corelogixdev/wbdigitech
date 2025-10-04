@@ -38,9 +38,9 @@
                     <li><a href="{{ route('services.web') }}">Website Design & Development</a></li>
                     <li><a href="{{ route('services.mobile') }}">Mobile App Development</a></li>
                     <li><a href="{{ route('services.smm') }}">Social Media Marketing</a></li>
-                    <li><a href="{{ url('service/digital-campaigns') }}">Digital Campaigns</a></li>
+                    <li><a href="{{ route('services.digital') }}">Digital Campaigns</a></li>
                     <li class="current-menu-item"><a href="{{ route('services.seo') }}">SEO</a></li>
-                    <li><a href="{{ url('service/graphic-designing-service-in-dubai') }}">Graphic Designing</a></li>
+                    <li><a href="{{ route('services.graphic') }}">Graphic Designing</a></li>
                 </ul>
 
                 <!-- Sidebar Images -->
