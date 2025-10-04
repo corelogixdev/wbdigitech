@@ -4,6 +4,8 @@
 
 @section('content')
 <link rel="stylesheet" href="{{ asset('css/services.css') }}">
+<link rel="stylesheet" href="{{ asset('css/home.css') }}">
+
 
 <div class="main-wrapper">
 
@@ -17,7 +19,7 @@
                                                 Website Design & Development
                                             </h2>
                                         </div>
-
+                                        <div></div>
                                         <!-- Hero Content -->
                                         <div class="tp-hero-content text-center">
                                             <p class="delay-load">

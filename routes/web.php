@@ -46,8 +46,8 @@ Route::get('/mobileapp-service', function() {
 })->name('services.mobile');
 
 Route::get('/digital-marketing', function() {
-    return view('pages.services.digital-marketing');
-})->name('services.digital-marketing');
+    return view('pages.services.digital-campaigns');
+})->name('services.digital');
 
 Route::get('/social-media-marketing', function() {
     return view('pages.services.smm');
@@ -58,8 +58,8 @@ Route::get('/seo-service', function() {
 })->name('services.seo');
 
 Route::get('/graphic-design', function() {
-    return view('pages.services.graphic-design');
-})->name('services.graphic-design');
+    return view('pages.services.graphic');
+})->name('services.graphic');
 
 
 // Public side | Career Page

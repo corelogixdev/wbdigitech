@@ -4,6 +4,7 @@
 
 @section('content')
 <link rel="stylesheet" href="{{ asset('css/services.css') }}">
+<link rel="stylesheet" href="{{ asset('css/home.css') }}">
 
 <div class="main-wrapper">
 
@@ -11,15 +12,19 @@
     <div style="padding: 80px"></div>
 
     <!-- Hero Section -->
-    <div class="service-hero hero-bg-web">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h6 class="hero-subtitle-small">Home &nbsp; / &nbsp; Mobile App Development</h6>
-            <h1 class="service-hero-title text-white">Mobile App Development</h1>
-            <p class="service-hero-subtitle text-white">
-                Build engaging iOS & Android apps that scale — native, cross-platform, and enterprise solutions focused on performance and conversions.
-            </p>
-            <a href="{{ route('contact') }}" class="btn-gradient btn-hero">Get a Free Quote</a>
+    <div class="tp-hero-title-wrap mb-35 text-center">
+        <h2 class="tp-hero-title gradient-text">
+            Mobile App Development
+        </h2>
+    </div>
+
+    <div class="tp-hero-content text-center">
+        <p class="delay-load">
+            Build engaging iOS & Android apps that scale — native, cross-platform, 
+            and enterprise solutions focused on performance and conversions.
+        </p>
+        <div class="hero-btns mt-4">
+            <a href="{{ route('contact') }}" class="btn btn-gradient">Get a Free Quote</a>
         </div>
     </div>
 
@@ -31,11 +36,11 @@
                 <h6>Our Services</h6>
                 <ul>
                     <li><a href="{{ route('services.web') }}">Website Design & Development</a></li>
-                    <li class="current-menu-item"><a href="{{ url('service/mobile-app-development-service-in-dubai') }}">Mobile App Development</a></li>
-                    <li><a href="{{ url('service/social-media-marketing-service-in-dubai') }}">Social Media Marketing</a></li>
-                    <li><a href="{{ url('service/digital-campaigns') }}">Digital Campaigns</a></li>
+                    <li class="current-menu-item"><a href="{{ route('services.mobile') }}">Mobile App Development</a></li>
+                    <li><a href="{{ route('services.smm') }}">Social Media Marketing</a></li>
+                    <li><a href="{{route('services.digital')}}">Digital Campaigns</a></li>
                     <li><a href="{{ route('services.seo') }}">SEO</a></li>
-                    <li><a href="{{ url('service/graphic-designing-service-in-dubai') }}">Graphic Designing</a></li>
+                    <li><a href="{{ route('services.graphic') }}">Graphic Designing</a></li>
                 </ul>
 
                 <!-- Sidebar Images -->

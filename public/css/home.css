@@ -409,6 +409,20 @@
     padding-bottom: 120px;
     background: #f9f9f9;
 }
+.tp-hero-title-wrap {
+    margin-bottom: 40px; /* space below the title wrapper */
+}
+
+.tp-hero-title {
+    /* font-size: 42px; */
+    line-height: 1.3;
+    margin-bottom: 20px; /* space directly below the title */
+}
+
+.tp-hero-content p {
+    margin-top: 0;        /* remove extra top gap */
+    margin-bottom: 20px;  /* normal spacing */
+}
 
 .h1-home-page {
     font-size: 2.5rem;

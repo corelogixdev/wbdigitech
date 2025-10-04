@@ -4,6 +4,7 @@
 
 @section('content')
 <link rel="stylesheet" href="{{ asset('css/services.css') }}">
+<link rel="stylesheet" href="{{ asset('css/home.css') }}">
 
 <div class="main-wrapper">
 
@@ -11,23 +12,26 @@
     <div style="padding: 80px"></div>
 
     <!-- Hero Section -->
-    <div class="service-hero hero-bg-web">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h6 class="hero-subtitle-small">Home &nbsp; / &nbsp; SEO Services</h6>
-            <h1 class="service-hero-title text-white">Search Engine Optimization (SEO)</h1>
-            <p class="service-hero-subtitle text-white">
-                Get ranked higher, drive organic traffic, and grow your business with WB DIGITECH’s proven SEO strategies.
-            </p>
-            <a href="{{ route('contact') }}" class="btn-gradient btn-hero">Get a Free Quote</a>
+    <div class="tp-hero-title-wrap mb-35 text-center">
+        <h2 class="tp-hero-title gradient-text">
+            Search Engine Optimization (SEO)
+        </h2>
+    </div>
+    <div class="tp-hero-content text-center">
+        <p class="delay-load">
+            Get ranked higher, drive organic traffic, and grow your business with 
+            WB DIGITECH’s proven SEO strategies.
+        </p>
+        <div class="hero-btns mt-4">
+            <a href="{{ route('contact') }}" class="btn btn-gradient">Get a Free Quote</a>
         </div>
     </div>
 
     <!-- Content & Sidebar -->
     <div class="container-flex">
-
+        
         <!-- Sidebar -->
-        <aside class="sidebar-col">
+        <div class="sidebar-col">
             <div class="sidebar">
                 <h6>Our Services</h6>
                 <ul>
@@ -46,11 +50,10 @@
                     <img src="https://wbdigitech.ae/wp-content/uploads/2022/09/seo-marketing.png" alt="SEO Marketing">
                 </div>
             </div>
-        </aside>
+        </div>
 
         <!-- Content -->
         <div class="content-col">
-
             <h2>What WB-DIGITECH Can Do for You?</h2>
             <p>Our specialists help you get ranked higher by making your website SEO-friendly and your content worthy of featured positions.</p>
 
@@ -76,7 +79,6 @@
             <p>We also provide a monthly report on all the quality links acquired for your website so you always stay informed.</p>
 
             <img class="service-img" src="https://wbdigitech.ae/wp-content/uploads/2022/09/seo-optimization.png" alt="SEO Service Image">
-
         </div>
     </div>
 </div>
