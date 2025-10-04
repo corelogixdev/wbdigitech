@@ -30,10 +30,7 @@
                             <h3 class="fw-bold text-gradient">Case Study</h3>
                         </div>
                         <div class="col-md-8">
-                            <p class="text-muted fs-5" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
-                                {{ $portfolio->client_overview ?? 'No overview provided.' }}
-                            </p>
-                            <a href="{{ route('portfolio.public.show',$portfolio->id)}}" class="btn btn-gradient mt-2">Read More</a>
+                            <p class="text-muted fs-5">{{ $portfolio->client_overview ?? 'No overview provided.' }}</p>
                         </div>
                     </div>
                 </div>
