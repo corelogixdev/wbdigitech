@@ -32,8 +32,26 @@ Route::get('/blog', [BlogController::class, 'publicIndex'])->name('blogs.public'
 Route::get('/blogs/{id}', [BlogController::class, 'publicShow'])->name('blogs.public.show');
 
 // Public side | Services Page
-Route::get('/service', [ServiceController::class, 'publicIndex'])->name('services.public');
-Route::get('/service/{slug}', [ServiceController::class, 'show'])->name('services.public.show');
+// Route::get('/service', [ServiceController::class, 'publicIndex'])->name('services.public');
+// Route::get('/service/{slug}', [ServiceController::class, 'show'])->name('services.public.show');
+
+
+// Public side | Services Static Pages
+Route::get('/web-service', function() {
+    return view('pages.services.web');
+})->name('services.web');
+
+Route::get('/digital-marketing', function() {
+    return view('pages.services.digital-marketing');
+})->name('services.digital-marketing');
+
+Route::get('/seo-service', function() {
+    return view('pages.services.seo');
+})->name('services.seo');
+
+Route::get('/graphic-design', function() {
+    return view('pages.services.graphic-design');
+})->name('services.graphic-design');
 
 
 // Public side | Career Page
@@ -51,6 +69,7 @@ Route::get('/customer', [CustomerController::class, 'publicIndex'])->name('custo
 // Public side | Portfolio Pages
 Route::get('/portfolio', [PortfolioController::class, 'publicIndex'])->name('portfolio.public');
 Route::get('/portfolio/{id}', [PortfolioController::class, 'publicShow'])->name('portfolio.public.show');
+Route::get('/portfolio/{id}/case-study', [PortfolioController::class, 'caseStudy'])->name('portfolio.case_study');
 
 // Public Side | SeoRequest
 Route::get('/seo-request', [SeoRequestController::class, 'publicIndex'])->name('seo-request.public');

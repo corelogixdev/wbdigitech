@@ -33,7 +33,7 @@
                             <p class="text-muted fs-5" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
                                 {{ $portfolio->client_overview ?? 'No overview provided.' }}
                             </p>
-                            <a href="{{ route('portfolio.public.show',$portfolio->id)}}" class="btn btn-gradient mt-2">Read More</a>
+                            <a href="{{ route('portfolio.case_study',$portfolio->id)}}" class="btn btn-gradient mt-2">Read More</a>
                         </div>
                     </div>
                 </div>

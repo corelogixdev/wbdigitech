@@ -119,4 +119,10 @@ class PortfolioController extends Controller
           $portfolio = Portfolio::findOrFail($id);
         return view('pages.portfolio.show', compact('portfolio'));
     }
+
+    public function caseStudy($id)
+    {
+        $portfolio = Portfolio::findOrFail($id);
+        return view('pages.portfolio.case_study', compact('portfolio'));
+    }
 }

@@ -100,4 +100,5 @@ class ServiceController extends Controller
     $relatedServices = Service::latest()->take(3)->get();
     return view('pages.services.show', compact('service', 'relatedServices'));
     }
+
 }
