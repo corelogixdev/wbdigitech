@@ -3,6 +3,7 @@
 @section('title', 'About US - WB-DIGITECH')
 
 @section('content')
+<link rel="stylesheet" href="{{ asset('css/home.css') }}">
 
     <div id="smooth-wrapper">
         <div id="smooth-content">
@@ -111,124 +112,35 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tp-team-area pt-20 pb-120 fix">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-xl-12">
-                                            <div class="tp-team-slider-wrapper">
-                                                <div class="swiper-container tp-team-slider-active">
-                                                    <div class="swiper-wrapper">
-                                                        <div class="swiper-slide">
-                                                            <div class="tp-team-item tp-hover-btn-wrapper marque fix mb-30">
-                                                                <div class="tp-hover-btn-item"><img src=css/new-assets/img/home-01/team/accountant.jpg alt="accountant"></div>
-                                                                <div class="tp-team-content"><span>Accountant</span>
-                                                                    <h4 class="tp-team-title-sm"><a>Rohan Sharma</a></h4>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide">
-                                                            <div class="tp-team-item tp-hover-btn-wrapper marque fix mb-30">
-                                                                <div class="tp-hover-btn-item"><img src=css/new-assets/img/home-01/team/client-co-ordinator.jpg alt="client-co-ordinator"></div>
-                                                                <div class="tp-team-content"><span>Client Co-Ordinator</span>
-                                                                    <h4 class="tp-team-title-sm"><a>Siddharth Menon</a></h4>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide">
-                                                            <div class="tp-team-item tp-hover-btn-wrapper marque fix mb-30">
-                                                                <div class="tp-hover-btn-item"><img src=css/new-assets/img/home-01/team/data-analyst-2.jpg alt="data-analyst"></div>
-                                                                <div class="tp-team-content"><span>Data Analyst</span>
-                                                                    <h4 class="tp-team-title-sm"><a>Zara Morgan</a></h4>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide">
-                                                            <div class="tp-team-item tp-hover-btn-wrapper marque fix mb-30">
-                                                                <div class="tp-hover-btn-item"><img src=css/new-assets/img/home-01/team/data-analyst.jpg alt="data-analyst"></div>
-                                                                <div class="tp-team-content"><span>Data Analyst</span>
-                                                                    <h4 class="tp-team-title-sm"><a>Andrew James</a></h4>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide">
-                                                            <div class="tp-team-item tp-hover-btn-wrapper marque fix mb-30">
-                                                                <div class="tp-hover-btn-item"><img src=css/new-assets/img/home-01/team/google-ad-manager.jpg alt="google-ad-manager"></div>
-                                                                <div class="tp-team-content"><span>Google Ad Manager</span>
-                                                                    <h4 class="tp-team-title-sm"><a>Jasmine Taylor</a></h4>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide">
-                                                            <div class="tp-team-item tp-hover-btn-wrapper marque fix mb-30">
-                                                                <div class="tp-hover-btn-item"><img src=css/new-assets/img/home-01/team/graphic-and-art-designer.jpg alt="graphic-and-art-designer"></div>
-                                                                <div class="tp-team-content"><span>Graphic &amp; Art Designer</span>
-                                                                    <h4 class="tp-team-title-sm"><a>Micheal Anderson </a></h4>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide">
-                                                            <div class="tp-team-item tp-hover-btn-wrapper marque fix mb-30">
-                                                                <div class="tp-hover-btn-item"><img src=css/new-assets/img/home-01/team/graphic-and-art-designer1.jpg alt="graphic-and-art-designer"></div>
-                                                                <div class="tp-team-content"><span>Graphic &amp; Art Designer</span>
-                                                                    <h4 class="tp-team-title-sm"><a> Aditi Sharma</a></h4>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide">
-                                                            <div class="tp-team-item tp-hover-btn-wrapper marque fix mb-30">
-                                                                <div class="tp-hover-btn-item"><img src=css/new-assets/img/home-01/team/seo-specialist-2.jpg alt="seo-specialist"></div>
-                                                                <div class="tp-team-content"><span>SEO specialist</span>
-                                                                    <h4 class="tp-team-title-sm"><a>Gabriel Adams</a></h4>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide">
-                                                            <div class="tp-team-item tp-hover-btn-wrapper marque fix mb-30">
-                                                                <div class="tp-hover-btn-item"><img src=css/new-assets/img/home-01/team/seo-specialist.jpg alt="seo-specialist"></div>
-                                                                <div class="tp-team-content"><span>SEO specialist</span>
-                                                                    <h4 class="tp-team-title-sm"><a>James Walker</a></h4>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide">
-                                                            <div class="tp-team-item tp-hover-btn-wrapper marque fix mb-30">
-                                                                <div class="tp-hover-btn-item"><img src=css/new-assets/img/home-01/team/social-media-specialist.jpg alt="social-media-specialist"></div>
-                                                                <div class="tp-team-content"><span>Social Media Specialist</span>
-                                                                    <h4 class="tp-team-title-sm"><a>Neha Singh</a></h4>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide">
-                                                            <div class="tp-team-item tp-hover-btn-wrapper marque fix mb-30">
-                                                                <div class="tp-hover-btn-item"><img src=css/new-assets/img/home-01/team/ui-ux-designer.jpg alt="ui-ux-designer"></div>
-                                                                <div class="tp-team-content"><span>UI/UX Designer</span>
-                                                                    <h4 class="tp-team-title-sm"><a>Arjun Patel</a></h4>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide">
-                                                            <div class="tp-team-item tp-hover-btn-wrapper marque fix mb-30">
-                                                                <div class="tp-hover-btn-item"><img src=css/new-assets/img/home-01/team/video-photo-visulyser.jpg alt="video-photo-visulyser"></div>
-                                                                <div class="tp-team-content"><span>Video Photo Visulyser</span>
-                                                                    <h4 class="tp-team-title-sm"><a>Nia Alexandra</a></h4>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide">
-                                                            <div class="tp-team-item tp-hover-btn-wrapper marque fix mb-30">
-                                                                <div class="tp-hover-btn-item"><img src=css/new-assets/img/home-01/team/web-developer.jpg alt="web-developer"></div>
-                                                                <div class="tp-team-content"><span>Web Developer</span>
-                                                                    <h4 class="tp-team-title-sm"><a>Naomi Collins</a></h4>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+           
+    {{-- Team Members Section --}}   
+            <div class="tp-team-area pt-20 pb-50 fix">
+                {{-- Section Title --}}
+                    <div class="row justify-content-center mb-40">
+                        <div class="col-md-8 text-center">
+                            <h2 class="sv-service-title" style="background: linear-gradient(90deg, #0A3D62, #1287cb);">Our Team</h2>
+                            <p class="text-dark-50 mt-2">Meet With Our Team</p>
+                        </div>
+                    </div>
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        @foreach($teamMembers as $member)
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                            <div class="team-card">
+                                <div class="team-img">
+                                    <img src="{{ asset('storage/' . $member->image) }}" alt="{{ $member->name }}">
+                                </div>
+                                <div class="team-info">
+                                    <h4>{{ $member->name }}</h4>
+                                    <p>{{ $member->speciality }}</p>
                                 </div>
                             </div>
+                        </div>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+
                             <div class="ab-funfact-area pb-40">
                                 <div class="container container-1480">
                                     <div class="row">

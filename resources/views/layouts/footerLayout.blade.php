@@ -193,6 +193,26 @@
 }
 </style>
 
+<style>
+/* Mobile: make consultant bar compact and hide duplicate WhatsApp elements */
+@media (max-width: 767px) {
+  #consultant-bar{
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.14);
+  }
+  .consultant-content{ gap:10px; align-items:center; }
+  .whatsapp-icon{ display:none !important; }
+  .consultant-text h3{ font-size:14px; margin:0; }
+  .consultant-text p{ display:none; }
+  .consultant-btn{ display:none !important; }
+  #consultant-close{ margin-left:8px; font-size:20px; color:#0a66c2; }
+}
+</style>
+
 <script>
 // Show bar after scrolling 400px
 window.addEventListener("scroll", function() {

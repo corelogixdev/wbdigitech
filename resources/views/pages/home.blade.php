@@ -16,12 +16,12 @@
                             <div class="container-fluid home-main-slider">
                                 <div class="row justify-content-center">
                                     <div class="col-xxl-12">
-<!-- Hero Title -->
-<div class="tp-hero-title-wrap mb-35 text-center">
-<h2 class="tp-hero-title gradient-text">
-Save Time <br> Finding The Right <br> Agency Partner
-</h2>
-</div>
+                <!-- Hero Title -->
+                <div class="tp-hero-title-wrap mb-35 text-center">
+                <h2 class="tp-hero-title gradient-text">
+                Save Time <br> Finding The Right <br> Agency Partner
+                </h2>
+                </div>
 
                 <!-- Hero Content -->
                 <div class="tp-hero-content text-center">
@@ -387,7 +387,7 @@ Save Time <br> Finding The Right <br> Agency Partner
 
 
 {{-- Testimonial Section --}}
-{{-- <div class="tp-testimonial-area pt-50">
+<div class="tp-testimonial-area pt-50">
     <div class="container">
         <!-- Section Title -->
         <div class="row justify-content-center mb-40">
@@ -457,7 +457,7 @@ Save Time <br> Finding The Right <br> Agency Partner
     </div>
 </div>
 
-                           --}}
+                          
 <div class="tp-team-area pt-20 pb-50 fix">
      {{-- Section Title --}}
         <div class="row justify-content-center mb-40">
