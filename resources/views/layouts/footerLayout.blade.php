@@ -97,7 +97,7 @@
                 <a href="{{ route('privacy') }}" class="text-white text-decoration-none">Privacy Policy</a> | 
                 <a href="{{ route('cookie') }}" class="text-white text-decoration-none">Cookie Policy</a>
             </div>
-            <p class="mb-0 text-white">© 2025 Copyrights – WB-DIGITECH. All Rights Reserved</p>
+            <p class="mb-0 text-white">© 2025 Copyrights – WB-DIGITECH</p>
         </div>
     </div>
     
