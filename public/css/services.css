@@ -209,23 +209,32 @@ h5 { font-size: 1.2rem; margin-bottom: 15px; color: #0A3D62; }
 .container-flex .sidebar-col { flex: 1 1 280px; }
 .container-flex .content-col { flex: 2 1 640px; }
 
+/* Add safe padding for content */
+.content-col {
+    padding: 0 15px;
+}
+
+/* ===================== Responsive ===================== */
+@media (max-width: 991px) {
+    .container-flex { flex-direction: column; }
+    .content-col, .sidebar-col { padding: 0 20px; } /* give spacing on tablets */
+    .service-hero-title { font-size: 2.2rem; }
+    .service-hero-subtitle { font-size: 1rem; }
+    .btn-gradient { padding: 10px 22px; font-size: 15px; }
+}
+
+
+@media (max-width: 575px) {
+    .content-col, .sidebar-col { padding: 0 15px; } /* extra padding for mobile */
+    .service-hero-title { font-size: 1.8rem; }
+    .service-hero-subtitle { font-size: 0.95rem; }
+    .btn-gradient { padding: 10px 18px; font-size: 14px; }
+}
+
 /* ===================== Images ===================== */
 .service-img { 
     width: 100%; 
     margin-bottom: 25px; 
     border-radius: 12px; 
     object-fit: cover; 
-}
-
-/* ===================== Responsive ===================== */
-@media (max-width: 991px) {
-    .container-flex { flex-direction: column; }
-    .service-hero-title { font-size: 2.2rem; }
-    .service-hero-subtitle { font-size: 1rem; }
-    .btn-gradient { padding: 10px 22px; font-size: 15px; }
-}
-@media (max-width: 575px) {
-    .service-hero-title { font-size: 1.8rem; }
-    .service-hero-subtitle { font-size: 0.95rem; }
-    .btn-gradient { padding: 10px 18px; font-size: 14px; }
 }

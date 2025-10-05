@@ -199,7 +199,7 @@
         <!-- Section Title -->
         <div class="agency__content section__content text-center mb-5">
             <span class="sub-title"> Featured Clients <i class="fa-solid fa-arrow-right"></i></span>
-            <h2 class="title title-anim" style="color: linear-gradient(90deg, #0e5689, #0077B6);">Our Customers</h2>
+            <h2 class="title title-anim" style="color:#0A3D62">Our Customers</h2>
         </div>
 
         <!-- Logo Slider 1 -->
@@ -255,7 +255,7 @@
             <div class="tp-project-gallery-top pb-20 text-center">
                 <div class="row justify-content-center">
                     <div class="col-xl-6 col-lg-8 col-md-10">
-                        <h2 class="my-30 tp-section-title">Industries We Serve</h2>
+                        <h2 class="my-30 tp-section-title" style="color:#0A3D62">Industries We Serve</h2>
                     </div>
                 </div>
 
