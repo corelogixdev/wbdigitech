@@ -490,6 +490,43 @@
 .review-rating span {
     font-size: 1.2rem;
 }
+/* Fix side scroll issue */
+.tp-testimonial-area {
+    overflow-x: hidden; /* prevent horizontal scroll */
+}
+
+.swiper-container {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.swiper-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.swiper-slide {
+    min-width: 0; /* allow shrink */
+    box-sizing: border-box;
+}
+
+/* Ensure cards fit inside screen */
+.testimonial-card {
+    width: 100%;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+/* Mobile spacing */
+@media (max-width: 575px) {
+    .testimonial-card {
+        padding: 15px;
+    }
+    .review-summary-card {
+        padding: 15px;
+    }
+}
+
 </style>
                           
 <div class="tp-team-area pt-20 pb-50 fix">
