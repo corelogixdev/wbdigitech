@@ -385,78 +385,112 @@
 </section>
 
 
-
 {{-- Testimonial Section --}}
-<div class="tp-testimonial-area pt-50">
+<div class="tp-testimonial-area pt-50 pb-70" style="background:#fff;">
     <div class="container">
         <!-- Section Title -->
         <div class="row justify-content-center mb-40">
             <div class="col-md-8 text-center">
-                <h2 class="sv-service-title text-white" style="background: linear-gradient(90deg, #0A3D62, #1287cb);">What Our Clients Say</h2>
-                <p class="text-muted mt-2 text-dark">Real feedback from clients we've helped grow.</p>
+                <h2 class="sv-service-title fw-bold" style="color: #0A3D62">What Our Clients Say</h2>
             </div>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-xl-10">
-                <div class="tp-testimonial-slider-wrapper">
-                    <div class="tp-testimonial-arrow-box d-none d-lg-block">
-                        <button class="tp-testimonial-prev"><i class="fa fa-chevron-left"></i></button>
-                        <button class="tp-testimonial-next"><i class="fa fa-chevron-right"></i></button>
-                    </div>
-                            <div class="swiper-container tp-testimonial-slider-active">
-                                <div class="swiper-wrapper">
-                                    <!-- Each testimonial slide -->
-                                    <div class="swiper-slide">
-                                        <div class="tp-testimonial-item text-center px-4 py-5">
-                                            <div class="testimonial-card mx-auto">
-                                                <div class="tc-avatar mb-3">
-                                                    <div class="tc-avatar-circle">HU</div>
-                                                </div>
-                                                <blockquote class="tc-quote mb-3">“WB-DigiTech has made everything much easier for me and helped me establish my business quickly at customer-friendly rates.”</blockquote>
-                                                <div class="tc-author fw-bold">Hafeez Ullah</div>
-                                                <div class="tc-role small text-muted">Founder</div>
-                                                <div class="tc-rating mt-3" aria-hidden="true">
-                                                    <i class="fa fa-star text-warning"></i>
-                                                    <i class="fa fa-star text-warning"></i>
-                                                    <i class="fa fa-star text-warning"></i>
-                                                    <i class="fa fa-star text-warning"></i>
-                                                    <i class="fa fa-star text-warning"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
 
-                                    <div class="swiper-slide">
-                                        <div class="tp-testimonial-item text-center px-4 py-5">
-                                            <div class="testimonial-card mx-auto">
-                                                <div class="tc-avatar mb-3">
-                                                    <div class="tc-avatar-circle">FZ</div>
-                                                </div>
-                                                <blockquote class="tc-quote mb-3">“WB-DIGITECH has made everything much easier for me and helped me.”</blockquote>
-                                                <div class="tc-author fw-bold">Faisal Zakria</div>
-                                                <div class="tc-role small text-muted">CEO</div>
-                                                <div class="tc-rating mt-3" aria-hidden="true">
-                                                    <i class="fa fa-star text-warning"></i>
-                                                    <i class="fa fa-star text-warning"></i>
-                                                    <i class="fa fa-star text-warning"></i>
-                                                    <i class="fa fa-star text-warning"></i>
-                                                    <i class="fa fa-star text-warning"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Add more slides here, keep using tp-testimonial-item for compatibility -->
-                                </div>
-                                <!-- Optional: Add pagination -->
-                                <div class="swiper-pagination"></div>
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-12 text-center">
+                <div class="review-summary-card p-4 shadow-sm rounded">
+                    <div class="d-flex align-items-center justify-content-center mb-3">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2965/2965358.png" alt="Google Store" width="50" class="me-3">
+                        <div class="text-start">
+                            <h5 class="mb-0 fw-bold">WB-DigiTech - Digital Marketing Agency</h5>
+                            <div class="review-rating">
+                                <span class="fw-bold fs-4 text-dark">4.9</span>
+                                <span class="text-warning">
+                                    ★★★★★
+                                </span>
                             </div>
+                            <p class="mb-0 text-muted small">Based on 41 reviews</p>
+                        </div>
+                    </div>
+                    <a href="https://g.page/your-google-link" target="_blank" class="btn btn-primary rounded-pill">
+                        <i class="fab fa-google me-1"></i> Review us on Google
+                    </a>
                 </div>
             </div>
+        </div>
+
+        <!-- Review Cards Slider -->
+        <div class="swiper-container tp-testimonial-slider-active">
+            <div class="swiper-wrapper">
+                <!-- Review 1 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-card bg-white shadow-sm rounded p-4 h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Reviewer" class="rounded-circle me-3" width="45" height="45">
+                            <div>
+                                <h6 class="fw-bold mb-0">Mohammad Usman</h6>
+                                <small class="text-muted">5 months ago</small>
+                            </div>
+                            <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" class="ms-auto" width="20" alt="Google Logo">
+                        </div>
+                        <div class="text-warning mb-2">★★★★★</div>
+                        <p class="text-muted">Amazing experience! WB-DigiTech built us a fantastic website and provided excellent support throughout.</p>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-card bg-white shadow-sm rounded p-4 h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="rounded-circle bg-success text-white d-flex align-items-center justify-content-center me-3" style="width:45px; height:45px;">A</div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Ayesha Tech</h6>
+                                <small class="text-muted">6 months ago</small>
+                            </div>
+                            <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" class="ms-auto" width="20" alt="Google Logo">
+                        </div>
+                        <div class="text-warning mb-2">★★★★☆</div>
+                        <p class="text-muted">We had a great experience with WB-DigiTech. They delivered exactly what we wanted for our brand identity.</p>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-card bg-white shadow-sm rounded p-4 h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Reviewer" class="rounded-circle me-3" width="45" height="45">
+                            <div>
+                                <h6 class="fw-bold mb-0">Fatima Khan</h6>
+                                <small class="text-muted">2 months ago</small>
+                            </div>
+                            <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" class="ms-auto" width="20" alt="Google Logo">
+                        </div>
+                        <div class="text-warning mb-2">★★★★★</div>
+                        <p class="text-muted">Their SEO and marketing services helped us increase leads significantly. Highly recommended!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
         </div>
     </div>
 </div>
 
+<style>
+    .review-summary-card {
+    background: #fff;
+    border: 1px solid #eee;
+}
+.testimonial-card {
+    border: 1px solid #eee;
+    transition: transform 0.3s ease;
+}
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+.review-rating span {
+    font-size: 1.2rem;
+}
+</style>
                           
 <div class="tp-team-area pt-20 pb-50 fix">
      {{-- Section Title --}}
