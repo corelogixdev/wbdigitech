@@ -462,7 +462,7 @@
      {{-- Section Title --}}
         <div class="row justify-content-center mb-40">
             <div class="col-md-8 text-center">
-                <h2 class="sv-service-title" style="background: linear-gradient(90deg, #0A3D62, #1287cb);">Our Team</h2>
+                <h2 class="sv-service-title" style="color: #0A3D62;">Our Team</h2>
                 <p class="text-dark-50 mt-2">Meet With Our Team</p>
             </div>
         </div>
