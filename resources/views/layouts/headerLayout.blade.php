@@ -360,9 +360,9 @@
                                                                                 <h4 class="tp-megamenu-title page_speed_424355281"><a href="{{route('services.graphic')}}">GRAPHIC DESINGING</a></h4>
                                                                                 <div class="tp-megamenu-list-wrap">
                                                                                     <ul>
-                                                                                        <li><a href="#">Logo design</a></li>
-                                                                                        <li><a href="#">Leaflet Design</a></li>
-                                                                                        <li><a href="#">Brochure design</a></li>
+                                                                                        <li><a href="{{ route('services.logo_design') }}">Logo Design</a></li>
+                                                                                        <li><a href="{{ route('services.leaflet_design') }}">Leaflet Design</a></li>
+                                                                                        <li><a href="{{ route('services.brochure_design') }}">Brochure Design</a></li>
                                                                                     </ul>
                                                                                 </div>
                                                                             </div>
