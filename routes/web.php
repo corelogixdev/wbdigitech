@@ -121,8 +121,20 @@ Route::get('/social-media-marketing', function() {
 
 // Graphic Design Routes
 Route::get('/graphic-design', function() {
-    return view('pages.services.graphic');
+    return view('pages.services.graphic_design.graphic');
 })->name('services.graphic');
+
+Route::get('/logo-design', function() {
+    return view('pages.services.graphic_design.logo_design');
+})->name('services.logo_design');
+
+Route::get('/leaflet-design', function() {
+    return view('pages.services.graphic_design.leaflet_design');
+})->name('services.leaflet_design');
+
+Route::get('/brochure-design', function() {
+    return view('pages.services.graphic_design.brochure_design');
+})->name('services.brochure_design');
 
 
 // Mobile App Development Routes

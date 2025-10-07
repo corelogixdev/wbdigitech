@@ -14,7 +14,7 @@
     <!-- Hero Section -->
     <div class="tp-hero-title-wrap mb-35 text-center">
         <h2 class="tp-hero-title gradient-text">
-            Graphic Design Services
+            Brochure Design
         </h2>
     </div>
     <div class="tp-hero-content text-center">
@@ -34,12 +34,10 @@
             <div class="sidebar">
                 <h6>Our Services</h6>
                 <ul>
-                    <li><a href="{{ route('services.web') }}">Website Design & Development</a></li>
-                    <li><a href="{{ route('services.mobile') }}">Mobile App Development</a></li>
-                    <li><a href="{{ route('services.smm') }}">Social Media Marketing</a></li>
-                    <li><a href="{{ route('services.digital') }}">Digital Campaigns</a></li>
-                    <li><a href="{{ route('services.seo') }}">SEO</a></li>
-                    <li class="current-menu-item"><a href="{{ route('services.graphic') }}">Graphic Designing</a></li>
+                    <li><a href="{{ route('services.graphic') }}">Graphic Design</a></li>
+                    <li><a href="{{ route('services.logo_design') }}">Logo Design</a></li>
+                    <li><a href="{{ route('services.leaflet_design') }}">Leaflet Design</a></li>
+                    <li class="current-menu-item"><a href="{{ route('services.brochure_design') }}">Brochure Design</a></li>
                 </ul>
 
                 <!-- Sidebar Images -->
