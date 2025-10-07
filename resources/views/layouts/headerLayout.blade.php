@@ -311,10 +311,10 @@
                                                                                 <h4 class="tp-megamenu-title"><a href="{{route('services.seo')}}">SEO</a></h4>
                                                                                 <div class="tp-megamenu-list-wrap">
                                                                                     <ul class="">
-                                                                                        <li><a href="#">Content Marketing</a></li>
-                                                                                        <li><a href="#">Reputation management</a></li>
-                                                                                        <li><a href="#">Search Engine Optimisation Audit</a></li>
-                                                                                        <li><a href="#">Ecommerce SEO</a></li>
+                                                                                        <li><a href="{{ route('services.content_marketing') }}">Content Marketing</a></li>
+                                                                                        <li><a href="{{ route('services.reputation_management') }}">Reputation Management</a></li>
+                                                                                        <li><a href="{{ route('services.seo-audit') }}">SEO Audit</a></li>
+                                                                                        <li><a href="{{ route('services.ecommerce_seo') }}">E-commerce SEO</a></li>
                                                                                     </ul>
                                                                                 </div>
                                                                             </div>
