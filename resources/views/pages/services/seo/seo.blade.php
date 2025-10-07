@@ -35,12 +35,11 @@
             <div class="sidebar">
                 <h6>Our Services</h6>
                 <ul>
-                    <li><a href="{{ route('services.web') }}">Website Design & Development</a></li>
-                    <li><a href="{{ route('services.mobile') }}">Mobile App Development</a></li>
-                    <li><a href="{{ route('services.smm') }}">Social Media Marketing</a></li>
-                    <li><a href="{{ route('services.digital') }}">Digital Campaigns</a></li>
-                    <li class="current-menu-item"><a href="{{ route('services.seo') }}">SEO</a></li>
-                    <li><a href="{{ route('services.graphic') }}">Graphic Designing</a></li>
+                    <li class="current-menu-item"><a href="{{ route('services.seo') }}">SEO Services</a></li>
+                    <li><a href="{{ route('services.content_marketing') }}">Content Marketing</a></li>
+                    <li><a href="{{ route('services.reputation_management') }}">Reputation Management</a></li>
+                    <li><a href="{{ route('services.seo-audit') }}">SEO Audit</a></li>
+                    <li><a href="{{ route('services.ecommerce_seo') }}">E-commerce SEO</a></li>
                 </ul>
 
                 <!-- Sidebar Images -->

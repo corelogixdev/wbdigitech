@@ -90,24 +90,39 @@ Route::get('/google-shopping-ads', function() {
 
 
 
+// SEO Services Routes
+Route::get('/seo-service', function() {
+    return view('pages.services.seo.seo');
+})->name('services.seo');
+
+Route::get('/content-marketing', function() {
+    return view('pages.services.seo.content_marketing');
+})->name('services.content_marketing');
+
+Route::get('/reputation-management', function() {
+    return view('pages.services.seo.reputation_management');
+})->name('services.reputation_management');
+
+Route::get('/seo-audit', function() {
+    return view('pages.services.seo.seo_audit');
+})->name('services.seo-audit');
+
+Route::get('/ecommerce-seo', function() {
+    return view('pages.services.seo.ecommerce_seo');
+})->name('services.ecommerce_seo');
+
+// Make From Downside
+
 // Social Media Marketing Routes
 Route::get('/social-media-marketing', function() {
     return view('pages.services.smm');
 })->name('services.smm');
 
 
-// SEO Services Routes
-Route::get('/seo-service', function() {
-    return view('pages.services.seo');
-})->name('services.seo');
-
-
 // Graphic Design Routes
 Route::get('/graphic-design', function() {
     return view('pages.services.graphic');
 })->name('services.graphic');
-
-
 
 
 // Mobile App Development Routes
