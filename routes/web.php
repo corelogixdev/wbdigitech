@@ -71,6 +71,25 @@ Route::get('/wordpress-development', function() {
 })->name('services.wordpress_development');
 
 
+// Google Ads Management Routes
+Route::get('/google-ads-managment', function() {
+    return view('pages.services.google_ads.google_ads_management');
+})->name('services.google_ads_management');
+
+Route::get('/amazon-marketing', function() {
+    return view('pages.services.google_ads.amazon_marketing');
+})->name('services.amazon_marketing');
+
+Route::get('/ppc', function() {
+    return view('pages.services.google_ads.ppc');
+})->name('services.ppc');
+
+Route::get('/google-shopping-ads', function() {
+    return view('pages.services.google_ads.google_shopping_ads');
+})->name('services.google_shopping_ads');
+
+
+
 // Social Media Marketing Routes
 Route::get('/social-media-marketing', function() {
     return view('pages.services.smm');
