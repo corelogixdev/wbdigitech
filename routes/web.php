@@ -72,7 +72,7 @@ Route::get('/wordpress-development', function() {
 
 
 // Google Ads Management Routes
-Route::get('/google-ads-managment', function() {
+Route::get('/google-ads-management', function() {
     return view('pages.services.google_ads.google_ads_management');
 })->name('services.google_ads_management');
 

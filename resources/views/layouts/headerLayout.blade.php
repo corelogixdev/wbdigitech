@@ -282,26 +282,26 @@
                                                                                 <h4 class="tp-megamenu-title"><a href="{{ route('services.web')}}">WEB DESIGN & DEVELOPMENT</a></h4>
                                                                                 <div class="tp-megamenu-list-wrap tp-portfolio-menu-style">
                                                                                     <ul>
-                                                                                        <li><a href="#">Website Development</a></li>
-                                                                                        <li><a href="#">Website Design</a></li>
-                                                                                        <li><a href="#">Ecommerce Development</a></li>
-                                                                                        <li><a href="#">Shopify Development</a></li>
-                                                                                        <li><a href="#">Website maintenance</a></li>
-                                                                                        <li><a href="#">WordPress Development</a></li>
-                                                                                        <li><a href="#">Content Writing</a></li>
+                                                                                        <li><a href="{{ route('services.web') }}">Website Services</a></li>
+                                                                                        <li><a href="{{ route('services.web_dev') }}">Website Development</a></li>
+                                                                                        <li><a href="{{ route('services.content_writing') }}">Content Writing</a></li>
+                                                                                        <li><a href="{{ route('services.ecommerce_development') }}">E-commerce Development</a></li>
+                                                                                        <li><a href="{{ route('services.shopify_development') }}">Shopify Development</a></li>
+                                                                                        <li><a href="{{ route('services.website_design') }}">Website Design</a></li>
+                                                                                        <li><a href="{{ route('services.website_maintainance') }}">Website Maintenance</a></li>
+                                                                                        <li><a href="{{ route('services.wordpress_development') }}">WordPress Development</a></li>
                                                                                     </ul>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-xxl-2 col-xl-2">
                                                                             <div class="tp-megamenu-list">
-                                                                                <h4 class="tp-megamenu-title"><a href="#">GOOGLE ADS MANAGEMENT</a></h4>
+                                                                                <h4 class="tp-megamenu-title"><a href="{{ route('services.google_ads_management') }}">GOOGLE ADS MANAGEMENT</a></h4>
                                                                                 <div class="tp-megamenu-list-wrap tp-portfolio-menu-style">
                                                                                     <ul>
-                                                                                        <li><a href="#">PPC</a></li>
-                                                                                        <li><a href="#">Google Shopping Ads</a></li>
-                                                                                        <li><a href="#">Amazon Marketing</a></li>
-                                                                                        <li><a href="#">Google Ads Management</a></li>
+                                                                                        <li><a href="{{ route('services.amazon_marketing') }}">Amazon Marketing</a></li>
+                                                                                        <li><a href="{{ route('services.ppc') }}">PPC</a></li>
+                                                                                        <li><a href="{{ route('services.google_shopping_ads') }}">Google Shopping Ads</a></li>
                                                                                     </ul>
                                                                                 </div>
                                                                             </div>
