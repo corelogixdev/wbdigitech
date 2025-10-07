@@ -16,7 +16,7 @@
                                         <!-- Hero Title -->
                                         <div class="tp-hero-title-wrap mb-35 text-center">
                                             <h2 class="tp-hero-title gradient-text">
-                                                Website Design & Development
+                                                Website Design 
                                             </h2>
                                         </div>
                                         <div></div>
@@ -40,13 +40,15 @@
         <div class="sidebar-col">
             <div class="sidebar">
                 <h6>Our Services</h6>
-                <ul>
-                    <li class="current-menu-item"><a href="{{ route('services.web') }}">Website Design & Development</a></li>
-                    <li><a href="{{ route('services.mobile') }}">Mobile App Development</a></li>
-                    <li><a href="{{ url('service/social-media-marketing-service-in-dubai') }}">Social Media Marketing</a></li>
-                    <li><a href="{{ url('service/digital-campaigns') }}">Digital Campaigns</a></li>
-                    <li><a href="{{ route('services.seo') }}">SEO</a></li>
-                    <li><a href="{{ url('service/graphic-designing-service-in-dubai') }}">Graphic Designing</a></li>
+               <ul>
+                    <li><a href="{{ route('services.web') }}">Website Services</a></li>
+                    <li><a href="{{ route('services.web_dev') }}">Website Development</a></li>
+                    <li><a href="{{ route('services.content_writing') }}">Content Writing</a></li>
+                    <li><a href="{{ route('services.ecommerce_development') }}">E-commerce Development</a></li>
+                    <li><a href="{{ route('services.shopify_development') }}">Shopify Development</a></li>
+                    <li class="current-menu-item"><a href="{{ route('services.website_design') }}">Website Design</a></li>
+                    <li><a href="{{ route('services.website_maintainance') }}">Website Maintenance</a></li>
+                    <li><a href="{{ route('services.wordpress_development') }}">WordPress Development</a></li>
                 </ul>
 
                 <!-- Sidebar Images -->

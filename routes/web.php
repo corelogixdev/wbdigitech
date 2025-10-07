@@ -37,29 +37,70 @@ Route::get('/blogs/{id}', [BlogController::class, 'publicShow'])->name('blogs.pu
 
 
 // Public side | Services Static Pages
+// Web Development Routes
 Route::get('/web-service', function() {
-    return view('pages.services.web');
+    return view('pages.services.website.web');
 })->name('services.web');
 
-Route::get('/mobileapp-service', function() {
-    return view('pages.services.mobile');
-})->name('services.mobile');
+Route::get('/website-development', function() {
+    return view('pages.services.website.website_development');
+})->name('services.web_dev');
 
-Route::get('/digital-campaigns', function() {
-    return view('pages.services.digital-campaigns');
-})->name('services.digital');
+Route::get('/content-writing', function() {
+    return view('pages.services.website.content_writing');
+})->name('services.content_writing');
 
+Route::get('/ecommerce-development', function() {
+    return view('pages.services.website.ecommerce_development');
+})->name('services.ecommerce_development');
+
+Route::get('/shopify-development', function() {
+    return view('pages.services.website.shopify_development');
+})->name('services.shopify_development');
+
+Route::get('/website-design', function() {
+    return view('pages.services.website.website_design');
+})->name('services.website_design');
+
+Route::get('/website-maintenance', function() {
+    return view('pages.services.website.website_maintainance');
+})->name('services.website_maintainance');
+
+Route::get('/wordpress-development', function() {
+    return view('pages.services.website.wordpress_development');
+})->name('services.wordpress_development');
+
+
+// Social Media Marketing Routes
 Route::get('/social-media-marketing', function() {
     return view('pages.services.smm');
 })->name('services.smm');
 
+
+// SEO Services Routes
 Route::get('/seo-service', function() {
     return view('pages.services.seo');
 })->name('services.seo');
 
+
+// Graphic Design Routes
 Route::get('/graphic-design', function() {
     return view('pages.services.graphic');
 })->name('services.graphic');
+
+
+
+
+// Mobile App Development Routes
+Route::get('/mobileapp-service', function() {
+    return view('pages.services.mobile');
+})->name('services.mobile');
+
+// Digital Campaign Routes
+Route::get('/digital-campaigns', function() {
+    return view('pages.services.digital-campaigns');
+})->name('services.digital');
+
 
 
 // Public side | Career Page
