@@ -14,7 +14,7 @@
     <!-- Hero Section -->
     <div class="tp-hero-title-wrap mb-35 text-center">
         <h2 class="tp-hero-title gradient-text">
-            Social Media Marketing Services
+            Twitter Advertising
         </h2>
     </div>
     <div class="tp-hero-content text-center">
@@ -34,13 +34,18 @@
             <div class="sidebar">
                 <h6>Our Services</h6>
                 <ul>
-                    <li><a href="{{ route('services.web') }}">Website Design & Development</a></li>
-                    <li><a href="{{ route('services.mobile') }}">Mobile App Development</a></li>
-                    <li class="current-menu-item"><a href="{{ route('services.smm') }}">Social Media Marketing</a></li>
-                    <li><a href="{{ route('services.digital') }}">Digital Campaigns</a></li>
-                    <li><a href="{{ route('services.seo') }}">SEO</a></li>
-                    <li><a href="{{ route('services.graphic') }}">Graphic Designing</a></li>
+                    <li><a href="{{ route('services.smm') }}">Social Media Marketing</a></li>
+                    <li><a href="{{ route('services.facebook_advertising') }}">Facebook Advertising</a></li>
+                    <li><a href="{{ route('services.linkedin_advertising') }}">LinkedIn Advertising</a></li>
+                    <li><a href="{{ route('services.pinterest_advertising') }}">Pinterest Advertising</a></li>
+                    <li><a href="{{ route('services.instagram_advertising') }}">Instagram Advertising</a></li>
+                    <li class="current-menu-item"><a href="{{ route('services.twitter_advertising') }}">Twitter Advertising</a></li>
+                    <li><a href="{{ route('services.youtube_ads') }}">YouTube Ads</a></li>
+                    <li><a href="{{ route('services.tiktok_ads') }}">TikTok Ads</a></li>
+                    <li><a href="{{ route('services.snap_chat_ads') }}">Snapchat Ads</a></li>
+                    <li><a href="{{ route('services.whatsapp_marketing') }}">WhatsApp Marketing</a></li>
                 </ul>
+
 
                 <!-- Sidebar Images -->
                 <div class="sidebar-images">

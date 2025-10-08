@@ -342,16 +342,17 @@
                                                                                 <h4 class="tp-megamenu-title page_speed_424355281"><a href="{{route('services.smm')}}">SOCIAL MEDIA MARKETING</a></h4>
                                                                                 <div class="tp-megamenu-list-wrap">
                                                                                     <ul>
-                                                                                        <li><a href="#">Facebook Advertising</a></li>
-                                                                                        <li><a href="#">LinkedIn Advertising</a></li>
-                                                                                        <li><a href="#">Pinterest Advertising</a></li>
-                                                                                        <li><a href="#">Instagram Advertising</a></li>
-                                                                                        <li><a href="#">Twitter Advertising</a></li>
-                                                                                        <li><a href="#">Youtube Ads</a></li>
-                                                                                        <li><a href="#">Tiktok Ads</a></li>
-                                                                                        <li><a href="#">Snap Chat Ads</a></li>
-                                                                                        <li><a href="#">Whatsapp Marketing</a></li>
+                                                                                        <li><a href="{{ route('services.facebook_advertising') }}">Facebook Advertising</a></li>
+                                                                                        <li><a href="{{ route('services.linkedin_advertising') }}">LinkedIn Advertising</a></li>
+                                                                                        <li><a href="{{ route('services.pinterest_advertising') }}">Pinterest Advertising</a></li>
+                                                                                        <li><a href="{{ route('services.instagram_advertising') }}">Instagram Advertising</a></li>
+                                                                                        <li><a href="{{ route('services.twitter_advertising') }}">Twitter Advertising</a></li>
+                                                                                        <li><a href="{{ route('services.youtube_ads') }}">YouTube Ads</a></li>
+                                                                                        <li><a href="{{ route('services.tiktok_ads') }}">TikTok Ads</a></li>
+                                                                                        <li><a href="{{ route('services.snap_chat_ads') }}">Snapchat Ads</a></li>
+                                                                                        <li><a href="{{ route('services.whatsapp_marketing') }}">WhatsApp Marketing</a></li>
                                                                                     </ul>
+
                                                                                 </div>
                                                                             </div>
                                                                         </div>

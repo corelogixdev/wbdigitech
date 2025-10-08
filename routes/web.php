@@ -89,7 +89,6 @@ Route::get('/google-shopping-ads', function() {
 })->name('services.google_shopping_ads');
 
 
-
 // SEO Services Routes
 Route::get('/seo-service', function() {
     return view('pages.services.seo.seo');
@@ -111,13 +110,6 @@ Route::get('/ecommerce-seo', function() {
     return view('pages.services.seo.ecommerce_seo');
 })->name('services.ecommerce_seo');
 
-// Make From Downside
-
-// Social Media Marketing Routes
-Route::get('/social-media-marketing', function() {
-    return view('pages.services.smm');
-})->name('services.smm');
-
 
 // Graphic Design Routes
 Route::get('/graphic-design', function() {
@@ -137,15 +129,62 @@ Route::get('/brochure-design', function() {
 })->name('services.brochure_design');
 
 
+// Social Media Marketing Routes
+Route::get('/social-media-marketing', function() {
+    return view('pages.services.social_media_marketing.smm');
+})->name('services.smm');
+
+Route::get('/facebook-advertising', function() {
+    return view('pages.services.social_media_marketing.facebook_advertising');
+})->name('services.facebook_advertising');
+
+Route::get('/linkedin-advertising', function() {
+    return view('pages.services.social_media_marketing.linkedin_advertising');
+})->name('services.linkedin_advertising');
+
+Route::get('/pinterest-advertising', function() {
+    return view('pages.services.social_media_marketing.pinterest_advertising');
+})->name('services.pinterest_advertising');
+
+Route::get('/instagram-advertising', function() {
+    return view('pages.services.social_media_marketing.instagram_advertising');
+})->name('services.instagram_advertising');
+
+Route::get('/twitter-advertising', function() {
+    return view('pages.services.social_media_marketing.twitter_advertising');
+})->name('services.twitter_advertising');
+
+Route::get('/youtube-ads', function() {
+    return view('pages.services.social_media_marketing.youtube_ads');
+})->name('services.youtube_ads');
+
+Route::get('/tiktok-ads', function() {
+    return view('pages.services.social_media_marketing.tiktok_ads');
+})->name('services.tiktok_ads');
+
+Route::get('/snap-chat-ads', function() {
+    return view('pages.services.social_media_marketing.snap_chat_ads');
+})->name('services.snap_chat_ads');
+
+Route::get('/whatsapp marketing', function() {
+    return view('pages.services.social_media_marketing.whatsapp_marketing');
+})->name('services.whatsapp_marketing');
+
+
+
+
+
+
+
 // Mobile App Development Routes
 Route::get('/mobileapp-service', function() {
     return view('pages.services.mobile');
 })->name('services.mobile');
 
-// Digital Campaign Routes
-Route::get('/digital-campaigns', function() {
-    return view('pages.services.digital-campaigns');
-})->name('services.digital');
+// // Digital Campaign Routes
+// Route::get('/digital-campaigns', function() {
+//     return view('pages.services.digital-campaigns');
+// })->name('services.digital');
 
 
 
