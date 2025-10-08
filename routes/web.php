@@ -166,26 +166,20 @@ Route::get('/snap-chat-ads', function() {
     return view('pages.services.social_media_marketing.snap_chat_ads');
 })->name('services.snap_chat_ads');
 
-Route::get('/whatsapp marketing', function() {
+Route::get('/whatsapp-marketing', function() {
     return view('pages.services.social_media_marketing.whatsapp_marketing');
 })->name('services.whatsapp_marketing');
 
 
-
-
-
-
-
 // Mobile App Development Routes
 Route::get('/mobileapp-service', function() {
-    return view('pages.services.mobile');
+    return view('pages.services.mobile_application.mobile');
 })->name('services.mobile');
 
 // // Digital Campaign Routes
 // Route::get('/digital-campaigns', function() {
 //     return view('pages.services.digital-campaigns');
 // })->name('services.digital');
-
 
 
 // Public side | Career Page
