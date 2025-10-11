@@ -114,7 +114,8 @@
       <h3>Talk <span>strategy</span> with an expert</h3>
       <p>Get expert advice on the right strategy for your business!</p>
     </div>
-    <a href="https://wa.me/923001234567" target="_blank" class="consultant-btn">
+    <a href="https://wa.me/+971-50-239-0775
+" target="_blank" class="consultant-btn">
       FREE CONSULTATION
     </a>
     <button id="consultant-close">×</button>
