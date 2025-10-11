@@ -176,6 +176,40 @@ Route::get('/mobileapp-service', function() {
     return view('pages.services.mobile_application.mobile');
 })->name('services.mobile');
 
+Route::get('/android-app', function() {
+    return view('pages.services.mobile_application.android_app');
+})->name('services.android_app');
+
+Route::get('/react-native-app', function() {
+    return view('pages.services.mobile_application.react_native_app');
+})->name('services.react_native_app');
+
+Route::get('/hybrid-app', function() {
+    return view('pages.services.mobile_application.hybrid_app');
+})->name('services.hybrid_app');
+
+Route::get('/app-maintenance', function() {
+    return view('pages.services.mobile_application.app_maintenance');
+})->name('services.app_maintenance');
+
+Route::get('/Iphone-app', function() {
+    return view('pages.services.mobile_application.iphone_app');
+})->name('services.iphone_app');
+
+Route::get('/flutter-app', function() {
+    return view('pages.services.mobile_application.flutter_app');
+})->name('services.flutter_app');
+
+Route::get('/wearable-app', function() {
+    return view('pages.services.mobile_application.wearable_app ');
+})->name('services.wearable_app');
+
+Route::get('/mobile-app-developers', function() {
+    return view('pages.services.mobile_application.mobile_app_developers');
+})->name('services.mobile_app_developers');
+
+
+
 // // Digital Campaign Routes
 // Route::get('/digital-campaigns', function() {
 //     return view('pages.services.digital-campaigns');

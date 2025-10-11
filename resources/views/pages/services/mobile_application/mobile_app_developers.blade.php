@@ -14,7 +14,7 @@
     <!-- Hero Section -->
     <div class="tp-hero-title-wrap mb-35 text-center">
         <h2 class="tp-hero-title gradient-text">
-            Mobile App Development
+            Mobile App Developers
         </h2>
     </div>
 

@@ -14,7 +14,7 @@
     <!-- Hero Section -->
     <div class="tp-hero-title-wrap mb-35 text-center">
         <h2 class="tp-hero-title gradient-text">
-            Mobile App Development
+            Wearable App Development
         </h2>
     </div>
 
@@ -35,14 +35,14 @@
             <div class="sidebar">
                 <h6>Our Services</h6>
                 <ul>
-                    <li class="current-menu-item"><a href="{{ route('services.mobile') }}">Mobile App Development</a></li>
+                    <li><a href="{{ route('services.mobile') }}">Mobile App Development</a></li>
                     <li><a href="{{ route('services.android_app') }}">Android App Development</a></li>
                     <li><a href="{{ route('services.react_native_app') }}">React Native App Development</a></li>
                     <li><a href="{{ route('services.hybrid_app') }}">Hybrid App Development</a></li>
                     <li><a href="{{ route('services.app_maintenance') }}">App Maintenance</a></li>
                     <li><a href="{{ route('services.iphone_app') }}">iPhone App Development</a></li>
                     <li><a href="{{ route('services.flutter_app') }}">Flutter App Development</a></li>
-                    <li><a href="{{ route('services.wearable_app') }}">Wearable App Development</a></li>
+                    <li class="current-menu-item"><a href="{{ route('services.wearable_app') }}">Wearable App Development</a></li>
                     <li><a href="{{ route('services.mobile_app_developers') }}">Hire Mobile App Developers</a></li>
                 </ul>
 

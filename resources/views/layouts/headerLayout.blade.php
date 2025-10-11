@@ -323,16 +323,15 @@
                                                                             <div class="tp-megamenu-list tp-megamenu-list-2 ml-20">
                                                                                 <h4 class="tp-megamenu-title"><a href="{{route('services.mobile')}}">Mobile Application Development</a></h4>
                                                                                 <div class="tp-megamenu-list-wrap">
-                                                                                    <ul>
-                                                                                        <li><a href="#">Data Processing</a></li>
-                                                                                        <li><a href="#">Data Cleansing</a></li>
-                                                                                        <li><a href="#">Data Entry</a></li>
-                                                                                        <li><a href="#">Call Center</a></li>
-                                                                                        <li><a href="#">Email Marketing</a></li>
-                                                                                        <li><a href="#">Telemarketing</a></li>
-                                                                                        <li><a href="#">Customer care</a></li>
-                                                                                        <li><a href="#">Virtual Reception</a></li>
-                                                                                        <li><a href="#">Customer Satisfaction Survey</a></li>
+                                                                                    <ul>                                  
+                                                                                        <li><a href="{{ route('services.android_app') }}">Android App Development</a></li>
+                                                                                        <li><a href="{{ route('services.react_native_app') }}">React Native App Development</a></li>
+                                                                                        <li><a href="{{ route('services.hybrid_app') }}">Hybrid App Development</a></li>
+                                                                                        <li><a href="{{ route('services.app_maintenance') }}">App Maintenance</a></li>
+                                                                                        <li><a href="{{ route('services.iphone_app') }}">iPhone App Development</a></li>
+                                                                                        <li><a href="{{ route('services.flutter_app') }}">Flutter App Development</a></li>
+                                                                                        <li><a href="{{ route('services.wearable_app') }}">Wearable App Development</a></li>
+                                                                                        <li><a href="{{ route('services.mobile_app_developers') }}">Hire Mobile App Developers</a></li>
                                                                                     </ul>
                                                                                 </div>
                                                                             </div>
