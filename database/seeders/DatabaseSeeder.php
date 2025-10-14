@@ -32,7 +32,7 @@ class DatabaseSeeder extends Seeder
 
         $teams = [
             [
-                'name'       => 'Siddharth Menon',
+                'name'       => 'Hafeez Ullah',
                 'speciality' => 'Client Co-Ordinator',
                 'image'      => 'teams/client-co-ordinator.jpg',
             ],
@@ -51,63 +51,12 @@ class DatabaseSeeder extends Seeder
                 'speciality' => 'Graphic & Art Designer',
                 'image'      => 'teams/graphic-designer.png',
             ],
-            [
-                'name'       => 'Yuvraj Choudhary',
-                'speciality' => 'SEO Specialist',
-                'image'      => 'teams/seo-specialist.png',
-            ],
-            [
-                'name'       => 'Neha Singh',
-                'speciality' => 'Social Media Specialist',
-                'image'      => 'teams/social-media-specialist.png',
-            ],
-            [
-                'name'       => 'Naomi Collins',
-                'speciality' => 'Web Developer',
-                'image'      => 'teams/web-developer.png',
-            ],
         ];
 
         foreach ($teams as $team) {
             Team::create($team);
         }
 
-
-        // CUstomers
-        Customer::truncate();
-
-    Customer::insert([
-        [
-        'name' => 'Customer 1',
-        'logo' => 'https://picsum.photos/seed/customer1/150/80',
-        'created_at' => now(),
-        'updated_at' => now(),
-        ],
-        [
-        'name' => 'Customer 2',
-        'logo' => 'https://picsum.photos/seed/customer2/150/80',
-        'created_at' => now(),
-        'updated_at' => now(),
-        ],
-        [
-        'name' => 'Customer 3',
-        'logo' => 'https://picsum.photos/seed/customer3/150/80',
-        'created_at' => now(),
-        'updated_at' => now(),
-        ],
-        [
-        'name' => 'Customer 4',
-        'logo' => 'https://picsum.photos/seed/customer4/150/80',
-        'created_at' => now(),
-        'updated_at' => now(),
-        ],
-        [
-        'name' => 'Customer 5',
-        'logo' => 'https://picsum.photos/seed/customer5/150/80',
-        'created_at' => now(),
-        'updated_at' => now(),
-        ],
-]);
 
 
 
