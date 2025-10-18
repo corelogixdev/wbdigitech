@@ -162,6 +162,15 @@
         .tp-offcanvas-area { width: 100%; right: -100%; }
         .tp-offcanvas-area.open { right: 0; }
     }
+
+    .tp-offcanvas-area .has-dropdown .submenu {
+    display: none;
+    padding-left: 15px; /* optional indent */
+}
+.tp-offcanvas-area .has-dropdown.open .submenu {
+    display: block;
+}
+
 </style>
 
 <script>
@@ -201,7 +210,24 @@
             if (e.key === 'Escape') closeOffcanvas();
         });
     });
+
+    document.addEventListener('DOMContentLoaded', function () {
+    // Target all parent menu items with submenus
+    const dropdownItems = document.querySelectorAll('.tp-offcanvas-area .has-dropdown > a');
+
+    dropdownItems.forEach(item => {
+        item.addEventListener('click', function(e) {
+            e.preventDefault(); // prevent default link action
+            const parentLi = this.parentElement;
+            parentLi.classList.toggle('open'); // toggle class for CSS
+        });
+    });
+});
+
+
+
 </script>
+
 
     <!-- HEADER -->
     <header class="tp-header-height">
@@ -376,16 +402,21 @@
                                             </div>
                                         </li>
                                         {{-- AI Marketing Simple Dropdown --}}
-                                        <li class="has-dropdown simple-dropdown">
-                                            <a href="#">AI Marketing</a>
+                                        <li class="has-dropdown">
+                                            <a href="{{ route('ai_marketing') }}">AI Marketing</a>
                                             <ul class="submenu">
-                                                <li><a href="#">AI Service 1</a></li>
-                                                <li><a href="#">AI Service 2</a></li>
-                                                <li><a href="#">AI Service 3</a></li>
+                                                <li><a href="{{ route('ai_social_media') }}">AI Social Media Marketing</a></li>
+                                                <li><a href="{{ route('ai_website') }}">AI Website</a></li>
+                                                <li><a href="{{ route('ai_digital_marketing') }}">AI Digital Marketing</a></li>
+                                                <li><a href="{{ route('ai_seo') }}">AI Powered SEO</a></li>
+                                                <li><a href="{{ route('ai_google_ads') }}">AI Google Ads</a></li>
+                                                <li><a href="{{ route('ai_web_app') }}">AI Web App Development</a></li>
                                             </ul>
                                         </li>
+
                                         <li><a href="{{ route('blogs.public')}}">Blog</a></li>
                                         <li><a href="{{ route('portfolio.public')}}">Portfolio</a></li>
+                                        {{-- <li><a href="{{ route('careers.public') }}">Careers</a></li> --}}
                                         <li><a href="{{ route('contact')}}">Contact</a></li>
                                     </ul>
                                 </nav>
@@ -403,6 +434,7 @@
     <style>
         .tp-header-menu>nav>ul>li>a{    
             margin-left: -26px;
+            /* margin-left: -33px; */
         }
 
     </style>
