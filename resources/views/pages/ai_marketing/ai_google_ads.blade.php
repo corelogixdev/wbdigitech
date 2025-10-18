@@ -1,6 +1,6 @@
 @extends('layouts.homelayout')
 
-@section('title', 'AI Google Ads - AI Marketing Agency')
+@section('title', 'AI Google Ads Management - WB-DIGITECH')
 
 @section('content')
 <link rel="stylesheet" href="{{ asset('css/services.css') }}">
@@ -9,120 +9,96 @@
 
 <div class="main-wrapper">
 
-    <!-- Spacer -->
+    <!-- Spacer below header -->
     <div style="padding: 80px"></div>
 
-    <!-- Hero Section -->
+    <!-- Hero Title -->
     <div class="tp-hero-title-wrap mb-35 text-center">
-        <h2 class="tp-hero-title gradient-text" style="color: #001f4d;">
-            AI Google Ads
+        <h2 class="tp-hero-title gradient-text">
+            AI Google Ads Management
         </h2>
     </div>
 
-    <!-- Service Details Box -->
-    <div class="box-gray-100">
-        <div class="services-grid">
-
-            <!-- Overview -->
-            <div class="service-item">
-                <svg fill="#001f4d" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M14 3v18l6-9-6-9zM3 10v4h2l3 3V7l-3 3H3z"/>
-                </svg>
-                <div>
-                    <h4 style="color:#001f4d; text-decoration:none;">Overview</h4>
-                    <p>Optimize Google Ads campaigns using AI to improve targeting, bidding, and ad performance for better ROI and conversions.</p>
-                </div>
-            </div>
-
-            <!-- Key Features -->
-            <div class="service-item">
-                <svg fill="#001f4d" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M18 2h-3.5l-1 2H6c-1.1 0-2 .9-2 2v4h4v2H4v6h6v-6H6v-2h4v-4h4.5l1-2H18v2z"/>
-                </svg>
-                <div>
-                    <h4 style="color:#001f4d; text-decoration:none;">Features</h4>
-                    <ul style="padding-left:20px; margin:0; color:#001f4d;">
-                        <li>AI Bidding Optimization</li>
-                        <li>Ad Copy Suggestions</li>
-                        <li>Target Audience Analysis</li>
-                        <li>Budget Allocation Insights</li>
-                        <li>Performance Reporting & Analytics</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Benefits -->
-            <div class="service-item">
-                <svg fill="#001f4d" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M21 4H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h6v2H7v2h10v-2h-2v-2h6c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM3 6h18v12H3V6z"/>
-                </svg>
-                <div>
-                    <h4 style="color:#001f4d; text-decoration:none;">Benefits</h4>
-                    <p style="color:#001f4d;">Maximize your ad ROI, reach the right audience at the right time, reduce wasted spend, and gain actionable insights with AI-powered Google Ads management.</p>
-                </div>
-            </div>
-
+    <!-- Hero Content -->
+    <div class="tp-hero-content text-center">
+        <p class="delay-load">
+            Maximize your PPC campaigns using AI-powered Google Ads management. Improve targeting, bid optimization, and ROI with intelligent automation.
+        </p>
+        <div class="hero-btns mt-4">
+            <a href="{{ route('contact')}}" class="btn btn-gradient">Get a Free Quote</a>
         </div>
     </div>
 
-    <!-- Get in Touch Section -->
-    <section class="section-box">
-        <div class="container mb-20">
-            <div class="bdrd-58 box-gray-100 icon-wave">
-                <div class="row">
-                    <div class="col-lg-12 mb-60 text-center">
-                        <span class="text-uppercase text-white">Get in Touch</span>
-                        <h2 class="text-heading-3 mt-10">Have a project in mind?</h2>
-                        <p class="text-body-text mt-20">The right move at the right time saves your investment. Let’s expand your business together.</p>
-                    </div>
+    <!-- Content & Sidebar -->
+    <div class="container-flex">
 
-                    <!-- Contact Info -->
-                    <div class="col-lg-4 mb-40">
-                        <h4 class="text-heading-6 mb-10" style="color: #001f4d">WB-DigiTech</h4>
-                        <p class="text-body-text">
-                            504 Raffa Building Rolla Street Bur Dubai, UAE
-                        </p>
+        <!-- Sidebar -->
+        <div class="sidebar-col">
+            <div class="sidebar">
+                <h6>Our AI Services</h6>
+                <ul>
+                    <li><a href="{{ route('ai_marketing') }}">AI Marketing Overview</a></li>
+                    <li><a href="{{ route('ai_digital_marketing') }}">AI Digital Marketing</a></li>
+                    <li><a href="{{ route('ai_social_media') }}">AI Social Media Marketing</a></li>
+                    <li><a href="{{ route('ai_website') }}">AI Website Services</a></li>
+                    <li><a href="{{ route('ai_seo') }}">AI-Powered SEO</a></li>
+                    <li class="current-menu-item"><a href="{{ route('ai_google_ads') }}">AI Google Ads Management</a></li>
+                    <li><a href="{{ route('ai_web_app') }}">AI Web Applications</a></li>
+                </ul>
 
-                        <p class="text-body-text">
-                            <a href="tel:+97142559928">+971-4-255-9928</a><br>
-                            <a href="tel:+971502390775">+971-50-239-0775</a>
-                        </p>
-
-                        <p class="text-body-text">
-                            <a href="mailto:info@wbdigitech.ae">info@wbdigitech.ae</a><br>
-                            <a href="mailto:hr@wbdigitech.ae">hr@wbdigitech.ae</a>
-                        </p>
-                    </div>
-
-                    <!-- Contact Form -->
-                    <div class="col-lg-8">
-                        <form method="POST" action="{{ route('contact.send') }}" class="contact-form">
-                            @csrf
-                            <div class="row">
-                                <div class="col-lg-6 mb-3">
-                                    <input type="text" name="name" class="form-control" placeholder="Enter your name" required>
-                                </div>
-                                <div class="col-lg-6 mb-3">
-                                    <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
-                                </div>
-                                <div class="col-lg-6 mb-3">
-                                    <input type="text" name="phone" class="form-control" placeholder="Enter your phone" required>
-                                </div>
-                                <div class="col-lg-12 mb-3">
-                                    <textarea name="message" class="form-control" rows="4" placeholder="How we can help you?" required></textarea>
-                                </div>
-                                <div class="col-lg-12 mt-15 text-center">
-                                    <button type="submit" class="btn btn-black">Send Message</button>
-                                    <br><span class="text-body-text-md mt-2 d-block" style="color:#001f4d">LET’S CREATE SOMETHING IMPRESSIVE</span>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-
+                <!-- Sidebar Images -->
+                <div class="sidebar-images">
+                    <img src="#" alt="AI Google Ads Image 1">
+                    <img src="#" alt="AI Google Ads Image 2">
+                    <img src="#" alt="AI Google Ads Image 3">
                 </div>
             </div>
         </div>
-    </section>
 
+        <!-- Content -->
+        <div class="content-col">
+
+            <h2>Overview</h2>
+            <p>AI Google Ads management automates and optimizes your PPC campaigns, ensuring you reach the right audience at the right time with the best bidding strategy.</p>
+
+            <h2>Key Features</h2>
+            <ul>
+                <li>AI-Powered Bid Optimization</li>
+                <li>Intelligent Targeting & Segmentation</li>
+                <li>Automated Ad Creation</li>
+                <li>Predictive Analytics for Campaign Success</li>
+                <li>Real-Time Performance Reporting</li>
+            </ul>
+
+            <h2>Benefits</h2>
+            <p>Increase CTR, reduce wasted spend, improve conversions, and maximize ROI using AI-driven Google Ads automation and insights.</p>
+
+            <h2>Our AI Services</h2>
+            <div class="services-list">
+                <ul>
+                    <li>AI Digital Marketing</li>
+                    <li>AI Social Media Marketing</li>
+                    <li>AI Website Services</li>
+                    <li>AI-Powered SEO</li>
+                    <li>AI Google Ads Management</li>
+                    <li>AI Web Applications</li>
+                </ul>
+            </div>
+
+            <h2>How We Work</h2>
+            <div class="process-list">
+                <ol>
+                    <li><strong>Campaign Audit:</strong> Analyze current Google Ads campaigns using AI insights.</li>
+                    <li><strong>Keyword & Audience Targeting:</strong> Optimize targeting based on AI predictions.</li>
+                    <li><strong>Automated Ad Creation:</strong> Generate high-performing ads with AI.</li>
+                    <li><strong>Performance Monitoring:</strong> Track results and adjust campaigns automatically.</li>
+                    <li><strong>Continuous Optimization:</strong> AI recommendations for ongoing improvement.</li>
+                </ol>
+            </div>
+
+            <img class="service-img" src="#" alt="AI Google Ads Management Image">
+
+        </div>
+    </div>
 </div>
 @endsection

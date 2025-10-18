@@ -16,7 +16,7 @@
     <!-- Hero Section -->
     <div class="tp-hero-title-wrap mb-35 text-center">
         <h2 class="tp-hero-title gradient-text" style="color: #001f4d;">
-            AI Marketing Agency
+            AI Marketing Services
         </h2>
     </div>
 
@@ -100,14 +100,14 @@
             <div class="bdrd-58 box-gray-100 icon-wave">
                 <div class="row">
                     <div class="col-lg-12 mb-60 text-center">
-                        <span class="text-uppercase text-white">Get in Touch</span>
+                        <span class="text-uppercase">Get in Touch</span>
                         <h2 class="text-heading-3 mt-10">Have a project in mind?</h2>
                         <p class="text-body-text mt-20">The right move at the right time saves your investment. Let’s expand your business together.</p>
                     </div>
 
                     <!-- Contact Info -->
                     <div class="col-lg-4 mb-40">
-                        <h4 class="text-heading-6 mb-10" style="color: #001f4d">WB-DigiTech</h4>
+                        <h4 class="text-heading-6 mb-10">WB-DigiTech</h4>
                         <p class="text-body-text">
                             504 Raffa Building Rolla Street Bur Dubai, UAE
                         </p>
@@ -142,7 +142,7 @@
                                 </div>
                                 <div class="col-lg-12 mt-15 text-center">
                                     <button type="submit" class="btn btn-black">Send Message</button>
-                                    <br><span class="text-body-text-md mt-2 d-block" style="color:#001f4d">LET’S CREATE SOMETHING IMPRESSIVE</span>
+                                    <br><span class="text-body-text-md mt-2 d-block">LET’S CREATE SOMETHING IMPRESSIVE</span>
                                 </div>
                             </div>
                         </form>

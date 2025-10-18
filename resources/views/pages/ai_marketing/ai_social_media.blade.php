@@ -1,6 +1,6 @@
 @extends('layouts.homelayout')
 
-@section('title', 'AI Social Media Marketing - AI Marketing Agency')
+@section('title', 'AI Social Media Marketing - WB-DIGITECH')
 
 @section('content')
 <link rel="stylesheet" href="{{ asset('css/services.css') }}">
@@ -9,120 +9,96 @@
 
 <div class="main-wrapper">
 
-    <!-- Spacer -->
+    <!-- Spacer below header -->
     <div style="padding: 80px"></div>
 
-    <!-- Hero Section -->
+    <!-- Hero Title -->
     <div class="tp-hero-title-wrap mb-35 text-center">
-        <h2 class="tp-hero-title gradient-text" style="color: #001f4d;">
+        <h2 class="tp-hero-title gradient-text">
             AI Social Media Marketing
         </h2>
     </div>
 
-    <!-- Service Details Box -->
-    <div class="box-gray-100">
-        <div class="services-grid">
-
-            <!-- Service Overview -->
-            <div class="service-item">
-                <svg fill="#001f4d" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M18 2h-3.5l-1 2H6c-1.1 0-2 .9-2 2v4h4v2H4v6h6v-6H6v-2h4v-4h4.5l1-2H18v2z"/>
-                </svg>
-                <div>
-                    <h4 style="color:#001f4d; text-decoration:none;">Overview</h4>
-                    <p>Leverage AI to manage social media campaigns efficiently, target the right audience, and maximize engagement across all platforms.</p>
-                </div>
-            </div>
-
-            <!-- Key Features -->
-            <div class="service-item">
-                <svg fill="#001f4d" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M3 17v-2h6v2H3zm0-4v-2h12v2H3zm0-4V7h18v2H3zm0-4V3h18v2H3z"/>
-                </svg>
-                <div>
-                    <h4 style="color:#001f4d; text-decoration:none;">Features</h4>
-                    <ul style="padding-left:20px; margin:0; color:#001f4d;">
-                        <li>Automated Campaign Management</li>
-                        <li>Smart Audience Targeting</li>
-                        <li>Content Optimization</li>
-                        <li>Performance Analytics & Insights</li>
-                        <li>Trend Prediction & Engagement Boost</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Benefits -->
-            <div class="service-item">
-                <svg fill="#001f4d" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M21 4H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h6v2H7v2h10v-2h-2v-2h6c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM3 6h18v12H3V6z"/>
-                </svg>
-                <div>
-                    <h4 style="color:#001f4d; text-decoration:none;">Benefits</h4>
-                    <p style="color:#001f4d;">Increase brand awareness, improve engagement rates, save time on manual social media management, and gain actionable insights to refine strategies for maximum ROI.</p>
-                </div>
-            </div>
-
+    <!-- Hero Content -->
+    <div class="tp-hero-content text-center">
+        <p class="delay-load">
+            Enhance your social media presence with AI-powered strategies, automated content creation, and data-driven campaign optimization.
+        </p>
+        <div class="hero-btns mt-4">
+            <a href="{{ route('contact')}}" class="btn btn-gradient">Get a Free Quote</a>
         </div>
     </div>
 
-    <!-- Get in Touch Section -->
-    <section class="section-box">
-        <div class="container mb-20">
-            <div class="bdrd-58 box-gray-100 icon-wave">
-                <div class="row">
-                    <div class="col-lg-12 mb-60 text-center">
-                        <span class="text-uppercase text-white">Get in Touch</span>
-                        <h2 class="text-heading-3 mt-10">Have a project in mind?</h2>
-                        <p class="text-body-text mt-20">The right move at the right time saves your investment. Let’s expand your business together.</p>
-                    </div>
+    <!-- Content & Sidebar -->
+    <div class="container-flex">
 
-                    <!-- Contact Info -->
-                    <div class="col-lg-4 mb-40">
-                        <h4 class="text-heading-6 mb-10" style="color: #001f4d">WB-DigiTech</h4>
-                        <p class="text-body-text">
-                            504 Raffa Building Rolla Street Bur Dubai, UAE
-                        </p>
+        <!-- Sidebar -->
+        <div class="sidebar-col">
+            <div class="sidebar">
+                <h6>Our AI Services</h6>
+                <ul>
+                    <li><a href="{{ route('ai_marketing') }}">AI Marketing Overview</a></li>
+                    <li><a href="{{ route('ai_digital_marketing') }}">AI Digital Marketing</a></li>
+                    <li class="current-menu-item"><a href="{{ route('ai_social_media') }}">AI Social Media Marketing</a></li>
+                    <li><a href="{{ route('ai_website') }}">AI Website Services</a></li>
+                    <li><a href="{{ route('ai_seo') }}">AI SEO Services</a></li>
+                    <li><a href="{{ route('ai_google_ads') }}">AI Google Ads Management</a></li>
+                    <li><a href="{{ route('ai_web_app') }}">AI Web Applications</a></li>
+                </ul>
 
-                        <p class="text-body-text">
-                            <a href="tel:+97142559928">+971-4-255-9928</a><br>
-                            <a href="tel:+971502390775">+971-50-239-0775</a>
-                        </p>
-
-                        <p class="text-body-text">
-                            <a href="mailto:info@wbdigitech.ae">info@wbdigitech.ae</a><br>
-                            <a href="mailto:hr@wbdigitech.ae">hr@wbdigitech.ae</a>
-                        </p>
-                    </div>
-
-                    <!-- Contact Form -->
-                    <div class="col-lg-8">
-                        <form method="POST" action="{{ route('contact.send') }}" class="contact-form">
-                            @csrf
-                            <div class="row">
-                                <div class="col-lg-6 mb-3">
-                                    <input type="text" name="name" class="form-control" placeholder="Enter your name" required>
-                                </div>
-                                <div class="col-lg-6 mb-3">
-                                    <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
-                                </div>
-                                <div class="col-lg-6 mb-3">
-                                    <input type="text" name="phone" class="form-control" placeholder="Enter your phone" required>
-                                </div>
-                                <div class="col-lg-12 mb-3">
-                                    <textarea name="message" class="form-control" rows="4" placeholder="How we can help you?" required></textarea>
-                                </div>
-                                <div class="col-lg-12 mt-15 text-center">
-                                    <button type="submit" class="btn btn-black">Send Message</button>
-                                    <br><span class="text-body-text-md mt-2 d-block" style="color:#001f4d">LET’S CREATE SOMETHING IMPRESSIVE</span>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-
+                <!-- Sidebar Images -->
+                <div class="sidebar-images">
+                    <img src="#" alt="AI Social Media Image 1">
+                    <img src="#" alt="AI Social Media Image 2">
+                    <img src="#" alt="AI Social Media Image 3">
                 </div>
             </div>
         </div>
-    </section>
 
+        <!-- Content -->
+        <div class="content-col">
+
+            <h2>Overview</h2>
+            <p>AI-driven social media marketing helps you identify the best content, schedule posts, and reach the right audience with minimal effort.</p>
+
+            <h2>Key Features</h2>
+            <ul>
+                <li>Automated Content Scheduling</li>
+                <li>Audience Targeting & Segmentation</li>
+                <li>Social Listening & Analytics</li>
+                <li>AI-Generated Creative Content</li>
+                <li>Performance Optimization</li>
+            </ul>
+
+            <h2>Benefits</h2>
+            <p>Boost engagement, grow your followers, save time with AI automation, and make data-driven social media decisions.</p>
+
+            <h2>Our Services</h2>
+            <div class="services-list">
+                <ul>
+                    <li>AI Digital Marketing</li>
+                    <li>AI Social Media Marketing</li>
+                    <li>AI Website Services</li>
+                    <li>AI SEO Services</li>
+                    <li>AI Google Ads Management</li>
+                    <li>AI Web Applications</li>
+                </ul>
+            </div>
+
+            <h2>How We Work</h2>
+            <div class="process-list">
+                <ol>
+                    <li><strong>Strategy:</strong> Define social media goals and KPIs.</li>
+                    <li><strong>Content Creation:</strong> Generate posts and creatives using AI.</li>
+                    <li><strong>Scheduling & Automation:</strong> Plan and automate posting across platforms.</li>
+                    <li><strong>Analytics & Insights:</strong> Monitor engagement and optimize campaigns.</li>
+                    <li><strong>Optimization:</strong> Adjust strategies for better reach and conversions.</li>
+                </ol>
+            </div>
+
+            <img class="service-img" src="#" alt="AI Social Media Marketing Image">
+
+        </div>
+    </div>
 </div>
 @endsection
