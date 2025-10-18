@@ -239,20 +239,33 @@
                 <div class="container-fluid px-0">
                     <div class="row gx-0 align-items-center">
 
-                        <!-- Left side: contacts -->
-                        <div class="col-md-6 d-flex align-items-center ps-3">
-                            <a href="tel:+971502390775" class="text-white me-4 text-decoration-none small d-flex align-items-center"><i class="fa fa-phone me-2" aria-hidden="true"></i>+971-50-239-0775</a>
-                            <a href="mailto:info@wbdigitech.ae" class="text-white text-decoration-none small d-flex align-items-center"><i class="fa fa-envelope me-2" aria-hidden="true"></i>info@wbdigitech.ae</a>
-                        </div>
+                      <!-- Left side: contacts -->
+                    <div class="col-md-6 d-flex align-items-center ps-3">
+                        <!-- WhatsApp / Mobile -->
+                        <a href="https://wa.me/971502390775" target="_blank" class="text-white me-4 text-decoration-none small d-flex align-items-center">
+                           <i class="fab fa-whatsapp me-2"></i>WhatsApp: +971-50-239-0775
+                        </a>
+
+                        <!-- Landline -->
+                        <a href="tel:+97142559928" class="text-white me-4 text-decoration-none small d-flex align-items-center">
+                            <i class="fa fa-phone me-2" aria-hidden="true"></i>Landline: +971-4-255-9928
+                        </a>
+
+                        <!-- Email -->
+                        <a href="mailto:info@wbdigitech.ae" class="text-white text-decoration-none small d-flex align-items-center">
+                            <i class="fa fa-envelope me-2" aria-hidden="true"></i>Email: info@wbdigitech.ae
+                        </a>
+                    </div>
+
 
                         <!-- Right side: socials + language -->
                         <div class="col-md-6 d-flex justify-content-end align-items-center pe-3">
                             <div class="social-icons d-flex align-items-center">
-                                <a href="https://www.linkedin.com/" target="_blank" class="text-white"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="https://www.instagram.com/" target="_blank" class="text-white ms-3"><i class="fab fa-instagram"></i></a>
-                                <a href="https://www.facebook.com/" target="_blank" class="text-white ms-3"><i class="fab fa-facebook-f"></i></a>
-                                <a href="https://www.youtube.com/" target="_blank" class="text-white ms-3"><i class="fab fa-youtube"></i></a>
-                                <a href="https://twitter.com/" target="_blank" class="text-white ms-3"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.linkedin.com/company/wb-digitech/" target="_blank" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.instagram.com/wbdigitech.ae/" target="_blank" class="text-white ms-3"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.facebook.com/wbdigitechuae/" target="_blank" class="text-white ms-3"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.pinterest.com/wbdigitech/" target="_blank" class="text-white ms-3"><i class="fab fa-pinterest"></i></a>
+                                <a href="https://x.com/wbdigitech" target="_blank" class="text-white ms-3"><i class="fab fa-x"></i></a>
                             </div>
 
                            <!-- Language Dropdown (works with Google Translate) -->
@@ -274,7 +287,7 @@
                                     <!-- NEW Get Free SEO Button -->
                             <a href="{{ route('seo-request.public') }}" class="btn btn-sm text-black"
                             style="background: linear-gradient(90deg,#ccd6dd,#ffffff); border:none; padding:6px 14px; border-radius:4px; font-weight:600; font-size:13px;">
-                            🚀 Get Free SEO
+                            Get Free SEO
                             </a>
                         </div>
                     </div>

@@ -38,56 +38,13 @@
     
 
 </head>
-{{-- <style>
-/* Fullscreen splash overlay */
-#splash-screen {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: #ffffff;  /* solid background to block everything */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  z-index: 999999; /* make sure it's on top */
-  transition: opacity 0.6s ease;
-  overflow: hidden;
-}
-
-/* Hide it smoothly */
-#splash-screen.hidden {
-  opacity: 0;
-  visibility: hidden;
-}
-
-/* Logo styling */
-.splash-logo {
-   width: 30vw;       /* takes 30% of screen width */
-  max-width: 300px;  /* but never larger than 300px */
-  min-width: 150px;  /* and never smaller than 150px */
-  margin-bottom: 20px;
-  animation: bounce 1.5s infinite;
-}
-
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
-
-</style> --}}
 
 <body id="body" class="tp-magic-cursor">
    <div id="magic-cursor">
         <div id="ball"></div>
     </div>
-    
-  {{-- <!-- Splash Screen -->
-  <div id="splash-screen">
-    <div class="splash-content">
-      <img src="{{ asset('css/new-assets/img/logo/logoo.png')}}" alt="Logo" class="splash-logo">
-    </div>
-  </div> --}}
-<a href="https://wa.link/+971-50-239-0775" class="float" title="Whatsapp WB-DIGITECH" target="_blank"><i class="fab fa-whatsapp my-float"></i></a>
+  
+<a href="https://wa.me/971502390775" class="float" title="Whatsapp WB-DIGITECH" target="_blank"><i class="fab fa-whatsapp my-float"></i></a>
 
 
    
