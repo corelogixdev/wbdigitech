@@ -208,12 +208,8 @@ Route::get('/mobile-app-developers', function() {
     return view('pages.services.mobile_application.mobile_app_developers');
 })->name('services.mobile_app_developers');
 
+// Ai Marketing Pages
 
-
-// // Digital Campaign Routes
-// Route::get('/digital-campaigns', function() {
-//     return view('pages.services.digital-campaigns');
-// })->name('services.digital');
 
 
 // Public side | Career Page

@@ -259,42 +259,35 @@
                     </div>
                 </div>
 
-                <div class="row justify-content-center">
-                    {{-- Industries Section --}}
-                    @forelse($industries as $industry)
-                        <div class="col-xl-3 col-lg-4 col-md-6 mb-4 d-flex justify-content-center">
-                            <div class="card shadow-sm border-0 h-100 text-center">
-                                <div class="card-body p-4 d-flex flex-column align-items-center">
-                                    @if(!empty($industry->image) && file_exists(public_path('storage/'.$industry->image)))
-                                        <img src="{{ asset('storage/'.$industry->image) }}"
-                                            alt="{{ $industry->name ?? 'Industry' }}"
-                                            class="img-fluid mb-3 industry-img">
-                                    @else
-                                        <img src="{{ asset('images/default-industry.png') }}" 
-                                            alt="Default Industry" 
-                                            class="img-fluid mb-3 industry-img">
-                                    @endif
-                                    <h6 class="fw-bold text-dark">
-                                        {{ $industry->name ?? 'Unnamed Industry' }}
-                                    </h6>
-                                </div>
-                            </div>
-                        </div>
-                    @empty
-                        <div class="col-12 text-center">
-                            <p class="text-muted">No industries available at the moment.</p>
-                        </div>
-                    @endforelse
-
-                    <div class="col-12 text-center pb-20">
-                        <a href="/customer" class="btn btn-warning  mr-10">View More</a>
-                        <a class="btn btn-warning  open-popup">Get A Free Quote</a>
-                    </div>
+<div class="row justify-content-center">
+    {{-- Industries Section --}}
+    @forelse($industries as $industry)
+        <div class="col-xl-3 col-lg-4 col-md-6 mb-4 d-flex justify-content-center">
+            <div class="card shadow-sm border-0 h-100 text-center">
+                <div class="card-body p-4 d-flex flex-column align-items-center">
+                    @if(!empty($industry->image) && file_exists(public_path('storage/'.$industry->image)))
+                        <img src="{{ asset('storage/'.$industry->image) }}"
+                             alt="{{ $industry->name ?? 'Industry' }}"
+                             class="img-fluid mb-3 industry-img">
+                    @endif
+                    <h6 class="fw-bold text-dark">
+                        {{ $industry->name ?? 'Unnamed Industry' }}
+                    </h6>
                 </div>
             </div>
         </div>
+    @empty
+        <div class="col-12 text-center">
+            <p class="text-muted">No industries available at the moment.</p>
+        </div>
+    @endforelse
+
+    <div class="col-12 text-center pb-20">
+        <a href="/customer" class="btn btn-warning  mr-10">View More</a>
+        <a class="btn btn-warning  open-popup">Get A Free Quote</a>
     </div>
 </div>
+
 
 {{-- Blog Section --}}
 <section class="home-blog-section py-5 bg-dark text-white">
@@ -307,43 +300,42 @@
             </div>
         </div>
 
-        <!-- Blog Grid -->
-        <div class="row g-4">
-            @forelse($blogs as $blog)
-                <div class="col-xl-4 col-lg-6 col-md-6">
-                    <div class="blog-card-wrap">
-                        <article class="blog-card h-100 rounded overflow-hidden position-relative">
-                            <div class="media-wrap position-relative">
-                                <a href="{{ route('blogs.public.show', $blog->id ?? 0) }}" class="d-block">
-                                    @if(!empty($blog->image) && file_exists(public_path('storage/'.$blog->image)))
-                                        <img loading="lazy" src="{{ asset('storage/' . $blog->image) }}" alt="{{ $blog->title ?? 'Blog Image' }}" class="img-fluid blog-card-img w-100">
-                                    @else
-                                        <img loading="lazy" src="{{ asset('images/default-blog.png') }}" alt="Default Blog Image" class="img-fluid blog-card-img w-100">
-                                    @endif
-                                    <div class="blog-gradient-top"></div>
-                                </a>
-                                <div class="blog-overlay"></div>
-                                <span class="blog-date badge bg-white text-dark position-absolute"><i class="fa fa-calendar me-1"></i> {{ $blog->created_at ? $blog->created_at->format('d M, Y') : 'Date N/A' }}</span>
-                            </div>
-
-                            <div class="blog-card-body p-4 bg-dark">
-                                <h4 class="blog-card-title h5 mb-2"><a href="{{ route('blogs.public.show', $blog->id ?? 0) }}" class="text-white text-decoration-none">{{ $blog->title ?? 'Untitled Blog' }}</a></h4>
-                                <p class="text-white-50 mb-3">{{ Str::limit($blog->excerpt ?? '', 120, '...') }}</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <a href="{{ route('blogs.public.show', $blog->id ?? 0) }}" class="btn btn-sm btn-gradient">Read More</a>
-                                    <div class="meta small text-white">By WB-DigiTech • <span class="reading-time">{{ rand(2,6) }} min</span></div>
-                                </div>
-                            </div>
-                        </article>
+       <!-- Blog Grid -->
+<div class="row g-4">
+    @forelse($blogs as $blog)
+        <div class="col-xl-4 col-lg-6 col-md-6">
+            <div class="blog-card-wrap">
+                <article class="blog-card h-100 rounded overflow-hidden position-relative">
+                    <div class="media-wrap position-relative">
+                        <a href="{{ route('blogs.public.show', $blog->id ?? 0) }}" class="d-block">
+                            @if(!empty($blog->image) && file_exists(public_path('storage/'.$blog->image)))
+                                <img loading="lazy" src="{{ asset('storage/' . $blog->image) }}" alt="{{ $blog->title ?? 'Blog Image' }}" class="img-fluid blog-card-img w-100">
+                            @endif
+                            <div class="blog-gradient-top"></div>
+                        </a>
+                        <div class="blog-overlay"></div>
+                        <span class="blog-date badge bg-white text-dark position-absolute"><i class="fa fa-calendar me-1"></i> {{ $blog->created_at ? $blog->created_at->format('d M, Y') : 'Date N/A' }}</span>
                     </div>
-                </div>
-            @empty
-                <div class="col-12 text-center">
-                    <p class="text-white">No blogs published yet.</p>
-                </div>
-            @endforelse
+
+                    <div class="blog-card-body p-4 bg-dark">
+                        <h4 class="blog-card-title h5 mb-2">
+                            <a href="{{ route('blogs.public.show', $blog->id ?? 0) }}" class="text-white text-decoration-none">{{ $blog->title ?? 'Untitled Blog' }}</a>
+                        </h4>
+                        <p class="text-white-50 mb-3">{{ Str::limit($blog->excerpt ?? '', 120, '...') }}</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="{{ route('blogs.public.show', $blog->id ?? 0) }}" class="btn btn-sm btn-gradient">Read More</a>
+                            <div class="meta small text-white">By WB-DigiTech • <span class="reading-time">{{ rand(2,6) }} min</span></div>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </div>
-    </div>
+    @empty
+        <div class="col-12 text-center">
+            <p class="text-white">No blogs published yet.</p>
+        </div>
+    @endforelse
+</div>
 
     <!-- Scoped styles for blog grid -->
     <style>
