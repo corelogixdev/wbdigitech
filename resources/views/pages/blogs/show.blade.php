@@ -9,23 +9,26 @@
         <div class="row justify-content-center">
             <div class="col-lg-8">
 
-                <!-- Blog Card -->
-                <div class="card shadow-sm rounded-3 mb-5 border-0">
-                    @if($blog->image && file_exists(public_path('storage/'.$blog->image)))
-                        <img src="{{ asset('storage/' . $blog->image) }}" class="card-img-top rounded-top" alt="{{ $blog->title }}">
-                    @endif
+               <!-- Blog Card -->
+            <div class="card shadow-sm rounded-3 mb-5 border-0">
+                @if(!empty($blog->image))
+                    <img src="{{ asset('storage/' . $blog->image) }}" 
+                        class="card-img-top rounded-top" 
+                        alt="{{ $blog->title ?? 'Blog Image' }}">
+                @endif
 
-                    <div class="card-body px-4 py-4">
-                        <h1 class="card-title mb-3 text-dark">{{ $blog->title }}</h1>
-                        <p class="text-muted small">
-                            Published on {{ $blog->created_at ? $blog->created_at->format('d M, Y') : 'Date N/A' }}
-                        </p>
-                        <hr>
-                        <div class="blog-content text-dark" style="line-height:1.7; font-size:1rem;">
-                            {!! nl2br(e($blog->content)) !!}
-                        </div>
+                <div class="card-body px-4 py-4">
+                    <h1 class="card-title mb-3 text-dark">{{ $blog->title ?? 'Untitled Blog' }}</h1>
+                    <p class="text-muted small">
+                        Published on {{ $blog->created_at ? $blog->created_at->format('d M, Y') : 'Date N/A' }}
+                    </p>
+                    <hr>
+                    <div class="blog-content text-dark" style="line-height:1.7; font-size:1rem;">
+                        {!! nl2br(e($blog->content ?? 'No content available.')) !!}
                     </div>
                 </div>
+            </div>
+
 
                 <!-- Back Button -->
                 <div class="text-center mb-5">

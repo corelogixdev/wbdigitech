@@ -25,56 +25,47 @@
                 </div>
             </section>
 
-            <!-- Blog Section -->
-            <section class="blog-details-realated-area pt-100 pb-70 bg-light">
-                <div class="container container-1500">
-                    <div class="row">
-                        @forelse($blogs as $blog)
-                            <div class="col-xl-4 col-lg-6 col-md-6 mb-50">
-                                <div class="tp-blog-item">
-                                    <div class="tp-blog-thumb fix p-relative rounded">
-                                        <a href="{{ route('blogs.public.show', $blog->id) }}">
-                                            @if($blog->image && file_exists(public_path('storage/'.$blog->image)))
-                                                <img src="{{ asset('storage/' . $blog->image) }}" alt="{{ $blog->title }}" class="img-fluid">
-                                            @else
-                                                <img src="{{ asset('images/default-blog.png') }}" alt="Default Blog Image" class="img-fluid">
-                                            @endif
-                                        </a>
-                                        <div class="tp-blog-meta">
-                                            <span class="bg-dark text-white px-2 py-1 rounded">
-                                                {{ $blog->created_at ? $blog->created_at->format('d M, Y') : 'Date N/A' }}
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="tp-blog-content text-center mt-3">
-                                        <span class="text-muted"><a href="#">Blog</a></span>
-                                        <h4 class="tp-blog-title-sm mt-2">
-                                            <a class="text-dark" href="{{ route('blogs.public.show', $blog->id) }}">
-                                                {{ $blog->title }}
-                                            </a>
-                                        </h4>
-                                        <p class="text-muted mt-1">{{ Str::limit(strip_tags($blog->content), 100) }}</p>
-                                    </div>
-                                </div>
+           <!-- Blog Section -->
+<section class="blog-details-realated-area pt-100 pb-70 bg-light">
+    <div class="container container-1500">
+        <div class="row">
+            @forelse($blogs as $blog)
+                <div class="col-xl-4 col-lg-6 col-md-6 mb-50">
+                    <div class="tp-blog-item">
+                        <div class="tp-blog-thumb fix p-relative rounded">
+                            <a href="{{ route('blogs.public.show', $blog->id) }}">
+                                @if(!empty($blog->image))
+                                    <img src="{{ asset('storage/' . $blog->image) }}" 
+                                         alt="{{ $blog->title ?? 'Blog Image' }}" 
+                                         class="img-fluid">
+                                @endif
+                            </a>
+                            <div class="tp-blog-meta">
+                                <span class="bg-dark text-white px-2 py-1 rounded">
+                                    {{ $blog->created_at ? $blog->created_at->format('d M, Y') : 'Date N/A' }}
+                                </span>
                             </div>
-                        @empty
-                            <div class="col-12 text-center">
-                                <p class="text-muted">No blogs available right now.</p>
-                            </div>
-                        @endforelse
-                    </div>
-
-                    <!-- Pagination -->
-                    <div class="col-12">
-                        <div class="basic-pagination mt-40 text-center">
-                            {{ $blogs->links('pagination::bootstrap-5') }}
+                        </div>
+                        <div class="tp-blog-content text-center mt-3">
+                            <span class="text-muted"><a href="#">Blog</a></span>
+                            <h4 class="tp-blog-title-sm mt-2">
+                                <a class="text-dark" href="{{ route('blogs.public.show', $blog->id) }}">
+                                    {{ $blog->title }}
+                                </a>
+                            </h4>
+                            <p class="text-muted mt-1">{{ Str::limit(strip_tags($blog->content), 100) }}</p>
                         </div>
                     </div>
                 </div>
-            </section>
-        </main>
-    {{-- </div>
-</div> --}}
+            @empty
+                <div class="col-12 text-center">
+                    <p class="text-muted">No blogs available right now.</p>
+                </div>
+            @endforelse
+        </div>
+    </div>
+</section>
+</main>
 
 <style>
     /* Blogs Section */

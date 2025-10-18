@@ -243,17 +243,17 @@
                     <div class="col-md-6 d-flex align-items-center ps-3">
                         <!-- WhatsApp / Mobile -->
                         <a href="https://wa.me/971502390775" target="_blank" class="text-white me-4 text-decoration-none small d-flex align-items-center">
-                           <i class="fab fa-whatsapp me-2"></i>WhatsApp: +971-50-239-0775
+                           <i class="fab fa-whatsapp me-2"></i>+971-50-239-0775
                         </a>
 
                         <!-- Landline -->
                         <a href="tel:+97142559928" class="text-white me-4 text-decoration-none small d-flex align-items-center">
-                            <i class="fa fa-phone me-2" aria-hidden="true"></i>Landline: +971-4-255-9928
+                            <i class="fa fa-phone me-2" aria-hidden="true"></i>+971-4-255-9928
                         </a>
 
                         <!-- Email -->
                         <a href="mailto:info@wbdigitech.ae" class="text-white text-decoration-none small d-flex align-items-center">
-                            <i class="fa fa-envelope me-2" aria-hidden="true"></i>Email: info@wbdigitech.ae
+                            <i class="fa fa-envelope me-2" aria-hidden="true"></i>info@wbdigitech.ae
                         </a>
                     </div>
 
@@ -287,7 +287,7 @@
                                     <!-- NEW Get Free SEO Button -->
                             <a href="{{ route('seo-request.public') }}" class="btn btn-sm text-black"
                             style="background: linear-gradient(90deg,#ccd6dd,#ffffff); border:none; padding:6px 14px; border-radius:4px; font-weight:600; font-size:13px;">
-                            Get Free SEO
+                            Get Free SEO Audit
                             </a>
                         </div>
                     </div>

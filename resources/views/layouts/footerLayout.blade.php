@@ -40,8 +40,7 @@
                                 <a href="https://www.instagram.com/wbdigitech.ae/" target="_blank" class="text-white ms-3"><i class="fab fa-instagram"></i></a>
                                 <a href="https://www.facebook.com/wbdigitechuae/" target="_blank" class="text-white ms-3"><i class="fab fa-facebook-f"></i></a>
                                 <a href="https://www.pinterest.com/wbdigitech/" target="_blank" class="text-white ms-3"><i class="fab fa-pinterest"></i></a>
-                                <a href="https://x.com/wbdigitech" target="_blank" class="text-white ms-3"><i class="fab fa-x"></i></a>
-                            
+                                <a href="https://x.com/wbdigitech" target="_blank" class="text-white ms-3"><i class="fab fa-x"></i></a>  
                     </div>
                 </div>
             </div>

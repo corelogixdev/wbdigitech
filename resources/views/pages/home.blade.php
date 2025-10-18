@@ -263,12 +263,12 @@
     {{-- Industries Section --}}
     @forelse($industries as $industry)
         <div class="col-xl-3 col-lg-4 col-md-6 mb-4 d-flex justify-content-center">
-            <div class="card shadow-sm border-0 h-100 text-center">
-                <div class="card-body p-4 d-flex flex-column align-items-center">
-                    @if(!empty($industry->image) && file_exists(public_path('storage/'.$industry->image)))
+                <div class="card shadow-sm border-0 h-100 text-center">
+                    <div class="card-body p-4 d-flex flex-column align-items-center">
+                    @if(!empty($industry->image))
                         <img src="{{ asset('storage/'.$industry->image) }}"
-                             alt="{{ $industry->name ?? 'Industry' }}"
-                             class="img-fluid mb-3 industry-img">
+                            alt="{{ $industry->name ?? 'Industry' }}"
+                            class="img-fluid mb-3 industry-img">
                     @endif
                     <h6 class="fw-bold text-dark">
                         {{ $industry->name ?? 'Unnamed Industry' }}
@@ -306,17 +306,20 @@
         <div class="col-xl-4 col-lg-6 col-md-6">
             <div class="blog-card-wrap">
                 <article class="blog-card h-100 rounded overflow-hidden position-relative">
-                    <div class="media-wrap position-relative">
+                   <div class="media-wrap position-relative">
                         <a href="{{ route('blogs.public.show', $blog->id ?? 0) }}" class="d-block">
-                            @if(!empty($blog->image) && file_exists(public_path('storage/'.$blog->image)))
-                                <img loading="lazy" src="{{ asset('storage/' . $blog->image) }}" alt="{{ $blog->title ?? 'Blog Image' }}" class="img-fluid blog-card-img w-100">
+                            @if(!empty($blog->image))
+                                <img loading="lazy" src="{{ asset('storage/' . $blog->image) }}" 
+                                    alt="{{ $blog->title ?? 'Blog Image' }}" 
+                                    class="img-fluid blog-card-img w-100">
                             @endif
                             <div class="blog-gradient-top"></div>
                         </a>
                         <div class="blog-overlay"></div>
-                        <span class="blog-date badge bg-white text-dark position-absolute"><i class="fa fa-calendar me-1"></i> {{ $blog->created_at ? $blog->created_at->format('d M, Y') : 'Date N/A' }}</span>
+                        <span class="blog-date badge bg-white text-dark position-absolute">
+                            <i class="fa fa-calendar me-1"></i> {{ $blog->created_at ? $blog->created_at->format('d M, Y') : 'Date N/A' }}
+                        </span>
                     </div>
-
                     <div class="blog-card-body p-4 bg-dark">
                         <h4 class="blog-card-title h5 mb-2">
                             <a href="{{ route('blogs.public.show', $blog->id ?? 0) }}" class="text-white text-decoration-none">{{ $blog->title ?? 'Untitled Blog' }}</a>

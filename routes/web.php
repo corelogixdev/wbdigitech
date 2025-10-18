@@ -238,9 +238,6 @@ Route::get('/ai-web-app', function() {
 })->name('ai_web_app');
 
 
-
-
-
 // Public side | Career Page
 Route::get('/career',[CareerController::class,'publicIndex'])->name('careers.public');
 
