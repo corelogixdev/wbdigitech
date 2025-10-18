@@ -209,6 +209,13 @@ Route::get('/mobile-app-developers', function() {
 })->name('services.mobile_app_developers');
 
 // Ai Marketing Pages
+Route::get('/ai-marketing', function() {
+    return view('pages.ai_marketing.ai_marketing');
+})->name('ai_marketing');
+
+
+
+
 
 
 
