@@ -213,6 +213,29 @@ Route::get('/ai-marketing', function() {
     return view('pages.ai_marketing.ai_marketing');
 })->name('ai_marketing');
 
+Route::get('/ai-social-media', function() {
+    return view('pages.ai_marketing.ai_social_media');
+})->name('ai_social_media');
+
+Route::get('/ai-website', function() {
+    return view('pages.ai_marketing.ai_website');
+})->name('ai_website');
+
+Route::get('/ai-digital-marketing', function() {
+    return view('pages.ai_marketing.ai_digital_marketing');
+})->name('ai_digital_marketing');
+
+Route::get('/ai-seo', function() {
+    return view('pages.ai_marketing.ai_seo');
+})->name('ai_seo');
+
+Route::get('/ai-google-ads', function() {
+    return view('pages.ai_marketing.ai_google_ads');
+})->name('ai_google_ads');
+
+Route::get('/ai-web-app', function() {
+    return view('pages.ai_marketing.ai_web_app');
+})->name('ai_web_app');
 
 
 

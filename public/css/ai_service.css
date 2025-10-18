@@ -1,0 +1,79 @@
+
+/* Boxes */
+.box-gray-100 {
+    background: linear-gradient(90deg, #1166a3 0%, #31a8e8 100%);
+    border-radius: 12px;
+    padding: 40px 25px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Two-column layout */
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.service-item {
+    flex: 1 1 45%;
+    display: flex;
+    background-color: #f0f4ff;
+    border-radius: 12px;
+    padding: 20px;
+    align-items: flex-start;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+.service-item:hover {
+    transform: translateY(-5px);
+}
+.service-item svg {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+.service-item h4 {
+    margin: 0 0 10px;
+    font-size: 1.4rem;
+    color: #001f4d;
+}
+.service-item p {
+    margin: 0;
+    color: #001f4d;
+}
+
+/* Contact Section (WB-DIGITECH style) */
+.section-box {
+    background-color: #f8f9fa;
+    padding: 60px 20px;
+    border-radius: 12px;
+    margin-top: 50px;
+}
+.section-box .text-heading-3 {
+    color: #001f4d;
+}
+.section-box .text-body-text {
+    color: #fffdfd;
+}
+.section-box .contact-form input,
+.section-box .contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+.section-box .btn-black {
+    background-color: #001f4d;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.section-box .btn-black:hover {
+    background-color: #003366;
+}
