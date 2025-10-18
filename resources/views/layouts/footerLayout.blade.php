@@ -36,10 +36,12 @@
                 <div class="mb-4">
                     <h4 class="fw-bold mb-3">Follow us:</h4>
                     <div class="d-flex gap-3">
-                        <a href="https://www.facebook.com/" target="_blank" class="text-white fs-4"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/" target="_blank" class="text-white fs-4"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/" target="_blank" class="text-white fs-4"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.youtube.com/" target="_blank" class="text-white fs-4"><i class="fab fa-youtube"></i></a>
+                                <a href="https://www.linkedin.com/company/wb-digitech/" target="_blank" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.instagram.com/wbdigitech.ae/" target="_blank" class="text-white ms-3"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.facebook.com/wbdigitechuae/" target="_blank" class="text-white ms-3"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.pinterest.com/wbdigitech/" target="_blank" class="text-white ms-3"><i class="fab fa-pinterest"></i></a>
+                                <a href="https://x.com/wbdigitech" target="_blank" class="text-white ms-3"><i class="fab fa-x"></i></a>
+                            
                     </div>
                 </div>
             </div>
