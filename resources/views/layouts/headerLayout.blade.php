@@ -375,6 +375,15 @@
                                                 </div>
                                             </div>
                                         </li>
+                                        {{-- AI Marketing Simple Dropdown --}}
+                                        <li class="has-dropdown simple-dropdown">
+                                            <a href="#">AI Marketing</a>
+                                            <ul class="submenu">
+                                                <li><a href="#">AI Service 1</a></li>
+                                                <li><a href="#">AI Service 2</a></li>
+                                                <li><a href="#">AI Service 3</a></li>
+                                            </ul>
+                                        </li>
                                         <li><a href="{{ route('blogs.public')}}">Blog</a></li>
                                         <li><a href="{{ route('portfolio.public')}}">Portfolio</a></li>
                                         <li><a href="{{ route('contact')}}">Contact</a></li>
@@ -391,6 +400,12 @@
         </div>
     </header>
 
+    <style>
+        .tp-header-menu>nav>ul>li>a{    
+            margin-left: -26px;
+        }
+
+    </style>
 
 
 
