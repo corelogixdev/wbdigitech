@@ -370,7 +370,7 @@
         <div class="row align-items-center">
             <!-- Left Section: Title -->
             <div class="col-lg-4 mb-4 mb-lg-0">
-                <h2 class="fw-bold text-primary mb-3">Personal<br><span class="text-dark">Finance Guides</span></h2>
+                <h2 class="fw-bold text-primary mb-3">Latest<br><span class="text-dark"> Insights & Guides</span></h2>
                 <hr class="border-2 border-primary mb-4" style="width:50px;">
                 <a href="{{ route('blogs.public') }}" class="btn btn-link text-decoration-none text-primary fs-6 fw-semibold p-0">
                     READ OUR BLOG <i class="fa fa-arrow-right ms-2"></i>
