@@ -290,92 +290,100 @@
 
 
 {{-- Blog Section --}}
-<section class="home-blog-section py-5 bg-dark text-white">
+<section class="home-blog-section py-5 bg-white">
     <div class="container">
-        <!-- Section Title -->
-        <div class="row justify-content-center mb-4">
-            <div class="col-md-8 text-center">
-                <h2 class="sv-service-title text-white">Our Latest Blogs</h2>
-                <p class="text-white-50 mt-2">Read our latest insights, news, and updates.</p>
+        <div class="row align-items-center">
+            <!-- Left Section: Title -->
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <h2 class="fw-bold text-primary mb-3">Personal<br><span class="text-dark">Finance Guides</span></h2>
+                <hr class="border-2 border-primary mb-4" style="width:50px;">
+                <a href="{{ route('blogs.public') }}" class="btn btn-link text-decoration-none text-primary fs-6 fw-semibold p-0">
+                    READ OUR BLOG <i class="fa fa-arrow-right ms-2"></i>
+                </a>
             </div>
-        </div>
 
-       <!-- Blog Grid -->
-<div class="row g-4">
-    @forelse($blogs as $blog)
-        <div class="col-xl-4 col-lg-6 col-md-6">
-            <div class="blog-card-wrap">
-                <article class="blog-card h-100 rounded overflow-hidden position-relative">
-                   <div class="media-wrap position-relative">
-                        <a href="{{ route('blogs.public.show', $blog->id ?? 0) }}" class="d-block">
-                            @if(!empty($blog->image))
-                                <img loading="lazy" src="{{ asset('storage/' . $blog->image) }}" 
-                                    alt="{{ $blog->title ?? 'Blog Image' }}" 
-                                    class="img-fluid blog-card-img w-100">
-                            @endif
-                            <div class="blog-gradient-top"></div>
-                        </a>
-                        <div class="blog-overlay"></div>
-                        <span class="blog-date badge bg-white text-dark position-absolute">
-                            <i class="fa fa-calendar me-1"></i> {{ $blog->created_at ? $blog->created_at->format('d M, Y') : 'Date N/A' }}
-                        </span>
-                    </div>
-                    <div class="blog-card-body p-4 bg-dark">
-                        <h4 class="blog-card-title h5 mb-2">
-                            <a href="{{ route('blogs.public.show', $blog->id ?? 0) }}" class="text-white text-decoration-none">{{ $blog->title ?? 'Untitled Blog' }}</a>
-                        </h4>
-                        <p class="text-white-50 mb-3">{{ Str::limit($blog->excerpt ?? '', 120, '...') }}</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <a href="{{ route('blogs.public.show', $blog->id ?? 0) }}" class="btn btn-sm btn-gradient">Read More</a>
-                            <div class="meta small text-white">By WB-DigiTech • <span class="reading-time">{{ rand(2,6) }} min</span></div>
+            <!-- Right Section: Blogs -->
+            <div class="col-lg-8">
+                <div class="row g-4">
+                    @forelse($blogs->take(2) as $blog)
+                        <div class="col-md-6">
+                            <div class="blog-item bg-white border-0 shadow-sm h-100">
+                                @if(!empty($blog->image))
+                                    <a href="{{ route('blogs.public.show', $blog->id ?? 0) }}">
+                                        <img src="{{ asset('storage/' . $blog->image) }}" 
+                                             alt="{{ $blog->title ?? 'Blog Image' }}" 
+                                             class="img-fluid rounded-top w-100 blog-img">
+                                    </a>
+                                @endif
+                                <div class="p-3">
+                                    <h5 class="fw-bold text-dark mb-1">
+                                        <a href="{{ route('blogs.public.show', $blog->id ?? 0) }}" 
+                                           class="text-dark text-decoration-none">
+                                           {{ $blog->title ?? 'Untitled Blog' }}
+                                        </a>
+                                    </h5>
+                                    <p class="text-muted small mb-2">
+                                        {{ $blog->created_at ? $blog->created_at->format('F d, Y') : 'Date N/A' }} | by Admin
+                                    </p>
+                                    <p class="text-secondary small mb-3">
+                                        {{ Str::limit($blog->excerpt ?? '', 100, '...') }}
+                                    </p>
+                                    <a href="{{ route('blogs.public.show', $blog->id ?? 0) }}" 
+                                       class="text-primary text-decoration-none fw-semibold">
+                                        Read More →
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </article>
+                    @empty
+                        <div class="col-12 text-center">
+                            <p class="text-muted">No blogs published yet.</p>
+                        </div>
+                    @endforelse
+                </div>
             </div>
         </div>
-    @empty
-        <div class="col-12 text-center">
-            <p class="text-white">No blogs published yet.</p>
-        </div>
-    @endforelse
-</div>
+    </div>
 
-    <!-- Scoped styles for blog grid -->
     <style>
-    /* Wrapper adds subtle gradient border and glass effect */
-    .home-blog-section .blog-card-wrap{ padding:6px; border-radius:14px; background:linear-gradient(180deg, rgba(18,135,203,0.06), rgba(10,61,98,0.03)); }
-    .home-blog-section .blog-card{ background:rgba(8,12,18,0.6); border-radius:10px; overflow:hidden; display:flex; flex-direction:column; transition: transform .35s ease, box-shadow .35s ease; backdrop-filter: blur(6px); }
-    .home-blog-section .blog-card:hover{ transform: translateY(-10px); box-shadow: 0 20px 40px rgba(2,6,23,0.6); }
+        .home-blog-section {
+            font-family: 'Poppins', sans-serif;
+        }
 
-    .home-blog-section .media-wrap{ position:relative; }
-    .home-blog-section .blog-card-img{ height:260px; object-fit:cover; display:block; transition: transform .6s cubic-bezier(.2,.8,.2,1); }
-    .home-blog-section .blog-card:hover .blog-card-img{ transform: scale(1.08); }
+        .home-blog-section h2 {
+            font-size: 2.3rem;
+            line-height: 1.2;
+        }
 
-    .home-blog-section .blog-gradient-top{ position:absolute; left:0; right:0; top:0; height:64px; background: linear-gradient(90deg, rgba(10,61,98,0.95), rgba(18,135,203,0.9)); opacity:0.0; transition: opacity .35s ease; }
-    .home-blog-section .blog-card:hover .blog-gradient-top{ opacity:0.08; }
+        .home-blog-section .blog-item {
+            transition: all 0.3s ease-in-out;
+            border-radius: 12px;
+        }
 
-    .home-blog-section .blog-overlay{ position:absolute; left:0; right:0; bottom:0; height:60%; background: linear-gradient(180deg, rgba(0,0,0,0.04), rgba(0,0,0,0.5)); }
+        .home-blog-section .blog-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        }
 
-    .home-blog-section .blog-date{ top:14px; left:14px; font-weight:700; border-radius:8px; padding:6px 10px; box-shadow:0 6px 18px rgba(2,6,23,0.35); }
+        .home-blog-section .blog-img {
+            height: 230px;
+            object-fit: cover;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
 
-    .home-blog-section .blog-card-body{ padding:18px; }
-    .home-blog-section .blog-card-title{ font-weight:700; font-size:1.05rem; }
-    .home-blog-section .blog-card-title a{ color:#fff; }
-    .home-blog-section .blog-card-title a:hover{ text-decoration:underline; }
+        .home-blog-section .text-primary {
+            color: #0A3D62 !important;
+        }
 
-    .home-blog-section .btn-gradient{ background: linear-gradient(90deg,#0A3D62,#1287cb); color:#fff; border:none; padding:6px 12px; border-radius:6px; }
-    .home-blog-section .btn-gradient:hover{ opacity:0.95; }
-
-    .home-blog-section .meta{ color:rgba(255,255,255,0.6); }
-
-    /* Small screens */
-    @media (max-width: 768px){
-        .home-blog-section .blog-card-img{ height:200px; }
-    }
-    @media (max-width: 576px){
-        .home-blog-section .blog-card-img{ height:160px; }
-        .home-blog-section .blog-card-body{ padding:14px; }
-    }
+        @media (max-width: 767px) {
+            .home-blog-section h2 {
+                font-size: 1.8rem;
+            }
+            .home-blog-section .blog-img {
+                height: 180px;
+            }
+        }
     </style>
 </section>
 
