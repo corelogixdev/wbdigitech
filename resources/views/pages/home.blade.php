@@ -18,16 +18,13 @@
                                     <div class="col-xxl-12">
                 <!-- Hero Title -->
                 <div class="tp-hero-title-wrap mb-35 text-center">
-                <h2 class="tp-hero-title gradient-text">
-                Save Time <br> Finding The Right <br> Agency Partner
+                <h2 class="tp-hero-title gradient-text"> 
+                Leading Digital Marketing<br> Agency in Dubai,<br>UAE
                 </h2>
                 </div>
 
                 <!-- Hero Content -->
                 <div class="tp-hero-content text-center">
-                    <h1 class="h1-home-page">
-                        Digital Marketing Agency Dubai | Expert Services for Your Success
-                    </h1>
                     <p class="delay-load">
                         WB-DigiTech is a leading digital marketing agency in Dubai, UAE. We help brands and businesses maximize their digital effectiveness.
                     </p>
