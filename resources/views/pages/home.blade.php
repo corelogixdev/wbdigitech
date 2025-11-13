@@ -146,49 +146,49 @@
                                             <div class="home-page rounded web-development">
                                                 <div class="html-component mt-5">
                                                     <div class="title text-white"><a href="#">Website Development</a></div>
-                                                    <div class="sub-title text-white"> We develop any type of modern technologies websites. </div>
-                                                </div>
-                                            </div>
-                                            <div class="home-page rounded lead-generation d-none">
-                                                <div class="html-component">
-                                                    <div class="title text-white"><a href="#">Graphics Design</a></div>
-                                                    <div class="sub-title text-white"> Volga Tigris, a leading graphic design company in Dubai, has been providing the best creative and innovative graphic solutions to our clients-home across UAE for years </div>
+                                                    <div class="sub-title text-white"> Our team creates custom websites that are easy to use, look great and work perfectly on all devices to showcase your business.</div>
                                                 </div>
                                             </div>
                                             <div class="home-page rounded seo">
                                                 <div class="html-component">
                                                     <div class="title text-white"><a href="#">SEO</a></div>
-                                                    <div class="sub-title text-white"> We make your business stand out among the crowd even if there is any high competition in business. We bring your business success among others through our best SEO practices. </div>
+                                                    <div class="sub-title text-white"> Want more people to find your business online? Our expert SEO services boost your website's visibility on Google, drive quality traffic to your site, and help you stay ahead of your competitors effortlessly. </div>
                                                 </div>
                                             </div>
                                             <div class="home-page rounded google-ads">
                                                 <div class="html-component">
                                                     <div class="title text-white"><a href="#">Lead Generation</a></div>
-                                                    <div class="sub-title text-white"> Our secret chemistry of success for each industry dealing with us, we learn your business. We find the right customers for you. </div>
+                                                    <div class="sub-title text-white"> We bring qualified leads straight to your business! Our proven strategies help you connect with potential customers who are genuinely interested in what you offer, turning visitors into loyal clients and growing your sales consistently. </div>
                                                 </div>
                                             </div>
                                             <div class="home-page rounded call-center">
                                                 <div class="html-component">
                                                     <div class="title text-white"><a href="#">Call Center Service</a></div>
-                                                    <div class="sub-title text-white"> We undertake all types of BPO and Call Center Jobs. we are operating with our in-house team from the Dubai office. </div>
+                                                    <div class="sub-title text-white"> Let our professional team handle your customer calls and support while you focus on growing your business. We deliver exceptional customer service that keeps your clients satisfied and coming back. </div>
                                                 </div>
                                             </div>
                                             <div class="home-page rounded social-meida-marketing">
                                                 <div class="html-component">
                                                     <div class="title text-white"><a href="#">Social Media Marketing</a></div>
-                                                    <div class="sub-title text-white"> Reach, attract, engage, and convert, these are the fundamental policy of social media marketing. Tie up with us for your business success. </div>
+                                                    <div class="sub-title text-white"> Our digital marketing experts handle your social media, create scroll-stopping content, and connect you with customers who love what you do. </div>
                                                 </div>
                                             </div>
                                             <div class="home-page rounded data-entry">
                                                 <div class="html-component">
                                                     <div class="title text-white"><a href="#">Data Entry / Data Cleansing</a></div>
-                                                    <div class="sub-title text-white"> We undertake all data-related work from hard to soft copy, data entry services, cleansing, and more. </div>
+                                                    <div class="sub-title text-white"> We type and organize your data fast and correctly. Our data processing team cleans up messy files and makes everything neat and easy to use for your business. </div>
                                                 </div>
                                             </div>
                                             <div class="home-page rounded customer-satisfaction">
                                                 <div class="html-component">
                                                     <div class="title text-white"><a href="#">Customer Satisfaction Survey</a></div>
-                                                    <div class="sub-title text-white"> Know your customer mind with our best survey team, we do online and direct surveys. </div>
+                                                    <div class="sub-title text-white"> We help you understand your customers better. Our expert team runs market research surveys online and in person to collect valuable insights for your business success. </div>
+                                                </div>
+                                            </div>
+                                            <div class="home-page rounded data-entry">
+                                                <div class="html-component">
+                                                    <div class="title text-white"><a href="#">Influencer Marketing Agency</a></div>
+                                                    <div class="sub-title text-white"> Boost your brand with the right influencers! Our social media influencer team connects you with trusted creators who promote your products to thousands of engaged followers. </div>
                                                 </div>
                                             </div>
                                         </div>
