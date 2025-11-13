@@ -75,7 +75,7 @@
             <!-- Content Column -->
             <div class="col-lg-6">
                 <span class="sub-title text-primary">WELCOME <i class="fa-solid fa-arrow-right"></i></span>
-                <h2 class="title display-5 fw-bold mt-2">Work with the most effective digital marketing solutions in Dubai</h2>
+                <h2 class="title display-5 fw-bold mt-2">Work with The Most Effective Digital Marketing Solutions In Dubai</h2>
                 <p class="lead text-muted mt-3">We understand at WB Digitech that digital success does not only lie in search advertising or technical SEO, but it is all about blending creativity, planning, and new thoughts. As one of the best advertising locations in Dubai, we go beyond the generic tricks to provide awesome social media and marketing services that actually work to connect the brands to their people.</p>
 
                 <ul class="list-unstyled mt-4 features-list">
@@ -136,8 +136,9 @@
                                     <div class="row">
                                         <div class="col-xxl-12 col-xl-12">
                                             <div class="tp-award-title-box text-center">
-                                                <h4 class="tp-section-title"><span>Our Custom-made Digital Marketing Services in Dubai, UAE</span></h4>
-                                                <p> “As one of the leading digital marketing agencies, we make the roll with innovative designs, innovative technology, solutions, smart tactics and others.” </p>
+                                                <h2 class="title-anim" style="color:#0A3D62">Our Custom-made Digital Marketing Services in Dubai, UAE</h2>
+                                                {{-- <h3 class="tp-section-title"><span>Our Custom-made Digital Marketing Services in Dubai, UAE</span></h3> --}}
+                                                <p> As one of the leading digital marketing agencies, we make the roll with innovative designs, innovative technology, solutions, smart tactics and others. </p>
                                             </div>
                                         </div>
                                     </div>
@@ -644,15 +645,18 @@
         <div class="row justify-content-center">
             <div class="col-xl-10 col-lg-11 text-center">
                 <div class="tp-about-content">
-                    <h2 class="tp-section-title text-dark mb-4">
-                        Enhance Your Business Growth with WB-DigiTech
+                    <h2 class="tp-section-title  mb-4" style="color:#0A3D62">
+                        Boost Your Business With The Help of Digital Marketing Company
                     </h2>
                     <p class="text-muted mb-3">
-                        WB-DigiTech is a leading digital marketing agency in Dubai, UAE, offering 360-degree solutions including SEO, social media marketing, web design, content creation, and PPC services. 
-                        We help businesses maximize their online presence, generate quality leads, and achieve measurable results.
+                        WB Digitech is a results-driven digital marketing company that em-powers businesses to thrive in Dubai's highly competitive market. Recognized as a trusted digital marketing agency Dubai, we design innovative strategies that amplify your online presence, connect you with your target audience, and fuel sustainable growth.
+                        Our vision is simple yet powerful: to help brands achieve maximum visibility across websites, search engines, and social media platforms. Backed by a team of experienced marketing experts and creative professionals, we deliver comprehensive digital marketing services, from content marketing and SEO to PPC, SEM, professional web de-velopment, web design, and graphic design.
+                        With WB Digitech, you gain the expertise of certified specialists who craft data-driven campaigns that attract traffic, convert leads, and boost revenue. Our unique approach and proven results distinguish us as the best digital marketing agency in Dubai, trusted by busi-nesses across industries.
+                        As a forward-thinking digital marketing company, we combine crea-tivity with technology to deliver strategies that truly resonate with modern-day customers. Whether it's through targeted ads, compel-ling content, or innovative design, our digital marketing solutions are built to position your brand ahead of competitors.
+                        
                     </p>
                     <p class="text-muted mb-4">
-                        Our expert team combines creativity and technology to deliver tailored strategies that drive traffic, increase conversions, and grow your business.
+                        Choose WB Degitech-you go-to marketing agency in Dubai-to engage effectively with potential customers, generate high-quality leads, and convert opportunities into measurable profits. When it comes to excellence, WB Digitech stands out among leading digital marketing agencies in the UAE.
                     </p>
                     <a href="/contact-us" class="btn btn-gradient-primary">Get a Free Quote</a>
                 </div>
