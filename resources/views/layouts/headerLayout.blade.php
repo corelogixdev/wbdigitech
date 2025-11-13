@@ -82,8 +82,8 @@
                 <div class="tp-offcanvas-contact">
                     <h3 class="tp-offcanvas-title sm">Contact Us</h3>
                     <ul>
-                        <li><a href="tel:+971 50 239 0775">Phone: +971-50-239-0775</a></li>
                         <li><a href="tel:+971 4 255 9928">Landline: +971-4-255-9928</a></li>
+                        <li><a href="tel:+971 50 239 0775">Phone: +971-50-239-0775</a></li>
                         <li><a href="mailto:info@wbdigitech.com">info@wbdigitech.com</a></li>
                         <li><a href="https://g.co/">504 Raffa Building Rolla Street Bur Dubai, UAE</a></li>
                     </ul>
@@ -245,7 +245,7 @@
                         <a href="tel:+97142559928" class="text-white me-4 text-decoration-none small d-flex align-items-center">
                             <i class="fa fa-phone me-2" aria-hidden="true"></i>+971-4-255-9928
                         </a>
-                        
+
                         <!-- WhatsApp / Mobile -->
                         <a href="https://wa.me/971502390775" target="_blank" class="text-white me-4 text-decoration-none small d-flex align-items-center">
                            <i class="fab fa-whatsapp me-2"></i>+971-50-239-0775
