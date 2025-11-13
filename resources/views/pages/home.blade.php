@@ -1,6 +1,12 @@
 @extends('layouts.homelayout')
 
-@section('title', 'Home - WB-DIGITECH')
+
+@section('title', 'Best Digital Marketing Agency in Dubai UAE | Marketing Company')
+
+@section('meta')
+    <meta name="description" content="A leading digital marketing agency in Dubai offering SEO, web design, web development, PPC and GMB SEO services. Grow your brand visibility online today. Book us!">
+    <meta name="keywords" content="digital marketing agency, digital marketing company, SEO Dubai, PPC Dubai, web design Dubai, GMB SEO Dubai, marketing agency UAE, WB-DigiTech">
+@endsection
 
 @section('content')
 <link rel="stylesheet" href="{{ asset('css/home.css') }}">

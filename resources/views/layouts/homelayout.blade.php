@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
 
+    {{-- Dynamic meta tags --}}
+    @yield('meta')
+
+
     <!-- External Libraries -->
         <link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
         crossorigin=anonymous referrerpolicy="no-referrer">
         <link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin=anonymous referrerpolicy="no-referrer">
-        {{-- <link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> --}}
-        {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> --}}
         <link rel="stylesheet" href="{{ asset('vendor/core/plugins/language/css/language-public.css') }}">
         <link rel="stylesheet" href="{{ asset('vendor/core/core/base/libraries/ckeditor/content-styles.css') }}">
         <link rel="stylesheet" href="{{ asset('themes/agon/css/style.css') }}">
@@ -23,19 +25,18 @@
        <link rel="icon" type="image/png" href="{{ asset('css/new-assets/img/logo/logo.jpeg') }}">
 
         <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ asset('css/global.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/layout_main.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/new-assets/css/bootstrap.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/new-assets/css/animate.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/new-assets/css/swiper-bundle.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/new-assets/css/slick.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/new-assets/css/magnific-popup.css') }}">
-    {{-- <link rel="stylesheet" href="{{ asset('css/new-assets/css/font-awesome-pro.css') }}"> --}}
-    <link rel="stylesheet" href="{{ asset('css/new-assets/css/spacing.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/new-assets/css/custom-animation.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/new-assets/css/main.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/new-assets/css/style.integration.css') }}">
-    
+      <link rel="stylesheet" href="{{ asset('css/global.css') }}">
+      <link rel="stylesheet" href="{{ asset('css/layout_main.css') }}">
+      <link rel="stylesheet" href="{{ asset('css/new-assets/css/bootstrap.css') }}">
+      <link rel="stylesheet" href="{{ asset('css/new-assets/css/animate.css') }}">
+      <link rel="stylesheet" href="{{ asset('css/new-assets/css/swiper-bundle.css') }}">
+      <link rel="stylesheet" href="{{ asset('css/new-assets/css/slick.css') }}">
+      <link rel="stylesheet" href="{{ asset('css/new-assets/css/magnific-popup.css') }}">
+      <link rel="stylesheet" href="{{ asset('css/new-assets/css/spacing.css') }}">
+      <link rel="stylesheet" href="{{ asset('css/new-assets/css/custom-animation.css') }}">
+      <link rel="stylesheet" href="{{ asset('css/new-assets/css/main.css') }}">
+      <link rel="stylesheet" href="{{ asset('css/new-assets/css/style.integration.css') }}">
+      
 
 </head>
 
