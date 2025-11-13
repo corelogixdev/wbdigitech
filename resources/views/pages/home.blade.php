@@ -235,19 +235,94 @@
     </div>
 </section>
 
-{{-- Headline --}}
-                            <div class="container-fluid we-promise-slide mb-20 mt-10 bg-dark">
-                                <div class="row align-items-center pt-20 pb-20">
-                                    <div class="col-xl-12">
-                                        <div class="marquee">
-                                            <div class="marquee-content"><span class="textline-1">We Promise <i class="fa fa-arrow-down-right"></i></span><span class="textline-2 d-flex align-self-center">We Deliver <i class="fa fa-arrow-down-right"></i></span><span class="textline-1">We Promise <i class="fa fa-arrow-down-right"></i></span>
-                                                <span
-                                                    class="textline-2 d-flex align-self-center">We Deliver <i class="fa fa-arrow-down-right"></i></span><span class="textline-1">We Promise <i class="fa fa-arrow-down-right"></i></span><span class="textline-2 d-flex align-self-center">We Deliver <i class="fa fa-arrow-down-right"></i></span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+{{-- Headline Section --}}
+<section class="we-promise-banner">
+    <div class="scrolling-text">
+        <div class="scrolling-content">
+            <span class="outline">WE PROMISE <svg xmlns="http://www.w3.org/2000/svg" class="arrow" viewBox="0 0 24 24"><path d="M7 7h10v10" stroke="#FF6600" stroke-width="2" fill="none"/><path d="M7 17 17 7" stroke="#FF6600" stroke-width="2" fill="none"/></svg></span>
+            <span class="filled">WE DELIVER <svg xmlns="http://www.w3.org/2000/svg" class="arrow" viewBox="0 0 24 24"><path d="M7 7h10v10" stroke="#FF6600" stroke-width="2" fill="none"/><path d="M7 17 17 7" stroke="#FF6600" stroke-width="2" fill="none"/></svg></span>
+            <span class="outline">WE PROMISE <svg xmlns="http://www.w3.org/2000/svg" class="arrow" viewBox="0 0 24 24"><path d="M7 7h10v10" stroke="#FF6600" stroke-width="2" fill="none"/><path d="M7 17 17 7" stroke="#FF6600" stroke-width="2" fill="none"/></svg></span>
+            <span class="filled">WE DELIVER <svg xmlns="http://www.w3.org/2000/svg" class="arrow" viewBox="0 0 24 24"><path d="M7 7h10v10" stroke="#FF6600" stroke-width="2" fill="none"/><path d="M7 17 17 7" stroke="#FF6600" stroke-width="2" fill="none"/></svg></span>
+            <span class="outline">WE PROMISE <svg xmlns="http://www.w3.org/2000/svg" class="arrow" viewBox="0 0 24 24"><path d="M7 7h10v10" stroke="#FF6600" stroke-width="2" fill="none"/><path d="M7 17 17 7" stroke="#FF6600" stroke-width="2" fill="none"/></svg></span>
+            <span class="filled">WE DELIVER <svg xmlns="http://www.w3.org/2000/svg" class="arrow" viewBox="0 0 24 24"><path d="M7 7h10v10" stroke="#FF6600" stroke-width="2" fill="none"/><path d="M7 17 17 7" stroke="#FF6600" stroke-width="2" fill="none"/></svg></span>
+        </div>
+    </div>
 
+    <style>
+        .we-promise-banner {
+            background: linear-gradient(90deg, #001345, #011a64);
+            overflow: hidden;
+            white-space: nowrap;
+            padding: 12px 0;
+        }
+
+        .scrolling-text {
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .scrolling-content {
+            display: inline-flex;
+            align-items: center;
+            animation: scroll-left 22s linear infinite;
+        }
+
+        @keyframes scroll-left {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .scrolling-content span {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            font-size: 4.5rem;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            margin-right: 60px;
+        }
+
+        .outline {
+            color: transparent;
+            -webkit-text-stroke: 1.5px #ffffff;
+        }
+
+        .filled {
+            color: #ffffff;
+        }
+
+        .arrow {
+            width: 80px;
+            height: 80px;
+            margin-left: 12px;
+        }
+
+        @media (max-width: 992px) {
+            .scrolling-content span {
+                font-size: 3rem;
+                margin-right: 40px;
+            }
+            .arrow {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .scrolling-content span {
+                font-size: 2rem;
+                margin-right: 30px;
+            }
+            .arrow {
+                width: 22px;
+                height: 22px;
+            }
+        }
+    </style>
+</section>
+
+<br>
  {{-- Industries We Serve --}}
 <div class="tp-project-area fix">
     <div class="tp-project-gallery-wrapper">
