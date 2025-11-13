@@ -50,7 +50,7 @@
                                         </div>
                                     </div>
                                     <div class="tp-blog-content">
-                                        <span><a href="#">READ MORE</a></span>
+                                        <span><a href="{{ route('portfolio.public.show', $portfolio->id) }}">READ MORE</a></span>
                                         <h4 class="tp-blog-title-sm">
                                             <a class="text-heading-4" href="{{ route('portfolio.public.show', $portfolio->id) }}">
                                                 {{ $portfolio->title }}
