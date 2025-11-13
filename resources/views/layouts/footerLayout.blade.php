@@ -112,7 +112,7 @@
     <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" 
          alt="WhatsApp" class="whatsapp-icon">
     <div class="consultant-text">
-      <h3>Talk <span>strategy</span> with an expert</h3>
+      <h3>Talk with an <span>expert</span></h3>
       <p>Get expert advice on the right strategy for your business!</p>
     </div>
     <a href="https://wa.me/971502390775" target="_blank" class="consultant-btn">
@@ -132,7 +132,7 @@
   background: #fff;
   border-top: 2px solid #eee;
   padding: 15px 30px;
-  box-shadow: 0 -2px 10px rgba(59, 86, 208, 0.938);
+  box-shadow: 0 -2px 10px rgba(16, 40, 145, 0.938);
   transition: bottom 0.5s ease;
   z-index: 9999;
 }
@@ -160,7 +160,7 @@
 }
 
 .consultant-text h3 span {
-  color: rgb(0, 106, 255);
+  color:#1166a3 ;
 }
 
 .consultant-text p {
@@ -171,7 +171,7 @@
 
 .consultant-btn {
   margin-left: auto;
-  background: rgb(0, 106, 255);
+  background: linear-gradient(90deg, #1166a3 0%, #31a8e8 100%);
   color: #fff;
   font-weight: bold;
   text-decoration: none;
@@ -181,7 +181,7 @@
 }
 
 .consultant-btn:hover {
-  background: rgb(153, 171, 197);
+  background: rgb(53, 114, 200);
 }
 
 #consultant-close {
