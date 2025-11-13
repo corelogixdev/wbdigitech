@@ -32,10 +32,10 @@
                 <!-- Hero Content -->
                 <div class="tp-hero-content text-center">
                     <p class="delay-load">
-                        WB-DigiTech is a leading digital marketing agency in Dubai, UAE. We help brands and businesses maximize their digital effectiveness.
+                        WB DIGITECH is rated one of the finest digital marketing agencies in the city of Dubai providing cool, affordable and result oriented solutions to firms in any line of business.<small style="color:#0A3D62; font-weight: bold;">Since 2024</small> we are a leading agency in Dubai and the entire UAE, we combine innovative concepts with sound strategies to make brands grow, reach people, and slay in this ruthless online market.
                     </p>
                     <p class="more-content-top d-none d-lg-block">
-                        Our expert team provides 360-degree digital marketing solutions including SEO, Google Ads, social media marketing, web design, content creation, and more. Contact us now to boost your sales and grow your business.
+                       Our in-house team of web developers, designers, search engine optimization experts, Google Ads geniuses, social media geniuses, content authors, and creative individuals has you covered in all 360-degrees of digital marketing. We do not merely place online advertisements, but we do content marketing, branding, market research, and customer engagement based on data.You may be a start-up with the need to make a splash or you may be an established brand seeking to expand, WB Digitech is your stable partner and the best marketing firm in Dubai, UAE- helping businesses achieve tangible results and continue to grow sustainably.
                     </p>
                     <div class="hero-btns mt-4">
                         <a href="{{ route('contact')}}" class="btn btn-gradient">Get a Free Quote</a>
@@ -75,8 +75,8 @@
             <!-- Content Column -->
             <div class="col-lg-6">
                 <span class="sub-title text-primary">WELCOME <i class="fa-solid fa-arrow-right"></i></span>
-                <h2 class="title display-5 fw-bold mt-2">Work with the Best Digital Marketing Solutions in Dubai</h2>
-                <p class="lead text-muted mt-3">As a <a href="#">top digital marketing agency Dubai</a>, we blend creativity, strategy and technology to craft digital experiences that convert visitors into customers.</p>
+                <h2 class="title display-5 fw-bold mt-2">Work with the most effective digital marketing solutions in Dubai</h2>
+                <p class="lead text-muted mt-3">We understand at WB Digitech that digital success does not only lie in search advertising or technical SEO, but it is all about blending creativity, planning, and new thoughts. As one of the best advertising locations in Dubai, we go beyond the generic tricks to provide awesome social media and marketing services that actually work to connect the brands to their people.</p>
 
                 <ul class="list-unstyled mt-4 features-list">
                     <li class="d-flex mb-3">
@@ -136,8 +136,8 @@
                                     <div class="row">
                                         <div class="col-xxl-12 col-xl-12">
                                             <div class="tp-award-title-box text-center">
-                                                <h4 class="tp-section-title"><span>Our Bespoke Digital marketing Services in Dubai, UAE</span></h4>
-                                                <p> “As a top-notch digital marketing agency, we offer beautiful designs, cutting-edge technology, smart services, and more.” </p>
+                                                <h4 class="tp-section-title"><span>Our Custom-made Digital Marketing Services in Dubai, UAE</span></h4>
+                                                <p> “As one of the leading digital marketing agencies, we make the roll with innovative designs, innovative technology, solutions, smart tactics and others.” </p>
                                             </div>
                                         </div>
                                     </div>
