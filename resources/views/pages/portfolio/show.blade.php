@@ -190,21 +190,20 @@
 
 <!-- 🔹 Auto-switch services tabs -->
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        let tabs = document.querySelectorAll('#services-tab button');
-        let currentIndex = 0;
-        setInterval(() => {
-            if (tabs.length === 0) return;
-            tabs[currentIndex].classList.remove('active');
-            let currentPane = document.querySelector(tabs[currentIndex].dataset.bsTarget);
-            currentPane.classList.remove('show', 'active');
+document.addEventListener("DOMContentLoaded", function () {
+    let tabs = document.querySelectorAll('#services-tab button');
+    if (tabs.length === 0) return;
 
-            currentIndex = (currentIndex + 1) % tabs.length;
+    let currentIndex = 0;
 
-            tabs[currentIndex].classList.add('active');
-            let nextPane = document.querySelector(tabs[currentIndex].dataset.bsTarget);
-            nextPane.classList.add('show', 'active');
-        }, 5000); // auto change every 5s
-    });
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % tabs.length;
+
+        // Use Bootstrap’s API — prevents bugs when clicking manually
+        let tab = new bootstrap.Tab(tabs[currentIndex]);
+        tab.show();
+    }, 5000);
+});
 </script>
+
 @endsection
