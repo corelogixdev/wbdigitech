@@ -156,13 +156,6 @@
   });
 </script> --}}
 
-<script>
-  console.time("page-load");
-  window.addEventListener("load", () => {
-    console.timeEnd("page-load");
-  });
-</script>
-
 </body>
 
 
