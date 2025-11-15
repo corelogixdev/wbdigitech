@@ -348,7 +348,7 @@
                                                                         </div>
                                                                         <div class="col-xxl-2 col-xl-2">
                                                                             <div class="tp-megamenu-list tp-megamenu-list-2 ml-20">
-                                                                                <h4 class="tp-megamenu-title"><a href="{{route('services.seo')}}">SEO</a></h4>
+                                                                                <h4 class="tp-megamenu-title"><a href="{{route('services.seo')}}">SEO / ASO </a></h4>
                                                                                 <div class="tp-megamenu-list-wrap">
                                                                                     <ul class="">
                                                                                         <li><a href="{{ route('services.content_marketing') }}">Content Marketing</a></li>
