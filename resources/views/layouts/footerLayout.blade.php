@@ -37,7 +37,7 @@
             <div class="col-lg-3 col-md-6">
                 <h5 class="fw-bold mb-3 text-white">Useful Links</h5>
                 <ul class="list-unstyled footer-links">
-                    <li><a href="#" class="text-white text-decoration-none d-block mb-2">Blogs</a></li>
+                    <li><a href="{{ route('blogs.public') }}" class="text-white text-decoration-none d-block mb-2">Blogs</a></li>
                     <li><a href="{{ route('careers.public') }}" class="text-white text-decoration-none d-block mb-2">Careers</a></li>
                     <li><a href="{{ route('privacy') }}" class="text-white text-decoration-none d-block mb-2">Privacy Policy</a></li>
                     <li><a href="{{ route('cookie') }}" class="text-white text-decoration-none d-block mb-2">Terms and Conditions</a></li>
