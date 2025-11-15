@@ -98,9 +98,9 @@ Route::get('/content-marketing', function() {
     return view('pages.services.seo.content_marketing');
 })->name('services.content_marketing');
 
-Route::get('/reputation-management', function() {
-    return view('pages.services.seo.reputation_management');
-})->name('services.reputation_management');
+Route::get('/google-business-profile-seo', function() {
+    return view('pages.services.seo.google_business_profile_seo');
+})->name('services.google_business_profile_seo');
 
 Route::get('/seo-audit', function() {
     return view('pages.services.seo.seo_audit');

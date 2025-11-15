@@ -354,10 +354,17 @@
                                                                                 <h4 class="tp-megamenu-title"><a href="{{route('services.seo')}}">SEO / ASO</a></h4>
                                                                                 <div class="tp-megamenu-list-wrap">
                                                                                     <ul class="">
-                                                                                        <li><a href="{{ route('services.content_marketing') }}">Content Marketing</a></li>
-                                                                                        <li><a href="{{ route('services.reputation_management') }}">Reputation Management</a></li>
+                                                                                        <li><a href="#">Page Optimization</a></li>
+                                                                                        <li><a href="{{ route('services.google_business_profile_seo') }}">Google Business Profile SEO</a></li>
                                                                                         <li><a href="{{ route('services.seo-audit') }}">SEO Audit</a></li>
+                                                                                        <li><a href="#">Link Building</a></li>
                                                                                         <li><a href="{{ route('services.ecommerce_seo') }}">E-commerce SEO</a></li>
+                                                                                        <li><a href="#">Technical SEO</a></li>
+                                                                                        <li><a href="{{ route('services.content_marketing') }}">Content Marketing</a></li>
+                                                                                        <li><a href="#">Guest Posting</a></li>
+                                                                                        <li><a href="#">Local SEO</a></li>
+                                                                                        <li><a href="#">App Store Optimization (ASO)</a></li>
+                                                                                        <li><a href="#">Play Store SEO</a></li>
                                                                                     </ul>
                                                                                 </div>
                                                                             </div>

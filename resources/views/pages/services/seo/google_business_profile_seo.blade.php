@@ -14,7 +14,7 @@
     <!-- Hero Section -->
     <div class="tp-hero-title-wrap mb-35 text-center">
         <h2 class="tp-hero-title gradient-text">
-            Reputation Management
+            Google Business Profile SEO
         </h2>
     </div>
     <div class="tp-hero-content text-center">
@@ -37,7 +37,7 @@
                 <ul>
                     <li><a href="{{ route('services.seo') }}">SEO Services</a></li>
                     <li><a href="{{ route('services.content_marketing') }}">Content Marketing</a></li>
-                    <li class="current-menu-item"><a href="{{ route('services.reputation_management') }}">Reputation Management</a></li>
+                    <li class="current-menu-item"><a href="{{ route('services.google_business_profile_seo') }}">Reputation Management</a></li>
                     <li><a href="{{ route('services.seo-audit') }}">SEO Audit</a></li>
                     <li><a href="{{ route('services.ecommerce_seo') }}">E-commerce SEO</a></li>
                 </ul>
