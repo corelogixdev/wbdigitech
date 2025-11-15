@@ -40,6 +40,13 @@
                     <li><a href="{{ route('services.google_business_profile_seo') }}">Google Business Profile SEO</a></li>
                     <li><a href="{{ route('services.seo-audit') }}">SEO Audit</a></li>
                     <li><a href="{{ route('services.ecommerce_seo') }}">E-commerce SEO</a></li>
+                    <li><a href="{{ route('services.page_optimization') }}">Page Optimization</a></li>
+                    <li><a href="{{ route('services.link_building') }}">Link Building</a></li>
+                    <li><a href="{{ route('services.technical_seo') }}">Technical SEO</a></li>
+                    <li><a href="{{ route('services.guest_posting') }}">Guest Posting</a></li>
+                    <li><a href="{{ route('services.local_seo') }}">Local SEO</a></li>
+                    <li><a href="{{ route('services.app_store_optimization') }}">App Store Optimization</a></li>
+                    <li><a href="{{ route('services.play_store_seo') }}">Play Store SEO</a></li>
                 </ul>
 
                 <!-- Sidebar Images -->

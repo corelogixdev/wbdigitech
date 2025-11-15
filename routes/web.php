@@ -110,6 +110,39 @@ Route::get('/ecommerce-seo', function() {
     return view('pages.services.seo.ecommerce_seo');
 })->name('services.ecommerce_seo');
 
+// new 
+Route::get('/page-optimization', function() {
+    return view('pages.services.seo.page_optimization');
+})->name('services.page_optimization');
+
+Route::get('/google-business-profile-seo', function() {
+    return view('pages.services.seo.google_business_profile_seo');
+})->name('services.google_business_profile_seo');
+
+Route::get('/link-building', function() {
+    return view('pages.services.seo.link_building');
+})->name('services.link_building');
+
+Route::get('/technical-seo', function() {
+    return view('pages.services.seo.technical_seo');
+})->name('services.technical_seo');
+
+Route::get('/guest-posting', function() {
+    return view('pages.services.seo.guest_posting');
+})->name('services.guest_posting');
+
+Route::get('/local-seo', function() {
+    return view('pages.services.seo.local_seo');
+})->name('services.local_seo');
+
+Route::get('/app-store-optimization', function() {
+    return view('pages.services.seo.app_store_optimization');
+})->name('services.app_store_optimization');
+
+Route::get('/play-store-seo', function() {
+    return view('pages.services.seo.play_store_seo');
+})->name('services.play_store_seo');
+
 
 // Graphic Design Routes
 Route::get('/graphic-design', function() {

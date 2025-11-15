@@ -14,7 +14,7 @@
     <!-- Hero Section -->
     <div class="tp-hero-title-wrap mb-35 text-center">
         <h2 class="tp-hero-title gradient-text">
-            Content Marketing
+            Technical SEO
         </h2>
     </div>
     <div class="tp-hero-content text-center">
@@ -36,13 +36,13 @@
                 <h6>Our Services</h6>
                 <ul>
                     <li><a href="{{ route('services.seo') }}">SEO Services</a></li>
-                    <li class="current-menu-item"><a href="{{ route('services.content_marketing') }}">Content Marketing</a></li>
+                    <li><a href="{{ route('services.content_marketing') }}">Content Marketing</a></li>
                     <li><a href="{{ route('services.google_business_profile_seo') }}">Google Business Profile SEO</a></li>
                     <li><a href="{{ route('services.seo-audit') }}">SEO Audit</a></li>
                     <li><a href="{{ route('services.ecommerce_seo') }}">E-commerce SEO</a></li>
                     <li><a href="{{ route('services.page_optimization') }}">Page Optimization</a></li>
                     <li><a href="{{ route('services.link_building') }}">Link Building</a></li>
-                    <li><a href="{{ route('services.technical_seo') }}">Technical SEO</a></li>
+                    <li class="current-menu-item"><a href="{{ route('services.technical_seo') }}">Technical SEO</a></li>
                     <li><a href="{{ route('services.guest_posting') }}">Guest Posting</a></li>
                     <li><a href="{{ route('services.local_seo') }}">Local SEO</a></li>
                     <li><a href="{{ route('services.app_store_optimization') }}">App Store Optimization</a></li>
