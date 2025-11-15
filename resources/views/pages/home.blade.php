@@ -105,7 +105,7 @@
 
                 <div class="mt-4">
                     <a href="{{ route('contact') }}" class="btn btn-gradient btn-lg me-3">Get a Free Quote</a>
-                    <a href="/services" class="btn btn-outline-secondary btn-lg">See Our Services</a>
+                    <a href="{{ route('ai_marketing') }}" class="btn btn-outline-secondary btn-lg">See Our Services</a>
                 </div>
             </div>
         </div>
@@ -365,8 +365,8 @@
     @endforelse
 
     <div class="col-12 text-center pb-20">
-        <a href="/customer" class="btn btn-warning  mr-10">View More</a>
-        <a class="btn btn-warning  open-popup">Get A Free Quote</a>
+        <a href="{{ route('customers.public') }}" class="btn btn-warning  mr-10">View More</a>
+        <a href="{{ route('contact') }}" class="btn btn-warning  open-popup">Get A Free Quote</a>
     </div>
 </div>
 

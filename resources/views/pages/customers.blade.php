@@ -53,7 +53,7 @@
                                 <span>DIGITAL MARKETING AGENCY</span><span>WB-DigiTech</span>
                             </div>
                             <div class="sv-big-text-box">
-                                <h4 class="sv-big-text tp-char-animation"><a href="/contact-us" style="color:#2c7db8">Get in Touch</a></h4>
+                                <h4 class="sv-big-text tp-char-animation"><a href="{{ route('contact') }}" style="color:#2c7db8">Get in Touch</a></h4>
                             </div>
                         </div>
                     </div>
