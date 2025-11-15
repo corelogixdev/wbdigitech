@@ -27,7 +27,7 @@
                     <li><a href="{{ route('services.mobile') }}" class="text-white text-decoration-none d-block mb-2">Mobile Application Development</a></li>
                     <li><a href="{{ route('services.seo') }}" class="text-white text-decoration-none d-block mb-2">Search Engine Optimization</a></li>
                     <li><a href="{{ route('services.smm') }}" class="text-white text-decoration-none d-block mb-2">Social Media Marketing</a></li>
-                    <li><a href="#" class="text-white text-decoration-none d-block mb-2">App Store Optimization (ASO)</a></li>
+                    <li><a href="{{ route('services.app_store_optimization') }}" class="text-white text-decoration-none d-block mb-2">App Store Optimization (ASO)</a></li>
                     <li><a href="{{ route('services.graphic') }}" class="text-white text-decoration-none d-block mb-2">Graphic Designing</a></li>
                     <li><a href="#" class="text-white text-decoration-none d-block mb-2">Videography</a></li>
                 </ul>
