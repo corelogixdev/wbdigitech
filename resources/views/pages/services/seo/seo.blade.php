@@ -37,7 +37,7 @@
                 <ul>
                     <li class="current-menu-item"><a href="{{ route('services.seo') }}">SEO Services</a></li>
                     <li><a href="{{ route('services.content_marketing') }}">Content Marketing</a></li>
-                    <li><a href="{{ route('services.google_business_profile_seo') }}">Reputation Management</a></li>
+                    <li><a href="{{ route('services.google_business_profile_seo') }}">Google Business Profile SEO</a></li>
                     <li><a href="{{ route('services.seo-audit') }}">SEO Audit</a></li>
                     <li><a href="{{ route('services.ecommerce_seo') }}">E-commerce SEO</a></li>
                 </ul>
