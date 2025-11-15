@@ -25,7 +25,7 @@
                 <!-- Hero Title -->
                 <div class="tp-hero-title-wrap mb-35 text-center">
                 <h2 class="tp-hero-title gradient-text"> 
-                Leading Digital Marketing<br> Agency in Dubai,<br>UAE
+                Leading Digital Marketing<br> Agency in Dubai,UAE
                 </h2>
                 </div>
 
@@ -47,7 +47,7 @@
 </div>
 
 <!-- Agency Section -->
-<section class="agency-section py-5">
+<section class="agency-section">
     <div class="container">
         <div class="row align-items-center g-5">
             <!-- Visual / Image Column -->
@@ -61,9 +61,9 @@
                     <div class="floating-card d-none d-md-block">
                         <div class="card p-3 rounded shadow-sm bg-white">
                             <div class="d-flex align-items-center">
-                                <div class="me-3 text-primary fs-3"><i class="fa-solid fa-briefcase"></i></div>
+                                <div class="me-3 fs-3" style="color:#0A3D62"><i class="fa-solid fa-briefcase"></i></div>
                                 <div>
-                                    <h6 class="mb-0">500+ Projects</h6>
+                                    <h6 class="mb-0">50+ Projects</h6>
                                     <small class="text-muted">Delivered with excellence</small>
                                 </div>
                             </div>
@@ -75,12 +75,12 @@
             <!-- Content Column -->
             <div class="col-lg-6">
                 <span class="sub-title text-primary">WELCOME <i class="fa-solid fa-arrow-right"></i></span>
-                <h2 class="title display-5 fw-bold mt-2">Work with The Most Effective Digital Marketing Solutions In Dubai</h2>
+                <h2 class="title display-7 fw-bold mt-2">Work with The Most Effective Digital Marketing Solutions In Dubai</h2>
                 <p class="lead text-muted mt-3">We understand at WB Digitech that digital success does not only lie in search advertising or technical SEO, but it is all about blending creativity, planning, and new thoughts. As one of the best advertising locations in Dubai, we go beyond the generic tricks to provide awesome social media and marketing services that actually work to connect the brands to their people.</p>
 
                 <ul class="list-unstyled mt-4 features-list">
                     <li class="d-flex mb-3">
-                        <div class="icon me-3 text-primary"><i class="fa-solid fa-check-circle fa-lg"></i></div>
+                        <div class="icon me-3 " style="color:#0A3D62"><i class="fa-solid fa-check-circle fa-lg"></i></div>
                         <div>
                             <strong>High-converting Websites</strong>
                             <div class="small text-muted">Responsive designs focused on conversion and speed.</div>
@@ -88,14 +88,14 @@
                     </li>
                     <li class="d-flex mb-3">
 
-                        <div class="icon me-3 text-primary"><i class="fa-solid fa-bullhorn fa-lg"></i></div>
+                        <div class="icon me-3" style="color:#0A3D62"><i class="fa-solid fa-bullhorn fa-lg"></i></div>
                         <div>
                             <strong>Integrated Marketing</strong>
                             <div class="small text-muted">SEO, Ads, Social & content — a full-funnel approach.</div>
                         </div>
                     </li>
                     <li class="d-flex">
-                        <div class="icon me-3 text-primary"><i class="fa-solid fa-headset fa-lg"></i></div>
+                        <div class="icon me-3 "style="color:#0A3D62"><i class="fa-solid fa-headset fa-lg"></i></div>
                         <div>
                             <strong>Dedicated Support</strong>
                             <div class="small text-muted">Local team, fast responses, ongoing optimisation.</div>
@@ -198,7 +198,7 @@
                             </div>
 
 {{-- Customers / Clients --}}
-<section class="pt-100 pb-100 logo-slider-wrapper bg-light">
+<section class="pt-10 pb-100 logo-slider-wrapper bg-light">
     <div class="container">
         <!-- Section Title -->
         <div class="agency__content section__content text-center mb-5">
@@ -254,7 +254,7 @@
 
     <style>
         .we-promise-banner {
-            background: linear-gradient(90deg, #001345, #011a64);
+            background: linear-gradient(90deg, #1166a3 0%, #31a8e8 100%);
             overflow: hidden;
             white-space: nowrap;
             padding: 12px 0;
@@ -326,15 +326,18 @@
     </style>
 </section>
 
-<br>
+
  {{-- Industries We Serve --}}
-<div class="tp-project-area fix">
+ <br>
+<div class="tp-project-area fix pt-10">
     <div class="tp-project-gallery-wrapper">
         <div class="container container-1630">
             <div class="tp-project-gallery-top pb-20 text-center">
                 <div class="row justify-content-center">
                     <div class="col-xl-6 col-lg-8 col-md-10">
+                        <br>
                         <h2 class="my-30 tp-section-title" style="color:#0A3D62">Industries We Serve</h2>
+                        <br>
                     </div>
                 </div>
 
@@ -640,7 +643,7 @@
 
 
 
-<section class="tp-about-area pt-80 pb-80 bg-light">
+<section class="tp-about-area pt-80 pb-10 bg-light">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xl-10 col-lg-11 text-center">
@@ -658,16 +661,12 @@
                     <p class="text-muted mb-4">
                         Choose WB Degitech-you go-to marketing agency in Dubai-to engage effectively with potential customers, generate high-quality leads, and convert opportunities into measurable profits. When it comes to excellence, WB Digitech stands out among leading digital marketing agencies in the UAE.
                     </p>
-                    <a href="/contact-us" class="btn btn-gradient-primary">Get a Free Quote</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
+</div>
+</main>
 
-                    </div>
-                    <p> </p>
-                </div>
-        </div>
-        </main>
 @endsection

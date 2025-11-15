@@ -181,7 +181,8 @@
 }
 
 .consultant-btn:hover {
-  background: rgb(53, 114, 200);
+  background: rgb(18, 67, 135);
+  color: white;
 }
 
 #consultant-close {

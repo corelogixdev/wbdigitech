@@ -5079,7 +5079,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
     font-size: 100px;
     line-height: 0.9;
     color: var(--tp-common-black);
-    margin-bottom: 0;
+    margin-bottom: 50;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {

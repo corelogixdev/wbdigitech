@@ -406,7 +406,7 @@
 /* Hero Section tweaks */
 .tp-hero-area {
     padding-top: 120px;
-    padding-bottom: 120px;
+    /* padding-bottom: 20px; */
     background: #f9f9f9;
 }
 .tp-hero-title-wrap {
