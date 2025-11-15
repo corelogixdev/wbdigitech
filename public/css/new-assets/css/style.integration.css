@@ -388,7 +388,7 @@ b {
         margin-top: 0px !important;
     }
     .client-section {
-        background-color: #201734;
+        background: linear-gradient(90deg, #1166a3 0%, #31a8e8 100%);
         padding: 10px 0 !important;
     }
 }
@@ -427,12 +427,12 @@ b {
 }
 
 .client-section {
-    background-color: #201734;
+     background: linear-gradient(90deg, #1166a3 0%, #31a8e8 100%);
     padding: 75px 0
 }
 
 .client-section h1 {
-    color: #201734;
+    color: #1166a3;
     font-size: 15px;
 }
 

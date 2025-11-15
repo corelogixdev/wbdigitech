@@ -16,7 +16,7 @@
                                 <div class="col-xxl-12">
                                     <div class="tp-hero-title-wrap mb-35 p-relative">
                                         <div class="tp-hero-title-box text-center">
-                                            <h1 class="tp-hero-title pt-50">Clients Who Hire Us</h1>
+                                            <h1 class="tp-hero-title pt-50" style="color:#0A3D62">Clients Who Hire Us</h1>
                                         </div>
                                     </div>
                                     <div class="tp-hero-content text-center mb-100">
@@ -53,7 +53,7 @@
                                 <span>DIGITAL MARKETING AGENCY</span><span>WB-DigiTech</span>
                             </div>
                             <div class="sv-big-text-box">
-                                <h4 class="sv-big-text tp-char-animation"><a href="/contact-us">Get in Touch</a></h4>
+                                <h4 class="sv-big-text tp-char-animation"><a href="/contact-us" style="color:#2c7db8">Get in Touch</a></h4>
                             </div>
                         </div>
                     </div>
