@@ -312,11 +312,12 @@
                                             <div class="tp-submenu submenu tp-mega-menu">
                                                 <div class="tp-menu-fullwidth">
                                                     <div class="tp-megamenu-portfolio p-relative">
-                                                        <div class="tp-megamenu-portfolio-banner d-none "><img src="{{ asset('css/new-assets/img/menu/portfolio-menu/portfolio.png')}}" alt="Wbdigitech Portfolio"></div>
-                                                        <div class="row gx-50">
+                                                        <div class="tp-megamenu-portfolio-banner d-none"><img src="{{ asset('css/new-assets/img/menu/portfolio-menu/portfolio.png')}}" alt="Wbdigitech Portfolio"></div>
+                                                        <div class="row gx-30">
                                                             <div class="col-xxl-12 col-xl-12">
                                                                 <div class="tp-megamenu-list-box">
-                                                                    <div class="row gx-50">
+                                                                    <div class="row gx-30">
+                                                                        <!-- Web Design & Development -->
                                                                         <div class="col-xxl-2 col-xl-2">
                                                                             <div class="tp-megamenu-list">
                                                                                 <h4 class="tp-megamenu-title"><a href="{{ route('services.web')}}">WEB DESIGN & DEVELOPMENT</a></h4>
@@ -334,6 +335,7 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
+                                                                        <!-- Google Ads Management -->
                                                                         <div class="col-xxl-2 col-xl-2">
                                                                             <div class="tp-megamenu-list">
                                                                                 <h4 class="tp-megamenu-title"><a href="{{ route('services.google_ads_management') }}">GOOGLE ADS MANAGEMENT</a></h4>
@@ -346,9 +348,10 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
+                                                                        <!-- SEO / ASO -->
                                                                         <div class="col-xxl-2 col-xl-2">
-                                                                            <div class="tp-megamenu-list tp-megamenu-list-2 ml-20">
-                                                                                <h4 class="tp-megamenu-title"><a href="{{route('services.seo')}}">SEO / ASO </a></h4>
+                                                                            <div class="tp-megamenu-list tp-megamenu-list-2">
+                                                                                <h4 class="tp-megamenu-title"><a href="{{route('services.seo')}}">SEO / ASO</a></h4>
                                                                                 <div class="tp-megamenu-list-wrap">
                                                                                     <ul class="">
                                                                                         <li><a href="{{ route('services.content_marketing') }}">Content Marketing</a></li>
@@ -359,9 +362,10 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
+                                                                        <!-- Mobile Application Development -->
                                                                         <div class="col-xxl-2 col-xl-2">
-                                                                            <div class="tp-megamenu-list tp-megamenu-list-2 ml-20">
-                                                                                <h4 class="tp-megamenu-title"><a href="{{route('services.mobile')}}">Mobile Application Development</a></h4>
+                                                                            <div class="tp-megamenu-list tp-megamenu-list-2">
+                                                                                <h4 class="tp-megamenu-title"><a href="{{route('services.mobile')}}">MOBILE APP DEVELOPMENT</a></h4>
                                                                                 <div class="tp-megamenu-list-wrap">
                                                                                     <ul>                                  
                                                                                         <li><a href="{{ route('services.android_app') }}">Android App Development</a></li>
@@ -376,9 +380,10 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
+                                                                        <!-- Social Media Marketing -->
                                                                         <div class="col-xxl-2 col-xl-2">
-                                                                            <div class="tp-megamenu-list tp-megamenu-list-2 ml-20">
-                                                                                <h4 class="tp-megamenu-title page_speed_424355281"><a href="{{route('services.smm')}}">SOCIAL MEDIA MARKETING</a></h4>
+                                                                            <div class="tp-megamenu-list tp-megamenu-list-2">
+                                                                                <h4 class="tp-megamenu-title"><a href="{{route('services.smm')}}">SOCIAL MEDIA MARKETING</a></h4>
                                                                                 <div class="tp-megamenu-list-wrap">
                                                                                     <ul>
                                                                                         <li><a href="{{ route('services.facebook_advertising') }}">Facebook Advertising</a></li>
@@ -391,13 +396,13 @@
                                                                                         <li><a href="{{ route('services.snap_chat_ads') }}">Snapchat Ads</a></li>
                                                                                         <li><a href="{{ route('services.whatsapp_marketing') }}">WhatsApp Marketing</a></li>
                                                                                     </ul>
-
                                                                                 </div>
                                                                             </div>
                                                                         </div>
+                                                                        <!-- Graphic Designing -->
                                                                         <div class="col-xxl-2 col-xl-2">
-                                                                            <div class="tp-megamenu-list tp-megamenu-list-2 ml-20">
-                                                                                <h4 class="tp-megamenu-title page_speed_424355281"><a href="{{route('services.graphic')}}">GRAPHIC DESINGING</a></h4>
+                                                                            <div class="tp-megamenu-list tp-megamenu-list-2">
+                                                                                <h4 class="tp-megamenu-title"><a href="{{route('services.graphic')}}">GRAPHIC DESIGNING</a></h4>
                                                                                 <div class="tp-megamenu-list-wrap">
                                                                                     <ul>
                                                                                         <li><a href="{{ route('services.logo_design') }}">Logo Design</a></li>

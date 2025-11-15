@@ -8783,8 +8783,12 @@ only screen and (min-width: 768px) and (max-width: 991px),
     left: 0;
     right: 0;
     padding: 0;
-    width: 1170px;
+    width: 1200px;
     margin: 0 auto;
+    max-height: 500px;
+    overflow-y: auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-radius: 0 0 8px 8px;
 }
 
 .header-main-menu>nav>ul>li>.tp-mega-menu .tp-homemenu-wrapper {
@@ -8802,14 +8806,92 @@ only screen and (min-width: 768px) and (max-width: 991px),
 }
 
 .header-main-menu>nav>ul>li>.tp-mega-menu .tp-megamenu-portfolio {
-    padding: 20px 0px 25px 70px;
+    padding: 25px 20px;
+}
+
+.tp-megamenu-list-box .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.tp-megamenu-list-box .col-xxl-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+    padding: 0 15px;
+}
+
+.tp-megamenu-list {
+    margin-bottom: 20px;
+}
+
+.tp-megamenu-title {
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.tp-megamenu-title a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.tp-megamenu-list-wrap ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tp-megamenu-list-wrap ul li {
+    margin-bottom: 8px;
+}
+
+.tp-megamenu-list-wrap ul li a {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.tp-megamenu-list-wrap ul li a:hover {
+    color: #007bff;
+}
+
+/* Remove ml-20 classes and adjust spacing */
+.tp-megamenu-list-2 {
+    margin-left: 0 !important;
+}
+
+.gx-30 {
+    --bs-gutter-x: 30px;
 }
 
 @media only screen and (min-width: 1600px) and (max-width: 1700px),
 only screen and (min-width: 1400px) and (max-width: 1599px),
 only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .header-main-menu>nav>ul>li>.tp-mega-menu {
+        width: 1140px;
+    }
+    
     .header-main-menu>nav>ul>li>.tp-mega-menu .tp-megamenu-portfolio {
-        padding: 20px 0px 25px 20px;
+        padding: 20px 15px;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 1199px) {
+    .header-main-menu>nav>ul>li>.tp-mega-menu {
+        width: 95%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .tp-megamenu-list-box .col-xxl-2 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+        margin-bottom: 20px;
     }
 }
 
