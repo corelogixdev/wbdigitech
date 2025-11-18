@@ -103,10 +103,10 @@
                     </li>
                 </ul>
 
-                <div class="mt-4">
-                    <a href="{{ route('contact') }}" class="btn btn-gradient btn-lg me-3">Get a Free Quote</a>
-                    <a href="{{ route('ai_marketing') }}" class="btn btn-outline-secondary btn-lg">See Our Services</a>
-                </div>
+              <div class="mt-4 d-flex flex-column flex-sm-row gap-3">
+                <a href="{{ route('contact') }}" class="btn btn-gradient btn-lg">Get a Free Quote</a>
+                <a href="{{ route('ai_marketing') }}" class="btn btn-outline-secondary btn-lg">See Our Services</a>
+            </div>
             </div>
         </div>
     </div>
