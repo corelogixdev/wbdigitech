@@ -26,6 +26,16 @@
         </div>
     </div>
 
+    <!-- Hero Image Section -->
+    <div class="hero-image-section">
+        <div class="hero-image-container">
+            <img src="{{ asset('css/new-assets/new_images/WEBimagesWBgraphicdesign-01.webp') }}" alt="graphic-design" class="hero-image">
+            {{-- <div class="hero-overlay"></div> --}}
+        </div>
+    </div>
+<br>
+<br>
+
     <!-- Content & Sidebar -->
     <div class="container-flex">
 
@@ -42,9 +52,9 @@
 
                 <!-- Sidebar Images -->
                 <div class="sidebar-images">
-                    <img src="https://wbdigitech.ae/wp-content/uploads/2022/09/graphic-logo.png" alt="Logo Design">
+                    {{-- <img src="https://wbdigitech.ae/wp-content/uploads/2022/09/graphic-logo.png" alt="Logo Design">
                     <img src="https://wbdigitech.ae/wp-content/uploads/2022/09/graphic-print.png" alt="Print Design">
-                    <img src="https://wbdigitech.ae/wp-content/uploads/2022/09/graphic-web.png" alt="Web Design">
+                    <img src="https://wbdigitech.ae/wp-content/uploads/2022/09/graphic-web.png" alt="Web Design"> --}}
                 </div>
             </div>
         </div>
@@ -71,7 +81,7 @@
                 <li>Characters and Mascots Design</li>
             </ul>
 
-            <img class="service-img" src="https://wbdigitech.ae/wp-content/uploads/2022/09/graphic-banner.png" alt="Graphic Design Service Banner">
+            {{-- <img class="service-img" src="https://wbdigitech.ae/wp-content/uploads/2022/09/graphic-banner.png" alt="Graphic Design Service Banner"> --}}
 
         </div>
     </div>

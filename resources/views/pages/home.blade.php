@@ -54,7 +54,7 @@
             <div class="col-lg-6">  
                 <div class="position-relative">
                     <div class="visual-card shadow-lg rounded overflow-hidden">
-                        <img src="{{ asset('css/new-assets/new_images/wbwebimage.png') }}" alt="wbdigitech-services" class="img-fluid w-100">
+                        <img src="{{ asset('css/new-assets/new_images/wbwebimage.webp') }}" alt="wbdigitech-services" class="img-fluid w-100">
                         <div class="trusted-badge">Trusted Agency</div>
                     </div>
 

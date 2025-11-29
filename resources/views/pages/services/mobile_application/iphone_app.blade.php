@@ -28,6 +28,17 @@
         </div>
     </div>
 
+
+            <!-- Hero Image Section -->
+    <div class="hero-image-section">
+        <div class="hero-image-container">
+            <img src="{{ asset('css/new-assets/new_images/WEBimagesWBmobileapp-01.webp') }}" alt="mobile-app" class="hero-image">
+            {{-- <div class="hero-overlay"></div> --}}
+        </div>
+    </div>
+<br>
+<br>
+
     <!-- Content & Sidebar -->
     <div class="container-flex">
         <!-- Sidebar -->
@@ -49,9 +60,9 @@
 
                 <!-- Sidebar Images -->
                 <div class="sidebar-images">
-                    <img src="https://wbdigitech.ae/wp-content/uploads/2022/09/mobile-app-deveopment-1024x946.png" alt="Mobile App">
+                    {{-- <img src="https://wbdigitech.ae/wp-content/uploads/2022/09/mobile-app-deveopment-1024x946.png" alt="Mobile App">
                     <img src="https://wbdigitech.ae/wp-content/uploads/2022/09/mobile-application-1024x974.png" alt="Mobile Application">
-                    <img src="https://wbdigitech.ae/wp-content/uploads/2022/09/mobile-application-1024x974.png" alt="Mobile Development Team">
+                    <img src="https://wbdigitech.ae/wp-content/uploads/2022/09/mobile-application-1024x974.png" alt="Mobile Development Team"> --}}
                 </div>
             </div>
         </div>
@@ -106,7 +117,7 @@
             <h2>Technologies We Use</h2>
             <p>For mobile development, we create native iOS apps with Swift and native Android apps using Kotlin. For cross-platform mobile solutions, we leverage React Native and other emerging frameworks.</p>
 
-            <img class="service-img" src="https://wbdigitech.ae/wp-content/uploads/2022/09/mobile-application-1024x974.png" alt="Mobile Application">
+            {{-- <img class="service-img" src="https://wbdigitech.ae/wp-content/uploads/2022/09/mobile-application-1024x974.png" alt="Mobile Application"> --}}
         </div>
     </div>
 </div>

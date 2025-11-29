@@ -32,6 +32,15 @@
                                         </div>
                                     </div>
 
+                                    <!-- Hero Image Section -->
+    <div class="hero-image-section">
+        <div class="hero-image-container">
+            <img src="{{ asset('css/new-assets/new_images/wbwebbanner01.webp') }}" alt="website-development" class="hero-image">
+            {{-- <div class="hero-overlay"></div> --}}
+        </div>
+    </div>
+<br>
+<br>
 
     <!-- Content & Sidebar -->
     <div class="container-flex">
@@ -53,9 +62,9 @@
 
                 <!-- Sidebar Images -->
                 <div class="sidebar-images">
-                    <img src="https://wbdigitech.ae/wp-content/uploads/2022/09/responsive-web-design.png" alt="Responsive Web Design">
+                    {{-- <img src="https://wbdigitech.ae/wp-content/uploads/2022/09/responsive-web-design.png" alt="Responsive Web Design">
                     <img src="https://wbdigitech.ae/wp-content/uploads/2022/09/cms-web-development.png" alt="CMS Web Development">
-                    <img src="https://wbdigitech.ae/wp-content/uploads/2022/09/ecommerce-web-development.png" alt="E-commerce Web Development">
+                    <img src="https://wbdigitech.ae/wp-content/uploads/2022/09/ecommerce-web-development.png" alt="E-commerce Web Development"> --}}
                 </div>
             </div>
         </div>
@@ -100,7 +109,7 @@
                 </ol>
             </div>
 
-            <img class="service-img" src="https://wbdigitech.ae/wp-content/uploads/2022/09/responsive-web-design.png" alt="Web Development Image">
+            {{-- <img class="service-img" src="https://wbdigitech.ae/wp-content/uploads/2022/09/responsive-web-design.png" alt="Web Development Image"> --}}
         </div>
     </div>
 </div>

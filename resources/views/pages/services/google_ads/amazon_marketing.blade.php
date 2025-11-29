@@ -31,6 +31,15 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- Hero Image Section -->
+    <div class="hero-image-section">
+        <div class="hero-image-container">
+            <img src="{{ asset('css/new-assets/new_images/WEBimagesWBgooglead-01.webp') }}" alt="Google Ads Management" class="hero-image">
+            {{-- <div class="hero-overlay"></div> --}}
+        </div>
+    </div>
+<br>
+<br>
 
 
     <!-- Content & Sidebar -->

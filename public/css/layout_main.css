@@ -137,35 +137,36 @@
         }
 
         .services .web-development {
-            background-image: url('/css/new-assets/demo/storage/service-pages/case-img1.png');
+            background-image: url('/css/new-assets/new_images/WEBimagesWBwebsite-01.webp');
         }
 
         .services .lead-generation {
-            background-image: url('/css/new-assets/demo/storage/service-pages/case-img6.png');
+            background-image: url('/css/new-assets/new_images/WEBimagesWBleadgeneration-01.webp');
         }
 
         .services .seo {
-            background-image: url('/css/new-assets/demo/storage/service-pages/case-img2.png');
+            background-image: url('/css/new-assets/new_images/WEBimagesWBSEO-01.webp');
         }
 
+        /* its basically lead generation */
         .services .google-ads {
-            background-image: url('/css/new-assets/demo/storage/service-pages/case-img3.png');
+            background-image: url('/css/new-assets/new_images/WEBimagesWBleadgeneration-01.webp');
         }
 
         .services .call-center {
-            background-image: url('/css/new-assets/demo/storage/service-pages/call-centre-services.jpg');
+            background-image: url('/css/new-assets/new_images/WEBimagesWBcallcenter-01.webp');
         }
 
         .services .social-meida-marketing {
-            background-image: url('/css/new-assets/demo/storage/service-pages/case-img4.png');
+            background-image: url('/css/new-assets/new_images/WEBimagesWBSocialmedia-01.webp');
         }
 
         .services .data-entry {
-            background-image: url('/css/new-assets/demo/storage/service-pages/entry-data-cleansing.jpg');
+            background-image: url('/css/new-assets/new_images/WEBimagesWBdataentry-01.webp');
         }
 
         .services .customer-satisfaction {
-            background-image: url('/css/new-assets/demo/storage/service-pages/case-img7.png');
+            background-image: url('/css/new-assets/new_images/WEBimagesWBcustomersatifaction-01.webp');
         }
 
         .services .home-page:hover {

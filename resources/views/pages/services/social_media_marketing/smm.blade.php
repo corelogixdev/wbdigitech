@@ -26,6 +26,16 @@
         </div>
     </div>
 
+    <!-- Hero Image Section -->
+    <div class="hero-image-section">
+        <div class="hero-image-container">
+            <img src="{{ asset('css/new-assets/new_images/WEBimagesWBSocialmedia-01.webp') }}" alt="social-media-marketing" class="hero-image">
+            {{-- <div class="hero-overlay"></div> --}}
+        </div>
+    </div>
+<br>
+<br>
+
     <!-- Content & Sidebar -->
     <div class="container-flex">
         
@@ -49,9 +59,9 @@
 
                 <!-- Sidebar Images -->
                 <div class="sidebar-images">
-                    <img src="https://wbdigitech.ae/wp-content/uploads/2022/09/social-media.png" alt="Social Media Strategy">
+                    {{-- <img src="https://wbdigitech.ae/wp-content/uploads/2022/09/social-media.png" alt="Social Media Strategy">
                     <img src="https://wbdigitech.ae/wp-content/uploads/2022/09/social-marketing.png" alt="Social Media Ads">
-                    <img src="https://wbdigitech.ae/wp-content/uploads/2022/09/social-engagement.png" alt="Engagement">
+                    <img src="https://wbdigitech.ae/wp-content/uploads/2022/09/social-engagement.png" alt="Engagement"> --}}
                 </div>
             </div>
         </div>
@@ -61,7 +71,7 @@
 
             <h2>Social Media Channels Covered</h2>
             <p>We create and manage your brand presence across all major platforms including Facebook, Instagram, LinkedIn, Twitter, and more.</p>
-            <img class="service-img" src="https://wbdigitech.ae/wp-content/uploads/2022/09/SM-icon-banner-01.png" alt="Social Media Channels">
+            {{-- <img class="service-img" src="https://wbdigitech.ae/wp-content/uploads/2022/09/SM-icon-banner-01.png" alt="Social Media Channels"> --}}
 
             <h2>Creative Strategy</h2>
             <p>We develop innovative and sophisticated social media tactics to establish your brand, increase visibility, and attract customers. Our team conducts a thorough analysis of your industry to identify the most effective approach, tone, content, and target demographic.</p>
@@ -75,7 +85,7 @@
             <h2>Paid Media</h2>
             <p>We conduct thorough research on your target audience and develop precise advertisements for various social media platforms. We conduct in-depth analysis, A/B testing, and monitor return on investment to deliver measurable results for your business.</p>
 
-            <img class="service-img" src="https://wbdigitech.ae/wp-content/uploads/2022/09/social-marketing.png" alt="Social Media Marketing Service Image">
+            {{-- <img class="service-img" src="https://wbdigitech.ae/wp-content/uploads/2022/09/social-marketing.png" alt="Social Media Marketing Service Image"> --}}
 
         </div>
     </div>
