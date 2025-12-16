@@ -35,7 +35,7 @@
                                     <!-- Hero Image Section -->
     <div class="hero-image-section">
         <div class="hero-image-container">
-            <img src="{{ asset('css/new-assets/new_images/wbwebbanner01.webp') }}" alt="website-development" class="hero-image">
+            <img src="{{ asset('css/new-assets/web_imgs/webDevelopment.webp') }}" alt="website-development" class="hero-image">
             {{-- <div class="hero-overlay"></div> --}}
         </div>
     </div>

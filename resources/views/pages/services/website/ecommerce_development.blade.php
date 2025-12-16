@@ -30,7 +30,7 @@
     <!-- Hero Image Section -->
     <div class="hero-image-section">
         <div class="hero-image-container">
-            <img src="{{ asset('css/new-assets/new_images/wbwebbanner01.webp') }}"
+            <img src="{{ asset('css/new-assets/web_imgs/Ecommercedevelopment-01.webp') }}"
                  alt="website-design"
                  class="hero-image">
         </div>

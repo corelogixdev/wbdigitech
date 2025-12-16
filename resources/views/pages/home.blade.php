@@ -137,7 +137,6 @@
                                         <div class="col-xxl-12 col-xl-12">
                                             <div class="tp-award-title-box text-center">
                                                 <h2 class="title-anim" style="color:#0A3D62">Our Custom-made Digital Marketing Services in Dubai, UAE</h2>
-                                                {{-- <h3 class="tp-section-title"><span>Our Custom-made Digital Marketing Services in Dubai, UAE</span></h3> --}}
                                                 <p> As one of the leading digital marketing agencies, we make the roll with innovative designs, innovative technology, solutions, smart tactics and others. </p>
                                             </div>
                                         </div>
@@ -146,13 +145,13 @@
                                         <div class="col-lg-12 d-flex main-service">
                                             <div class="home-page rounded web-development">
                                                 <div class="html-component mt-5">
-                                                    <div class="title text-white"><a href="#">Website Development</a></div>
+                                                    <div class="title text-white"><a href="{{ route('services.web_dev') }}">Website Development</a></div>
                                                     <div class="sub-title text-white"> Our team creates custom websites that are easy to use, look great and work perfectly on all devices to showcase your business.</div>
                                                 </div>
                                             </div>
-                                            <div class="home-page rounded seo">
+                                          <div class="home-page rounded seo">
                                                 <div class="html-component">
-                                                    <div class="title text-white"><a href="#">SEO</a></div>
+                                                    <div class="title text-white"><a href="{{ route('services.seo') }}">SEO / ASO </a></div>
                                                     <div class="sub-title text-white"> Want more people to find your business online? Our expert SEO services boost your website's visibility on Google, drive quality traffic to your site, and help you stay ahead of your competitors effortlessly. </div>
                                                 </div>
                                             </div>
@@ -170,7 +169,7 @@
                                             </div>
                                             <div class="home-page rounded social-meida-marketing">
                                                 <div class="html-component">
-                                                    <div class="title text-white"><a href="#">Social Media Marketing</a></div>
+                                                    <div class="title text-white"><a href="{{ route('services.smm') }}">Social Media Marketing</a></div>
                                                     <div class="sub-title text-white"> Our digital marketing experts handle your social media, create scroll-stopping content, and connect you with customers who love what you do. </div>
                                                 </div>
                                             </div>
@@ -179,30 +178,57 @@
                                                     <div class="title text-white"><a href="#">Data Entry / Data Cleansing</a></div>
                                                     <div class="sub-title text-white"> We type and organize your data fast and correctly. Our data processing team cleans up messy files and makes everything neat and easy to use for your business. </div>
                                                 </div>
-                                            </div>
-                                            <div class="home-page rounded customer-satisfaction">
+                                            </div> 
+                                               <div class="home-page rounded customer-satisfaction">
                                                 <div class="html-component">
                                                     <div class="title text-white"><a href="#">Customer Satisfaction Survey</a></div>
                                                     <div class="sub-title text-white"> We help you understand your customers better. Our expert team runs market research surveys online and in person to collect valuable insights for your business success. </div>
                                                 </div>
-                                            </div>
-                                            <div class="home-page rounded data-entry">
-                                                <div class="html-component">
-                                                    <div class="title text-white"><a href="#">Influencer Marketing Agency</a></div>
-                                                    <div class="sub-title text-white"> Boost your brand with the right influencers! Our social media influencer team connects you with trusted creators who promote your products to thousands of engaged followers. </div>
-                                                </div>
-                                            </div>
+                                            </div> 
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
+                            <style>
+.home-page {
+    position: relative; /* needed for overlay */
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertically center content */
+    padding: 20px; /* keep original spacing */
+    min-height: 250px; /* optional: maintain consistent height */
+}
+
+.home-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6); /* dark overlay */
+    z-index: 1;
+    pointer-events: none;
+}
+
+.home-page .html-component {
+    /* position: relative;  */
+    padding: 10px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertically center text inside the box */
+    /* height: 70%; fill parent height */
+}
+</style>
 
 {{-- Customers / Clients --}}
 <section class="pt-10 pb-100 logo-slider-wrapper bg-light">
     <div class="container">
         <!-- Section Title -->
         <div class="agency__content section__content text-center mb-5">
-            <span class="sub-title"> Featured Clients <i class="fa-solid fa-arrow-right"></i></span>
             <h2 class="title title-anim" style="color:#0A3D62">Our Customers</h2>
         </div>
 
@@ -243,12 +269,42 @@
 <section class="we-promise-banner">
     <div class="scrolling-text">
         <div class="scrolling-content">
-            <span class="outline">WE PROMISE <svg xmlns="http://www.w3.org/2000/svg" class="arrow" viewBox="0 0 24 24"><path d="M7 7h10v10" stroke="#FF6600" stroke-width="2" fill="none"/><path d="M7 17 17 7" stroke="#FF6600" stroke-width="2" fill="none"/></svg></span>
-            <span class="filled">WE DELIVER <svg xmlns="http://www.w3.org/2000/svg" class="arrow" viewBox="0 0 24 24"><path d="M7 7h10v10" stroke="#FF6600" stroke-width="2" fill="none"/><path d="M7 17 17 7" stroke="#FF6600" stroke-width="2" fill="none"/></svg></span>
-            <span class="outline">WE PROMISE <svg xmlns="http://www.w3.org/2000/svg" class="arrow" viewBox="0 0 24 24"><path d="M7 7h10v10" stroke="#FF6600" stroke-width="2" fill="none"/><path d="M7 17 17 7" stroke="#FF6600" stroke-width="2" fill="none"/></svg></span>
-            <span class="filled">WE DELIVER <svg xmlns="http://www.w3.org/2000/svg" class="arrow" viewBox="0 0 24 24"><path d="M7 7h10v10" stroke="#FF6600" stroke-width="2" fill="none"/><path d="M7 17 17 7" stroke="#FF6600" stroke-width="2" fill="none"/></svg></span>
-            <span class="outline">WE PROMISE <svg xmlns="http://www.w3.org/2000/svg" class="arrow" viewBox="0 0 24 24"><path d="M7 7h10v10" stroke="#FF6600" stroke-width="2" fill="none"/><path d="M7 17 17 7" stroke="#FF6600" stroke-width="2" fill="none"/></svg></span>
-            <span class="filled">WE DELIVER <svg xmlns="http://www.w3.org/2000/svg" class="arrow" viewBox="0 0 24 24"><path d="M7 7h10v10" stroke="#FF6600" stroke-width="2" fill="none"/><path d="M7 17 17 7" stroke="#FF6600" stroke-width="2" fill="none"/></svg></span>
+            <span class="outline">WE PROMISE 
+                <svg xmlns="http://www.w3.org/2000/svg" class="arrow" viewBox="0 0 24 24">
+                    <path d="M7 7h10v10" stroke="#ffffff" stroke-width="2" fill="none"/>
+                    <path d="M7 17 17 7" stroke="#ffffff" stroke-width="2" fill="none"/>
+                </svg>
+            </span>
+            <span class="filled">WE DELIVER 
+                <svg xmlns="http://www.w3.org/2000/svg" class="arrow" viewBox="0 0 24 24">
+                    <path d="M7 7h10v10" stroke="#ffffff" stroke-width="2" fill="none"/>
+                    <path d="M7 17 17 7" stroke="#ffffff" stroke-width="2" fill="none"/>
+                </svg>
+            </span>
+            <span class="outline">WE PROMISE 
+                <svg xmlns="http://www.w3.org/2000/svg" class="arrow" viewBox="0 0 24 24">
+                    <path d="M7 7h10v10" stroke="#ffffff" stroke-width="2" fill="none"/>
+                    <path d="M7 17 17 7" stroke="#ffffff" stroke-width="2" fill="none"/>
+                </svg>
+            </span>
+            <span class="filled">WE DELIVER 
+                <svg xmlns="http://www.w3.org/2000/svg" class="arrow" viewBox="0 0 24 24">
+                    <path d="M7 7h10v10" stroke="#ffffff" stroke-width="2" fill="none"/>
+                    <path d="M7 17 17 7" stroke="#ffffff" stroke-width="2" fill="none"/>
+                </svg>
+            </span>
+            <span class="outline">WE PROMISE 
+                <svg xmlns="http://www.w3.org/2000/svg" class="arrow" viewBox="0 0 24 24">
+                    <path d="M7 7h10v10" stroke="#ffffff" stroke-width="2" fill="none"/>
+                    <path d="M7 17 17 7" stroke="#ffffff" stroke-width="2" fill="none"/>
+                </svg>
+            </span>
+            <span class="filled">WE DELIVER 
+                <svg xmlns="http://www.w3.org/2000/svg" class="arrow" viewBox="0 0 24 24">
+                    <path d="M7 7h10v10" stroke="#ffffff" stroke-width="2" fill="none"/>
+                    <path d="M7 17 17 7" stroke="#ffffff" stroke-width="2" fill="none"/>
+                </svg>
+            </span>
         </div>
     </div>
 

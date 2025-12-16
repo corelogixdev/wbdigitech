@@ -30,7 +30,7 @@
     <!-- Hero Image Section -->
     <div class="hero-image-section">
         <div class="hero-image-container">
-            <img src="{{ asset('css/new-assets/new_images/wbwebbanner01.webp') }}"
+            <img src="{{ asset('css/new-assets/web_imgs/Website development-01.webp') }}"
                  alt="website-design"
                  class="hero-image">
         </div>
@@ -51,8 +51,8 @@
                     <li><a href="{{ route('services.content_writing') }}">Content Writing</a></li>
                     <li><a href="{{ route('services.ecommerce_development') }}">E-commerce Development</a></li>
                     <li><a href="{{ route('services.shopify_development') }}">Shopify Development</a></li>
-                    <li class="current-menu-item"><a href="{{ route('services.website_design') }}">Website Design</a></li>
-                    <li><a href="{{ route('services.website_maintainance') }}">Website Maintenance</a></li>
+                    <li ><a href="{{ route('services.website_design') }}">Website Design</a></li>
+                    <li class="current-menu-item"><a href="{{ route('services.website_maintainance') }}">Website Maintenance</a></li>
                     <li><a href="{{ route('services.wordpress_development') }}">WordPress Development</a></li>
                 </ul>
             </div>

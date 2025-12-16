@@ -29,6 +29,17 @@
         </div>
     </div>
 
+ <!-- Hero Image Section -->
+    <div class="hero-image-section">
+        <div class="hero-image-container">
+            <img src="{{ asset('css/new-assets/ai_imgs/AIpoweredSEO-01.webp') }}"
+                 alt="ai-seo-services"
+                 class="hero-image">
+        </div>
+    </div>
+
+<br><br>
+
     <!-- Content & Sidebar -->
     <div class="container-flex">
 
@@ -46,12 +57,7 @@
                     <li><a href="{{ route('ai_web_app') }}">AI Web Applications</a></li>
                 </ul>
 
-                <!-- Sidebar Images -->
-                <div class="sidebar-images">
-                    <img src="#" alt="AI SEO Image 1">
-                    <img src="#" alt="AI SEO Image 2">
-                    <img src="#" alt="AI SEO Image 3">
-                </div>
+            
             </div>
         </div>
 
@@ -96,8 +102,7 @@
                 </ol>
             </div>
 
-            <img class="service-img" src="#" alt="AI SEO Services Image">
-
+          
         </div>
     </div>
 </div>

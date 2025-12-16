@@ -58,7 +58,7 @@
 
                 <p class="mb-2 text-white">
                     <i class="fa fa-map-marker-alt me-2 text-white"></i>
-                    #504,Raffa Building<br>Rolla Street Bur,<br>Dubai, UAE.
+                    #504,Raffa Building<br>Rolla Street Bur, Dubai, UAE.
                 </p>
             </div>
 
@@ -179,7 +179,7 @@
 }
 </style>
 
-<script>
+{{-- <script>
 // Show bar after scrolling 400px
 window.addEventListener("scroll", function() {
   let bar = document.getElementById("consultant-bar");
@@ -192,6 +192,37 @@ window.addEventListener("scroll", function() {
 document.getElementById("consultant-close").addEventListener("click", function() {
   document.getElementById("consultant-bar").style.display = "none";
 });
+</script> --}}
+
+
+<script>
+// Function to show the consultant bar
+function showConsultantBar() {
+    const bar = document.getElementById("consultant-bar");
+
+    // Check if the bar has already been shown in this session
+    if (!sessionStorage.getItem("consultantShown")) {
+        bar.classList.add("active"); // show the bar
+        sessionStorage.setItem("consultantShown", "true"); // mark as shown
+    }
+}
+
+// Show bar after scrolling 400px only if not already shown
+window.addEventListener("scroll", function() {
+    const bar = document.getElementById("consultant-bar");
+    if (window.scrollY > 400 && !sessionStorage.getItem("consultantShown")) {
+        showConsultantBar();
+    }
+});
+
+// Close button hides the bar permanently for the session
+document.getElementById("consultant-close").addEventListener("click", function() {
+    document.getElementById("consultant-bar").style.display = "none";
+    sessionStorage.setItem("consultantShown", "true"); // don't show again
+});
+
+// Optional: show immediately when the page loads (instead of scroll)
+// showConsultantBar();
 </script>
 
 
