@@ -66,7 +66,7 @@
                                     <div class="tab-pane fade {{ $loop->first ? 'show active' : '' }}" 
                                          id="service-{{ $index }}" role="tabpanel">
                                         <h4 class="fw-bold">{{ $service['name'] }}</h4>
-                                        <p class="text-muted">{{ $service['description'] ?? 'No description available.' }}</p>
+                                        <p class="text-muted">{{ $service['comment'] ?? 'No description available.' }}</p>
                                         <a href="{{ route('contact') }}" class="btn btn-gradient mt-3">Get In Touch</a>
                                     </div>
                                 @endforeach

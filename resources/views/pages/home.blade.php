@@ -175,13 +175,19 @@
                                             </div>
                                             <div class="home-page rounded data-entry">
                                                 <div class="html-component">
-                                                    <div class="title text-white"><a href="#">Data Entry / Data Cleansing</a></div>
+                                                    <div class="title text-white"><a href="{{  route('services.graphic') }}">Graphic Designing</a></div>
                                                     <div class="sub-title text-white"> We type and organize your data fast and correctly. Our data processing team cleans up messy files and makes everything neat and easy to use for your business. </div>
                                                 </div>
                                             </div> 
                                                <div class="home-page rounded customer-satisfaction">
                                                 <div class="html-component">
-                                                    <div class="title text-white"><a href="#">Customer Satisfaction Survey</a></div>
+                                                    <div class="title text-white"><a href="{{ route('services.google_ads_management') }}">Google Ads</a></div>
+                                                    <div class="sub-title text-white"> We help you understand your customers better. Our expert team runs market research surveys online and in person to collect valuable insights for your business success. </div>
+                                                </div>
+                                            </div> 
+                                               <div class="home-page rounded videography">
+                                                <div class="html-component">
+                                                    <div class="title text-white"><a href="#">Videography</a></div>
                                                     <div class="sub-title text-white"> We help you understand your customers better. Our expert team runs market research surveys online and in person to collect valuable insights for your business success. </div>
                                                 </div>
                                             </div> 

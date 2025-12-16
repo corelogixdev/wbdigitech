@@ -49,9 +49,9 @@
                     <li><a href="{{ route('services.web') }}">Website Services</a></li>
                     <li><a href="{{ route('services.web_dev') }}">Website Development</a></li>
                     <li><a href="{{ route('services.content_writing') }}">Content Writing</a></li>
-                    <li><a href="{{ route('services.ecommerce_development') }}">E-commerce Development</a></li>
+                    <li class="current-menu-item"><a href="{{ route('services.ecommerce_development') }}">E-commerce Development</a></li>
                     <li><a href="{{ route('services.shopify_development') }}">Shopify Development</a></li>
-                    <li class="current-menu-item"><a href="{{ route('services.website_design') }}">Website Design</a></li>
+                    <li ><a href="{{ route('services.website_design') }}">Website Design</a></li>
                     <li><a href="{{ route('services.website_maintainance') }}">Website Maintenance</a></li>
                     <li><a href="{{ route('services.wordpress_development') }}">WordPress Development</a></li>
                 </ul>
