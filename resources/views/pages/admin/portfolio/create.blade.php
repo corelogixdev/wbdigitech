@@ -42,7 +42,7 @@
                                 <div id="services-wrapper">
                                     <div class="service-item mb-3">
                                         <input type="text" name="services[0][name]" placeholder="Service Name" class="form-control mb-2">
-                                        <textarea name="services[0][description]" placeholder="Service Description" class="form-control"></textarea>
+                                        <textarea name="services[0][comment]" placeholder="Service Description" class="form-control"></textarea>
                                     </div>
                                 </div>
                                 <button type="button" class="btn btn-sm btn-success mb-3" onclick="addService()">+ Add Service</button>
@@ -63,7 +63,7 @@ function addService() {
     let html = `
         <div class="service-item mb-3">
             <input type="text" name="services[${serviceIndex}][name]" placeholder="Service Name" class="form-control mb-2">
-            <textarea name="services[${serviceIndex}][description]" placeholder="Service Description" class="form-control"></textarea>
+            <textarea name="services[${serviceIndex}][comment]" placeholder="Service Description" class="form-control"></textarea>
         </div>`;
     wrapper.insertAdjacentHTML('beforeend', html);
     serviceIndex++;
