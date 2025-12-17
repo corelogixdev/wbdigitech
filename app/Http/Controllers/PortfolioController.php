@@ -114,7 +114,7 @@ class PortfolioController extends Controller
     /**
      * Public portfolio detail page.
      */
-    public function publicShow($id)
+    public function publicShow($title,$id)
     {
           $portfolio = Portfolio::findOrFail($id);
         return view('pages.portfolio.show', compact('portfolio'));

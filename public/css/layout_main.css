@@ -137,48 +137,38 @@
         }
 
       .services .web-development {
-            background-image: url('/css/new-assets/new_images/WEBimagesWBwebsite-01.webp');
+            background-image: url('/css/new-assets/services_home/web.webp');
         }
 
         .services .lead-generation {
-            background-image: url('/css/new-assets/new_images/WEBimagesWBwebsite-01.webp');
-            /* background-image: url('/css/new-assets/new_images/WEBimagesWBleadgeneration-01.webp'); */
+            background-image: url('/css/new-assets/services_home/lead_gen.webp');
         }
 
         .services .seo {
-            background-image: url('/css/new-assets/new_images/WEBimagesWBwebsite-01.webp');
-            /* background-image: url('/css/new-assets/new_images/WEBimagesWBSEO-01.webp'); */
+           background-image: url('/css/new-assets/services_home/seo.webp');
+        }
+       
+        /* mobile app development */
+        .services .mobile-app {
+            background-image: url('/css/new-assets/services_home/mobile_app.webp');
         }
 
-        /* its basically lead generation */
+        .services .social-media-marketing {
+            background-image: url('/css/new-assets/services_home/social_media.webp');
+        }
+
+        /* graphic designing */
+        .services .graphic-design {
+            background-image: url('/css/new-assets/services_home/graphic_design.webp');
+        }
+
+        /* google ads */
         .services .google-ads {
-            background-image: url('/css/new-assets/new_images/WEBimagesWBwebsite-01.webp');
-            /* background-image: url('/css/new-assets/new_images/WEBimagesWBleadgeneration-01.webp'); */
-        }
-
-        .services .call-center {
-            background-image: url('/css/new-assets/new_images/WEBimagesWBwebsite-01.webp');
-            /* background-image: url('/css/new-assets/new_images/WEBimagesWBcallcenter-01.webp'); */
-        }
-
-        .services .social-meida-marketing {
-            background-image: url('/css/new-assets/new_images/WEBimagesWBwebsite-01.webp');
-            /* background-image: url('/css/new-assets/new_images/WEBimagesWBSocialmedia-01.webp'); */
-        }
-
-        .services .data-entry {
-            background-image: url('/css/new-assets/new_images/WEBimagesWBwebsite-01.webp');
-            /* background-image: url('/css/new-assets/new_images/WEBimagesWBdataentry-01.webp'); */
-        }
-
-        .services .customer-satisfaction {
-            background-image: url('/css/new-assets/new_images/WEBimagesWBwebsite-01.webp');
-            /* background-image: url('/css/new-assets/new_images/WEBimagesWBcustomersatifaction-01.webp'); */
+            background-image: url('/css/new-assets/services_home/google_ad.webp');
         }
 
         .services .videography{
-            background-image: url('/css/new-assets/new_images/WEBimagesWBwebsite-01.webp');
-            /* background-image: url('/css/new-assets/new_images/WEBimagesWBcustomersatifaction-01.webp'); */
+           background-image: url('/css/new-assets/services_home/web.webp');
         }
 
         .services .home-page:hover {

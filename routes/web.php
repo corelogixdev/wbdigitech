@@ -87,6 +87,11 @@ Route::get('/ppc', function() {
 Route::get('/google-shopping-ads', function() {
     return view('pages.services.google_ads.google_shopping_ads');
 })->name('services.google_shopping_ads');
+//new
+Route::get('/lead-generation', function() {
+    return view('pages.services.google_ads.lead_generation');
+})->name('services.lead_generation');
+
 
 
 // SEO Services Routes
@@ -241,6 +246,13 @@ Route::get('/mobile-app-developers', function() {
     return view('pages.services.mobile_application.mobile_app_developers');
 })->name('services.mobile_app_developers');
 
+// Videography Service Route: services.videography
+Route::get('/videography',function(){
+    return view('pages.services.videography');
+})->name('services.videography');
+
+
+
 // Ai Marketing Pages
 Route::get('/ai-marketing', function() {
     return view('pages.ai_marketing.ai_marketing');
@@ -285,7 +297,7 @@ Route::get('/customer', [CustomerController::class, 'publicIndex'])->name('custo
 
 // Public side | Portfolio Pages
 Route::get('/portfolio', [PortfolioController::class, 'publicIndex'])->name('portfolio.public');
-Route::get('/portfolio/{id}', [PortfolioController::class, 'publicShow'])->name('portfolio.public.show');
+Route::get('/portfolio/{title}-{id}', [PortfolioController::class, 'publicShow'])->name('portfolio.public.show');
 Route::get('/portfolio/case-study/{title}-{id}', [PortfolioController::class, 'caseStudy'])->name('portfolio.case_study');
 
 // Public Side | SeoRequest

@@ -35,7 +35,7 @@
                             <div class="col-xl-4 col-lg-6 col-md-6 mb-50">
                                 <div class="tp-blog-item position-relative overflow-hidden">
                                     <div class="tp-blog-thumb fix p-relative">
-                                        <a href="{{ route('portfolio.public.show', $portfolio->id) }}">
+                                        <a href="{{ route('portfolio.public.show', ['title' => Str::slug($portfolio->title),'id' => $portfolio->id]) }}">
                                             @if($portfolio->thumbnail)
                                                 <img src="{{ asset('storage/' . $portfolio->thumbnail) }}" 
                                                      alt="{{ $portfolio->title }}" class="img-fluid w-100">
@@ -50,12 +50,24 @@
                                         </div>
                                     </div>
                                     <div class="tp-blog-content">
-                                        <span><a href="{{ route('portfolio.public.show', $portfolio->id) }}">READ MORE</a></span>
+                                        <span>
+                                            <a href="{{ route('portfolio.public.show', [
+                                                    'title' => Str::slug($portfolio->title), 
+                                                    'id' => $portfolio->id
+                                                ]) }}">
+                                                READ MORE
+                                            </a>
+                                        </span>
+
                                         <h4 class="tp-blog-title-sm">
-                                            <a class="text-heading-4" href="{{ route('portfolio.public.show', $portfolio->id) }}">
+                                            <a class="text-heading-4" href="{{ route('portfolio.public.show', [
+                                                    'title' => Str::slug($portfolio->title), 
+                                                    'id' => $portfolio->id
+                                                ]) }}">
                                                 {{ $portfolio->title }}
                                             </a>
                                         </h4>
+
                                     </div>
                                 </div>
                             </div>

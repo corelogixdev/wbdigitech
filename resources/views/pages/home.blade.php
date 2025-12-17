@@ -54,7 +54,7 @@
             <div class="col-lg-6">  
                 <div class="position-relative">
                     <div class="visual-card shadow-lg rounded overflow-hidden">
-                        <img src="{{ asset('css/new-assets/new_images/wbwebimage.webp') }}" alt="wbdigitech-services" class="img-fluid w-100">
+                        <img src="{{ asset('css/new-assets/services_home/main.webp') }}" alt="wbdigitech-services" class="img-fluid w-100">
                         <div class="trusted-badge">Trusted Agency</div>
                     </div>
 
@@ -155,31 +155,31 @@
                                                     <div class="sub-title text-white"> Want more people to find your business online? Our expert SEO services boost your website's visibility on Google, drive quality traffic to your site, and help you stay ahead of your competitors effortlessly. </div>
                                                 </div>
                                             </div>
-                                            <div class="home-page rounded google-ads">
+                                            <div class="home-page rounded lead-generation">
                                                 <div class="html-component">
-                                                    <div class="title text-white"><a href="#">Lead Generation</a></div>
+                                                    <div class="title text-white"><a href="{{ route('services.lead_generation') }}">Lead Generation</a></div>
                                                     <div class="sub-title text-white"> We bring qualified leads straight to your business! Our proven strategies help you connect with potential customers who are genuinely interested in what you offer, turning visitors into loyal clients and growing your sales consistently. </div>
                                                 </div>
                                             </div>
-                                            <div class="home-page rounded call-center">
+                                            <div class="home-page rounded mobile-app">
                                                 <div class="html-component">
                                                     <div class="title text-white"><a href="{{ route('services.mobile') }}">Mobile App Development</a></div>
                                                     <div class="sub-title text-white"> Let our professional team handle your customer calls and support while you focus on growing your business. We deliver exceptional customer service that keeps your clients satisfied and coming back. </div>
                                                 </div>
                                             </div>
-                                            <div class="home-page rounded social-meida-marketing">
+                                            <div class="home-page rounded social-media-marketing">
                                                 <div class="html-component">
                                                     <div class="title text-white"><a href="{{ route('services.smm') }}">Social Media Marketing</a></div>
                                                     <div class="sub-title text-white"> Our digital marketing experts handle your social media, create scroll-stopping content, and connect you with customers who love what you do. </div>
                                                 </div>
                                             </div>
-                                            <div class="home-page rounded data-entry">
+                                            <div class="home-page rounded graphic-design">
                                                 <div class="html-component">
                                                     <div class="title text-white"><a href="{{  route('services.graphic') }}">Graphic Designing</a></div>
                                                     <div class="sub-title text-white"> We type and organize your data fast and correctly. Our data processing team cleans up messy files and makes everything neat and easy to use for your business. </div>
                                                 </div>
                                             </div> 
-                                               <div class="home-page rounded customer-satisfaction">
+                                               <div class="home-page rounded google-ads">
                                                 <div class="html-component">
                                                     <div class="title text-white"><a href="{{ route('services.google_ads_management') }}">Google Ads</a></div>
                                                     <div class="sub-title text-white"> We help you understand your customers better. Our expert team runs market research surveys online and in person to collect valuable insights for your business success. </div>
@@ -187,7 +187,7 @@
                                             </div> 
                                                <div class="home-page rounded videography">
                                                 <div class="html-component">
-                                                    <div class="title text-white"><a href="#">Videography</a></div>
+                                                    <div class="title text-white"><a href="{{ route('services.videography') }}">Videography</a></div>
                                                     <div class="sub-title text-white"> We help you understand your customers better. Our expert team runs market research surveys online and in person to collect valuable insights for your business success. </div>
                                                 </div>
                                             </div> 

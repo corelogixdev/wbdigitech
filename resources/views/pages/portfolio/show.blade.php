@@ -38,7 +38,8 @@
         'id' => $portfolio->id
     ]) }}" class="btn btn-gradient mt-2">
     Read More
-</a>                        </div>
+</a>                   
+     </div>
                     </div>
                 </div>
             </section>
