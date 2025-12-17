@@ -297,8 +297,17 @@ Route::get('/customer', [CustomerController::class, 'publicIndex'])->name('custo
 
 // Public side | Portfolio Pages
 Route::get('/portfolio', [PortfolioController::class, 'publicIndex'])->name('portfolio.public');
-Route::get('/portfolio/{title}-{id}', [PortfolioController::class, 'publicShow'])->name('portfolio.public.show');
-Route::get('/portfolio/case-study/{title}-{id}', [PortfolioController::class, 'caseStudy'])->name('portfolio.case_study');
+Route::get('/portfolio/{title}-{id}', [PortfolioController::class, 'publicShow'])
+    ->where([
+        'title' => '[A-Za-z0-9\-]+', // only letters, numbers, hyphens
+        'id' => '[0-9]+'
+    ])
+    ->name('portfolio.public.show');
+Route::get('/portfolio/case-study/{title}-{id}', [PortfolioController::class, 'caseStudy'])
+        ->where([
+        'title' => '[A-Za-z0-9\-]+', // only letters, numbers, hyphens
+        'id' => '[0-9]+'
+    ])->name('portfolio.case_study');
 
 // Public Side | SeoRequest
 Route::get('/seo-request', [SeoRequestController::class, 'publicIndex'])->name('seo-request.public');
