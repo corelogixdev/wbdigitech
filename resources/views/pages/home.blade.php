@@ -54,7 +54,8 @@
             <div class="col-lg-6">  
                 <div class="position-relative">
                     <div class="visual-card shadow-lg rounded overflow-hidden">
-                        <img src="{{ asset('css/new-assets/services_home/main.webp') }}" alt="wbdigitech-services" class="img-fluid w-100">
+                        <img src="{{ asset('css/new-assets/services_home/main.webp') }}" alt="wbdigitech-services" class="img-fluid w-100"  loading="lazy"
+    decoding="async">
                         <div class="trusted-badge">Trusted Agency</div>
                     </div>
 
@@ -247,7 +248,8 @@
                 <div class="item">
                     <div class="image-box">
                         <div class="image-box-wrapper">
-                            <img src="{{ asset('storage/' . $customer->logo) }}" alt="{{ $customer->name }}" class="img-fluid grayscale-hover">
+                            <img src="{{ asset('storage/' . $customer->logo) }}" alt="{{ $customer->name }}" class="img-fluid grayscale-hover"  loading="lazy"
+    decoding="async">
                         </div>
                     </div>
                 </div>
@@ -262,7 +264,8 @@
                 <div class="item">
                     <div class="image-box">
                         <div class="image-box-wrapper">
-                           <img src="{{ asset('storage/' . $customer->logo) }}" alt="{{ $customer->name }}" class="img-fluid grayscale-hover">
+                           <img src="{{ asset('storage/' . $customer->logo) }}" alt="{{ $customer->name }}" class="img-fluid grayscale-hover"  loading="lazy"
+    decoding="async">
 
                         </div>
                     </div>
@@ -414,7 +417,8 @@
                     @if(!empty($industry->image))
                         <img src="{{ asset('storage/'.$industry->image) }}"
                             alt="{{ $industry->name ?? 'Industry' }}"
-                            class="img-fluid mb-3 industry-img">
+                            class="img-fluid mb-3 industry-img"  loading="lazy"
+    decoding="async">
                     @endif
                     <h6 class="fw-bold text-dark">
                         {{ $industry->name ?? 'Unnamed Industry' }}
@@ -458,7 +462,8 @@
                                     <a href="{{ route('blogs.public.show', $blog->id ?? 0) }}">
                                         <img src="{{ asset('storage/' . $blog->image) }}" 
                                              alt="{{ $blog->title ?? 'Blog Image' }}" 
-                                             class="img-fluid rounded-top w-100 blog-img">
+                                             class="img-fluid rounded-top w-100 blog-img"  loading="lazy"
+    decoding="async">
                                     </a>
                                 @endif
                                 <div class="p-3">
@@ -548,7 +553,8 @@
             <div class="col-md-12 text-center">
                 <div class="review-summary-card p-4 shadow-sm rounded">
                     <div class="d-flex align-items-center justify-content-center mb-3">
-                        <img src="https://cdn-icons-png.flaticon.com/512/2965/2965358.png" alt="Google Store" width="50" class="me-3">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2965/2965358.png" alt="Google Store" width="50" class="me-3"  loading="lazy"
+    decoding="async">
                         <div class="text-start">
                             <h5 class="mb-0 fw-bold">WB-DigiTech - Digital Marketing Agency</h5>
                             <div class="review-rating">
@@ -574,12 +580,14 @@
                 <div class="swiper-slide">
                     <div class="testimonial-card bg-white shadow-sm rounded p-4 h-100">
                         <div class="d-flex align-items-center mb-3">
-                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Reviewer" class="rounded-circle me-3" width="45" height="45">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Reviewer" class="rounded-circle me-3" width="45" height="45"  loading="lazy"
+    decoding="async">
                             <div>
                                 <h6 class="fw-bold mb-0">Mohammad Usman</h6>
                                 <small class="text-muted">5 months ago</small>
                             </div>
-                            <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" class="ms-auto" width="20" alt="Google Logo">
+                            <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" class="ms-auto" width="20" alt="Google Logo"  loading="lazy"
+    decoding="async">
                         </div>
                         <div class="text-warning mb-2">★★★★★</div>
                         <p class="text-muted">Amazing experience! WB-DigiTech built us a fantastic website and provided excellent support throughout.</p>
@@ -595,7 +603,8 @@
                                 <h6 class="fw-bold mb-0">Ayesha Tech</h6>
                                 <small class="text-muted">6 months ago</small>
                             </div>
-                            <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" class="ms-auto" width="20" alt="Google Logo">
+                            <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" class="ms-auto" width="20" alt="Google Logo"  loading="lazy"
+    decoding="async">
                         </div>
                         <div class="text-warning mb-2">★★★★☆</div>
                         <p class="text-muted">We had a great experience with WB-DigiTech. They delivered exactly what we wanted for our brand identity.</p>
@@ -606,12 +615,14 @@
                 <div class="swiper-slide">
                     <div class="testimonial-card bg-white shadow-sm rounded p-4 h-100">
                         <div class="d-flex align-items-center mb-3">
-                            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Reviewer" class="rounded-circle me-3" width="45" height="45">
+                            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Reviewer" class="rounded-circle me-3" width="45" height="45"  loading="lazy"
+    decoding="async">
                             <div>
                                 <h6 class="fw-bold mb-0">Fatima Khan</h6>
                                 <small class="text-muted">2 months ago</small>
                             </div>
-                            <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" class="ms-auto" width="20" alt="Google Logo">
+                            <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" class="ms-auto" width="20" alt="Google Logo"  loading="lazy"
+    decoding="async">
                         </div>
                         <div class="text-warning mb-2">★★★★★</div>
                         <p class="text-muted">Their SEO and marketing services helped us increase leads significantly. Highly recommended!</p>
@@ -692,7 +703,8 @@
             <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                 <div class="team-card">
                     <div class="team-img">
-                        <img src="{{ asset('storage/' . $member->image) }}" alt="{{ $member->name }}">
+                        <img src="{{ asset('storage/' . $member->image) }}" alt="{{ $member->name }}"  loading="lazy"
+    decoding="async">
                     </div>
                     <div class="team-info">
                         <h4>{{ $member->name }}</h4>
