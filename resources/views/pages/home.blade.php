@@ -54,8 +54,7 @@
             <div class="col-lg-6">  
                 <div class="position-relative">
                     <div class="visual-card shadow-lg rounded overflow-hidden">
-                        <img src="{{ asset('css/new-assets/services_home/main.webp') }}" alt="wbdigitech-services" class="img-fluid w-100"  loading="lazy"
-    decoding="async">
+                        <img src="{{ asset('css/new-assets/services_home/main.webp') }}" alt="wbdigitech-services" class="img-fluid w-100">
                         <div class="trusted-badge">Trusted Agency</div>
                     </div>
 

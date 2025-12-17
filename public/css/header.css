@@ -1,0 +1,99 @@
+
+    /* Top bar styling - only affects the top bar */
+    .header-top-black { background: #111; color: #fff; }
+
+    /* Top bar styling - gradient based on logo colors */
+    .header-top-black {
+    /* background: linear-gradient(90deg, #0A3D62 0%, #0077B6 100%); */
+    background: linear-gradient(90deg, #1166a3 0%, #31a8e8 100%);
+    color: #fff;
+    }
+    .header-top-black a { color: #fff; }
+    .header-top-black .small { font-size: 13px; }
+    .header-top-black .social-icons a { margin-left: 12px; font-size: 16px; color: #fff; text-decoration: none; }
+    .header-top-black .social-icons a:hover { color: #00A8E8; } /* lighter accent blue */
+
+
+
+
+    /* Make sure the main nav/header stays white (not black) */
+    .tp-header-area .main-header-wrap { background: #fff; }
+
+    /* Hide Google Translate top banner and default UI - we use custom dropdown */
+    .goog-te-banner-frame.skiptranslate { display: none !important; }
+    body { top: 0px !important; }
+    #google_translate_element { display: none; }
+    .goog-te-gadget-icon { display: none !important; }
+
+    /* Small responsive tweaks */
+    @media (max-width: 767px) {
+    .header-top-black .col-md-6 { text-align: center; }
+    .header-top-black .social-icons { margin-top: 6px; }
+    }
+
+
+ /* Ensure the offcanvas sits above the page and is full height */
+    .tp-offcanvas-area {
+        position: fixed;
+        top: 0;
+        /* keep transform hiding from theme's main.css; width forced to match theme */
+        width: 450px !important; /* match compiled main.css */
+        max-width: 95%;
+        height: 100vh;
+        background: #fff;
+        z-index: 999999;
+        box-shadow: -10px 0 30px rgba(0,0,0,0.15);
+        transition: right .28s ease;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 40px; /* breathing room for bottom */
+    }
+    /* The theme's compiled CSS uses the class 'opened' and transform to slide the panel in.
+       We toggle the same class in JS so the compiled rules take effect. */
+    .tp-offcanvas-area.opened { transform: translateX(0) !important; }
+
+    /* Overlay behind the offcanvas */
+    .body-overlay {
+        position: fixed;
+        inset: 0; /* top:0; right:0; bottom:0; left:0; */
+        background: rgba(0,0,0,0.45);
+        z-index: 1990;
+        display: none;
+        transition: opacity .2s ease;
+    }
+    .body-overlay.opened { display: block; opacity: 1; visibility: visible; }
+
+    /* When offcanvas is open, prevent body from scrolling */
+    .prevent-scroll, .prevent-scroll body { overflow: hidden !important; height: 100vh !important; }
+
+    /* Make sure close button is visible */
+    .tp-offcanvas-close-btn { background: transparent; border: none; color: inherit; cursor: pointer; }
+    .tp-offcanvas-top { z-index: 2010; }
+
+    /* Style for the visible Cancel button to ensure it's readable */
+    .tp-offcanvas-cancel-btn {
+        background: transparent;
+        border: 1px solid rgba(10,61,98,0.12);
+        color: #0A3D62;
+        padding: 6px 10px;
+        font-weight: 600;
+        border-radius: 6px;
+        box-shadow: none;
+        display: inline-block !important;
+        z-index: 2020;
+    }
+    .tp-offcanvas-close .tp-offcanvas-cancel-btn { display: inline-flex; align-items: center; }
+
+    /* Small screens: make offcanvas full width for better UX */
+    @media (max-width: 576px) {
+        .tp-offcanvas-area { width: 100%; right: -100%; }
+        .tp-offcanvas-area.open { right: 0; }
+    }
+
+    .tp-offcanvas-area .has-dropdown .submenu {
+    display: none;
+    padding-left: 15px; /* optional indent */
+}
+.tp-offcanvas-area .has-dropdown.open .submenu {
+    display: block;
+}
