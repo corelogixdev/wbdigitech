@@ -41,6 +41,6 @@
             </tbody>
         </table>
 
-        {{-- {{ $portfolios->links() }} --}}
+        {{ $portfolios->links() }}
     </div>
 </x-app-layout>

@@ -72,6 +72,7 @@
                 </div>
             </div>
 
+            
             <!-- Content Column -->
             <div class="col-lg-6">
                 <span class="sub-title text-primary">WELCOME <i class="fa-solid fa-arrow-right"></i></span>
@@ -197,15 +198,16 @@
                             </div>
 
                             <style>
-.home-page {
-    position: relative; /* needed for overlay */
+/* .home-page {
+    position: relative; 
     overflow: hidden; 
     display: flex;
     flex-direction: column;
-    justify-content: center; /* vertically center content */
-    padding: 20px; /* keep original spacing */
-    min-height: 250px; /* optional: maintain consistent height */
-}
+    justify-content: center; 
+    padding: 20px; 
+    min-height: 250px; 
+} 
+*/
 
 .home-page::before {
     content: '';
@@ -214,19 +216,19 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.6); /* dark overlay */
+    background-color: rgba(0,0,0,0.6);
     z-index: 1;
     pointer-events: none;
 }
 
 .home-page .html-component {
-    /* position: relative;  */
+     position: relative;  
     padding: 10px;
     z-index: 2;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* vertically center text inside the box */
-    /* height: 70%; fill parent height */
+    justify-content: center; 
+    /* height: 70%;  */
 }
 </style>
 
