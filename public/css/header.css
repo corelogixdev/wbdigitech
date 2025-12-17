@@ -1,99 +1,224 @@
-
-    /* Top bar styling - only affects the top bar */
-    .header-top-black { background: #111; color: #fff; }
-
-    /* Top bar styling - gradient based on logo colors */
-    .header-top-black {
-    /* background: linear-gradient(90deg, #0A3D62 0%, #0077B6 100%); */
+/* ==========================
+   Top Bar Styling
+========================== */
+.header-top-black { 
     background: linear-gradient(90deg, #1166a3 0%, #31a8e8 100%);
     color: #fff;
-    }
-    .header-top-black a { color: #fff; }
-    .header-top-black .small { font-size: 13px; }
-    .header-top-black .social-icons a { margin-left: 12px; font-size: 16px; color: #fff; text-decoration: none; }
-    .header-top-black .social-icons a:hover { color: #00A8E8; } /* lighter accent blue */
+}
+.header-top-black a { color: #fff; }
+.header-top-black .small { font-size: 13px; }
+.header-top-black .social-icons a { 
+    margin-left: 12px; 
+    font-size: 16px; 
+    color: #fff; 
+    text-decoration: none; 
+}
+.header-top-black .social-icons a:hover { color: #00A8E8; }
 
+/* Ensure main nav/header stays white */
+.tp-header-area .main-header-wrap { background: #fff; }
 
+/* Hide Google Translate default UI */
+.goog-te-banner-frame.skiptranslate { display: none !important; }
+body { top: 0px !important; }
+#google_translate_element { display: none; }
+.goog-te-gadget-icon { display: none !important; }
 
-
-    /* Make sure the main nav/header stays white (not black) */
-    .tp-header-area .main-header-wrap { background: #fff; }
-
-    /* Hide Google Translate top banner and default UI - we use custom dropdown */
-    .goog-te-banner-frame.skiptranslate { display: none !important; }
-    body { top: 0px !important; }
-    #google_translate_element { display: none; }
-    .goog-te-gadget-icon { display: none !important; }
-
-    /* Small responsive tweaks */
-    @media (max-width: 767px) {
+/* Small responsive tweaks */
+@media (max-width: 767px) {
     .header-top-black .col-md-6 { text-align: center; }
     .header-top-black .social-icons { margin-top: 6px; }
-    }
+}
 
+/* ==========================
+   Offcanvas Sidebar
+========================== */
+.tp-offcanvas-area {
+    position: fixed;
+    top: 0;
+    width: 450px !important;
+    max-width: 95%;
+    height: 100vh;
+    background: #fff;
+    z-index: 999999;
+    box-shadow: -10px 0 30px rgba(0,0,0,0.15);
+    transition: right .28s ease, transform .28s ease;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 40px;
+}
+.tp-offcanvas-area.opened { transform: translateX(0) !important; }
 
- /* Ensure the offcanvas sits above the page and is full height */
-    .tp-offcanvas-area {
-        position: fixed;
-        top: 0;
-        /* keep transform hiding from theme's main.css; width forced to match theme */
-        width: 450px !important; /* match compiled main.css */
-        max-width: 95%;
-        height: 100vh;
-        background: #fff;
-        z-index: 999999;
-        box-shadow: -10px 0 30px rgba(0,0,0,0.15);
-        transition: right .28s ease;
-        overflow-y: auto;
-        -webkit-overflow-scrolling: touch;
-        padding-bottom: 40px; /* breathing room for bottom */
-    }
-    /* The theme's compiled CSS uses the class 'opened' and transform to slide the panel in.
-       We toggle the same class in JS so the compiled rules take effect. */
-    .tp-offcanvas-area.opened { transform: translateX(0) !important; }
+/* Overlay behind offcanvas */
+.body-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: 1990;
+    display: none;
+    transition: opacity .2s ease;
+}
+.body-overlay.opened { display: block; opacity: 1; visibility: visible; }
 
-    /* Overlay behind the offcanvas */
-    .body-overlay {
-        position: fixed;
-        inset: 0; /* top:0; right:0; bottom:0; left:0; */
-        background: rgba(0,0,0,0.45);
-        z-index: 1990;
-        display: none;
-        transition: opacity .2s ease;
-    }
-    .body-overlay.opened { display: block; opacity: 1; visibility: visible; }
+/* Prevent scrolling when open */
+.prevent-scroll, .prevent-scroll body { overflow: hidden !important; height: 100vh !important; }
 
-    /* When offcanvas is open, prevent body from scrolling */
-    .prevent-scroll, .prevent-scroll body { overflow: hidden !important; height: 100vh !important; }
+/* Close button styling */
+.tp-offcanvas-close-btn { background: transparent; border: none; color: inherit; cursor: pointer; }
+.tp-offcanvas-top { z-index: 2010; }
 
-    /* Make sure close button is visible */
-    .tp-offcanvas-close-btn { background: transparent; border: none; color: inherit; cursor: pointer; }
-    .tp-offcanvas-top { z-index: 2010; }
+/* Cancel button */
+.tp-offcanvas-cancel-btn {
+    background: transparent;
+    border: 1px solid rgba(10,61,98,0.12);
+    color: #0A3D62;
+    padding: 6px 10px;
+    font-weight: 600;
+    border-radius: 6px;
+    box-shadow: none;
+    display: inline-block !important;
+    z-index: 2020;
+}
+.tp-offcanvas-close .tp-offcanvas-cancel-btn { display: inline-flex; align-items: center; }
 
-    /* Style for the visible Cancel button to ensure it's readable */
-    .tp-offcanvas-cancel-btn {
-        background: transparent;
-        border: 1px solid rgba(10,61,98,0.12);
-        color: #0A3D62;
-        padding: 6px 10px;
+/* ==========================
+   Mobile Styles
+========================== */
+@media (max-width: 768px) {
+    /* Full width for offcanvas */
+    .tp-offcanvas-area { width: 100% !important; max-width: 100% !important; padding: 20px; }
+
+    /* Dropdown parent links */
+    .tp-offcanvas-area .has-dropdown > a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 10px;
         font-weight: 600;
-        border-radius: 6px;
-        box-shadow: none;
-        display: inline-block !important;
-        z-index: 2020;
+        font-size: 16px;
+        color: #0A3D62;
+        text-decoration: none;
+        cursor: pointer;
     }
-    .tp-offcanvas-close .tp-offcanvas-cancel-btn { display: inline-flex; align-items: center; }
 
-    /* Small screens: make offcanvas full width for better UX */
-    @media (max-width: 576px) {
-        .tp-offcanvas-area { width: 100%; right: -100%; }
-        .tp-offcanvas-area.open { right: 0; }
+    /* Plus/minus indicator */
+    .tp-offcanvas-area .has-dropdown > a::after {
+        content: '+';
+        font-weight: bold;
+        font-size: 18px;
+        transition: transform 0.3s ease;
+    }
+    .tp-offcanvas-area .has-dropdown.open > a::after {
+        content: '-';
+        transform: rotate(180deg);
+    }
+
+    /* Submenu */
+    .tp-offcanvas-area .has-dropdown .submenu {
+        display: none;
+        padding-left: 15px;
+        margin-top: 5px;
+    }
+    .tp-offcanvas-area .has-dropdown.open .submenu {
+        display: block;
+    }
+
+    /* Submenu links */
+    .tp-offcanvas-area .submenu li a {
+        display: block;
+        padding: 8px 0;
+        font-size: 14px;
+        color: #333;
+        text-decoration: none;
+    }
+    .tp-offcanvas-area .submenu li a:hover { color: #0077B6; }
+
+    /* Other sections spacing */
+    .tp-offcanvas-gallery, .tp-offcanvas-contact, .tp-offcanvas-social { margin-top: 20px; }
+}
+
+/* ==========================
+   Extra small screens (<576px)
+========================== */
+@media (max-width: 576px) {
+    .tp-offcanvas-area { width: 100%; right: -100%; }
+    .tp-offcanvas-area.open { right: 0; }
+}
+
+/* ==========================
+   Mobile Offcanvas Vertical Menus
+========================== */
+@media (max-width: 768px) {
+
+    /* Ensure offcanvas menu is full width */
+    .tp-offcanvas-area {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 20px;
+    }
+
+    /* Remove desktop mega-menu grid on mobile */
+    .tp-megamenu-portfolio,
+    .tp-megamenu-list-box,
+    .tp-megamenu-list-box .row,
+    .tp-megamenu-list-box .col-xxl-2,
+    .tp-megamenu-list-box .col-xl-2 {
+        display: block !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Mega menu lists should stack vertically */
+    .tp-megamenu-list {
+        margin-bottom: 15px;
+    }
+
+    .tp-megamenu-title a {
+        font-size: 16px;
+        font-weight: 600;
+        display: block;
+        padding: 10px 0;
+        color: #0A3D62;
+        text-decoration: none;
+    }
+
+    /* Submenu items */
+    .tp-megamenu-list-wrap ul li a {
+        display: block;
+        padding: 8px 10px;
+        font-size: 14px;
+        color: #333;
+        text-decoration: none;
+    }
+    .tp-megamenu-list-wrap ul li a:hover {
+        color: #0077B6;
+    }
+
+    /* Hide horizontal row gaps */
+    .row.gx-30 {
+        gap: 0 !important;
+    }
+
+    /* Dropdown toggle for mobile */
+    .tp-offcanvas-area .has-dropdown > a::after {
+        content: '+';
+        float: right;
+        font-size: 18px;
+        transition: transform 0.3s ease;
+    }
+
+    .tp-offcanvas-area .has-dropdown.open > a::after {
+        content: '-';
+        transform: rotate(180deg);
     }
 
     .tp-offcanvas-area .has-dropdown .submenu {
-    display: none;
-    padding-left: 15px; /* optional indent */
-}
-.tp-offcanvas-area .has-dropdown.open .submenu {
-    display: block;
+        display: none;
+        padding-left: 15px;
+    }
+
+    .tp-offcanvas-area .has-dropdown.open .submenu {
+        display: block;
+    }
 }
