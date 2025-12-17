@@ -54,7 +54,9 @@
             <div class="tp-offcanvas-main">
                 <div class="tp-offcanvas-content">
                     <div class="tp-offcanvas-top d-flex align-items-center justify-content-between">
-                <div class="tp-offcanvas-logo"><a href="#"><img class="logo-1" src="{{ asset('css/new-assets/img/logo/logoo.png') }}" alt="WbDigitech Logo"><img class="logo-2" src="{{ asset('css/new-assets/img/logo/logoo.png')}}" alt="Wbdigitech Logo White"></a></div>
+                <div class="tp-offcanvas-logo"><a href="#"><img class="logo-1" src="{{ asset('css/new-assets/img/logo/logoo.png') }}"  loading="lazy" 
+         decoding="async" alt="WbDigitech Logo"><img class="logo-2" src="{{ asset('css/new-assets/img/logo/logoo.png')}}"  loading="lazy" 
+         decoding="async" alt="Wbdigitech Logo White"></a></div>
                 <div class="tp-offcanvas-close d-flex align-items-center">
                     <!-- Visible cancel button for UX -->
                     <button class="tp-offcanvas-close-btn" title="menu icon digital marketing agency dubai"><svg width=37 height=38 viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.19141 9.80762L27.5762 28.1924" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /><path d="M9.19141 28.1924L27.5762 9.80761" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg></button>
@@ -301,7 +303,9 @@
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-xl-2 col-lg-2 col-6">
-                            <div class="tp-header-logo"><a class="logo-1" href="{{ route('home')}}"><img src="{{ asset('css/new-assets/img/logo/logo.jpeg')}}" alt="Wbdigitech Logo"></a><a class="logo-2" href="#"><img src="{{ asset('css/new-assets/img/logo/logo.jpeg')}}" alt="Wbdigitech Logo White"></a></div>
+                            <div class="tp-header-logo"><a class="logo-1" href="{{ route('home')}}"><img src="{{ asset('css/new-assets/img/logo/logo.jpeg')}}" alt="Wbdigitech Logo"  loading="lazy" 
+         decoding="async"></a><a class="logo-2" href="#"><img src="{{ asset('css/new-assets/img/logo/logo.jpeg')}}" alt="Wbdigitech Logo White"  loading="lazy" 
+         decoding="async"></a></div>
                         </div>
                         <div class="col-xl-8 col-lg-9 d-none d-xl-block">
                             <div class=" tp-header-menu header-main-menu text-center">
@@ -312,7 +316,8 @@
                                             <div class="tp-submenu submenu tp-mega-menu">
                                                 <div class="tp-menu-fullwidth">
                                                     <div class="tp-megamenu-portfolio p-relative">
-                                                        <div class="tp-megamenu-portfolio-banner d-none"><img src="{{ asset('css/new-assets/img/menu/portfolio-menu/portfolio.png')}}" alt="Wbdigitech Portfolio"></div>
+                                                        <div class="tp-megamenu-portfolio-banner d-none"><img src="{{ asset('css/new-assets/img/menu/portfolio-menu/portfolio.png')}}" alt="Wbdigitech Portfolio"  loading="lazy" 
+         decoding="async"></div>
                                                         <div class="row gx-30">
                                                             <div class="col-xxl-12 col-xl-12">
                                                                 <div class="tp-megamenu-list-box">

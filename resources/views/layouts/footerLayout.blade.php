@@ -5,7 +5,8 @@
 
             <!-- Logo + Tagline + Social -->
             <div class="col-lg-3 col-md-6">
-                <img src="{{asset('css/new-assets/img/logo/logoo.png')}}" class="img-fluid mb-3" style="max-width:180px; filter: brightness(0) invert(1);">
+                <img src="{{asset('css/new-assets/img/logo/logoo.png')}}"  loading="lazy" 
+         decoding="async" class="img-fluid mb-3" style="max-width:180px; filter: brightness(0) invert(1);">
 
                 <p class="text-white">Empowering businesses to succeed in the digital age.</p>
 
@@ -74,7 +75,8 @@
 <div id="consultant-bar">
   <div class="consultant-content">
     <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" 
-         alt="WhatsApp" class="whatsapp-icon">
+         alt="WhatsApp" class="whatsapp-icon"  loading="lazy" 
+         decoding="async">
     <div class="consultant-text">
       <h3>Talk with an <span>expert</span></h3>
       <p>Get expert advice on the right strategy for your business!</p>

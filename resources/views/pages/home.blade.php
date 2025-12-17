@@ -113,125 +113,121 @@
         </div>
     </div>
 
-    <!-- Scoped styles for agency section -->
-    <style>
-    .agency-section .visual-card{ position: relative; overflow: hidden; border-radius: 14px; }
-    .agency-section .visual-card img{ display:block; height:100%; object-fit:cover; }
-    .agency-section .trusted-badge{ position:absolute; left:18px; top:18px; background:#fff; color:#0A3D62; padding:6px 12px; border-radius:8px; font-weight:600; box-shadow:0 6px 18px rgba(10,61,98,0.12); }
-    .agency-section .floating-card{ position:absolute; right:0; bottom:-30px; width:220px; transform:translateY(0); }
-    .agency-section .features-list .icon{ width:38px; display:flex; align-items:center; justify-content:center; }
-    .agency-section .title{ color:#0A3D62; }
-    .btn-gradient{ background: linear-gradient(90deg,#0A3D62,#1287cb); color:#fff; border:none; }
-    .btn-gradient:hover{ opacity:0.95; }
-
-    /* Responsive adjustments */
-    @media (max-width: 991px){
-        .agency-section .floating-card{ display:none; }
-        .agency-section .title{ font-size:1.6rem; }
-    }
-    </style>
 </section>
 
 {{-- Services Area  --}}
-     <div class="tp-service-area pt-100 pb-50 tp-btn-trigger d-none d-lg-block">
-                                <div class="container services">
-                                    <div class="row">
-                                        <div class="col-xxl-12 col-xl-12">
-                                            <div class="tp-award-title-box text-center">
-                                                <h2 class="title-anim" style="color:#0A3D62">Our Custom-made Digital Marketing Services in Dubai, UAE</h2>
-                                                <p> As one of the leading digital marketing agencies, we make the roll with innovative designs, innovative technology, solutions, smart tactics and others. </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-12 d-flex main-service">
-                                            <div class="home-page rounded web-development">
-                                                <div class="html-component mt-5">
-                                                    <div class="title text-white"><a href="{{ route('services.web_dev') }}">Website Development</a></div>
-                                                    <div class="sub-title text-white"> Our team creates custom websites that are easy to use, look great and work perfectly on all devices to showcase your business.</div>
-                                                </div>
-                                            </div>
-                                          <div class="home-page rounded seo">
-                                                <div class="html-component">
-                                                    <div class="title text-white"><a href="{{ route('services.seo') }}">SEO / ASO </a></div>
-                                                    <div class="sub-title text-white"> Want more people to find your business online? Our expert SEO services boost your website's visibility on Google, drive quality traffic to your site, and help you stay ahead of your competitors effortlessly. </div>
-                                                </div>
-                                            </div>
-                                            <div class="home-page rounded lead-generation">
-                                                <div class="html-component">
-                                                    <div class="title text-white"><a href="{{ route('services.lead_generation') }}">Lead Generation</a></div>
-                                                    <div class="sub-title text-white"> We bring qualified leads straight to your business! Our proven strategies help you connect with potential customers who are genuinely interested in what you offer, turning visitors into loyal clients and growing your sales consistently. </div>
-                                                </div>
-                                            </div>
-                                            <div class="home-page rounded mobile-app">
-                                                <div class="html-component">
-                                                    <div class="title text-white"><a href="{{ route('services.mobile') }}">Mobile App Development</a></div>
-                                                    <div class="sub-title text-white"> Let our professional team handle your customer calls and support while you focus on growing your business. We deliver exceptional customer service that keeps your clients satisfied and coming back. </div>
-                                                </div>
-                                            </div>
-                                            <div class="home-page rounded social-media-marketing">
-                                                <div class="html-component">
-                                                    <div class="title text-white"><a href="{{ route('services.smm') }}">Social Media Marketing</a></div>
-                                                    <div class="sub-title text-white"> Our digital marketing experts handle your social media, create scroll-stopping content, and connect you with customers who love what you do. </div>
-                                                </div>
-                                            </div>
-                                            <div class="home-page rounded graphic-design">
-                                                <div class="html-component">
-                                                    <div class="title text-white"><a href="{{  route('services.graphic') }}">Graphic Designing</a></div>
-                                                    <div class="sub-title text-white"> We type and organize your data fast and correctly. Our data processing team cleans up messy files and makes everything neat and easy to use for your business. </div>
-                                                </div>
-                                            </div> 
-                                               <div class="home-page rounded google-ads">
-                                                <div class="html-component">
-                                                    <div class="title text-white"><a href="{{ route('services.google_ads_management') }}">Google Ads</a></div>
-                                                    <div class="sub-title text-white"> We help you understand your customers better. Our expert team runs market research surveys online and in person to collect valuable insights for your business success. </div>
-                                                </div>
-                                            </div> 
-                                               <div class="home-page rounded videography">
-                                                <div class="html-component">
-                                                    <div class="title text-white"><a href="{{ route('services.videography') }}">Videography</a></div>
-                                                    <div class="sub-title text-white"> We help you understand your customers better. Our expert team runs market research surveys online and in person to collect valuable insights for your business success. </div>
-                                                </div>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+<div class="tp-service-area pt-100 pb-50 tp-btn-trigger d-none d-lg-block">
+    <div class="container services">
+        <div class="row">
+            <div class="col-xxl-12 col-xl-12">
+                <div class="tp-award-title-box text-center">
+                    <h2 class="title-anim" style="color:#0A3D62">Our Custom-made Digital Marketing Services in Dubai, UAE</h2>
+                    <p> As one of the leading digital marketing agencies, we make the roll with innovative designs, innovative technology, solutions, smart tactics and others. </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 d-flex main-service">
+                <div class="home-page rounded web-development">
+                    <img src="{{ asset('css/new-assets/services_home/web.webp') }}" 
+                         alt="Website Development" 
+                         class="w-100 h-100"
+                         loading="lazy"
+                         decoding="async">
+                    <div class="html-component mt-5">
+                        <div class="title text-white"><a href="{{ route('services.web_dev') }}">Website Development</a></div>
+                        <div class="sub-title text-white"> Our team creates custom websites that are easy to use, look great and work perfectly on all devices to showcase your business.</div>
+                    </div>
+                </div>
 
-                            <style>
-/* .home-page {
-    position: relative; 
-    overflow: hidden; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    padding: 20px; 
-    min-height: 250px; 
-} 
-*/
+                <div class="home-page rounded seo">
+                    <img src="{{ asset('css/new-assets/services_home/seo.webp') }}" 
+                         alt="SEO / ASO" 
+                         class="w-100 h-100"
+                         loading="lazy"
+                         decoding="async">
+                    <div class="html-component">
+                        <div class="title text-white"><a href="{{ route('services.seo') }}">SEO / ASO </a></div>
+                        <div class="sub-title text-white"> Want more people to find your business online? Our expert SEO services boost your website's visibility on Google, drive quality traffic to your site, and help you stay ahead of your competitors effortlessly. </div>
+                    </div>
+                </div>
 
-.home-page::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.6);
-    z-index: 1;
-    pointer-events: none;
-}
+                <div class="home-page rounded lead-generation">
+                    <img src="{{ asset('css/new-assets/services_home/lead_gen.webp') }}" 
+                         alt="Lead Generation" 
+                         class="w-100 h-100"
+                         loading="lazy"
+                         decoding="async">
+                    <div class="html-component">
+                        <div class="title text-white"><a href="{{ route('services.lead_generation') }}">Lead Generation</a></div>
+                        <div class="sub-title text-white"> We bring qualified leads straight to your business! Our proven strategies help you connect with potential customers who are genuinely interested in what you offer, turning visitors into loyal clients and growing your sales consistently. </div>
+                    </div>
+                </div>
 
-.home-page .html-component {
-     position: relative;  
-    padding: 10px;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    /* height: 70%;  */
-}
-</style>
+                <div class="home-page rounded mobile-app">
+                    <img src="{{ asset('css/new-assets/services_home/mobile_app.webp') }}" 
+                         alt="Mobile App Development" 
+                         class="w-100 h-100"
+                         loading="lazy"
+                         decoding="async">
+                    <div class="html-component">
+                        <div class="title text-white"><a href="{{ route('services.mobile') }}">Mobile App Development</a></div>
+                        <div class="sub-title text-white"> Let our professional team handle your customer calls and support while you focus on growing your business. We deliver exceptional customer service that keeps your clients satisfied and coming back. </div>
+                    </div>
+                </div>
+
+                <div class="home-page rounded social-media-marketing">
+                    <img src="{{ asset('css/new-assets/services_home/social_media.webp') }}" 
+                         alt="Social Media Marketing" 
+                         class="w-100 h-100"
+                         loading="lazy"
+                         decoding="async">
+                    <div class="html-component">
+                        <div class="title text-white"><a href="{{ route('services.smm') }}">Social Media Marketing</a></div>
+                        <div class="sub-title text-white"> Our digital marketing experts handle your social media, create scroll-stopping content, and connect you with customers who love what you do. </div>
+                    </div>
+                </div>
+
+                <div class="home-page rounded graphic-design">
+                    <img src="{{ asset('css/new-assets/services_home/graphic_design.webp') }}" 
+                         alt="Graphic Designing" 
+                         class="w-100 h-100"
+                         loading="lazy"
+                         decoding="async">
+                    <div class="html-component">
+                        <div class="title text-white"><a href="{{  route('services.graphic') }}">Graphic Designing</a></div>
+                        <div class="sub-title text-white"> We type and organize your data fast and correctly. Our data processing team cleans up messy files and makes everything neat and easy to use for your business. </div>
+                    </div>
+                </div> 
+
+                <div class="home-page rounded google-ads">
+                    <img src="{{ asset('css/new-assets/services_home/google_ad.webp') }}" 
+                         alt="Google Ads" 
+                         class="w-100 h-100"
+                         loading="lazy"
+                         decoding="async">
+                    <div class="html-component">
+                        <div class="title text-white"><a href="{{ route('services.google_ads_management') }}">Google Ads</a></div>
+                        <div class="sub-title text-white"> We help you understand your customers better. Our expert team runs market research surveys online and in person to collect valuable insights for your business success. </div>
+                    </div>
+                </div> 
+
+                <div class="home-page rounded videography">
+                    <img src="{{ asset('css/new-assets/services_home/web.webp') }}" 
+                         alt="Videography" 
+                         class="w-100 h-100"
+                         loading="lazy"
+                         decoding="async">
+                    <div class="html-component">
+                        <div class="title text-white"><a href="{{ route('services.videography') }}">Videography</a></div>
+                        <div class="sub-title text-white"> We help you understand your customers better. Our expert team runs market research surveys online and in person to collect valuable insights for your business success. </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>
+
 
 {{-- Customers / Clients --}}
 <section class="pt-10 pb-100 logo-slider-wrapper bg-light">
@@ -318,79 +314,6 @@
             </span>
         </div>
     </div>
-
-    <style>
-        .we-promise-banner {
-            background: linear-gradient(90deg, #1166a3 0%, #31a8e8 100%);
-            overflow: hidden;
-            white-space: nowrap;
-            padding: 12px 0;
-        }
-
-        .scrolling-text {
-            display: flex;
-            align-items: center;
-            overflow: hidden;
-        }
-
-        .scrolling-content {
-            display: inline-flex;
-            align-items: center;
-            animation: scroll-left 22s linear infinite;
-        }
-
-        @keyframes scroll-left {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
-
-        .scrolling-content span {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 800;
-            font-size: 4.5rem;
-            letter-spacing: 1px;
-            display: flex;
-            align-items: center;
-            margin-right: 60px;
-        }
-
-        .outline {
-            color: transparent;
-            -webkit-text-stroke: 1.5px #ffffff;
-        }
-
-        .filled {
-            color: #ffffff;
-        }
-
-        .arrow {
-            width: 80px;
-            height: 80px;
-            margin-left: 12px;
-        }
-
-        @media (max-width: 992px) {
-            .scrolling-content span {
-                font-size: 3rem;
-                margin-right: 40px;
-            }
-            .arrow {
-                width: 30px;
-                height: 30px;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .scrolling-content span {
-                font-size: 2rem;
-                margin-right: 30px;
-            }
-            .arrow {
-                width: 22px;
-                height: 22px;
-            }
-        }
-    </style>
 </section>
 
 
@@ -496,46 +419,6 @@
         </div>
     </div>
 
-    <style>
-        .home-blog-section {
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .home-blog-section h2 {
-            font-size: 2.3rem;
-            line-height: 1.2;
-        }
-
-        .home-blog-section .blog-item {
-            transition: all 0.3s ease-in-out;
-            border-radius: 12px;
-        }
-
-        .home-blog-section .blog-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-        }
-
-        .home-blog-section .blog-img {
-            height: 230px;
-            object-fit: cover;
-            border-top-left-radius: 12px;
-            border-top-right-radius: 12px;
-        }
-
-        .home-blog-section .text-primary {
-            color: #0A3D62 !important;
-        }
-
-        @media (max-width: 767px) {
-            .home-blog-section h2 {
-                font-size: 1.8rem;
-            }
-            .home-blog-section .blog-img {
-                height: 180px;
-            }
-        }
-    </style>
 </section>
 
 
@@ -635,60 +518,7 @@
     </div>
 </div>
 
-<style>
-    .review-summary-card {
-    background: #fff;
-    border: 1px solid #eee;
-}
-.testimonial-card {
-    border: 1px solid #eee;
-    transition: transform 0.3s ease;
-}
-.testimonial-card:hover {
-    transform: translateY(-5px);
-}
-.review-rating span {
-    font-size: 1.2rem;
-}
-/* Fix side scroll issue */
-.tp-testimonial-area {
-    overflow-x: hidden; /* prevent horizontal scroll */
-}
-
-.swiper-container {
-    width: 100% !important;
-    max-width: 100% !important;
-}
-
-.swiper-wrapper {
-    display: flex;
-    width: 100%;
-}
-
-.swiper-slide {
-    min-width: 0; /* allow shrink */
-    box-sizing: border-box;
-}
-
-/* Ensure cards fit inside screen */
-.testimonial-card {
-    width: 100%;
-    max-width: 100%;
-    word-wrap: break-word;
-}
-
-/* Mobile spacing */
-@media (max-width: 575px) {
-    .testimonial-card {
-        padding: 15px;
-    }
-    .review-summary-card {
-        padding: 15px;
-    }
-}
-
-</style>
-                          
+{{-- Team Section --}}
 <div class="tp-team-area pt-20 pb-50 fix">
      {{-- Section Title --}}
         <div class="row justify-content-center mb-40">
