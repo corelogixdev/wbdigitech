@@ -163,7 +163,7 @@
                                             </div>
                                             <div class="home-page rounded call-center">
                                                 <div class="html-component">
-                                                    <div class="title text-white"><a href="#">Call Center Service</a></div>
+                                                    <div class="title text-white"><a href="{{ route('services.mobile') }}">Mobile App Development</a></div>
                                                     <div class="sub-title text-white"> Let our professional team handle your customer calls and support while you focus on growing your business. We deliver exceptional customer service that keeps your clients satisfied and coming back. </div>
                                                 </div>
                                             </div>
