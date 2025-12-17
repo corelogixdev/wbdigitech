@@ -135,7 +135,7 @@
             overflow: hidden;
             transition: width 0.5s;
         }
-
+/* 
       .services .web-development {
             background-image: url('/css/new-assets/services_home/web.webp');
         }
@@ -148,7 +148,7 @@
            background-image: url('/css/new-assets/services_home/seo.webp');
         }
        
-        /* mobile app development */
+        
         .services .mobile-app {
             background-image: url('/css/new-assets/services_home/mobile_app.webp');
         }
@@ -157,19 +157,19 @@
             background-image: url('/css/new-assets/services_home/social_media.webp');
         }
 
-        /* graphic designing */
+
         .services .graphic-design {
             background-image: url('/css/new-assets/services_home/graphic_design.webp');
         }
 
-        /* google ads */
+
         .services .google-ads {
             background-image: url('/css/new-assets/services_home/google_ad.webp');
         }
 
         .services .videography{
            background-image: url('/css/new-assets/services_home/web.webp');
-        }
+        } */
 
         .services .home-page:hover {
             width: 55%;

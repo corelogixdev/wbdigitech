@@ -12,7 +12,6 @@
     <!-- Spacer below header -->
     <div style="padding: 80px"></div>
 
-<
                                         <!-- Hero Title -->
                                         <div class="tp-hero-title-wrap mb-35 text-center">
                                             <h2 class="tp-hero-title gradient-text">
@@ -34,7 +33,7 @@
                                     <!-- Hero Image Section -->
     <div class="hero-image-section">
         <div class="hero-image-container">
-            <img src="{{ asset('css/new-assets/new_images/WEBimagesWBgooglead-01.webp') }}" alt="Google Ads Management" class="hero-image">
+            <img src="{{ asset('css/new-assets/google_ads/amazon_marketing.webp') }}" alt="Google Ads Management" class="hero-image">
             {{-- <div class="hero-overlay"></div> --}}
         </div>
     </div>
@@ -58,12 +57,7 @@
 
 
 
-                <!-- Sidebar Images -->
-                <div class="sidebar-images">
-                    <img src="https://wbdigitech.ae/wp-content/uploads/2022/09/responsive-web-design.png" alt="Responsive Web Design">
-                    <img src="https://wbdigitech.ae/wp-content/uploads/2022/09/cms-web-development.png" alt="CMS Web Development">
-                    <img src="https://wbdigitech.ae/wp-content/uploads/2022/09/ecommerce-web-development.png" alt="E-commerce Web Development">
-                </div>
+               
             </div>
         </div>
 
