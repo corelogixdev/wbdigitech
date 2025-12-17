@@ -8,7 +8,7 @@
     <div id="smooth-content">
         <main>
             <!-- Portfolio Title and Thumbnail -->
-            <section class="pt-5 pb-3 bg-white" style="padding-top: 150px !important;">
+            <section class="pt-5 pb-3 bg-white" style="padding-top: 190px !important;">
                 <div class="container">
                     <div class="row justify-content-center align-items-center">
                         <div class="col-lg-2 col-md-3 mb-3 mb-md-0 text-center">
@@ -31,9 +31,34 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <h3 class="fw-bold text-gradient mb-3">Client Overview</h3>
-                            <p class="text-muted fs-5">
-                                {!! nl2br(e($portfolio->client_overview ?? 'No overview provided.')) !!}
-                            </p>
+                            @php
+function formatCaseStudy($text) {
+    $text = e($text);
+
+    // Headings (## Heading)
+    $text = preg_replace('/^## (.*)$/m', '<h4 class="fw-bold text-gradient mt-4 mb-2">$1</h4>', $text);
+
+    // Bold (**text**)
+    $text = preg_replace('/\*\*(.*?)\*\*/', '<strong>$1</strong>', $text);
+
+    // Paragraphs
+    $paragraphs = preg_split("/\n\s*\n/", $text);
+    $html = '';
+
+    foreach ($paragraphs as $p) {
+        if (!str_starts_with(trim($p), '<h')) {
+            $html .= '<p class="text-muted fs-5 mb-3">' . nl2br($p) . '</p>';
+        } else {
+            $html .= $p;
+        }
+    }
+
+    return $html;
+}
+@endphp
+
+{!! formatCaseStudy($portfolio->client_overview ?? '') !!}
+
                         </div>
                     </div>
                 </div>

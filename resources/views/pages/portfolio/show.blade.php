@@ -33,8 +33,12 @@
                             <p class="text-muted fs-5" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
                                 {{ $portfolio->client_overview ?? 'No overview provided.' }}
                             </p>
-                            <a href="{{ route('portfolio.case_study',$portfolio->id)}}" class="btn btn-gradient mt-2">Read More</a>
-                        </div>
+<a href="{{ route('portfolio.case_study', [
+        'title' => Str::slug($portfolio->title), 
+        'id' => $portfolio->id
+    ]) }}" class="btn btn-gradient mt-2">
+    Read More
+</a>                        </div>
                     </div>
                 </div>
             </section>
@@ -59,15 +63,39 @@
                             </div>
                         </div>
 
-                        <!-- Right Services -->
+                                              <!-- Right Services (UPDATED) -->
                         <div class="col-lg-8">
                             <div class="tab-content bg-white p-4 shadow rounded" id="services-tabContent">
                                 @foreach($portfolio->services ?? [] as $index => $service)
                                     <div class="tab-pane fade {{ $loop->first ? 'show active' : '' }}" 
                                          id="service-{{ $index }}" role="tabpanel">
-                                        <h4 class="fw-bold">{{ $service['name'] }}</h4>
-                                        <p class="text-muted">{{ $service['comment'] ?? 'No description available.' }}</p>
-                                        <a href="{{ route('contact') }}" class="btn btn-gradient mt-3">Get In Touch</a>
+
+                                        <h4 class="fw-bold mb-4">{{ $service['name'] }}</h4>
+
+                                        @if(!empty($service['objective']))
+                                            <h6 class="fw-semibold text-gradient">Objective</h6>
+                                            <p class="text-muted mb-3">
+                                                {{ $service['objective'] }}
+                                            </p>
+                                        @endif
+
+                                        @if(!empty($service['challenges']))
+                                            <h6 class="fw-semibold text-gradient">Challenges</h6>
+                                            <p class="text-muted mb-3">
+                                                {{ $service['challenges'] }}
+                                            </p>
+                                        @endif
+
+                                        @if(!empty($service['solutions']))
+                                            <h6 class="fw-semibold text-gradient">Solutions</h6>
+                                            <p class="text-muted mb-4">
+                                                {{ $service['solutions'] }}
+                                            </p>
+                                        @endif
+
+                                        <a href="{{ route('contact') }}" class="btn btn-gradient mt-2">
+                                            Get In Touch
+                                        </a>
                                     </div>
                                 @endforeach
                             </div>

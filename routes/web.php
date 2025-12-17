@@ -286,7 +286,7 @@ Route::get('/customer', [CustomerController::class, 'publicIndex'])->name('custo
 // Public side | Portfolio Pages
 Route::get('/portfolio', [PortfolioController::class, 'publicIndex'])->name('portfolio.public');
 Route::get('/portfolio/{id}', [PortfolioController::class, 'publicShow'])->name('portfolio.public.show');
-Route::get('/portfolio/{id}/case-study', [PortfolioController::class, 'caseStudy'])->name('portfolio.case_study');
+Route::get('/portfolio/case-study/{title}-{id}', [PortfolioController::class, 'caseStudy'])->name('portfolio.case_study');
 
 // Public Side | SeoRequest
 Route::get('/seo-request', [SeoRequestController::class, 'publicIndex'])->name('seo-request.public');
