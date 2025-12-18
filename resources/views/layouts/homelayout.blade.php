@@ -82,6 +82,9 @@
     {{-- <script src="{{ asset('themes/agon/new-assets/js/ajax-form.js') }}" defer></script> --}}
     {{-- <script src="{{ asset('themes/agon/new-assets/js/webgl.js') }}" defer></script> --}}
     <script src="{{ asset('themes/agon/new-assets/js/tp-cursor.js') }}" defer></script>
+
+     <script src=https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin=anonymous referrerpolicy="no-referrer" defer></script>
     <script src="{{ asset('themes/agon/new-assets/js/main.js') }}" defer></script>
     {{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> --}}
   
@@ -93,8 +96,7 @@
 
 
     <noscript><iframe src=https://www.googletagmanager.com/ns.html?id=GTM-KB33VJ6height="0" width=0 class="page_speed_1689186421"></iframe></noscript>
-    {{-- <script src=https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-        crossorigin=anonymous referrerpolicy="no-referrer" defer></script> --}}
+   
 
 
 <!-- Hidden container for Google Translate -->

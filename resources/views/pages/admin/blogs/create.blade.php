@@ -15,7 +15,8 @@
                     {{-- BLOG TITLE --}}
                     <div class="mb-3">
                         <label class="form-label fw-bold">Title</label>
-                        <input type="text" name="title" class="form-control" placeholder="Enter blog title" required>
+                        <input type="text" name="title" class="form-control"
+                               placeholder="Enter blog title" required>
                     </div>
 
                     {{-- FEATURED IMAGE --}}
@@ -41,19 +42,19 @@
                             <div class="mb-3">
                                 <label class="form-label">Meta Title</label>
                                 <input type="text" name="meta_title" class="form-control"
-                                    placeholder="SEO meta title">
+                                       placeholder="SEO meta title">
                             </div>
 
                             <div class="mb-3">
                                 <label class="form-label">Meta Description</label>
                                 <textarea name="meta_description" class="form-control" rows="3"
-                                    placeholder="SEO meta description"></textarea>
+                                          placeholder="SEO meta description"></textarea>
                             </div>
 
                             <div class="mb-3">
                                 <label class="form-label">Meta Keywords</label>
                                 <input type="text" name="meta_keywords" class="form-control"
-                                    placeholder="keyword1, keyword2, keyword3">
+                                       placeholder="keyword1, keyword2, keyword3">
                             </div>
 
                         </div>
@@ -72,18 +73,35 @@
         </div>
     </div>
 
-    {{-- TINYMCE --}}
-    <script src="https://cdn.tiny.cloud/1/{{ env('TINYMCE_API_KEY') }}/tinymce/6/tinymce.min.js"
-        referrerpolicy="origin"></script>
+    {{-- CKEDITOR 5 (OPEN SOURCE, NO API KEY) --}}
+    <script src="https://cdn.ckeditor.com/ckeditor5/41.4.2/classic/ckeditor.js"></script>
 
     <script>
-        tinymce.init({
-            selector: '#editor',
-            height: 400,
-            plugins: 'lists link image media table code',
-            toolbar: 'undo redo | bold italic | alignleft aligncenter alignright | bullist numlist | link image media | code',
-            menubar: true
-        });
+        ClassicEditor
+            .create(document.querySelector('#editor'), {
+                toolbar: [
+                    'undo', 'redo',
+                    '|', 'heading',
+                    '|', 'bold', 'italic',
+                    '|', 'link',
+                    '|', 'bulletedList', 'numberedList',
+                    '|', 'insertTable',
+                    '|', 'mediaEmbed',
+                    '|', 'codeBlock'
+                ],
+                heading: {
+                    options: [
+                        { model: 'paragraph', title: 'Paragraph', class: 'ck-heading_paragraph' },
+                        { model: 'heading1', view: 'h1', title: 'Heading 1', class: 'ck-heading_heading1' },
+                        { model: 'heading2', view: 'h2', title: 'Heading 2', class: 'ck-heading_heading2' },
+                        { model: 'heading3', view: 'h3', title: 'Heading 3', class: 'ck-heading_heading3' },
+                        { model: 'heading4', view: 'h4', title: 'Heading 4', class: 'ck-heading_heading4' }
+                    ]
+                }
+            })
+            .catch(error => {
+                console.error(error);
+            });
     </script>
 
 </x-app-layout>
