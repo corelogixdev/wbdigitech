@@ -29,7 +29,7 @@ Route::get('/contact', [ContactController::class,'publicIndex'])->name('contact'
 
 // Public side | Blog Pages
 Route::get('/blog', [BlogController::class, 'publicIndex'])->name('blogs.public');
-Route::get('/blogs/{id}', [BlogController::class, 'publicShow'])->name('blogs.public.show');
+Route::get('/blogs/{slug}', [BlogController::class, 'publicShow'])->name('blogs.public.show');
 
 // Public side | Services Page
 // Route::get('/service', [ServiceController::class, 'publicIndex'])->name('services.public');

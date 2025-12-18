@@ -33,7 +33,7 @@
                 <div class="col-xl-4 col-lg-6 col-md-6 mb-50">
                     <div class="tp-blog-item">
                         <div class="tp-blog-thumb fix p-relative rounded">
-                            <a href="{{ route('blogs.public.show', $blog->id) }}">
+                            <a href="{{ route('blogs.public.show', $blog->slug) }}">
                                 @if(!empty($blog->image))
                                     <img src="{{ asset('storage/' . $blog->image) }}" 
                                          alt="{{ $blog->title ?? 'Blog Image' }}" 
@@ -49,11 +49,13 @@
                         <div class="tp-blog-content text-center mt-3">
                             <span class="text-muted"><a href="#">Blog</a></span>
                             <h4 class="tp-blog-title-sm mt-2">
-                                <a class="text-dark" href="{{ route('blogs.public.show', $blog->id) }}">
+                                <a class="text-dark" href="{{ route('blogs.public.show', $blog->slug) }}">
                                     {{ $blog->title }}
                                 </a>
                             </h4>
-                            <p class="text-muted mt-1">{{ Str::limit(strip_tags($blog->content), 100) }}</p>
+                            <p class="text-muted mt-1">
+                            {{ Str::limit(strip_tags(html_entity_decode($blog->content)), 100, '...') }}
+                        </p>
                         </div>
                     </div>
                 </div>

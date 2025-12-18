@@ -381,7 +381,7 @@
                         <div class="col-md-6">
                             <div class="blog-item bg-white border-0 shadow-sm h-100">
                                 @if(!empty($blog->image))
-                                    <a href="{{ route('blogs.public.show', $blog->id ?? 0) }}">
+                                    <a href="{{ route('blogs.public.show', $blog->slug ?? 0) }}">
                                         <img src="{{ asset('storage/' . $blog->image) }}" 
                                              alt="{{ $blog->title ?? 'Blog Image' }}" 
                                              class="img-fluid rounded-top w-100 blog-img"  loading="lazy"
@@ -390,7 +390,7 @@
                                 @endif
                                 <div class="p-3">
                                     <h5 class="fw-bold text-dark mb-1">
-                                        <a href="{{ route('blogs.public.show', $blog->id ?? 0) }}" 
+                                        <a href="{{ route('blogs.public.show', $blog->slug ?? 0) }}" 
                                            class="text-dark text-decoration-none">
                                            {{ $blog->title ?? 'Untitled Blog' }}
                                         </a>
@@ -401,7 +401,7 @@
                                     <p class="text-secondary small mb-3">
                                         {{ Str::limit($blog->excerpt ?? '', 100, '...') }}
                                     </p>
-                                    <a href="{{ route('blogs.public.show', $blog->id ?? 0) }}" 
+                                    <a href="{{ route('blogs.public.show', $blog->slug ?? 0) }}" 
                                        class="text-primary text-decoration-none fw-semibold">
                                         Read More →
                                     </a>
