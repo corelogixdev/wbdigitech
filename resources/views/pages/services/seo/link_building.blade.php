@@ -30,8 +30,7 @@
                 <!-- Hero Image Section -->
     <div class="hero-image-section">
         <div class="hero-image-container">
-            <img src="{{ asset('css/new-assets/new_images/WEBimagesWBSEO-01.webp') }}" alt="seo" class="hero-image">
-            {{-- <div class="hero-overlay"></div> --}}
+            <img src="{{ asset('css/new-assets/seo_aso/link_building.webp') }}" alt="seo" class="hero-image">
         </div>
     </div>
 <br>

@@ -30,8 +30,8 @@
                 <!-- Hero Image Section -->
     <div class="hero-image-section">
         <div class="hero-image-container">
-            <img src="{{ asset('css/new-assets/new_images/WEBimagesWBSEO-01.webp') }}" alt="seo" class="hero-image">
-            {{-- <div class="hero-overlay"></div> --}}
+            <img src="{{ asset('css/new-assets/seo_aso/aso.webp') }}" alt="seo" class="hero-image">
+           
         </div>
     </div>
 <br>
@@ -59,12 +59,7 @@
                     <li><a href="{{ route('services.play_store_seo') }}">Play Store SEO</a></li>
                 </ul>
 
-                <!-- Sidebar Images -->
-                <div class="sidebar-images">
-                    {{-- <img src="https://wbdigitech.ae/wp-content/uploads/2022/09/seo-optimization.png" alt="SEO Optimization">
-                    <img src="https://wbdigitech.ae/wp-content/uploads/2022/09/seo-results.png" alt="SEO Results">
-                    <img src="https://wbdigitech.ae/wp-content/uploads/2022/09/seo-marketing.png" alt="SEO Marketing"> --}}
-                </div>
+               
             </div>
         </div>
 
@@ -94,7 +89,6 @@
             <p>When you invest in SEO services, you have every right to know what you’re paying for. We keep you in the loop at every step of the journey. Detailed reports on your search rankings with position updates and screenshots are provided every 24 hours.</p>
             <p>We also provide a monthly report on all the quality links acquired for your website so you always stay informed.</p>
 
-            {{-- <img class="service-img" src="https://wbdigitech.ae/wp-content/uploads/2022/09/seo-optimization.png" alt="SEO Service Image"> --}}
         </div>
     </div>
 </div>
