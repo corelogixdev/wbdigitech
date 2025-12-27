@@ -1,94 +1,191 @@
 @extends('layouts.homelayout')
 
-@section('title', 'SEO Services - WB-DIGITECH')
+@section('title', 'Ecommerce SEO Services That Scale Online Stores')
+@section('meta_description', 'Looking for ecommerce SEO Dubai experts? Our tailored ecommerce SEO services help online stores rank higher, convert better, and grow sustainably.')
 
 @section('content')
-<link rel="stylesheet" href="{{ asset('css/services.css') }}">
-<link rel="stylesheet" href="{{ asset('css/home.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/services.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
 
-<div class="main-wrapper">
+    <div class="main-wrapper">
 
-    <!-- Spacer below header -->
-    <div style="padding: 80px"></div>
+        <!-- Spacer below header -->
+        <div style="padding: 80px"></div>
 
-    <!-- Hero Section -->
-    <div class="tp-hero-title-wrap mb-35 text-center">
-        <h2 class="tp-hero-title gradient-text">
-            Ecommerce SEO
-        </h2>
-    </div>
-    <div class="tp-hero-content text-center">
-        <p class="delay-load">
-            Get ranked higher, drive organic traffic, and grow your business with 
-            WB DIGITECH’s proven SEO strategies.
-        </p>
-        <div class="hero-btns mt-4">
-            <a href="{{ route('contact') }}" class="btn btn-gradient">Get a Free Quote</a>
+        <!-- Hero Section -->
+        <div class="tp-hero-title-wrap mb-35 text-center">
+            <h2 class="tp-hero-title gradient-text">
+                E-commerce SEO Dubai That Actually Grows Your Business
+            </h2>
         </div>
-    </div>
-
-                <!-- Hero Image Section -->
-    <div class="hero-image-section">
-        <div class="hero-image-container">
-            <img src="{{ asset('css/new-assets/seo_aso/ecommerce_seo.webp') }}" alt="seo" class="hero-image">
-        </div>
-    </div>
-<br>
-<br>
-
-    <!-- Content & Sidebar -->
-    <div class="container-flex">
-        
-        <!-- Sidebar -->
-        <div class="sidebar-col">
-            <div class="sidebar">
-                <h6>Our Services</h6>
-                <ul>
-                    <li><a href="{{ route('services.seo') }}">SEO Services</a></li>
-                    <li><a href="{{ route('services.content_marketing') }}">Content Marketing</a></li>
-                    <li><a href="{{ route('services.google_business_profile_seo') }}">Google Business Profile SEO</a></li>
-                    <li><a href="{{ route('services.seo-audit') }}">SEO Audit</a></li>
-                    <li class="current-menu-item"><a href="{{ route('services.ecommerce_seo') }}">E-commerce SEO</a></li>
-                    <li><a href="{{ route('services.page_optimization') }}">Page Optimization</a></li>
-                    <li><a href="{{ route('services.link_building') }}">Link Building</a></li>
-                    <li><a href="{{ route('services.technical_seo') }}">Technical SEO</a></li>
-                    <li><a href="{{ route('services.guest_posting') }}">Guest Posting</a></li>
-                    <li><a href="{{ route('services.local_seo') }}">Local SEO</a></li>
-                    <li><a href="{{ route('services.app_store_optimization') }}">App Store Optimization</a></li>
-                    <li><a href="{{ route('services.play_store_seo') }}">Play Store SEO</a></li>
-                </ul>
-
-              
+        <div class="tp-hero-content text-center">
+            <p class="delay-load">
+                Running an online store sounds exciting until traffic slows down and sales feel unpredictable. That is
+                usually
+                where e-commerce SEO Dubai becomes less of a buzzword and more of a necessity. Growth does not happen by
+                chance.
+                It is built, adjusted, tested, and sometimes reworked again.
+            </p>
+            <p>
+                Some brands start strong, others struggle early. Either way, e-commerce SEO Dubai plays a central role in
+                how
+                products get discovered, trusted, and purchased. It is not just about rankings. Visibility turns into
+                clicks,
+                and clicks eventually become customers.
+            </p>
+            <div class="hero-btns mt-4">
+                <a href="{{ route('contact') }}" class="btn btn-gradient">Book a free e-commerce SEO audit</a>
             </div>
         </div>
 
-        <!-- Content -->
-        <div class="content-col">
-            <h2>What WB-DIGITECH Can Do for You?</h2>
-            <p>Our specialists help you get ranked higher by making your website SEO-friendly and your content worthy of featured positions.</p>
+        <!-- Hero Image Section -->
+        <div class="hero-image-section">
+            <div class="hero-image-container">
+                <img src="{{ asset('css/new-assets/seo_aso/ecommerce_seo.webp') }}" alt="seo" class="hero-image">
+            </div>
+        </div>
 
-            <h2>Effective On-Page SEO</h2>
-            <p>Sure, webpage structure and its content is just a piece of the SEO puzzle — but a very important one. Our proven techniques allow us to perform best-in-class on-page optimization.</p>
-            <p>With detailed web analysis, our team ensures that the pages meant for the public can be found by search engines. Effective keyword targeting is the key to growing traffic and revenue. We’ll identify top-performing keywords in your industry and add them to the appropriate pages of your website.</p>
+        <br>
+        <br>
 
-            <h2>Real Results</h2>
-            <p>We give our clients complete access to important reports (web analytics, CTR, SEO, social media campaigns, etc.) so they can see real results and analyze their business growth.</p>
+        <!-- Content & Sidebar -->
+        <div class="container-flex">
 
-            <h2>Optimization</h2>
-            <p>We don’t just promise; we deliver. Our expert team helps clients see maximum ROI on their investment by handling technical issues that could be hurting their rankings and search visibility.</p>
+            <!-- Sidebar -->
+            <div class="sidebar-col">
+                <div class="sidebar">
+                    <h6>Our Services</h6>
+                    <ul>
+                        <li><a href="{{ route('services.seo') }}">SEO Services</a></li>
+                        <li><a href="{{ route('services.content_marketing') }}">Content Marketing</a></li>
+                        <li><a href="{{ route('services.google_business_profile_seo') }}">Google Business Profile SEO</a>
+                        </li>
+                        <li><a href="{{ route('services.seo-audit') }}">SEO Audit</a></li>
+                        <li class="current-menu-item"><a href="{{ route('services.ecommerce_seo') }}">E-commerce SEO</a>
+                        </li>
+                        <li><a href="{{ route('services.page_optimization') }}">Page Optimization</a></li>
+                        <li><a href="{{ route('services.link_building') }}">Link Building</a></li>
+                        <li><a href="{{ route('services.technical_seo') }}">Technical SEO</a></li>
+                        <li><a href="{{ route('services.guest_posting') }}">Guest Posting</a></li>
+                        <li><a href="{{ route('services.local_seo') }}">Local SEO</a></li>
+                        <li><a href="{{ route('services.app_store_optimization') }}">App Store Optimization</a></li>
+                        <li><a href="{{ route('services.play_store_seo') }}">Play Store SEO</a></li>
+                    </ul>
+                </div>
+            </div>
 
-            <h2>Effective SERP Strategies</h2>
-            <p>Good business deserves to be found online. Turbocharge your online marketing efforts with our effective SERP tracking that promotes your business in search results and brings in new customers.</p>
+            <!-- Content -->
+            <div class="content-col">
 
-            <h2>Effective Off-Page SEO Strategies</h2>
-            <p>Being a premier SEO company, we focus on the quality of links rather than the quantity. Our marketing is powered by valuable industry citations from reliable sources including trade associations and niche directories.</p>
-            <p>We also create valuable content that not only establishes your brand’s authority but also provides opportunities for top websites to link back to you.</p>
+                <h2>Why E-commerce SEO Dubai Matters for Competitive Markets</h2>
+                <p>Dubai is a fast-paced, digital-first, and crowded market for e-commerce brands. Many stores appear
+                    similar,
+                    offer similar products, and communicate similarly. SEO cuts through that noise, slowly sometimes,
+                    quickly
+                    at other times. With e-commerce SEO Dubai, your store does not rely only on ads; organic traffic
+                    compounds,
+                    pages mature, and authority builds.</p>
+                <p>It is not magic, but it feels close when done right. Some results appear early. Others take patience.
+                    That
+                    balance is normal.</p>
 
-            <h2>Detailed Transparent Reporting</h2>
-            <p>When you invest in SEO services, you have every right to know what you’re paying for. We keep you in the loop at every step of the journey. Detailed reports on your search rankings with position updates and screenshots are provided every 24 hours.</p>
-            <p>We also provide a monthly report on all the quality links acquired for your website so you always stay informed.</p>
+                <h2>E-commerce SEO Services Built for Real Online Stores</h2>
+                <p>Our ecommerce SEO services are not fixed templates. They evolve with your catalog, your customers, and
+                    even
+                    your mistakes. Product pages behave differently than blogs. Categories demand structure. Filters need
+                    control.</p>
 
+                <p>Here is what is usually included:</p>
+                <p>Keyword mapping for products and collections</p>
+                <p>Technical SEO cleanup that does not break your store</p>
+                <p>Content optimization without overstuffing</p>
+                <p>Conversion-focused on-page improvements</p>
+
+                <p>These ecommerce SEO services adapt over time and rankings shift, algorithms change, we adjust, and then
+                    we
+                    refine again.</p>
+
+                <h2>How an E-commerce SEO Company in Dubai Thinks Differently</h2>
+                <p>A typical agency might focus on traffic alone. An experienced e-commerce SEO company Dubai looks deeper.
+                    Traffic without intent does not sell. Rankings without conversion waste effort. We analyze buying
+                    behavior.
+                    We track where users pause. Sometimes the fix is technical. Sometimes it is content. Sometimes it is
+                    surprisingly simple.</p>
+                <p>Working with an e-commerce SEO company Dubai means decisions are data-led but still human. Numbers guide
+                    us,
+                    but strategy shapes the path.</p>
+
+                <h2>Our E-commerce SEO Strategy That Scales</h2>
+                <p>Every store has different friction points. That is why a single e-commerce SEO strategy never fits all.
+                    Some
+                    brands need authority, others need structure, and many need both. We may start with technical fixes,
+                    then
+                    jump into content. Or content comes first, and technical follows later. The order changes. The goal does
+                    not.
+                    This approach keeps growth sustainable, not forced.</p>
+
+                <h2>Seo for E-commerce Website That Converts, Not Just Ranks</h2>
+                <p>Good rankings feel great, Sales feel better. We apply seo for e-commerce website optimization with
+                    conversion in mind. Titles are written for humans, descriptions encourage clicks, and pages guide
+                    decisions
+                    naturally. Search engines notice engagement while customers notice clarity.</p>
+
+                <h2>Work With an Ecommerce SEO Agency That Understands Scale</h2>
+                <p>As an e-commerce SEO agency, we think beyond page one. We think about page two, page ten, and next year.
+                    Scaling SEO means preparing for growth before it arrives. Sometimes it is quiet work and sometimes
+                    aggressive expansion. Both have their place.</p>
+
+                <h2>Led by an E-commerce SEO Specialist Who Knows the Market</h2>
+                <p>Every project is guided by an experienced ecommerce SEO specialist who understands regional search
+                    behavior, platform limitations, and buyer psychology. Strategy is not outsourced to guesswork. That
+                    expertise shows over time, not overnight.</p>
+
+                <h2>Why Brands Call Us the Best E-Commerce SEO Company</h2>
+                <p>Being called the best e-commerce seo company is not about claims. It comes from consistency,
+                    transparency,
+                    and results that make sense financially.</p>
+                <p>We do not promise overnight rankings. We promise smart growth and honest timelines.</p>
+
+                <h2>Ready to Grow with Ecommerce SEO Dubai</h2>
+                <p>If your store feels stuck, or growth feels random, ecommerce SEO Dubai can realign everything. Visibility
+                    improves. Trust builds. Sales stabilize.</p>
+                <p>Our ecommerce SEO services are designed to grow with you, not box you in. Whether you need structure,
+                    authority, or refinement, the right SEO foundation changes everything. And if you are looking to hire
+                    SEO
+                    agency in Dubai, or partner with the best digital marketing agency in Dubai, WB is the place to begin
+                    with.</p>
+
+                <div class="hero-btns mt-4">
+                    <a href="{{ route('contact') }}" class="btn btn-gradient">Book an SEO audit</a>
+                </div>
+
+                <br>
+
+                <h2>FAQs</h2>
+
+                <h4>1. How long does e-commerce SEO Dubai take to show results?</h4>
+                <p>With e-commerce SEO Dubai, early technical fixes can show impact within weeks, while stronger growth
+                    usually
+                    appears between three to six months. Long-term gains continue well beyond that.</p>
+
+                <h4>2. Are e-commerce SEO services different from regular SEO?</h4>
+                <p>Yes. E-commerce SEO services focus heavily on product pages, categories, filters, and conversion signals,
+                    not just content and backlinks.</p>
+
+                <h4>3. Do I need a local e-commerce SEO company Dubai?</h4>
+                <p>Working with a local e-commerce SEO company Dubai helps align your strategy with regional search trends,
+                    buyer intent, and competitive landscapes.</p>
+
+                <h4>4. Is e-commerce SEO strategy still effective with paid ads running?</h4>
+                <p>Absolutely. A strong e-commerce SEO strategy supports paid campaigns by lowering acquisition costs and
+                    increasing brand trust through organic presence.</p>
+
+                <h4>5. Can an e-commerce SEO agency help with international expansion?</h4>
+                <p>Yes. An experienced e-commerce SEO agency can structure multilingual and multi-region SEO while
+                    maintaining
+                    performance across markets.</p>
+
+            </div>
         </div>
     </div>
-</div>
 @endsection

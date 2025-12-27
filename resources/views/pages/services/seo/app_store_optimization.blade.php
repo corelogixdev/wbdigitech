@@ -1,95 +1,243 @@
 @extends('layouts.homelayout')
 
-@section('title', 'SEO Services - WB-DIGITECH')
+@section('title', 'SEO Audit Services | Trusted SEO Audit Agency in Dubai')
+
+@section('meta')
+    <meta name="description"
+        content="Looking for a professional SEO audit that actually explains why it matters? Our SEO audit agency delivers deep insights and measurable growth.">
+@endsection
+
 
 @section('content')
-<link rel="stylesheet" href="{{ asset('css/services.css') }}">
-<link rel="stylesheet" href="{{ asset('css/home.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/services.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
 
-<div class="main-wrapper">
+    <div class="main-wrapper">
 
-    <!-- Spacer below header -->
-    <div style="padding: 80px"></div>
+        <!-- Spacer below header -->
+        <div style="padding: 80px"></div>
 
-    <!-- Hero Section -->
-    <div class="tp-hero-title-wrap mb-35 text-center">
-        <h2 class="tp-hero-title gradient-text">
-            App Store Optimization (ASO)
-        </h2>
-    </div>
-    <div class="tp-hero-content text-center">
-        <p class="delay-load">
-            Get ranked higher, drive organic traffic, and grow your business with 
-            WB DIGITECH’s proven SEO strategies.
-        </p>
-        <div class="hero-btns mt-4">
-            <a href="{{ route('contact') }}" class="btn btn-gradient">Get a Free Quote</a>
+        <!-- Hero Section -->
+        <div class="tp-hero-title-wrap mb-35 text-center">
+            <h1 class="tp-hero-title gradient-text">
+                SEO Audit Services That Turn Insights Into Rankings
+            </h1>
         </div>
-    </div>
-
-                <!-- Hero Image Section -->
-    <div class="hero-image-section">
-        <div class="hero-image-container">
-            <img src="{{ asset('css/new-assets/seo_aso/aso.webp') }}" alt="seo" class="hero-image">
-           
-        </div>
-    </div>
-<br>
-<br>
-
-    <!-- Content & Sidebar -->
-    <div class="container-flex">
-        
-        <!-- Sidebar -->
-        <div class="sidebar-col">
-            <div class="sidebar">
-                <h6>Our Services</h6>
-                <ul>
-                    <li><a href="{{ route('services.seo') }}">SEO Services</a></li>
-                    <li><a href="{{ route('services.content_marketing') }}">Content Marketing</a></li>
-                    <li><a href="{{ route('services.google_business_profile_seo') }}">Google Business Profile SEO</a></li>
-                    <li><a href="{{ route('services.seo-audit') }}">SEO Audit</a></li>
-                    <li><a href="{{ route('services.ecommerce_seo') }}">E-commerce SEO</a></li>
-                    <li><a href="{{ route('services.page_optimization') }}">Page Optimization</a></li>
-                    <li><a href="{{ route('services.link_building') }}">Link Building</a></li>
-                    <li><a href="{{ route('services.technical_seo') }}">Technical SEO</a></li>
-                    <li><a href="{{ route('services.guest_posting') }}">Guest Posting</a></li>
-                    <li><a href="{{ route('services.local_seo') }}">Local SEO</a></li>
-                    <li class="current-menu-item"><a href="{{ route('services.app_store_optimization') }}">App Store Optimization</a></li>
-                    <li><a href="{{ route('services.play_store_seo') }}">Play Store SEO</a></li>
-                </ul>
-
-               
+        <div class="tp-hero-content text-center">
+            <p class="delay-load">
+                If your website feels stuck, rankings wobble without reason, or traffic shows up and then quietly
+                disappears, an SEO audit is usually where clarity begins. At first glance, everything might look fine.
+                Pages load. Content exists. But underneath, signals are being missed, errors being ignored, and
+                opportunities waiting without being noticed. That is where an SEO Agency in Dubai with real audit
+                experience steps in, not to guess, but to diagnose.
+            </p>
+            <p>
+                An SEO audit is not a checklist exercise. It is a layered analysis of how search engines actually read
+                your website and how users experience it without saying a word. Done properly, it explains why growth
+                slowed down and what exactly should happen next.
+            </p>
+            <div class="hero-btns mt-4">
+                <a href="{{ route('contact') }}" class="btn btn-gradient">Get an SEO audit</a>
             </div>
         </div>
 
-        <!-- Content -->
-        <div class="content-col">
-            <h2>What WB-DIGITECH Can Do for You?</h2>
-            <p>Our specialists help you get ranked higher by making your website SEO-friendly and your content worthy of featured positions.</p>
+        <!-- Hero Image Section -->
+        <div class="hero-image-section">
+            <div class="hero-image-container">
+                <img src="{{ asset('css/new-assets/seo_aso/aso.webp') }}" alt="seo audit" class="hero-image">
+            </div>
+        </div>
+        <br>
+        <br>
 
-            <h2>Effective On-Page SEO</h2>
-            <p>Sure, webpage structure and its content is just a piece of the SEO puzzle — but a very important one. Our proven techniques allow us to perform best-in-class on-page optimization.</p>
-            <p>With detailed web analysis, our team ensures that the pages meant for the public can be found by search engines. Effective keyword targeting is the key to growing traffic and revenue. We’ll identify top-performing keywords in your industry and add them to the appropriate pages of your website.</p>
+        <!-- Content & Sidebar -->
+        <div class="container-flex">
 
-            <h2>Real Results</h2>
-            <p>We give our clients complete access to important reports (web analytics, CTR, SEO, social media campaigns, etc.) so they can see real results and analyze their business growth.</p>
+            <!-- Sidebar -->
+            <div class="sidebar-col">
+                <div class="sidebar">
+                    <h6>Our Services</h6>
+                    <ul>
+                        <li><a href="{{ route('services.seo') }}">SEO Services</a></li>
+                        <li><a href="{{ route('services.content_marketing') }}">Content Marketing</a></li>
+                        <li><a href="{{ route('services.google_business_profile_seo') }}">Google Business Profile SEO</a>
+                        </li>
+                        <li class="current-menu-item"><a href="{{ route('services.seo-audit') }}">SEO Audit</a></li>
+                        <li><a href="{{ route('services.ecommerce_seo') }}">E-commerce SEO</a></li>
+                        <li><a href="{{ route('services.page_optimization') }}">Page Optimization</a></li>
+                        <li><a href="{{ route('services.link_building') }}">Link Building</a></li>
+                        <li><a href="{{ route('services.technical_seo') }}">Technical SEO</a></li>
+                        <li><a href="{{ route('services.guest_posting') }}">Guest Posting</a></li>
+                        <li><a href="{{ route('services.local_seo') }}">Local SEO</a></li>
+                        <li><a href="{{ route('services.app_store_optimization') }}">App Store Optimization</a></li>
+                        <li><a href="{{ route('services.play_store_seo') }}">Play Store SEO</a></li>
+                    </ul>
+                </div>
+            </div>
 
-            <h2>Optimization</h2>
-            <p>We don’t just promise; we deliver. Our expert team helps clients see maximum ROI on their investment by handling technical issues that could be hurting their rankings and search visibility.</p>
+            <!-- Content -->
+            <div class="content-col">
+                <h2>What Does an SEO Audit Really Cover?</h2>
 
-            <h2>Effective SERP Strategies</h2>
-            <p>Good business deserves to be found online. Turbocharge your online marketing efforts with our effective SERP tracking that promotes your business in search results and brings in new customers.</p>
+                <p>
+                    Many businesses assume an audit is just about keywords or broken links. That belief floats around a lot.
+                    In reality, an audit looks at structure, intent, performance, authority, and technical alignment all at
+                    once. Some issues shout. Others quietly block progress over time.
+                </p>
 
-            <h2>Effective Off-Page SEO Strategies</h2>
-            <p>Being a premier SEO company, we focus on the quality of links rather than the quantity. Our marketing is powered by valuable industry citations from reliable sources including trade associations and niche directories.</p>
-            <p>We also create valuable content that not only establishes your brand’s authority but also provides opportunities for top websites to link back to you.</p>
+                <p>
+                    A proper audit reviews how your site is crawled, how content connects internally, how pages are indexed,
+                    and whether trust signals are being sent consistently. Some things are visible right away. Others are
+                    uncovered slowly, layer by layer. This is why working with the best seo agency in Dubai matters more
+                    than using automated reports alone.
+                </p>
 
-            <h2>Detailed Transparent Reporting</h2>
-            <p>When you invest in SEO services, you have every right to know what you’re paying for. We keep you in the loop at every step of the journey. Detailed reports on your search rankings with position updates and screenshots are provided every 24 hours.</p>
-            <p>We also provide a monthly report on all the quality links acquired for your website so you always stay informed.</p>
+                <h2>Technical SEO Audit That Finds Hidden Barriers</h2>
 
+                <p>
+                    Technical SEO tends to be ignored until rankings fall, which is usually too late. During this phase,
+                    your website is examined from a search engine’s perspective. Crawl errors, indexing problems, slow
+                    response times, and unnecessary redirects are identified carefully.
+                </p>
+
+                <p>
+                    Sometimes the site is not broken. It is just inefficient. Pages may be accessible, but not prioritized
+                    correctly. A skilled SEO Agency notices these inefficiencies before they become ranking losses.
+                </p>
+
+                <h2>On-Page SEO Audit That Aligns Content With Intent</h2>
+
+                <p>
+                    Content is often written for people but structured poorly for search engines. Or worse, written for
+                    search engines and ignored by people. An on-page audit bridges that gap. Headings, internal links,
+                    keyword placement, content depth, and page intent are all reviewed together.
+                </p>
+
+                <p>
+                    This is where strategy comes in. Pages are evaluated not only for what they say, but for what they
+                    should be saying. The best seo agency in dubai does not just fix tags. It reshapes relevance.
+                </p>
+
+                <h2>Off-Page SEO Audit That Measures Trust and Authority</h2>
+
+                <p>
+                    Links still matter, but not in the way many assume. Quantity does not equal strength anymore. An
+                    off-page audit looks at backlink quality, anchor diversity, referral sources, and toxic signals that
+                    may quietly hurt rankings.
+                </p>
+
+                <p>
+                    Sometimes a site is penalized without being penalized. Authority simply fades. A structured audit helps
+                    reverse that by identifying what should be removed, what should be improved, and what kind of links
+                    actually move the needle for your niche. This is something a top seo agency dubai approach gets right
+                    more often than generic audits.
+                </p>
+
+                <h2>Competitive SEO Audit That Explains Why Others Rank Higher</h2>
+
+                <p>
+                    You are not competing with Google. You are competing with businesses that Google already trusts. A
+                    competitive audit studies what top-ranking competitors are doing differently, from content depth to
+                    link velocity to site structure.
+                </p>
+
+                <p>
+                    This analysis does not copy competitors. It exposes gaps. It shows where effort is missing and where
+                    focus should shift. That insight often becomes the turning point for growth when guided by a reliable
+                    SEO Agency in Dubai.
+                </p>
+
+                <h2>Why Businesses Choose a Professional SEO Audit Before Scaling</h2>
+
+                <p>
+                    Running ads on a weak SEO foundation is expensive. Publishing content without understanding search
+                    intent wastes time. An audit reduces guesswork. It creates direction.
+                </p>
+
+                <p>
+                    Businesses that work with a seo services agency in Dubai often realize their site was not
+                    underperforming randomly. It was misaligned strategically. Fixing alignment changes everything.
+                </p>
+
+                <h2>How an SEO Audit Turns Into Action, Not Just a Report</h2>
+
+                <p>
+                    An audit should not end with a PDF. Findings are prioritized, explained, and mapped into a practical
+                    roadmap. Some fixes are quick wins. Others require phased execution. Clarity matters here. The role of
+                    an SEO Agency is not just to point out problems, but to guide implementation without overwhelming teams
+                    or delaying progress.
+                </p>
+
+                <h2>Why Our SEO Audit Approach Is Different</h2>
+
+                <p>
+                    We do not rush through tools and templates. Analysis is layered. Questions are asked. Assumptions are
+                    challenged. Sometimes findings contradict expectations, and that is fine. Growth rarely comes from
+                    comfort.
+                </p>
+
+                <p>
+                    This mindset is why businesses looking for the best seo agency dubai trust structured audits that feel
+                    human, not automated.
+                </p>
+
+                <h2>Choosing the Right SEO Audit Partner</h2>
+
+                <p>
+                    An SEO audit is not about perfection. It is about clarity. It tells you where you stand, why you are
+                    there, and how to move forward without guessing. Whether you are recovering from a traffic drop or
+                    preparing for growth, starting with the right audit matters.
+                </p>
+
+                <p>
+                    Choosing an experienced SEO Agency in Dubai ensures that insights turn into measurable improvement,
+                    not just another document saved and forgotten.
+                </p>
+
+                <h2>Final Thoughts</h2>
+
+                <p>
+                    A strong SEO audit does more than list problems. It explains patterns, uncovers leverage points, and
+                    creates direction. As a trusted SEO audit agency, we believe clarity is the most valuable outcome you
+                    can get before committing to long-term growth strategies.
+                </p>
+
+                <h2>FAQs About Our SEO Audit</h2>
+
+                <h3>What exactly is included in your SEO audit?</h3>
+                <p>
+                    Our SEO audit covers technical performance, content relevance, authority signals, and user experience.
+                    Unlike surface-level scans, this audit explains why issues exist and how they impact rankings. Many
+                    clients also discover hidden opportunities during the website audit phase that were never considered
+                    before.
+                </p>
+
+                <h3>How long does an SEO audit usually take?</h3>
+                <p>
+                    Most audits take between 7 to 14 days depending on site size and complexity. A rushed SEO audit service
+                    often misses deeper issues, so time is intentionally allocated for proper analysis and validation.
+                </p>
+
+                <h3>Is your service suitable for local businesses in Dubai?</h3>
+                <p>
+                    Yes. Our SEO audit Dubai process considers local search intent, competitive density, and regional
+                    behavior. This is especially helpful for companies relying on geo-targeted visibility and service-based
+                    traffic.
+                </p>
+
+                <h3>Do you offer ongoing support after the audit?</h3>
+                <p>
+                    We do. Many clients continue with us as their SEO audit agency for implementation and optimization.
+                    Others use the roadmap internally. Both options are available, depending on your goals and resources.
+                </p>
+
+                <h3>Why should we start with an audit instead of full SEO?</h3>
+                <p>
+                    An audit removes guesswork. Without it, strategies are based on assumptions. A detailed SEO audit
+                    ensures that future optimization efforts are aligned with real data, not generic best practices.
+                </p>
+
+            </div>
         </div>
     </div>
-</div>
 @endsection
