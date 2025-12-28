@@ -38,7 +38,7 @@
 
 </head>
 
-<body id="body" class="tp-magic-cursor">
+<body id="body" class="tp-magic-cursor" style="overflow-x: hidden;">
   <div id="magic-cursor">
     <div id="ball"></div>
   </div>
