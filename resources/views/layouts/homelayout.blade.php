@@ -61,7 +61,8 @@
 
   @include('layouts.headerLayout')
   @yield('content')
-  @include('layouts.footerLayout');
+  @include('layouts.footerLayout')
+
 
 
   {{-- External JS --}}
