@@ -714,3 +714,40 @@
     }
 }
 
+/* About Page */
+#abouT-info,
+#about-info .ab-about-content {
+    max-width: 520px;
+        margin-top: 156px;
+}
+
+#about-info span {
+    font-size: 18px;
+}
+
+#about-info p {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* Image overlap */
+.ab-about-right-thumb {
+    position: relative;
+}
+
+.ab-about-right-thumb img:first-child {
+    width: 75%;
+    position: relative;
+    z-index: 2;
+    border-radius: 14px;
+}
+
+.ab-about-right-thumb img:last-child {
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    width: 65%;
+    z-index: 1;
+    opacity: 0.95;
+    border-radius: 14px;
+}

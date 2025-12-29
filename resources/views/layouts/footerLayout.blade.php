@@ -33,7 +33,8 @@
                 <ul class="list-unstyled footer-links">
                     <li><a href="{{ route('services.web_dev') }}"
                             class="text-white text-decoration-none d-block mb-2">Web Development</a></li>
-                    <li><a href="#" class="text-white text-decoration-none d-block mb-2">CRM Development</a></li>
+                    <li><a href="{{ route('services.crm_development') }}"
+                            class="text-white text-decoration-none d-block mb-2">CRM Development</a></li>
                     <li><a href="{{ route('services.mobile') }}"
                             class="text-white text-decoration-none d-block mb-2">Mobile Application Development</a></li>
                     <li><a href="{{ route('services.seo') }}"
@@ -61,8 +62,6 @@
                             Policy</a></li>
                     <li><a href="{{ route('cookie') }}" class="text-white text-decoration-none d-block mb-2">Terms and
                             Conditions</a></li>
-                    {{-- <li><a href="#" class="text-white text-decoration-none d-block mb-2">Frequently Asked
-                            Questions</a></li> --}}
                 </ul>
             </div>
 

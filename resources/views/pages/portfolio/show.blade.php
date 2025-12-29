@@ -1,238 +1,287 @@
 @extends('layouts.homelayout')
 
-@section('title',   $portfolio->title . ' - WB-DIGITECH')
+@section('title', $portfolio->title . ' - WB-DIGITECH')
 
 @section('content')
-<div id="smooth-wrapper">
-    <div id="smooth-content">
-        <main>
-            <!-- 🔹 Hero Section with Image + Overlay Title -->
-            <section class="section-box">
-                <div class="banner-hero">
-                    <div class="tp-blog-standard-thumb-box">
-                        <img src="{{ asset('storage/'.$portfolio->thumbnail) }}" 
-                             alt="{{ $portfolio->title }}" class="tp-banner-img">
-                        <div class="tp-banner-overlay"></div>
-                        <div class="tp-banner-title text-center">
-                            <h1 class="tp-blog-standard-title">
-                                {{ $portfolio->title }}
-                            </h1>
-                        </div>
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <main>
+                <!-- Spacer below header -->
+                <div style="padding: 50px"></div>
+                <!-- 🔹 Hero Section with Image + Overlay Title -->
+                <section class="section-box client-section mb-10">
+                    <div class="client-section mt-5 ">
+                        <h2 class="tp-hero-title text-center text-white"> {{ $portfolio->title  }}</p>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <!-- 🔹 Client Overview -->
-            <section class="py-5">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-4">
-                            <h3 class="fw-bold text-gradient">Case Study</h3>
-                        </div>
-                        <div class="col-md-8">
-                            <p class="text-muted fs-5" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
-                                {{ $portfolio->client_overview ?? 'No overview provided.' }}
-                            </p>
-<a href="{{ route('portfolio.case_study', [
-        'title' => Str::slug($portfolio->title), 
-        'id' => $portfolio->id
-    ]) }}" class="btn btn-gradient mt-2">
-    Read More
-</a>                   
-     </div>
-                    </div>
-                </div>
-            </section>
+                <!-- 🔹 Client Overview / Case Study -->
+                <section class="py-5 bg-light">
+                    <div class="container">
+                        <div class="row align-items-start mb-4">
 
-            <!-- 🔹 Services -->
-            <section class="py-5 bg-light">
-                <div class="container">
-                    <div class="row">
-                        <!-- Left Services -->
-                        <div class="col-lg-4 mb-3">
-                            <h3 class="fw-bold text-gradient mb-4">Services</h3>
-                            <div class="nav flex-column nav-pills me-3" id="services-tab" role="tablist">
-                                @foreach($portfolio->services ?? [] as $index => $service)
-                                    <button class="nav-link shadow-sm mb-2 {{ $loop->first ? 'active' : '' }}" 
-                                            id="service-{{ $index }}-tab" 
-                                            data-bs-toggle="pill" 
-                                            data-bs-target="#service-{{ $index }}" 
-                                            type="button" role="tab">
-                                        {{ $service['name'] }}
-                                    </button>
-                                @endforeach
-                            </div>
-                        </div>
+                            <!-- Left Column: Case Study Box -->
+                            <div class="col-md-4">
+                                <div class="case-study-box p-3 rounded shadow-sm bg-white text-center">
+                                    <h3 class="fw-bold text-gradient mb-3">Case Study</h3>
 
-                                              <!-- Right Services (UPDATED) -->
-                        <div class="col-lg-8">
-                            <div class="tab-content bg-white p-4 shadow rounded" id="services-tabContent">
-                                @foreach($portfolio->services ?? [] as $index => $service)
-                                    <div class="tab-pane fade {{ $loop->first ? 'show active' : '' }}" 
-                                         id="service-{{ $index }}" role="tabpanel">
+                                    @if(!empty($portfolio->thumbnail))
+                                        <div class="thumbnail-box mb-2">
+                                            <img src="{{ asset('storage/' . $portfolio->thumbnail) }}"
+                                                alt="{{ $portfolio->title }}" class="img-thumbnail-full">
+                                        </div>
+                                    @endif
 
-                                        <h4 class="fw-bold mb-4">{{ $service['name'] }}</h4>
-
-                                        @if(!empty($service['objective']))
-                                            <h6 class="fw-semibold text-gradient">Objective</h6>
-                                            <p class="text-muted mb-3">
-                                                {{ $service['objective'] }}
-                                            </p>
-                                        @endif
-
-                                        @if(!empty($service['challenges']))
-                                            <h6 class="fw-semibold text-gradient">Challenges</h6>
-                                            <p class="text-muted mb-3">
-                                                {{ $service['challenges'] }}
-                                            </p>
-                                        @endif
-
-                                        @if(!empty($service['solutions']))
-                                            <h6 class="fw-semibold text-gradient">Solutions</h6>
-                                            <p class="text-muted mb-4">
-                                                {{ $service['solutions'] }}
-                                            </p>
-                                        @endif
-
-                                        <a href="{{ route('contact') }}" class="btn btn-gradient mt-2">
-                                            Get In Touch
-                                        </a>
-                                    </div>
-                                @endforeach
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 🔹 Work / Images Carousel -->
-            @if($portfolio->images)
-            <section class="py-5">
-                <div class="container text-center">
-                    <h3 class="fw-bold text-gradient mb-4">Our Work</h3>
-                    <div id="portfolioCarousel" class="carousel slide mx-auto" data-bs-ride="carousel" style="max-width:70%;">
-                        <div class="carousel-inner">
-                            @foreach($portfolio->images as $idx => $img)
-                                <div class="carousel-item {{ $idx == 0 ? 'active' : '' }}">
-                                    <img src="{{ asset('storage/'.$img) }}" 
-                                         class="d-block w-100 rounded shadow-sm" 
-                                         style="max-height:400px; object-fit:cover;" alt="Work Image">
+                                    {{-- @if(!empty($portfolio->website_link)) --}}
+                                    <a href="#" target="_blank" class="text-gradient fw-semibold text-decoration-none">
+                                        Visit Website
+                                    </a>
+                                    {{-- @endif --}}
                                 </div>
-                            @endforeach
+                            </div>
+
+                            <!-- Right Column: Client Overview Text -->
+                            <div class="col-md-8">
+                                <p class="text-muted fs-5"
+                                    style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">
+                                    {{ $portfolio->client_overview ?? 'No overview provided.' }}
+                                </p>
+                                <a href="{{ route('portfolio.case_study', ['title' => Str::slug($portfolio->title), 'id' => $portfolio->id]) }}"
+                                    class="btn btn-gradient mt-2">
+                                    Read More
+                                </a>
+                            </div>
+
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </button>
                     </div>
-                </div>
-            </section>
-            @endif
-        </main>
+                </section>
 
-<!-- 🔹 Custom CSS -->
-<style>
-   /* Gradient text */
-.text-gradient {
-    background: linear-gradient(90deg, #0A3D62, #0077B6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+                <!-- 🔹 Services -->
+                <section class="py-5 bg-light">
+                    <div class="container">
+                        <div class="row">
+                            <!-- Left Services -->
+                            <div class="col-lg-4 mb-3">
+                                <h3 class="fw-bold text-gradient mb-4">Services</h3>
+                                <div class="nav flex-column nav-pills me-3" id="services-tab" role="tablist">
+                                    @foreach($portfolio->services ?? [] as $index => $service)
+                                        <button class="nav-link shadow-sm mb-2 {{ $loop->first ? 'active' : '' }}"
+                                            id="service-{{ $index }}-tab" data-bs-toggle="pill"
+                                            data-bs-target="#service-{{ $index }}" type="button" role="tab">
+                                            {{ $service['name'] }}
+                                        </button>
+                                    @endforeach
+                                </div>
+                            </div>
 
-/* Gradient button */
-.btn-gradient {
-    background: linear-gradient(90deg, #0A3D62, #0077B6);
-    color: #fff;
-    border: none;
-    border-radius: 6px;
-    padding: 10px 22px;
-    transition: all 0.3s ease;
-}
-.btn-gradient:hover {
-    transform: translateY(-2px);
-    opacity: 0.9;
-}
+                            <!-- Right Services (UPDATED) -->
+                            <div class="col-lg-8">
+                                <div class="tab-content bg-white p-4 shadow rounded" id="services-tabContent">
+                                    @foreach($portfolio->services ?? [] as $index => $service)
+                                        <div class="tab-pane fade {{ $loop->first ? 'show active' : '' }}"
+                                            id="service-{{ $index }}" role="tabpanel">
 
-/* Hero image + overlay */
-.tp-blog-standard-thumb-box { 
-    position: relative; 
-    overflow: hidden;
-    border-radius: 12px;
-    max-height: 480px;
-}
-.tp-banner-img {
-    width: 100%;
-    min-height: 300px;
-    max-height: 480px;
-    object-fit: cover;
-    object-position: center center;
-    display:block;
-}
-.tp-banner-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, rgba(10,61,98,0.55) 0%, rgba(0,119,182,0.4) 100%);
-    border-radius: 12px;
-}
-.tp-banner-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    color: #fff;
-}
-.tp-blog-standard-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    text-shadow: 0 3px 8px rgba(0,0,0,0.6);
-}
+                                            <h4 class="fw-bold mb-4">{{ $service['name'] }}</h4>
 
-/* 🔹 Services Tabs Buttons */
-#services-tab .nav-link {
-    background: #f8f9fa;
-    color: #0A3D62;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    font-weight: 500;
-    padding: 10px 15px;
-    transition: all 0.3s ease;
-    text-align: left;
-}
+                                            @if(!empty($service['objective']))
+                                                <h6 class="fw-semibold text-gradient">Objective</h6>
+                                                <p class="text-muted mb-3">
+                                                    {{ $service['objective'] }}
+                                                </p>
+                                            @endif
 
-#services-tab .nav-link:hover {
-    background: linear-gradient(90deg, #0A3D62, #0077B6);
-    color: #fff;
-    transform: translateX(3px);
-}
+                                            @if(!empty($service['challenges']))
+                                                <h6 class="fw-semibold text-gradient">Challenges</h6>
+                                                <p class="text-muted mb-3">
+                                                    {{ $service['challenges'] }}
+                                                </p>
+                                            @endif
 
-#services-tab .nav-link.active {
-    background: linear-gradient(90deg, #0A3D62, #0077B6);
-    color: #fff;
-    font-weight: 600;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
+                                            @if(!empty($service['solutions']))
+                                                <h6 class="fw-semibold text-gradient">Solutions</h6>
+                                                <p class="text-muted mb-4">
+                                                    {{ $service['solutions'] }}
+                                                </p>
+                                            @endif
 
-</style>
+                                            <a href="{{ route('contact') }}" class="btn btn-gradient mt-2">
+                                                Get In Touch
+                                            </a>
+                                        </div>
+                                    @endforeach
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-<!-- 🔹 Auto-switch services tabs -->
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    let tabs = document.querySelectorAll('#services-tab button');
-    if (tabs.length === 0) return;
+                <!-- 🔹 Work / Images Carousel -->
+                @if($portfolio->images)
+                    <section class="py-5">
+                        <div class="container text-center">
+                            <h3 class="fw-bold text-gradient mb-4">Our Work</h3>
+                            <div id="portfolioCarousel" class="carousel slide mx-auto" data-bs-ride="carousel"
+                                style="max-width:70%;">
+                                <div class="carousel-inner">
+                                    @foreach($portfolio->images as $idx => $img)
+                                        <div class="carousel-item {{ $idx == 0 ? 'active' : '' }}">
+                                            <img src="{{ asset('storage/' . $img) }}" class="d-block w-100 rounded shadow-sm"
+                                                style="max-height:400px; object-fit:cover;" alt="Work Image">
+                                        </div>
+                                    @endforeach
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                @endif
+            </main>
 
-    let currentIndex = 0;
+            <!-- 🔹 Custom CSS -->
+            <style>
+                /* Gradient text */
+                .text-gradient {
+                    background: linear-gradient(90deg, #0A3D62, #0077B6);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
 
-    setInterval(() => {
-        currentIndex = (currentIndex + 1) % tabs.length;
+                /* Gradient button */
+                .btn-gradient {
+                    background: linear-gradient(90deg, #0A3D62, #0077B6);
+                    color: #fff;
+                    border: none;
+                    border-radius: 6px;
+                    padding: 10px 22px;
+                    transition: all 0.3s ease;
+                }
 
-        // Use Bootstrap’s API — prevents bugs when clicking manually
-        let tab = new bootstrap.Tab(tabs[currentIndex]);
-        tab.show();
-    }, 5000);
-});
-</script>
+                .btn-gradient:hover {
+                    transform: translateY(-2px);
+                    opacity: 0.9;
+                }
+
+                /* Hero image + overlay */
+                .tp-blog-standard-thumb-box {
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 12px;
+                    max-height: 480px;
+                }
+
+                .tp-banner-img {
+                    width: 100%;
+                    min-height: 300px;
+                    max-height: 480px;
+                    object-fit: cover;
+                    object-position: center center;
+                    display: block;
+                }
+
+                .tp-banner-overlay {
+                    position: absolute;
+                    inset: 0;
+                    background: linear-gradient(180deg, rgba(10, 61, 98, 0.55) 0%, rgba(0, 119, 182, 0.4) 100%);
+                    border-radius: 12px;
+                }
+
+                .tp-banner-title {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 2;
+                    color: #fff;
+                }
+
+                .tp-blog-standard-title {
+                    font-size: 2.5rem;
+                    font-weight: 700;
+                    text-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
+                }
+
+                /* 🔹 Services Tabs Buttons */
+                #services-tab .nav-link {
+                    background: #f8f9fa;
+                    color: #0A3D62;
+                    border: 1px solid #ddd;
+                    border-radius: 6px;
+                    font-weight: 500;
+                    padding: 10px 15px;
+                    transition: all 0.3s ease;
+                    text-align: left;
+                }
+
+                #services-tab .nav-link:hover {
+                    background: linear-gradient(90deg, #0A3D62, #0077B6);
+                    color: #fff;
+                    transform: translateX(3px);
+                }
+
+                #services-tab .nav-link.active {
+                    background: linear-gradient(90deg, #0A3D62, #0077B6);
+                    color: #fff;
+                    font-weight: 600;
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+                }
+
+                .case-study-box {
+                    border: 1px solid #ddd;
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+
+                .case-study-box:hover {
+                    transform: translateY(-3px);
+                    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+                }
+
+                /* Full small thumbnail */
+                .thumbnail-box img.img-thumbnail-full {
+                    width: 100%;
+                    max-width: 150px;
+                    /* controls small size */
+                    height: auto;
+                    /* preserves aspect ratio completely */
+                    border-radius: 6px;
+                    border: 1px solid #ccc;
+                    object-fit: contain;
+                    /* ensures full image visible */
+                }
+
+                .text-gradient {
+                    background: linear-gradient(90deg, #0A3D62, #0077B6);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+
+                .case-study-box a:hover {
+                    text-decoration: underline;
+                }
+            </style>
+
+            <!-- 🔹 Auto-switch services tabs -->
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    let tabs = document.querySelectorAll('#services-tab button');
+                    if (tabs.length === 0) return;
+
+                    let currentIndex = 0;
+
+                    setInterval(() => {
+                        currentIndex = (currentIndex + 1) % tabs.length;
+
+                        // Use Bootstrap’s API — prevents bugs when clicking manually
+                        let tab = new bootstrap.Tab(tabs[currentIndex]);
+                        tab.show();
+                    }, 5000);
+                });
+            </script>
 
 @endsection
