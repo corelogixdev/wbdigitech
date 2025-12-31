@@ -16,10 +16,11 @@ class Portfolio extends Model
         'client_overview',
         'services',
         'images',
+        'website_link',
     ];
 
     protected $casts = [
         'services' => 'array',
-        'images'   => 'array',
+        'images' => 'array',
     ];
 }

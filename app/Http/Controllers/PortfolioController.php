@@ -11,7 +11,7 @@ class PortfolioController extends Controller
     /**
      * Display a listing of the resource.
      */
-   public function index()
+    public function index()
     {
         $portfolios = Portfolio::latest()->paginate(10);
         return view('pages.admin.portfolio.index', compact('portfolios'));
@@ -29,6 +29,7 @@ class PortfolioController extends Controller
             'category' => 'nullable|string',
             'thumbnail' => 'nullable|image|mimes:jpg,jpeg,png,webp',
             'client_overview' => 'nullable|string',
+            'website_link' => 'nullable|string',
             'images.*' => 'nullable|image|mimes:jpg,jpeg,png,webp',
             'services' => 'required|array',
             'services.*.name' => 'required|string',
@@ -68,6 +69,7 @@ class PortfolioController extends Controller
             'title' => 'required|string',
             'category' => 'nullable|string',
             'thumbnail' => 'nullable|image|mimes:jpg,jpeg,png,webp',
+            'website_link' => 'nullable|string',
             'client_overview' => 'nullable|string',
             'images.*' => 'nullable|image|mimes:jpg,jpeg,png,webp',
             'services' => 'required|array',
@@ -114,13 +116,13 @@ class PortfolioController extends Controller
     /**
      * Public portfolio detail page.
      */
-    public function publicShow($title,$id)
+    public function publicShow($title, $id)
     {
-          $portfolio = Portfolio::findOrFail($id);
+        $portfolio = Portfolio::findOrFail($id);
         return view('pages.portfolio.show', compact('portfolio'));
     }
 
-    public function caseStudy($title,$id)
+    public function caseStudy($title, $id)
     {
         $portfolio = Portfolio::findOrFail($id);
         return view('pages.portfolio.case_study', compact('portfolio'));

@@ -4,8 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
-{
+return new class extends Migration {
     /**
      * Run the migrations.
      */
@@ -14,11 +13,12 @@ return new class extends Migration
         Schema::create('portfolios', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-        $table->string('category')->nullable();
-        $table->string('thumbnail')->nullable();
-        $table->text('client_overview')->nullable();
-        $table->json('services')->nullable(); // store services as JSON
-        $table->json('images')->nullable();   
+            $table->string('category')->nullable();
+            $table->string('thumbnail')->nullable();
+            $table->text('website_link')->nullable();
+            $table->text('client_overview')->nullable();
+            $table->json('services')->nullable(); // store services as JSON
+            $table->json('images')->nullable();
             $table->timestamps();
         });
     }

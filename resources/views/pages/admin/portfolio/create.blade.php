@@ -29,6 +29,12 @@
                                 </div>
 
                                 <div class="mb-3">
+                                    <label>Website Link</label>
+                                    <input type="url" name="website_link" class="form-control"
+                                        placeholder="https://example.com">
+                                </div>
+
+                                <div class="mb-3">
                                     <label class="form-label fw-semibold">Client Overview</label>
                                     <textarea name="client_overview" class="form-control" rows="6"
                                         placeholder="Use ## for headings, blank lines for paragraphs, **bold** for emphasis">{{ old('client_overview') }}</textarea>

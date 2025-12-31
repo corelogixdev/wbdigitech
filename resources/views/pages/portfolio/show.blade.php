@@ -22,7 +22,7 @@
 
                             <!-- Left Column: Case Study Box -->
                             <div class="col-md-4">
-                                <div class="case-study-box p-3 rounded shadow-sm bg-white text-center">
+                                <div class="case-study-box p-3 rounded shadow-sm bg-white ">
                                     <h3 class="fw-bold text-gradient mb-3">Case Study</h3>
 
                                     @if(!empty($portfolio->thumbnail))
@@ -32,11 +32,11 @@
                                         </div>
                                     @endif
 
-                                    {{-- @if(!empty($portfolio->website_link)) --}}
-                                    <a href="#" target="_blank" class="text-gradient fw-semibold text-decoration-none">
+                                    @if(!empty($portfolio->website_link))
+                                    <a href="{{ $portfolio->website_link }}" target="_blank" class="text-gradient fw-semibold text-decoration-none">
                                         Visit Website
                                     </a>
-                                    {{-- @endif --}}
+                                    @endif
                                 </div>
                             </div>
 
@@ -167,6 +167,17 @@
                     transform: translateY(-2px);
                     opacity: 0.9;
                 }
+
+                .btn-gradient:hover,
+.btn-gradient:focus,
+.btn-gradient:active {
+    background: linear-gradient(90deg, #0077B6, #0A3D62); /* slightly reversed gradient */
+    color: #fff;
+    opacity: 0.9;
+    transform: translateY(-2px);
+    text-decoration: none; /* ensures no underline */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
 
                 /* Hero image + overlay */
                 .tp-blog-standard-thumb-box {
