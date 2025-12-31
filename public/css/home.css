@@ -718,7 +718,7 @@
 #abouT-info,
 #about-info .ab-about-content {
     max-width: 520px;
-        margin-top: 156px;
+        /* margin-top: 156px; */
 }
 
 #about-info span {
@@ -732,12 +732,12 @@
 
 /* Image overlap */
 .ab-about-right-thumb {
-    position: relative;
+    /* position: relative; */
 }
 
 .ab-about-right-thumb img:first-child {
     width: 75%;
-    position: relative;
+    /* position: relative; */
     z-index: 2;
     border-radius: 14px;
 }
@@ -745,9 +745,46 @@
 .ab-about-right-thumb img:last-child {
     position: absolute;
     right: 0;
-    bottom: -40px;
+    /* bottom: -40px; */
     width: 65%;
     z-index: 1;
     opacity: 0.95;
     border-radius: 14px;
+}
+
+/* Overrides for About Page */
+#abouT-info,
+#about-info .ab-about-content {
+    margin-top: 0 !important;
+    max-width: 520px;
+}
+
+#abouT-info span,
+#about-info span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#abouT-info p,
+#about-info p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* Services list styling */
+.ab-about-category-list ul {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    padding-left: 20px;
+}
+
+/* .ab-about-category-list ul li {
+    margin-bottom: 10px;
+} */
+
+.ab-about-right-thumb img {
+    position: static !important;
+    /* z-index: auto !important; */
 }
