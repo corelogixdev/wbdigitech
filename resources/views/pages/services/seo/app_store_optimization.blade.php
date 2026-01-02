@@ -41,14 +41,23 @@
             </div>
         </div>
 
-        <!-- Hero Image Section -->
-        <div class="hero-image-section">
-            <div class="hero-image-container">
-                <img src="{{ asset('css/new-assets/seo_aso/aso.webp') }}" alt="seo audit" class="hero-image">
-            </div>
-        </div>
-        <br>
-        <br>
+  <!-- 🔹 Hero Section -->
+                        <section class="section-box">
+                            <div class="bg-gray-100">
+                                <div class="container text-center">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="tp-blog-standard-thumb-box p-relative">
+                                                <img src="{{ asset('css/new-assets/seo_aso/aso.webp') }}"
+                                                    alt="seo-services-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+<br>
+<br>
 
         <!-- Content & Sidebar -->
         <div class="container-flex">
@@ -204,7 +213,7 @@
 
                 <h2>FAQs About Our SEO Audit</h2>
 
-                <h3>What exactly is included in your SEO audit?</h3>
+                <h4>What exactly is included in your SEO audit?</h4>
                 <p>
                     Our SEO audit covers technical performance, content relevance, authority signals, and user experience.
                     Unlike surface-level scans, this audit explains why issues exist and how they impact rankings. Many
@@ -212,26 +221,26 @@
                     before.
                 </p>
 
-                <h3>How long does an SEO audit usually take?</h3>
+                <h4>How long does an SEO audit usually take?</h4>
                 <p>
                     Most audits take between 7 to 14 days depending on site size and complexity. A rushed SEO audit service
                     often misses deeper issues, so time is intentionally allocated for proper analysis and validation.
                 </p>
 
-                <h3>Is your service suitable for local businesses in Dubai?</h3>
+                <h4>Is your service suitable for local businesses in Dubai?</h4>
                 <p>
                     Yes. Our SEO audit Dubai process considers local search intent, competitive density, and regional
                     behavior. This is especially helpful for companies relying on geo-targeted visibility and service-based
                     traffic.
                 </p>
 
-                <h3>Do you offer ongoing support after the audit?</h3>
+                <h4>Do you offer ongoing support after the audit?</h4>
                 <p>
                     We do. Many clients continue with us as their SEO audit agency for implementation and optimization.
                     Others use the roadmap internally. Both options are available, depending on your goals and resources.
                 </p>
 
-                <h3>Why should we start with an audit instead of full SEO?</h3>
+                <h4>Why should we start with an audit instead of full SEO?</h4>
                 <p>
                     An audit removes guesswork. Without it, strategies are based on assumptions. A detailed SEO audit
                     ensures that future optimization efforts are aligned with real data, not generic best practices.

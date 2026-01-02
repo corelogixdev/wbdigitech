@@ -39,12 +39,20 @@
             </div>
         </div>
 
-        <!-- Hero Image Section -->
-        <div class="hero-image-section">
-            <div class="hero-image-container">
-                <img src="{{ asset('css/new-assets/seo_aso/gbp_seo.webp') }}" alt="seo" class="hero-image">
+        <!-- 🔹 Hero Section -->
+        <section class="section-box">
+            <div class="bg-gray-100">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="tp-blog-standard-thumb-box p-relative">
+                                <img src="{{ asset('css/new-assets/seo_aso/gbp_seo.webp') }}" alt="seo-services-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
         <br><br>
 
         <!-- Content & Sidebar -->
