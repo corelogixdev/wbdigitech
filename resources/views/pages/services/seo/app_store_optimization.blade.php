@@ -1,252 +1,203 @@
 @extends('layouts.homelayout')
 
-@section('title', 'SEO Audit Services | Trusted SEO Audit Agency in Dubai')
+@section('title', 'App Store Optimization Services in Dubai')
 
 @section('meta')
-    <meta name="description"
-        content="Looking for a professional SEO audit that actually explains why it matters? Our SEO audit agency delivers deep insights and measurable growth.">
+<meta name="description"
+    content="Grow your app visibility with app store optimization services that focus on real users, better rankings, and sustainable downloads.">
 @endsection
 
-
 @section('content')
-    <link rel="stylesheet" href="{{ asset('css/services.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+<link rel="stylesheet" href="{{ asset('css/services.css') }}">
+<link rel="stylesheet" href="{{ asset('css/home.css') }}">
 
-    <div class="main-wrapper">
+<div class="main-wrapper">
 
-        <!-- Spacer below header -->
-        <div style="padding: 80px"></div>
+    <!-- Spacer below header -->
+    <div style="padding: 80px"></div>
 
-        <!-- Hero Section -->
-        <div class="tp-hero-title-wrap mb-35 text-center">
-            <h1 class="tp-hero-title gradient-text">
-                SEO Audit Services That Turn Insights Into Rankings
-            </h1>
+    <!-- Hero Section -->
+    <div class="tp-hero-title-wrap mb-35 text-center">
+        <h1 class="tp-hero-title gradient-text">
+            App Store Optimization Services That Actually Help Apps Get Found
+        </h1>
+    </div>
+
+    <div class="tp-hero-content text-center">
+        <p class="delay-load">
+            Visibility in app stores is strange. You can build a great app and remain invisible. That is usually where
+            app store optimization services start to matter; not immediately or magically, but steadily, over time.
+        </p>
+
+        <p>
+            At WB Digitech, we treat aso optimization as part science, part instinct. Keywords matter, yes. But so do
+            screenshots, descriptions, user intent, and even timing. This is not guesswork. It is informed adjustment,
+            tested changes, and sometimes going back to fix what already looked fine.
+        </p>
+
+        <p>
+            As an app store optimization agency in Dubai, we work with apps that want traction, not just installs that
+            disappear after a day.
+        </p>
+
+        <div class="hero-btns mt-4">
+            <a href="{{ route('contact') }}" class="btn btn-gradient">Get a Free ASO Audit</a>
         </div>
-        <div class="tp-hero-content text-center">
-            <p class="delay-load">
-                If your website feels stuck, rankings wobble without reason, or traffic shows up and then quietly
-                disappears, an SEO audit is usually where clarity begins. At first glance, everything might look fine.
-                Pages load. Content exists. But underneath, signals are being missed, errors being ignored, and
-                opportunities waiting without being noticed. That is where an SEO Agency in Dubai with real audit
-                experience steps in, not to guess, but to diagnose.
-            </p>
-            <p>
-                An SEO audit is not a checklist exercise. It is a layered analysis of how search engines actually read
-                your website and how users experience it without saying a word. Done properly, it explains why growth
-                slowed down and what exactly should happen next.
-            </p>
-            <div class="hero-btns mt-4">
-                <a href="{{ route('contact') }}" class="btn btn-gradient">Get an SEO audit</a>
+    </div>
+
+    <!-- Hero Image -->
+    <section class="section-box">
+        <div class="bg-gray-100">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="tp-blog-standard-thumb-box p-relative">
+                            <img src="{{ asset('css/new-assets/seo_aso/aso.webp') }}"
+                                 alt="app-store-optimization-services">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-  <!-- 🔹 Hero Section -->
-                        <section class="section-box">
-                            <div class="bg-gray-100">
-                                <div class="container text-center">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <div class="tp-blog-standard-thumb-box p-relative">
-                                                <img src="{{ asset('css/new-assets/seo_aso/aso.webp') }}"
-                                                    alt="seo-services-img">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-<br>
-<br>
+    <!-- Content & Sidebar -->
+    <div class="container-flex">
 
-        <!-- Content & Sidebar -->
-        <div class="container-flex">
-
-            <!-- Sidebar -->
-            <div class="sidebar-col">
-                <div class="sidebar">
-                    <h6>Our Services</h6>
-                    <ul>
-                        <li><a href="{{ route('services.seo') }}">SEO Services</a></li>
-                        <li><a href="{{ route('services.content_marketing') }}">Content Marketing</a></li>
+        <!-- Sidebar -->
+        <div class="sidebar-col">
+            <div class="sidebar">
+                <h6>Our Services</h6>
+                <ul>
+                    <li><a href="{{ route('services.seo') }}">SEO Services</a></li>
+                        <li ><a href="{{ route('services.content_marketing') }}">Content
+                                Marketing</a></li>
                         <li><a href="{{ route('services.google_business_profile_seo') }}">Google Business Profile SEO</a>
                         </li>
-                        <li class="current-menu-item"><a href="{{ route('services.seo-audit') }}">SEO Audit</a></li>
+                        <li><a href="{{ route('services.seo-audit') }}">SEO Audit</a></li>
                         <li><a href="{{ route('services.ecommerce_seo') }}">E-commerce SEO</a></li>
                         <li><a href="{{ route('services.page_optimization') }}">Page Optimization</a></li>
                         <li><a href="{{ route('services.link_building') }}">Link Building</a></li>
                         <li><a href="{{ route('services.technical_seo') }}">Technical SEO</a></li>
                         <li><a href="{{ route('services.guest_posting') }}">Guest Posting</a></li>
                         <li><a href="{{ route('services.local_seo') }}">Local SEO</a></li>
-                        <li><a href="{{ route('services.app_store_optimization') }}">App Store Optimization</a></li>
+                        <li class="current-menu-item"><a href="{{ route('services.app_store_optimization') }}">App Store Optimization</a></li>
                         <li><a href="{{ route('services.play_store_seo') }}">Play Store SEO</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Content -->
-            <div class="content-col">
-                <h2>What Does an SEO Audit Really Cover?</h2>
-
-                <p>
-                    Many businesses assume an audit is just about keywords or broken links. That belief floats around a lot.
-                    In reality, an audit looks at structure, intent, performance, authority, and technical alignment all at
-                    once. Some issues shout. Others quietly block progress over time.
-                </p>
-
-                <p>
-                    A proper audit reviews how your site is crawled, how content connects internally, how pages are indexed,
-                    and whether trust signals are being sent consistently. Some things are visible right away. Others are
-                    uncovered slowly, layer by layer. This is why working with the best seo agency in Dubai matters more
-                    than using automated reports alone.
-                </p>
-
-                <h2>Technical SEO Audit That Finds Hidden Barriers</h2>
-
-                <p>
-                    Technical SEO tends to be ignored until rankings fall, which is usually too late. During this phase,
-                    your website is examined from a search engine’s perspective. Crawl errors, indexing problems, slow
-                    response times, and unnecessary redirects are identified carefully.
-                </p>
-
-                <p>
-                    Sometimes the site is not broken. It is just inefficient. Pages may be accessible, but not prioritized
-                    correctly. A skilled SEO Agency notices these inefficiencies before they become ranking losses.
-                </p>
-
-                <h2>On-Page SEO Audit That Aligns Content With Intent</h2>
-
-                <p>
-                    Content is often written for people but structured poorly for search engines. Or worse, written for
-                    search engines and ignored by people. An on-page audit bridges that gap. Headings, internal links,
-                    keyword placement, content depth, and page intent are all reviewed together.
-                </p>
-
-                <p>
-                    This is where strategy comes in. Pages are evaluated not only for what they say, but for what they
-                    should be saying. The best seo agency in dubai does not just fix tags. It reshapes relevance.
-                </p>
-
-                <h2>Off-Page SEO Audit That Measures Trust and Authority</h2>
-
-                <p>
-                    Links still matter, but not in the way many assume. Quantity does not equal strength anymore. An
-                    off-page audit looks at backlink quality, anchor diversity, referral sources, and toxic signals that
-                    may quietly hurt rankings.
-                </p>
-
-                <p>
-                    Sometimes a site is penalized without being penalized. Authority simply fades. A structured audit helps
-                    reverse that by identifying what should be removed, what should be improved, and what kind of links
-                    actually move the needle for your niche. This is something a top seo agency dubai approach gets right
-                    more often than generic audits.
-                </p>
-
-                <h2>Competitive SEO Audit That Explains Why Others Rank Higher</h2>
-
-                <p>
-                    You are not competing with Google. You are competing with businesses that Google already trusts. A
-                    competitive audit studies what top-ranking competitors are doing differently, from content depth to
-                    link velocity to site structure.
-                </p>
-
-                <p>
-                    This analysis does not copy competitors. It exposes gaps. It shows where effort is missing and where
-                    focus should shift. That insight often becomes the turning point for growth when guided by a reliable
-                    SEO Agency in Dubai.
-                </p>
-
-                <h2>Why Businesses Choose a Professional SEO Audit Before Scaling</h2>
-
-                <p>
-                    Running ads on a weak SEO foundation is expensive. Publishing content without understanding search
-                    intent wastes time. An audit reduces guesswork. It creates direction.
-                </p>
-
-                <p>
-                    Businesses that work with a seo services agency in Dubai often realize their site was not
-                    underperforming randomly. It was misaligned strategically. Fixing alignment changes everything.
-                </p>
-
-                <h2>How an SEO Audit Turns Into Action, Not Just a Report</h2>
-
-                <p>
-                    An audit should not end with a PDF. Findings are prioritized, explained, and mapped into a practical
-                    roadmap. Some fixes are quick wins. Others require phased execution. Clarity matters here. The role of
-                    an SEO Agency is not just to point out problems, but to guide implementation without overwhelming teams
-                    or delaying progress.
-                </p>
-
-                <h2>Why Our SEO Audit Approach Is Different</h2>
-
-                <p>
-                    We do not rush through tools and templates. Analysis is layered. Questions are asked. Assumptions are
-                    challenged. Sometimes findings contradict expectations, and that is fine. Growth rarely comes from
-                    comfort.
-                </p>
-
-                <p>
-                    This mindset is why businesses looking for the best seo agency dubai trust structured audits that feel
-                    human, not automated.
-                </p>
-
-                <h2>Choosing the Right SEO Audit Partner</h2>
-
-                <p>
-                    An SEO audit is not about perfection. It is about clarity. It tells you where you stand, why you are
-                    there, and how to move forward without guessing. Whether you are recovering from a traffic drop or
-                    preparing for growth, starting with the right audit matters.
-                </p>
-
-                <p>
-                    Choosing an experienced SEO Agency in Dubai ensures that insights turn into measurable improvement,
-                    not just another document saved and forgotten.
-                </p>
-
-                <h2>Final Thoughts</h2>
-
-                <p>
-                    A strong SEO audit does more than list problems. It explains patterns, uncovers leverage points, and
-                    creates direction. As a trusted SEO audit agency, we believe clarity is the most valuable outcome you
-                    can get before committing to long-term growth strategies.
-                </p>
-
-                <h2>FAQs About Our SEO Audit</h2>
-
-                <h4>What exactly is included in your SEO audit?</h4>
-                <p>
-                    Our SEO audit covers technical performance, content relevance, authority signals, and user experience.
-                    Unlike surface-level scans, this audit explains why issues exist and how they impact rankings. Many
-                    clients also discover hidden opportunities during the website audit phase that were never considered
-                    before.
-                </p>
-
-                <h4>How long does an SEO audit usually take?</h4>
-                <p>
-                    Most audits take between 7 to 14 days depending on site size and complexity. A rushed SEO audit service
-                    often misses deeper issues, so time is intentionally allocated for proper analysis and validation.
-                </p>
-
-                <h4>Is your service suitable for local businesses in Dubai?</h4>
-                <p>
-                    Yes. Our SEO audit Dubai process considers local search intent, competitive density, and regional
-                    behavior. This is especially helpful for companies relying on geo-targeted visibility and service-based
-                    traffic.
-                </p>
-
-                <h4>Do you offer ongoing support after the audit?</h4>
-                <p>
-                    We do. Many clients continue with us as their SEO audit agency for implementation and optimization.
-                    Others use the roadmap internally. Both options are available, depending on your goals and resources.
-                </p>
-
-                <h4>Why should we start with an audit instead of full SEO?</h4>
-                <p>
-                    An audit removes guesswork. Without it, strategies are based on assumptions. A detailed SEO audit
-                    ensures that future optimization efforts are aligned with real data, not generic best practices.
-                </p>
-
+                </ul>
             </div>
         </div>
+
+        <!-- Main Content -->
+        <div class="content-col">
+            <br><br>
+
+            <h2>What App Store Optimization Really Means</h2>
+            <p>
+                People often think <strong>app store optimization</strong> is just about keywords. That is only half true. The other half
+                is behavior, how users search, how they pause, and what they skip.
+            </p>
+
+            <p>
+               <strong>ASO app store optimization</strong> looks at all of it. Your title structure, short description, and the way
+                visuals guide attention. Some changes are measured. Others are refined slowly.
+            </p>
+
+            <h2>Our Approach to ASO Optimization</h2>
+
+            <h3>Strategy Comes First, Always</h3>
+            <p>
+                Before anything is changed, we review competitors, categories, and user patterns. ASO optimization
+                without context rarely works long-term.
+            </p>
+
+            <h3>Keyword Mapping Without Stuffing</h3>
+            <p>
+                We research keywords users actually type, then place them where they belong. Not everywhere. Not forced.
+                This is where app store optimization services outperform random tactics.
+            </p>
+
+            <h3>Creative Assets That Feel Human</h3>
+            <p>
+                Icons, screenshots, and preview videos matter more than people admit. They are optimized, tested, and
+                sometimes replaced entirely.
+            </p>
+
+            <h3>Ongoing Adjustments</h3>
+            <p>
+                Algorithms change, markets shift, and updates are released. ASO is not static, even if people treat it
+                that way.
+            </p>
+
+            <div class="hero-btns mt-4">
+                <a href="{{ route('contact') }}" class="btn btn-gradient">Talk to an ASO Specialist</a>
+            </div>
+            <br>
+
+            <h2>Why Work With an App Store Optimization Consultant Instead of Guessing?</h2>
+            <p>
+                An app store optimization consultant brings pattern recognition. Visibility without misleading users.
+                Growth without sacrificing retention.
+            </p>
+
+            <h2>App Store Optimization Services Designed for Growth, Not Vanity Metrics</h2>
+            <p>
+                We do not chase installs that uninstall tomorrow. Our app store optimization services focus on
+                discoverability that leads to engagement.
+            </p>
+
+            <h2>ASO App Store Optimization That Supports Your Broader Marketing Goals</h2>
+            <p>
+                Our ASO team often works alongside E-Commerce SEO Experts to ensure messaging stays consistent across
+                platforms. ASO is refined, not rushed.
+            </p>
+
+            <h2>Why Brands Choose WB Digitech for App Store Optimization</h2>
+            <p>
+                ASO is treated as part of brand growth, not a standalone trick. We also act as an app store optimization
+                consultant when guidance is needed.
+            </p>
+
+            <h2>Ready to Improve Visibility Where It Counts?</h2>
+            <p>
+                Start with an audit. Then decide your pace. A conversation is usually the best first step.
+            </p>
+
+            <div class="hero-btns mt-4">
+                <a href="{{ route('contact') }}" class="btn btn-gradient">Optimize Your App Store Presence</a>
+            </div>
+
+            <br>
+
+            <h2>Frequently Asked Questions</h2>
+
+            <h4>What is ASO optimization and why is it important?</h4>
+            <p>
+                ASO optimization improves how apps appear in search results inside app stores. When done properly, it
+                supports organic growth and complements broader marketing strategies.
+            </p>
+
+            <h4>How long does app store optimization take to show results?</h4>
+            <p>
+                Results vary. Consistent app store optimization services usually show steady improvement rather than
+                sudden spikes.
+            </p>
+
+            <h4>Is app store optimization different from SEO?</h4>
+            <p>
+                Yes. ASO focuses on app marketplaces, while SEO targets search engines. They work best together.
+            </p>
+
+            <h4>Do I need an app store optimization consultant?</h4>
+            <p>
+                A consultant helps avoid trial-and-error mistakes and provides strategic clarity.
+            </p>
+
+            <h4>Can ASO work for competitive app categories?</h4>
+            <p>
+                Yes. With focused aso optimization and patience, competitive apps can improve discoverability.
+            </p>
+
+        </div>
     </div>
+</div>
 @endsection
