@@ -52,7 +52,7 @@
                     <li ><a href="{{ route('services.amazon_marketing') }}">Amazon Marketing</a></li>
                     <li><a href="{{ route('services.ppc') }}">PPC (Pay-Per-Click)</a></li>
                     <li><a href="{{ route('services.google_shopping_ads') }}">Google Shopping Ads</a></li>
-
+                    <li><a href="{{ route('services.lead_generation') }}">Lead Generation</a></li> 
                 </ul>
             </div>
         </div>

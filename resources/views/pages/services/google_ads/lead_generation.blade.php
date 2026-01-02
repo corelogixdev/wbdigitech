@@ -32,15 +32,21 @@
                                         </div>
                                     </div>
 
-<!-- Hero Image Section -->
-    <div class="hero-image-section">
-        <div class="hero-image-container">
-            <img src="{{ asset('css/new-assets/web_imgs/ContentWriting01.webp') }}" alt="website-development" class="hero-image">
-            {{-- <div class="hero-overlay"></div> --}}
+<!-- Hero Image -->
+    <section class="section-box">
+        <div class="bg-gray-100">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="tp-blog-standard-thumb-box p-relative">
+                            <img src="{{ asset('css/new-assets/google_ads/pay_per_click.webp') }}"
+                                 alt="app-store-optimization-services">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-<br>
-<br>
+    </section>
 
 
     <!-- Content & Sidebar -->
@@ -51,14 +57,11 @@
             <div class="sidebar">
                 <h6>Our Services</h6>
                 <ul>
-                    <li><a href="{{ route('services.web') }}">Website Services</a></li>
-                    <li><a href="{{ route('services.web_dev') }}">Website Development</a></li>
-                    <li  class="current-menu-item"><a href="{{ route('services.content_writing') }}">Content Writing</a></li>
-                    <li><a href="{{ route('services.ecommerce_development') }}">E-commerce Development</a></li>
-                    <li><a href="{{ route('services.shopify_development') }}">Shopify Development</a></li>
-                    <li><a href="{{ route('services.website_design') }}">Website Design</a></li>
-                    <li><a href="{{ route('services.website_maintainance') }}">Website Maintenance</a></li>
-                    <li><a href="{{ route('services.wordpress_development') }}">WordPress Development</a></li>
+                <li><a href="{{ route('services.google_ads_management') }}">Google Ads Management</a></li>
+                <li><a href="{{ route('services.amazon_marketing') }}">Amazon Marketing</a></li>
+                <li ><a href="{{ route('services.ppc') }}">PPC (Pay-Per-Click)</a></li>
+                <li><a href="{{ route('services.google_shopping_ads') }}">Google Shopping Ads</a></li>
+                <li class="current-menu-item"><a href="{{ route('services.lead_generation') }}">Lead Generation</a></li>
                 </ul>
 
                 <!-- Sidebar Images -->

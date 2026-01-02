@@ -31,16 +31,21 @@
                                         </div>
                                     </div>
 
-                                    <!-- Hero Image Section -->
-    <div class="hero-image-section">
-        <div class="hero-image-container">
-            <img src="{{ asset('css/new-assets/google_ads/google_ads_marketing.webp') }}" alt="Google Ads Management" class="hero-image">
-            {{-- <div class="hero-overlay"></div> --}}
+         <!-- Hero Image -->
+    <section class="section-box">
+        <div class="bg-gray-100">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="tp-blog-standard-thumb-box p-relative">
+                            <img src="{{ asset('css/new-assets/google_ads/google_ads_marketing.webp') }}"
+                                 alt="app-store-optimization-services">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-<br>
-<br>
-
+    </section>
 
     <!-- Content & Sidebar -->
     <div class="container-flex">
@@ -54,6 +59,8 @@
                     <li><a href="{{ route('services.amazon_marketing') }}">Amazon Marketing</a></li>
                     <li><a href="{{ route('services.ppc') }}">PPC (Pay-Per-Click)</a></li>
                     <li  class="current-menu-item"><a href="{{ route('services.google_shopping_ads') }}">Google Shopping Ads</a></li>
+                    <li ><a href="{{ route('services.lead_generation') }}">Lead Generation</a></li>
+                    
                 </ul>
 
 
