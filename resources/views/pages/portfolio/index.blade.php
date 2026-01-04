@@ -34,7 +34,7 @@
                     <div class="container container-1500">
                         <div class="row">
                             @forelse($portfolios as $portfolio)
-                                                    <div class="col-xl-4 col-lg-6 col-md-6 mb-50">
+                                                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-40">
                                                         <div class="tp-blog-item position-relative overflow-hidden">
                                                             <div class="tp-blog-thumb fix p-relative">
                                                                 <a
@@ -89,8 +89,8 @@
 
     <style>
         /* ==============================
-                                                                                                       Portfolio Page Styling
-                                                                                                       ============================== */
+                                                                                                           Portfolio Page Styling
+                                                                                                           ============================== */
 
         /* Banner Section */
         .tp-blog-standard-thumb-box {
@@ -222,8 +222,8 @@
         }
 
         /* ==============================
-                                                                                                       Responsive Fix for Banner Image
-                                                                                                       ============================== */
+                                                                                                           Responsive Fix for Banner Image
+                                                                                                           ============================== */
         @media (max-width: 768px) {
             .tp-blog-standard-thumb-box img {
                 height: 280px;
