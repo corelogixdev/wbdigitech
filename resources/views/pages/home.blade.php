@@ -375,7 +375,8 @@
                                         <div class="tp-project-gallery-top text-center">
                                             <div class="row justify-content-center">
                                                 <div class="col-xl-6 col-lg-8 col-md-10">
-                                                    <h2 class="my-30 sv-service-title" style="color:#0A3D62">Industries We
+                                                    <h2 class="my-30 sv-service-title pb-10" style="color:#0A3D62">
+                                                        Industries We
                                                         Serve</h2>
                                                 </div>
                                             </div>
