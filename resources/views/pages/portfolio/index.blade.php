@@ -30,7 +30,7 @@
                 </section>
 
                 <!-- Portfolio Grid Section -->
-                <section class="tp-blog-standard-area pt-0 pb-0">
+                <section class="tp-blog-standard-area pt-50 pb-10">
                     <div class="container container-1500">
                         <div class="row">
                             @forelse($portfolios as $portfolio)
@@ -89,8 +89,8 @@
 
     <style>
         /* ==============================
-                                                                                                               Portfolio Page Styling
-                                                                                                               ============================== */
+                                                                                                                                       Portfolio Page Styling
+                                                                                                                                       ============================== */
 
         /* Banner Section */
         .tp-blog-standard-thumb-box {
@@ -222,8 +222,8 @@
         }
 
         /* ==============================
-                                                                                                               Responsive Fix for Banner Image
-                                                                                                               ============================== */
+                                                                                                                                       Responsive Fix for Banner Image
+                                                                                                                                       ============================== */
         @media (max-width: 768px) {
             .tp-blog-standard-thumb-box img {
                 height: 280px;
