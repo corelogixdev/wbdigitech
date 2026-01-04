@@ -56,31 +56,67 @@
                                 <div class="col-lg-8">
                                     <form method="POST" action="{{ route('contact.send') }}" class="contact-form">
                                         @csrf
+
                                         <div class="row">
+                                            <!-- Name -->
                                             <div class="col-lg-6 mb-3">
                                                 <input type="text" name="name" class="form-control"
                                                     placeholder="Enter your name" required>
                                             </div>
+
+                                            <!-- Email -->
                                             <div class="col-lg-6 mb-3">
                                                 <input type="email" name="email" class="form-control"
                                                     placeholder="Enter your email" required>
                                             </div>
-                                            <div class="col-lg-6 mb-3">
-                                                <input type="text" name="phone" class="form-control"
-                                                    placeholder="Enter your phone" required>
+
+                                            <!-- Phone with Country Code -->
+                                            <div class="col-lg-3 mb-3">
+                                                <select name="country_code" class="form-control" required>
+                                                    <option value="+971">🇦🇪 +971</option>
+                                                    <option value="+92">🇵🇰 +92</option>
+                                                    <option value="+91">🇮🇳 +91</option>
+                                                    <option value="+1">🇺🇸 +1</option>
+                                                    <option value="+44">🇬🇧 +44</option>
+                                                </select>
                                             </div>
+
+                                            <div class="col-lg-3 mb-3">
+                                                <input type="text" name="phone" class="form-control"
+                                                    placeholder="Phone number" required>
+                                            </div>
+
+                                            <!-- Service / Subject Dropdown -->
+                                            <div class="col-lg-6 mb-3">
+                                                <select name="service" class="form-control" required>
+                                                    <option value="">Select a Service</option>
+                                                    <option>Web Design & Development</option>
+                                                    <option>Google Ads Management</option>
+                                                    <option>SEO / ASO</option>
+                                                    <option>Mobile App Development</option>
+                                                    <option>Social Media Marketing</option>
+                                                    <option>Graphic Designing</option>
+                                                    <option>Videography</option>
+                                                    <option>CRM</option>
+                                                </select>
+                                            </div>
+
+                                            <!-- Message -->
                                             <div class="col-lg-12 mb-3">
                                                 <textarea name="message" class="form-control" rows="4"
-                                                    placeholder="How we can help you?" required></textarea>
+                                                    placeholder="How can we help you?" required></textarea>
                                             </div>
-                                            <div class="col-lg-12 mt-15">
-                                                <button type="submit" class="btn btn-black">Send Message</button>
-                                                <br><span class="text-body-text-md mt-2 d-block">LET’S CREATE SOMETHING
-                                                    IMPRESSIVE</span>
+
+                                            <!-- Submit -->
+                                            <div class="col-lg-12 mt-15 text-center">
+                                                <button type="submit" class="btn btn-black">
+                                                    Send Message
+                                                </button>
                                             </div>
                                         </div>
                                     </form>
                                 </div>
+
                             </div>
                         </div>
                     </div>

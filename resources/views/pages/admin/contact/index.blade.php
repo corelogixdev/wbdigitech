@@ -19,7 +19,8 @@
                             <th>#</th>
                             <th>Name</th>
                             <th>Email</th>
-                            <th>Message</th>
+                            <th>Phone</th>
+                            <th>Service</th>
                             <th>Date</th>
                             <th class="text-end">Actions</th>
                         </tr>
@@ -30,7 +31,8 @@
                                 <td>{{ $contact->id }}</td>
                                 <td>{{ $contact->name }}</td>
                                 <td>{{ $contact->email }}</td>
-                                <td>{{ Str::limit($contact->message, 40) }}</td>
+                                <td>{{ $contact->phone}}</td>
+                                <td>{{ Str::limit($contact->service, 40) }}</td>
                                 <td>{{ $contact->created_at->format('Y-m-d') }}</td>
                                 <td class="text-end">
                                     <a href="{{ route('contacts.show', $contact) }}" class="btn btn-sm btn-info">
@@ -38,14 +40,17 @@
                                     </a>
                                     <form action="{{ route('contacts.destroy', $contact) }}" method="POST" class="d-inline">
                                         @csrf @method('DELETE')
-                                        <button class="btn btn-sm btn-danger" onclick="return confirm('Delete this contact?')">
+                                        <button class="btn btn-sm btn-danger"
+                                            onclick="return confirm('Delete this contact?')">
                                             <i class="bi bi-trash"></i>
                                         </button>
                                     </form>
                                 </td>
                             </tr>
                         @empty
-                            <tr><td colspan="6" class="text-center text-muted">No contacts found.</td></tr>
+                            <tr>
+                                <td colspan="6" class="text-center text-muted">No contacts found.</td>
+                            </tr>
                         @endforelse
                     </tbody>
                 </table>

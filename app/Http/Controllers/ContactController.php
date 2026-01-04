@@ -7,44 +7,55 @@ use Illuminate\Http\Request;
 
 class ContactController extends Controller
 {
-    // Frontend Contact Page
-     public function store(Request $request)
+    // Store contact form (Frontend)
+    public function store(Request $request)
     {
         $data = $request->validate([
             'name' => 'required|string|max:100',
             'email' => 'required|email|max:150',
+            'country_code' => 'required|string|max:5',
             'phone' => 'required|string|max:20',
+            'service' => 'required|string|max:100',
             'message' => 'required|string|max:500',
         ]);
+
+        // Combine country code + phone
+        $data['phone'] = $data['country_code'] . ' ' . $data['phone'];
+
+        // Remove country_code before saving (optional)
+        unset($data['country_code']);
 
         Contact::create($data);
 
         return back()->with('success', 'Thank you! We will contact you soon.');
     }
 
-    // Show all messages in admin dashboard
+    // Admin: Show all messages
     public function index()
     {
         $contacts = Contact::latest()->paginate(10);
         return view('pages.admin.contact.index', compact('contacts'));
     }
 
-    // Show single message detail
+    // Admin: Show single message
     public function show(Contact $contact)
     {
         return view('pages.admin.contact.show', compact('contact'));
     }
 
-    // Delete a message
+    // Admin: Delete message
     public function destroy(Contact $contact)
     {
         $contact->delete();
-        return redirect()->route('contacts.index')->with('success', 'Message deleted.');
+
+        return redirect()
+            ->route('contacts.index')
+            ->with('success', 'Message deleted.');
     }
 
-    public function publicIndex(){
-
+    // Public contact page
+    public function publicIndex()
+    {
         return view('pages.contact');
     }
 }
-

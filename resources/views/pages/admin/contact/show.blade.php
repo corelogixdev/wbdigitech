@@ -10,6 +10,8 @@
             <div class="card-body">
                 <h4 class="mb-3">Message from {{ $contact->name }}</h4>
                 <p><strong>Email:</strong> {{ $contact->email }}</p>
+                <p><strong>Phone:</strong> {{ $contact->phone }}</p>
+                <p><strong>Service:</strong> {{ $contact->service }}</p>
                 <p><strong>Date:</strong> {{ $contact->created_at->format('d M, Y h:i A') }}</p>
                 <hr>
                 <p>{{ $contact->message }}</p>
