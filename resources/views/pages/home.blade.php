@@ -149,7 +149,7 @@
                             </section>
 
                             {{-- Services Area --}}
-                            <div class="tp-service-area pt-100 pb-50 tp-btn-trigger d-none d-lg-block">
+                            <div class="tp-service-area pt-80 pb-10 tp-btn-trigger d-none d-lg-block">
                                 <h2 class="sv-service-title  text-center" style="color:#0A3D62">Our Custom-made
                                     Digital Marketing Services in Dubai, UAE</h2>
                                 <p class="text-center"> As one of the leading digital marketing agencies, we make the roll
@@ -368,19 +368,15 @@
                                 </div>
                             </section>
 
-
                             {{-- Industries We Serve --}}
-                            <br>
-                            <div class="tp-project-area fix pt-10">
+                            <div class="tp-project-area fix pt-20">
                                 <div class="tp-project-gallery-wrapper">
                                     <div class="container container-1630">
-                                        <div class="tp-project-gallery-top pb-20 text-center">
+                                        <div class="tp-project-gallery-top text-center">
                                             <div class="row justify-content-center">
                                                 <div class="col-xl-6 col-lg-8 col-md-10">
-                                                    <br>
                                                     <h2 class="my-30 sv-service-title" style="color:#0A3D62">Industries We
                                                         Serve</h2>
-                                                    <br>
                                                 </div>
                                             </div>
 
@@ -415,278 +411,273 @@
                                                         A Free Quote</a>
                                                 </div>
                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
 
-                                            {{-- Blog Section --}}
-                                            <section class="home-blog-section py-5 bg-white">
-                                                <div class="container">
-                                                    <div class="row align-items-center">
-                                                        <!-- Left Section: Title -->
-                                                        <div class="col-lg-4 mb-4 mb-lg-0">
-                                                            <h2 class="fw-bold text-primary mb-3">Latest<br><span
-                                                                    class="text-dark"> Insights & Guides</span></h2>
-                                                            <hr class="border-2 border-primary mb-4" style="width:50px;">
-                                                            <a href="{{ route('blogs.public') }}"
-                                                                class="btn btn-link text-decoration-none text-primary fs-6 fw-semibold p-0">
-                                                                READ OUR BLOG <i class="fa fa-arrow-right ms-2"></i>
-                                                            </a>
-                                                        </div>
+                            {{-- Blog Section --}}
+                            <section class="home-blog-section py-5 bg-white">
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <!-- Left Section: Title -->
+                                        <div class="col-lg-4 mb-4 mb-lg-0">
+                                            <h2 class="fw-bold text-primary mb-3">Latest<br><span class="text-dark">
+                                                    Insights & Guides</span></h2>
+                                            <hr class="border-2 border-primary mb-4" style="width:50px;">
+                                            <a href="{{ route('blogs.public') }}"
+                                                class="btn btn-link text-decoration-none text-primary fs-6 fw-semibold p-0">
+                                                READ OUR BLOG <i class="fa fa-arrow-right ms-2"></i>
+                                            </a>
+                                        </div>
 
-                                                        <!-- Right Section: Blogs -->
-                                                        <div class="col-lg-8">
-                                                            <div class="row g-4">
-                                                                @forelse($blogs->take(2) as $blog)
-                                                                    <div class="col-md-6">
-                                                                        <div
-                                                                            class="blog-item bg-white border-0 shadow-sm h-100">
-                                                                            @if(!empty($blog->image))
-                                                                                <a
-                                                                                    href="{{ route('blogs.public.show', $blog->slug ?? 0) }}">
-                                                                                    <img src="{{ asset('storage/' . $blog->image) }}"
-                                                                                        alt="{{ $blog->title ?? 'Blog Image' }}"
-                                                                                        class="img-fluid rounded-top w-100 blog-img"
-                                                                                        loading="lazy" decoding="async">
-                                                                                </a>
-                                                                            @endif
-                                                                            <div class="p-3">
-                                                                                <h5 class="fw-bold text-dark mb-1">
-                                                                                    <a href="{{ route('blogs.public.show', $blog->slug ?? 0) }}"
-                                                                                        class="text-dark text-decoration-none">
-                                                                                        {{ $blog->title ?? 'Untitled Blog' }}
-                                                                                    </a>
-                                                                                </h5>
-                                                                                <p class="text-muted small mb-2">
-                                                                                    {{ $blog->created_at ? $blog->created_at->format('F d, Y') : 'Date N/A' }}
-                                                                                    | by Admin
-                                                                                </p>
-                                                                                <p class="text-secondary small mb-3">
-                                                                                    {{ Str::limit($blog->excerpt ?? '', 100, '...') }}
-                                                                                </p>
-                                                                                <a href="{{ route('blogs.public.show', $blog->slug ?? 0) }}"
-                                                                                    class="text-primary text-decoration-none fw-semibold">
-                                                                                    Read More →
-                                                                                </a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                @empty
-                                                                    <div class="col-12 text-center">
-                                                                        <p class="text-muted">No blogs published yet.</p>
-                                                                    </div>
-                                                                @endforelse
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </section>
-
-
-                                            {{-- Testimonial Section --}}
-                                            <div class="tp-testimonial-area pt-50 pb-70" style="background:#fff;">
-                                                <div class="container">
-                                                    <!-- Section Title -->
-                                                    <div class="row justify-content-center mb-40">
-                                                        <div class="col-md-8 text-center">
-                                                            <h2 class="sv-service-title fw-bold" style="color: #0A3D62">What
-                                                                Our Clients Say</h2>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="row justify-content-center mb-4">
-                                                        <div class="col-md-12 text-center">
-                                                            <div class="review-summary-card p-4 shadow-sm rounded">
-                                                                <div
-                                                                    class="d-flex align-items-center justify-content-center mb-3">
-                                                                    <img src="https://cdn-icons-png.flaticon.com/512/2965/2965358.png"
-                                                                        alt="Google Store" width="50" class="me-3"
-                                                                        loading="lazy" decoding="async">
-                                                                    <div class="text-start">
-                                                                        <h5 class="mb-0 fw-bold">WB-DigiTech - Digital
-                                                                            Marketing Agency</h5>
-                                                                        <div class="review-rating">
-                                                                            <span class="fw-bold fs-4 text-dark">4.9</span>
-                                                                            <span class="text-warning">
-                                                                                ★★★★★
-                                                                            </span>
-                                                                        </div>
-                                                                        <p class="mb-0 text-muted small">Based on 41 reviews
-                                                                        </p>
-                                                                    </div>
-                                                                </div>
-                                                                <a href="https://g.page/your-google-link" target="_blank"
-                                                                    class="btn btn-primary rounded-pill">
-                                                                    <i class="fab fa-google me-1"></i> Review us on Google
+                                        <!-- Right Section: Blogs -->
+                                        <div class="col-lg-8">
+                                            <div class="row g-4">
+                                                @forelse($blogs->take(2) as $blog)
+                                                    <div class="col-md-6">
+                                                        <div class="blog-item bg-white border-0 shadow-sm h-100">
+                                                            @if(!empty($blog->image))
+                                                                <a href="{{ route('blogs.public.show', $blog->slug ?? 0) }}">
+                                                                    <img src="{{ asset('storage/' . $blog->image) }}"
+                                                                        alt="{{ $blog->title ?? 'Blog Image' }}"
+                                                                        class="img-fluid rounded-top w-100 blog-img" loading="lazy"
+                                                                        decoding="async">
+                                                                </a>
+                                                            @endif
+                                                            <div class="p-3">
+                                                                <h5 class="fw-bold text-dark mb-1">
+                                                                    <a href="{{ route('blogs.public.show', $blog->slug ?? 0) }}"
+                                                                        class="text-dark text-decoration-none">
+                                                                        {{ $blog->title ?? 'Untitled Blog' }}
+                                                                    </a>
+                                                                </h5>
+                                                                <p class="text-muted small mb-2">
+                                                                    {{ $blog->created_at ? $blog->created_at->format('F d, Y') : 'Date N/A' }}
+                                                                    | by Admin
+                                                                </p>
+                                                                <p class="text-secondary small mb-3">
+                                                                    {{ Str::limit($blog->excerpt ?? '', 100, '...') }}
+                                                                </p>
+                                                                <a href="{{ route('blogs.public.show', $blog->slug ?? 0) }}"
+                                                                    class="text-primary text-decoration-none fw-semibold">
+                                                                    Read More →
                                                                 </a>
                                                             </div>
                                                         </div>
                                                     </div>
-
-                                                    <!-- Review Cards Slider -->
-                                                    <div class="swiper-container tp-testimonial-slider-active">
-                                                        <div class="swiper-wrapper">
-                                                            <!-- Review 1 -->
-                                                            <div class="swiper-slide">
-                                                                <div
-                                                                    class="testimonial-card bg-white shadow-sm rounded p-4 h-100">
-                                                                    <div class="d-flex align-items-center mb-3">
-                                                                        <img src="https://randomuser.me/api/portraits/men/32.jpg"
-                                                                            alt="Reviewer" class="rounded-circle me-3"
-                                                                            width="45" height="45" loading="lazy"
-                                                                            decoding="async">
-                                                                        <div>
-                                                                            <h6 class="fw-bold mb-0">Mohammad Usman</h6>
-                                                                            <small class="text-muted">5 months ago</small>
-                                                                        </div>
-                                                                        <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png"
-                                                                            class="ms-auto" width="20" alt="Google Logo"
-                                                                            loading="lazy" decoding="async">
-                                                                    </div>
-                                                                    <div class="text-warning mb-2">★★★★★</div>
-                                                                    <p class="text-muted">Amazing experience! WB-DigiTech
-                                                                        built us a fantastic website and provided excellent
-                                                                        support throughout.</p>
-                                                                </div>
-                                                            </div>
-
-                                                            <!-- Review 2 -->
-                                                            <div class="swiper-slide">
-                                                                <div
-                                                                    class="testimonial-card bg-white shadow-sm rounded p-4 h-100">
-                                                                    <div class="d-flex align-items-center mb-3">
-                                                                        <div class="rounded-circle bg-success text-white d-flex align-items-center justify-content-center me-3"
-                                                                            style="width:45px; height:45px;">A</div>
-                                                                        <div>
-                                                                            <h6 class="fw-bold mb-0">Ayesha Tech</h6>
-                                                                            <small class="text-muted">6 months ago</small>
-                                                                        </div>
-                                                                        <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png"
-                                                                            class="ms-auto" width="20" alt="Google Logo"
-                                                                            loading="lazy" decoding="async">
-                                                                    </div>
-                                                                    <div class="text-warning mb-2">★★★★☆</div>
-                                                                    <p class="text-muted">We had a great experience with
-                                                                        WB-DigiTech. They delivered exactly what we wanted
-                                                                        for our brand identity.</p>
-                                                                </div>
-                                                            </div>
-
-                                                            <!-- Review 3 -->
-                                                            <div class="swiper-slide">
-                                                                <div
-                                                                    class="testimonial-card bg-white shadow-sm rounded p-4 h-100">
-                                                                    <div class="d-flex align-items-center mb-3">
-                                                                        <img src="https://randomuser.me/api/portraits/women/45.jpg"
-                                                                            alt="Reviewer" class="rounded-circle me-3"
-                                                                            width="45" height="45" loading="lazy"
-                                                                            decoding="async">
-                                                                        <div>
-                                                                            <h6 class="fw-bold mb-0">Fatima Khan</h6>
-                                                                            <small class="text-muted">2 months ago</small>
-                                                                        </div>
-                                                                        <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png"
-                                                                            class="ms-auto" width="20" alt="Google Logo"
-                                                                            loading="lazy" decoding="async">
-                                                                    </div>
-                                                                    <div class="text-warning mb-2">★★★★★</div>
-                                                                    <p class="text-muted">Their SEO and marketing services
-                                                                        helped us increase leads significantly. Highly
-                                                                        recommended!</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!-- Pagination -->
-                                                        <div class="swiper-pagination"></div>
+                                                @empty
+                                                    <div class="col-12 text-center">
+                                                        <p class="text-muted">No blogs published yet.</p>
                                                     </div>
-                                                </div>
+                                                @endforelse
                                             </div>
-
-                                            {{-- Team Section --}}
-                                            <div class="tp-team-area pt-20 pb-50 fix">
-                                                {{-- Section Title --}}
-                                                <div class="row justify-content-center mb-40">
-                                                    <div class="col-md-8 text-center">
-                                                        <h2 class="sv-service-title" style="color: #0A3D62;">Our Team</h2>
-                                                        <p class="text-dark-50 mt-2">Meet With Our Team</p>
-                                                    </div>
-                                                </div>
-                                                <div class="container-fluid">
-                                                    <div class="row justify-content-center">
-                                                        @foreach($teamMembers as $member)
-                                                            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                                                                <div class="team-card">
-                                                                    <div class="team-img">
-                                                                        <img src="{{ asset('storage/' . $member->image) }}"
-                                                                            alt="{{ $member->name }}" loading="lazy"
-                                                                            decoding="async">
-                                                                    </div>
-                                                                    <div class="team-info">
-                                                                        <h4>{{ $member->name }}</h4>
-                                                                        <p>{{ $member->speciality }}</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        @endforeach
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-
-                                            <section class="tp-about-area pt-80 pb-10 bg-light">
-                                                <div class="container">
-                                                    <div class="row justify-content-center">
-                                                        <div class="col-xl-10 col-lg-11 text-center">
-                                                            <div class="tp-about-content">
-                                                                <h2 class="sv-service-title  mb-4" style="color:#0A3D62">
-                                                                    Boost Your Business With The Help of Digital Marketing
-                                                                    Company
-                                                                </h2>
-                                                                <p class="text-muted mb-3">
-                                                                    WB Digitech is a results-driven digital marketing
-                                                                    company that em-powers businesses to thrive in Dubai's
-                                                                    highly competitive market. Recognized as a trusted
-                                                                    digital marketing agency Dubai, we design innovative
-                                                                    strategies that amplify your online presence, connect
-                                                                    you with your target audience, and fuel sustainable
-                                                                    growth.
-                                                                    Our vision is simple yet powerful: to help brands
-                                                                    achieve maximum visibility across websites, search
-                                                                    engines, and social media platforms. Backed by a team of
-                                                                    experienced marketing experts and creative
-                                                                    professionals, we deliver comprehensive digital
-                                                                    marketing services, from content marketing and SEO to
-                                                                    PPC, SEM, professional web de-velopment, web design, and
-                                                                    graphic design.
-                                                                    With WB Digitech, you gain the expertise of certified
-                                                                    specialists who craft data-driven campaigns that attract
-                                                                    traffic, convert leads, and boost revenue. Our unique
-                                                                    approach and proven results distinguish us as the best
-                                                                    digital marketing agency in Dubai, trusted by
-                                                                    busi-nesses across industries.
-                                                                    As a forward-thinking digital marketing company, we
-                                                                    combine crea-tivity with technology to deliver
-                                                                    strategies that truly resonate with modern-day
-                                                                    customers. Whether it's through targeted ads,
-                                                                    compel-ling content, or innovative design, our digital
-                                                                    marketing solutions are built to position your brand
-                                                                    ahead of competitors.
-
-                                                                </p>
-                                                                <p class="text-muted mb-4">
-                                                                    Choose WB Degitech-you go-to marketing agency in
-                                                                    Dubai-to engage effectively with potential customers,
-                                                                    generate high-quality leads, and convert opportunities
-                                                                    into measurable profits. When it comes to excellence, WB
-                                                                    Digitech stands out among leading digital marketing
-                                                                    agencies in the UAE.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </section>
                                         </div>
+                                    </div>
+                                </div>
+
+                            </section>
+
+
+                            {{-- Testimonial Section --}}
+                            <div class="tp-testimonial-area pt-50 pb-70" style="background:#fff;">
+                                <div class="container">
+                                    <!-- Section Title -->
+                                    <div class="row justify-content-center mb-40">
+                                        <div class="col-md-8 text-center">
+                                            <h2 class="sv-service-title fw-bold" style="color: #0A3D62">What
+                                                Our Clients Say</h2>
+                                        </div>
+                                    </div>
+
+                                    <div class="row justify-content-center mb-4">
+                                        <div class="col-md-12 text-center">
+                                            <div class="review-summary-card p-4 shadow-sm rounded">
+                                                <div class="d-flex align-items-center justify-content-center mb-3">
+                                                    <img src="https://cdn-icons-png.flaticon.com/512/2965/2965358.png"
+                                                        alt="Google Store" width="50" class="me-3" loading="lazy"
+                                                        decoding="async">
+                                                    <div class="text-start">
+                                                        <h5 class="mb-0 fw-bold">WB-DigiTech - Digital
+                                                            Marketing Agency</h5>
+                                                        <div class="review-rating">
+                                                            <span class="fw-bold fs-4 text-dark">4.9</span>
+                                                            <span class="text-warning">
+                                                                ★★★★★
+                                                            </span>
+                                                        </div>
+                                                        <p class="mb-0 text-muted small">Based on 41 reviews
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <a href="https://g.page/your-google-link" target="_blank"
+                                                    class="btn btn-primary rounded-pill">
+                                                    <i class="fab fa-google me-1"></i> Review us on Google
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Review Cards Slider -->
+                                    <div class="swiper-container tp-testimonial-slider-active">
+                                        <div class="swiper-wrapper">
+                                            <!-- Review 1 -->
+                                            <div class="swiper-slide">
+                                                <div class="testimonial-card bg-white shadow-sm rounded p-4 h-100">
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <img src="https://randomuser.me/api/portraits/men/32.jpg"
+                                                            alt="Reviewer" class="rounded-circle me-3" width="45"
+                                                            height="45" loading="lazy" decoding="async">
+                                                        <div>
+                                                            <h6 class="fw-bold mb-0">Mohammad Usman</h6>
+                                                            <small class="text-muted">5 months ago</small>
+                                                        </div>
+                                                        <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png"
+                                                            class="ms-auto" width="20" alt="Google Logo" loading="lazy"
+                                                            decoding="async">
+                                                    </div>
+                                                    <div class="text-warning mb-2">★★★★★</div>
+                                                    <p class="text-muted">Amazing experience! WB-DigiTech
+                                                        built us a fantastic website and provided excellent
+                                                        support throughout.</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Review 2 -->
+                                            <div class="swiper-slide">
+                                                <div class="testimonial-card bg-white shadow-sm rounded p-4 h-100">
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <div class="rounded-circle bg-success text-white d-flex align-items-center justify-content-center me-3"
+                                                            style="width:45px; height:45px;">A</div>
+                                                        <div>
+                                                            <h6 class="fw-bold mb-0">Ayesha Tech</h6>
+                                                            <small class="text-muted">6 months ago</small>
+                                                        </div>
+                                                        <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png"
+                                                            class="ms-auto" width="20" alt="Google Logo" loading="lazy"
+                                                            decoding="async">
+                                                    </div>
+                                                    <div class="text-warning mb-2">★★★★☆</div>
+                                                    <p class="text-muted">We had a great experience with
+                                                        WB-DigiTech. They delivered exactly what we wanted
+                                                        for our brand identity.</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Review 3 -->
+                                            <div class="swiper-slide">
+                                                <div class="testimonial-card bg-white shadow-sm rounded p-4 h-100">
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <img src="https://randomuser.me/api/portraits/women/45.jpg"
+                                                            alt="Reviewer" class="rounded-circle me-3" width="45"
+                                                            height="45" loading="lazy" decoding="async">
+                                                        <div>
+                                                            <h6 class="fw-bold mb-0">Fatima Khan</h6>
+                                                            <small class="text-muted">2 months ago</small>
+                                                        </div>
+                                                        <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png"
+                                                            class="ms-auto" width="20" alt="Google Logo" loading="lazy"
+                                                            decoding="async">
+                                                    </div>
+                                                    <div class="text-warning mb-2">★★★★★</div>
+                                                    <p class="text-muted">Their SEO and marketing services
+                                                        helped us increase leads significantly. Highly
+                                                        recommended!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Pagination -->
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {{-- Team Section --}}
+                            <div class="tp-team-area pt-20 pb-50 fix">
+                                {{-- Section Title --}}
+                                <div class="row justify-content-center mb-40">
+                                    <div class="col-md-8 text-center">
+                                        <h2 class="sv-service-title" style="color: #0A3D62;">Our Team</h2>
+                                        <p class="text-dark-50 mt-2">Meet With Our Team</p>
+                                    </div>
+                                </div>
+                                <div class="container-fluid">
+                                    <div class="row justify-content-center">
+                                        @foreach($teamMembers as $member)
+                                            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                                                <div class="team-card">
+                                                    <div class="team-img">
+                                                        <img src="{{ asset('storage/' . $member->image) }}"
+                                                            alt="{{ $member->name }}" loading="lazy" decoding="async">
+                                                    </div>
+                                                    <div class="team-info">
+                                                        <h4>{{ $member->name }}</h4>
+                                                        <p>{{ $member->speciality }}</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        @endforeach
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <section class="tp-about-area pt-80 pb-10 bg-light">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-xl-10 col-lg-11 text-center">
+                                            <div class="tp-about-content">
+                                                <h2 class="sv-service-title  mb-4" style="color:#0A3D62">
+                                                    Boost Your Business With The Help of Digital Marketing
+                                                    Company
+                                                </h2>
+                                                <p class="text-muted mb-3">
+                                                    WB Digitech is a results-driven digital marketing
+                                                    company that em-powers businesses to thrive in Dubai's
+                                                    highly competitive market. Recognized as a trusted
+                                                    digital marketing agency Dubai, we design innovative
+                                                    strategies that amplify your online presence, connect
+                                                    you with your target audience, and fuel sustainable
+                                                    growth.
+                                                    Our vision is simple yet powerful: to help brands
+                                                    achieve maximum visibility across websites, search
+                                                    engines, and social media platforms. Backed by a team of
+                                                    experienced marketing experts and creative
+                                                    professionals, we deliver comprehensive digital
+                                                    marketing services, from content marketing and SEO to
+                                                    PPC, SEM, professional web de-velopment, web design, and
+                                                    graphic design.
+                                                    With WB Digitech, you gain the expertise of certified
+                                                    specialists who craft data-driven campaigns that attract
+                                                    traffic, convert leads, and boost revenue. Our unique
+                                                    approach and proven results distinguish us as the best
+                                                    digital marketing agency in Dubai, trusted by
+                                                    busi-nesses across industries.
+                                                    As a forward-thinking digital marketing company, we
+                                                    combine crea-tivity with technology to deliver
+                                                    strategies that truly resonate with modern-day
+                                                    customers. Whether it's through targeted ads,
+                                                    compel-ling content, or innovative design, our digital
+                                                    marketing solutions are built to position your brand
+                                                    ahead of competitors.
+
+                                                </p>
+                                                <p class="text-muted mb-4">
+                                                    Choose WB Degitech-you go-to marketing agency in
+                                                    Dubai-to engage effectively with potential customers,
+                                                    generate high-quality leads, and convert opportunities
+                                                    into measurable profits. When it comes to excellence, WB
+                                                    Digitech stands out among leading digital marketing
+                                                    agencies in the UAE.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
             </main>
 
 @endsection
