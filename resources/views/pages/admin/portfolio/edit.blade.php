@@ -100,16 +100,41 @@
                                     </button>
                                 </div>
 
-                                <!-- Images -->
-                                <div class="mb-3">
-                                    <label class="form-label">Work Images</label>
-                                    <div class="mb-2 d-flex flex-wrap gap-2">
-                                        @foreach($portfolio->images ?? [] as $img)
-                                            <img src="{{ asset('storage/' . $img) }}" class="img-thumbnail" width="150">
-                                        @endforeach
-                                    </div>
-                                    <input type="file" name="images[]" class="form-control" multiple>
-                                </div>
+                               <!-- Images -->
+<div class="mb-3">
+    <label class="form-label fw-semibold">Work Images</label>
+
+    @if(!empty($portfolio->images))
+        <div class="mb-2 d-flex flex-wrap gap-3">
+
+            @foreach($portfolio->images as $index => $img)
+                <div class="position-relative text-center">
+                    <img src="{{ asset('storage/' . $img) }}"
+                         class="img-thumbnail mb-1"
+                         width="150">
+
+                    <!-- Remove checkbox -->
+                    <div class="form-check">
+                        <input class="form-check-input"
+                               type="checkbox"
+                               name="remove_images[]"
+                               value="{{ $img }}"
+                               id="remove_image_{{ $index }}">
+                        <label class="form-check-label text-danger"
+                               for="remove_image_{{ $index }}">
+                            Remove
+                        </label>
+                    </div>
+                </div>
+            @endforeach
+
+        </div>
+    @endif
+
+    <!-- Upload new images -->
+    <input type="file" name="images[]" class="form-control mt-2" multiple>
+</div>
+
 
                                 <!-- Submit -->
                                 <button type="submit" class="btn btn-primary">Update Portfolio</button>

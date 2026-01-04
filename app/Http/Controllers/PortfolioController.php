@@ -8,9 +8,6 @@ use Illuminate\Support\Facades\Storage;
 
 class PortfolioController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
     {
         $portfolios = Portfolio::latest()->paginate(10);
@@ -36,12 +33,12 @@ class PortfolioController extends Controller
             'services.*.description' => 'nullable|string',
         ]);
 
-        // Thumbnail
+        /* Thumbnail */
         if ($request->hasFile('thumbnail')) {
             $validated['thumbnail'] = $request->file('thumbnail')->store('portfolio', 'public');
         }
 
-        // Images
+        /* Images */
         $images = [];
         if ($request->hasFile('images')) {
             foreach ($request->file('images') as $img) {
@@ -50,12 +47,13 @@ class PortfolioController extends Controller
         }
         $validated['images'] = $images;
 
-        // Services (JSON)
+        /* Services */
         $validated['services'] = $request->services;
 
         Portfolio::create($validated);
 
-        return redirect()->route('portfolios.index')->with('success', 'Portfolio created successfully!');
+        return redirect()->route('portfolios.index')
+            ->with('success', 'Portfolio created successfully!');
     }
 
     public function edit(Portfolio $portfolio)
@@ -72,50 +70,82 @@ class PortfolioController extends Controller
             'website_link' => 'nullable|string',
             'client_overview' => 'nullable|string',
             'images.*' => 'nullable|image|mimes:jpg,jpeg,png,webp',
+
+            /* 🔹 NEW */
+            'remove_images' => 'nullable|array',
+
             'services' => 'required|array',
             'services.*.name' => 'required|string',
             'services.*.description' => 'nullable|string',
         ]);
 
-        // Thumbnail
+        /* Thumbnail */
         if ($request->hasFile('thumbnail')) {
-            $validated['thumbnail'] = $request->file('thumbnail')->store('portfolio', 'public');
+            // Optional: delete old thumbnail
+            if ($portfolio->thumbnail) {
+                Storage::disk('public')->delete($portfolio->thumbnail);
+            }
+
+            $validated['thumbnail'] = $request->file('thumbnail')
+                ->store('portfolio', 'public');
         }
 
-        // Images
+        /* 🔴 EXISTING IMAGES */
         $images = $portfolio->images ?? [];
+
+        /* 🔴 REMOVE SELECTED IMAGES */
+        if ($request->filled('remove_images')) {
+            foreach ($request->remove_images as $img) {
+                Storage::disk('public')->delete($img);
+                $images = array_values(array_diff($images, [$img]));
+            }
+        }
+
+        /* ➕ ADD NEW IMAGES */
         if ($request->hasFile('images')) {
             foreach ($request->file('images') as $img) {
                 $images[] = $img->store('portfolio', 'public');
             }
         }
+
         $validated['images'] = $images;
 
-        // Services
+        /* Services */
         $validated['services'] = $request->services;
 
         $portfolio->update($validated);
 
-        return redirect()->route('portfolios.index')->with('success', 'Portfolio updated successfully!');
+        return redirect()->route('portfolios.index')
+            ->with('success', 'Portfolio updated successfully!');
     }
 
     public function destroy(Portfolio $portfolio)
     {
+        /* 🔥 DELETE ALL FILES */
+        if ($portfolio->thumbnail) {
+            Storage::disk('public')->delete($portfolio->thumbnail);
+        }
+
+        if (!empty($portfolio->images)) {
+            foreach ($portfolio->images as $img) {
+                Storage::disk('public')->delete($img);
+            }
+        }
+
         $portfolio->delete();
-        return redirect()->route('portfolios.index')->with('success', 'Portfolio deleted successfully!');
+
+        return redirect()->route('portfolios.index')
+            ->with('success', 'Portfolio deleted successfully!');
     }
-    /**
-     * Public portfolio listing.
-     */
+
+    /* Public Pages */
+
     public function publicIndex()
     {
         $portfolios = Portfolio::latest()->get();
         return view('pages.portfolio.index', compact('portfolios'));
     }
 
-    /**
-     * Public portfolio detail page.
-     */
     public function publicShow($title, $id)
     {
         $portfolio = Portfolio::findOrFail($id);
