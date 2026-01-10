@@ -3,92 +3,91 @@
 @section('title', 'Website Design & Development - WB-DIGITECH')
 
 @section('content')
-<link rel="stylesheet" href="{{ asset('css/services.css') }}">
-<link rel="stylesheet" href="{{ asset('css/home.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/services.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
 
 
-<div class="main-wrapper">
+    <div class="main-wrapper">
 
-    <!-- Spacer below header -->
-    <div style="padding: 80px"></div>
+        <!-- Spacer below header -->
+        <div style="padding: 80px"></div>
 
 
-                                        <!-- Hero Title -->
-                                        <div class="tp-hero-title-wrap mb-35 text-center">
-                                            <h2 class="tp-hero-title gradient-text">
-                                                Lead Generation
-                                            </h2>
-                                        </div>
-                                        <div></div>
-                                        <!-- Hero Content -->
-                                        <div class="tp-hero-content text-center">
-                                            <p class="delay-load">
-                                                WB DIGITECH provides high-quality website development services — 
-                                                responsive, SEO-optimized, and tailored to your business needs.
-                                            </p>
-                                            <div class="hero-btns mt-4">
-                                                <a href="{{ route('contact')}}" class="btn btn-gradient">Get a Free Quote</a>
-                                            </div>
-                                        </div>
-                                    </div>
+        <!-- Hero Title -->
+        <div class="tp-hero-title-wrap mb-35 text-center">
+            <h2 class="tp-hero-title gradient-text">
+                Lead Generation
+            </h2>
+        </div>
+        <div></div>
+        <!-- Hero Content -->
+        <div class="tp-hero-content text-center">
+            <p class="delay-load">
+                WB DIGITECH provides high-quality website development services —
+                responsive, SEO-optimized, and tailored to your business needs.
+            </p>
+            <div class="hero-btns mt-4">
+                <a href="{{ route('contact')}}" class="btn btn-gradient">Get a Free Quote</a>
+            </div>
+        </div>
+    </div>
 
-<!-- Hero Image -->
-    <section class="section-box">
-        <div class="bg-gray-100">
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="tp-blog-standard-thumb-box p-relative">
-                            <img src="{{ asset('css/new-assets/google_ads/pay_per_click.webp') }}"
-                                 alt="app-store-optimization-services">
-                        </div>
+    <!-- Hero Image -->
+<section class="section-box" style="margin-bottom: -10px;">
+    <div class="bg-gray-100">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="tp-blog-standard-thumb-box p-relative" style="margin-bottom: -160px;">
+                        <img src="{{ asset('css/new-assets/google_ads/lead_gen.jpg') }}"
+                            alt="lead-gen"
+                            style="display: block; width: 100%; margin-bottom: -4px;">
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
 
     <!-- Content & Sidebar -->
     <div class="container-flex">
-        
+
         <!-- Sidebar -->
         <div class="sidebar-col">
             <div class="sidebar">
                 <h6>Our Services</h6>
                 <ul>
-                <li><a href="{{ route('services.google_ads_management') }}">Google Ads Management</a></li>
-                <li><a href="{{ route('services.amazon_marketing') }}">Amazon Marketing</a></li>
-                <li ><a href="{{ route('services.ppc') }}">PPC (Pay-Per-Click)</a></li>
-                <li><a href="{{ route('services.google_shopping_ads') }}">Google Shopping Ads</a></li>
-                <li class="current-menu-item"><a href="{{ route('services.lead_generation') }}">Lead Generation</a></li>
+                    <li><a href="{{ route('services.google_ads_management') }}">Google Ads Management</a></li>
+                    <li><a href="{{ route('services.amazon_marketing') }}">Amazon Marketing</a></li>
+                    <li><a href="{{ route('services.ppc') }}">PPC (Pay-Per-Click)</a></li>
+                    <li><a href="{{ route('services.google_shopping_ads') }}">Google Shopping Ads</a></li>
+                    <li class="current-menu-item"><a href="{{ route('services.lead_generation') }}">Lead Generation</a></li>
                 </ul>
-
-                <!-- Sidebar Images -->
-                <div class="sidebar-images">
-                    {{-- <img src="https://wbdigitech.ae/wp-content/uploads/2022/09/responsive-web-design.png" alt="Responsive Web Design">
-                    <img src="https://wbdigitech.ae/wp-content/uploads/2022/09/cms-web-development.png" alt="CMS Web Development">
-                    <img src="https://wbdigitech.ae/wp-content/uploads/2022/09/ecommerce-web-development.png" alt="E-commerce Web Development"> --}}
-                </div>
             </div>
         </div>
 
         <!-- Content -->
         <div class="content-col">
             <h2>Quality Website Development Services</h2>
-            <p>WB DIGITECH is a leading web development firm with highly skilled developers based in Dubai. We transform your vision into reality with tailored websites — from e-commerce to custom web applications.</p>
+            <p>WB DIGITECH is a leading web development firm with highly skilled developers based in Dubai. We transform
+                your vision into reality with tailored websites — from e-commerce to custom web applications.</p>
 
             <h2>Responsive Website Design</h2>
-            <p>We create responsive websites that look perfect on desktops, tablets, and mobiles. With Google prioritizing mobile-first indexing, responsive design ensures better conversions and engagement.</p>
+            <p>We create responsive websites that look perfect on desktops, tablets, and mobiles. With Google prioritizing
+                mobile-first indexing, responsive design ensures better conversions and engagement.</p>
 
             <h2>CMS-based Website Development</h2>
-            <p>Our CMS expertise includes WordPress, Drupal, Joomla, and custom-built platforms — empowering you to manage content with ease.</p>
+            <p>Our CMS expertise includes WordPress, Drupal, Joomla, and custom-built platforms — empowering you to manage
+                content with ease.</p>
 
             <h2>E-Commerce Website Development</h2>
-            <p>We build scalable e-commerce platforms with payment gateway integration, logistics solutions, and a user-friendly CMS to manage products and sales.</p>
+            <p>We build scalable e-commerce platforms with payment gateway integration, logistics solutions, and a
+                user-friendly CMS to manage products and sales.</p>
 
             <h2>SEO Optimized Websites</h2>
-            <p>Every site we build is SEO-ready to rank on Google. Combined with our SEO services, your website will dominate search results and drive conversions.</p>
+            <p>Every site we build is SEO-ready to rank on Google. Combined with our SEO services, your website will
+                dominate search results and drive conversions.</p>
 
             <h2>Our Services</h2>
             <div class="services-list">
@@ -113,8 +112,9 @@
                 </ol>
             </div>
 
-            {{-- <img class="service-img" src="https://wbdigitech.ae/wp-content/uploads/2022/09/responsive-web-design.png" alt="Web Development Image"> --}}
+            {{-- <img class="service-img" src="https://wbdigitech.ae/wp-content/uploads/2022/09/responsive-web-design.png"
+                alt="Web Development Image"> --}}
         </div>
     </div>
-</div>
+    </div>
 @endsection
