@@ -14,7 +14,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="tp-blog-standard-thumb-box p-relative">
-                                    <img data-speed=".8" src="{{ asset('css/new-assets/img/inner-blog/blog-standard/blog-1.jpg') }}" alt="SEO Audit Banner">
+                                    <img data-speed=".8" src="{{ asset('css/new-assets/wb_imgs/GetFreeSeoAudit.jpg') }}" alt="SEO Audit Banner">
                                     <div class="tp-blog-standard-title-box d-none d-sm-block">
                                         <h1 class="tp-blog-standard-title tp-char-animation">
                                             Best Tool for <br> SEO Audit & Reporting
