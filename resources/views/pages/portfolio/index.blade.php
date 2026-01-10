@@ -15,7 +15,7 @@
                                 <div class="col-lg-12">
                                     <div class="tp-blog-standard-thumb-box p-relative">
                                         <img data-speed=".8"
-                                            src="{{asset('css/new-assets/img/inner-blog/blog-standard/blog-1.jpg')}}"
+                                            src="{{asset('css/new-assets/wb_imgs/Portfolio.jpg')}}"
                                             alt="Portfolio Banner">
                                         <div class="tp-blog-standard-title-box d-none d-sm-block">
                                             <h1 class="tp-blog-standard-title tp-char-animation">
