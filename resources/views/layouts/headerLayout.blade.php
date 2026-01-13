@@ -70,8 +70,7 @@
                                                                 <div
                                                                     class="tp-megamenu-list-wrap tp-portfolio-menu-style">
                                                                     <ul>
-                                                                        <li><a href="{{ route('services.web') }}">Website
-                                                                                Services</a></li>
+
                                                                         <li><a href="{{ route('services.web_dev') }}">Website
                                                                                 Development</a></li>
                                                                         <li><a
