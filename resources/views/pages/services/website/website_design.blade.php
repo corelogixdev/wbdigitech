@@ -28,16 +28,21 @@
         </div>
     </div>
 
-    <!-- Hero Image Section -->
-    <div class="hero-image-section">
-        <div class="hero-image-container">
-            <img src="{{ asset('css/new-assets/web_imgs/WebsiteDesign.webp') }}"
-                 alt="website-design"
-                 class="hero-image">
-        </div>
-    </div>
-
-<br><br>
+           <!-- Hero Image -->
+        <section class="section-box">
+            <div class="bg-gray-100">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="tp-blog-standard-thumb-box p-relative">
+                                <img src="{{ asset('css/new-assets/web_imgs/WebsiteDesign.webp') }}"
+                                    alt="play-store-optimization-services">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     <!-- Content & Sidebar -->
     <div class="container-flex">
@@ -47,7 +52,7 @@
             <div class="sidebar">
                 <h6>Our Services</h6>
                 <ul>
-                    <li><a href="{{ route('services.web') }}">Website Services</a></li>
+
                     <li><a href="{{ route('services.web_dev') }}">Website Development</a></li>
                     <li><a href="{{ route('services.content_writing') }}">Content Writing</a></li>
                     <li><a href="{{ route('services.ecommerce_development') }}">E-commerce Development</a></li>
@@ -61,6 +66,7 @@
 
         <!-- Content -->
         <div class="content-col">
+            <br>
 
             <h2>How a Web Design Company Ensures Top-Quality Website Design?</h2>
             <p>

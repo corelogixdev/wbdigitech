@@ -51,7 +51,7 @@
             <div class="sidebar">
                 <h6>Our Services</h6>
                 <ul>
-                    <li><a href="{{ route('services.web') }}">Website Services</a></li>
+
                     <li><a href="{{ route('services.web_dev') }}">Website Development</a></li>
                     <li><a href="{{ route('services.content_writing') }}">Content Writing</a></li>
                     <li><a href="{{ route('services.ecommerce_development') }}">E-commerce Development</a></li>
