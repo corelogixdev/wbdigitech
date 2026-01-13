@@ -14,8 +14,7 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="tp-blog-standard-thumb-box p-relative">
-                                        <img data-speed=".8"
-                                            src="{{asset('css/new-assets/wb_imgs/Portfolio.jpg')}}"
+                                        <img data-speed=".8" src="{{asset('css/new-assets/wb_imgs/Portfolio.jpg')}}"
                                             alt="Portfolio Banner">
                                         <div class="tp-blog-standard-title-box d-none d-sm-block">
                                             <h1 class="tp-blog-standard-title tp-char-animation">
@@ -89,8 +88,8 @@
 
     <style>
         /* ==============================
-                                                                                                                           Portfolio Page Styling
-                                                                                                                           ============================== */
+                                                                                                                               Portfolio Page Styling
+                                                                                                                               ============================== */
 
         /* Banner Section */
         .tp-blog-standard-thumb-box {
@@ -222,8 +221,8 @@
         }
 
         /* ==============================
-                                                                                                                           Responsive Fix for Banner Image
-                                                                                                                           ============================== */
+                                                                                                                               Responsive Fix for Banner Image
+                                                                                                                               ============================== */
         @media (max-width: 768px) {
             .tp-blog-standard-thumb-box img {
                 height: 280px;
