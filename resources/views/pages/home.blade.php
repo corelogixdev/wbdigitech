@@ -12,6 +12,7 @@
 
 @section('content')
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
 
     <div id="smooth-wrapper">
         <div id="smooth-content">
@@ -481,118 +482,123 @@
                             </section>
 
 
-                            {{-- Testimonial Section --}}
-                            <div class="tp-testimonial-area pt-50 pb-70" style="background:#fff;">
+                            {{-- Testimonial Section (STATIC UI PREVIEW) --}}
+                            <section class="pt-60 pb-70 bg-white">
                                 <div class="container">
-                                    <!-- Section Title -->
-                                    <div class="row justify-content-center mb-40">
-                                        <div class="col-md-8 text-center">
-                                            <h2 class="sv-service-title fw-bold" style="color: #0A3D62">What
-                                                Our Clients Say</h2>
+                                    <div class="row align-items-center">
+
+                                        {{-- LEFT SUMMARY --}}
+                                        <div class="col-lg-3 text-center text-lg-start mb-4 mb-lg-0">
+                                            <h2 class="fw-bold mb-2">EXCELLENT</h2>
+
+                                            <div class="text-warning fs-3 mb-1">
+                                                ★★★★★☆
+                                            </div>
+
+                                            <p class="mb-1 text-muted">
+                                                Based on <strong>173 reviews</strong>
+                                            </p>
+
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                                                width="90" alt="Google">
                                         </div>
-                                    </div>
 
-                                    <div class="row justify-content-center mb-4">
-                                        <div class="col-md-12 text-center">
-                                            <div class="review-summary-card p-4 shadow-sm rounded">
-                                                <div class="d-flex align-items-center justify-content-center mb-3">
-                                                    <img src="https://cdn-icons-png.flaticon.com/512/2965/2965358.png"
-                                                        alt="Google Store" width="50" class="me-3" loading="lazy"
-                                                        decoding="async">
-                                                    <div class="text-start">
-                                                        <h5 class="mb-0 fw-bold">WB-DigiTech - Digital
-                                                            Marketing Agency</h5>
-                                                        <div class="review-rating">
-                                                            <span class="fw-bold fs-4 text-dark">4.9</span>
-                                                            <span class="text-warning">
-                                                                ★★★★★
-                                                            </span>
+                                        {{-- RIGHT SLIDER --}}
+                                        <div class="col-lg-9">
+                                            <div class="swiper testimonial-slider">
+                                                <div class="swiper-wrapper">
+
+                                                    {{-- Review 1 --}}
+                                                    <div class="swiper-slide">
+                                                        <div class="p-4 shadow-sm rounded bg-white h-100">
+                                                            <div class="d-flex align-items-center mb-3">
+                                                                <div class="rounded-circle bg-danger text-white d-flex align-items-center justify-content-center"
+                                                                    style="width:42px;height:42px;">A</div>
+
+                                                                <div class="ms-3">
+                                                                    <h6 class="mb-0 fw-bold">Ann Anthraper</h6>
+                                                                    <small class="text-muted">December 29, 2024</small>
+                                                                </div>
+
+                                                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                                                                    class="ms-auto" width="18">
+                                                            </div>
+
+                                                            <div class="text-warning mb-2">★★★★★</div>
+
+                                                            <p class="text-muted mb-0">
+                                                                I had an incredible experience with Hello cleaner cleaning
+                                                                services.
+                                                                Their team was professional and truly exceeded my
+                                                                expectations.
+                                                            </p>
                                                         </div>
-                                                        <p class="mb-0 text-muted small">Based on 41 reviews
-                                                        </p>
                                                     </div>
+
+                                                    {{-- Review 2 --}}
+                                                    <div class="swiper-slide">
+                                                        <div class="p-4 shadow-sm rounded bg-white h-100">
+                                                            <div class="d-flex align-items-center mb-3">
+                                                                <img src="https://randomuser.me/api/portraits/men/54.jpg"
+                                                                    class="rounded-circle" width="42" height="42">
+
+                                                                <div class="ms-3">
+                                                                    <h6 class="mb-0 fw-bold">Kamran Akhtar Tech</h6>
+                                                                    <small class="text-muted">October 23, 2025</small>
+                                                                </div>
+
+                                                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                                                                    class="ms-auto" width="18">
+                                                            </div>
+
+                                                            <div class="text-warning mb-2">★★★★★</div>
+
+                                                            <p class="text-muted mb-0">
+                                                                I’m very happy with the deep cleaning service for my villa,
+                                                                both interior and exterior. The team was professional and
+                                                                hardworking.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+
+                                                    {{-- Review 3 --}}
+                                                    <div class="swiper-slide">
+                                                        <div class="p-4 shadow-sm rounded bg-white h-100">
+                                                            <div class="d-flex align-items-center mb-3">
+                                                                <img src="https://randomuser.me/api/portraits/women/44.jpg"
+                                                                    class="rounded-circle" width="42" height="42">
+
+                                                                <div class="ms-3">
+                                                                    <h6 class="mb-0 fw-bold">Kat Gatti</h6>
+                                                                    <small class="text-muted">August 21, 2025</small>
+                                                                </div>
+
+                                                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                                                                    class="ms-auto" width="18">
+                                                            </div>
+
+                                                            <div class="text-warning mb-2">★★★★★</div>
+
+                                                            <p class="text-muted mb-0">
+                                                                Fantastic, thorough and professional. Come here for all my
+                                                                cleaning needs.
+                                                                Can't recommend them enough.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+
                                                 </div>
-                                                <a href="https://g.page/your-google-link" target="_blank"
-                                                    class="btn btn-primary rounded-pill">
-                                                    <i class="fab fa-google me-1"></i> Review us on Google
-                                                </a>
+
+                                                {{-- Arrows --}}
+                                                <div class="swiper-button-next"></div>
+                                                <div class="swiper-button-prev"></div>
                                             </div>
                                         </div>
-                                    </div>
 
-                                    <!-- Review Cards Slider -->
-                                    <div class="swiper-container tp-testimonial-slider-active">
-                                        <div class="swiper-wrapper">
-                                            <!-- Review 1 -->
-                                            <div class="swiper-slide">
-                                                <div class="testimonial-card bg-white shadow-sm rounded p-4 h-100">
-                                                    <div class="d-flex align-items-center mb-3">
-                                                        <img src="https://randomuser.me/api/portraits/men/32.jpg"
-                                                            alt="Reviewer" class="rounded-circle me-3" width="45"
-                                                            height="45" loading="lazy" decoding="async">
-                                                        <div>
-                                                            <h6 class="fw-bold mb-0">Mohammad Usman</h6>
-                                                            <small class="text-muted">5 months ago</small>
-                                                        </div>
-                                                        <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png"
-                                                            class="ms-auto" width="20" alt="Google Logo" loading="lazy"
-                                                            decoding="async">
-                                                    </div>
-                                                    <div class="text-warning mb-2">★★★★★</div>
-                                                    <p class="text-muted">Amazing experience! WB-DigiTech
-                                                        built us a fantastic website and provided excellent
-                                                        support throughout.</p>
-                                                </div>
-                                            </div>
-
-                                            <!-- Review 2 -->
-                                            <div class="swiper-slide">
-                                                <div class="testimonial-card bg-white shadow-sm rounded p-4 h-100">
-                                                    <div class="d-flex align-items-center mb-3">
-                                                        <div class="rounded-circle bg-success text-white d-flex align-items-center justify-content-center me-3"
-                                                            style="width:45px; height:45px;">A</div>
-                                                        <div>
-                                                            <h6 class="fw-bold mb-0">Ayesha Tech</h6>
-                                                            <small class="text-muted">6 months ago</small>
-                                                        </div>
-                                                        <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png"
-                                                            class="ms-auto" width="20" alt="Google Logo" loading="lazy"
-                                                            decoding="async">
-                                                    </div>
-                                                    <div class="text-warning mb-2">★★★★☆</div>
-                                                    <p class="text-muted">We had a great experience with
-                                                        WB-DigiTech. They delivered exactly what we wanted
-                                                        for our brand identity.</p>
-                                                </div>
-                                            </div>
-
-                                            <!-- Review 3 -->
-                                            <div class="swiper-slide">
-                                                <div class="testimonial-card bg-white shadow-sm rounded p-4 h-100">
-                                                    <div class="d-flex align-items-center mb-3">
-                                                        <img src="https://randomuser.me/api/portraits/women/45.jpg"
-                                                            alt="Reviewer" class="rounded-circle me-3" width="45"
-                                                            height="45" loading="lazy" decoding="async">
-                                                        <div>
-                                                            <h6 class="fw-bold mb-0">Fatima Khan</h6>
-                                                            <small class="text-muted">2 months ago</small>
-                                                        </div>
-                                                        <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png"
-                                                            class="ms-auto" width="20" alt="Google Logo" loading="lazy"
-                                                            decoding="async">
-                                                    </div>
-                                                    <div class="text-warning mb-2">★★★★★</div>
-                                                    <p class="text-muted">Their SEO and marketing services
-                                                        helped us increase leads significantly. Highly
-                                                        recommended!</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Pagination -->
-                                        <div class="swiper-pagination"></div>
                                     </div>
                                 </div>
-                            </div>
+                            </section>
+
 
                             {{-- Team Section --}}
                             <div class="tp-team-area pt-20 pb-50 fix">
@@ -680,5 +686,25 @@
                             </section>
                         </div>
             </main>
+
+
+            <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+            <script>
+                new Swiper('.testimonial-slider', {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                    loop: true,
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    breakpoints: {
+                        0: { slidesPerView: 1 },
+                        768: { slidesPerView: 2 },
+                        1200: { slidesPerView: 3 }
+                    }
+                });
+            </script>
 
 @endsection
