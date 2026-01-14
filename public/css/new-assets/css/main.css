@@ -11339,7 +11339,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
     .tp-blog-standard-thumb-box {
-        height: 600px;
+        height: 460px;
     }
 }
 
