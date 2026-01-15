@@ -1,8 +1,11 @@
 @extends('layouts.homelayout')
 
-@section('title', 'Social Media Marketing - WB-DIGITECH')
+@section('title', 'Instagram Marketing Agency in Dubai | Ads, Growth & ROI')
 
 @section('content')
+    <meta name="description"
+        content="Grow with an Instagram marketing agency in Dubai. At WB Digitech we run high performing Instagram ad campaigns which see great results in terms of engagement and ROI.">
+
     <link rel="stylesheet" href="{{ asset('css/services.css') }}">
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
 
@@ -11,31 +14,46 @@
         <!-- Spacer below header -->
         <div style="padding: 80px"></div>
 
-        <!-- Hero Section -->
+        <!-- Hero Title -->
         <div class="tp-hero-title-wrap mb-35 text-center">
             <h2 class="tp-hero-title gradient-text">
-                Instagram Advertising
+                Instagram Marketing Agency in Dubai
             </h2>
         </div>
+
+        <!-- Hero Content -->
         <div class="tp-hero-content text-center">
             <p class="delay-load">
-                Expand your reach, engage your audience, and grow your business with WB DIGITECH’s powerful social media
-                strategies.
+                If you are in search of an Instagram marketing agency in Dubai which delivers real engagement, qualified
+                leads, and measurable sales growth we at WB Digitech are your best bet. We help in transforming scroll to
+                click and followers to customers via our data driven Instagram campaigns.
+            </p>
+            <p class="delay-load">
+                As a team that focuses on performance in the Instagram marketing agency in Dubai, we have a great handle on
+                audience behavior, content forms and Meta’s ad ecosystem which in turn helps us grow our clients’ businesses
+                in competitive markets.
             </p>
             <div class="hero-btns mt-4">
                 <a href="{{ route('contact') }}" class="btn btn-gradient">Get a Free Quote</a>
             </div>
         </div>
 
-        <!-- Hero Image Section -->
-        <div class="hero-image-section">
-            <div class="hero-image-container">
-                <img src="{{ asset('css/new-assets/smm/inst_adv.webp') }}" alt="social-media-marketing" class="hero-image">
-
+        <!-- Banner Image -->
+        <section class="section-box">
+            <div class="bg-gray-100">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="tp-blog-standard-thumb-box p-relative">
+                                <img src="{{ asset('css/new-assets/smm/inst_adv.webp') }}"
+                                    alt="Instagram Marketing Agency Dubai">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <br>
-        <br>
+        </section>
+
         <!-- Content & Sidebar -->
         <div class="container-flex">
 
@@ -56,44 +74,130 @@
                         <li><a href="{{ route('services.snap_chat_ads') }}">Snapchat Ads</a></li>
                         <li><a href="{{ route('services.whatsapp_marketing') }}">WhatsApp Marketing</a></li>
                     </ul>
-
-
-
                 </div>
             </div>
 
             <!-- Content -->
             <div class="content-col">
+                <br>
 
-                <h2>Social Media Channels Covered</h2>
-                <p>We create and manage your brand presence across all major platforms including Facebook, Instagram,
-                    LinkedIn, Twitter, and more.</p>
-                {{-- <img class="service-img" src="https://wbdigitech.ae/wp-content/uploads/2022/09/SM-icon-banner-01.png"
-                    alt="Social Media Channels"> --}}
+                <h2>Results-Driven Instagram Advertising Agency for Brands</h2>
+                <p>
+                    WB Digitech operates as a professional Instagram advertising agency in which we put creativity and
+                    performance at the core of what we do. We don’t base our strategies on trends alone; each of our
+                    campaigns is built on data, research and continuous improvement.
+                </p>
+                <p>As a seasoned Instagram Advertising agency we help businesses:</p>
+                <ul>
+                    <li>Increase brand visibility</li>
+                    <li>Drive profile & website traffic</li>
+                    <li>Generate leads & sales</li>
+                    <li>Improve ad performance</li>
+                </ul>
 
-                <h2>Creative Strategy</h2>
-                <p>We develop innovative and sophisticated social media tactics to establish your brand, increase
-                    visibility, and attract customers. Our team conducts a thorough analysis of your industry to identify
-                    the most effective approach, tone, content, and target demographic.</p>
+                <h2>Why Choose WB Digitech as Your Instagram Marketing Agency Dubai</h2>
+                <ul>
+                    <li>Platform-specific content strategy</li>
+                    <li>Conversion-focused creatives</li>
+                    <li>Advanced audience targeting</li>
+                    <li>Continuous testing & optimization</li>
+                    <li>Transparent performance reporting</li>
+                </ul>
+                <p>As a trustful Instagram marketing agency in Dubai we focus on ROI not vanity metrics.</p>
 
-                <h2>Campaign Management</h2>
-                <p>The initial attention-grabbing viral campaign is crucial. Our team creates valuable content for both you
-                    and your customers. We handle data collection and analysis, saving you time and effort. We understand
-                    what strategies are effective, which ones are not, who your target audience is, and most importantly,
-                    how to ensure a return on your investment.</p>
+                <h2>Strategic Instagram Marketing Services That Convert</h2>
+                <ul>
+                    <li>Campaign strategy & setup</li>
+                    <li>Creative direction & testing</li>
+                    <li>Audience targeting & retargeting</li>
+                    <li>Conversion tracking & optimization</li>
+                </ul>
+                <p>Also for brands which are looking at structured growth as a long term play we do it.</p>
 
-                <h2>Community Management</h2>
-                <p>Effective brand management relies heavily on social listening, as it provides valuable insights into your
-                    industry and customer base. Our community management services are designed to not only resolve problems,
-                    but also to convert customer complaints into brand advocates.</p>
+                <h2>Instagram Marketing Dubai for Local & Global Brands</h2>
+                <p>
+                    Our Instagram marketing Dubai solutions for businesses reach local audiences yet scale globally with
+                    precise targeting and great creatives.
+                </p>
+                <p>We also run performance based Instagram advertising in Dubai which focuses on leads, ecommerce sales, and
+                    conversions as opposed to likes.</p>
 
-                <h2>Paid Media</h2>
-                <p>We conduct thorough research on your target audience and develop precise advertisements for various
-                    social media platforms. We conduct in-depth analysis, A/B testing, and monitor return on investment to
-                    deliver measurable results for your business.</p>
+                <h2>Performance-Focused Instagram Advertising Dubai</h2>
+                <ul>
+                    <li>Budget efficiency</li>
+                    <li>Creative performance testing</li>
+                    <li>Funnel optimization</li>
+                    <li>Conversion tracking</li>
+                </ul>
+                <p>This keeps campaigns scalable and profitable.</p>
 
-                {{-- <img class="service-img" src="https://wbdigitech.ae/wp-content/uploads/2022/09/social-marketing.png"
-                    alt="Social Media Marketing Service Image"> --}}
+                <h2>Instagram Marketing UAE Built for Business Growth</h2>
+                <p>
+                    Our Instagram marketing UAE strategies are based on regional audience behavior, platform best practices,
+                    and business goals. Through Instagram marketing UAE, we help brands build trust, visibility, and long
+                    term engagement.
+                </p>
+
+                <h2>Trusted Instagram Marketing Company</h2>
+                <p>
+                    WB Digitech which is a growth oriented Instagram marketing company puts brands above the rest with
+                    structured plans and creative execution. Our Instagram advertising agency Dubai ensures campaigns are
+                    run professionally from start to scale.
+                </p>
+
+                <h2>Integrated Social & Digital Growth Support</h2>
+                <p>
+                    Instagram does best when part of a larger digital strategy. We integrate paid and organic efforts with
+                    SEO, content, and conversion optimization.
+                </p>
+
+                <h2>Why Our Instagram Campaigns Perform Without Backlinks</h2>
+                <ul>
+                    <li>High-intent audience targeting</li>
+                    <li>Platform-native creatives</li>
+                    <li>Consistent optimization</li>
+                    <li>Conversion-driven funnels</li>
+                    <li>Performance analytics</li>
+                </ul>
+                <p>This ensures brands can grow on Instagram without backlinks.</p>
+
+                <h2>Let’s Grow Your Brand on Instagram</h2>
+                <p>
+                    As an approved Instagram Advertising agency, we run campaigns producing engagement, leads, and revenue.
+                    Reach out to WB Digitech now to get started.
+                </p>
+
+                <!-- FAQ Section -->
+                <h2>FAQs – Instagram Marketing in Dubai</h2>
+
+                <h4>1. Why outsource your Instagram marketing to a Dubai based agency?</h4>
+                <p>
+                    In Dubai there are Instagram marketing agencies which know local audiences, ad formats, and platform
+                    trends thus enabling businesses to grow faster and more efficiently.
+                </p>
+
+                <h4>2. How do Instagram Advertising agencies increase ROI?</h4>
+                <p>
+                    An Instagram marketing agency uses audience targeting, creative testing, and conversion tracking to
+                    reduce waste and see better results.
+                </p>
+
+                <h4>3. Do we have Instagram marketing in Dubai which covers all industries?</h4>
+                <p>
+                    We provide Instagram marketing in Dubai for ecommerce, service companies, startups, and enterprise
+                    brands.
+                </p>
+
+                <h4>4. Are you a full service for Instagram?</h4>
+                <p>
+                    Yes, WB Digitech is a full service Instagram marketing agency including strategy, execution,
+                    optimization, and scale.
+                </p>
+
+                <h4>5. Do you do Instagram advertising in Dubai?</h4>
+                <p>
+                    Yes, we run Instagram ad campaigns in Dubai focused on leads, sales, and long term growth.
+                </p>
 
             </div>
         </div>
