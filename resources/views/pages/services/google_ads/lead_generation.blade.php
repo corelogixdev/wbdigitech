@@ -40,7 +40,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="tp-blog-standard-thumb-box p-relative">
-                                <img src="{{ asset('css/new-assets/graphic_design/logo.webp') }}"
+                                <img src="{{ asset('css/new-assets/google_ads/lead_gen.jpg') }}"
                                     alt="lead-generation-services">
                             </div>
                         </div>
