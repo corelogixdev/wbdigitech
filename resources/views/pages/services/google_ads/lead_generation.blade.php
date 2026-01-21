@@ -71,7 +71,6 @@
 
             <!-- Main Content -->
             <div class="content-col">
-                <br>
 
                 <h2>Trusted Lead Generation Company for Scalable Growth</h2>
                 <p>Choosing a lead generation company to work with has a great impact on your sales pipeline. We take our

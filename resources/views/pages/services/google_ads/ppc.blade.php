@@ -75,6 +75,7 @@
 
             <!-- Content -->
             <div class="content-col">
+                <br>
                 <h2>PPC Agency in Dubai That Thinks Beyond Clicks</h2>
                 <p>A lot of agencies promise leads, but fewer focus on quality. As a performance-driven PPC agency in Dubai,
                     the approach stays grounded in numbers but never forgets the human behind the screen. Ads are written to

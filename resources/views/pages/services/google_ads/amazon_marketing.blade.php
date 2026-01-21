@@ -75,7 +75,7 @@
 
             <!-- Content -->
             <div class="content-col">
-
+                <br>
                 <h2>Why Amazon Marketing Is Not Just Ads Anymore</h2>
                 <p>
                     Most sellers think ads solve everything. In reality, Ads amplify what already exists. A smart Amazon

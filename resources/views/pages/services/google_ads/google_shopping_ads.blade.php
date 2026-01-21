@@ -65,10 +65,11 @@
                 <div class="sidebar">
                     <h6>Our Services</h6>
                     <ul>
-                        <li ><a href="{{ route('services.google_ads_management') }}">Google Ads Management</a></li>
+                        <li><a href="{{ route('services.google_ads_management') }}">Google Ads Management</a></li>
                         <li><a href="{{ route('services.amazon_marketing') }}">Amazon Marketing</a></li>
                         <li><a href="{{ route('services.ppc') }}">PPC (Pay-Per-Click)</a></li>
-                        <li class="current-menu-item"><a href="{{ route('services.google_shopping_ads') }}">Google Shopping Ads</a></li>
+                        <li class="current-menu-item"><a href="{{ route('services.google_shopping_ads') }}">Google Shopping
+                                Ads</a></li>
                         <li><a href="{{ route('services.lead_generation') }}">Lead Generation</a></li>
                     </ul>
                 </div>
@@ -76,7 +77,7 @@
 
             <!-- Content -->
             <div class="content-col">
-
+                <br>
                 <h2>Why a Google Shopping Ads Agency Makes a Real Difference</h2>
                 <p>
                     Shopping campaigns are not just another ad format. They behave differently, convert differently, and
