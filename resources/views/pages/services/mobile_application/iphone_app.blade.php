@@ -1,124 +1,172 @@
 @extends('layouts.homelayout')
 
-@section('title', 'Mobile App Development - WB-DIGITECH')
+@section('title', 'iOS App Development Company in Dubai | Custom iPhone Apps')
+@section('meta_description', 'Trusted iOS app development company in Dubai which provides secure, scalable, and high performance iPhone apps. At WB Digitech we build custom iOS solutions.')
 
 @section('content')
-<link rel="stylesheet" href="{{ asset('css/services.css') }}">
-<link rel="stylesheet" href="{{ asset('css/home.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/services.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
 
-<div class="main-wrapper">
+    <div class="main-wrapper">
 
-    <!-- Spacer below header -->
-    <div style="padding: 80px"></div>
+        <!-- Spacer below header -->
+        <div style="padding: 80px"></div>
 
-    <!-- Hero Section -->
-    <div class="tp-hero-title-wrap mb-35 text-center">
-        <h2 class="tp-hero-title gradient-text">
-            Iphone App Development
-        </h2>
-    </div>
-
-    <div class="tp-hero-content text-center">
-        <p class="delay-load">
-            Build engaging iOS & Android apps that scale — native, cross-platform, 
-            and enterprise solutions focused on performance and conversions.
-        </p>
-        <div class="hero-btns mt-4">
-            <a href="{{ route('contact') }}" class="btn btn-gradient">Get a Free Quote</a>
+        <!-- Hero Section -->
+        <div class="tp-hero-title-wrap mb-35 text-center">
+            <h1 class="tp-hero-title gradient-text">
+                iOS App Development Company in Dubai for High-Performance iPhone Apps
+            </h1>
         </div>
-    </div>
 
+        <div class="tp-hero-content text-center">
+            <p class="delay-load">
+                Choosing the right iOS app development company in Dubai is key if you want an iPhone app that performs
+                flawlessly and scales well and which also provides premium user experience. At WB Digitech we do what it
+                takes to bring to life secure, intuitive and business oriented iOS apps which in turn help brands stand out
+                in the Apple ecosystem.
+            </p>
+            <p>We offer our iphone app development dubai services to the full spectrum of companies from start ups to large
+                enterprises which we tailor to turn your ideas into digital products that our users love and which in turn
+                build business trust.</p>
 
-            <!-- Hero Image Section -->
-    <div class="hero-image-section">
-        <div class="hero-image-container">
-            <img src="{{ asset('css/new-assets/new_images/WEBimagesWBmobileapp-01.webp') }}" alt="mobile-app" class="hero-image">
-            {{-- <div class="hero-overlay"></div> --}}
+            <div class="hero-btns mt-4">
+                <a href="{{ route('contact') }}" class="btn btn-gradient">Start the conversation</a>
+            </div>
         </div>
-    </div>
-<br>
-<br>
 
-    <!-- Content & Sidebar -->
-    <div class="container-flex">
-        <!-- Sidebar -->
-        <div class="sidebar-col">
-            <div class="sidebar">
-                <h6>Our Services</h6>
-                <ul>
-                    <li><a href="{{ route('services.mobile') }}">Mobile App Development</a></li>
-                    <li><a href="{{ route('services.android_app') }}">Android App Development</a></li>
-                    <li><a href="{{ route('services.react_native_app') }}">React Native App Development</a></li>
-                    <li><a href="{{ route('services.hybrid_app') }}">Hybrid App Development</a></li>
-                    <li><a href="{{ route('services.app_maintenance') }}">App Maintenance</a></li>
-                    <li class="current-menu-item"><a href="{{ route('services.iphone_app') }}">iPhone App Development</a></li>
-                    <li><a href="{{ route('services.flutter_app') }}">Flutter App Development</a></li>
-                    <li><a href="{{ route('services.wearable_app') }}">Wearable App Development</a></li>
-                    <li><a href="{{ route('services.mobile_app_developers') }}">Hire Mobile App Developers</a></li>
-                </ul>
-
-
-                <!-- Sidebar Images -->
-                <div class="sidebar-images">
-                    {{-- <img src="https://wbdigitech.ae/wp-content/uploads/2022/09/mobile-app-deveopment-1024x946.png" alt="Mobile App">
-                    <img src="https://wbdigitech.ae/wp-content/uploads/2022/09/mobile-application-1024x974.png" alt="Mobile Application">
-                    <img src="https://wbdigitech.ae/wp-content/uploads/2022/09/mobile-application-1024x974.png" alt="Mobile Development Team"> --}}
+        <!-- Hero Image -->
+        <section class="section-box">
+            <div class="bg-gray-100">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="tp-blog-standard-thumb-box p-relative">
+                                <img src="{{ asset('css/new-assets/graphic_design/logo.webp') }}"
+                                    alt="ios-app-development-services">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Content -->
-        <div class="content-col">
-            <h2>Mobile App Development Services</h2>
-            <p>Mobile apps allow you to engage users anytime, anywhere. We build and iterate on apps aligned to your mobile strategy using proven frameworks and best practices.</p>
 
-            <h5>Our mobile app development services include:</h5>
-            <div class="services-list">
-                <ul>
-                    <li>Native iOS apps built with Swift</li>
-                    <li>Native Android apps built with Java/Kotlin</li>
-                    <li>Cross-platform apps using React Native or Flutter</li>
-                    <li>Prototyping and wireframing</li>
-                    <li>UI/UX design focused on usability</li>
-                    <li>Integration with device capabilities like camera, GPS</li>
-                    <li>Backend integration and cloud services</li>
-                    <li>App store publishing and release</li>
-                    <li>Performance monitoring and optimization</li>
-                </ul>
+        <!-- Content & Sidebar -->
+        <div class="container-flex">
+
+            <!-- Sidebar -->
+            <div class="sidebar-col">
+                <div class="sidebar">
+                    <h6>Our Services</h6>
+                    <ul>
+                        <li><a href="{{ route('services.mobile') }}">Mobile App Development</a>
+                        </li>
+                        <li><a href="{{ route('services.android_app') }}">Android App Development</a></li>
+                        <li><a href="{{ route('services.react_native_app') }}">React Native App
+                                Development</a></li>
+                        <li><a href="{{ route('services.hybrid_app') }}">Hybrid App
+                                Development</a></li>
+                        <li><a href="{{ route('services.app_maintenance') }}">App Maintenance</a>
+                        </li>
+                        <li class="current-menu-item"><a href="{{ route('services.iphone_app') }}">iPhone App
+                                Development</a></li>
+                        <li><a href="{{ route('services.flutter_app') }}">Flutter App Development</a></li>
+                        <li><a href="{{ route('services.wearable_app') }}">Wearable App Development</a></li>
+                    </ul>
+                </div>
             </div>
 
-            <h2>Our Process</h2>
-            <p>We follow a structured mobile app development process:</p>
-            <div class="process-list">
-                <ol>
-                    <li><strong>Strategy:</strong> Align on goals, platform considerations, customer needs, and app capabilities.</li>
-                    <li><strong>Wireframes:</strong> Map out user flows and structure based on priorities.</li>
-                    <li><strong>Design:</strong> Create an engaging, on-brand UI optimized for platform guidelines.</li>
-                    <li><strong>Development:</strong> Build a working app with native frameworks or cross-platform tools.</li>
-                    <li><strong>Testing:</strong> Rigorously test across devices to ensure quality and performance.</li>
-                    <li><strong>Launch:</strong> Release on the App Store and Play Store, then continuously iterate.</li>
-                </ol>
+            <!-- Main Content -->
+            <div class="content-col">
+                <br>
+
+                <h2>Building iOS Apps That Drive Real Business Results</h2>
+                <p>As a professional iOS app development company in Dubai, in our field of what we do we also are not just
+                    focused on the code, we design experiences that are second to none. Our users expect from us
+                    performance, security, and an elegant touch. We have put in a development process in which your app will
+                    meet Apple's high bar but at the same time also we are very much tuned in to what your business goals
+                    are.</p>
+                <p>From planning through to deployment our iPhone app development Dubai, we focus on performance, usability,
+                    and long term scalability.</p>
+
+                <h2>Our iOS App Development Services</h2>
+                <p>We provide full scale iOS app development which includes all the elements to put out and see your iPhone
+                    app succeed.</p>
+                <p><strong>Custom iOS App Development</strong><br>
+                    As a seasoned iOS app development company we provide clean architecture and future ready code.</p>
+
+                <p><strong>UI/UX Design for Apple Ecosystem</strong><br>
+                    Our designers use Apple's Human Interface Guidelines which we have tailored to improve interactivity and
+                    user retention.</p>
+
+                <p><strong>API & Backend Integration</strong><br>
+                    Seamless connection of our platform with CRMs, payment gateways and cloud services which in turn gives
+                    you smooth data flow and performance.</p>
+
+                <p><strong>App Store Deployment & Support</strong><br>
+                    We are in charge of the full submission process and we also provide post launch support, updates and
+                    optimizations as a reliable iOS app development company in UAE.</p>
+
+                <h2>Why Businesses Choose WB Digitech</h2>
+                <p>As an iOS app development company in Dubai we have a mix of technical skill and market knowledge.</p>
+                <p>IOS experts with in-depth Apple ecosystem knowledge.</p>
+                <p>Transparent development process and clear timelines</p>
+                <p>Scalable solutions built for long-term growth</p>
+                <p>Security-focused coding standards</p>
+                <p>Dedicated support from planning to post-launch</p>
+                <p>Our team works with each of our mobile app development experts to achieve that which is technical and
+                    business based.</p>
+
+                <h2>Industries We Serve</h2>
+                <p>Our ios app development in Dubai develop for multiple industries which include:</p>
+                <p>E-commerce</p>
+                <p>Healthcare</p>
+                <p>Fintech</p>
+                <p>Real Estate</p>
+                <p>Logistics</p>
+                <p>Education</p>
+                <p>Every solution we present is tailored.</p>
+
+                <h2>Flexible Engagement Models</h2>
+                <p>Whether for a full scale development team or to hire mobile app developers, we present flexible
+                    engagement models that fit your budget and time frame. We have a growth oriented approach which allows
+                    businesses to scale teams in or out without trade off in quality.</p>
+
+                <h2>iOS App Development in UAE With a Future-Ready Approach</h2>
+                <p>As a seasoned iOS app development company in UAE, we put ourselves in the ever changing digital landscape
+                    of technology and user behavior. We see to it that your app's performance is at top notch and it stays
+                    competitive on the App Store.</p>
+                <p>Our expertise as an iOS app development company in Dubai which is at the forefront of what our clients
+                    require to reduce risk and see great return on investment.</p>
+
+                <h2>FAQs – iOS App Development Company in Dubai</h2>
+
+                <h4>1. Why choose an iOS app development company in Dubai?</h4>
+                <p>There is a local iOS app development company in Dubai which also does business globally and to
+                    international standards of Apple.</p>
+
+                <h4>2. How long does iPhone app development take?</h4>
+                <p>The time frame varies by feature and complexity but most iPhone app development projects in Dubai fall
+                    between 8 to 16 weeks.</p>
+
+                <h4>3. Do you offer custom iOS app development in UAE?</h4>
+                <p>Yes we have fully customized iOS app development solutions in the UAE.</p>
+
+                <h4>4. May I hire a dedicated iOS developer?</h4>
+                <p>Absolutely. We put resources into mobile app development for all project scales.</p>
+
+                <h4>5. Do you provide post launch support?</h4>
+                <p>Yes we are always improving our iOS app development services.</p>
+
+                <h2>Let's Build Your iOS App the Right Way</h2>
+                <p>If you are in the market for a reliable iOS app development company in Dubai, look no further than WB
+                    Digitech. We have a team of experts in iPhone app development in Dubai which we at WB Digitech put to
+                    work to develop secure, scalable, and very impactful applications for long term success.</p>
+                <p>Transform your concept into a successful iOS app with a development team that knows tech and business.
+                </p>
+
             </div>
-            <p>Throughout the process, we focus on bringing working features fast with continuous delivery and improvement.</p>
-
-            <h2>Our Benefits</h2>
-            <div class="benefits-list">
-                <ul>
-                    <li>Reach users anytime, anywhere</li>
-                    <li>Increased engagement and retention</li>
-                    <li>New revenue potential through apps</li>
-                    <li>Competitive differentiation</li>
-                    <li>Higher brand loyalty and recall</li>
-                    <li>Improved customer experience</li>
-                    <li>Offline usage and performance</li>
-                </ul>
-            </div>
-
-            <h2>Technologies We Use</h2>
-            <p>For mobile development, we create native iOS apps with Swift and native Android apps using Kotlin. For cross-platform mobile solutions, we leverage React Native and other emerging frameworks.</p>
-
-            {{-- <img class="service-img" src="https://wbdigitech.ae/wp-content/uploads/2022/09/mobile-application-1024x974.png" alt="Mobile Application"> --}}
         </div>
     </div>
-</div>
 @endsection
