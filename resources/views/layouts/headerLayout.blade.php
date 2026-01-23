@@ -196,10 +196,7 @@
                                                                         <li><a
                                                                                 href="{{ route('services.wearable_app') }}">Wearable
                                                                                 App Development</a></li>
-                                                                        <li><a
-                                                                                href="{{ route('services.mobile_app_developers') }}">Hire
-                                                                                Mobile App Developers</a>
-                                                                        </li>
+
                                                                     </ul>
                                                                 </div>
                                                             </div>
@@ -690,10 +687,7 @@
                                                                                     <li><a
                                                                                             href="{{ route('services.wearable_app') }}">Wearable
                                                                                             App Development</a></li>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.mobile_app_developers') }}">Hire
-                                                                                            Mobile App Developers</a>
-                                                                                    </li>
+
                                                                                 </ul>
                                                                             </div>
                                                                         </div>
