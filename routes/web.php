@@ -355,6 +355,9 @@ Route::middleware(['role:superadmin,admin'])->group(function () {
 
 });
 
+// Google Review Controller
+Route::get('/google-reviews', [\App\Http\Controllers\GoogleReviewController::class, 'index']);
+
 // Profile Routes
 Route::middleware(['role:superadmin,admin'])->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

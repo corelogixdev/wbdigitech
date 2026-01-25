@@ -482,7 +482,7 @@
                             </section>
 
 
-                            {{-- Testimonial Section (STATIC UI PREVIEW) --}}
+                            {{-- Google Reviews --}}
                             <section class="pt-60 pb-70 bg-white">
                                 <div class="container">
                                     <div class="row align-items-center">
@@ -491,12 +491,12 @@
                                         <div class="col-lg-3 text-center text-lg-start mb-4 mb-lg-0">
                                             <h2 class="fw-bold mb-2">EXCELLENT</h2>
 
-                                            <div class="text-warning fs-3 mb-1">
-                                                ★★★★★☆
+                                            <div class="text-warning fs-3 mb-1" id="avgStars">
+                                                ★★★★★
                                             </div>
 
                                             <p class="mb-1 text-muted">
-                                                Based on <strong>173 reviews</strong>
+                                                Based on <strong id="reviewCount">0</strong> reviews
                                             </p>
 
                                             <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
@@ -506,90 +506,8 @@
                                         {{-- RIGHT SLIDER --}}
                                         <div class="col-lg-9">
                                             <div class="swiper testimonial-slider">
-                                                <div class="swiper-wrapper">
+                                                <div class="swiper-wrapper" id="googleReviewsWrapper"></div>
 
-                                                    {{-- Review 1 --}}
-                                                    <div class="swiper-slide">
-                                                        <div class="p-4 shadow-sm rounded bg-white h-100">
-                                                            <div class="d-flex align-items-center mb-3">
-                                                                <div class="rounded-circle bg-danger text-white d-flex align-items-center justify-content-center"
-                                                                    style="width:42px;height:42px;">A</div>
-
-                                                                <div class="ms-3">
-                                                                    <h6 class="mb-0 fw-bold">Ann Anthraper</h6>
-                                                                    <small class="text-muted">December 29, 2024</small>
-                                                                </div>
-
-                                                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
-                                                                    class="ms-auto" width="18">
-                                                            </div>
-
-                                                            <div class="text-warning mb-2">★★★★★</div>
-
-                                                            <p class="text-muted mb-0">
-                                                                I had an incredible experience with Hello cleaner cleaning
-                                                                services.
-                                                                Their team was professional and truly exceeded my
-                                                                expectations.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-
-                                                    {{-- Review 2 --}}
-                                                    <div class="swiper-slide">
-                                                        <div class="p-4 shadow-sm rounded bg-white h-100">
-                                                            <div class="d-flex align-items-center mb-3">
-                                                                <img src="https://randomuser.me/api/portraits/men/54.jpg"
-                                                                    class="rounded-circle" width="42" height="42">
-
-                                                                <div class="ms-3">
-                                                                    <h6 class="mb-0 fw-bold">Kamran Akhtar Tech</h6>
-                                                                    <small class="text-muted">October 23, 2025</small>
-                                                                </div>
-
-                                                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
-                                                                    class="ms-auto" width="18">
-                                                            </div>
-
-                                                            <div class="text-warning mb-2">★★★★★</div>
-
-                                                            <p class="text-muted mb-0">
-                                                                I’m very happy with the deep cleaning service for my villa,
-                                                                both interior and exterior. The team was professional and
-                                                                hardworking.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-
-                                                    {{-- Review 3 --}}
-                                                    <div class="swiper-slide">
-                                                        <div class="p-4 shadow-sm rounded bg-white h-100">
-                                                            <div class="d-flex align-items-center mb-3">
-                                                                <img src="https://randomuser.me/api/portraits/women/44.jpg"
-                                                                    class="rounded-circle" width="42" height="42">
-
-                                                                <div class="ms-3">
-                                                                    <h6 class="mb-0 fw-bold">Kat Gatti</h6>
-                                                                    <small class="text-muted">August 21, 2025</small>
-                                                                </div>
-
-                                                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
-                                                                    class="ms-auto" width="18">
-                                                            </div>
-
-                                                            <div class="text-warning mb-2">★★★★★</div>
-
-                                                            <p class="text-muted mb-0">
-                                                                Fantastic, thorough and professional. Come here for all my
-                                                                cleaning needs.
-                                                                Can't recommend them enough.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-
-                                                {{-- Arrows --}}
                                                 <div class="swiper-button-next"></div>
                                                 <div class="swiper-button-prev"></div>
                                             </div>
@@ -598,6 +516,33 @@
                                     </div>
                                 </div>
                             </section>
+
+                            <script type="text/template" id="google-review-template">
+                    <div class="swiper-slide">
+                        <div class="p-4 shadow-sm rounded bg-white h-100">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center"
+                                     style="width:42px;height:42px;">
+                                    __INITIAL__
+                                </div>
+
+                                <div class="ms-3">
+                                    <h6 class="mb-0 fw-bold">__NAME__</h6>
+                                    <small class="text-muted">__DATE__</small>
+                                </div>
+
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                                     class="ms-auto" width="18">
+                            </div>
+
+                            <div class="text-warning mb-2">__STARS__</div>
+
+                            <p class="text-muted mb-0">__TEXT__</p>
+                        </div>
+                    </div>
+                    </script>
+
+
 
 
                             {{-- Team Section --}}
@@ -691,20 +636,53 @@
             <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
             <script>
-                new Swiper('.testimonial-slider', {
-                    slidesPerView: 3,
-                    spaceBetween: 20,
-                    loop: true,
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    },
-                    breakpoints: {
-                        0: { slidesPerView: 1 },
-                        768: { slidesPerView: 2 },
-                        1200: { slidesPerView: 3 }
-                    }
+                document.addEventListener("DOMContentLoaded", async () => {
+
+                    const response = await fetch('/google-reviews');
+                    const data = await response.json();
+
+                    if (!data.result || !data.result.reviews) return;
+
+                    document.getElementById('reviewCount').innerText =
+                        data.result.user_ratings_total;
+
+                    const wrapper = document.getElementById('googleReviewsWrapper');
+                    const template = document.getElementById('google-review-template').innerHTML;
+
+                    data.result.reviews.forEach(review => {
+
+                        const stars =
+                            '★'.repeat(review.rating) +
+                            '☆'.repeat(5 - review.rating);
+
+                        let card = template
+                            .replace('__INITIAL__', review.author_name.charAt(0))
+                            .replace('__NAME__', review.author_name)
+                            .replace('__DATE__', review.relative_time_description)
+                            .replace('__STARS__', stars)
+                            .replace('__TEXT__', review.text);
+
+                        wrapper.insertAdjacentHTML('beforeend', card);
+                    });
+
+                    // ✅ Initialize Swiper ONLY after slides exist
+                    new Swiper('.testimonial-slider', {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                        loop: true,
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+                        breakpoints: {
+                            0: { slidesPerView: 1 },
+                            768: { slidesPerView: 2 },
+                            1200: { slidesPerView: 3 }
+                        }
+                    });
                 });
             </script>
+
+
 
 @endsection
