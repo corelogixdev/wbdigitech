@@ -8,7 +8,16 @@ class GoogleReviewController extends Controller
 {
     public function index()
     {
-        $response = Http::get(
+        // $response = Http::get(
+        //     'https://maps.googleapis.com/maps/api/place/details/json',
+        //     [
+        //         'place_id' => env('GOOGLE_PLACE_ID'),
+        //         'fields' => 'name,rating,user_ratings_total,reviews',
+        //         'key' => env('GOOGLE_PLACES_API_KEY'),
+        //     ]
+        // );
+
+        $response = Http::withoutVerifying()->get(
             'https://maps.googleapis.com/maps/api/place/details/json',
             [
                 'place_id' => env('GOOGLE_PLACE_ID'),
@@ -16,6 +25,7 @@ class GoogleReviewController extends Controller
                 'key' => env('GOOGLE_PLACES_API_KEY'),
             ]
         );
+
 
         return response()->json($response->json());
     }

@@ -14,6 +14,31 @@
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
 
+    <style>
+        .review-text {
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .review-text.expanded {
+            -webkit-line-clamp: unset;
+        }
+
+        .swiper-slide {
+            height: auto;
+        }
+
+        .testimonial-slider .shadow-sm {
+            height: 100%;
+        }
+
+        .read-more {
+            cursor: pointer;
+        }
+    </style>
+
     <div id="smooth-wrapper">
         <div id="smooth-content">
             <main>
@@ -499,9 +524,22 @@
                                                 Based on <strong id="reviewCount">0</strong> reviews
                                             </p>
 
-                                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
-                                                width="90" alt="Google">
+                                            <!-- Google logo clickable -->
+                                            <a href="https://www.google.com/search?q=WB-DIGITECH" target="_blank">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                                                    width="90" alt="Google">
+                                            </a>
+
+                                            <!-- Leave a Review button -->
+                                            <div class="mt-3">
+                                                <a href="https://www.google.com/search?q=WB-DIGITECH&ludocid=ChIJxbxtr6pbXz4R8MAqHFmG-x0#lrd=0x0:0x0,1,,,"
+                                                    target="_blank" class="btn btn-sm"
+                                                    style="color:white; background: linear-gradient(90deg, #0A3D62, #0077B6);">
+                                                    Leave a Review
+                                                </a>
+                                            </div>
                                         </div>
+
 
                                         {{-- RIGHT SLIDER --}}
                                         <div class="col-lg-9">
@@ -517,30 +555,40 @@
                                 </div>
                             </section>
 
+
                             <script type="text/template" id="google-review-template">
-                    <div class="swiper-slide">
-                        <div class="p-4 shadow-sm rounded bg-white h-100">
-                            <div class="d-flex align-items-center mb-3">
-                                <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center"
-                                     style="width:42px;height:42px;">
-                                    __INITIAL__
-                                </div>
+                                                                                                    <div class="swiper-slide">
+                                                                                                        <div class="p-4 shadow-sm rounded bg-white h-100 d-flex flex-column">
 
-                                <div class="ms-3">
-                                    <h6 class="mb-0 fw-bold">__NAME__</h6>
-                                    <small class="text-muted">__DATE__</small>
-                                </div>
+                                                                                                            <div class="d-flex align-items-center mb-3">
+                                                                                                                <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center"
+                                                                                                                     style="width:42px;height:42px;">
+                                                                                                                    __INITIAL__
+                                                                                                                </div>
 
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
-                                     class="ms-auto" width="18">
-                            </div>
+                                                                                                                <div class="ms-3">
+                                                                                                                    <h6 class="mb-0 fw-bold">__NAME__</h6>
+                                                                                                                    <small class="text-muted">__DATE__</small>
+                                                                                                                </div>
 
-                            <div class="text-warning mb-2">__STARS__</div>
+                                                                                                                <!-- Make Google logo clickable -->
+                                                                                                                <a href="https://www.google.com/search?q=WB-DIGITECH" target="_blank">
+                                                                                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                                                                                                                         class="ms-auto" width="18" alt="Google">
+                                                                                                                </a>
+                                                                                                            </div>
 
-                            <p class="text-muted mb-0">__TEXT__</p>
-                        </div>
-                    </div>
-                    </script>
+                                                                                                            <div class="text-warning mb-2">__STARS__</div>
+
+                                                                                                            <p class="text-muted mb-2 review-text">
+                                                                                                                __TEXT__
+                                                                                                            </p>
+
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </script>
+
+
 
 
 
@@ -682,6 +730,8 @@
                     });
                 });
             </script>
+
+
 
 
 
