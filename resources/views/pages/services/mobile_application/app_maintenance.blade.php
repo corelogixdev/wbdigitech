@@ -41,7 +41,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="tp-blog-standard-thumb-box p-relative">
-                                <img src="{{ asset('css/new-assets/graphic_design/logo.webp') }}"
+                                <img src="{{ asset('css/new-assets/mobile_app/mobile_app_dev.jpg') }}"
                                     alt="mobile-app-maintenance-services">
                             </div>
                         </div>
@@ -77,7 +77,7 @@
 
             <!-- Main Content -->
             <div class="content-col">
-                <br>
+
 
                 <h2>Why Mobile App Maintenance Is Critical for Business Growth</h2>
                 <p>Mobile applications are an ever evolving digital space. In the absence of mobile app maintenance which is

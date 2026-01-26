@@ -40,7 +40,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="tp-blog-standard-thumb-box p-relative">
-                                <img src="{{ asset('css/new-assets/graphic_design/logo.webp') }}"
+                                <img src="{{ asset('css/new-assets/mobile_app/react_app.jpg') }}"
                                     alt="react-native-app-development-services">
                             </div>
                         </div>
@@ -74,7 +74,7 @@
 
             <!-- Main Content -->
             <div class="content-col">
-                <br>
+
 
                 <h2>Why Choose WB Digitech for React Native App Development?</h2>
                 <p>Selecting the right react native app development company is key to your mobile product success. At WB

@@ -557,36 +557,36 @@
 
 
                             <script type="text/template" id="google-review-template">
-                                                                                                    <div class="swiper-slide">
-                                                                                                        <div class="p-4 shadow-sm rounded bg-white h-100 d-flex flex-column">
+                                                                                                            <div class="swiper-slide">
+                                                                                                                <div class="p-4 shadow-sm rounded bg-white h-100 d-flex flex-column">
 
-                                                                                                            <div class="d-flex align-items-center mb-3">
-                                                                                                                <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center"
-                                                                                                                     style="width:42px;height:42px;">
-                                                                                                                    __INITIAL__
+                                                                                                                    <div class="d-flex align-items-center mb-3">
+                                                                                                                        <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center"
+                                                                                                                             style="width:42px;height:42px;">
+                                                                                                                            __INITIAL__
+                                                                                                                        </div>
+
+                                                                                                                        <div class="ms-3">
+                                                                                                                            <h6 class="mb-0 fw-bold">__NAME__</h6>
+                                                                                                                            <small class="text-muted">__DATE__</small>
+                                                                                                                        </div>
+
+                                                                                                                        <!-- Make Google logo clickable -->
+                                                                                                                        <a href="https://www.google.com/search?q=WB-DIGITECH" target="_blank">
+                                                                                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                                                                                                                                 class="ms-auto" width="18" alt="Google">
+                                                                                                                        </a>
+                                                                                                                    </div>
+
+                                                                                                                    <div class="text-warning mb-2">__STARS__</div>
+
+                                                                                                                    <p class="text-muted mb-2 review-text">
+                                                                                                                        __TEXT__
+                                                                                                                    </p>
+
                                                                                                                 </div>
-
-                                                                                                                <div class="ms-3">
-                                                                                                                    <h6 class="mb-0 fw-bold">__NAME__</h6>
-                                                                                                                    <small class="text-muted">__DATE__</small>
-                                                                                                                </div>
-
-                                                                                                                <!-- Make Google logo clickable -->
-                                                                                                                <a href="https://www.google.com/search?q=WB-DIGITECH" target="_blank">
-                                                                                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
-                                                                                                                         class="ms-auto" width="18" alt="Google">
-                                                                                                                </a>
                                                                                                             </div>
-
-                                                                                                            <div class="text-warning mb-2">__STARS__</div>
-
-                                                                                                            <p class="text-muted mb-2 review-text">
-                                                                                                                __TEXT__
-                                                                                                            </p>
-
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </script>
+                                                                                                        </script>
 
 
 

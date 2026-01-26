@@ -42,7 +42,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="tp-blog-standard-thumb-box p-relative">
-                                <img src="{{ asset('css/new-assets/graphic_design/logo.webp') }}"
+                                <img src="{{ asset('css/new-assets/mobile_app/iphone.jpg') }}"
                                     alt="ios-app-development-services">
                             </div>
                         </div>
@@ -79,7 +79,7 @@
 
             <!-- Main Content -->
             <div class="content-col">
-                <br>
+
 
                 <h2>Building iOS Apps That Drive Real Business Results</h2>
                 <p>As a professional iOS app development company in Dubai, in our field of what we do we also are not just

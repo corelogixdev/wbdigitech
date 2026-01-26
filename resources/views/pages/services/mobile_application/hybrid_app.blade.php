@@ -40,7 +40,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="tp-blog-standard-thumb-box p-relative">
-                                <img src="{{ asset('css/new-assets/graphic_design/logo.webp') }}"
+                                <img src="{{ asset('css/new-assets/mobile_app/hybrid_app.jpg') }}"
                                     alt="hybrid-app-development-services">
                             </div>
                         </div>
@@ -75,7 +75,7 @@
 
             <!-- Main Content -->
             <div class="content-col">
-                <br>
+
 
                 <h2>Why Choose WB Digitech as Your Hybrid App Development Company?</h2>
                 <p>Choosing which hybrid app development company to work with is very important for long term success. At WB
