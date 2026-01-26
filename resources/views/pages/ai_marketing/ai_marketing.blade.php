@@ -1,6 +1,8 @@
 @extends('layouts.homelayout')
 
-@section('title', 'Services - AI Marketing Agency')
+@section('title', 'AI Marketing Agency in Dubai | Smart Design & Visual Marketing')
+@section('meta_description', 'WB Digitech is a Dubai based AI marketing company that provides intelligent design, photography and video services along with AI powered marketing solutions for brands.')
+
 
 @section('content')
     <link rel="stylesheet" href="{{ asset('css/services.css') }}">
@@ -32,8 +34,10 @@
                     <div>
                         <h4><a href="{{ route('ai_social_media') }}" style="color:#001f4d; text-decoration:none;">AI Social
                                 Media Marketing</a></h4>
-                        <p>Leverage AI to manage social media campaigns efficiently, target the right audience, and maximize
-                            engagement on all platforms.</p>
+                        <p>Leverage AI in the planning, management, and optimization of social media campaigns that we do
+                            best. We use AI marketing solutions which looks into the behavior, content performance, which in
+                            turn will identify and present to you that perfect audience as well as increase total engagement
+                            through all channels.</p>
                     </div>
                 </div>
 
@@ -44,10 +48,13 @@
                             d="M21 4H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h6v2H7v2h10v-2h-2v-2h6c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM3 6h18v12H3V6z" />
                     </svg>
                     <div>
-                        <h4><a href="{{ route('ai_website') }}" style="color:#001f4d; text-decoration:none;">AI Website</a>
+                        <h4><a href="{{ route('ai_website') }}" style="color:#001f4d; text-decoration:none;">AI Website
+                                Design & Development</a>
                         </h4>
-                        <p>Design and develop AI-driven websites that are intelligent, responsive, and optimized for better
-                            user experience and conversions.</p>
+                        <p>We have designed and put together AI powered websites that are smart, responsive and focus on
+                            conversion. We use advanced AI marketing platforms which we integrate into our websites that
+                            which adapt to the user’s behavior, improve navigation and in turn enhance the overall
+                            experience.</p>
                     </div>
                 </div>
 
@@ -59,8 +66,9 @@
                     <div>
                         <h4><a href="{{ route('ai_digital_marketing') }}" style="color:#001f4d; text-decoration:none;">AI
                                 Digital Marketing</a></h4>
-                        <p>Use AI-powered strategies for digital campaigns including email, PPC, content marketing, and
-                            analytics for optimal ROI.</p>
+                        <p>Our AI digital marketing which we have designed to improve your campaigns in email, PPC, content
+                            marketing, and analytics. We use smart automation and predictive analysis to make it so that our
+                            clients’ ROI see an increase via performance based strategies.</p>
                     </div>
                 </div>
 
@@ -71,10 +79,11 @@
                             d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C8.01 14 6 11.99 6 9.5S8.01 5 10.5 5 15 7.01 15 9.5 12.99 14 10.5 14z" />
                     </svg>
                     <div>
-                        <h4><a href="{{ route('ai_seo') }}" style="color:#001f4d; text-decoration:none;">AI Powered SEO</a>
+                        <h4><a href="{{ route('ai_seo') }}" style="color:#001f4d; text-decoration:none;">AI-Powered SEO</a>
                         </h4>
-                        <p>Boost search engine rankings with AI algorithms that optimize content, keywords, and website
-                            structure for maximum visibility.</p>
+                        <p>Boost with our AI which has developed SEO methods for better content, keyword and site structure.
+                            We have put in place an AI marketing strategy which improves rankings, increases organic traffic
+                            and which also better positions you for the long term.</p>
                     </div>
                 </div>
 
@@ -85,9 +94,10 @@
                     </svg>
                     <div>
                         <h4><a href="{{ route('ai_google_ads') }}" style="color:#001f4d; text-decoration:none;">AI Google
-                                Ads</a></h4>
-                        <p>Optimize Google Ads campaigns using AI to improve targeting, bidding, and ad performance for
-                            better ROI.</p>
+                                Ads Management</a></h4>
+                        <p>Optimize your ad spend in our AI powered Google Ads campaigns. We use AI based marketing tools
+                            which improve targeting, bidding strategies, and ad creatives for better performance and
+                            measurable ROI.</p>
                     </div>
                 </div>
 
@@ -100,8 +110,9 @@
                     <div>
                         <h4><a href="{{ route('ai_web_app') }}" style="color:#001f4d; text-decoration:none;">AI Web App
                                 Development</a></h4>
-                        <p>Build scalable, intelligent web applications powered by AI to enhance user experience and
-                            streamline business processes.</p>
+                        <p>We develop scalable intelligent web apps powered by AI. We focus on improving business processes,
+                            enhancing user interaction, and we support your long term growth with smart automation and
+                            analytics.</p>
                     </div>
                 </div>
 
@@ -117,23 +128,27 @@
                         <div class="col-lg-12 mb-60 text-center">
                             <span class="text-uppercase">Get in Touch</span>
                             <h2 class="text-heading-3 mt-10">Have a project in mind?</h2>
-                            <p class="text-body-text mt-20">The right move at the right time saves your investment. Let’s
-                                expand your business together.</p>
+                            <p class="text-body-text mt-20">At the right time do what it takes to save your investment and
+                                see growth. Work with a results based AI marketing agency and turn innovation into impact.
+                                Let’s expand your business together.</p>
                         </div>
 
                         <!-- Contact Info -->
                         <div class="col-lg-4 mb-40">
-                            <h4 class="text-heading-6 mb-10">WB-DigiTech</h4>
+                            <h4 class="text-heading-6 mb-10">WB Digitech – Dubai, UAE</h4>
                             <p class="text-body-text">
-                                504 Raffa Building Rolla Street Bur Dubai, UAE
+                                Office Address<br>
+                                504 Raffa Building, Rolla Street, Bur Dubai, UAE
                             </p>
 
                             <p class="text-body-text">
+                                Call Us<br>
                                 <a href="tel:+97142559928">+971-4-255-9928</a><br>
                                 <a href="tel:+971502390775">+971-50-239-0775</a>
                             </p>
 
                             <p class="text-body-text">
+                                Email<br>
                                 <a href="mailto:info@wbdigitech.ae">info@wbdigitech.ae</a><br>
                                 <a href="mailto:hr@wbdigitech.ae">hr@wbdigitech.ae</a>
                             </p>
