@@ -1,2 +1,7 @@
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /admin/
+Disallow: /profile
+Disallow: /blogs-create
+
+Sitemap: https://wbdigitech.ae/sitemap.xml
