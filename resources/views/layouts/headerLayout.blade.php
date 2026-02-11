@@ -27,7 +27,7 @@
         <div class="tp-offcanvas-main">
             <div class="tp-offcanvas-content">
                 <div class="tp-offcanvas-top d-flex align-items-center justify-content-between">
-                    <div class="tp-offcanvas-logo"><a href="#"><img class="logo-1"
+                    <div class="tp-offcanvas-logo"><a href="{{  route('home') }}"><img class="logo-1"
                                 src="{{ asset('css/new-assets/img/logo/logoo.png') }}" loading="lazy" decoding="async"
                                 alt="WbDigitech Logo"><img class="logo-2"
                                 src="{{ asset('css/new-assets/img/logo/logoo.png')}}" loading="lazy" decoding="async"
@@ -286,7 +286,7 @@
 
                         <li><a href="{{ route('blogs.public')}}">Blog</a></li>
                         <li><a href="{{ route('portfolio.public')}}">Portfolio</a></li>
-                        {{-- <li><a href="{{ route('careers.public') }}">Careers</a></li> --}}
+                        <li><a href="{{ route('seo-request.public') }}">Get Free Seo Audit</a></li>
                         <li><a href="{{ route('contact')}}">Contact</a></li>
                     </ul>
                 </nav>
@@ -796,12 +796,139 @@
 </header>
 
 <style>
+    /* Mobile fix - Text alignment issue */
+    @media (max-width: 991.98px) {
+
+        /* Force everything to display properly */
+        .tp-offcanvas-area .tp-mega-menu,
+        .tp-offcanvas-area .has-dropdown>.tp-submenu {
+            display: none !important;
+            position: static !important;
+            background: #f5f7fa !important;
+            padding: 15px 15px 5px 15px !important;
+            margin: 10px 0 0 0 !important;
+            border-radius: 10px !important;
+            width: 100% !important;
+        }
+
+        .tp-offcanvas-area .has-dropdown.open>.tp-submenu {
+            display: block !important;
+        }
+
+        /* Reset all columns */
+        .tp-offcanvas-area .tp-megamenu-list-box .row,
+        .tp-offcanvas-area .tp-megamenu-list-box .row>div {
+            display: block !important;
+            width: 100% !important;
+            max-width: 100% !important;
+            flex: 0 0 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        /* Category styling */
+        .tp-offcanvas-area .tp-megamenu-list {
+            margin-bottom: 20px !important;
+            padding: 0 !important;
+            width: 100% !important;
+        }
+
+        .tp-offcanvas-area .tp-megamenu-title {
+            margin: 0 0 8px 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+        }
+
+        .tp-offcanvas-area .tp-megamenu-title a {
+            display: block !important;
+            font-size: 16px !important;
+            font-weight: 700 !important;
+            color: #0A3D62 !important;
+            padding: 5px 0 !important;
+            margin: 0 !important;
+            line-height: 1.4 !important;
+            white-space: normal !important;
+            word-break: break-word !important;
+            text-decoration: none !important;
+        }
+
+        /* Service links container */
+        .tp-offcanvas-area .tp-megamenu-list-wrap {
+            width: 100% !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        .tp-offcanvas-area .tp-megamenu-list-wrap ul {
+            display: block !important;
+            padding: 0 0 0 12px !important;
+            margin: 0 !important;
+            width: 100% !important;
+            list-style: none !important;
+        }
+
+        .tp-offcanvas-area .tp-megamenu-list-wrap ul li {
+            display: block !important;
+            width: 100% !important;
+            margin: 0 0 6px 0 !important;
+            padding: 0 !important;
+            list-style: none !important;
+        }
+
+        .tp-offcanvas-area .tp-megamenu-list-wrap ul li a {
+            display: inline-block !important;
+            font-size: 15px !important;
+            color: #4a5568 !important;
+            padding: 4px 0 !important;
+            margin: 0 !important;
+            line-height: 1.4 !important;
+            white-space: normal !important;
+            word-break: break-word !important;
+            text-decoration: none !important;
+            border-bottom: none !important;
+        }
+
+        .tp-offcanvas-area .tp-megamenu-list-wrap ul li a:hover {
+            color: #0A3D62 !important;
+            padding-left: 5px !important;
+        }
+
+        /* Remove any float or flex issues */
+        .tp-offcanvas-area .tp-megamenu-list-box,
+        .tp-offcanvas-area .tp-menu-fullwidth,
+        .tp-offcanvas-area .tp-megamenu-portfolio {
+            width: 100% !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            float: none !important;
+        }
+
+        /* Simple dropdown arrow */
+        .tp-offcanvas-area .has-dropdown>a {
+            display: flex !important;
+            align-items: center !important;
+            justify-content: space-between !important;
+            width: 100% !important;
+        }
+
+        .tp-offcanvas-area .has-dropdown>a:after {
+            content: '\f107' !important;
+            font-family: 'Font Awesome 6 Free' !important;
+            font-weight: 900 !important;
+            margin-left: 8px !important;
+            transition: transform 0.3s !important;
+            flex-shrink: 0 !important;
+        }
+
+        .tp-offcanvas-area .has-dropdown.open>a:after {
+            transform: rotate(180deg) !important;
+        }
+    }
+
     .tp-header-menu>nav>ul>li>a {
         margin-left: -26px;
-        /* margin-left: -33px; */
     }
 </style>
-
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
