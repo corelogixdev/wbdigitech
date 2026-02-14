@@ -9,7 +9,7 @@
             <main>
                 <!-- Banner Section -->
                 <section class="section-box">
-                    <div class="banner-hero bg-gray-100">
+                    <div class="banner-hero ">
                         <div class="container text-center">
                             <div class="row">
                                 <div class="col-lg-12">
@@ -25,7 +25,7 @@
                 </section>
 
                 <!-- SEO Form Section -->
-                <div class="tp-blog-standard-area pt-100 pb-70">
+                <div class="tp-blog-standard-area pt-0 pb-70">
                     <div class="container container-1200">
                         @if(session('success'))
                             <div class="alert alert-success text-center">{{ session('success') }}</div>
@@ -63,7 +63,7 @@
 
                             <div class="text-center mt-4">
                                 <button type="submit" class="btn px-5" style="color: #fff;
-                    background: linear-gradient(90deg, #0A3D62 0%, #0077B6 100%);">Check</button>
+                                    background: linear-gradient(90deg, #0A3D62 0%, #0077B6 100%);">Check</button>
                             </div>
                         </form>
                     </div>
