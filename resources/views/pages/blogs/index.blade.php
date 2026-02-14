@@ -9,7 +9,7 @@
             <main>
                 <!-- Banner Section -->
                 <section class="section-box">
-                    <div class="banner-hero bg-gray-100">
+                    <div class="banner-hero ">
                         <div class="container text-center">
                             <div class="row">
                                 <div class="col-lg-12">
