@@ -42,7 +42,7 @@
                                     <h4 class="text-heading-6 mb-10">WB Digitech – Dubai, UAE</h4>
                                     <p class="text-body-text">
                                         Office Address<br>
-                                        504 Raffa Building, Rolla Street, Bur Dubai, UAE
+                                        203 Raffa Building, Rolla Street, Bur Dubai, UAE
                                     </p>
 
                                     <p class="text-body-text">
