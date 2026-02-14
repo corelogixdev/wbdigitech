@@ -28,25 +28,31 @@
                         <div class="bdrd-58 box-gray-100 icon-wave">
                             <div class="row">
                                 <div class="col-lg-12 mb-60">
-                                    <span class="text-uppercase">Contact Us</span>
+                                    <span class="text-uppercase">Get in Touch</span>
                                     <h2 class="text-heading-3 mt-10">Have a project in mind?</h2>
-                                    <p class="text-body-text mt-20">The right move at the right time saves your investment.
+                                    <p class="text-body-text mt-20">At the right time do what it takes to save your
+                                        investment and
+                                        see growth. Work with a results based AI marketing agency and turn innovation into
+                                        impact.
                                         Let’s expand your business together.</p>
                                 </div>
 
                                 <!-- Contact Info -->
                                 <div class="col-lg-4 mb-40">
-                                    <h4 class="text-heading-6 mb-10">WB-DigiTech</h4>
+                                    <h4 class="text-heading-6 mb-10">WB Digitech – Dubai, UAE</h4>
                                     <p class="text-body-text">
-                                        {{ $contact->location ?? '504 Raffa Building Rolla Street Bur Dubai, UAE' }}
+                                        Office Address<br>
+                                        504 Raffa Building, Rolla Street, Bur Dubai, UAE
                                     </p>
 
                                     <p class="text-body-text">
+                                        Call Us<br>
                                         <a href="tel:+97142559928">+971-4-255-9928</a><br>
                                         <a href="tel:+971502390775">+971-50-239-0775</a>
                                     </p>
 
                                     <p class="text-body-text">
+                                        Email<br>
                                         <a href="mailto:info@wbdigitech.ae">info@wbdigitech.ae</a><br>
                                         <a href="mailto:hr@wbdigitech.ae">hr@wbdigitech.ae</a>
                                     </p>
@@ -109,7 +115,8 @@
 
                                             <!-- Submit -->
                                             <div class="col-lg-12 mt-15 text-center">
-                                                <button type="submit" class="btn btn-black">
+                                                <button type="submit" class="btn "
+                                                    style="color: #fff; background: linear-gradient(90deg, #0A3D62 0%, #0077B6 100%);">
                                                     Send Message
                                                 </button>
                                             </div>

@@ -211,7 +211,8 @@
 
                                     <!-- Submit -->
                                     <div class="col-lg-12 mt-15 text-center">
-                                        <button type="submit" class="btn btn-black">
+                                        <button type="submit" class="btn"
+                                            style="color: #fff; background: linear-gradient(90deg, #0A3D62 0%, #0077B6 100%);">
                                             Send Message
                                         </button>
                                     </div>
