@@ -65,7 +65,7 @@
                                                         <div class="col-xxl-2 col-xl-2">
                                                             <div class="tp-megamenu-list">
                                                                 <h4 class="tp-megamenu-title"><a
-                                                                        href="{{ route('services.web')}}">WEB
+                                                                        href="{{ route('services.web_dev')}}">WEB
                                                                         DESIGN & DEVELOPMENT</a></h4>
                                                                 <div
                                                                     class="tp-megamenu-list-wrap tp-portfolio-menu-style">
@@ -552,7 +552,7 @@
                                                                     <div class="col-xxl-2 col-xl-2">
                                                                         <div class="tp-megamenu-list">
                                                                             <h4 class="tp-megamenu-title"><a
-                                                                                    href="{{ route('services.web')}}">WEB
+                                                                                    href="{{ route('services.web_dev')}}">WEB
                                                                                     DESIGN & DEVELOPMENT</a></h4>
                                                                             <div
                                                                                 class="tp-megamenu-list-wrap tp-portfolio-menu-style">
