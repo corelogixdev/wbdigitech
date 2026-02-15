@@ -22,7 +22,7 @@
     referrerpolicy="no-referrer" />
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="{{ asset('css/new-assets/img/logo/logo.jpeg') }}">
+  <link rel="icon" type="image/png" href="{{ asset('css/new-assets/favi.png') }}">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="{{ asset('css/global.css') }}">
