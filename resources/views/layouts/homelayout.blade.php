@@ -11,6 +11,13 @@
   {{-- Dynamic meta tags --}}
   @yield('meta')
 
+  {{-- Handle the meta_description section format automatically --}}
+  @sectionMissing('meta')
+    @if(View::hasSection('meta_description'))
+      <meta name="description" content="@yield('meta_description')">
+    @endif
+  @endif
+
 
   <!-- External Libraries -->
   <link rel="stylesheet" href="{{ asset('vendor/core/plugins/language/css/language-public.css') }}">
