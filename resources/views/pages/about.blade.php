@@ -37,8 +37,7 @@
                                 <div class="row justify-content-center mb-5">
                                     <div class="col-lg-8 text-center">
                                         <h1 class="tp-hero-title"
-                                            style="color:#0A3D62; font-size: 4rem; font-weight: 700; 
-                                                                                                                                                                  l etter-spacing: 1px;">
+                                            style="color:#0A3D62; font-size: 4rem; font-weight: 500; letter-spacing: 1px;">
                                             About
                                             WB‑Digitech
                                         </h1>
