@@ -80,7 +80,7 @@
 
                 <p class="mb-2 text-white">
                     <i class="fa fa-map-marker-alt me-2 text-white"></i>
-                    #504,Raffa Building<br>Rolla Street Bur, Dubai, UAE.
+                    #203,Raffa Building<br>Rolla Street Bur, Dubai, UAE.
                 </p>
             </div>
 

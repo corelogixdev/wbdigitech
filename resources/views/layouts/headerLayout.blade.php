@@ -321,7 +321,7 @@
                     <li><a href="tel:+971 4 255 9928">Landline: +971-4-255-9928</a></li>
                     <li><a href="tel:+971 50 239 0775">Phone: +971-50-239-0775</a></li>
                     <li><a href="mailto:info@wbdigitech.com">info@wbdigitech.com</a></li>
-                    <li><a href="https://g.co/">504 Raffa Building Rolla Street Bur Dubai, UAE</a></li>
+                    <li><a href="https://g.co/">203 Raffa Building Rolla Street Bur Dubai, UAE</a></li>
                 </ul>
             </div>
             <div class="tp-offcanvas-social d-none">
