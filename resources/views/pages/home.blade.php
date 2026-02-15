@@ -556,36 +556,36 @@
 
 
                             <script type="text/template" id="google-review-template">
-                                                                                                                                                                    <div class="swiper-slide">
-                                                                                                                                                                        <div class="p-4 shadow-sm rounded bg-white h-100 d-flex flex-column">
+                                                                                                                                                                                <div class="swiper-slide">
+                                                                                                                                                                                    <div class="p-4 shadow-sm rounded bg-white h-100 d-flex flex-column">
 
-                                                                                                                                                                            <div class="d-flex align-items-center mb-3">
-                                                                                                                                                                                <div class="rounded-circle text-white d-flex align-items-center justify-content-center"
-                                                                                                                                                                                     style="width:42px;height:42px; background: linear-gradient(90deg, #0A3D62, #0077B6);">
-                                                                                                                                                                                    __INITIAL__
+                                                                                                                                                                                        <div class="d-flex align-items-center mb-3">
+                                                                                                                                                                                            <div class="rounded-circle text-white d-flex align-items-center justify-content-center"
+                                                                                                                                                                                                 style="width:42px;height:42px; background: linear-gradient(90deg, #0A3D62, #0077B6);">
+                                                                                                                                                                                                __INITIAL__
+                                                                                                                                                                                            </div>
+
+                                                                                                                                                                                            <div class="ms-3">
+                                                                                                                                                                                                <h6 class="mb-0 fw-bold">__NAME__</h6>
+                                                                                                                                                                                                <small class="text-muted">__DATE__</small>
+                                                                                                                                                                                            </div>
+
+                                                                                                                                                                                            <!-- Make Google logo clickable -->
+                                                                                                                                                                                            <a href="https://www.google.com/search?q=WB-DIGITECH" target="_blank">
+                                                                                                                                                                                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                                                                                                                                                                                                     class="ms-auto" width="18" alt="Google">
+                                                                                                                                                                                            </a>
+                                                                                                                                                                                        </div>
+
+                                                                                                                                                                                        <div class="text-warning mb-2">__STARS__</div>
+
+                                                                                                                                                                                        <p class="text-muted mb-2 review-text">
+                                                                                                                                                                                            __TEXT__
+                                                                                                                                                                                        </p>
+
+                                                                                                                                                                                    </div>
                                                                                                                                                                                 </div>
-
-                                                                                                                                                                                <div class="ms-3">
-                                                                                                                                                                                    <h6 class="mb-0 fw-bold">__NAME__</h6>
-                                                                                                                                                                                    <small class="text-muted">__DATE__</small>
-                                                                                                                                                                                </div>
-
-                                                                                                                                                                                <!-- Make Google logo clickable -->
-                                                                                                                                                                                <a href="https://www.google.com/search?q=WB-DIGITECH" target="_blank">
-                                                                                                                                                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
-                                                                                                                                                                                         class="ms-auto" width="18" alt="Google">
-                                                                                                                                                                                </a>
-                                                                                                                                                                            </div>
-
-                                                                                                                                                                            <div class="text-warning mb-2">__STARS__</div>
-
-                                                                                                                                                                            <p class="text-muted mb-2 review-text">
-                                                                                                                                                                                __TEXT__
-                                                                                                                                                                            </p>
-
-                                                                                                                                                                        </div>
-                                                                                                                                                                    </div>
-                                                                                                                                                                </script>
+                                                                                                                                                                            </script>
 
 
 
@@ -712,21 +712,56 @@
                         wrapper.insertAdjacentHTML('beforeend', card);
                     });
 
-                    // ✅ Initialize Swiper ONLY after slides exist
-                    new Swiper('.testimonial-slider', {
+                    const totalReviews = data.result.reviews.length;
+                    console.log('Total reviews:', totalReviews); // Should be 5
+
+                    // Initialize Swiper WITHOUT loop
+                    const swiper = new Swiper('.testimonial-slider', {
                         slidesPerView: 3,
                         spaceBetween: 20,
-                        loop: true,
+                        loop: false, // Set to false for correct pagination
+                        autoplay: {
+                            delay: 3000,
+                            disableOnInteraction: false,
+                        },
                         pagination: {
                             el: '.swiper-pagination',
                             clickable: true,
                         },
                         breakpoints: {
-                            0: { slidesPerView: 1 },
-                            768: { slidesPerView: 2 },
-                            1200: { slidesPerView: 3 }
+                            0: {
+                                slidesPerView: 1,
+                                spaceBetween: 10
+                            },
+                            768: {
+                                slidesPerView: 2,
+                                spaceBetween: 15
+                            },
+                            1200: {
+                                slidesPerView: 3,
+                                spaceBetween: 20
+                            }
+                        },
+                        on: {
+                            init: function () {
+                                console.log('Swiper initialized');
+                                console.log('Total slides:', this.slides.length);
+                                console.log('Pagination bullets:', this.pagination.bullets.length);
+                            },
+                            // When reaching the end, go back to start
+                            reachEnd: function () {
+                                setTimeout(() => {
+                                    this.slideTo(0, 500);
+                                }, 2000);
+                            }
                         }
                     });
+
+                    // Force pagination update
+                    setTimeout(() => {
+                        swiper.pagination.render();
+                        swiper.pagination.update();
+                    }, 200);
                 });
             </script>
 
