@@ -64,7 +64,7 @@
                                                     </p>
                                                     <p
                                                         style="font-size: 1.1rem; line-height: 1.9; color: #444; margin-bottom: 25px;">
-                                                        Originally in Pakistan, WB-Digitech which in 2024 took its growth to
+                                                        Originally in Dubai UAE, WB-Digitech which in 2024 took its growth to
                                                         Dubai to better serve our expanding global client base. Now we are
                                                         working with companies across many industries which we help to turn
                                                         their concepts into digital works of art.
@@ -74,7 +74,7 @@
                                                 <div class="mt-4">
                                                     <h3 class="h4 fw-bold mb-3" style="color: #0A3D62;">Who We Are</h3>
                                                     <p style="font-size: 1.1rem; line-height: 1.9; color: #444;">
-                                                        At WB-DigeTech creativity is at the core of our strategy. We are of
+                                                        At WB-DigiTech creativity is at the core of our strategy. We are of
                                                         the belief that great digital solutions are brought to life when
                                                         innovation, data and design come together. Our team which includes
                                                         designers, developers, marketers and SEO specialists works in close
