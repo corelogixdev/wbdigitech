@@ -1,6 +1,6 @@
 @extends('layouts.homelayout')
 
-@section('title', 'Play Store Optimization & Play Store SEO Services')
+@section('title', 'Google Play SEO That Increases App Installs | WB-Digitech')
 
 @section('meta')
     <meta name="description"

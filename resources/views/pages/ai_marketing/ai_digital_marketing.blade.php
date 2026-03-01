@@ -1,6 +1,6 @@
 @extends('layouts.homelayout')
 
-@section('title', 'AI Digital Marketing Services in UAE | WB-DigiTech')
+@section('title', 'AI-Powered Digital Marketing for Smart Growth | WB-Digitech')
 @section('meta_description', 'Grow better with AI digital marketing from WB-DigiTech. We put our best foot forward in terms of AI powered digital marketing, SEO, ad campaigns and automation which in turn we see to it that we get you the best ROI and future proof growth.')
 
 @section('content')

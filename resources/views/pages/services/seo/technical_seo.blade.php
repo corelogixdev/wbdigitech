@@ -1,6 +1,6 @@
 @extends('layouts.homelayout')
 
-@section('title', 'Technical SEO Agency for Scalable Growth | WB Digitech')
+@section('title', 'Technical SEO That Fixes & Fuels Rankings | WB-Digitech')
 
 @section('meta')
 <meta name="description"

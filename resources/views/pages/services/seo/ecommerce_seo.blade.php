@@ -1,6 +1,6 @@
 @extends('layouts.homelayout')
 
-@section('title', 'Ecommerce SEO Services That Scale Online Stores')
+@section('title', 'Ecommerce SEO That Turns Traffic Into Sales | WB-Digitech')
 @section('meta_description', 'Looking for ecommerce SEO Dubai experts? Our tailored ecommerce SEO services help online stores rank higher, convert better, and grow sustainably.')
 
 @section('content')

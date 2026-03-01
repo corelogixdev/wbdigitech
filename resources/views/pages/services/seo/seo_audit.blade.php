@@ -1,6 +1,8 @@
 @extends('layouts.homelayout')
 
-@section('title', 'SEO Services - WB-DIGITECH')
+@section('title', 'Comprehensive SEO Audit Services | WB-Digitech')
+
+@section('meta_description', 'Get in touch with WB-Digitech for a full SEO audit that will bring to light issues, improve your rank, increase organic traffic to your site, and which also will put in place strategies for long term search growth.')
 
 @section('content')
     <link rel="stylesheet" href="{{ asset('css/services.css') }}">

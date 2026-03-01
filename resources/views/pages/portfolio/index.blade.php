@@ -1,6 +1,8 @@
 @extends('layouts.homelayout')
 
-@section('title', 'Portfolio - WB-DIGITECH')
+@section('title', 'Our Portfolio — Digital Success Stories | WB-Digitech')
+
+@section('meta_description', 'See what WB-Digitech has done for our brand clients with our real results. We have a portfolio of sites, campaigns, SEO successes, design projects, and digital art.')
 
 @section('content')
 

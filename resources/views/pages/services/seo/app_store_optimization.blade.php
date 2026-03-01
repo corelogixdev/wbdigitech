@@ -1,6 +1,6 @@
 @extends('layouts.homelayout')
 
-@section('title', 'App Store Optimization Services in Dubai')
+@section('title', 'App Store Optimization That Drives Downloads | WB-Digitech')
 
 @section('meta')
 <meta name="description"

@@ -1,6 +1,8 @@
 @extends('layouts.homelayout')
 
-@section('title', 'Contact Us - WB-DIGITECH')
+@section('title', 'Contact WB-Digitech — Let’s Build Something Great')
+
+@section('meta_description', 'Have a project in mind? Get in touch with WB-Digitech today for our expert digital strategies, custom solutions, and support to help take your brand to the next level.')
 
 @section('content')
     <div id="smooth-wrapper">

@@ -1,6 +1,6 @@
 @extends('layouts.homelayout')
 
-@section('title', 'Graphic Design Agency in Dubai')
+@section('title', 'Creative Graphic Design That Captivates | WB-Digitech')
 @section('meta_description', 'Looking for a graphic design agency in Dubai? WB Digitech offers custom graphic design services that help brands stand out, connect, and grow visually.')
 
 @section('content')

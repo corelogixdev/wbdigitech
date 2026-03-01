@@ -1,6 +1,6 @@
 @extends('layouts.homelayout')
 
-@section('title', 'Local SEO Services Dubai')
+@section('title', 'Dominate Local Search with Smart SEO | WB-Digitech')
 
 @section('meta')
 <meta name="description"

@@ -1,6 +1,6 @@
 @extends('layouts.homelayout')
 
-@section('title', 'Content Writing Company in Dubai')
+@section('title', 'Powerful Content Writing That Drives Results | WB-Digitech')
 
 @section('meta')
     <meta name="description"

@@ -1,6 +1,9 @@
 @extends('layouts.homelayout')
 
-@section('title', 'Dubai E-Commerce Development Company - WB-DIGITECH')
+@section('title', 'Ecommerce Development That Sells | WB-Digitech')
+
+@section('meta_description', 'Grow your sales with our custom ecom solutions at WB-Digitech which present you with scalable, secure, and performance oriented online stores for growth.')
+
 
 @section('content')
     <link rel="stylesheet" href="{{ asset('css/services.css') }}">

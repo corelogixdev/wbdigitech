@@ -1,6 +1,8 @@
 @extends('layouts.homelayout')
 
-@section('title', 'Website Design & Development - WB-DIGITECH')
+@section('title', 'Beautiful Website Design That Converts | WB-Digitech')
+
+@section('meta_description', 'Stand out with our great website design at WB-Digitech which includes user centered layouts, mobile optimized visuals, and intuitive experiences that increase engagement.')
 
 @section('content')
 <link rel="stylesheet" href="{{ asset('css/services.css') }}">

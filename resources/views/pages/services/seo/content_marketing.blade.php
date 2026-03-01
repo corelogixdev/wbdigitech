@@ -1,7 +1,7 @@
 @extends('layouts.homelayout')
 
 
-@section('title', 'Content Marketing Services in Dubai')
+@section('title', 'Strategic Content Marketing That Builds Brands | WB-Digitech')
 @section('meta_description', 'Our content marketing services Dubai brands rely on are built for people first and search engines second. Strategic, honest, and growth-focused content.')
 
 

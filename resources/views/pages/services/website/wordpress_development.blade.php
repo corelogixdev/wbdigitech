@@ -1,6 +1,6 @@
 @extends('layouts.homelayout')
 
-@section('title', 'WordPress Development Company in Dubai | WB Digitech')
+@section('title', 'High-Performance WordPress Development | WB-Digitech')
 
 @section('meta')
     <meta name="description"

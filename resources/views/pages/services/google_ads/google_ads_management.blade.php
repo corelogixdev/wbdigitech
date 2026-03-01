@@ -1,6 +1,8 @@
 @extends('layouts.homelayout')
 
-@section('title', 'Google Ads Management Agency in Dubai - WB-DIGITECH')
+@section('title', 'Google Ads Management That Drives ROI | WB-Digitech')
+
+@section('meta_description', 'Max out on your conversions at the lowest ad spend with the help of our Google Ads management. At WB-Digitech we put together targeted campaigns which get you clicks, calls and customers.')
 
 @section('content')
     <link rel="stylesheet" href="{{ asset('css/services.css') }}">

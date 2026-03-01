@@ -1,6 +1,6 @@
 @extends('layouts.homelayout')
 
-@section('title', 'Amazon Marketing Services That Actually Sell')
+@section('title', 'Amazon Marketing That Boosts Sales Fast | WB-Digitech')
 
 @section('meta')
     <meta name="description"

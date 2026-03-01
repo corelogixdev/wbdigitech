@@ -1,6 +1,9 @@
 @extends('layouts.homelayout')
 
-@section('title', 'Blogs - WB-DIGITECH')
+@section('title', 'Digital Growth Insights & Marketing Tips | WB-Digitech Blog')
+
+@section('meta_description', 'Check out the WB-Digitech blog for in depth looks at SEO, web development, design, digital marketing, ecommerce and the strategies which grow brands online.')
+
 
 @section('content')
 

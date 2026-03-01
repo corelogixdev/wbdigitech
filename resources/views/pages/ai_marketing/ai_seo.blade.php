@@ -1,6 +1,6 @@
 @extends('layouts.homelayout')
 
-@section('title', 'AI-Powered SEO Services in UAE | WB-DigiTech')
+@section('title', 'Next-Gen AI SEO for Faster Rankings | WB-Digitech')
 @section('meta_description', "Boost your search engine rankings with WB-DigiTech's AI Powered SEO services. We use advanced AI in SEO, content optimization, and smart analytics which in turn we put into play for your sustainable organic growth.")
 
 @section('content')

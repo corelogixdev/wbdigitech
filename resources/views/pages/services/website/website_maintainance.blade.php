@@ -1,6 +1,9 @@
 @extends('layouts.homelayout')
 
-@section('title', 'Website Maintenance Experts in Dubai - WB-DIGITECH')
+@section('title', 'Reliable Website Maintenance Services | WB-Digitech')
+
+@section('meta_description', 'Keep your site secure, updated and at peak performance with WB-Digitech’s professional website maintenance uptime, updates, backups, and peace of mind.')
+
 
 @section('content')
 <link rel="stylesheet" href="{{ asset('css/services.css') }}">

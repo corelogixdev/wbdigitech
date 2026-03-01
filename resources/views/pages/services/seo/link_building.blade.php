@@ -1,6 +1,6 @@
 @extends('layouts.homelayout')
 
-@section('title', 'Affordable Link Building Services in Dubai - WB-DIGITECH')
+@section('title', 'Authority Link Building That Ranks Higher | WB-Digitech')
 
 @section('meta')
     <meta name="description"

@@ -1,6 +1,6 @@
 @extends('layouts.homelayout')
 
-@section('title', 'Leaflet Design Service in Dubai')
+@section('title', 'Leaflet Designs That Grab Instant Attention | WB-Digitech')
 @section('meta_description', 'Looking for a leaflet design service in Dubai? Our leaflet design experts create eye-catching, high-impact leaflet designs that help your brand grow.')
 
 @section('content')
