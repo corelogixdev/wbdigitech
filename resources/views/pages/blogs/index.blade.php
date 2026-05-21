@@ -47,14 +47,14 @@
                                             </div>
                                         </div>
                                         <div class="tp-blog-content text-center mt-3">
-                                            <span class="text-muted"><a href="#">Blog</a></span>
+                                            <!-- <span class="text-muted"><a href="#"></a></span> -->
                                             <h4 class="tp-blog-title-sm mt-2">
                                                 <a class="text-dark" href="{{ route('blogs.public.show', $blog->slug) }}">
                                                     {{ $blog->title }}
                                                 </a>
                                             </h4>
                                             <p class="text-muted mt-1">
-                                                {{ Str::limit(strip_tags(html_entity_decode($blog->content)), 100, '...') }}
+                                                <a class="text-dark" href="{{ route('blogs.public.show', $blog->slug) }}">Read More</a>
                                             </p>
                                         </div>
                                     </div>
