@@ -125,7 +125,8 @@ a {
     background: #f9f9f9;
     padding: 20px;
     border-radius: 12px;
-    margin-bottom: 30px;
+    margin-bottom: -31px;
+    margin-top: 20px;
     margin-left: 31px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
