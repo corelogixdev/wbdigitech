@@ -799,3 +799,65 @@
     position: static !important;
     /* z-index: auto !important; */
 }
+
+/* ========================================================= */
+/* GLOBAL RESPONSIVE OVERRIDES - LAPTOPS, TABLETS, MOBILE    */
+/* ========================================================= */
+
+/* General Image Responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Laptops & Tablets Landscape (992px - 1199px) */
+@media (max-width: 1199px) {
+    .scrolling-content span { font-size: 3.5rem; margin-right: 50px; }
+    .h1-home-page { font-size: 2.2rem; }
+    .tp-about-content h2.tp-section-title { font-size: 2rem; }
+    .title { font-size: 1.8rem; }
+}
+
+/* Tablets Portrait (768px - 991px) */
+@media (max-width: 991px) {
+    .scrolling-content span { font-size: 2.8rem; margin-right: 30px; }
+    .h1-home-page { font-size: 1.8rem; }
+    .tp-about-content h2.tp-section-title { font-size: 1.6rem; }
+    
+    .team-img img { height: 280px; }
+    
+    .ab-about-right-thumb img:first-child { width: 100%; }
+    .ab-about-right-thumb img:last-child { display: none; /* Hide overlapping image on small screens */ }
+}
+
+/* Mobile Landscape (576px - 767px) */
+@media (max-width: 767px) {
+    .scrolling-content span { font-size: 2.2rem; margin-right: 20px; }
+    .h1-home-page { font-size: 1.5rem; }
+    
+    .tp-about-area { padding: 40px 0; }
+    .tp-testimonial-area { padding: 40px 0; }
+    .blog-details-realated-area { padding: 40px 0; }
+    
+    /* Improve testimonial sliders */
+    .testimonial-card, .review-summary-card { padding: 15px; margin-bottom: 20px; }
+    .tp-testimonial-item { min-height: auto; }
+}
+
+/* Mobile Portrait (< 576px) */
+@media (max-width: 575px) {
+    .scrolling-content span { font-size: 1.8rem; margin-right: 15px; }
+    .arrow { width: 20px; height: 20px; }
+    
+    .h1-home-page { font-size: 1.4rem; }
+    .tp-about-content h2.tp-section-title { font-size: 1.4rem; }
+    
+    .btn-gradient-primary { padding: 10px 20px; font-size: 0.9rem; }
+    
+    .we-promise-banner { padding: 8px 0; }
+    
+    .team-img img { height: auto; aspect-ratio: 1; }
+    
+    #abouT-info span, #about-info span { font-size: 16px; }
+    #abouT-info p, #about-info p { font-size: 14px; }
+}

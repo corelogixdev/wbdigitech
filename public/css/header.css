@@ -239,3 +239,45 @@ body.has-sticky-header {
         display: block;
     }
 }
+
+/* ========================================================= */
+/* GLOBAL RESPONSIVE OVERRIDES - LAPTOPS, TABLETS, MOBILE    */
+/* ========================================================= */
+
+/* Laptops & Tablets Landscape (992px - 1199px) */
+@media (max-width: 1199px) {
+    /* Ensure header padding is safe */
+    .header-top-black .small { font-size: 12px; }
+}
+
+/* Tablets Portrait (768px - 991px) */
+@media (max-width: 991px) {
+    .tp-offcanvas-area { width: 350px !important; }
+}
+
+/* Mobile Landscape (576px - 767px) */
+@media (max-width: 767px) {
+    .tp-offcanvas-area { width: 100% !important; max-width: 100% !important; padding: 15px; }
+    
+    /* Ensure the sticky header stays at top but scales correctly */
+    .header-sticky {
+        padding: 5px 0;
+    }
+    
+    body.has-sticky-header {
+        padding-top: 80px; 
+    }
+}
+
+/* Mobile Portrait (< 576px) */
+@media (max-width: 575px) {
+    .tp-offcanvas-area { width: 100% !important; right: -100%; }
+    .tp-offcanvas-area.opened { right: 0; }
+    
+    body.has-sticky-header {
+        padding-top: 70px; 
+    }
+    
+    /* Ensure navigation links are readable */
+    .tp-offcanvas-area .has-dropdown > a { font-size: 15px; padding: 10px; }
+}
