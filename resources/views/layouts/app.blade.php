@@ -7,37 +7,57 @@
 
         <title>{{ config('app.name', 'Laravel') }}</title>
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        
-        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
-
-        <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Bootstrap Icons -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 
-        <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+        <style>
+            /* Lock the screen container completely */
+            .app-container {
+                height: 100vh;
+                max-height: 100vh;
+                overflow: hidden;
+            }
+
+            /* This container controls all your page data independent of the sidebar */
+            .main-content-wrapper {
+                flex-grow: 1;
+                height: 100vh;
+                overflow-y: auto; /* Only this center panel handles scrolling now */
+                transition: padding-left 0.25s ease-in-out;
+            }
+            
+            /* Desktop View spacing protection */
+            @media (min-width: 992px) {
+                .sidebar-is-open .main-content-wrapper {
+                    padding-left: 260px; 
+                }
+            }
+        </style>
     </head>
-    <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100">
-            @include('layouts.navigation')
+    <body class="font-sans antialiased sidebar-is-open" x-data="{ sidebarOpen: true }" :class="{ 'sidebar-is-open': sidebarOpen }">
+        
+        <div class="d-flex app-container bg-light w-100">
+            
+            @include('layouts.sidebar')
 
-            <!-- Page Heading -->
-            @isset($header)
-                <header class="bg-white shadow">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                        {{ $header }}
-                    </div>
-                </header>
-            @endisset
+            <div class="main-content-wrapper">
+                @include('layouts.navigation')
 
-            <!-- Page Content -->
-            <main>
-                {{ $slot }}
-            </main>
+                @isset($header)
+                    <header class="bg-white shadow-sm border-bottom">
+                        <div class="container-fluid py-3 px-4">
+                            {{ $header }}
+                        </div>
+                    </header>
+                @endisset
+
+                <main class="p-4">
+                    {{ $slot }}
+                </main>
+            </div>
         </div>
+
     </body>
 </html>
