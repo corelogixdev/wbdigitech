@@ -43,6 +43,16 @@
   <link rel="stylesheet" href="{{ asset('css/new-assets/css/custom-animation.css') }}">
   <link rel="stylesheet" href="{{ asset('css/new-assets/css/main.css') }}">
   <link rel="stylesheet" href="{{ asset('css/new-assets/css/style.integration.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+  
+  <style>
+    /* intl-tel-input custom styles to match wb-custom-input */
+    .iti { width: 100%; display: block; }
+    .iti__flag { background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/img/flags.png"); }
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      .iti__flag { background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/img/flags@2x.png"); }
+    }
+  </style>
 
   <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
@@ -143,6 +153,42 @@
   </script>
   <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var phoneInputs = document.querySelectorAll(".phone-input-flag");
+        
+        phoneInputs.forEach(function(input) {
+            var iti = window.intlTelInput(input, {
+                initialCountry: "ae",
+                separateDialCode: true,
+                preferredCountries: ["ae", "pk", "in", "us", "gb"],
+                utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+            });
+            
+            var form = input.closest('form');
+            if(form) {
+                // Find or create hidden country code input
+                var hiddenCode = form.querySelector('.country-code-hidden');
+                if(!hiddenCode) {
+                    hiddenCode = document.createElement('input');
+                    hiddenCode.type = 'hidden';
+                    hiddenCode.name = 'country_code';
+                    hiddenCode.className = 'country-code-hidden';
+                    form.appendChild(hiddenCode);
+                }
+                
+                // Update hidden field on init
+                hiddenCode.value = "+" + iti.getSelectedCountryData().dialCode;
+                
+                // Update hidden field on change
+                input.addEventListener("countrychange", function() {
+                    hiddenCode.value = "+" + iti.getSelectedCountryData().dialCode;
+                });
+            }
+        });
+    });
+  </script>
 </body>
 
 </html>

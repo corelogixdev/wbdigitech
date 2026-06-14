@@ -536,247 +536,305 @@
                             <nav class="tp-main-menu-content">
                                 <ul>
                                     <li><a href={{ route('about') }}>About Us</a></li>
-                                    <li class="has-dropdown"><a href="#">What We Do</a>
-                                        <div class="tp-submenu submenu tp-mega-menu">
-                                            <div class="tp-menu-fullwidth">
-                                                <div class="tp-megamenu-portfolio p-relative">
-                                                    <div class="tp-megamenu-portfolio-banner d-none"><img
-                                                            src="{{ asset('css/new-assets/img/menu/portfolio-menu/portfolio.png')}}"
-                                                            alt="Wbdigitech Portfolio" loading="lazy" decoding="async">
+                                    <li class="has-dropdown megamenu-trigger">
+                                        <a href="#">What We Do <i class="fas fa-chevron-down toggle-arrow"></i></a>
+                                        <div class="tp-submenu submenu tp-mega-menu modern-mega-menu">
+                                            <div class="mega-menu-container">
+                                                <!-- Left Panel (Overview) -->
+                                                <div class="mega-menu-overview">
+                                                    <div class="overview-content">
+                                                        <span class="badge bg-light text-dark mb-3 rounded-pill px-3 py-2 fw-bold" style="font-size:12px;"><i class="fas fa-star text-warning me-1"></i> SERVICE STACK</span>
+                                                        <h3 class="overview-title mb-3" style="color: #0A3D62; font-weight:800; line-height:1.2; font-size:20px;">Pick the right digital setup path with fewer surprises.</h3>
+                                                        <p class="overview-desc mb-4" style="color: #4a5568; font-size:15px; line-height:1.5;">Web development, Google Ads, SEO, Mobile Apps, Social Media, and Graphic Design arranged by business need.</p>
+                                                        
+                                                        <div class="row g-2 mb-4">
+                                                            <div class="col-6"><div class="border rounded p-2 text-center" style="font-size:13px; font-weight:600; color:#0A3D62;">Fast setup</div></div>
+                                                            <div class="col-6"><div class="border rounded p-2 text-center" style="font-size:13px; font-weight:600; color:#0A3D62;">Clear process</div></div>
+                                                            <div class="col-6"><div class="border rounded p-2 text-center" style="font-size:13px; font-weight:600; color:#0A3D62;">Full support</div></div>
+                                                            <div class="col-6"><div class="border rounded p-2 text-center" style="font-size:13px; font-weight:600; color:#0A3D62;">ROI focused</div></div>
+                                                        </div>
+
+                                                        <a href="{{ route('contact') }}" class="fw-bold text-uppercase" style="color: #0A3D62; text-decoration:none; font-size:13px; letter-spacing:1px;">VIEW ALL SERVICES <i class="fas fa-arrow-right ms-1"></i></a>
                                                     </div>
-                                                    <div class="row gx-30">
-                                                        <div class="col-xxl-12 col-xl-12">
-                                                            <div class="tp-megamenu-list-box">
-                                                                <div class="row gx-30">
-                                                                    <!-- Web Design & Development -->
-                                                                    <div class="col-xxl-2 col-xl-2">
-                                                                        <div class="tp-megamenu-list">
-                                                                            <h4 class="tp-megamenu-title"><a
-                                                                                    href="{{ route('services.web_dev')}}">WEB
-                                                                                    DESIGN & DEVELOPMENT</a></h4>
-                                                                            <div
-                                                                                class="tp-megamenu-list-wrap tp-portfolio-menu-style">
-                                                                                <ul>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.web_dev') }}">Website
-                                                                                            Development</a></li>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.content_writing') }}">Content
-                                                                                            Writing</a></li>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.ecommerce_development') }}">E-commerce
-                                                                                            Development</a></li>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.shopify_development') }}">Shopify
-                                                                                            Development</a></li>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.website_design') }}">Website
-                                                                                            Design</a></li>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.website_maintainance') }}">Website
-                                                                                            Maintenance</a></li>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.wordpress_development') }}">WordPress
-                                                                                            Development</a></li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!-- Google Ads Management -->
-                                                                    <div class="col-xxl-2 col-xl-2">
-                                                                        <div class="tp-megamenu-list">
-                                                                            <h4 class="tp-megamenu-title"><a
-                                                                                    href="{{ route('services.google_ads_management') }}">GOOGLE
-                                                                                    ADS MANAGEMENT</a></h4>
-                                                                            <div
-                                                                                class="tp-megamenu-list-wrap tp-portfolio-menu-style">
-                                                                                <ul>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.amazon_marketing') }}">Amazon
-                                                                                            Marketing</a></li>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.ppc') }}">PPC</a>
-                                                                                    </li>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.google_shopping_ads') }}">Google
-                                                                                            Shopping Ads</a></li>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.lead_generation') }}">Lead
-                                                                                            Generation</a></li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!-- SEO / ASO -->
-                                                                    <div class="col-xxl-2 col-xl-2">
-                                                                        <div
-                                                                            class="tp-megamenu-list tp-megamenu-list-2">
-                                                                            <h4 class="tp-megamenu-title"><a
-                                                                                    href="{{route('services.seo')}}">SEO
-                                                                                    / ASO</a></h4>
-                                                                            <div class="tp-megamenu-list-wrap">
-                                                                                <ul class="">
-                                                                                    <li><a
-                                                                                            href="{{ route('services.page_optimization') }}">Page
-                                                                                            Optimization</a></li>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.google_business_profile_seo') }}">Google
-                                                                                            Business Profile SEO</a>
-                                                                                    </li>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.seo-audit') }}">SEO
-                                                                                            Audit</a></li>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.link_building') }}">Link
-                                                                                            Building</a></li>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.ecommerce_seo') }}">E-commerce
-                                                                                            SEO</a></li>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.technical_seo') }}">Technical
-                                                                                            SEO</a></li>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.content_marketing') }}">Content
-                                                                                            Marketing</a></li>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.guest_posting') }}">Guest
-                                                                                            Posting</a></li>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.local_seo') }}">Local
-                                                                                            SEO</a></li>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.app_store_optimization') }}">App
-                                                                                            Store Optimization (ASO)</a>
-                                                                                    </li>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.play_store_seo') }}">Play
-                                                                                            Store SEO</a></li>
+                                                </div>
 
-                                                                                </ul>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!-- Mobile Application Development -->
-                                                                    <div class="col-xxl-2 col-xl-2">
-                                                                        <div
-                                                                            class="tp-megamenu-list tp-megamenu-list-2">
-                                                                            <h4 class="tp-megamenu-title"><a
-                                                                                    href="{{route('services.mobile')}}">MOBILE
-                                                                                    APP DEVELOPMENT</a></h4>
-                                                                            <div class="tp-megamenu-list-wrap">
-                                                                                <ul>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.android_app') }}">Android
-                                                                                            App Development</a></li>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.react_native_app') }}">React
-                                                                                            Native App Development</a>
-                                                                                    </li>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.hybrid_app') }}">Hybrid
-                                                                                            App Development</a></li>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.app_maintenance') }}">App
-                                                                                            Maintenance</a></li>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.iphone_app') }}">iPhone
-                                                                                            App Development</a></li>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.flutter_app') }}">Flutter
-                                                                                            App Development</a></li>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.wearable_app') }}">Wearable
-                                                                                            App Development</a></li>
+                                                <!-- Right Panel (Scrollable Columns) -->
+                                                <div class="mega-menu-services">
+                                                    <!-- Column 1: Web Design & Development -->
+                                                    <div class="service-column">
+                                                        <h4 class="service-col-title">WEB DESIGN & DEVELOPMENT</h4>
+                                                        <div class="service-scroll-area">
+                                                            <a href="{{ route('services.web_dev') }}" class="service-card">
+                                                                <span class="sc-title">Website Development</span>
+                                                                <span class="sc-desc">End-to-end support to launch your company online.</span>
+                                                            </a>
+                                                            <a href="{{ route('services.content_writing') }}" class="service-card">
+                                                                <span class="sc-title">Content Writing</span>
+                                                                <span class="sc-desc">Engaging, SEO-optimized copy for your brand.</span>
+                                                            </a>
+                                                            <a href="{{ route('services.ecommerce_development') }}" class="service-card">
+                                                                <span class="sc-title">E-commerce Development</span>
+                                                                <span class="sc-desc">Custom e-commerce platforms to scale sales.</span>
+                                                            </a>
+                                                            <a href="{{ route('services.shopify_development') }}" class="service-card">
+                                                                <span class="sc-title">Shopify Development</span>
+                                                                <span class="sc-desc">Fast, secure, and beautiful Shopify stores.</span>
+                                                            </a>
+                                                            <a href="{{ route('services.website_design') }}" class="service-card">
+                                                                <span class="sc-title">Website Design</span>
+                                                                <span class="sc-desc">Stunning UI/UX design that converts visitors.</span>
+                                                            </a>
+                                                            <a href="{{ route('services.website_maintainance') }}" class="service-card">
+                                                                <span class="sc-title">Website Maintenance</span>
+                                                                <span class="sc-desc">Keeping your site secure, fast, and updated.</span>
+                                                            </a>
+                                                            <a href="{{ route('services.wordpress_development') }}" class="service-card">
+                                                                <span class="sc-title">WordPress Development</span>
+                                                                <span class="sc-desc">Flexible and scalable WordPress solutions.</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
 
-                                                                                </ul>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!-- Social Media Marketing -->
-                                                                    <div class="col-xxl-2 col-xl-2">
-                                                                        <div
-                                                                            class="tp-megamenu-list tp-megamenu-list-2">
-                                                                            <h4 class="tp-megamenu-title"><a
-                                                                                    href="{{route('services.smm')}}">SOCIAL
-                                                                                    MEDIA MARKETING</a></h4>
-                                                                            <div class="tp-megamenu-list-wrap">
-                                                                                <ul>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.facebook_advertising') }}">Facebook
-                                                                                            Advertising</a></li>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.linkedin_advertising') }}">LinkedIn
-                                                                                            Advertising</a></li>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.pinterest_advertising') }}">Pinterest
-                                                                                            Advertising</a></li>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.instagram_advertising') }}">Instagram
-                                                                                            Advertising</a></li>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.twitter_advertising') }}">Twitter
-                                                                                            Advertising</a></li>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.youtube_ads') }}">YouTube
-                                                                                            Ads</a></li>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.tiktok_ads') }}">TikTok
-                                                                                            Ads</a></li>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.snap_chat_ads') }}">Snapchat
-                                                                                            Ads</a></li>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.whatsapp_marketing') }}">WhatsApp
-                                                                                            Marketing</a></li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!-- Graphic Designing -->
-                                                                    <div class="col-xxl-2 col-xl-2">
-                                                                        <div
-                                                                            class="tp-megamenu-list tp-megamenu-list-2">
-                                                                            <h4 class="tp-megamenu-title"><a
-                                                                                    href="{{route('services.graphic')}}">GRAPHIC
-                                                                                    DESIGNING</a></h4>
-                                                                            <div class="tp-megamenu-list-wrap">
-                                                                                <ul>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.logo_design') }}">Logo
-                                                                                            Design</a></li>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.leaflet_design') }}">Leaflet
-                                                                                            Design</a></li>
-                                                                                    <li><a
-                                                                                            href="{{ route('services.brochure_design') }}">Brochure
-                                                                                            Design</a></li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                    <!-- Column 2: Google Ads Management -->
+                                                    <div class="service-column">
+                                                        <h4 class="service-col-title">GOOGLE ADS MANAGEMENT</h4>
+                                                        <div class="service-scroll-area">
+                                                            <a href="{{ route('services.amazon_marketing') }}" class="service-card">
+                                                                <span class="sc-title">Amazon Marketing</span>
+                                                                <span class="sc-desc">Optimize your product listings for higher sales.</span>
+                                                            </a>
+                                                            <a href="{{ route('services.ppc') }}" class="service-card">
+                                                                <span class="sc-title">PPC</span>
+                                                                <span class="sc-desc">Pay-per-click campaigns that drive instant traffic.</span>
+                                                            </a>
+                                                            <a href="{{ route('services.google_shopping_ads') }}" class="service-card">
+                                                                <span class="sc-title">Google Shopping Ads</span>
+                                                                <span class="sc-desc">Showcase products directly on Google search.</span>
+                                                            </a>
+                                                            <a href="{{ route('services.lead_generation') }}" class="service-card">
+                                                                <span class="sc-title">Lead Generation</span>
+                                                                <span class="sc-desc">Targeted strategies to capture high-quality leads.</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Column 3: SEO / ASO -->
+                                                    <div class="service-column">
+                                                        <h4 class="service-col-title">SEO / ASO</h4>
+                                                        <div class="service-scroll-area">
+                                                            <a href="{{ route('services.page_optimization') }}" class="service-card">
+                                                                <span class="sc-title">Page Optimization</span>
+                                                                <span class="sc-desc">Enhance on-page elements for better rankings.</span>
+                                                            </a>
+                                                            <a href="{{ route('services.google_business_profile_seo') }}" class="service-card">
+                                                                <span class="sc-title">Google Business Profile</span>
+                                                                <span class="sc-desc">Dominate local searches and map results.</span>
+                                                            </a>
+                                                            <a href="{{ route('services.seo-audit') }}" class="service-card">
+                                                                <span class="sc-title">SEO Audit</span>
+                                                                <span class="sc-desc">Deep technical analysis of your website.</span>
+                                                            </a>
+                                                            <a href="{{ route('services.link_building') }}" class="service-card">
+                                                                <span class="sc-title">Link Building</span>
+                                                                <span class="sc-desc">Acquire high-quality backlinks to boost authority.</span>
+                                                            </a>
+                                                            <a href="{{ route('services.ecommerce_seo') }}" class="service-card">
+                                                                <span class="sc-title">E-commerce SEO</span>
+                                                                <span class="sc-desc">Increase organic visibility for your store.</span>
+                                                            </a>
+                                                            <a href="{{ route('services.technical_seo') }}" class="service-card">
+                                                                <span class="sc-title">Technical SEO</span>
+                                                                <span class="sc-desc">Fix crawlability, indexation, and speed issues.</span>
+                                                            </a>
+                                                            <a href="{{ route('services.content_marketing') }}" class="service-card">
+                                                                <span class="sc-title">Content Marketing</span>
+                                                                <span class="sc-desc">Strategic content creation that drives traffic.</span>
+                                                            </a>
+                                                            <a href="{{ route('services.guest_posting') }}" class="service-card">
+                                                                <span class="sc-title">Guest Posting</span>
+                                                                <span class="sc-desc">Publish content on authoritative websites.</span>
+                                                            </a>
+                                                            <a href="{{ route('services.local_seo') }}" class="service-card">
+                                                                <span class="sc-title">Local SEO</span>
+                                                                <span class="sc-desc">Attract customers in your specific geographic area.</span>
+                                                            </a>
+                                                            <a href="{{ route('services.app_store_optimization') }}" class="service-card">
+                                                                <span class="sc-title">App Store Optimization (ASO)</span>
+                                                                <span class="sc-desc">Improve app visibility and download rates.</span>
+                                                            </a>
+                                                            <a href="{{ route('services.play_store_seo') }}" class="service-card">
+                                                                <span class="sc-title">Play Store SEO</span>
+                                                                <span class="sc-desc">Rank higher in the Google Play Store.</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Column 4: Mobile Application -->
+                                                    <div class="service-column">
+                                                        <h4 class="service-col-title">MOBILE APP DEVELOPMENT</h4>
+                                                        <div class="service-scroll-area">
+                                                            <a href="{{ route('services.android_app') }}" class="service-card">
+                                                                <span class="sc-title">Android App Development</span>
+                                                                <span class="sc-desc">Native apps for the world's largest platform.</span>
+                                                            </a>
+                                                            <a href="{{ route('services.react_native_app') }}" class="service-card">
+                                                                <span class="sc-title">React Native App</span>
+                                                                <span class="sc-desc">Cross-platform apps with near-native performance.</span>
+                                                            </a>
+                                                            <a href="{{ route('services.hybrid_app') }}" class="service-card">
+                                                                <span class="sc-title">Hybrid App Development</span>
+                                                                <span class="sc-desc">Cost-effective apps working on both iOS & Android.</span>
+                                                            </a>
+                                                            <a href="{{ route('services.app_maintenance') }}" class="service-card">
+                                                                <span class="sc-title">App Maintenance</span>
+                                                                <span class="sc-desc">Ongoing updates, bug fixes, and improvements.</span>
+                                                            </a>
+                                                            <a href="{{ route('services.iphone_app') }}" class="service-card">
+                                                                <span class="sc-title">iPhone App Development</span>
+                                                                <span class="sc-desc">Premium native iOS applications.</span>
+                                                            </a>
+                                                            <a href="{{ route('services.flutter_app') }}" class="service-card">
+                                                                <span class="sc-title">Flutter App Development</span>
+                                                                <span class="sc-desc">Beautiful, fast apps using Google's UI toolkit.</span>
+                                                            </a>
+                                                            <a href="{{ route('services.wearable_app') }}" class="service-card">
+                                                                <span class="sc-title">Wearable App Development</span>
+                                                                <span class="sc-desc">Apps for smartwatches and other wearable devices.</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Column 5: Social Media Marketing -->
+                                                    <div class="service-column">
+                                                        <h4 class="service-col-title">SOCIAL MEDIA MARKETING</h4>
+                                                        <div class="service-scroll-area">
+                                                            <a href="{{ route('services.facebook_advertising') }}" class="service-card">
+                                                                <span class="sc-title">Facebook Advertising</span>
+                                                                <span class="sc-desc">Highly targeted ad campaigns on Facebook.</span>
+                                                            </a>
+                                                            <a href="{{ route('services.linkedin_advertising') }}" class="service-card">
+                                                                <span class="sc-title">LinkedIn Advertising</span>
+                                                                <span class="sc-desc">B2B marketing to reach professionals and decision makers.</span>
+                                                            </a>
+                                                            <a href="{{ route('services.pinterest_advertising') }}" class="service-card">
+                                                                <span class="sc-title">Pinterest Advertising</span>
+                                                                <span class="sc-desc">Visual discovery ads to drive sales and traffic.</span>
+                                                            </a>
+                                                            <a href="{{ route('services.instagram_advertising') }}" class="service-card">
+                                                                <span class="sc-title">Instagram Advertising</span>
+                                                                <span class="sc-desc">Engaging visual campaigns for brand awareness.</span>
+                                                            </a>
+                                                            <a href="{{ route('services.twitter_advertising') }}" class="service-card">
+                                                                <span class="sc-title">Twitter Advertising</span>
+                                                                <span class="sc-desc">Real-time marketing and conversation targeting.</span>
+                                                            </a>
+                                                            <a href="{{ route('services.youtube_ads') }}" class="service-card">
+                                                                <span class="sc-title">YouTube Ads</span>
+                                                                <span class="sc-desc">Video advertising on the world's largest video platform.</span>
+                                                            </a>
+                                                            <a href="{{ route('services.tiktok_ads') }}" class="service-card">
+                                                                <span class="sc-title">TikTok Ads</span>
+                                                                <span class="sc-desc">Viral, short-form video marketing.</span>
+                                                            </a>
+                                                            <a href="{{ route('services.snap_chat_ads') }}" class="service-card">
+                                                                <span class="sc-title">Snapchat Ads</span>
+                                                                <span class="sc-desc">AR lenses and immersive ads for younger audiences.</span>
+                                                            </a>
+                                                            <a href="{{ route('services.whatsapp_marketing') }}" class="service-card">
+                                                                <span class="sc-title">WhatsApp Marketing</span>
+                                                                <span class="sc-desc">Direct messaging campaigns and customer support.</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Column 6: Graphic Designing -->
+                                                    <div class="service-column">
+                                                        <h4 class="service-col-title">GRAPHIC DESIGNING</h4>
+                                                        <div class="service-scroll-area">
+                                                            <a href="{{ route('services.logo_design') }}" class="service-card">
+                                                                <span class="sc-title">Logo Design</span>
+                                                                <span class="sc-desc">Memorable and unique brand identities.</span>
+                                                            </a>
+                                                            <a href="{{ route('services.leaflet_design') }}" class="service-card">
+                                                                <span class="sc-title">Leaflet Design</span>
+                                                                <span class="sc-desc">Eye-catching promotional flyers and leaflets.</span>
+                                                            </a>
+                                                            <a href="{{ route('services.brochure_design') }}" class="service-card">
+                                                                <span class="sc-title">Brochure Design</span>
+                                                                <span class="sc-desc">Professional corporate brochures and catalogs.</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    {{-- AI Marketing Simple Dropdown --}}
+                                    <li class="has-dropdown megamenu-trigger">
+                                        <a href="{{ route('ai_marketing') }}">AI Marketing <i class="fas fa-chevron-down toggle-arrow"></i></a>
+                                        <div class="tp-submenu submenu tp-mega-menu modern-mega-menu compact-mega-menu">
+                                            <div class="mega-menu-container">
+                                                <!-- Left Panel (Overview) -->
+                                                <div class="mega-menu-overview">
+                                                    <div class="overview-content">
+                                                        <span class="badge bg-light text-dark mb-3 rounded-pill px-3 py-2 fw-bold" style="font-size:12px;"><i class="fas fa-robot text-primary me-1"></i> AI AUTOMATION</span>
+                                                        <h3 class="overview-title mb-3" style="color: #0A3D62; font-weight:800; line-height:1.2; font-size:20px;">Unleash the Power of Artificial Intelligence.</h3>
+                                                        <p class="overview-desc mb-4" style="color: #4a5568; font-size:15px; line-height:1.5;">Automate processes, increase conversions, and outsmart your competition with AI-driven marketing and web solutions.</p>
+                                                        
+                                                        <div class="row g-2 mb-4">
+                                                            <div class="col-6"><div class="border rounded p-2 text-center" style="font-size:13px; font-weight:600; color:#0A3D62;">Data-Driven</div></div>
+                                                            <div class="col-6"><div class="border rounded p-2 text-center" style="font-size:13px; font-weight:600; color:#0A3D62;">Higher ROI</div></div>
+                                                        </div>
+
+                                                        <a href="{{ route('contact') }}" class="fw-bold text-uppercase" style="color: #0A3D62; text-decoration:none; font-size:13px; letter-spacing:1px;">GET A FREE AI AUDIT <i class="fas fa-arrow-right ms-1"></i></a>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Right Panel (Scrollable Columns) -->
+                                                <div class="mega-menu-services">
+                                                    <!-- Column 1: AI Marketing Core -->
+                                                    <div class="service-column">
+                                                        <h4 class="service-col-title">INTELLIGENT MARKETING</h4>
+                                                        <div class="service-scroll-area">
+                                                            <a href="{{ route('ai_social_media') }}" class="service-card">
+                                                                <span class="sc-title">AI Social Media Marketing</span>
+                                                                <span class="sc-desc">Automate content generation and engagement.</span>
+                                                            </a>
+                                                            <a href="{{ route('ai_digital_marketing') }}" class="service-card">
+                                                                <span class="sc-title">AI Digital Marketing</span>
+                                                                <span class="sc-desc">Predictive analytics and smart campaigns.</span>
+                                                            </a>
+                                                            <a href="{{ route('ai_google_ads') }}" class="service-card">
+                                                                <span class="sc-title">AI Google Ads</span>
+                                                                <span class="sc-desc">Machine learning for ultimate ad optimization.</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Column 2: AI Web & Tech -->
+                                                    <div class="service-column">
+                                                        <h4 class="service-col-title">AI WEB SOLUTIONS</h4>
+                                                        <div class="service-scroll-area">
+                                                            <a href="{{ route('ai_website') }}" class="service-card">
+                                                                <span class="sc-title">AI Website</span>
+                                                                <span class="sc-desc">Smart, adaptive websites tailored for users.</span>
+                                                            </a>
+                                                            <a href="{{ route('ai_seo') }}" class="service-card">
+                                                                <span class="sc-title">AI Powered SEO</span>
+                                                                <span class="sc-desc">Next-generation semantic search optimization.</span>
+                                                            </a>
+                                                            <a href="{{ route('ai_web_app') }}" class="service-card">
+                                                                <span class="sc-title">AI Web App Development</span>
+                                                                <span class="sc-desc">Custom web applications with integrated AI.</span>
+                                                            </a>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </li>
-                                    {{-- AI Marketing Simple Dropdown --}}
-                                    <li class="has-dropdown">
-                                        <a href="{{ route('ai_marketing') }}">AI Marketing</a>
-                                        <ul class="submenu">
-                                            <li><a href="{{ route('ai_social_media') }}">AI Social Media Marketing</a>
-                                            </li>
-                                            <li><a href="{{ route('ai_website') }}">AI Website</a></li>
-                                            <li><a href="{{ route('ai_digital_marketing') }}">AI Digital Marketing</a>
-                                            </li>
-                                            <li><a href="{{ route('ai_seo') }}">AI Powered SEO</a></li>
-                                            <li><a href="{{ route('ai_google_ads') }}">AI Google Ads</a></li>
-                                            <li><a href="{{ route('ai_web_app') }}">AI Web App Development</a></li>
-                                        </ul>
-                                    </li>
-
+                                    
                                     <li><a href="{{ route('blogs.public')}}">Blog</a></li>
                                     <li><a href="{{ route('portfolio.public')}}">Portfolio</a></li>
                                     {{-- <li><a href="{{ route('careers.public') }}">Careers</a></li> --}}

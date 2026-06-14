@@ -11,46 +11,14 @@
 
     <div class="main-wrapper">
 
-        <!-- Spacer below header -->
-        <div style="padding: 80px"></div>
-
-        <!-- Hero Title -->
-        <div class="tp-hero-title-wrap mb-35 text-center">
-            <h2 class="tp-hero-title gradient-text">
-                YouTube Marketing Dubai
-            </h2>
-        </div>
-
-        <!-- Hero Content -->
-        <div class="tp-hero-content text-center">
-            <p class="delay-load">
-                YouTube marketing Dubai is a must for brands which want visibility, authority, and scalable growth. At WB
-                Digitech we put forward solutions which see businesses take over video search and paid placements with our
-                data based campaigns that perform.
-            </p>
-            <p class="delay-load">
-                As a proven team in the YouTube marketing agency, we develop targeted video advertising which puts your
-                brand in front of the correct audience at the time which is best for them to see, engage, and buy.
-            </p>
-            <div class="hero-btns mt-4">
-                <a href="{{ route('contact') }}" class="btn btn-gradient">Get a Free Quote</a>
-            </div>
-        </div>
-
-        <!-- Banner Image -->
-        <section class="section-box">
-            <div class="bg-gray-100">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="tp-blog-standard-thumb-box p-relative">
-                                <img src="{{ asset('css/new-assets/smm/youtube_adv.webp') }}" alt="YouTube Marketing Dubai">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <x-service-hero
+            image="css/new-assets/smm/youtube_adv.webp" 
+            title="YouTube Marketing Dubai"
+            description="YouTube marketing Dubai is a must for brands which want visibility, authority, and scalable growth. At WB Digitech we put forward solutions which see businesses take over video search and paid placements with our data based campaigns that perform."
+            serviceCategory="Social Media"
+            serviceName="Social Media"
+        >
+        </x-service-hero>
 
         <!-- Content & Sidebar -->
         <div class="container-flex">
@@ -76,169 +44,178 @@
 
             <!-- Content -->
             <div class="content-col">
-                <br>
 
-                <h2>Why Choose WB Digitech as Your YouTube Marketing Agency?</h2>
-                <p>
+<x-service-content-card title="Why Choose WB Digitech as Your YouTube Marketing Agency?">
+<p>
                     Choosing out the best YouTube marketing agency is what sets the stage between you spending your money in
                     vain and seeing real results. We put forth our strategy first which in turn will do the ad placement.
                 </p>
-                <p>What sets us apart:</p>
-                <ul>
+<p>What sets us apart:</p>
+<ul>
                     <li>Audience-first campaign planning</li>
                     <li>Conversion-optimized video ad structures</li>
-                    <li>Advanced targeting & retargeting</li>
+                    <li>Advanced targeting &amp; retargeting</li>
                     <li>Clear reporting with actionable insights</li>
                     <li>Integration with full-funnel digital campaigns</li>
                 </ul>
-                <p>We are a growth partner which also serves as a service provider.</p>
+<p>We are a growth partner which also serves as a service provider.</p>
 
-                <h2>Strategic YouTube Marketing Dubai Services We Offer</h2>
-                <p>Our YouTube marketing Dubai has put together a solution for each stage of your customer journey.</p>
+</x-service-content-card>
 
-                <h3>Campaign Planning & Video Funnel Strategy</h3>
-                <p>
+<x-service-content-card title="Strategic YouTube Marketing Dubai Services We Offer">
+<p>Our YouTube marketing Dubai has put together a solution for each stage of your customer journey.</p>
+<h3>Campaign Planning &amp; Video Funnel Strategy</h3>
+<p>
                     We translate your business goals into a structured YouTube marketing strategy which includes awareness,
                     consideration, and conversion campaigns.
                 </p>
-
-                <h3>Video Ad Creation & Optimization</h3>
-                <p>
+<h3>Video Ad Creation &amp; Optimization</h3>
+<p>
                     In between in stream ads which are skip-able or discovery formats we create high engagement content
                     which gets users out of the scroll and into conversion.
                 </p>
-
-                <h3>Smart Targeting & Audience Segmentation</h3>
-                <p>
+<h3>Smart Targeting &amp; Audience Segmentation</h3>
+<p>
                     Using data from demographics, interests, placements, and remarketing we reach out to the users that
                     actually matter.
                 </p>
-
-                <h3>Performance Tracking & Scaling</h3>
-                <p>
+<h3>Performance Tracking &amp; Scaling</h3>
+<p>
                     In every aspect our campaigns are improved upon and scaled based on which elements perform the best no
                     guess work used.
                 </p>
 
-                <h2>YouTube Advertising Dubai Built for High ROI</h2>
-                <p>
+</x-service-content-card>
+
+<x-service-content-card title="YouTube Advertising Dubai Built for High ROI">
+<p>
                     Effective in Dubai’s YouTube ad game it is beyond the upload of videos; we have fine tuned our
                     strategies which include:
                 </p>
-                <ul>
-                    <li>Watch time & engagement</li>
+<ul>
+                    <li>Watch time &amp; engagement</li>
                     <li>Cost-per-view (CPV) efficiency</li>
                     <li>Conversion tracking</li>
                     <li>Audience retention</li>
                     <li>Brand lift</li>
                 </ul>
-                <p>
+<p>
                     As a performance focused YouTube ad agency we are into continuous testing of ad formats, creatives and
                     targeting to improve results.
                 </p>
 
-                <h2>YouTube Channel Marketing for Long-Term Growth</h2>
-                <p>Beyond free advertising we also focus on YouTube channel marketing which in turn helps brands grow
+</x-service-content-card>
+
+<x-service-content-card title="YouTube Channel Marketing for Long-Term Growth">
+<p>Beyond free advertising we also focus on YouTube channel marketing which in turn helps brands grow
                     naturally along with paid exposure.</p>
-                <p>Includes:</p>
-                <ul>
+<p>Includes:</p>
+<ul>
                     <li>Channel optimization</li>
                     <li>Content positioning</li>
                     <li>Audience retention analysis</li>
                     <li>Growth-focused publishing insights</li>
                 </ul>
-                <p>
+<p>
                     A powerful channel in combination with paid ads creates amplified visibility and authority.
                 </p>
 
-                <h2>How YouTube Marketing Supports Brand Authority</h2>
-                <p>
+</x-service-content-card>
+
+<x-service-content-card title="How YouTube Marketing Supports Brand Authority">
+<p>
                     YouTube is a leading digital marketing platform for trust building. Video which is what YouTube does
                     best enables brands to inform, present, and impact purchase decisions better than any other medium.
                 </p>
-                <p>Our youtube marketing solutions help you: Our YouTube marketing strategies we provide that which will:
+<p>Our youtube marketing solutions help you: Our YouTube marketing strategies we provide that which will:
                 </p>
-                <ul>
+<ul>
                     <li>Appear in video search results</li>
                     <li>Build credibility through consistent exposure</li>
                     <li>Increase brand recall</li>
                     <li>Drive qualified traffic</li>
                 </ul>
 
-                <h2>Integrated Video & Social Media Strategy</h2>
-                <p>
+</x-service-content-card>
+
+<x-service-content-card title="Integrated Video &amp; Social Media Strategy">
+<p>
                     YouTube does best when it is part of a multi platform campaign. We work very closely with our Instagram
                     marketing agency and Twitter marketing company teams which in turn helps us maintain the same message
                     across channels.
                 </p>
-                <p>This multi-channel strategy increases brand presence and sales.</p>
+<p>This multi-channel strategy increases brand presence and sales.</p>
 
-                <h2>Industries We Serve with YouTube Marketing</h2>
-                <p>Our YouTube marketing Dubai services support:</p>
-                <ul>
-                    <li>Real estate & property developers</li>
+</x-service-content-card>
+
+<x-service-content-card title="Industries We Serve with YouTube Marketing">
+<p>Our YouTube marketing Dubai services support:</p>
+<ul>
+                    <li>Real estate &amp; property developers</li>
                     <li>E-commerce brands</li>
-                    <li>SaaS & tech companies</li>
-                    <li>Corporate & B2B services</li>
-                    <li>Education & training businesses</li>
+                    <li>SaaS &amp; tech companies</li>
+                    <li>Corporate &amp; B2B services</li>
+                    <li>Education &amp; training businesses</li>
                 </ul>
-                <p>Each campaign is tailored to audience behavior and business goals.</p>
+<p>Each campaign is tailored to audience behavior and business goals.</p>
 
-                <h2>Our YouTube Marketing Process</h2>
-                <ul>
-                    <li>Business & audience analysis</li>
+</x-service-content-card>
+
+<x-service-content-card title="Our YouTube Marketing Process">
+<ul>
+                    <li>Business &amp; audience analysis</li>
                     <li>Custom YouTube marketing strategy creation</li>
-                    <li>Creative planning & ad setup</li>
-                    <li>Campaign launch & testing</li>
-                    <li>Optimization & scaling</li>
+                    <li>Creative planning &amp; ad setup</li>
+                    <li>Campaign launch &amp; testing</li>
+                    <li>Optimization &amp; scaling</li>
                     <li>Transparent reporting</li>
                 </ul>
-                <p>This process is very systematic in which each campaign we run will produce measurable results.</p>
+<p>This process is very systematic in which each campaign we run will produce measurable results.</p>
 
-                <h2>FAQs – YouTube Marketing Services</h2>
+</x-service-content-card>
 
-                <h4>1. What is in it for me to hire a YouTube marketing agency?</h4>
-                <p>
+
+@php
+$serviceFaqs = [
+    ['question' => '1. What is in it for me to hire a YouTube marketing agency?', 'answer' => '<p>
                     A professional YouTube marketing agency is at home in the world of targeting, bidding, creatives, and
                     analytics and this is what sets us apart from DIY campaigns which are also a great option for some. They
                     are able to craft for you a very precise and effective campaign that will perform better and get you
                     better ROI out of your investment.
-                </p>
-
-                <h4>2. Is marketing on YouTube working for businesses in Dubai?</h4>
-                <p>
+                </p>'],
+    ['question' => '2. Is marketing on YouTube working for businesses in Dubai?', 'answer' => '<p>
                     Yes. YouTube in Dubai is very effective which is a result of high video views, mobile use, and intent
                     based searches.
-                </p>
-
-                <h4>3. What is the comparison of YouTube to other platforms in terms of advertising?</h4>
-                <p>
+                </p>'],
+    ['question' => '3. What is the comparison of YouTube to other platforms in terms of advertising?', 'answer' => '<p>
                     YouTube ad options in Dubai present great visual storytelling, strong brand recall, and precise
                     targeting which is not seen in text based platforms.
-                </p>
-
-                <h4>4. Does YouTube play a role in organic growth?</h4>
-                <p>
+                </p>'],
+    ['question' => '4. Does YouTube play a role in organic growth?', 'answer' => '<p>
                     Absolutely. Combination of ads into your YouTube channel’s marketing plan increases views, subscribers,
                     and long term authority.
-                </p>
-
-                <h4>5. Does marketing on YouTube play a role in other digital channels?</h4>
-                <p>
+                </p>'],
+    ['question' => '5. Does marketing on YouTube play a role in other digital channels?', 'answer' => '<p>
                     Yes. Our YouTube marketing is a natural fit with what we do at the digital marketing agency, Instagram
                     and Twitter campaigns.
-                </p>
+                </p>'],
+];
+@endphp
+<x-accordion-faq :faqs="$serviceFaqs" />
 
-                <h2>Get Started with a Results-Driven YouTube Marketing Agency</h2>
-                <p>
+
+<x-service-content-card title="Get Started with a Results-Driven YouTube Marketing Agency">
+<p>
                     If you are looking to increase your visibility, engagement and conversions, work with WB Digitech the
                     YouTube marketing agency which is the choice of growth oriented brands.
                 </p>
-                <p>
+<p>
                     Let us turn views into results with our team of YouTube marketing experts in Dubai.
                 </p>
 
-            </div>
+</x-service-content-card>
+
+</div>
         </div>
     </div>
 @endsection

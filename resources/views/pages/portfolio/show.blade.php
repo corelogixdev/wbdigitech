@@ -1,73 +1,229 @@
 @extends('layouts.homelayout')
 
+@php
+    use Illuminate\Support\Str;
+    $heroImage = !empty($portfolio->thumbnail) ? asset('storage/' . $portfolio->thumbnail) : asset('css/new-assets/wb_imgs/Portfolio.jpg');
+@endphp
+
 @section('title', $portfolio->title . ' - WB-DIGITECH')
 
 @section('content')
-    <div id="smooth-wrapper">
-        <div id="smooth-content">
-            <main>
-                <!-- Spacer below header -->
-                <div style="padding: 50px"></div>
-                
-                <!-- 🔹 Hero Section with Image + Overlay Title -->
-                <section class="section-box client-section mb-10">
-                    <div class="client-section mt-5 ">
-                        <h2 class="tp-hero-title text-center text-white">{{ $portfolio->title }}</h2>
-                    </div>
-                </section>
 
-                <!-- 🔹 Client Overview / Case Study -->
-                <section class="py-5 bg-light">
-                    <div class="container">
-                        <div class="row align-items-start mb-4">
+<style>
+    /* Single Portfolio Hero Section */
+    .wb-portfolio-single-hero {
+        background: linear-gradient(rgba(10, 61, 98, 0.85), rgba(10, 61, 98, 0.95)), url('{{ $heroImage }}');
+        background-size: cover;
+        background-position: center;
+        padding: 220px 0 200px;
+        color: #fff;
+    }
 
-                            <!-- Left Column: Case Study Box -->
-                            <div class="col-md-4">
-                                <div class="case-study-box p-3 rounded shadow-sm bg-white ">
-                                    <h3 class="fw-bold text-gradient mb-3">Case Study</h3>
+    .wb-portfolio-single-wrap {
+        margin-top: -100px; 
+        position: relative;
+        z-index: 10;
+        padding-bottom: 80px;
+    }
 
-                                    @if(!empty($portfolio->thumbnail))
-                                        <div class="thumbnail-box mb-2">
-                                            <img src="{{ asset('storage/' . $portfolio->thumbnail) }}"
-                                                alt="{{ $portfolio->title }}" class="img-thumbnail-full">
-                                        </div>
-                                    @endif
+    /* Elevated Content Containers */
+    .wb-card-box {
+        background: #fff;
+        border-radius: 15px;
+        padding: 40px;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+        height: 100%;
+    }
 
-                                    @if(!empty($portfolio->website_link))
-                                    <a href="{{ $portfolio->website_link }}" target="_blank" class="text-gradient fw-semibold text-decoration-none">
-                                        Visit Website
-                                    </a>
-                                    @endif
-                                </div>
-                            </div>
+    /* Typography inside boxes */
+    .wb-box-title {
+        color: #0A3D62;
+        font-weight: 800;
+        margin-bottom: 25px;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    .wb-box-title svg {
+        margin-right: 10px;
+        color: #CC7A00;
+    }
 
-                            <!-- Right Column: Client Overview Text -->
-                            <div class="col-md-8">
-                                <!-- Added ckeditor-output class here -->
-                                <div class="text-muted fs-5 mb-3 ckeditor-output"
-                                    style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">
-                                    {!! $portfolio->client_overview ?? 'No overview provided.' !!}
-                                </div>
-                                <a href="{{ route('portfolio.case_study', ['title' => Str::slug($portfolio->title), 'id' => $portfolio->id]) }}"
-                                    class="btn btn-gradient mt-2">
-                                    Read More
-                                </a>
-                            </div>
+    .wb-rich-text {
+        color: #4a5568;
+        font-size: 1rem;
+        line-height: 1.8;
+    }
 
+    /* Gradient Links/Buttons */
+    .wb-btn-primary {
+        background: #0A3D62;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        padding: 12px 25px;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .wb-btn-primary:hover {
+        background: #00B4D8;
+        color: #fff;
+        transform: translateY(-2px);
+    }
+    
+    .wb-btn-outline {
+        background: transparent;
+        color: #0A3D62;
+        border: 2px solid #0A3D62;
+        border-radius: 8px;
+        padding: 10px 23px;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .wb-btn-outline:hover {
+        background: #0A3D62;
+        color: #fff;
+    }
+
+    /* Case Study Left Panel */
+    .wb-case-img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #e2e8f0;
+    }
+
+    /* Services Pills */
+    .wb-nav-pills .nav-link {
+        background: #f8fafc;
+        color: #4a5568;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        font-weight: 600;
+        padding: 12px 20px;
+        margin-bottom: 10px;
+        text-align: left;
+        transition: all 0.3s ease;
+    }
+
+    .wb-nav-pills .nav-link:hover {
+        background: #e2e8f0;
+    }
+
+    .wb-nav-pills .nav-link.active {
+        background: #0A3D62;
+        color: #fff;
+        border-color: #0A3D62;
+        box-shadow: 0 4px 15px rgba(10, 61, 98, 0.2);
+    }
+    
+    .wb-service-subtitle {
+        color: #00B4D8;
+        font-weight: 700;
+        font-size: 1.1rem;
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+
+    /* Fix CKEditor Output */
+    .ckeditor-output ul {
+        list-style-type: disc !important;
+        padding-left: 25px !important;
+        margin-bottom: 15px !important;
+    }
+    
+    .ckeditor-output ol {
+        list-style-type: decimal !important;
+        padding-left: 25px !important;
+        margin-bottom: 15px !important;
+    }
+
+    /* Carousel */
+    .wb-carousel-img {
+        border-radius: 15px;
+        object-fit: cover;
+        max-height: 500px;
+        width: 100%;
+    }
+</style>
+
+<div id="smooth-wrapper">
+    <div id="smooth-content">
+        <main>
+            
+            <!-- Hero Section -->
+            <section class="wb-portfolio-single-hero text-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <span class="text-uppercase mb-3" style="color: #00B4D8; font-weight: 600; letter-spacing: 2px; font-size: 14px; display: block;">Case Study</span>
+                            <h1 class="fw-bolder" style="color: #ffffff; line-height: 1.2; font-size: 3.5rem;">
+                                {{ $portfolio->title }}
+                            </h1>
                         </div>
                     </div>
-                </section>
+                </div>
+            </section>
 
-                <!-- 🔹 Services -->
-                <section class="py-5 bg-light">
-                    <div class="container">
-                        <div class="row">
-                            <!-- Left Services -->
-                            <div class="col-lg-4 mb-3">
-                                <h3 class="fw-bold text-gradient mb-4">Services</h3>
-                                <div class="nav flex-column nav-pills me-3" id="services-tab" role="tablist">
+            <!-- Content Section -->
+            <section class="wb-portfolio-single-wrap bg-light">
+                <div class="container">
+                    
+                    <!-- Overview & Case Study Box -->
+                    <div class="row g-4 mb-5">
+                        <div class="col-lg-4">
+                            <div class="wb-card-box">
+                                <h3 class="wb-box-title">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                                    Project Details
+                                </h3>
+                                
+                                @if(!empty($portfolio->thumbnail))
+                                    <img src="{{ asset('storage/' . $portfolio->thumbnail) }}" alt="{{ $portfolio->title }}" class="wb-case-img">
+                                @endif
+
+                                @if(!empty($portfolio->website_link))
+                                    <a href="{{ $portfolio->website_link }}" target="_blank" class="wb-btn-outline w-100 justify-content-center mt-3">
+                                        Visit Website
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ms-2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="col-lg-8">
+                            <div class="wb-card-box">
+                                <h3 class="wb-box-title">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                                    Client Overview
+                                </h3>
+                                <div class="wb-rich-text ckeditor-output">
+                                    {!! $portfolio->client_overview ?? 'No overview provided.' !!}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Services Section -->
+                    <div class="row g-4 mb-5">
+                        <div class="col-lg-4">
+                            <div class="wb-card-box">
+                                <h3 class="wb-box-title">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                                    Services Rendered
+                                </h3>
+                                <div class="nav flex-column nav-pills wb-nav-pills" id="services-tab" role="tablist">
                                     @foreach($portfolio->services ?? [] as $index => $service)
-                                        <button class="nav-link shadow-sm mb-2 {{ $loop->first ? 'active' : '' }}"
+                                        <button class="nav-link {{ $loop->first ? 'active' : '' }}"
                                             id="service-{{ $index }}-tab" data-bs-toggle="pill"
                                             data-bs-target="#service-{{ $index }}" type="button" role="tab">
                                             {{ $service['name'] }}
@@ -75,238 +231,105 @@
                                     @endforeach
                                 </div>
                             </div>
+                        </div>
 
-                            <!-- Right Services -->
-                            <div class="col-lg-8">
-                                <div class="tab-content bg-white p-4 shadow rounded" id="services-tabContent">
-                                    @foreach($portfolio->services ?? [] as $index => $service)
-                                        <div class="tab-pane fade {{ $loop->first ? 'show active' : '' }}"
-                                            id="service-{{ $index }}" role="tabpanel">
+                        <div class="col-lg-8">
+                            <div class="wb-card-box tab-content" id="services-tabContent">
+                                @foreach($portfolio->services ?? [] as $index => $service)
+                                    <div class="tab-pane fade {{ $loop->first ? 'show active' : '' }}"
+                                        id="service-{{ $index }}" role="tabpanel">
 
-                                            <h4 class="fw-bold mb-4">{{ $service['name'] }}</h4>
+                                        <h3 class="wb-box-title" style="color: #00B4D8; margin-bottom: 10px;">{{ $service['name'] }}</h3>
 
-                                            @if(!empty($service['objective']))
-                                                <h6 class="fw-semibold text-gradient">Objective</h6>
-                                                <div class="text-muted mb-3 ckeditor-output">
-                                                    {!! $service['objective'] !!}
-                                                </div>
-                                            @endif
+                                        @if(!empty($service['objective']))
+                                            <h4 class="wb-service-subtitle">Objective</h4>
+                                            <div class="wb-rich-text ckeditor-output">
+                                                {!! $service['objective'] !!}
+                                            </div>
+                                        @endif
 
-                                            @if(!empty($service['challenges']))
-                                                <h6 class="fw-semibold text-gradient">Challenges</h6>
-                                                <div class="text-muted mb-3 ckeditor-output">
-                                                    {!! $service['challenges'] !!}
-                                                </div>
-                                            @endif
+                                        @if(!empty($service['challenges']))
+                                            <h4 class="wb-service-subtitle">Challenges</h4>
+                                            <div class="wb-rich-text ckeditor-output">
+                                                {!! $service['challenges'] !!}
+                                            </div>
+                                        @endif
 
-                                            @if(!empty($service['solutions']))
-                                                <h6 class="fw-semibold text-gradient">Solutions</h6>
-                                                <div class="text-muted mb-4 ckeditor-output">
-                                                    {!! $service['solutions'] !!}
-                                                </div>
-                                            @endif
+                                        @if(!empty($service['solutions']))
+                                            <h4 class="wb-service-subtitle">Solutions</h4>
+                                            <div class="wb-rich-text ckeditor-output">
+                                                {!! $service['solutions'] !!}
+                                            </div>
+                                        @endif
 
-                                            <a href="{{ route('contact') }}" class="btn btn-gradient mt-2">
-                                                Get In Touch
+                                        <div class="mt-4">
+                                            <a href="{{ route('contact') }}" class="wb-btn-primary">
+                                                Discuss Your Project
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ms-2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                                             </a>
                                         </div>
-                                    @endforeach
-                                </div>
+                                    </div>
+                                @endforeach
                             </div>
                         </div>
                     </div>
-                </section>
 
-                <!-- 🔹 Work / Images Carousel -->
-                @if($portfolio->images)
-                    <section class="py-5">
-                        <div class="container text-center">
-                            <h3 class="fw-bold text-gradient mb-4">Our Work</h3>
-                            <div id="portfolioCarousel" class="carousel slide mx-auto" data-bs-ride="carousel"
-                                style="max-width:70%;">
-                                <div class="carousel-inner">
-                                    @foreach($portfolio->images as $idx => $img)
-                                        <div class="carousel-item {{ $idx == 0 ? 'active' : '' }}">
-                                            <img src="{{ asset('storage/' . $img) }}" class="d-block w-100 rounded shadow-sm"
-                                                style="max-height:400px; object-fit:cover;" alt="Work Image">
+                    <!-- Work Carousel Section -->
+                    @if(!empty($portfolio->images) && count($portfolio->images) > 0)
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <div class="wb-card-box">
+                                    <h3 class="wb-box-title text-center justify-content-center">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                                        Our Work Gallery
+                                    </h3>
+                                    
+                                    <div id="portfolioCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+                                        <div class="carousel-inner" style="border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
+                                            @foreach($portfolio->images as $idx => $img)
+                                                <div class="carousel-item {{ $idx == 0 ? 'active' : '' }}">
+                                                    <img src="{{ asset('storage/' . $img) }}" class="wb-carousel-img" alt="Gallery Image {{ $idx + 1 }}">
+                                                </div>
+                                            @endforeach
                                         </div>
-                                    @endforeach
+                                        
+                                        @if(count($portfolio->images) > 1)
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev" style="background: rgba(0,0,0,0.2); width: 50px; height: 50px; border-radius: 50%; top: 50%; transform: translateY(-50%); left: 20px;">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next" style="background: rgba(0,0,0,0.2); width: 50px; height: 50px; border-radius: 50%; top: 50%; transform: translateY(-50%); right: 20px;">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        @endif
+                                    </div>
+                                    
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel"
-                                    data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon"></span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel"
-                                    data-bs-slide="next">
-                                    <span class="carousel-control-next-icon"></span>
-                                </button>
                             </div>
                         </div>
-                    </section>
-                @endif
-            </main>
+                    @endif
 
-            <!-- 🔹 Custom CSS -->
-            <style>
-                /* 🔥 FIX FOR CKEDITOR BULLET POINTS & LISTS */
-                .ckeditor-output ul {
-                    list-style-type: disc !important;
-                    padding-left: 25px !important;
-                    margin-bottom: 15px !important;
-                }
-                
-                .ckeditor-output ol {
-                    list-style-type: decimal !important;
-                    padding-left: 25px !important;
-                    margin-bottom: 15px !important;
-                }
+                </div>
+            </section>
 
-                .ckeditor-output li {
-                    display: list-item !important;
-                    margin-bottom: 5px;
-                }
+        </main>
+    </div>
+</div>
 
-                .ckeditor-output p:last-child {
-                    margin-bottom: 0;
-                }
-                
-                /* Gradient text */
-                .text-gradient {
-                    background: linear-gradient(90deg, #0A3D62, #0077B6);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                }
+<script>
+    // Auto-switch services tabs every 6 seconds
+    document.addEventListener("DOMContentLoaded", function () {
+        let tabs = document.querySelectorAll('#services-tab button');
+        if (tabs.length <= 1) return;
 
-                /* Gradient button */
-                .btn-gradient {
-                    background: linear-gradient(90deg, #0A3D62, #0077B6);
-                    color: #fff;
-                    border: none;
-                    border-radius: 6px;
-                    padding: 10px 22px;
-                    transition: all 0.3s ease;
-                }
-
-                .btn-gradient:hover {
-                    transform: translateY(-2px);
-                    opacity: 0.9;
-                }
-
-                .btn-gradient:hover,
-                .btn-gradient:focus,
-                .btn-gradient:active {
-                    background: linear-gradient(90deg, #0077B6, #0A3D62);
-                    color: #fff;
-                    opacity: 0.9;
-                    transform: translateY(-2px);
-                    text-decoration: none;
-                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-                }
-
-                /* Hero image + overlay */
-                .tp-blog-standard-thumb-box {
-                    position: relative;
-                    overflow: hidden;
-                    border-radius: 12px;
-                    max-height: 480px;
-                }
-
-                .tp-banner-img {
-                    width: 100%;
-                    min-height: 300px;
-                    max-height: 480px;
-                    object-fit: cover;
-                    object-position: center center;
-                    display: block;
-                }
-
-                .tp-banner-overlay {
-                    position: absolute;
-                    inset: 0;
-                    background: linear-gradient(180deg, rgba(10, 61, 98, 0.55) 0%, rgba(0, 119, 182, 0.4) 100%);
-                    border-radius: 12px;
-                }
-
-                .tp-banner-title {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    z-index: 2;
-                    color: #fff;
-                }
-
-                .tp-blog-standard-title {
-                    font-size: 2.5rem;
-                    font-weight: 700;
-                    text-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
-                }
-
-                /* Services Tabs Buttons */
-                #services-tab .nav-link {
-                    background: #f8f9fa;
-                    color: #0A3D62;
-                    border: 1px solid #ddd;
-                    border-radius: 6px;
-                    font-weight: 500;
-                    padding: 10px 15px;
-                    transition: all 0.3s ease;
-                    text-align: left;
-                }
-
-                #services-tab .nav-link:hover {
-                    background: linear-gradient(90deg, #0A3D62, #0077B6);
-                    color: #fff;
-                    transform: translateX(3px);
-                }
-
-                #services-tab .nav-link.active {
-                    background: linear-gradient(90deg, #0A3D62, #0077B6);
-                    color: #fff;
-                    font-weight: 600;
-                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-                }
-
-                .case-study-box {
-                    border: 1px solid #ddd;
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                }
-
-                .case-study-box:hover {
-                    transform: translateY(-3px);
-                    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
-                }
-
-                /* Full small thumbnail */
-                .thumbnail-box img.img-thumbnail-full {
-                    width: 100%;
-                    max-width: 150px;
-                    height: auto;
-                    border-radius: 6px;
-                    border: 1px solid #ccc;
-                    object-fit: contain;
-                }
-
-                .case-study-box a:hover {
-                    text-decoration: underline;
-                }
-            </style>
-
-            <!-- 🔹 Auto-switch services tabs -->
-            <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                    let tabs = document.querySelectorAll('#services-tab button');
-                    if (tabs.length === 0) return;
-
-                    let currentIndex = 0;
-
-                    setInterval(() => {
-                        currentIndex = (currentIndex + 1) % tabs.length;
-
-                        let tab = new bootstrap.Tab(tabs[currentIndex]);
-                        tab.show();
-                    }, 5000);
-                });
-            </script>
+        let currentIndex = 0;
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % tabs.length;
+            let tab = new bootstrap.Tab(tabs[currentIndex]);
+            tab.show();
+        }, 6000);
+    });
+</script>
 
 @endsection

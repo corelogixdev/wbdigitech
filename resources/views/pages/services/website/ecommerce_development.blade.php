@@ -11,42 +11,14 @@
 
     <div class="main-wrapper">
 
-        <!-- Spacer below header -->
-        <div style="padding: 80px"></div>
-
-        <!-- Hero Title -->
-        <div class="tp-hero-title-wrap mb-35 text-center">
-            <h2 class="tp-hero-title gradient-text">
-                Dubai E-Commerce Development Company.
-            </h2>
-        </div>
-
-        <!-- Hero Content -->
-        <div class="tp-hero-content text-center">
-            <p class="delay-load">
-                In WB Digitech, we have a highly qualified team of people who build great e-commerce websites with the best
-                platforms, such as Shopify, Magento, OpenCart, and WooCommerce. We have scalable performance and solutions
-                that will expand as every Dubai business does. </p>
-            <div class="hero-btns mt-4">
-                <a href="{{ route('contact') }}" class="btn btn-gradient">Get a Free Quote</a>
-            </div>
-        </div>
-
-        <!-- Hero Image -->
-        <section class="section-box">
-            <div class="bg-gray-100">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="tp-blog-standard-thumb-box p-relative">
-                                <img src="{{ asset('css/new-assets/web_imgs/Ecommercedevelopment-01.webp') }}"
-                                    alt="play-store-optimization-services">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <x-service-hero
+            image="css/new-assets/web_imgs/Ecommercedevelopment-01.webp" 
+            title="Dubai E-Commerce Development Company."
+            description="In WB Digitech, we have a highly qualified team of people who build great e-commerce websites with the best platforms, such as Shopify, Magento, OpenCart, and WooCommerce. We have scalable performance and solutions that will expand as every Dubai business does."
+            serviceCategory="Web Development"
+            serviceName="Web Development"
+        >
+        </x-service-hero>
 
 
         <!-- Content & Sidebar -->
@@ -72,10 +44,9 @@
 
             <!-- Content -->
             <div class="content-col">
-                <br>
 
-                <h2>We promise we deliver</h2>
-                <p>
+<x-service-content-card title="We promise we deliver">
+<p>
                     Blooming services in professional e-commerce development. Easy and powerful online stores are built at
                     WB Digitech. We are one of the leading e-commerce website development company in Dubai and offer
                     tailor-made solutions to easily conduct business and expand your online business. <br>
@@ -88,8 +59,10 @@
                     improve sales and sustain success in the long run by improving performance regularly.
                 </p>
 
-                <h2>Why are we the best e-commerce development company in Dubai?</h2>
-                <p>
+</x-service-content-card>
+
+<x-service-content-card title="Why are we the best e-commerce development company in Dubai?">
+<p>
                     If you are planning to launch a new e-commerce website, certain things will make you rely on a
                     proficient e-commerce development agency. Choosing the right e-commerce development company in Dubai is
                     essential for accelerating your business in Dubai and other states of the UAE. As a leading e-commerce
@@ -101,8 +74,10 @@
                     to make your business prosper and develop in the modern digital environment.
                 </p>
 
-                <h2>Why Select WB Digitech to Produce Expert E-commerce in Dubai?</h2>
-                <p>
+</x-service-content-card>
+
+<x-service-content-card title="Why Select WB Digitech to Produce Expert E-commerce in Dubai?">
+<p>
                     When it comes to starting an online store, it is extremely important to choose the right partner. WB
                     Digitech is a reputable e-commerce development company Dubai. We are part of the companies that assist
                     companies in the UAE to expand online with promising output and appealing websites.
@@ -115,8 +90,10 @@
 
                 </p>
 
-                <h2>Quicker Purchasing with Corporate E-commerce Building.</h2>
-                <p>
+</x-service-content-card>
+
+<x-service-content-card title="Quicker Purchasing with Corporate E-commerce Building.">
+<p>
                     WB Digitech is leading in the field of e-commerce development. Easy Internet Stores offer convenience
                     when it comes to online shopping. We assist the customers in viewing, contrasting, and purchasing
                     products easily, everywhere, and at any time. We are a trusted e-commerce website development company in
@@ -130,8 +107,10 @@
 
                 </p>
 
-                <h2>Advanced E-commerce Development Store and Product Listing.</h2>
-                <p>
+</x-service-content-card>
+
+<x-service-content-card title="Advanced E-commerce Development Store and Product Listing.">
+<p>
                     We expand e-commerce development websites at WB Digitech, whereby we assist businesses to showcase their
                     products in a well-known and clear manner. A better product list enables the customer to view a
                     description, good pictures, and multiple options, which makes shopping easier. Your reliable e-commerce
@@ -147,38 +126,33 @@
 
                 </p>
 
-                <!-- FAQ Section -->
-                <h2>Frequently Asked Questions</h2>
-                <div class="faq-section">
+</x-service-content-card>
 
-                    <h4>How Much to Pay to Create a Website or Application?</h4>
-                    <p>
+@php
+$serviceFaqs = [
+    ['question' => 'How Much to Pay to Create a Website or Application?', 'answer' => '<p>
                         The prices of the e-commerce development are determined by the features, design, and functionality
                         you desire in your online shop or mobile application.
-                    </p>
-
-                    <h4>Which is the Best Platform for My E-commerce Business Website?</h4>
-                    <p>
+                    </p>'],
+    ['question' => 'Which is the Best Platform for My E-commerce Business Website?', 'answer' => '<p>
                         Being one of the top e-commerce web development company in Dubai, WB Digitech assists in selecting
                         the most appropriate platform to use in the e-commerce development of your online store or
                         application.
-                    </p>
-
-                    <h4>What is the time spent in the e-commerce development of a new business site?</h4>
-                    <p>
+                    </p>'],
+    ['question' => 'What is the time spent in the e-commerce development of a new business site?', 'answer' => '<p>
                         Building an online store will be determined by its size, functionality, and complexity. An
                         undemanding site can be completed within less than a month. Four or six months may be required in
-                        case you desire special features. </p>
-
-                    <h4> What are the inputs needed in the development of e-commerce?</h4>
-                    <p>
+                        case you desire special features. </p>'],
+    ['question' => 'What are the inputs needed in the development of e-commerce?', 'answer' => '<p>
                         In order to begin e-commerce development, present the most important points to our team. These are
                         your logo, quality home-page photographs, and information regarding your products, names, prices,
                         and pictures to test it.
-                    </p>
+                    </p>'],
+];
+@endphp
+<x-accordion-faq :faqs="$serviceFaqs" />
 
-
-                </div>
+</div>
             </div>
         </div>
 @endsection

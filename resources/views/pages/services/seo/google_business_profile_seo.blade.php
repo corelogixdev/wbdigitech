@@ -13,46 +13,16 @@
 
     <div class="main-wrapper">
 
-        <!-- Spacer below header -->
-        <div style="padding: 80px"></div>
+        <x-service-hero
+            image="css/new-assets/seo_aso/gbp_seo.webp" 
+            title="Google My Business SEO That Actually Gets You Found"
+            description="Local searches feel simple to users. They search, they see, they click. Behind that simplicity sits strategy, patience, and yes, Google My Business SEO done right. Your business might already exist online. That does not mean it shows up when people are ready to buy. Visibility on Google Maps and local results is earned, adjusted, and maintained over time. We help you do exactly that, without robotic tactics or shortcuts that fade."
+            serviceCategory="SEO"
+            serviceName="SEO"
+        >
+        </x-service-hero></div>
 
-        <!-- Hero Section -->
-        <div class="tp-hero-title-wrap mb-35 text-center">
-            <h2 class="tp-hero-title gradient-text">
-                Google My Business SEO That Actually Gets You Found
-            </h2>
-        </div>
-        <div class="tp-hero-content text-center">
-            <p class="delay-load">
-                Local searches feel simple to users. They search, they see, they click. Behind that simplicity sits
-                strategy, patience, and yes, Google My Business SEO done right. Your business might already exist online.
-                That does not mean it shows up when people are ready to buy. Visibility on Google Maps and local results is
-                earned, adjusted, and maintained over time. We help you do exactly that, without robotic tactics or
-                shortcuts that fade.
-            </p>
-            <p class="delay-load">
-                At WB Digitech, we approach Google My Business SEO like humans do business. We test, tweak, pause, and come
-                back again. Some things work instantly. Others take repetition.
-            </p>
-            <div class="hero-btns mt-4">
-                <a href="{{ route('contact') }}" class="btn btn-gradient">Get Your Free GMB Audit</a>
-            </div>
-        </div>
 
-        <!-- 🔹 Hero Section -->
-        <section class="section-box">
-            <div class="bg-gray-100">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="tp-blog-standard-thumb-box p-relative">
-                                <img src="{{ asset('css/new-assets/seo_aso/gbp_seo.webp') }}" alt="seo-services-img">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <br><br>
 
         <!-- Content & Sidebar -->
@@ -86,96 +56,107 @@
 
             <!-- Content -->
             <div class="content-col">
-                <h2>Why Google My Business SEO Still Matters More Than You Think</h2>
-                <p>Local intent has changed how people search. They are not browsing, they are deciding. When your listing
+
+<x-service-content-card title="Why Google My Business SEO Still Matters More Than You Think">
+<p>Local intent has changed how people search. They are not browsing, they are deciding. When your listing
                     shows up at the right moment, it creates trust before a website is even visited. That is where
                     <strong>Google My Business SEO</strong> quietly does the heavy lifting. Sometimes your photos speak
                     louder. Sometimes reviews carry the conversation. And sometimes the optimization is doing its job
                     without you noticing it at all. This is not guesswork, but this is structure mixed with adaptability.
                 </p>
 
-                <h2>GMB Optimization That Feels Natural, Not Forced</h2>
+</x-service-content-card>
 
-                <h3>What Real GMB Optimization Looks Like</h3>
-                <p>GMB optimization is not about stuffing keywords or changing categories every week. It is about clarity.
+<x-service-content-card title="GMB Optimization That Feels Natural, Not Forced">
+<h3>What Real GMB Optimization Looks Like</h3>
+<p>GMB optimization is not about stuffing keywords or changing categories every week. It is about clarity.
                     Your business description should sound like a person wrote it. Services should be accurate, not
                     exaggerated. Updates should be timely, but not spammy. That balance matters. We adjust listings slowly
                     when needed. Some changes are immediate, others are monitored over weeks. With GMB optimization,
                     patience often beats speed.</p>
-
-                <h3>Where GMB Optimization Goes Wrong</h3>
-                <p>Many businesses overdo it; too many edits, too many keywords, and too many changes at once. Effective GMB
+<h3>Where GMB Optimization Goes Wrong</h3>
+<p>Many businesses overdo it; too many edits, too many keywords, and too many changes at once. Effective GMB
                     optimization allows Google to understand your business clearly. Not loudly.</p>
 
-                <h2>How Google Business Profile Fits Into Local SEO</h2>
-                <p>Your Google Business Profile is often the first interaction customers have with your brand. It happens
+</x-service-content-card>
+
+<x-service-content-card title="How Google Business Profile Fits Into Local SEO">
+<p>Your Google Business Profile is often the first interaction customers have with your brand. It happens
                     before your website loads, before a call is made. The listing needs consistency. NAP details, service
                     areas, images, and updates all connect. When one piece feels off, performance usually follows. We
                     revisit the Google Business Profile regularly, not daily, not randomly, just strategically.</p>
 
-                <h2>GMB SEO Is Not a One-Time Task</h2>
-                <p>Some businesses optimize once and forget; that approach fades. GMB SEO works best when maintained.
+</x-service-content-card>
+
+<x-service-content-card title="GMB SEO Is Not a One-Time Task">
+<p>Some businesses optimize once and forget; that approach fades. GMB SEO works best when maintained.
                     Reviews change, competitors adjust, and search behavior shifts. We treat GMB SEO as an ongoing
                     conversation with Google, not a checklist that ends.</p>
 
-                <h2>Google Maps SEO and Local Visibility</h2>
-                <p>Ranking on the map pack is not accidental. Google Maps SEO depends on relevance, proximity, and
+</x-service-content-card>
+
+<x-service-content-card title="Google Maps SEO and Local Visibility">
+<p>Ranking on the map pack is not accidental. Google Maps SEO depends on relevance, proximity, and
                     authority. You cannot control all three, but you can influence two. Location signals, listing health,
                     and user engagement quietly shape results. We focus there, even when it feels slow.</p>
 
-                <h2>Google My Business Management That Reduces Guesswork</h2>
-                <p>Managing a listing consistently takes time. That is where Google My Business management becomes valuable.
+</x-service-content-card>
+
+<x-service-content-card title="Google My Business Management That Reduces Guesswork">
+<p>Managing a listing consistently takes time. That is where Google My Business management becomes valuable.
                     We monitor insights, review trends, update visuals, and respond where it counts. Some weeks are quiet,
                     others need attention.</p>
 
-                <h2>When Local SEO Connects With Bigger SEO Goals</h2>
-                <p>Local visibility does not exist in isolation. For brands also selling online, seo for ecommerce website
+</x-service-content-card>
+
+<x-service-content-card title="When Local SEO Connects With Bigger SEO Goals">
+<p>Local visibility does not exist in isolation. For brands also selling online, seo for ecommerce website
                     performance can align with local intent when done thoughtfully. Local trust feeds brand authority. That
                     authority supports content, products, and conversion paths. A strong listing often supports a broader
                     seo for ecommerce website roadmap. This is where an ecommerce seo strategy quietly overlaps with local
                     presence, even when they seem unrelated.</p>
 
-                <h2>Why WB Digitech Approaches Local SEO Differently</h2>
-                <p>We do not lock you into rigid systems. We adjust. We revisit. We sometimes change our mind. As a team
+</x-service-content-card>
+
+<x-service-content-card title="Why WB Digitech Approaches Local SEO Differently">
+<p>We do not lock you into rigid systems. We adjust. We revisit. We sometimes change our mind. As a team
                     known as a best digital marketing agency in Dubai, we understand local competition, search habits, and
                     market nuance. If you are planning to hire SEO agency in Dubai, it helps when the team actually works
                     inside the market, not just for it.</p>
-
-                <div class="hero-btns mt-4">
+<div class="hero-btns mt-4">
                     <a href="{{ route('contact') }}" class="btn btn-gradient">Improve Your Google Visibility Today</a>
                 </div>
+<br>
 
-                <br>
+</x-service-content-card>
 
-                <h2>Final Thoughts on Google My Business SEO</h2>
-                <p>Local growth does not need to be loud; it needs to be consistent. With Google My Business SEO, the
+<x-service-content-card title="Final Thoughts on Google My Business SEO">
+<p>Local growth does not need to be loud; it needs to be consistent. With Google My Business SEO, the
                     smallest refinements often create the biggest shifts. And when it is done properly, results feel
                     natural, not forced. That is how sustainable local visibility is built.</p>
 
-                <h2>FAQs</h2>
+</x-service-content-card>
 
-                <h4>1. How long does Google My Business SEO take to show results?</h4>
-                <p>Results vary, but Google My Business SEO usually shows early movement within a few weeks. Strong
+
+@php
+$serviceFaqs = [
+    ['question' => '1. How long does Google My Business SEO take to show results?', 'answer' => '<p>Results vary, but Google My Business SEO usually shows early movement within a few weeks. Strong
                     improvements take longer, especially in competitive locations. Consistent GMB optimization speeds this
-                    up.</p>
+                    up.</p>'],
+    ['question' => '2. Is GMB SEO different from traditional SEO?', 'answer' => '<p>Yes. GMB SEO focuses on local intent, proximity, and engagement. Traditional SEO supports it, but they
+                    are not the same process.</p>'],
+    ['question' => '3. Do reviews really impact Google My Business SEO?', 'answer' => '<p>They do. Reviews influence trust, click-throughs, and relevance signals. They indirectly strengthen
+                    Google My Business SEO when handled correctly.</p>'],
+    ['question' => '4. Can Google My Business help ecommerce brands?', 'answer' => '<p>Yes, especially when paired with seo for ecommerce website planning. Local trust often supports broader
+                    visibility and conversions when aligned well.</p>'],
+    ['question' => '5. Should I manage my listing or outsource it?', 'answer' => '<p>If time or expertise is limited, professional Google My Business management ensures updates stay accurate
+                    and strategic without risking penalties.</p>'],
+];
+@endphp
+<x-accordion-faq :faqs="$serviceFaqs" />
 
-                <h4>2. Is GMB SEO different from traditional SEO?</h4>
-                <p>Yes. GMB SEO focuses on local intent, proximity, and engagement. Traditional SEO supports it, but they
-                    are not the same process.</p>
 
-                <h4>3. Do reviews really impact Google My Business SEO?</h4>
-                <p>They do. Reviews influence trust, click-throughs, and relevance signals. They indirectly strengthen
-                    Google My Business SEO when handled correctly.</p>
-
-                <h4>4. Can Google My Business help ecommerce brands?</h4>
-                <p>Yes, especially when paired with seo for ecommerce website planning. Local trust often supports broader
-                    visibility and conversions when aligned well.</p>
-
-                <h4>5. Should I manage my listing or outsource it?</h4>
-                <p>If time or expertise is limited, professional Google My Business management ensures updates stay accurate
-                    and strategic without risking penalties.</p>
-
-            </div>
+</div>
         </div>
     </div>
 @endsection

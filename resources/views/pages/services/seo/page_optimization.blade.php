@@ -9,48 +9,16 @@
 
     <div class="main-wrapper">
 
-        <!-- Spacer below header -->
-        <div style="padding: 80px"></div>
+        <x-service-hero
+            image="css/new-assets/seo_aso/page_opt.webp" 
+            title="SEO Page Optimization That Works Beneath the Surface"
+            description="SEO is rarely about one big change. It is about dozens of small improvements that work together over time. That is why SEO optimization services need to be thoughtful, structured, and flexible."
+            serviceCategory="SEO"
+            serviceName="SEO"
+        >
+        </x-service-hero></div>
 
-        <!-- Hero Section -->
-        <div class="tp-hero-title-wrap mb-35 text-center">
-            <h2 class="tp-hero-title gradient-text">
-                SEO Page Optimization That Works Beneath the Surface
-            </h2>
-        </div>
-        <div class="tp-hero-content text-center">
-            <p class="delay-load">
-                SEO is rarely about one big change. It is about dozens of small improvements that work together over time.
-                That is why SEO optimization services need to be thoughtful, structured, and flexible.
-            </p>
-            <p>
-                As an experienced SEO optimization agency, we focus on how a page communicates. Not just visually, but
-                contextually.
-                Search engines read structure, users scan content, and both matter and cannot be ignored. This is where on
-                page seo
-                optimization becomes more than a technical task; it becomes a strategy. Pages begin to feel clearer, more
-                intentional,
-                and easier to trust.
-            </p>
-            <div class="hero-btns mt-4">
-                <a href="{{ route('contact') }}" class="btn btn-gradient">Get a Free Quote</a>
-            </div>
-        </div>
 
-        <!-- 🔹 Hero Section -->
-        <section class="section-box">
-            <div class="bg-gray-100">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="tp-blog-standard-thumb-box p-relative">
-                                <img src="{{ asset('css/new-assets/seo_aso/page_opt.webp') }}" alt="seo-services-img">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <br>
         <br>
@@ -84,8 +52,8 @@
             <!-- Content -->
             <div class="content-col">
 
-                <h2>How SEO Optimization Services Improve Page-Level Results</h2>
-                <p>Many pages look complete but fail to perform. Content exists, keywords are present, but still, traffic
+<x-service-content-card title="How SEO Optimization Services Improve Page-Level Results">
+<p>Many pages look complete but fail to perform. Content exists, keywords are present, but still, traffic
                     stalls.
                     With professional SEO optimization services, pages are reviewed from multiple angles. Headings are
                     analyzed for
@@ -95,8 +63,10 @@
                     with a
                     capable SEO optimization agency. The goal is not speed. The goal is stability and growth that lasts.</p>
 
-                <h2>On-Page SEO Optimization</h2>
-                <p>Search intent is not static. What users expect from a page today may shift in a few months. Effective
+</x-service-content-card>
+
+<x-service-content-card title="On-Page SEO Optimization">
+<p>Search intent is not static. What users expect from a page today may shift in a few months. Effective
                     on-page
                     optimization starts by understanding why someone searches, not just what they search for. Informational
                     pages
@@ -108,8 +78,10 @@
                     search
                     engine optimization SEO services, especially in competitive spaces.</p>
 
-                <h2>Why Page Structure Still Defines SEO Success</h2>
-                <p>Design may attract attention, but structure earns trust from search engines. Clear title tags, logical
+</x-service-content-card>
+
+<x-service-content-card title="Why Page Structure Still Defines SEO Success">
+<p>Design may attract attention, but structure earns trust from search engines. Clear title tags, logical
                     heading
                     hierarchy, and descriptive internal links. These elements help search engines understand relevance while
                     helping
@@ -119,8 +91,10 @@
                     average
                     execution from the best search engine optimization services available today.</p>
 
-                <h2>SEO Optimization Agency With Local Search Understanding</h2>
-                <p>Not every business needs global reach. Many need focused visibility in specific markets. With geo
+</x-service-content-card>
+
+<x-service-content-card title="SEO Optimization Agency With Local Search Understanding">
+<p>Not every business needs global reach. Many need focused visibility in specific markets. With geo
                     targeting seo
                     service dubai, pages are optimized to reflect regional intent, language preferences, and local search
                     behavior.
@@ -131,44 +105,43 @@
                     SEO aligns with broader campaigns, collaboration with the best digital marketing agency in Dubai creates
                     stronger consistency across channels.</p>
 
-                <h2>When SEO Optimization Services Are Applied Correctly</h2>
-                <p>Pages load faster</p>
-                <p>Navigation becomes clearer</p>
-                <p>Engagement improves without forcing action</p>
-                <p>Rankings follow because the page finally communicates value.</p>
+</x-service-content-card>
 
-                <p>That is the outcome of well-executed SEO optimization services. It is also why businesses continue
+<x-service-content-card title="When SEO Optimization Services Are Applied Correctly">
+<p>Pages load faster</p>
+<p>Navigation becomes clearer</p>
+<p>Engagement improves without forcing action</p>
+<p>Rankings follow because the page finally communicates value.</p>
+<p>That is the outcome of well-executed SEO optimization services. It is also why businesses continue
                     working with a
                     reliable SEO optimization agency instead of chasing shortcuts. Even the best search engine optimization
                     services depend on patience, testing, and refinement over time.</p>
 
-                <h2>FAQs</h2>
+</x-service-content-card>
 
-                <h4>What do SEO optimization services include?</h4>
-                <p>SEO optimization services focus on improving page structure, content relevance, internal linking, and
+
+@php
+$serviceFaqs = [
+    ['question' => 'What do SEO optimization services include?', 'answer' => '<p>SEO optimization services focus on improving page structure, content relevance, internal linking, and
                     technical
-                    elements. These improvements help pages rank better and engage users more effectively.</p>
-
-                <h4>How does on page SEO optimization support rankings?</h4>
-                <p>On page seo optimization improves how search engines understand content. It strengthens keyword
+                    elements. These improvements help pages rank better and engage users more effectively.</p>'],
+    ['question' => 'How does on page SEO optimization support rankings?', 'answer' => '<p>On page seo optimization improves how search engines understand content. It strengthens keyword
                     relevance,
-                    clarifies intent, and supports broader search engine optimization SEO services.</p>
-
-                <h4>How often should on-page optimization be reviewed?</h4>
-                <p>Pages should be reviewed regularly as search behavior changes. Ongoing on-page optimization ensures
+                    clarifies intent, and supports broader search engine optimization SEO services.</p>'],
+    ['question' => 'How often should on-page optimization be reviewed?', 'answer' => '<p>Pages should be reviewed regularly as search behavior changes. Ongoing on-page optimization ensures
                     content
-                    remains aligned with user intent and algorithm updates.</p>
-
-                <h4>Is it better to hire an SEO optimization agency?</h4>
-                <p>Many businesses prefer to hire SEO agency in Dubai for expertise, tools, and strategic oversight.
+                    remains aligned with user intent and algorithm updates.</p>'],
+    ['question' => 'Is it better to hire an SEO optimization agency?', 'answer' => '<p>Many businesses prefer to hire SEO agency in Dubai for expertise, tools, and strategic oversight.
                     Agencies often
-                    deliver more consistent outcomes than internal experimentation.</p>
+                    deliver more consistent outcomes than internal experimentation.</p>'],
+    ['question' => 'Do on page optimization services help local businesses?', 'answer' => '<p>Yes. On page optimization services combined with regional targeting improve visibility, especially when
+                    supported by the best digital marketing agency in Dubai.</p>'],
+];
+@endphp
+<x-accordion-faq :faqs="$serviceFaqs" />
 
-                <h4>Do on page optimization services help local businesses?</h4>
-                <p>Yes. On page optimization services combined with regional targeting improve visibility, especially when
-                    supported by the best digital marketing agency in Dubai.</p>
 
-            </div>
+</div>
         </div>
     </div>
 @endsection

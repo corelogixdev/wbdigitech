@@ -46,43 +46,25 @@
                     <div class="ck-content">
                         <p> </p>
                         <div class="raw-html-embed">
-                            <div class="tp-hero-area tp-hero-ptb main-slider">
-                                <div class="container-fluid home-main-slider">
+                            <!-- Modern Glowing Hero Section -->
+                            <div class="modern-glow-hero" style="background-image: url('{{ asset('css/new-assets/services_home/main.webp') }}');">
+                                <div class="glow-overlay"></div>
+                                <div class="glow-orb orb-1"></div>
+                                <div class="glow-orb orb-2"></div>
+                                <div class="container hero-container position-relative z-index-2">
                                     <div class="row justify-content-center">
-                                        <div class="col-xxl-12">
-                                            <!-- Hero Title -->
-                                            <div class="tp-hero-title-wrap mb-35 text-center">
-                                                <h2 class="tp-hero-title gradient-text">
-                                                    Leading Digital Marketing<br> Agency in Dubai,UAE
-                                                </h2>
-                                            </div>
-
-                                            <!-- Hero Content -->
-                                            <div class="tp-hero-content text-center">
-                                                <p class="delay-load">
-                                                    WB DIGITECH is rated one of the finest digital marketing agencies in the
-                                                    city of Dubai providing cool, affordable and result oriented solutions
-                                                    to firms in any line of business.<small
-                                                        style="color:#0A3D62; font-weight: bold;">Since 2024</small> we are
-                                                    a leading agency in Dubai and the entire UAE, we combine innovative
-                                                    concepts with sound strategies to make brands grow, reach people, and
-                                                    slay in this ruthless online market.
+                                        <div class="col-lg-10 text-center">
+                                            <div class="glass-hero-content">
+                                                <span class="hero-badge">Award-Winning Digital Agency</span>
+                                                <h1 class="glow-title">
+                                                    Leading Digital Marketing <br> Agency in Dubai, UAE
+                                                </h1>
+                                                <p class="hero-subtitle mt-4">
+                                                    Since 2024, we combine innovative concepts with data-driven strategies to help brands grow, reach people, and dominate the digital market. Your success is our mission.
                                                 </p>
-                                                <p class="more-content-top d-none d-lg-block">
-                                                    Our in-house team of web developers, designers, search engine
-                                                    optimization experts, Google Ads geniuses, social media geniuses,
-                                                    content authors, and creative individuals has you covered in all
-                                                    360-degrees of digital marketing. We do not merely place online
-                                                    advertisements, but we do content marketing, branding, market research,
-                                                    and customer engagement based on data.You may be a start-up with the
-                                                    need to make a splash or you may be an established brand seeking to
-                                                    expand, WB Digitech is your stable partner and the best marketing firm
-                                                    in Dubai, UAE- helping businesses achieve tangible results and continue
-                                                    to grow sustainably.
-                                                </p>
-                                                <div class="hero-btns mt-4">
-                                                    <a href="{{ route('contact')}}" class="btn btn-gradient">Get a Free
-                                                        Quote</a>
+                                                <div class="hero-actions mt-5 d-flex gap-3 justify-content-center flex-wrap">
+                                                    <a href="{{ route('contact')}}" class="btn btn-glow-primary">Get a Free Quote</a>
+                                                    <a href="{{ route('ai_marketing') }}" class="btn btn-glow-secondary">Explore AI Marketing</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -623,54 +605,79 @@
 
 
 
-                            <section class="tp-about-area pt-80 pb-10 bg-light">
+                            <section class="tp-seo-content-area py-5 bg-white">
                                 <div class="container">
-                                    <div class="row justify-content-center">
-                                        <div class="col-xl-10 col-lg-11 text-center">
-                                            <div class="tp-about-content">
-                                                <h2 class="sv-service-title  mb-4" style="color:#0A3D62">
-                                                    Boost Your Business With The Help of Digital Marketing
-                                                    Company
+                                    <div class="row align-items-center">
+                                        <!-- Content Column -->
+                                        <div class="col-lg-7 mb-4 mb-lg-0">
+                                            <div class="pe-lg-4">
+                                                <span class="text-uppercase mb-2 d-block" style="color: #0077B6; font-weight: 700; letter-spacing: 1px;">Why Choose Us</span>
+                                                <h2 class="mb-4 fw-bold" style="color: #0A3D62; font-size: 2.2rem; line-height: 1.3;">
+                                                    Boost Your Business With The Help of a Digital Marketing Company
                                                 </h2>
-                                                <p class="text-muted mb-3">
-                                                    WB Digitech is a results-driven digital marketing
-                                                    company that em-powers businesses to thrive in Dubai's
-                                                    highly competitive market. Recognized as a trusted
-                                                    digital marketing agency Dubai, we design innovative
-                                                    strategies that amplify your online presence, connect
-                                                    you with your target audience, and fuel sustainable
-                                                    growth.
-                                                    Our vision is simple yet powerful: to help brands
-                                                    achieve maximum visibility across websites, search
-                                                    engines, and social media platforms. Backed by a team of
-                                                    experienced marketing experts and creative
-                                                    professionals, we deliver comprehensive digital
-                                                    marketing services, from content marketing and SEO to
-                                                    PPC, SEM, professional web de-velopment, web design, and
-                                                    graphic design.
-                                                    With WB Digitech, you gain the expertise of certified
-                                                    specialists who craft data-driven campaigns that attract
-                                                    traffic, convert leads, and boost revenue. Our unique
-                                                    approach and proven results distinguish us as the best
-                                                    digital marketing agency in Dubai, trusted by
-                                                    busi-nesses across industries.
-                                                    As a forward-thinking digital marketing company, we
-                                                    combine crea-tivity with technology to deliver
-                                                    strategies that truly resonate with modern-day
-                                                    customers. Whether it's through targeted ads,
-                                                    compel-ling content, or innovative design, our digital
-                                                    marketing solutions are built to position your brand
-                                                    ahead of competitors.
+                                                
+                                                <p class="text-muted mb-4" style="font-size: 1.05rem; line-height: 1.8;">
+                                                    WB Digitech is a results-driven digital marketing company that empowers businesses to thrive in Dubai's highly competitive market. As a trusted agency, we design innovative strategies that amplify your online presence, connect you with your target audience, and fuel sustainable growth.
+                                                </p>
 
+                                                <div class="row g-4 mb-4">
+                                                    <div class="col-md-6">
+                                                        <div class="d-flex align-items-start">
+                                                            <div class="icon-box me-3 mt-1" style="color: #0A3D62;">
+                                                                <i class="fa-solid fa-bullseye fa-2x"></i>
+                                                            </div>
+                                                            <div>
+                                                                <h5 class="fw-bold mb-2">Our Vision</h5>
+                                                                <p class="text-muted small mb-0">To help brands achieve maximum visibility across websites, search engines, and social platforms.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="d-flex align-items-start">
+                                                            <div class="icon-box me-3 mt-1" style="color: #0A3D62;">
+                                                                <i class="fa-solid fa-chart-line fa-2x"></i>
+                                                            </div>
+                                                            <div>
+                                                                <h5 class="fw-bold mb-2">Data-Driven Campaigns</h5>
+                                                                <p class="text-muted small mb-0">Certified specialists crafting campaigns that attract traffic, convert leads, and boost revenue.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <p class="text-muted mb-0">
+                                                    Whether it's through targeted ads, compelling content, or innovative design, our solutions are built to position your brand ahead of competitors. Choose WB Digitech—your go-to marketing agency in Dubai—to convert opportunities into measurable profits.
                                                 </p>
-                                                <p class="text-muted mb-4">
-                                                    Choose WB Degitech-you go-to marketing agency in
-                                                    Dubai-to engage effectively with potential customers,
-                                                    generate high-quality leads, and convert opportunities
-                                                    into measurable profits. When it comes to excellence, WB
-                                                    Digitech stands out among leading digital marketing
-                                                    agencies in the UAE.
-                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <!-- Visual Column -->
+                                        <div class="col-lg-5">
+                                            <div class="position-relative text-center">
+                                                <div class="p-4 bg-light rounded-4 shadow-sm border" style="border-color: #f1f5f9 !important;">
+                                                    <img src="{{ asset('css/new-assets/services_home/seo.webp') }}" alt="Digital Marketing Strategy" class="img-fluid rounded-3 mb-4 shadow-sm">
+                                                    <div class="d-flex justify-content-center align-items-center gap-4">
+                                                        <div class="text-start">
+                                                            <h3 class="fw-bold mb-0" style="color: #0A3D62;">100%</h3>
+                                                            <p class="text-muted small mb-0 fw-semibold">Client Satisfaction</p>
+                                                        </div>
+                                                        <div style="width: 2px; height: 40px; background-color: #e2e8f0;"></div>
+                                                        <div class="text-start">
+                                                            <h3 class="fw-bold mb-0" style="color: #0A3D62;">24/7</h3>
+                                                            <p class="text-muted small mb-0 fw-semibold">Dedicated Support</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- Decorative Element -->
+                                                <div class="position-absolute" style="top: -20px; right: -20px; z-index: -1;">
+                                                    <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                                                            <circle cx="2" cy="2" r="2" fill="#0A3D62" fill-opacity="0.15"/>
+                                                        </pattern>
+                                                        <rect width="100" height="100" fill="url(#dots)"/>
+                                                    </svg>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

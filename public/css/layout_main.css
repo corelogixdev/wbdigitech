@@ -1078,6 +1078,18 @@
             width: auto !important;
         }
 
+        @keyframes pulse-wave {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 20px rgba(37, 211, 102, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
         .float {
             position: fixed;
             width: 60px;
@@ -1091,6 +1103,7 @@
             font-size: 30px;
             box-shadow: 0px 0px 7px #ffffff;
             z-index: 100;
+            animation: pulse-wave 2s infinite;
         }
 
         .my-float {

@@ -8,25 +8,14 @@
 
     <div class="main-wrapper">
 
-        <!-- Spacer below header -->
-        <div style="padding: 80px"></div>
-
-        <!-- Hero Section -->
-        <div class="tp-hero-title-wrap mb-35 text-center">
-            <h2 class="tp-hero-title gradient-text">
-                Mobile App Developers
-            </h2>
-        </div>
-
-        <div class="tp-hero-content text-center">
-            <p class="delay-load">
-                Build engaging iOS & Android apps that scale — native, cross-platform,
-                and enterprise solutions focused on performance and conversions.
-            </p>
-            <div class="hero-btns mt-4">
-                <a href="{{ route('contact') }}" class="btn btn-gradient">Get a Free Quote</a>
-            </div>
-        </div>
+        <x-service-hero
+            image="css/new-assets/mobile_app/mobile_app_dev.jpg" 
+            title="Mobile App Developers"
+            description="Build engaging iOS & Android apps that scale — native, cross-platform, and enterprise solutions focused on performance and conversions."
+            serviceCategory="Mobile Apps"
+            serviceName="Mobile Apps"
+        >
+        </x-service-hero></div>
 
 
         <!-- Hero Image Section -->
@@ -73,12 +62,12 @@
 
             <!-- Content -->
             <div class="content-col">
-                <h2>Mobile App Development Services</h2>
-                <p>Mobile apps allow you to engage users anytime, anywhere. We build and iterate on apps aligned to your
-                    mobile strategy using proven frameworks and best practices.</p>
 
-                <h5>Our mobile app development services include:</h5>
-                <div class="services-list">
+<x-service-content-card title="Mobile App Development Services">
+<p>Mobile apps allow you to engage users anytime, anywhere. We build and iterate on apps aligned to your
+                    mobile strategy using proven frameworks and best practices.</p>
+<h5>Our mobile app development services include:</h5>
+<div class="services-list">
                     <ul>
                         <li>Native iOS apps built with Swift</li>
                         <li>Native Android apps built with Java/Kotlin</li>
@@ -92,9 +81,11 @@
                     </ul>
                 </div>
 
-                <h2>Our Process</h2>
-                <p>We follow a structured mobile app development process:</p>
-                <div class="process-list">
+</x-service-content-card>
+
+<x-service-content-card title="Our Process">
+<p>We follow a structured mobile app development process:</p>
+<div class="process-list">
                     <ol>
                         <li><strong>Strategy:</strong> Align on goals, platform considerations, customer needs, and app
                             capabilities.</li>
@@ -107,11 +98,13 @@
                         </li>
                     </ol>
                 </div>
-                <p>Throughout the process, we focus on bringing working features fast with continuous delivery and
+<p>Throughout the process, we focus on bringing working features fast with continuous delivery and
                     improvement.</p>
 
-                <h2>Our Benefits</h2>
-                <div class="benefits-list">
+</x-service-content-card>
+
+<x-service-content-card title="Our Benefits">
+<div class="benefits-list">
                     <ul>
                         <li>Reach users anytime, anywhere</li>
                         <li>Increased engagement and retention</li>
@@ -123,14 +116,18 @@
                     </ul>
                 </div>
 
-                <h2>Technologies We Use</h2>
-                <p>For mobile development, we create native iOS apps with Swift and native Android apps using Kotlin. For
-                    cross-platform mobile solutions, we leverage React Native and other emerging frameworks.</p>
+</x-service-content-card>
 
-                {{-- <img class="service-img"
-                    src="https://wbdigitech.ae/wp-content/uploads/2022/09/mobile-application-1024x974.png"
-                    alt="Mobile Application"> --}}
-            </div>
+<x-service-content-card title="Technologies We Use">
+<p>For mobile development, we create native iOS apps with Swift and native Android apps using Kotlin. For
+                    cross-platform mobile solutions, we leverage React Native and other emerging frameworks.</p>
+{{--
+<img class="service-img" src="https://wbdigitech.ae/wp-content/uploads/2022/09/mobile-application-1024x974.png" alt="Mobile Application">
+--}}
+
+</x-service-content-card>
+
+</div>
         </div>
     </div>
 @endsection
