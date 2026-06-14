@@ -36,15 +36,8 @@
 
                                 <div class="mb-3">
                                     <label class="form-label fw-semibold">Client Overview</label>
-                                    <textarea name="client_overview" class="form-control" rows="6"
-                                        placeholder="Use ## for headings, blank lines for paragraphs, **bold** for emphasis">{{ old('client_overview') }}</textarea>
-
-                                    <small class="text-muted">
-                                        Formatting guide:<br>
-                                        <strong>## Heading</strong> → Section title<br>
-                                        <strong>Blank line</strong> → New paragraph<br>
-                                        <strong>**bold text**</strong> → Bold
-                                    </small>
+                                    <textarea name="client_overview" class="form-control ckeditor-field" rows="6"
+                                        placeholder="Enter client overview...">{{ old('client_overview') }}</textarea>
                                 </div>
 
                                 <div class="mb-3">
@@ -59,22 +52,24 @@
                                             class="form-control mb-2">
 
                                         <label class="fw-semibold">Objective</label>
-                                        <textarea name="services[0][objective]" class="form-control mb-2"
+                                        <textarea name="services[0][objective]" class="form-control mb-2 ckeditor-field"
                                             placeholder="Objective for this service"></textarea>
 
                                         <label class="fw-semibold">Challenges</label>
-                                        <textarea name="services[0][challenges]" class="form-control mb-2"
+                                        <textarea name="services[0][challenges]" class="form-control mb-2 ckeditor-field"
                                             placeholder="Challenges faced"></textarea>
 
                                         <label class="fw-semibold">Solutions</label>
-                                        <textarea name="services[0][solutions]" class="form-control mb-2"
+                                        <textarea name="services[0][solutions]" class="form-control mb-2 ckeditor-field"
                                             placeholder="Solutions provided"></textarea>
                                     </div>
                                 </div>
-                                <button type="button" class="btn btn-sm btn-success mb-3" onclick="addService()">+ Add
-                                    Service</button>
+                                
+                                <button type="button" class="btn btn-sm btn-success mb-3" onclick="addService()">+ Add Service</button>
 
-                                <button type="submit" class="btn btn-primary">Save</button>
+                                <div>
+                                    <button type="submit" class="btn btn-primary">Save</button>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -83,37 +78,76 @@
         </div>
     </div>
 
+    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
+
     <script>
+        // Reusable function to initialize CKEditor on a specific element
+        function initEditor(element) {
+            ClassicEditor
+                .create(element)
+                .catch(error => {
+                    console.error('Error initializing CKEditor:', error);
+                });
+        }
+
+        // Initialize CKEditor on all existing textareas on page load
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll('.ckeditor-field').forEach(textarea => {
+                initEditor(textarea);
+            });
+        });
+
         let serviceIndex = 1;
 
         function addService() {
             let wrapper = document.getElementById('services-wrapper');
 
-            let html = `
-    <div class="service-item mb-4 border rounded p-3">
-        <input type="text"
-               name="services[${serviceIndex}][name]"
-               placeholder="Service Name"
-               class="form-control mb-2">
+            // Create a temporary container to parse the HTML string safely
+            let tempDiv = document.createElement('div');
+            
+            tempDiv.innerHTML = `
+                <div class="service-item mb-4 border rounded p-3">
+                    <input type="text"
+                           name="services[${serviceIndex}][name]"
+                           placeholder="Service Name"
+                           class="form-control mb-2">
 
-        <label class="fw-semibold">Objective</label>
-        <textarea name="services[${serviceIndex}][objective]"
-                  class="form-control mb-2"
-                  placeholder="Objective for this service"></textarea>
+                    <label class="fw-semibold mt-2">Objective</label>
+                    <textarea name="services[${serviceIndex}][objective]"
+                              class="form-control mb-2 ckeditor-field"
+                              placeholder="Objective for this service"></textarea>
 
-        <label class="fw-semibold">Challenges</label>
-        <textarea name="services[${serviceIndex}][challenges]"
-                  class="form-control mb-2"
-                  placeholder="Challenges faced"></textarea>
+                    <label class="fw-semibold mt-2">Challenges</label>
+                    <textarea name="services[${serviceIndex}][challenges]"
+                              class="form-control mb-2 ckeditor-field"
+                              placeholder="Challenges faced"></textarea>
 
-        <label class="fw-semibold">Solutions</label>
-        <textarea name="services[${serviceIndex}][solutions]"
-                  class="form-control mb-2"
-                  placeholder="Solutions provided"></textarea>
-    </div>`;
+                    <label class="fw-semibold mt-2">Solutions</label>
+                    <textarea name="services[${serviceIndex}][solutions]"
+                              class="form-control mb-2 ckeditor-field"
+                              placeholder="Solutions provided"></textarea>
+                </div>
+            `;
 
-            wrapper.insertAdjacentHTML('beforeend', html);
+            // Extract the new node from the temp container
+            let newServiceNode = tempDiv.firstElementChild;
+            
+            // Append the new node to the wrapper
+            wrapper.appendChild(newServiceNode);
+
+            // Initialize CKEditor ONLY on the newly added textareas
+            newServiceNode.querySelectorAll('.ckeditor-field').forEach(textarea => {
+                initEditor(textarea);
+            });
+
             serviceIndex++;
         }
     </script>
+    
+    <style>
+        /* Optional: Fixes CKEditor height so it matches a standard textarea look */
+        .ck-editor__editable_inline {
+            min-height: 120px;
+        }
+    </style>
 </x-app-layout>

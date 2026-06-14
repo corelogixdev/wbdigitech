@@ -8,10 +8,11 @@
             <main>
                 <!-- Spacer below header -->
                 <div style="padding: 50px"></div>
+                
                 <!-- 🔹 Hero Section with Image + Overlay Title -->
                 <section class="section-box client-section mb-10">
                     <div class="client-section mt-5 ">
-                        <h2 class="tp-hero-title text-center text-white"> {{ $portfolio->title  }}</p>
+                        <h2 class="tp-hero-title text-center text-white">{{ $portfolio->title }}</h2>
                     </div>
                 </section>
 
@@ -42,10 +43,11 @@
 
                             <!-- Right Column: Client Overview Text -->
                             <div class="col-md-8">
-                                <p class="text-muted fs-5"
+                                <!-- Added ckeditor-output class here -->
+                                <div class="text-muted fs-5 mb-3 ckeditor-output"
                                     style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">
-                                    {{ $portfolio->client_overview ?? 'No overview provided.' }}
-                                </p>
+                                    {!! $portfolio->client_overview ?? 'No overview provided.' !!}
+                                </div>
                                 <a href="{{ route('portfolio.case_study', ['title' => Str::slug($portfolio->title), 'id' => $portfolio->id]) }}"
                                     class="btn btn-gradient mt-2">
                                     Read More
@@ -74,7 +76,7 @@
                                 </div>
                             </div>
 
-                            <!-- Right Services (UPDATED) -->
+                            <!-- Right Services -->
                             <div class="col-lg-8">
                                 <div class="tab-content bg-white p-4 shadow rounded" id="services-tabContent">
                                     @foreach($portfolio->services ?? [] as $index => $service)
@@ -85,23 +87,23 @@
 
                                             @if(!empty($service['objective']))
                                                 <h6 class="fw-semibold text-gradient">Objective</h6>
-                                                <p class="text-muted mb-3">
-                                                    {{ $service['objective'] }}
-                                                </p>
+                                                <div class="text-muted mb-3 ckeditor-output">
+                                                    {!! $service['objective'] !!}
+                                                </div>
                                             @endif
 
                                             @if(!empty($service['challenges']))
                                                 <h6 class="fw-semibold text-gradient">Challenges</h6>
-                                                <p class="text-muted mb-3">
-                                                    {{ $service['challenges'] }}
-                                                </p>
+                                                <div class="text-muted mb-3 ckeditor-output">
+                                                    {!! $service['challenges'] !!}
+                                                </div>
                                             @endif
 
                                             @if(!empty($service['solutions']))
                                                 <h6 class="fw-semibold text-gradient">Solutions</h6>
-                                                <p class="text-muted mb-4">
-                                                    {{ $service['solutions'] }}
-                                                </p>
+                                                <div class="text-muted mb-4 ckeditor-output">
+                                                    {!! $service['solutions'] !!}
+                                                </div>
                                             @endif
 
                                             <a href="{{ route('contact') }}" class="btn btn-gradient mt-2">
@@ -146,6 +148,28 @@
 
             <!-- 🔹 Custom CSS -->
             <style>
+                /* 🔥 FIX FOR CKEDITOR BULLET POINTS & LISTS */
+                .ckeditor-output ul {
+                    list-style-type: disc !important;
+                    padding-left: 25px !important;
+                    margin-bottom: 15px !important;
+                }
+                
+                .ckeditor-output ol {
+                    list-style-type: decimal !important;
+                    padding-left: 25px !important;
+                    margin-bottom: 15px !important;
+                }
+
+                .ckeditor-output li {
+                    display: list-item !important;
+                    margin-bottom: 5px;
+                }
+
+                .ckeditor-output p:last-child {
+                    margin-bottom: 0;
+                }
+                
                 /* Gradient text */
                 .text-gradient {
                     background: linear-gradient(90deg, #0A3D62, #0077B6);
@@ -169,15 +193,15 @@
                 }
 
                 .btn-gradient:hover,
-.btn-gradient:focus,
-.btn-gradient:active {
-    background: linear-gradient(90deg, #0077B6, #0A3D62); /* slightly reversed gradient */
-    color: #fff;
-    opacity: 0.9;
-    transform: translateY(-2px);
-    text-decoration: none; /* ensures no underline */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-}
+                .btn-gradient:focus,
+                .btn-gradient:active {
+                    background: linear-gradient(90deg, #0077B6, #0A3D62);
+                    color: #fff;
+                    opacity: 0.9;
+                    transform: translateY(-2px);
+                    text-decoration: none;
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+                }
 
                 /* Hero image + overlay */
                 .tp-blog-standard-thumb-box {
@@ -218,7 +242,7 @@
                     text-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
                 }
 
-                /* 🔹 Services Tabs Buttons */
+                /* Services Tabs Buttons */
                 #services-tab .nav-link {
                     background: #f8f9fa;
                     color: #0A3D62;
@@ -257,19 +281,10 @@
                 .thumbnail-box img.img-thumbnail-full {
                     width: 100%;
                     max-width: 150px;
-                    /* controls small size */
                     height: auto;
-                    /* preserves aspect ratio completely */
                     border-radius: 6px;
                     border: 1px solid #ccc;
                     object-fit: contain;
-                    /* ensures full image visible */
-                }
-
-                .text-gradient {
-                    background: linear-gradient(90deg, #0A3D62, #0077B6);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
                 }
 
                 .case-study-box a:hover {
@@ -288,7 +303,6 @@
                     setInterval(() => {
                         currentIndex = (currentIndex + 1) % tabs.length;
 
-                        // Use Bootstrap’s API — prevents bugs when clicking manually
                         let tab = new bootstrap.Tab(tabs[currentIndex]);
                         tab.show();
                     }, 5000);
