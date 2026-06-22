@@ -543,7 +543,6 @@
                                                 <!-- Left Panel (Overview) -->
                                                 <div class="mega-menu-overview">
                                                     <div class="overview-content">
-                                                        <span class="badge bg-light text-dark mb-3 rounded-pill px-3 py-2 fw-bold" style="font-size:12px;"><i class="fas fa-star text-warning me-1"></i> SERVICE STACK</span>
                                                         <h3 class="overview-title mb-3" style="color: #0A3D62; font-weight:800; line-height:1.2; font-size:20px;">Pick the right digital setup path with fewer surprises.</h3>
                                                         <p class="overview-desc mb-4" style="color: #4a5568; font-size:15px; line-height:1.5;">Web development, Google Ads, SEO, Mobile Apps, Social Media, and Graphic Design arranged by business need.</p>
                                                         
@@ -778,7 +777,6 @@
                                                 <!-- Left Panel (Overview) -->
                                                 <div class="mega-menu-overview">
                                                     <div class="overview-content">
-                                                        <span class="badge bg-light text-dark mb-3 rounded-pill px-3 py-2 fw-bold" style="font-size:12px;"><i class="fas fa-robot text-primary me-1"></i> AI AUTOMATION</span>
                                                         <h3 class="overview-title mb-3" style="color: #0A3D62; font-weight:800; line-height:1.2; font-size:20px;">Unleash the Power of Artificial Intelligence.</h3>
                                                         <p class="overview-desc mb-4" style="color: #4a5568; font-size:15px; line-height:1.5;">Automate processes, increase conversions, and outsmart your competition with AI-driven marketing and web solutions.</p>
                                                         

@@ -33,7 +33,8 @@ class ContactController extends Controller
     // Admin: Show all messages
     public function index()
     {
-        $contacts = Contact::latest()->paginate(10);
+        $perPage = request('per_page', 10);
+        $contacts = $perPage === 'all' ? Contact::latest()->paginate(Contact::count() ?: 1) : Contact::latest()->paginate((int)$perPage);
         return view('pages.admin.contact.index', compact('contacts'));
     }
 

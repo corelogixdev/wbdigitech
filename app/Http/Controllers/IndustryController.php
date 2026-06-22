@@ -12,7 +12,8 @@ class IndustryController extends Controller
 {
     public function index()
     {
-        $industries = Industry::latest()->paginate(10);
+        $perPage = request('per_page', 10);
+        $industries = $perPage === 'all' ? Industry::latest()->paginate(Industry::count() ?: 1) : Industry::latest()->paginate((int)$perPage);
         return view('pages.admin.industries.index', compact('industries'));
     }
 

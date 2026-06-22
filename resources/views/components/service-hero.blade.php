@@ -1,44 +1,43 @@
 @props(['title', 'description', 'serviceCategory', 'serviceName', 'features' => null, 'image' => null])
 
 @php
-    $overlayColor = 'rgba(135, 206, 235, 0.85)'; // Light sky blue overlay
-    
     $bgStyle = $image 
-        ? "background: linear-gradient($overlayColor, $overlayColor), url('" . asset($image) . "'); background-size: cover; background-position: center; background-attachment: fixed;"
-        : "background: linear-gradient(135deg, #87CEEB 0%, #E0F7FA 100%);";
+        ? "background-image: url('" . asset($image) . "'); background-size: cover; background-position: center; background-attachment: fixed;"
+        : "background-image: url('" . asset('css/new-assets/services_home/main.webp') . "'); background-size: cover; background-position: center; background-attachment: fixed;";
 @endphp
 
-<div class="tp-hero-area tp-hero-ptb position-relative" style="{{ $bgStyle }} overflow: hidden;">
-    <!-- Abstract Background Elements (Subtle) -->
-    <div class="position-absolute top-0 start-0 w-100 h-100" style="pointer-events: none; opacity: 0.15;">
-        <div style="position: absolute; top: -10%; left: -5%; width: 400px; height: 400px; background: rgba(10, 61, 98, 0.2); border-radius: 50%; filter: blur(60px);"></div>
-        <div style="position: absolute; bottom: -10%; right: -5%; width: 500px; height: 500px; background: rgba(0, 119, 182, 0.2); border-radius: 50%; filter: blur(80px);"></div>
-    </div>
+<div class="modern-glow-hero" style="{{ $bgStyle }}">
+    <div class="glow-overlay"></div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
 
-    <div class="container position-relative z-index-1" style="padding-top: 80px; padding-bottom: 80px;">
+    <div class="container hero-container position-relative z-index-2" style="padding-top: 80px; padding-bottom: 80px;">
         <div class="row align-items-center">
             
             <!-- Left Side: Service Details -->
-            <div class="col-lg-6 mb-5 mb-lg-0 pr-lg-5 animate__animated animate__fadeInLeft">
+            <div class="col-lg-6 mb-5 mb-lg-0 pr-lg-5 animate__animated animate__fadeInLeft text-start">
                 
-                <h1 class="display-4 fw-bolder mb-4" style="color: #0A3D62; line-height: 1.2;">
+                <h1 class="glow-title" style="text-align: left; font-size: 3.5rem;">
                     {{ $title }}
                 </h1>
                 
-                <p class="lead mb-5" style="font-size: 1.15rem; line-height: 1.7; color: #1a4a6e;">
+                <p class="hero-subtitle mb-5 text-start" style="font-size: 1.15rem; line-height: 1.7; color: #e2e8f0; max-width: 100%;">
                     {{ $description }}
                 </p>
                 
                 @if($features)
-                    <ul class="list-unstyled mb-0" style="color: #1a4a6e;">
-                        {{ $features }}
-                    </ul>
+                    <div class="hero-features text-start" style="color: #e2e8f0; opacity: 0.9;">
+                        <ul class="list-unstyled mb-0">
+                            {{ $features }}
+                        </ul>
+                    </div>
                 @endif
             </div>
 
             <!-- Right Side: Contact Form (Get Quote) -->
             <div class="col-lg-5 offset-lg-1 animate__animated animate__fadeInRight animate__delay-1s">
-                <div class="card border-0 shadow-lg" style="border-radius: 12px; background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.4) !important;">
+                <div class="card border-0 shadow-lg" style="border-radius: 12px; background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.5) !important;">
                     <div class="card-body p-4 p-md-5">
                         <div class="mb-4 text-center">
                             <h3 class="fw-bold mb-2" style="color: #0A3D62;">Get a Free Quote</h3>

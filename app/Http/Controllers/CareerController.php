@@ -10,7 +10,8 @@ class CareerController extends Controller
     // Admin list
     public function index()
     {
-        $careers = Career::latest()->paginate(10);
+        $perPage = request('per_page', 10);
+        $careers = $perPage === 'all' ? Career::latest()->paginate(Career::count() ?: 1) : Career::latest()->paginate((int)$perPage);
         return view('pages.admin.careers.index', compact('careers'));
     }
 

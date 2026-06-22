@@ -10,7 +10,8 @@ class UserController extends Controller
     // Show all users
     public function index()
     {
-        $users = User::latest()->paginate(10);
+        $perPage = request('per_page', 10);
+        $users = $perPage === 'all' ? User::latest()->paginate(User::count() ?: 1) : User::latest()->paginate((int)$perPage);
         return view('pages.admin.users.index', compact('users'));
     }
 

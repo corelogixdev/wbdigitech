@@ -10,7 +10,8 @@ class CustomerController extends Controller
 {
     public function index()
     {
-        $customers = Customer::latest()->paginate(10);
+        $perPage = request('per_page', 10);
+        $customers = $perPage === 'all' ? Customer::latest()->paginate(Customer::count() ?: 1) : Customer::latest()->paginate((int)$perPage);
         return view('pages.admin.customers.index', compact('customers'));
     }
 

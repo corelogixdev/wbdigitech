@@ -27,7 +27,8 @@ class SeoRequestController extends Controller
     // Admin: list all requests
     public function index()
     {
-        $seoRequests = SeoRequest::latest()->paginate(10);
+        $perPage = request('per_page', 10);
+        $seoRequests = $perPage === 'all' ? SeoRequest::latest()->paginate(SeoRequest::count() ?: 1) : SeoRequest::latest()->paginate((int)$perPage);
         return view('pages.admin.seo_requests.index', compact('seoRequests'));
     }
 

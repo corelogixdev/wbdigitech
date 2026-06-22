@@ -11,7 +11,8 @@ class TeamController extends Controller
     // Show all team members in admin
     public function index()
 {
-    $teams = Team::latest()->paginate(10); // ✅ paginator
+    $perPage = request('per_page', 10);
+    $teams = $perPage === 'all' ? Team::latest()->paginate(Team::count() ?: 1) : Team::latest()->paginate((int)$perPage);
     return view('pages.admin.team.index', compact('teams'));
 }
 

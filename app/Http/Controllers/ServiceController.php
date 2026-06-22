@@ -12,7 +12,8 @@ class ServiceController extends Controller
     // -------------------------
     public function index()
     {
-        $services = Service::latest()->paginate(10);
+        $perPage = request('per_page', 10);
+        $services = $perPage === 'all' ? Service::latest()->paginate(Service::count() ?: 1) : Service::latest()->paginate((int)$perPage);
         return view('pages.admin.services.index', compact('services'));
     }
 

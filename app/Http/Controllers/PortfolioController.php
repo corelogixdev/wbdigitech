@@ -10,7 +10,8 @@ class PortfolioController extends Controller
 {
     public function index()
     {
-        $portfolios = Portfolio::latest()->paginate(10);
+        $perPage = request('per_page', 10);
+        $portfolios = $perPage === 'all' ? Portfolio::latest()->paginate(Portfolio::count() ?: 1) : Portfolio::latest()->paginate((int)$perPage);
         return view('pages.admin.portfolio.index', compact('portfolios'));
     }
 

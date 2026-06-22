@@ -14,7 +14,8 @@ class BlogController extends Controller
     // =======================
     public function index()
     {
-        $blogs = Blog::latest()->paginate(10);
+        $perPage = request('per_page', 10);
+        $blogs = $perPage === 'all' ? Blog::latest()->paginate(Blog::count() ?: 1) : Blog::latest()->paginate((int)$perPage);
         return view('pages.admin.blogs.index', compact('blogs'));
     }
 

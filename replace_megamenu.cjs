@@ -15,7 +15,6 @@ const newMegaMenu = `<li class="has-dropdown megamenu-trigger">
                                                 <!-- Left Panel (Overview) -->
                                                 <div class="mega-menu-overview">
                                                     <div class="overview-content">
-                                                        <span class="badge bg-light text-dark mb-3 rounded-pill px-3 py-2 fw-bold" style="font-size:12px;"><i class="fas fa-star text-warning me-1"></i> SERVICE STACK</span>
                                                         <h3 class="overview-title mb-3" style="color: #0A3D62; font-weight:800; line-height:1.2;">Pick the right digital setup path with fewer surprises.</h3>
                                                         <p class="overview-desc mb-4" style="color: #4a5568; font-size:15px; line-height:1.5;">Web development, Google Ads, SEO, Mobile Apps, Social Media, and Graphic Design arranged by business need.</p>
                                                         
@@ -258,6 +257,6 @@ if (startIndex !== -1 && endIndex !== -1) {
     console.log("Successfully replaced mega menu layout");
 } else {
     console.log("Could not find start or end index.");
-    if(startIndex === -1) console.log("Start not found");
-    if(endIndex === -1) console.log("End not found");
+    if (startIndex === -1) console.log("Start not found");
+    if (endIndex === -1) console.log("End not found");
 }
